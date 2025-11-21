@@ -1,0 +1,295 @@
+	component qsys_top is
+		generic (
+			FP_WIDTH : integer := 32;
+			SIM_MODE : integer := 0
+		);
+		port (
+			ftile_debug_status_econ_export                                                          : in    std_logic_vector(19 downto 0)  := (others => 'X'); -- export
+			hssi_ss_1_p0_axi_st_tx_reset_reset_n                                                    : in    std_logic                      := 'X';             -- reset_n
+			hssi_ss_1_p0_axi_st_tx_interface_tvalid                                                 : in    std_logic                      := 'X';             -- tvalid
+			hssi_ss_1_p0_axi_st_tx_interface_tready                                                 : out   std_logic;                                         -- tready
+			hssi_ss_1_p0_axi_st_tx_interface_tdata                                                  : in    std_logic_vector(63 downto 0)  := (others => 'X'); -- tdata
+			hssi_ss_1_p0_axi_st_tx_interface_tkeep                                                  : in    std_logic_vector(7 downto 0)   := (others => 'X'); -- tkeep
+			hssi_ss_1_p0_axi_st_tx_interface_tlast                                                  : in    std_logic                      := 'X';             -- tlast
+			hssi_ss_1_p0_axi_st_tx_interface_tuser                                                  : in    std_logic_vector(1 downto 0)   := (others => 'X'); -- tuser
+			hssi_ss_1_p0_tx_tuser_ptp_tuser_1                                                       : in    std_logic_vector(93 downto 0)  := (others => 'X'); -- tuser_1
+			hssi_ss_1_p0_tx_tuser_ptp_extended_tuser_2                                              : in    std_logic_vector(327 downto 0) := (others => 'X'); -- tuser_2
+			hssi_ss_1_p1_axi_st_tx_reset_reset_n                                                    : in    std_logic                      := 'X';             -- reset_n
+			hssi_ss_1_p1_axi_st_tx_interface_tvalid                                                 : in    std_logic                      := 'X';             -- tvalid
+			hssi_ss_1_p1_axi_st_tx_interface_tready                                                 : out   std_logic;                                         -- tready
+			hssi_ss_1_p1_axi_st_tx_interface_tdata                                                  : in    std_logic_vector(63 downto 0)  := (others => 'X'); -- tdata
+			hssi_ss_1_p1_axi_st_tx_interface_tkeep                                                  : in    std_logic_vector(7 downto 0)   := (others => 'X'); -- tkeep
+			hssi_ss_1_p1_axi_st_tx_interface_tlast                                                  : in    std_logic                      := 'X';             -- tlast
+			hssi_ss_1_p1_axi_st_tx_interface_tuser                                                  : in    std_logic_vector(1 downto 0)   := (others => 'X'); -- tuser
+			hssi_ss_1_p1_tx_tuser_ptp_tuser_1                                                       : in    std_logic_vector(93 downto 0)  := (others => 'X'); -- tuser_1
+			hssi_ss_1_p1_tx_tuser_ptp_extended_tuser_2                                              : in    std_logic_vector(327 downto 0) := (others => 'X'); -- tuser_2
+			hssi_ss_1_p2_axi_st_tx_reset_reset_n                                                    : in    std_logic                      := 'X';             -- reset_n
+			hssi_ss_1_p2_axi_st_tx_interface_tvalid                                                 : in    std_logic                      := 'X';             -- tvalid
+			hssi_ss_1_p2_axi_st_tx_interface_tready                                                 : out   std_logic;                                         -- tready
+			hssi_ss_1_p2_axi_st_tx_interface_tdata                                                  : in    std_logic_vector(63 downto 0)  := (others => 'X'); -- tdata
+			hssi_ss_1_p2_axi_st_tx_interface_tkeep                                                  : in    std_logic_vector(7 downto 0)   := (others => 'X'); -- tkeep
+			hssi_ss_1_p2_axi_st_tx_interface_tlast                                                  : in    std_logic                      := 'X';             -- tlast
+			hssi_ss_1_p2_axi_st_tx_interface_tuser                                                  : in    std_logic_vector(1 downto 0)   := (others => 'X'); -- tuser
+			hssi_ss_1_p2_tx_tuser_ptp_tuser_1                                                       : in    std_logic_vector(93 downto 0)  := (others => 'X'); -- tuser_1
+			hssi_ss_1_p2_tx_tuser_ptp_extended_tuser_2                                              : in    std_logic_vector(327 downto 0) := (others => 'X'); -- tuser_2
+			hssi_ss_1_p3_axi_st_tx_reset_reset_n                                                    : in    std_logic                      := 'X';             -- reset_n
+			hssi_ss_1_p3_axi_st_tx_interface_tvalid                                                 : in    std_logic                      := 'X';             -- tvalid
+			hssi_ss_1_p3_axi_st_tx_interface_tready                                                 : out   std_logic;                                         -- tready
+			hssi_ss_1_p3_axi_st_tx_interface_tdata                                                  : in    std_logic_vector(63 downto 0)  := (others => 'X'); -- tdata
+			hssi_ss_1_p3_axi_st_tx_interface_tkeep                                                  : in    std_logic_vector(7 downto 0)   := (others => 'X'); -- tkeep
+			hssi_ss_1_p3_axi_st_tx_interface_tlast                                                  : in    std_logic                      := 'X';             -- tlast
+			hssi_ss_1_p3_axi_st_tx_interface_tuser                                                  : in    std_logic_vector(1 downto 0)   := (others => 'X'); -- tuser
+			hssi_ss_1_p3_tx_tuser_ptp_tuser_1                                                       : in    std_logic_vector(93 downto 0)  := (others => 'X'); -- tuser_1
+			hssi_ss_1_p3_tx_tuser_ptp_extended_tuser_2                                              : in    std_logic_vector(327 downto 0) := (others => 'X'); -- tuser_2
+			hssi_ss_1_p0_axi_st_rx_reset_reset_n                                                    : in    std_logic                      := 'X';             -- reset_n
+			hssi_ss_1_p0_rx_tuser_status_tuser_1                                                    : out   std_logic_vector(4 downto 0);                      -- tuser_1
+			hssi_ss_1_p1_axi_st_rx_reset_reset_n                                                    : in    std_logic                      := 'X';             -- reset_n
+			hssi_ss_1_p1_axi_st_rx_interface_tvalid                                                 : out   std_logic;                                         -- tvalid
+			hssi_ss_1_p1_axi_st_rx_interface_tdata                                                  : out   std_logic_vector(63 downto 0);                     -- tdata
+			hssi_ss_1_p1_axi_st_rx_interface_tkeep                                                  : out   std_logic_vector(7 downto 0);                      -- tkeep
+			hssi_ss_1_p1_axi_st_rx_interface_tlast                                                  : out   std_logic;                                         -- tlast
+			hssi_ss_1_p1_axi_st_rx_interface_tuser                                                  : out   std_logic_vector(6 downto 0);                      -- tuser
+			hssi_ss_1_p2_axi_st_rx_reset_reset_n                                                    : in    std_logic                      := 'X';             -- reset_n
+			hssi_ss_1_p2_axi_st_rx_interface_tvalid                                                 : out   std_logic;                                         -- tvalid
+			hssi_ss_1_p2_axi_st_rx_interface_tdata                                                  : out   std_logic_vector(63 downto 0);                     -- tdata
+			hssi_ss_1_p2_axi_st_rx_interface_tkeep                                                  : out   std_logic_vector(7 downto 0);                      -- tkeep
+			hssi_ss_1_p2_axi_st_rx_interface_tlast                                                  : out   std_logic;                                         -- tlast
+			hssi_ss_1_p2_axi_st_rx_interface_tuser                                                  : out   std_logic_vector(6 downto 0);                      -- tuser
+			hssi_ss_1_p3_axi_st_rx_reset_reset_n                                                    : in    std_logic                      := 'X';             -- reset_n
+			hssi_ss_1_p3_axi_st_rx_interface_tvalid                                                 : out   std_logic;                                         -- tvalid
+			hssi_ss_1_p3_axi_st_rx_interface_tdata                                                  : out   std_logic_vector(63 downto 0);                     -- tdata
+			hssi_ss_1_p3_axi_st_rx_interface_tkeep                                                  : out   std_logic_vector(7 downto 0);                      -- tkeep
+			hssi_ss_1_p3_axi_st_rx_interface_tlast                                                  : out   std_logic;                                         -- tlast
+			hssi_ss_1_p3_axi_st_rx_interface_tuser                                                  : out   std_logic_vector(6 downto 0);                      -- tuser
+			hssi_ss_1_p0_axi_st_tx_ptp_interface_tvalid                                             : in    std_logic                      := 'X';             -- tvalid
+			hssi_ss_1_p0_axi_st_tx_ptp_interface_tdata                                              : in    std_logic_vector(95 downto 0)  := (others => 'X'); -- tdata
+			hssi_ss_1_p0_axi_st_tx_egrs0_interface_tvalid                                           : out   std_logic;                                         -- tvalid
+			hssi_ss_1_p0_axi_st_tx_egrs0_interface_tdata                                            : out   std_logic_vector(103 downto 0);                    -- tdata
+			hssi_ss_1_p0_axi_st_rx_ingrs0_interface_tvalid                                          : out   std_logic;                                         -- tvalid
+			hssi_ss_1_p0_axi_st_rx_ingrs0_interface_tdata                                           : out   std_logic_vector(95 downto 0);                     -- tdata
+			hssi_ss_1_p0_tx_flow_control_interface_i_p0_tx_pause                                    : in    std_logic                      := 'X';             -- i_p0_tx_pause
+			hssi_ss_1_p0_tx_flow_control_interface_i_p0_tx_pfc                                      : in    std_logic_vector(7 downto 0)   := (others => 'X'); -- i_p0_tx_pfc
+			hssi_ss_1_p1_tx_flow_control_interface_i_p1_tx_pause                                    : in    std_logic                      := 'X';             -- i_p1_tx_pause
+			hssi_ss_1_p1_tx_flow_control_interface_i_p1_tx_pfc                                      : in    std_logic_vector(7 downto 0)   := (others => 'X'); -- i_p1_tx_pfc
+			hssi_ss_1_p2_tx_flow_control_interface_i_p2_tx_pause                                    : in    std_logic                      := 'X';             -- i_p2_tx_pause
+			hssi_ss_1_p2_tx_flow_control_interface_i_p2_tx_pfc                                      : in    std_logic_vector(7 downto 0)   := (others => 'X'); -- i_p2_tx_pfc
+			hssi_ss_1_p3_tx_flow_control_interface_i_p3_tx_pause                                    : in    std_logic                      := 'X';             -- i_p3_tx_pause
+			hssi_ss_1_p3_tx_flow_control_interface_i_p3_tx_pfc                                      : in    std_logic_vector(7 downto 0)   := (others => 'X'); -- i_p3_tx_pfc
+			hssi_ss_1_p0_tx_srl_interface_p0_tx_serial                                              : out   std_logic_vector(0 downto 0);                      -- p0_tx_serial
+			hssi_ss_1_p0_tx_srl_interface_p0_tx_serial_n                                            : out   std_logic_vector(0 downto 0);                      -- p0_tx_serial_n
+			hssi_ss_1_p0_rx_srl_interface_p0_rx_serial                                              : in    std_logic_vector(0 downto 0)   := (others => 'X'); -- p0_rx_serial
+			hssi_ss_1_p0_rx_srl_interface_p0_rx_serial_n                                            : in    std_logic_vector(0 downto 0)   := (others => 'X'); -- p0_rx_serial_n
+			hssi_ss_1_p1_tx_srl_interface_p1_tx_serial                                              : out   std_logic_vector(0 downto 0);                      -- p1_tx_serial
+			hssi_ss_1_p1_tx_srl_interface_p1_tx_serial_n                                            : out   std_logic_vector(0 downto 0);                      -- p1_tx_serial_n
+			hssi_ss_1_p1_rx_srl_interface_p1_rx_serial                                              : in    std_logic_vector(0 downto 0)   := (others => 'X'); -- p1_rx_serial
+			hssi_ss_1_p1_rx_srl_interface_p1_rx_serial_n                                            : in    std_logic_vector(0 downto 0)   := (others => 'X'); -- p1_rx_serial_n
+			hssi_ss_1_p2_rx_srl_interface_p2_rx_serial                                              : in    std_logic_vector(0 downto 0)   := (others => 'X'); -- p2_rx_serial
+			hssi_ss_1_p2_rx_srl_interface_p2_rx_serial_n                                            : in    std_logic_vector(0 downto 0)   := (others => 'X'); -- p2_rx_serial_n
+			hssi_ss_1_p3_rx_srl_interface_p3_rx_serial                                              : in    std_logic_vector(0 downto 0)   := (others => 'X'); -- p3_rx_serial
+			hssi_ss_1_p3_rx_srl_interface_p3_rx_serial_n                                            : in    std_logic_vector(0 downto 0)   := (others => 'X'); -- p3_rx_serial_n
+			hssi_ss_1_subsystem_cold_rst_n_reset_n                                                  : in    std_logic                      := 'X';             -- reset_n
+			hssi_ss_1_subsystem_cold_rst_ack_n_reset_n                                              : out   std_logic;                                         -- reset_n
+			hssi_ss_1_i_p0_tx_rst_n_reset_n                                                         : in    std_logic                      := 'X';             -- reset_n
+			hssi_ss_1_i_p0_rx_rst_n_reset_n                                                         : in    std_logic                      := 'X';             -- reset_n
+			hssi_ss_1_o_p0_rx_rst_ack_n_reset_n                                                     : out   std_logic;                                         -- reset_n
+			hssi_ss_1_o_p0_tx_rst_ack_n_reset_n                                                     : out   std_logic;                                         -- reset_n
+			hssi_ss_1_i_p1_tx_rst_n_reset_n                                                         : in    std_logic                      := 'X';             -- reset_n
+			hssi_ss_1_i_p1_rx_rst_n_reset_n                                                         : in    std_logic                      := 'X';             -- reset_n
+			hssi_ss_1_o_p1_rx_rst_ack_n_reset_n                                                     : out   std_logic;                                         -- reset_n
+			hssi_ss_1_o_p1_tx_rst_ack_n_reset_n                                                     : out   std_logic;                                         -- reset_n
+			hssi_ss_1_i_p2_tx_rst_n_reset_n                                                         : in    std_logic                      := 'X';             -- reset_n
+			hssi_ss_1_i_p2_rx_rst_n_reset_n                                                         : in    std_logic                      := 'X';             -- reset_n
+			hssi_ss_1_i_p3_tx_rst_n_reset_n                                                         : in    std_logic                      := 'X';             -- reset_n
+			hssi_ss_1_i_p3_rx_rst_n_reset_n                                                         : in    std_logic                      := 'X';             -- reset_n
+			hssi_ss_1_i_clk_ref_clk                                                                 : in    std_logic_vector(2 downto 0)   := (others => 'X'); -- clk
+			qsfpdd_status_pio_external_connection_export                                            : in    std_logic_vector(1 downto 0)   := (others => 'X'); -- export
+			qsfpdd_ctrl_pio_0_econ_export                                                           : out   std_logic_vector(5 downto 0);                      -- export
+			clk_csr_in_clk_clk                                                                      : in    std_logic                      := 'X';             -- clk
+			clk_dsp_in_clk_clk                                                                      : in    std_logic                      := 'X';             -- clk
+			hssi_ss_1_o_p0_clk_rec_div_clk                                                          : out   std_logic;                                         -- clk
+			ftile_out_clk_clk                                                                       : out   std_logic;                                         -- clk
+			dfd_subsystem_clock_bridge_dspby2_in_clk_clk                                            : in    std_logic                      := 'X';             -- clk
+			dma_subsys_ninit_done_reset                                                             : in    std_logic                      := 'X';             -- reset
+			dma_subsys_dma_subsys_port8_ftile_25gbe_rx_dma_ch1_rx_dma_fifo_0_in_ts_valid            : in    std_logic                      := 'X';             -- valid
+			dma_subsys_dma_subsys_port8_ftile_25gbe_rx_dma_ch1_rx_dma_fifo_0_in_ts_data             : in    std_logic_vector(95 downto 0)  := (others => 'X'); -- data
+			ts_chs_compl_0_rst_bus_in_reset                                                         : in    std_logic_vector(0 downto 0)   := (others => 'X'); -- reset
+			dma_subsys_dma_subsys_port8_ftile_25gbe_tx_dma_ch1_ts_chs_compl_0_i_ts_valid            : in    std_logic_vector(0 downto 0)   := (others => 'X'); -- valid
+			dma_subsys_dma_subsys_port8_ftile_25gbe_tx_dma_ch1_ts_chs_compl_0_i_ts_fingerprint      : in    std_logic_vector(19 downto 0)  := (others => 'X'); -- fingerprint
+			dma_subsys_dma_subsys_port8_ftile_25gbe_tx_dma_ch1_ts_chs_compl_0_i_ts_data             : in    std_logic_vector(95 downto 0)  := (others => 'X'); -- data
+			dma_subsys_dma_subsys_port8_ftile_25gbe_tx_dma_ch1_tx_dma_fifo_0_out_ts_req_valid       : out   std_logic;                                         -- valid
+			dma_subsys_dma_subsys_port8_ftile_25gbe_tx_dma_ch1_tx_dma_fifo_0_out_ts_req_fingerprint : out   std_logic_vector(19 downto 0);                     -- fingerprint
+			agilex_hps_f2h_stm_hw_events_stm_hwevents                                               : in    std_logic_vector(43 downto 0)  := (others => 'X'); -- stm_hwevents
+			agilex_hps_h2f_cs_ntrst                                                                 : in    std_logic                      := 'X';             -- ntrst
+			agilex_hps_h2f_cs_tck                                                                   : in    std_logic                      := 'X';             -- tck
+			agilex_hps_h2f_cs_tdi                                                                   : in    std_logic                      := 'X';             -- tdi
+			agilex_hps_h2f_cs_tdo                                                                   : out   std_logic;                                         -- tdo
+			agilex_hps_h2f_cs_tdoen                                                                 : out   std_logic;                                         -- tdoen
+			agilex_hps_h2f_cs_tms                                                                   : in    std_logic                      := 'X';             -- tms
+			hps_io_EMAC1_TX_CLK                                                                     : out   std_logic;                                         -- EMAC1_TX_CLK
+			hps_io_EMAC1_TXD0                                                                       : out   std_logic;                                         -- EMAC1_TXD0
+			hps_io_EMAC1_TXD1                                                                       : out   std_logic;                                         -- EMAC1_TXD1
+			hps_io_EMAC1_TXD2                                                                       : out   std_logic;                                         -- EMAC1_TXD2
+			hps_io_EMAC1_TXD3                                                                       : out   std_logic;                                         -- EMAC1_TXD3
+			hps_io_EMAC1_RX_CTL                                                                     : in    std_logic                      := 'X';             -- EMAC1_RX_CTL
+			hps_io_EMAC1_TX_CTL                                                                     : out   std_logic;                                         -- EMAC1_TX_CTL
+			hps_io_EMAC1_RX_CLK                                                                     : in    std_logic                      := 'X';             -- EMAC1_RX_CLK
+			hps_io_EMAC1_RXD0                                                                       : in    std_logic                      := 'X';             -- EMAC1_RXD0
+			hps_io_EMAC1_RXD1                                                                       : in    std_logic                      := 'X';             -- EMAC1_RXD1
+			hps_io_EMAC1_RXD2                                                                       : in    std_logic                      := 'X';             -- EMAC1_RXD2
+			hps_io_EMAC1_RXD3                                                                       : in    std_logic                      := 'X';             -- EMAC1_RXD3
+			hps_io_EMAC1_MDIO                                                                       : inout std_logic                      := 'X';             -- EMAC1_MDIO
+			hps_io_EMAC1_MDC                                                                        : out   std_logic;                                         -- EMAC1_MDC
+			hps_io_SDMMC_CMD                                                                        : inout std_logic                      := 'X';             -- SDMMC_CMD
+			hps_io_SDMMC_D0                                                                         : inout std_logic                      := 'X';             -- SDMMC_D0
+			hps_io_SDMMC_D1                                                                         : inout std_logic                      := 'X';             -- SDMMC_D1
+			hps_io_SDMMC_D2                                                                         : inout std_logic                      := 'X';             -- SDMMC_D2
+			hps_io_SDMMC_D3                                                                         : inout std_logic                      := 'X';             -- SDMMC_D3
+			hps_io_SDMMC_D4                                                                         : inout std_logic                      := 'X';             -- SDMMC_D4
+			hps_io_SDMMC_D5                                                                         : inout std_logic                      := 'X';             -- SDMMC_D5
+			hps_io_SDMMC_D6                                                                         : inout std_logic                      := 'X';             -- SDMMC_D6
+			hps_io_SDMMC_D7                                                                         : inout std_logic                      := 'X';             -- SDMMC_D7
+			hps_io_SDMMC_CCLK                                                                       : out   std_logic;                                         -- SDMMC_CCLK
+			hps_io_SPIM0_CLK                                                                        : out   std_logic;                                         -- SPIM0_CLK
+			hps_io_SPIM0_MOSI                                                                       : out   std_logic;                                         -- SPIM0_MOSI
+			hps_io_SPIM0_MISO                                                                       : in    std_logic                      := 'X';             -- SPIM0_MISO
+			hps_io_SPIM0_SS0_N                                                                      : out   std_logic;                                         -- SPIM0_SS0_N
+			hps_io_SPIM1_CLK                                                                        : out   std_logic;                                         -- SPIM1_CLK
+			hps_io_SPIM1_MOSI                                                                       : out   std_logic;                                         -- SPIM1_MOSI
+			hps_io_SPIM1_MISO                                                                       : in    std_logic                      := 'X';             -- SPIM1_MISO
+			hps_io_SPIM1_SS0_N                                                                      : out   std_logic;                                         -- SPIM1_SS0_N
+			hps_io_SPIM1_SS1_N                                                                      : out   std_logic;                                         -- SPIM1_SS1_N
+			hps_io_UART1_RX                                                                         : in    std_logic                      := 'X';             -- UART1_RX
+			hps_io_UART1_TX                                                                         : out   std_logic;                                         -- UART1_TX
+			hps_io_I2C1_SDA                                                                         : inout std_logic                      := 'X';             -- I2C1_SDA
+			hps_io_I2C1_SCL                                                                         : inout std_logic                      := 'X';             -- I2C1_SCL
+			hps_io_hps_osc_clk                                                                      : in    std_logic                      := 'X';             -- hps_osc_clk
+			hps_io_gpio0_io11                                                                       : inout std_logic                      := 'X';             -- gpio0_io11
+			hps_io_gpio0_io12                                                                       : inout std_logic                      := 'X';             -- gpio0_io12
+			hps_io_gpio0_io13                                                                       : inout std_logic                      := 'X';             -- gpio0_io13
+			hps_io_gpio0_io14                                                                       : inout std_logic                      := 'X';             -- gpio0_io14
+			hps_io_gpio0_io15                                                                       : inout std_logic                      := 'X';             -- gpio0_io15
+			hps_io_gpio0_io16                                                                       : inout std_logic                      := 'X';             -- gpio0_io16
+			hps_io_gpio0_io17                                                                       : inout std_logic                      := 'X';             -- gpio0_io17
+			hps_io_gpio0_io18                                                                       : inout std_logic                      := 'X';             -- gpio0_io18
+			hps_io_gpio1_io16                                                                       : inout std_logic                      := 'X';             -- gpio1_io16
+			hps_io_gpio1_io17                                                                       : inout std_logic                      := 'X';             -- gpio1_io17
+			agilex_hps_h2f_reset_reset                                                              : out   std_logic;                                         -- reset
+			f2h_irq1_irq                                                                            : in    std_logic_vector(31 downto 0)  := (others => 'X'); -- irq
+			emif_hps_pll_ref_clk_clk                                                                : in    std_logic                      := 'X';             -- clk
+			emif_hps_oct_oct_rzqin                                                                  : in    std_logic                      := 'X';             -- oct_rzqin
+			emif_hps_mem_mem_ck                                                                     : out   std_logic_vector(0 downto 0);                      -- mem_ck
+			emif_hps_mem_mem_ck_n                                                                   : out   std_logic_vector(0 downto 0);                      -- mem_ck_n
+			emif_hps_mem_mem_a                                                                      : out   std_logic_vector(16 downto 0);                     -- mem_a
+			emif_hps_mem_mem_act_n                                                                  : out   std_logic_vector(0 downto 0);                      -- mem_act_n
+			emif_hps_mem_mem_ba                                                                     : out   std_logic_vector(1 downto 0);                      -- mem_ba
+			emif_hps_mem_mem_bg                                                                     : out   std_logic_vector(0 downto 0);                      -- mem_bg
+			emif_hps_mem_mem_cke                                                                    : out   std_logic_vector(0 downto 0);                      -- mem_cke
+			emif_hps_mem_mem_cs_n                                                                   : out   std_logic_vector(1 downto 0);                      -- mem_cs_n
+			emif_hps_mem_mem_odt                                                                    : out   std_logic_vector(0 downto 0);                      -- mem_odt
+			emif_hps_mem_mem_reset_n                                                                : out   std_logic_vector(0 downto 0);                      -- mem_reset_n
+			emif_hps_mem_mem_par                                                                    : out   std_logic_vector(0 downto 0);                      -- mem_par
+			emif_hps_mem_mem_alert_n                                                                : in    std_logic_vector(0 downto 0)   := (others => 'X'); -- mem_alert_n
+			emif_hps_mem_mem_dqs                                                                    : inout std_logic_vector(8 downto 0)   := (others => 'X'); -- mem_dqs
+			emif_hps_mem_mem_dqs_n                                                                  : inout std_logic_vector(8 downto 0)   := (others => 'X'); -- mem_dqs_n
+			emif_hps_mem_mem_dq                                                                     : inout std_logic_vector(71 downto 0)  := (others => 'X'); -- mem_dq
+			emif_hps_mem_mem_dbi_n                                                                  : inout std_logic_vector(8 downto 0)   := (others => 'X'); -- mem_dbi_n
+			button_pio_external_connection_export                                                   : in    std_logic_vector(3 downto 0)   := (others => 'X'); -- export
+			dipsw_pio_external_connection_export                                                    : in    std_logic_vector(3 downto 0)   := (others => 'X'); -- export
+			led_pio_external_connection_in_port                                                     : in    std_logic_vector(2 downto 0)   := (others => 'X'); -- in_port
+			led_pio_external_connection_out_port                                                    : out   std_logic_vector(2 downto 0);                      -- out_port
+			ddc_avst_sink_avst_sink_valid                                                           : in    std_logic                      := 'X';             -- avst_sink_valid
+			ddc_avst_sink_avst_sink_channel                                                         : in    std_logic_vector(7 downto 0)   := (others => 'X'); -- avst_sink_channel
+			ddc_avst_sink_avst_sink_data_l1                                                         : in    std_logic_vector(31 downto 0)  := (others => 'X'); -- avst_sink_data_l1
+			ddc_avst_sink_avst_sink_data_l2                                                         : in    std_logic_vector(31 downto 0)  := (others => 'X'); -- avst_sink_data_l2
+			ddc_avst_sink_avst_sink_data_l3                                                         : in    std_logic_vector(31 downto 0)  := (others => 'X'); -- avst_sink_data_l3
+			ddc_avst_sink_avst_sink_data_l4                                                         : in    std_logic_vector(31 downto 0)  := (others => 'X'); -- avst_sink_data_l4
+			ddc_avst_sink_avst_sink_data_l5                                                         : in    std_logic_vector(31 downto 0)  := (others => 'X'); -- avst_sink_data_l5
+			ddc_avst_sink_avst_sink_data_l6                                                         : in    std_logic_vector(31 downto 0)  := (others => 'X'); -- avst_sink_data_l6
+			ddc_avst_sink_avst_sink_data_l7                                                         : in    std_logic_vector(31 downto 0)  := (others => 'X'); -- avst_sink_data_l7
+			ddc_avst_sink_avst_sink_data_l8                                                         : in    std_logic_vector(31 downto 0)  := (others => 'X'); -- avst_sink_data_l8
+			duc_avst_source_duc_avst_source_valid                                                   : out   std_logic;                                         -- duc_avst_source_valid
+			duc_avst_source_duc_avst_source_data0                                                   : out   std_logic_vector(31 downto 0);                     -- duc_avst_source_data0
+			duc_avst_source_duc_avst_source_data1                                                   : out   std_logic_vector(31 downto 0);                     -- duc_avst_source_data1
+			duc_avst_source_duc_avst_source_data2                                                   : out   std_logic_vector(31 downto 0);                     -- duc_avst_source_data2
+			duc_avst_source_duc_avst_source_data3                                                   : out   std_logic_vector(31 downto 0);                     -- duc_avst_source_data3
+			duc_avst_source_duc_avst_source_data4                                                   : out   std_logic_vector(31 downto 0);                     -- duc_avst_source_data4
+			duc_avst_source_duc_avst_source_data5                                                   : out   std_logic_vector(31 downto 0);                     -- duc_avst_source_data5
+			duc_avst_source_duc_avst_source_data6                                                   : out   std_logic_vector(31 downto 0);                     -- duc_avst_source_data6
+			duc_avst_source_duc_avst_source_data7                                                   : out   std_logic_vector(31 downto 0);                     -- duc_avst_source_data7
+			duc_avst_source_duc_avst_source_channel                                                 : out   std_logic_vector(7 downto 0);                      -- duc_avst_source_channel
+			avst_tx_ptp_i_av_st_tx_skip_crc                                                         : in    std_logic                      := 'X';             -- i_av_st_tx_skip_crc
+			avst_tx_ptp_i_av_st_tx_ptp_ts_valid                                                     : in    std_logic_vector(1 downto 0)   := (others => 'X'); -- i_av_st_tx_ptp_ts_valid
+			avst_tx_ptp_i_av_st_tx_ptp_ins_ets                                                      : in    std_logic                      := 'X';             -- i_av_st_tx_ptp_ins_ets
+			avst_tx_ptp_i_av_st_tx_ptp_ins_cf                                                       : in    std_logic                      := 'X';             -- i_av_st_tx_ptp_ins_cf
+			avst_tx_ptp_i_av_st_tx_ptp_tx_its                                                       : in    std_logic_vector(95 downto 0)  := (others => 'X'); -- i_av_st_tx_ptp_tx_its
+			avst_tx_ptp_i_av_st_tx_ptp_asym_p2p_idx                                                 : in    std_logic_vector(6 downto 0)   := (others => 'X'); -- i_av_st_tx_ptp_asym_p2p_idx
+			avst_tx_ptp_i_av_st_tx_ptp_asym_sign                                                    : in    std_logic                      := 'X';             -- i_av_st_tx_ptp_asym_sign
+			avst_tx_ptp_i_av_st_tx_ptp_asym                                                         : in    std_logic                      := 'X';             -- i_av_st_tx_ptp_asym
+			avst_tx_ptp_i_av_st_tx_ptp_p2p                                                          : in    std_logic                      := 'X';             -- i_av_st_tx_ptp_p2p
+			avst_tx_ptp_i_av_st_tx_ptp_ts_format                                                    : in    std_logic                      := 'X';             -- i_av_st_tx_ptp_ts_format
+			avst_tx_ptp_i_av_st_tx_ptp_update_eb                                                    : in    std_logic                      := 'X';             -- i_av_st_tx_ptp_update_eb
+			avst_tx_ptp_i_av_st_tx_ptp_zero_csum                                                    : in    std_logic                      := 'X';             -- i_av_st_tx_ptp_zero_csum
+			avst_tx_ptp_i_av_st_tx_ptp_eb_offset                                                    : in    std_logic_vector(15 downto 0)  := (others => 'X'); -- i_av_st_tx_ptp_eb_offset
+			avst_tx_ptp_i_av_st_tx_ptp_csum_offset                                                  : in    std_logic_vector(15 downto 0)  := (others => 'X'); -- i_av_st_tx_ptp_csum_offset
+			avst_tx_ptp_i_av_st_tx_ptp_cf_offset                                                    : in    std_logic_vector(15 downto 0)  := (others => 'X'); -- i_av_st_tx_ptp_cf_offset
+			avst_tx_ptp_i_av_st_tx_ptp_ts_offset                                                    : in    std_logic_vector(15 downto 0)  := (others => 'X'); -- i_av_st_tx_ptp_ts_offset
+			avst_axist_bridge_0_axit_tx_if_tready                                                   : in    std_logic                      := 'X';             -- tready
+			avst_axist_bridge_0_axit_tx_if_tvalid                                                   : out   std_logic;                                         -- tvalid
+			avst_axist_bridge_0_axit_tx_if_tdata                                                    : out   std_logic_vector(63 downto 0);                     -- tdata
+			avst_axist_bridge_0_axit_tx_if_tlast                                                    : out   std_logic;                                         -- tlast
+			avst_axist_bridge_0_axit_tx_if_tkeep                                                    : out   std_logic_vector(7 downto 0);                      -- tkeep
+			avst_axist_bridge_0_axit_tx_if_tuser                                                    : out   std_logic_vector(1 downto 0);                      -- tuser
+			axist_tx_user_o_axi_st_tx_tuser_ptp                                                     : out   std_logic_vector(93 downto 0);                     -- o_axi_st_tx_tuser_ptp
+			axist_tx_user_o_axi_st_tx_tuser_ptp_extended                                            : out   std_logic_vector(327 downto 0);                    -- o_axi_st_tx_tuser_ptp_extended
+			avst_rx_ptp_o_av_st_rxstatus_data                                                       : out   std_logic_vector(39 downto 0);                     -- o_av_st_rxstatus_data
+			avst_rx_ptp_o_av_st_rxstatus_valid                                                      : out   std_logic;                                         -- o_av_st_rxstatus_valid
+			avst_rx_ptp_o_av_st_ptp_rx_its                                                          : out   std_logic_vector(95 downto 0);                     -- o_av_st_ptp_rx_its
+			axist_rx_user_i_axi_st_rx_tuser_sts                                                     : in    std_logic_vector(4 downto 0)   := (others => 'X'); -- i_axi_st_rx_tuser_sts
+			axist_rx_user_i_axi_st_rx_tuser_sts_extended                                            : in    std_logic_vector(31 downto 0)  := (others => 'X'); -- i_axi_st_rx_tuser_sts_extended
+			axist_rx_user_i_axi_st_rx_ingrts0_tdata                                                 : in    std_logic_vector(95 downto 0)  := (others => 'X'); -- i_axi_st_rx_ingrts0_tdata
+			axist_rx_user_i_axi_st_rx_ingrts0_tvalid                                                : in    std_logic                      := 'X';             -- i_axi_st_rx_ingrts0_tvalid
+			ptp_tod_concat_out_o_mac_ptp_fp                                                         : out   std_logic_vector(21 downto 0);                     -- o_mac_ptp_fp
+			ptp_tod_concat_out_o_mac_ptp_ts_req                                                     : out   std_logic;                                         -- o_mac_ptp_ts_req
+			ptp_tod_concat_out_i_mac_ptp_tx_ets_valid                                               : in    std_logic                      := 'X';             -- i_mac_ptp_tx_ets_valid
+			ptp_tod_concat_out_i_mac_ptp_tx_ets                                                     : in    std_logic_vector(95 downto 0)  := (others => 'X'); -- i_mac_ptp_tx_ets
+			ptp_tod_concat_out_i_mac_ptp_tx_ets_fp                                                  : in    std_logic_vector(21 downto 0)  := (others => 'X'); -- i_mac_ptp_tx_ets_fp
+			ptp_tod_concat_out_i_mac_ptp_rx_its_valid                                               : in    std_logic                      := 'X';             -- i_mac_ptp_rx_its_valid
+			ptp_tod_concat_out_i_mac_ptp_rx_its                                                     : in    std_logic_vector(95 downto 0)  := (others => 'X'); -- i_mac_ptp_rx_its
+			ptp_tod_concat_out_i_ext_ptp_fp                                                         : in    std_logic_vector(19 downto 0)  := (others => 'X'); -- i_ext_ptp_fp
+			ptp_tod_concat_out_i_ext_ptp_ts_req                                                     : in    std_logic                      := 'X';             -- i_ext_ptp_ts_req
+			ptp_tod_concat_out_o_ext_ptp_tx_ets_valid                                               : out   std_logic;                                         -- o_ext_ptp_tx_ets_valid
+			ptp_tod_concat_out_o_ext_ptp_tx_ets                                                     : out   std_logic_vector(95 downto 0);                     -- o_ext_ptp_tx_ets
+			ptp_tod_concat_out_o_ext_ptp_tx_ets_fp                                                  : out   std_logic_vector(19 downto 0);                     -- o_ext_ptp_tx_ets_fp
+			ptp_tod_concat_out_o_ext_ptp_rx_its                                                     : out   std_logic_vector(95 downto 0);                     -- o_ext_ptp_rx_its
+			ptp_tod_concat_out_o_ext_ptp_rx_its_valid                                               : out   std_logic;                                         -- o_ext_ptp_rx_its_valid
+			phipps_peak_0_rx_pcs_ready_rx_pcs_ready                                                 : in    std_logic                      := 'X';             -- rx_pcs_ready
+			phipps_peak_0_tx_lanes_stable_tx_lanes_stable                                           : in    std_logic                      := 'X';             -- tx_lanes_stable
+			phipps_peak_0_lphy_ss_top_0_pb_avst_sink_valid                                          : in    std_logic                      := 'X';             -- valid
+			phipps_peak_0_lphy_ss_top_0_pb_avst_sink_data                                           : in    std_logic_vector(63 downto 0)  := (others => 'X'); -- data
+			phipps_peak_0_lphy_ss_top_0_pb_avst_sink_ready                                          : out   std_logic;                                         -- ready
+			phipps_peak_0_lphy_ss_top_0_lphy_ss_top_duc_ddc_lpbk_en_data                            : out   std_logic;                                         -- data
+			rst_dsp_in_reset_reset                                                                  : in    std_logic                      := 'X';             -- reset
+			rst_eth_in_reset_reset                                                                  : in    std_logic                      := 'X';             -- reset
+			rst_csr_act_high_in_reset_reset                                                         : in    std_logic                      := 'X';             -- reset
+			rst_csr_in_reset_reset_n                                                                : in    std_logic                      := 'X';             -- reset_n
+			clk_100_clk                                                                             : in    std_logic                      := 'X';             -- clk
+			dma_subsys_port0_rx_dma_resetn_reset_n                                                  : in    std_logic                      := 'X';             -- reset_n
+			dma_subsys_port1_rx_dma_resetn_reset_n                                                  : in    std_logic                      := 'X';             -- reset_n
+			qsys_top_master_todclk_0_in_clk_clk                                                     : in    std_logic                      := 'X';             -- clk
+			reset_reset_n                                                                           : in    std_logic                      := 'X';             -- reset_n
+			ninit_done_ninit_done                                                                   : out   std_logic;                                         -- ninit_done
+			tod_timestamp_96b_0_pps_in_pps_in                                                       : in    std_logic                      := 'X';             -- pps_in
+			master_tod_top_0_pulse_per_second_pps                                                   : out   std_logic;                                         -- pps
+			mtod_subsys_master_tod_top_0_i_upstr_pll_lock                                           : in    std_logic                      := 'X';             -- lock
+			mtod_subsys_pps_in_pulse_per_second                                                     : in    std_logic                      := 'X';             -- pulse_per_second
+			tod_subsys_0_master_tod_subsys_0_mtod_subsys_pps_load_tod_0_time_of_day_96b_data        : in    std_logic_vector(95 downto 0)  := (others => 'X'); -- data
+			tod_subsys_0_tod_slave_sub_system_0_master_tod_split_conduit_end_10_data                : out   std_logic_vector(95 downto 0);                     -- data
+			tod_subsys_0_tod_slave_sub_system_0_master_tod_split_conduit_end_10_valid               : out   std_logic;                                         -- valid
+			tod_subsys_0_tod_slave_port_8_tod_stack_tx_tod_interface_tdata                          : out   std_logic_vector(95 downto 0);                     -- tdata
+			tod_subsys_0_tod_slave_port_8_tod_stack_tx_tod_interface_tvalid                         : out   std_logic;                                         -- tvalid
+			tod_subsys_0_tod_slave_port_8_tod_stack_rx_tod_interface_tdata                          : out   std_logic_vector(95 downto 0);                     -- tdata
+			tod_subsys_0_tod_slave_port_8_tod_stack_rx_tod_interface_tvalid                         : out   std_logic;                                         -- tvalid
+			tod_slave_subsys_port_8_tod_stack_tx_pll_locked_lock                                    : in    std_logic                      := 'X'              -- lock
+		);
+	end component qsys_top;
+

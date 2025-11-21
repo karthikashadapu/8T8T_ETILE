@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<island simulinkPath='duc_model/DUT/ChanFilt_DUC/DUC_l1/HB2/HB2_im' topLevelEntity='duc_model_DUT_ChanFilt_DUC_DUC_l1_HB2_HB2_im'>
+    <port name='clk' dir='in' role='clock'/>
+    <port name='areset' dir='in' clock='clk' role='resetHigh'/>
+    <port name='xIn_v' clock='clk' reset='areset' width='1' dir='in' role='valid' qsys_role='valid_xIn_v' stm=''/>
+    <port name='xIn_c' clock='clk' reset='areset' width='8' dir='in' role='channel' qsys_role='channel_xIn_c' stm=''/>
+    <port name='xIn_0' clock='clk' reset='areset' width='16' dir='in' role='data' qsys_role='data_xIn_0' stm=''/>
+    <port name='xIn_1' clock='clk' reset='areset' width='16' dir='in' role='data' qsys_role='data_xIn_1' stm=''/>
+    <port name='xOut_v' clock='clk' reset='areset' width='1' dir='out' role='valid' qsys_role='valid_xOut_v' stm=''/>
+    <port name='xOut_c' clock='clk' reset='areset' width='8' dir='out' role='channel' qsys_role='channel_xOut_c' stm=''/>
+    <port name='xOut_0' clock='clk' reset='areset' width='36' dir='out' role='data' qsys_role='data_xOut_0' stm=''/>
+    <port name='xOut_1' clock='clk' reset='areset' width='36' dir='out' role='data' qsys_role='data_xOut_1' stm=''/>
+    <port name='xOut_2' clock='clk' reset='areset' width='36' dir='out' role='data' qsys_role='data_xOut_2' stm=''/>
+    <port name='xOut_3' clock='clk' reset='areset' width='36' dir='out' role='data' qsys_role='data_xOut_3' stm=''/>
+    <file path='eda/sim_lib/altera_mf.v' base='quartus' type='vhdl' usage='simOnly' lib='altera_mf_ver'/>
+    <file path='eda/sim_lib/altera_lnsim_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/altera_lnsim.sv' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/tennm_atoms.vhd' base='quartus' type='vhdl' usage='simOnly' lib='tennm'/>
+    <file path='eda/sim_lib/tennm_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='tennm'/>
+    <file path='eda/sim_lib/mentor/tennm_atoms_ncrypt.sv' base='quartus' type='vhdl' usage='simOnly' lib='tennm'/>
+</island>

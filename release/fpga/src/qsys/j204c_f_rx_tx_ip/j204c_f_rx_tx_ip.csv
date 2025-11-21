@@ -1,0 +1,26 @@
+# system info j204c_f_rx_tx_ip on 2025.10.16.14:59:00
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for j204c_f_rx_tx_ip on 2025.10.16.14:59:00
+files:
+filepath,kind,attributes,module,is_top
+sim/j204c_f_rx_tx_ip.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,j204c_f_rx_tx_ip,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+j204c_f_rx_tx_ip.avs_reset,j204c_f_rx_tx_ip_reset_bridge_2
+j204c_f_rx_tx_ip.intel_jesd204c_f,j204c_f_rx_tx_ip_intel_jesd204c_f
+j204c_f_rx_tx_ip.jesd_link_clk,j204c_f_rx_tx_ip_clock_bridge_1
+j204c_f_rx_tx_ip.mgmt_clk,j204c_f_rx_tx_ip_clock_bridge_0
+j204c_f_rx_tx_ip.mgmt_reset,j204c_f_rx_tx_ip_reset_bridge_0
+j204c_f_rx_tx_ip.reset_controller_0,j204c_f_rx_tx_ip_reset_controller_0
+j204c_f_rx_tx_ip.reset_sequencer_0,j204c_f_rx_tx_ip_reset_sequencer_0
+j204c_f_rx_tx_ip.rx_reset,j204c_f_rx_tx_ip_tx_reset_0
+j204c_f_rx_tx_ip.systemclk_f,j204c_f_rx_tx_ip_systemclk_f
+j204c_f_rx_tx_ip.tx_reset,j204c_f_rx_tx_ip_avs_reset_0

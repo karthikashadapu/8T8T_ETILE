@@ -1,0 +1,59 @@
+	component dxc_ss_top is
+		port (
+			csr_in_clk_clk                          : in  std_logic                     := 'X';             -- clk
+			dsp_in_clk_clk                          : in  std_logic                     := 'X';             -- clk
+			soft_rst_rst_soft_n                     : in  std_logic                     := 'X';             -- rst_soft_n
+			ifft_duc_sink_l1_valid                  : in  std_logic                     := 'X';             -- valid
+			ifft_duc_sink_l1_data                   : in  std_logic_vector(31 downto 0) := (others => 'X'); -- data
+			ifft_duc_sink_l1_channel                : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- channel
+			ifft_duc_sink_l2_valid                  : in  std_logic                     := 'X';             -- valid
+			ifft_duc_sink_l2_data                   : in  std_logic_vector(31 downto 0) := (others => 'X'); -- data
+			ifft_duc_sink_l2_channel                : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- channel
+			ddc_avst_sink_avst_sink_valid           : in  std_logic                     := 'X';             -- avst_sink_valid
+			ddc_avst_sink_avst_sink_channel         : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- avst_sink_channel
+			ddc_avst_sink_avst_sink_data_l1         : in  std_logic_vector(31 downto 0) := (others => 'X'); -- avst_sink_data_l1
+			ddc_avst_sink_avst_sink_data_l2         : in  std_logic_vector(31 downto 0) := (others => 'X'); -- avst_sink_data_l2
+			ddc_avst_sink_avst_sink_data_l3         : in  std_logic_vector(31 downto 0) := (others => 'X'); -- avst_sink_data_l3
+			ddc_avst_sink_avst_sink_data_l4         : in  std_logic_vector(31 downto 0) := (others => 'X'); -- avst_sink_data_l4
+			ddc_avst_sink_avst_sink_data_l5         : in  std_logic_vector(31 downto 0) := (others => 'X'); -- avst_sink_data_l5
+			ddc_avst_sink_avst_sink_data_l6         : in  std_logic_vector(31 downto 0) := (others => 'X'); -- avst_sink_data_l6
+			ddc_avst_sink_avst_sink_data_l7         : in  std_logic_vector(31 downto 0) := (others => 'X'); -- avst_sink_data_l7
+			ddc_avst_sink_avst_sink_data_l8         : in  std_logic_vector(31 downto 0) := (others => 'X'); -- avst_sink_data_l8
+			duc_avst_source_duc_avst_source_valid   : out std_logic;                                        -- duc_avst_source_valid
+			duc_avst_source_duc_avst_source_data0   : out std_logic_vector(31 downto 0);                    -- duc_avst_source_data0
+			duc_avst_source_duc_avst_source_data1   : out std_logic_vector(31 downto 0);                    -- duc_avst_source_data1
+			duc_avst_source_duc_avst_source_data2   : out std_logic_vector(31 downto 0);                    -- duc_avst_source_data2
+			duc_avst_source_duc_avst_source_data3   : out std_logic_vector(31 downto 0);                    -- duc_avst_source_data3
+			duc_avst_source_duc_avst_source_data4   : out std_logic_vector(31 downto 0);                    -- duc_avst_source_data4
+			duc_avst_source_duc_avst_source_data5   : out std_logic_vector(31 downto 0);                    -- duc_avst_source_data5
+			duc_avst_source_duc_avst_source_data6   : out std_logic_vector(31 downto 0);                    -- duc_avst_source_data6
+			duc_avst_source_duc_avst_source_data7   : out std_logic_vector(31 downto 0);                    -- duc_avst_source_data7
+			duc_avst_source_duc_avst_source_channel : out std_logic_vector(7 downto 0);                     -- duc_avst_source_channel
+			ddc_source_l1_valid                     : out std_logic;                                        -- valid
+			ddc_source_l1_data                      : out std_logic_vector(31 downto 0);                    -- data
+			ddc_source_l1_channel                   : out std_logic_vector(7 downto 0);                     -- channel
+			ddc_source_l2_valid                     : out std_logic;                                        -- valid
+			ddc_source_l2_data                      : out std_logic_vector(31 downto 0);                    -- data
+			ddc_source_l2_channel                   : out std_logic_vector(7 downto 0);                     -- channel
+			rfp_pulse_data                          : in  std_logic                     := 'X';             -- data
+			bw_config_cc1_bw_config_cc1             : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- bw_config_cc1
+			bw_config_cc2_bw_config_cc2             : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- bw_config_cc2
+			dxc_avst_selctd_cap_intf_valid          : out std_logic;                                        -- valid
+			dxc_avst_selctd_cap_intf_data           : out std_logic_vector(31 downto 0);                    -- data
+			dxc_avst_selctd_cap_intf_channel        : out std_logic_vector(2 downto 0);                     -- channel
+			dxc_ss_0_interface_sel_data             : in  std_logic_vector(31 downto 0) := (others => 'X'); -- data
+			h2f_lw_bridge_s0_waitrequest            : out std_logic;                                        -- waitrequest
+			h2f_lw_bridge_s0_readdata               : out std_logic_vector(31 downto 0);                    -- readdata
+			h2f_lw_bridge_s0_readdatavalid          : out std_logic;                                        -- readdatavalid
+			h2f_lw_bridge_s0_burstcount             : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- burstcount
+			h2f_lw_bridge_s0_writedata              : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			h2f_lw_bridge_s0_address                : in  std_logic_vector(16 downto 0) := (others => 'X'); -- address
+			h2f_lw_bridge_s0_write                  : in  std_logic                     := 'X';             -- write
+			h2f_lw_bridge_s0_read                   : in  std_logic                     := 'X';             -- read
+			h2f_lw_bridge_s0_byteenable             : in  std_logic_vector(3 downto 0)  := (others => 'X'); -- byteenable
+			h2f_lw_bridge_s0_debugaccess            : in  std_logic                     := 'X';             -- debugaccess
+			csr_in_reset_reset                      : in  std_logic                     := 'X';             -- reset
+			dsp_in_reset_reset_n                    : in  std_logic                     := 'X'              -- reset_n
+		);
+	end component dxc_ss_top;
+

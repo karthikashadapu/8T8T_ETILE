@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<entity name='ddc_model_DUT_DUT_Chan_Filter_l1_Chan_Filter_routing_reg_chan_re1' floating-point-script-prefix='ddc_model_DUT_DUT_Chan_Filter_l1_Chan_Filter_routing_reg_chan_re1_fpc'>
+  <clock name='sys' port='clk' reset='areset' reset-type='high' />
+</entity>

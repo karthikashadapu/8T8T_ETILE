@@ -1,0 +1,25 @@
+# system info sys_manager on 2025.10.16.14:53:37
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for sys_manager on 2025.10.16.14:53:37
+files:
+filepath,kind,attributes,module,is_top
+sim/sys_manager.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,sys_manager,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+sys_manager.clk_100,clk_100
+sys_manager.dma_subsys_port0_rx_dma_resetn,dma_subsys_port0_rx_dma_resetn
+sys_manager.dma_subsys_port1_rx_dma_resetn,dma_subsys_port1_rx_dma_resetn
+sys_manager.ftile_iopll_ptp_sampling,qsys_top_iopll_0
+sys_manager.ftile_iopll_todsync_sampling,ftile_iopll_todsync_sampling
+sys_manager.qsys_top_master_todclk_0,qsys_top_master_todclk_0
+sys_manager.rst_in,rst_in
+sys_manager.sysid,sysid
+sys_manager.user_rst_clkgate_0,user_rst_clkgate_0

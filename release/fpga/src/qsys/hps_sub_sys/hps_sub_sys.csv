@@ -1,0 +1,20 @@
+# system info hps_sub_sys on 2025.10.16.14:54:01
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for hps_sub_sys on 2025.10.16.14:54:01
+files:
+filepath,kind,attributes,module,is_top
+sim/hps_sub_sys.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,hps_sub_sys,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+hps_sub_sys.agilex_axi_bridge_for_acp_0,hps_sub_sys_agilex_axi_bridge_for_acp_0
+hps_sub_sys.agilex_hps,agilex_hps
+hps_sub_sys.emif_calbus_0,emif_calbus_0
+hps_sub_sys.emif_hps,emif_hps

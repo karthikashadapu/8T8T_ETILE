@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<entity name='streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_VFFT_btb_VFFT_Light_btb_FFT_Pipe_btb_FFT1_VFFT2_btb_DelayStage_btb_vdelay2_PD_EdgeDetect' floating-point-script-prefix='streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_VFFT_btb_VFFT_Light_bt0000delay2_PD_EdgeDetect_fpc'>
+  <clock name='sys' port='clk' reset='areset' reset-type='high' />
+</entity>

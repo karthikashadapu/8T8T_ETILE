@@ -1,0 +1,201 @@
+	component hps_sub_sys is
+		port (
+			acp_0_clock_clk                           : in    std_logic                      := 'X';             -- clk
+			acp_0_reset_reset                         : in    std_logic                      := 'X';             -- reset
+			acp_0_csr_clock_clk                       : in    std_logic                      := 'X';             -- clk
+			acp_0_csr_reset_reset                     : in    std_logic                      := 'X';             -- reset
+			acp_0_csr_address                         : in    std_logic                      := 'X';             -- address
+			acp_0_csr_read                            : in    std_logic                      := 'X';             -- read
+			acp_0_csr_write                           : in    std_logic                      := 'X';             -- write
+			acp_0_csr_writedata                       : in    std_logic_vector(31 downto 0)  := (others => 'X'); -- writedata
+			acp_0_csr_readdata                        : out   std_logic_vector(31 downto 0);                     -- readdata
+			acp_0_s0_araddr                           : in    std_logic_vector(36 downto 0)  := (others => 'X'); -- araddr
+			acp_0_s0_arburst                          : in    std_logic_vector(1 downto 0)   := (others => 'X'); -- arburst
+			acp_0_s0_arcache                          : in    std_logic_vector(3 downto 0)   := (others => 'X'); -- arcache
+			acp_0_s0_arid                             : in    std_logic_vector(3 downto 0)   := (others => 'X'); -- arid
+			acp_0_s0_arlen                            : in    std_logic_vector(7 downto 0)   := (others => 'X'); -- arlen
+			acp_0_s0_arlock                           : in    std_logic                      := 'X';             -- arlock
+			acp_0_s0_arprot                           : in    std_logic_vector(2 downto 0)   := (others => 'X'); -- arprot
+			acp_0_s0_arready                          : out   std_logic;                                         -- arready
+			acp_0_s0_arsize                           : in    std_logic_vector(2 downto 0)   := (others => 'X'); -- arsize
+			acp_0_s0_arvalid                          : in    std_logic                      := 'X';             -- arvalid
+			acp_0_s0_awaddr                           : in    std_logic_vector(36 downto 0)  := (others => 'X'); -- awaddr
+			acp_0_s0_awburst                          : in    std_logic_vector(1 downto 0)   := (others => 'X'); -- awburst
+			acp_0_s0_awcache                          : in    std_logic_vector(3 downto 0)   := (others => 'X'); -- awcache
+			acp_0_s0_awid                             : in    std_logic_vector(3 downto 0)   := (others => 'X'); -- awid
+			acp_0_s0_awlen                            : in    std_logic_vector(7 downto 0)   := (others => 'X'); -- awlen
+			acp_0_s0_awlock                           : in    std_logic                      := 'X';             -- awlock
+			acp_0_s0_awprot                           : in    std_logic_vector(2 downto 0)   := (others => 'X'); -- awprot
+			acp_0_s0_awready                          : out   std_logic;                                         -- awready
+			acp_0_s0_awsize                           : in    std_logic_vector(2 downto 0)   := (others => 'X'); -- awsize
+			acp_0_s0_awvalid                          : in    std_logic                      := 'X';             -- awvalid
+			acp_0_s0_bid                              : out   std_logic_vector(3 downto 0);                      -- bid
+			acp_0_s0_bready                           : in    std_logic                      := 'X';             -- bready
+			acp_0_s0_bresp                            : out   std_logic_vector(1 downto 0);                      -- bresp
+			acp_0_s0_bvalid                           : out   std_logic;                                         -- bvalid
+			acp_0_s0_rdata                            : out   std_logic_vector(511 downto 0);                    -- rdata
+			acp_0_s0_rid                              : out   std_logic_vector(3 downto 0);                      -- rid
+			acp_0_s0_rlast                            : out   std_logic;                                         -- rlast
+			acp_0_s0_rready                           : in    std_logic                      := 'X';             -- rready
+			acp_0_s0_rresp                            : out   std_logic_vector(1 downto 0);                      -- rresp
+			acp_0_s0_rvalid                           : out   std_logic;                                         -- rvalid
+			acp_0_s0_wdata                            : in    std_logic_vector(511 downto 0) := (others => 'X'); -- wdata
+			acp_0_s0_wlast                            : in    std_logic                      := 'X';             -- wlast
+			acp_0_s0_wready                           : out   std_logic;                                         -- wready
+			acp_0_s0_wstrb                            : in    std_logic_vector(63 downto 0)  := (others => 'X'); -- wstrb
+			acp_0_s0_wvalid                           : in    std_logic                      := 'X';             -- wvalid
+			agilex_hps_f2h_stm_hw_events_stm_hwevents : in    std_logic_vector(43 downto 0)  := (others => 'X'); -- stm_hwevents
+			agilex_hps_h2f_cs_ntrst                   : in    std_logic                      := 'X';             -- ntrst
+			agilex_hps_h2f_cs_tck                     : in    std_logic                      := 'X';             -- tck
+			agilex_hps_h2f_cs_tdi                     : in    std_logic                      := 'X';             -- tdi
+			agilex_hps_h2f_cs_tdo                     : out   std_logic;                                         -- tdo
+			agilex_hps_h2f_cs_tdoen                   : out   std_logic;                                         -- tdoen
+			agilex_hps_h2f_cs_tms                     : in    std_logic                      := 'X';             -- tms
+			agilex_hps_hps_io_EMAC1_TX_CLK            : out   std_logic;                                         -- EMAC1_TX_CLK
+			agilex_hps_hps_io_EMAC1_TXD0              : out   std_logic;                                         -- EMAC1_TXD0
+			agilex_hps_hps_io_EMAC1_TXD1              : out   std_logic;                                         -- EMAC1_TXD1
+			agilex_hps_hps_io_EMAC1_TXD2              : out   std_logic;                                         -- EMAC1_TXD2
+			agilex_hps_hps_io_EMAC1_TXD3              : out   std_logic;                                         -- EMAC1_TXD3
+			agilex_hps_hps_io_EMAC1_RX_CTL            : in    std_logic                      := 'X';             -- EMAC1_RX_CTL
+			agilex_hps_hps_io_EMAC1_TX_CTL            : out   std_logic;                                         -- EMAC1_TX_CTL
+			agilex_hps_hps_io_EMAC1_RX_CLK            : in    std_logic                      := 'X';             -- EMAC1_RX_CLK
+			agilex_hps_hps_io_EMAC1_RXD0              : in    std_logic                      := 'X';             -- EMAC1_RXD0
+			agilex_hps_hps_io_EMAC1_RXD1              : in    std_logic                      := 'X';             -- EMAC1_RXD1
+			agilex_hps_hps_io_EMAC1_RXD2              : in    std_logic                      := 'X';             -- EMAC1_RXD2
+			agilex_hps_hps_io_EMAC1_RXD3              : in    std_logic                      := 'X';             -- EMAC1_RXD3
+			agilex_hps_hps_io_EMAC1_MDIO              : inout std_logic                      := 'X';             -- EMAC1_MDIO
+			agilex_hps_hps_io_EMAC1_MDC               : out   std_logic;                                         -- EMAC1_MDC
+			agilex_hps_hps_io_SDMMC_CMD               : inout std_logic                      := 'X';             -- SDMMC_CMD
+			agilex_hps_hps_io_SDMMC_D0                : inout std_logic                      := 'X';             -- SDMMC_D0
+			agilex_hps_hps_io_SDMMC_D1                : inout std_logic                      := 'X';             -- SDMMC_D1
+			agilex_hps_hps_io_SDMMC_D2                : inout std_logic                      := 'X';             -- SDMMC_D2
+			agilex_hps_hps_io_SDMMC_D3                : inout std_logic                      := 'X';             -- SDMMC_D3
+			agilex_hps_hps_io_SDMMC_D4                : inout std_logic                      := 'X';             -- SDMMC_D4
+			agilex_hps_hps_io_SDMMC_D5                : inout std_logic                      := 'X';             -- SDMMC_D5
+			agilex_hps_hps_io_SDMMC_D6                : inout std_logic                      := 'X';             -- SDMMC_D6
+			agilex_hps_hps_io_SDMMC_D7                : inout std_logic                      := 'X';             -- SDMMC_D7
+			agilex_hps_hps_io_SDMMC_CCLK              : out   std_logic;                                         -- SDMMC_CCLK
+			agilex_hps_hps_io_SPIM0_CLK               : out   std_logic;                                         -- SPIM0_CLK
+			agilex_hps_hps_io_SPIM0_MOSI              : out   std_logic;                                         -- SPIM0_MOSI
+			agilex_hps_hps_io_SPIM0_MISO              : in    std_logic                      := 'X';             -- SPIM0_MISO
+			agilex_hps_hps_io_SPIM0_SS0_N             : out   std_logic;                                         -- SPIM0_SS0_N
+			agilex_hps_hps_io_SPIM1_CLK               : out   std_logic;                                         -- SPIM1_CLK
+			agilex_hps_hps_io_SPIM1_MOSI              : out   std_logic;                                         -- SPIM1_MOSI
+			agilex_hps_hps_io_SPIM1_MISO              : in    std_logic                      := 'X';             -- SPIM1_MISO
+			agilex_hps_hps_io_SPIM1_SS0_N             : out   std_logic;                                         -- SPIM1_SS0_N
+			agilex_hps_hps_io_SPIM1_SS1_N             : out   std_logic;                                         -- SPIM1_SS1_N
+			agilex_hps_hps_io_UART1_RX                : in    std_logic                      := 'X';             -- UART1_RX
+			agilex_hps_hps_io_UART1_TX                : out   std_logic;                                         -- UART1_TX
+			agilex_hps_hps_io_I2C1_SDA                : inout std_logic                      := 'X';             -- I2C1_SDA
+			agilex_hps_hps_io_I2C1_SCL                : inout std_logic                      := 'X';             -- I2C1_SCL
+			agilex_hps_hps_io_hps_osc_clk             : in    std_logic                      := 'X';             -- hps_osc_clk
+			agilex_hps_hps_io_gpio0_io11              : inout std_logic                      := 'X';             -- gpio0_io11
+			agilex_hps_hps_io_gpio0_io12              : inout std_logic                      := 'X';             -- gpio0_io12
+			agilex_hps_hps_io_gpio0_io13              : inout std_logic                      := 'X';             -- gpio0_io13
+			agilex_hps_hps_io_gpio0_io14              : inout std_logic                      := 'X';             -- gpio0_io14
+			agilex_hps_hps_io_gpio0_io15              : inout std_logic                      := 'X';             -- gpio0_io15
+			agilex_hps_hps_io_gpio0_io16              : inout std_logic                      := 'X';             -- gpio0_io16
+			agilex_hps_hps_io_gpio0_io17              : inout std_logic                      := 'X';             -- gpio0_io17
+			agilex_hps_hps_io_gpio0_io18              : inout std_logic                      := 'X';             -- gpio0_io18
+			agilex_hps_hps_io_gpio1_io16              : inout std_logic                      := 'X';             -- gpio1_io16
+			agilex_hps_hps_io_gpio1_io17              : inout std_logic                      := 'X';             -- gpio1_io17
+			agilex_hps_h2f_reset_reset                : out   std_logic;                                         -- reset
+			agilex_hps_h2f_axi_clock_clk              : in    std_logic                      := 'X';             -- clk
+			agilex_hps_h2f_axi_reset_reset_n          : in    std_logic                      := 'X';             -- reset_n
+			agilex_hps_h2f_axi_master_awid            : out   std_logic_vector(3 downto 0);                      -- awid
+			agilex_hps_h2f_axi_master_awaddr          : out   std_logic_vector(31 downto 0);                     -- awaddr
+			agilex_hps_h2f_axi_master_awlen           : out   std_logic_vector(7 downto 0);                      -- awlen
+			agilex_hps_h2f_axi_master_awsize          : out   std_logic_vector(2 downto 0);                      -- awsize
+			agilex_hps_h2f_axi_master_awburst         : out   std_logic_vector(1 downto 0);                      -- awburst
+			agilex_hps_h2f_axi_master_awlock          : out   std_logic;                                         -- awlock
+			agilex_hps_h2f_axi_master_awcache         : out   std_logic_vector(3 downto 0);                      -- awcache
+			agilex_hps_h2f_axi_master_awprot          : out   std_logic_vector(2 downto 0);                      -- awprot
+			agilex_hps_h2f_axi_master_awvalid         : out   std_logic;                                         -- awvalid
+			agilex_hps_h2f_axi_master_awready         : in    std_logic                      := 'X';             -- awready
+			agilex_hps_h2f_axi_master_wdata           : out   std_logic_vector(127 downto 0);                    -- wdata
+			agilex_hps_h2f_axi_master_wstrb           : out   std_logic_vector(15 downto 0);                     -- wstrb
+			agilex_hps_h2f_axi_master_wlast           : out   std_logic;                                         -- wlast
+			agilex_hps_h2f_axi_master_wvalid          : out   std_logic;                                         -- wvalid
+			agilex_hps_h2f_axi_master_wready          : in    std_logic                      := 'X';             -- wready
+			agilex_hps_h2f_axi_master_bid             : in    std_logic_vector(3 downto 0)   := (others => 'X'); -- bid
+			agilex_hps_h2f_axi_master_bresp           : in    std_logic_vector(1 downto 0)   := (others => 'X'); -- bresp
+			agilex_hps_h2f_axi_master_bvalid          : in    std_logic                      := 'X';             -- bvalid
+			agilex_hps_h2f_axi_master_bready          : out   std_logic;                                         -- bready
+			agilex_hps_h2f_axi_master_arid            : out   std_logic_vector(3 downto 0);                      -- arid
+			agilex_hps_h2f_axi_master_araddr          : out   std_logic_vector(31 downto 0);                     -- araddr
+			agilex_hps_h2f_axi_master_arlen           : out   std_logic_vector(7 downto 0);                      -- arlen
+			agilex_hps_h2f_axi_master_arsize          : out   std_logic_vector(2 downto 0);                      -- arsize
+			agilex_hps_h2f_axi_master_arburst         : out   std_logic_vector(1 downto 0);                      -- arburst
+			agilex_hps_h2f_axi_master_arlock          : out   std_logic;                                         -- arlock
+			agilex_hps_h2f_axi_master_arcache         : out   std_logic_vector(3 downto 0);                      -- arcache
+			agilex_hps_h2f_axi_master_arprot          : out   std_logic_vector(2 downto 0);                      -- arprot
+			agilex_hps_h2f_axi_master_arvalid         : out   std_logic;                                         -- arvalid
+			agilex_hps_h2f_axi_master_arready         : in    std_logic                      := 'X';             -- arready
+			agilex_hps_h2f_axi_master_rid             : in    std_logic_vector(3 downto 0)   := (others => 'X'); -- rid
+			agilex_hps_h2f_axi_master_rdata           : in    std_logic_vector(127 downto 0) := (others => 'X'); -- rdata
+			agilex_hps_h2f_axi_master_rresp           : in    std_logic_vector(1 downto 0)   := (others => 'X'); -- rresp
+			agilex_hps_h2f_axi_master_rlast           : in    std_logic                      := 'X';             -- rlast
+			agilex_hps_h2f_axi_master_rvalid          : in    std_logic                      := 'X';             -- rvalid
+			agilex_hps_h2f_axi_master_rready          : out   std_logic;                                         -- rready
+			agilex_hps_h2f_lw_axi_clock_clk           : in    std_logic                      := 'X';             -- clk
+			agilex_hps_h2f_lw_axi_reset_reset_n       : in    std_logic                      := 'X';             -- reset_n
+			agilex_hps_h2f_lw_axi_master_awid         : out   std_logic_vector(3 downto 0);                      -- awid
+			agilex_hps_h2f_lw_axi_master_awaddr       : out   std_logic_vector(20 downto 0);                     -- awaddr
+			agilex_hps_h2f_lw_axi_master_awlen        : out   std_logic_vector(7 downto 0);                      -- awlen
+			agilex_hps_h2f_lw_axi_master_awsize       : out   std_logic_vector(2 downto 0);                      -- awsize
+			agilex_hps_h2f_lw_axi_master_awburst      : out   std_logic_vector(1 downto 0);                      -- awburst
+			agilex_hps_h2f_lw_axi_master_awlock       : out   std_logic;                                         -- awlock
+			agilex_hps_h2f_lw_axi_master_awcache      : out   std_logic_vector(3 downto 0);                      -- awcache
+			agilex_hps_h2f_lw_axi_master_awprot       : out   std_logic_vector(2 downto 0);                      -- awprot
+			agilex_hps_h2f_lw_axi_master_awvalid      : out   std_logic;                                         -- awvalid
+			agilex_hps_h2f_lw_axi_master_awready      : in    std_logic                      := 'X';             -- awready
+			agilex_hps_h2f_lw_axi_master_wdata        : out   std_logic_vector(31 downto 0);                     -- wdata
+			agilex_hps_h2f_lw_axi_master_wstrb        : out   std_logic_vector(3 downto 0);                      -- wstrb
+			agilex_hps_h2f_lw_axi_master_wlast        : out   std_logic;                                         -- wlast
+			agilex_hps_h2f_lw_axi_master_wvalid       : out   std_logic;                                         -- wvalid
+			agilex_hps_h2f_lw_axi_master_wready       : in    std_logic                      := 'X';             -- wready
+			agilex_hps_h2f_lw_axi_master_bid          : in    std_logic_vector(3 downto 0)   := (others => 'X'); -- bid
+			agilex_hps_h2f_lw_axi_master_bresp        : in    std_logic_vector(1 downto 0)   := (others => 'X'); -- bresp
+			agilex_hps_h2f_lw_axi_master_bvalid       : in    std_logic                      := 'X';             -- bvalid
+			agilex_hps_h2f_lw_axi_master_bready       : out   std_logic;                                         -- bready
+			agilex_hps_h2f_lw_axi_master_arid         : out   std_logic_vector(3 downto 0);                      -- arid
+			agilex_hps_h2f_lw_axi_master_araddr       : out   std_logic_vector(20 downto 0);                     -- araddr
+			agilex_hps_h2f_lw_axi_master_arlen        : out   std_logic_vector(7 downto 0);                      -- arlen
+			agilex_hps_h2f_lw_axi_master_arsize       : out   std_logic_vector(2 downto 0);                      -- arsize
+			agilex_hps_h2f_lw_axi_master_arburst      : out   std_logic_vector(1 downto 0);                      -- arburst
+			agilex_hps_h2f_lw_axi_master_arlock       : out   std_logic;                                         -- arlock
+			agilex_hps_h2f_lw_axi_master_arcache      : out   std_logic_vector(3 downto 0);                      -- arcache
+			agilex_hps_h2f_lw_axi_master_arprot       : out   std_logic_vector(2 downto 0);                      -- arprot
+			agilex_hps_h2f_lw_axi_master_arvalid      : out   std_logic;                                         -- arvalid
+			agilex_hps_h2f_lw_axi_master_arready      : in    std_logic                      := 'X';             -- arready
+			agilex_hps_h2f_lw_axi_master_rid          : in    std_logic_vector(3 downto 0)   := (others => 'X'); -- rid
+			agilex_hps_h2f_lw_axi_master_rdata        : in    std_logic_vector(31 downto 0)  := (others => 'X'); -- rdata
+			agilex_hps_h2f_lw_axi_master_rresp        : in    std_logic_vector(1 downto 0)   := (others => 'X'); -- rresp
+			agilex_hps_h2f_lw_axi_master_rlast        : in    std_logic                      := 'X';             -- rlast
+			agilex_hps_h2f_lw_axi_master_rvalid       : in    std_logic                      := 'X';             -- rvalid
+			agilex_hps_h2f_lw_axi_master_rready       : out   std_logic;                                         -- rready
+			agilex_hps_f2h_axi_clock_clk              : in    std_logic                      := 'X';             -- clk
+			agilex_hps_f2h_axi_reset_reset_n          : in    std_logic                      := 'X';             -- reset_n
+			agilex_hps_f2h_irq0_irq                   : in    std_logic_vector(31 downto 0)  := (others => 'X'); -- irq
+			agilex_hps_f2h_irq1_irq                   : in    std_logic_vector(31 downto 0)  := (others => 'X'); -- irq
+			emif_hps_pll_ref_clk_clk                  : in    std_logic                      := 'X';             -- clk
+			emif_hps_oct_oct_rzqin                    : in    std_logic                      := 'X';             -- oct_rzqin
+			emif_hps_mem_mem_ck                       : out   std_logic_vector(0 downto 0);                      -- mem_ck
+			emif_hps_mem_mem_ck_n                     : out   std_logic_vector(0 downto 0);                      -- mem_ck_n
+			emif_hps_mem_mem_a                        : out   std_logic_vector(16 downto 0);                     -- mem_a
+			emif_hps_mem_mem_act_n                    : out   std_logic_vector(0 downto 0);                      -- mem_act_n
+			emif_hps_mem_mem_ba                       : out   std_logic_vector(1 downto 0);                      -- mem_ba
+			emif_hps_mem_mem_bg                       : out   std_logic_vector(0 downto 0);                      -- mem_bg
+			emif_hps_mem_mem_cke                      : out   std_logic_vector(0 downto 0);                      -- mem_cke
+			emif_hps_mem_mem_cs_n                     : out   std_logic_vector(1 downto 0);                      -- mem_cs_n
+			emif_hps_mem_mem_odt                      : out   std_logic_vector(0 downto 0);                      -- mem_odt
+			emif_hps_mem_mem_reset_n                  : out   std_logic_vector(0 downto 0);                      -- mem_reset_n
+			emif_hps_mem_mem_par                      : out   std_logic_vector(0 downto 0);                      -- mem_par
+			emif_hps_mem_mem_alert_n                  : in    std_logic_vector(0 downto 0)   := (others => 'X'); -- mem_alert_n
+			emif_hps_mem_mem_dqs                      : inout std_logic_vector(8 downto 0)   := (others => 'X'); -- mem_dqs
+			emif_hps_mem_mem_dqs_n                    : inout std_logic_vector(8 downto 0)   := (others => 'X'); -- mem_dqs_n
+			emif_hps_mem_mem_dq                       : inout std_logic_vector(71 downto 0)  := (others => 'X'); -- mem_dq
+			emif_hps_mem_mem_dbi_n                    : inout std_logic_vector(8 downto 0)   := (others => 'X')  -- mem_dbi_n
+		);
+	end component hps_sub_sys;
+

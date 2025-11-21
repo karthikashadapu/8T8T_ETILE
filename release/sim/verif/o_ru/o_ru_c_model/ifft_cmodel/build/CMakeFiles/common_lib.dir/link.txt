@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcommon_lib.a CMakeFiles/common_lib.dir/support/csl.cpp.o CMakeFiles/common_lib.dir/support/csl_io.cpp.o CMakeFiles/common_lib.dir/demo_ifft_IFFT_4K_BitReverseCoreC.cpp.o CMakeFiles/common_lib.dir/demo_ifft_IFFT_4K_FFT.cpp.o CMakeFiles/common_lib.dir/demo_ifft_IFFT_4K.cpp.o
+/usr/bin/ranlib libcommon_lib.a

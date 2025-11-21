@@ -1,0 +1,25 @@
+# system info tod_subsys on 2025.10.16.14:58:13
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for tod_subsys on 2025.10.16.14:58:13
+files:
+filepath,kind,attributes,module,is_top
+sim/tod_subsys.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,tod_subsys,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+tod_subsys.cdc_pipeline_0,tod_subsys_cdc_pipeline_0
+tod_subsys.tod_subsys_clock_bridge_100,tod_subsys_clock_bridge_100
+tod_subsys.tod_subsys_clock_bridge_156,tod_subsys_clock_bridge_156
+tod_subsys.tod_subsys_reset_bridge_100,tod_subsys_reset_bridge_100
+tod_subsys.tod_subsys_reset_bridge_156,tod_subsys_reset_bridge_156
+tod_subsys.tod_sync_interface_adapter_0_0,tod_subsys_tod_sync_interface_adapter_0_0
+tod_subsys.tod_timestamp_96b_0,tod_subsys_tod_timestamp_96b_0
+tod_subsys.master_tod_subsys_0,master_tod_subsys
+tod_subsys.tod_slave_sub_system_0,tod_slave_sub_system

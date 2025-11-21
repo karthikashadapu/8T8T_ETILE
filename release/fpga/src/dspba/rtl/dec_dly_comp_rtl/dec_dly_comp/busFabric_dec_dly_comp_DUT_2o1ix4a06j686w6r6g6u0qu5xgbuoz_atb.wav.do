@@ -1,0 +1,70 @@
+onerror {resume}
+
+# obtain Modelsim version and extract the NN.Nc part after vsim
+quietly set vsim_ver [regexp -inline {vsim (\d+\.\d+)(\w?)} [vsim -version]]
+quietly set has_fixpt_radix 0
+if {[lindex $vsim_ver 1] == 10.2} {
+    if {[lindex $vsim_ver 2] >= "d"} {
+        quietly set has_fixpt_radix 1
+    }
+} elseif {[lindex $vsim_ver 1] > 10.2} {
+    quietly set has_fixpt_radix 1
+}
+
+proc add_fixpt_wave {name width frac_width signed} {
+    global has_fixpt_radix
+    if {$frac_width > 0 && $has_fixpt_radix} {
+        set type "[string index $signed 0]fix${width}_En${frac_width}"
+        if {[lsearch [radix names] $type] < 0} {
+            if {$signed == "signed"} {
+                radix define $type -fixed -signed -fraction $frac_width
+            } else {
+                radix define $type -fixed -fraction $frac_width
+            }
+        }
+        add wave -noupdate -format Literal -radix $type $name
+    } else {
+        add wave -noupdate -format Literal -radix $signed $name
+    }
+}
+
+add wave -noupdate -divider {Input Ports}
+add wave -noupdate -format Logic /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/dut/clk
+add wave -noupdate -format Logic /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/dut/areset
+add wave -noupdate -format Logic /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/dut/bus_clk
+add wave -noupdate -format Logic /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/dut/bus_areset
+add wave -noupdate -divider {Output Ports}
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/dut/out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Ant_Gain_RegField_x_tpl 16 13 unsigned
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/sim/out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Ant_Gain_RegField_x_tpl_stm 16 13 unsigned
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/dut/out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Ant_Gain_RegField1_x_tpl 16 13 unsigned
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/sim/out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Ant_Gain_RegField1_x_tpl_stm 16 13 unsigned
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/dut/out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Ant_Gain_RegField2_x_tpl 16 13 unsigned
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/sim/out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Ant_Gain_RegField2_x_tpl_stm 16 13 unsigned
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/dut/out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Ant_Gain_RegField3_x_tpl 16 13 unsigned
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/sim/out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Ant_Gain_RegField3_x_tpl_stm 16 13 unsigned
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/dut/out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField1_x_tpl 8 0 unsigned
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/sim/out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField1_x_tpl_stm 8 0 unsigned
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/dut/out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField2_x_tpl 8 0 unsigned
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/sim/out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField2_x_tpl_stm 8 0 unsigned
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/dut/out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField3_x_tpl 8 0 unsigned
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/sim/out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField3_x_tpl_stm 8 0 unsigned
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/dut/out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField4_x_tpl 8 0 unsigned
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/sim/out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField4_x_tpl_stm 8 0 unsigned
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/dut/out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField6_x_tpl 8 0 unsigned
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/sim/out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField6_x_tpl_stm 8 0 unsigned
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/dut/out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField7_x_tpl 8 0 unsigned
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/sim/out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField7_x_tpl_stm 8 0 unsigned
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/dut/out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField8_x_tpl 8 0 unsigned
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/sim/out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField8_x_tpl_stm 8 0 unsigned
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/dut/out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField9_x_tpl 8 0 unsigned
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/sim/out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField9_x_tpl_stm 8 0 unsigned
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/dut/out_AMMregisterWireData_dec_dly_comp_DUT_DUT_By_Pass_RegField_x_tpl 16 0 unsigned
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/sim/out_AMMregisterWireData_dec_dly_comp_DUT_DUT_By_Pass_RegField_x_tpl_stm 16 0 unsigned
+add wave -noupdate -divider {Bus Ports}
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/sim/busIn_writedata_stm 32 0 unsigned
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/sim/busIn_address_stm 14 0 unsigned
+add wave -noupdate -format Logical /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/sim/busIn_write_stm
+add wave -noupdate -format Logical /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/sim/busIn_read_stm
+add wave -noupdate -format Logical /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/dut/busOut_readdatavalid
+add_fixpt_wave /busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz_atb/dut/busOut_readdata 32 0 unsigned
+TreeUpdate [SetDefaultTree]

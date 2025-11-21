@@ -1,0 +1,19 @@
+<?xml version='1.0'?>
+<island simulinkPath='LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage2/Filt_DEC_by_2_stage2' topLevelEntity='LongPRACH_sim_prach_wrap_LongPRACH_DUT_Longprach_C_M_plane_LongPRACH_core_DECIMA0000Filt_DEC_by_2_stage2'>
+    <port name='clk' dir='in' role='clock'/>
+    <port name='areset' dir='in' clock='clk' role='resetHigh'/>
+    <port name='in_1_imag_din_tpl' clock='clk' reset='areset' width='16' dir='in' role='data' qsys_role='data_in_1_imag_din_tpl' stm='' highLevelName='din' highLevelIndex='1' vector='0' complex='1'/>
+    <port name='in_1_real_din_tpl' clock='clk' reset='areset' width='16' dir='in' role='data' qsys_role='data_in_1_real_din_tpl' stm='' highLevelName='din' highLevelIndex='1' vector='0' complex='0'/>
+    <port name='in_2_vin_tpl' clock='clk' reset='areset' width='1' dir='in' role='valid' qsys_role='valid_in_2_vin_tpl' stm='' highLevelName='vin' highLevelIndex='2' vector='0' complex='0'/>
+    <port name='in_3_cin_tpl' clock='clk' reset='areset' width='8' dir='in' role='channel' qsys_role='channel_in_3_cin_tpl' stm='' highLevelName='cin' highLevelIndex='3' vector='0' complex='0'/>
+    <port name='out_1_imag_dout_tpl' clock='clk' reset='areset' width='16' dir='out' role='data' qsys_role='data_out_1_imag_dout_tpl' stm='' highLevelName='dout' highLevelIndex='1' vector='0' complex='1'/>
+    <port name='out_1_real_dout_tpl' clock='clk' reset='areset' width='16' dir='out' role='data' qsys_role='data_out_1_real_dout_tpl' stm='' highLevelName='dout' highLevelIndex='1' vector='0' complex='0'/>
+    <port name='out_2_vout_tpl' clock='clk' reset='areset' width='1' dir='out' role='valid' qsys_role='valid_out_2_vout_tpl' stm='' highLevelName='vout' highLevelIndex='2' vector='0' complex='0'/>
+    <port name='out_3_cout_tpl' clock='clk' reset='areset' width='8' dir='out' role='channel' qsys_role='channel_out_3_cout_tpl' stm='' highLevelName='cout' highLevelIndex='3' vector='0' complex='0'/>
+    <file path='eda/sim_lib/altera_mf.v' base='quartus' type='vhdl' usage='simOnly' lib='altera_mf_ver'/>
+    <file path='eda/sim_lib/altera_lnsim_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/altera_lnsim.sv' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/tennm_atoms.vhd' base='quartus' type='vhdl' usage='simOnly' lib='tennm'/>
+    <file path='eda/sim_lib/tennm_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='tennm'/>
+    <file path='eda/sim_lib/mentor/tennm_atoms_ncrypt.sv' base='quartus' type='vhdl' usage='simOnly' lib='tennm'/>
+</island>

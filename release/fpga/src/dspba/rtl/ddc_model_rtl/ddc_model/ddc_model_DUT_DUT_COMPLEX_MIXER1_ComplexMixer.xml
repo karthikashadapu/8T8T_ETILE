@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="file:////mnt/media/Tools/Altera/Quartus_23p3/quartus/dspba/Blocksets/BaseBlocks/modelip.xsl"?>
+<MODEL>
+<NAME>ddc_model/DUT/DUT/COMPLEX_MIXER1/ComplexMixer</NAME>
+<BUILD_YEAR>2023</BUILD_YEAR>
+<LATENCY block='lastTStep'>8</LATENCY>
+<DOCPATH>file:////mnt/media/Tools/Altera/Quartus_23p3/quartus/dspba/Docs/Help/</DOCPATH>
+<DESCRIPTION>
+This help page relates to the specific instance 'ddc_model_DUT_DUT_COMPLEX_MIXER1_ComplexMixer' of the MIXC block
+</DESCRIPTION>
+<HELP>file:////mnt/media/Tools/Altera/Quartus_23p3/quartus/dspba/Docs/Help/MIXC_help.html</HELP>
+<BLOCKTYPE>MIXC</BLOCKTYPE>
+<INFO>
+ <TEXT>Created using DSP Builder for Intel(R) FPGAs - Advanced Blockset software</TEXT>
+</INFO>
+<INFO>
+ <TEXT>Written on Thu Jan  9 15:36:32 2025
+</TEXT>
+</INFO>
+<PORTS>
+<PORT>
+ <NAME>In_v</NAME>
+ <WIDTH>1</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>Qualifying signal to indicate validity of data signals</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>In_c</NAME>
+ <WIDTH>8</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>Qualifying signal to indicate channel of data signals</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>iIn_0</NAME>
+ <WIDTH>32</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>Data signal</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>iIn_1</NAME>
+ <WIDTH>32</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>Data signal</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>iIn_2</NAME>
+ <WIDTH>32</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>Data signal</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>iIn_3</NAME>
+ <WIDTH>32</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>Data signal</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>qIn_0</NAME>
+ <WIDTH>32</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>General Purpose Input</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>qIn_1</NAME>
+ <WIDTH>32</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>General Purpose Input</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>qIn_2</NAME>
+ <WIDTH>32</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>General Purpose Input</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>qIn_3</NAME>
+ <WIDTH>32</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>General Purpose Input</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>sIn_0</NAME>
+ <WIDTH>16</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>General Purpose Input</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>sIn_1</NAME>
+ <WIDTH>16</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>General Purpose Input</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>sIn_2</NAME>
+ <WIDTH>16</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>General Purpose Input</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>sIn_3</NAME>
+ <WIDTH>16</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>General Purpose Input</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>cIn_0</NAME>
+ <WIDTH>16</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>General Purpose Input</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>cIn_1</NAME>
+ <WIDTH>16</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>General Purpose Input</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>cIn_2</NAME>
+ <WIDTH>16</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>General Purpose Input</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>cIn_3</NAME>
+ <WIDTH>16</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>General Purpose Input</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>qOut_0</NAME>
+ <WIDTH>49</WIDTH>
+ <DIRECTION>out</DIRECTION>
+ <DESCRIPTION>General Purpose Output</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>qOut_1</NAME>
+ <WIDTH>49</WIDTH>
+ <DIRECTION>out</DIRECTION>
+ <DESCRIPTION>General Purpose Output</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>qOut_2</NAME>
+ <WIDTH>49</WIDTH>
+ <DIRECTION>out</DIRECTION>
+ <DESCRIPTION>General Purpose Output</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>qOut_3</NAME>
+ <WIDTH>49</WIDTH>
+ <DIRECTION>out</DIRECTION>
+ <DESCRIPTION>General Purpose Output</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>Out_v</NAME>
+ <WIDTH>1</WIDTH>
+ <DIRECTION>out</DIRECTION>
+ <DESCRIPTION>Qualifying signal to indicate validity of data signals</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>Out_c</NAME>
+ <WIDTH>8</WIDTH>
+ <DIRECTION>out</DIRECTION>
+ <DESCRIPTION>Qualifying signal to indicate channel of data signals</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>iOut_0</NAME>
+ <WIDTH>49</WIDTH>
+ <DIRECTION>out</DIRECTION>
+ <DESCRIPTION>Data signal</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>iOut_1</NAME>
+ <WIDTH>49</WIDTH>
+ <DIRECTION>out</DIRECTION>
+ <DESCRIPTION>Data signal</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>iOut_2</NAME>
+ <WIDTH>49</WIDTH>
+ <DIRECTION>out</DIRECTION>
+ <DESCRIPTION>Data signal</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>iOut_3</NAME>
+ <WIDTH>49</WIDTH>
+ <DIRECTION>out</DIRECTION>
+ <DESCRIPTION>Data signal</DESCRIPTION>
+</PORT>
+</PORTS>
+
+<TIMING>
+ <WAVEFORM>
+  <NAME>Overview</NAME>
+  <PATH>./cic.svg</PATH>
+ </WAVEFORM>
+</TIMING>
+<RESOURCES>
+<TOTAL>
+ <LUT4>1525</LUT4>
+ <MULT>32</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</TOTAL>
+</RESOURCES>
+
+</MODEL>

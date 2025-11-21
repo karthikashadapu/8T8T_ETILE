@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_merlin_master_translator_192/sim/phipps_peak_altera_merlin_master_translator_192_lykd4la.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_master_translator_192" />
+ <file
+   path="altera_merlin_slave_translator_191/sim/phipps_peak_altera_merlin_slave_translator_191_x56fcki.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_slave_translator_191" />
+ <file
+   path="altera_merlin_master_agent_1922/sim/phipps_peak_altera_merlin_master_agent_1922_fy3n5ti.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_master_agent_1922" />
+ <file
+   path="altera_merlin_slave_agent_1921/sim/phipps_peak_altera_merlin_slave_agent_1921_b6r3djy.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_slave_agent_1921" />
+ <file
+   path="altera_merlin_slave_agent_1921/sim/altera_merlin_burst_uncompressor.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_slave_agent_1921" />
+ <file
+   path="altera_avalon_sc_fifo_1932/sim/phipps_peak_altera_avalon_sc_fifo_1932_w27kryi.v"
+   type="VERILOG"
+   library="altera_avalon_sc_fifo_1932" />
+ <file
+   path="altera_merlin_router_1921/sim/phipps_peak_altera_merlin_router_1921_rgfeqxi.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_router_1921" />
+ <file
+   path="altera_merlin_router_1921/sim/phipps_peak_altera_merlin_router_1921_wmekdwi.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_router_1921" />
+ <file
+   path="altera_merlin_traffic_limiter_1921/sim/phipps_peak_altera_merlin_traffic_limiter_altera_avalon_sc_fifo_1921_3aaowpa.v"
+   type="VERILOG"
+   library="altera_merlin_traffic_limiter_1921"
+   hasInlineConfiguration="true" />
+ <file
+   path="altera_merlin_traffic_limiter_1921/sim/altera_merlin_reorder_memory.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_traffic_limiter_1921" />
+ <file
+   path="altera_merlin_traffic_limiter_1921/sim/altera_avalon_st_pipeline_base.v"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_traffic_limiter_1921" />
+ <file
+   path="altera_merlin_traffic_limiter_1921/sim/phipps_peak_altera_merlin_traffic_limiter_1921_74hvqpa.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_traffic_limiter_1921" />
+ <file
+   path="altera_merlin_demultiplexer_1921/sim/phipps_peak_altera_merlin_demultiplexer_1921_e4hkmiy.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_demultiplexer_1921" />
+ <file
+   path="altera_merlin_multiplexer_1922/sim/phipps_peak_altera_merlin_multiplexer_1922_5xyj72q.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_multiplexer_1922" />
+ <file
+   path="altera_merlin_multiplexer_1922/sim/altera_merlin_arbitrator.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_multiplexer_1922" />
+ <file
+   path="altera_merlin_demultiplexer_1921/sim/phipps_peak_altera_merlin_demultiplexer_1921_6fab5ka.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_demultiplexer_1921" />
+ <file
+   path="altera_merlin_multiplexer_1922/sim/phipps_peak_altera_merlin_multiplexer_1922_b6avyny.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_multiplexer_1922" />
+ <file
+   path="altera_merlin_multiplexer_1922/sim/altera_merlin_arbitrator.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_multiplexer_1922" />
+ <file
+   path="altera_mm_interconnect_1920/sim/phipps_peak_altera_mm_interconnect_1920_vtiyxgy.v"
+   type="VERILOG"
+   library="altera_mm_interconnect_1920"
+   hasInlineConfiguration="true" />
+ <file
+   path="altera_merlin_router_1921/sim/phipps_peak_altera_merlin_router_1921_jcj72dy.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_router_1921" />
+ <file
+   path="altera_merlin_router_1921/sim/phipps_peak_altera_merlin_router_1921_4kcw2ra.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_router_1921" />
+ <file
+   path="altera_merlin_router_1921/sim/phipps_peak_altera_merlin_router_1921_orooxxa.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_router_1921" />
+ <file
+   path="altera_merlin_traffic_limiter_1921/sim/phipps_peak_altera_merlin_traffic_limiter_altera_avalon_sc_fifo_1921_rspjw2y.v"
+   type="VERILOG"
+   library="altera_merlin_traffic_limiter_1921"
+   hasInlineConfiguration="true" />
+ <file
+   path="altera_merlin_traffic_limiter_1921/sim/altera_merlin_reorder_memory.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_traffic_limiter_1921" />
+ <file
+   path="altera_merlin_traffic_limiter_1921/sim/altera_avalon_st_pipeline_base.v"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_traffic_limiter_1921" />
+ <file
+   path="altera_merlin_traffic_limiter_1921/sim/phipps_peak_altera_merlin_traffic_limiter_1921_ggluely.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_traffic_limiter_1921" />
+ <file
+   path="altera_merlin_demultiplexer_1921/sim/phipps_peak_altera_merlin_demultiplexer_1921_54oeqsi.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_demultiplexer_1921" />
+ <file
+   path="altera_merlin_multiplexer_1922/sim/phipps_peak_altera_merlin_multiplexer_1922_cdmpy6i.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_multiplexer_1922" />
+ <file
+   path="altera_merlin_multiplexer_1922/sim/altera_merlin_arbitrator.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_multiplexer_1922" />
+ <file
+   path="altera_merlin_demultiplexer_1921/sim/phipps_peak_altera_merlin_demultiplexer_1921_qdvqwaa.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_demultiplexer_1921" />
+ <file
+   path="altera_merlin_multiplexer_1922/sim/phipps_peak_altera_merlin_multiplexer_1922_afnh3sy.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_multiplexer_1922" />
+ <file
+   path="altera_merlin_multiplexer_1922/sim/altera_merlin_arbitrator.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_multiplexer_1922" />
+ <file
+   path="altera_merlin_width_adapter_1940/sim/phipps_peak_altera_merlin_width_adapter_1940_i2frn3q.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_width_adapter_1940" />
+ <file
+   path="altera_merlin_width_adapter_1940/sim/altera_merlin_address_alignment.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_width_adapter_1940" />
+ <file
+   path="altera_merlin_width_adapter_1940/sim/altera_merlin_burst_uncompressor.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_width_adapter_1940" />
+ <file
+   path="altera_merlin_width_adapter_1940/sim/phipps_peak_altera_merlin_width_adapter_1940_3dl3oli.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_width_adapter_1940" />
+ <file
+   path="altera_merlin_width_adapter_1940/sim/altera_merlin_address_alignment.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_width_adapter_1940" />
+ <file
+   path="altera_merlin_width_adapter_1940/sim/altera_merlin_burst_uncompressor.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_width_adapter_1940" />
+ <file
+   path="altera_mm_interconnect_1920/sim/phipps_peak_altera_mm_interconnect_1920_tz5bhqi.v"
+   type="VERILOG"
+   library="altera_mm_interconnect_1920"
+   hasInlineConfiguration="true" />
+ <file
+   path="altera_reset_controller_1922/sim/altera_reset_controller.v"
+   type="VERILOG"
+   library="altera_reset_controller_1922" />
+ <file
+   path="altera_reset_controller_1922/sim/altera_reset_synchronizer.v"
+   type="VERILOG"
+   library="altera_reset_controller_1922" />
+ <file
+   path="altera_reset_controller_1922/sim/altera_reset_controller.sdc"
+   type="SDC_ENTITY"
+   library="altera_reset_controller_1922" />
+ <file
+   path="sim/phipps_peak.v"
+   type="VERILOG"
+   library="phipps_peak"
+   hasInlineConfiguration="true" />
+ <topLevel name="phipps_peak.phipps_peak" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB014R24B2I2V" />
+</simPackage>

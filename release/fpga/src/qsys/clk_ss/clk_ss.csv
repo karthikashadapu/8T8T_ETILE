@@ -1,0 +1,22 @@
+# system info clk_ss on 2025.10.16.14:55:37
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for clk_ss on 2025.10.16.14:55:37
+files:
+filepath,kind,attributes,module,is_top
+sim/clk_ss.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,clk_ss,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+clk_ss.clk_csr,clk_csr
+clk_ss.clk_dsp,clk_dsp
+clk_ss.clk_eth,clk_eth
+clk_ss.clk_ftile_402,clk_ftile_402
+clk_ss.clk_ss_clock_bridge_rec_rx,clk_ss_clock_bridge_rec_rx
+clk_ss.clock_bridge_0,clk_ss_clock_bridge_0

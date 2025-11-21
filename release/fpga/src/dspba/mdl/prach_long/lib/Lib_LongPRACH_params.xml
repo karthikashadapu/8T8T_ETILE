@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<parameters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<design>
+		<device id="dspba">
+			<param name="deviceMember" value="" />
+			<param name="family" value="Arria 10" />
+			<param name="max10NoMemInit" value="false" />
+			<param name="part" value="AUTO" />
+			<param name="speedGrade" value="1_H1" />
+		</device>
+		<avalonmmslave id="dspba">
+			<param name="addressWidth" value="10" />
+			<param name="busClockFreq" value="491.52" />
+			<param name="busClockSynchronous" value="false" />
+			<param name="busEndian" value="Big Endian" />
+			<param name="dataWidth" value="16" />
+			<param name="interfaceName" value="bus" />
+			<param name="separateBusClock" value="false" />
+		</avalonmmslave>
+		<param name="clock" value="clk" />
+		<param name="clockFrequency" value="240" />
+		<param name="clockMargin" value="0" />
+		<param name="createATBs" value="true" />
+		<param name="createTrace" value="false" />
+		<param name="cycleAccurate" value="false" />
+		<param name="deviceOutputVariable" value="" />
+		<param name="dualMemMediumLargeThreshold" value="-1" />
+		<param name="dualMemSmallMediumThreshold" value="-1" />
+		<param name="errorOnChanMismatch" value="true" />
+		<param name="errorOnDDRMismatch" value="false" />
+		<param name="errorOnGPIOMismatch" value="false" />
+		<param name="floatMismatchTolerance" value="-1.0" />
+		<param name="floatMismatchZeroTolerance" value="-1.0" />
+		<param name="generateHardware" value="true" />
+		<param name="generateSingleConduitInterface" value="true" />
+		<param name="hardwareDescriptionLanguage" value="VHDL" />
+		<param name="hardwareDestinationDirectory" value="../rtl" />
+		<param name="importModelSimResults" value="false" />
+		<param name="inputDuringReset" value="0" />
+		<param name="libraryWrapperDefaultInstanceCount" value="1" />
+		<param name="libraryWrapperFunctionName" value="" />
+		<param name="libraryWrapperGenerationEnabled" value="false" />
+		<param name="libraryWrapperIsVariableLatency" value="false" />
+		<param name="libraryWrapperPackValidInData" value="false" />
+		<param name="libraryWrapperTarget" value="OCL" />
+		<param name="libraryWrapperType" value="Stateful" />
+		<param name="memUninitContent" value="0" />
+		<param name="minResetPulseWidth" value="" />
+		<param name="multiplierLogicDSPThreshold" value="-1" />
+		<param name="quartusWorkDirectory" value="../rtl" />
+		<param name="registerRAMBlockThreshold" value="-1" />
+		<param name="reinterpretCastMult" value="false" />
+		<param name="reportFIFOFillLevel" value="false" />
+		<param name="reset" value="areset" />
+		<param name="resetActive" value="High" />
+		<param name="resetMinimizationGlobalEnable" value="Auto" />
+		<param name="resetMinimizeFloatSubmodels" value="Auto" />
+		<param name="simLibCompilerLinuxC" value="/usr/bin/gcc" />
+		<param name="simLibCompilerLinuxCpp" value="/usr/bin/g++" />
+		<param name="simLibCompilerWindows" value="vs2017" />
+		<param name="simLibGenerationEnabled" value="false" />
+		<param name="simulationMode" value="simulationModeStandard" />
+		<param name="softwareModelCycleAccurate" value="false" />
+		<param name="softwareModelGenerationEnabled" value="false" />
+		<param name="useSeparateQuartusDirectory" value="false" />
+		<param name="validMapVariable" value="" />
+		<param name="verificationFunction" value="" />
+	</design>
+</parameters>

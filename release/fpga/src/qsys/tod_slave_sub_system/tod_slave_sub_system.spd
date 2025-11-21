@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_reset_controller_1922/sim/altera_reset_controller.v"
+   type="VERILOG"
+   library="altera_reset_controller_1922" />
+ <file
+   path="altera_reset_controller_1922/sim/altera_reset_synchronizer.v"
+   type="VERILOG"
+   library="altera_reset_controller_1922" />
+ <file
+   path="altera_reset_controller_1922/sim/altera_reset_controller.sdc"
+   type="SDC_ENTITY"
+   library="altera_reset_controller_1922" />
+ <file
+   path="sim/tod_slave_sub_system.v"
+   type="VERILOG"
+   library="tod_slave_sub_system"
+   hasInlineConfiguration="true" />
+ <topLevel name="tod_slave_sub_system.tod_slave_sub_system" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

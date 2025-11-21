@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<entity name='ca_interp_DUT_Summer_DUC_Summer_Carrier_Aggregation_and_Gain_TraceAntennaData1' floating-point-script-prefix='ca_interp_DUT_Summer_DUC_Summer_Carrier_Aggregation_and_Gain_TraceAntennaData1_fpc'>
+  <clock name='sys' port='clk' reset='areset' reset-type='high' />
+</entity>

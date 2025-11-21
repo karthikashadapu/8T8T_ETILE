@@ -1,0 +1,2633 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  Generated with Magillem 5.11.2.1 ( build id: 201707071153_5.11.2.1 ) at 10/9/23 8:53:34 AM
+-->
+<spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:mdsAttr="http://www.magillem.com/XMLSchema/Parameters/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009 http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009/index.xsd">
+    <spirit:vendor>Vendor</spirit:vendor>
+    <spirit:library>Library</spirit:library>
+    <spirit:name>hssi_ss_f_pfc_csr</spirit:name>
+    <spirit:version>1.0</spirit:version>
+    <spirit:busInterfaces>
+        <spirit:busInterface>
+            <spirit:name>hssi_ss_f_pfc_csr_slave</spirit:name>
+            <spirit:busType spirit:vendor="Magillem" spirit:library="MRV" spirit:name="MRVBusDef" spirit:version="1.0"/>
+            <spirit:abstractionType spirit:vendor="Magillem" spirit:library="MRV" spirit:name="MRVAbsDef" spirit:version="1.0"/>
+            <spirit:slave>
+                <spirit:memoryMapRef spirit:memoryMapRef="hssi_ss_f_pfc_csr"/>
+            </spirit:slave>
+            <spirit:bitsInLau>32</spirit:bitsInLau>
+            <spirit:endianness>little</spirit:endianness>
+            <spirit:parameters>
+                <spirit:parameter>
+                    <spirit:name>_mre_definition_</spirit:name>
+                    <spirit:value>hssi_ss_f_pfc_csr</spirit:value>
+                </spirit:parameter>
+            </spirit:parameters>
+        </spirit:busInterface>
+    </spirit:busInterfaces>
+    <spirit:memoryMaps>
+        <spirit:memoryMap>
+            <spirit:name>hssi_ss_f_pfc_csr</spirit:name>
+            <spirit:addressBlock>
+                <spirit:name>hssi_ss_f_pfc_csr_block</spirit:name>
+                <spirit:baseAddress>0x0</spirit:baseAddress>
+                <spirit:range>0xa0</spirit:range>
+                <spirit:width>32</spirit:width>
+                <spirit:usage>register</spirit:usage>
+                <spirit:access>read-write</spirit:access>
+                <spirit:parameters>
+                    <spirit:parameter>
+                        <spirit:name>_mre_default_</spirit:name>
+                        <spirit:value>true</spirit:value>
+                    </spirit:parameter>
+                </spirit:parameters>
+                <spirit:register>
+                    <spirit:name>pfccsrif_control</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC Control&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x0</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xfffffff7</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>6</spirit:bitOffset>
+                        <spirit:bitWidth>26</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">26</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>26'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_rx_stat_clear</spirit:name>
+                        <spirit:description>&lt;b&gt; Clear RX Statistics Counter&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>5</spirit:bitOffset>
+                        <spirit:bitWidth>1</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">1</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>1'b0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_tx_stat_clear</spirit:name>
+                        <spirit:description>&lt;b&gt; Clear TX Statistics Counter&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>4</spirit:bitOffset>
+                        <spirit:bitWidth>1</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">1</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>1'b0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_flow_control_en</spirit:name>
+                        <spirit:description>&lt;b&gt; Enable Flow control&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>3</spirit:bitOffset>
+                        <spirit:bitWidth>1</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">1</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_resetValuePort_</spirit:name>
+<spirit:value>pfccsrif_control_cfg_flow_control_en_gui_value</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_pfc_sel</spirit:name>
+                        <spirit:description>&lt;b&gt;Select between Priority Flow control vs Standard Flow Control&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>2</spirit:bitOffset>
+                        <spirit:bitWidth>1</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">1</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>1'b0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_rx_pri_arb</spirit:name>
+                        <spirit:description>&lt;b&gt;Indicate PFC Rx queue arbitration scheme&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>1</spirit:bitOffset>
+                        <spirit:bitWidth>1</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">1</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>1'b0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_tx_pri_arb</spirit:name>
+                        <spirit:description>&lt;b&gt;Indicate PFC Tx queue arbitration scheme&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>1</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">1</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>1'b0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_control</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_tx_stat_queue0</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC TX Queue 0 Statistics&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x20</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-only</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>drop_pkt_cntr</spirit:name>
+                        <spirit:description>&lt;b&gt;Indicate the packet drop count due to PFC TX queue 0 full&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>write-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_tx_stat_queue0</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_tx_stat_queue1</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC TX Queue 1 Statistics&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x24</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-only</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>drop_pkt_cntr</spirit:name>
+                        <spirit:description>&lt;b&gt;Indicate the packet drop count due to PFC TX queue 1 full&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>write-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_tx_stat_queue1</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_tx_stat_queue2</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC TX Queue 2 Statistics&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x28</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-only</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>drop_pkt_cntr</spirit:name>
+                        <spirit:description>&lt;b&gt;Indicate the packet drop count due to PFC TX queue 2 full&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>write-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_tx_stat_queue2</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_tx_stat_queue3</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC TX Queue 3 Statistics&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x2c</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-only</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>drop_pkt_cntr</spirit:name>
+                        <spirit:description>&lt;b&gt;Indicate the packet drop count due to PFC TX queue 3 full&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>write-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_tx_stat_queue3</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_tx_stat_queue4</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC TX Queue 4 Statistics&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x30</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-only</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>drop_pkt_cntr</spirit:name>
+                        <spirit:description>&lt;b&gt;Indicate the packet drop count due to PFC TX queue 4 full&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>write-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_tx_stat_queue4</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_tx_stat_queue5</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC TX Queue 5 Statistics&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x34</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-only</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>drop_pkt_cntr</spirit:name>
+                        <spirit:description>&lt;b&gt;Indicate the packet drop count due to PFC TX queue 5 full&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>write-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_tx_stat_queue5</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_tx_stat_queue6</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC TX Queue 6 Statistics&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x38</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-only</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>drop_pkt_cntr</spirit:name>
+                        <spirit:description>&lt;b&gt;Indicate the packet drop count due to PFC TX queue 6 full&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>write-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_tx_stat_queue6</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_tx_stat_queue7</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC TX Queue 7 Statistics&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x3c</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-only</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>drop_pkt_cntr</spirit:name>
+                        <spirit:description>&lt;b&gt;Indicate the packet drop count due to PFC TX queue 7 full&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>write-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_tx_stat_queue7</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_rx_stat_queue0</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC RX Queue 0 Statistics&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x40</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-only</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>drop_pkt_cntr</spirit:name>
+                        <spirit:description>&lt;b&gt;Indicate the packet drop count due to PFC RX queue 0 full&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>write-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_rx_stat_queue0</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_rx_stat_queue1</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC RX Queue 1 Statistics&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x44</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-only</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>drop_pkt_cntr</spirit:name>
+                        <spirit:description>&lt;b&gt;Indicate the packet drop count due to PFC RX queue 1 full&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>write-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_rx_stat_queue1</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_rx_stat_queue2</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC RX Queue 2 Statistics&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x48</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-only</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>drop_pkt_cntr</spirit:name>
+                        <spirit:description>&lt;b&gt;Indicate the packet drop count due to PFC RX queue 2 full&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>write-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_rx_stat_queue2</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_rx_stat_queue3</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC RX Queue 3 Statistics&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x4c</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-only</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>drop_pkt_cntr</spirit:name>
+                        <spirit:description>&lt;b&gt;Indicate the packet drop count due to PFC RX queue 3 full&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>write-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_rx_stat_queue3</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_rx_stat_queue4</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC RX Queue 4 Statistics&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x50</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-only</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>drop_pkt_cntr</spirit:name>
+                        <spirit:description>&lt;b&gt;Indicate the packet drop count due to PFC RX queue 4 full&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>write-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_rx_stat_queue4</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_rx_stat_queue5</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC RX Queue 5 Statistics&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x54</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-only</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>drop_pkt_cntr</spirit:name>
+                        <spirit:description>&lt;b&gt;Indicate the packet drop count due to PFC RX queue 5 full&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>write-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_rx_stat_queue5</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_rx_stat_queue6</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC RX Queue 6 Statistics&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x58</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-only</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>drop_pkt_cntr</spirit:name>
+                        <spirit:description>&lt;b&gt;Indicate the packet drop count due to PFC RX queue 6 full&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>write-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_rx_stat_queue6</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_rx_stat_queue7</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC RX Queue 7 Statistics&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x5c</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-only</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>drop_pkt_cntr</spirit:name>
+                        <spirit:description>&lt;b&gt;Indicate the packet drop count due to PFC RX queue 7 full&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>write-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>16'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_rx_stat_queue7</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_tx_threshold_queue0</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC TX Queue 0 Threshold&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x60</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x4</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>3</spirit:bitOffset>
+                        <spirit:bitWidth>29</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">29</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>29'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_tx_th</spirit:name>
+                        <spirit:description>&lt;b&gt;TX threshold expressed as a percentage of TX-Queue size&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>3</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">3</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>3'd4</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_tx_threshold_queue0</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_tx_threshold_queue1</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC TX Queue 1 Threshold&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x64</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x4</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>3</spirit:bitOffset>
+                        <spirit:bitWidth>29</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">29</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>29'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_tx_th</spirit:name>
+                        <spirit:description>&lt;b&gt;TX threshold expressed as a percentage of TX-Queue size&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>3</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">3</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>3'd4</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_tx_threshold_queue1</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_tx_threshold_queue2</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC TX Queue 2 Threshold&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x68</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x4</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>3</spirit:bitOffset>
+                        <spirit:bitWidth>29</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">29</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>29'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_tx_th</spirit:name>
+                        <spirit:description>&lt;b&gt;TX threshold expressed as a percentage of TX-Queue size&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>3</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">3</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>3'd4</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_tx_threshold_queue2</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_tx_threshold_queue3</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC TX Queue 3 Threshold&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x6c</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x4</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>3</spirit:bitOffset>
+                        <spirit:bitWidth>29</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">29</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>29'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_tx_th</spirit:name>
+                        <spirit:description>&lt;b&gt;TX threshold expressed as a percentage of TX-Queue size&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>3</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">3</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>3'd4</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_tx_threshold_queue3</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_tx_threshold_queue4</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC TX Queue 4 Threshold&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x70</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x4</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>3</spirit:bitOffset>
+                        <spirit:bitWidth>29</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">29</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>29'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_tx_th</spirit:name>
+                        <spirit:description>&lt;b&gt;TX threshold expressed as a percentage of TX-Queue size&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>3</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">3</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>3'd4</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_tx_threshold_queue4</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_tx_threshold_queue5</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC TX Queue 5 Threshold&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x74</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x4</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>3</spirit:bitOffset>
+                        <spirit:bitWidth>29</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">29</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>29'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_tx_th</spirit:name>
+                        <spirit:description>&lt;b&gt;TX threshold expressed as a percentage of TX-Queue size&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>3</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">3</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>3'd4</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_tx_threshold_queue5</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_tx_threshold_queue6</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC TX Queue 6 Threshold&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x78</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x4</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>3</spirit:bitOffset>
+                        <spirit:bitWidth>29</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">29</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>29'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_tx_th</spirit:name>
+                        <spirit:description>&lt;b&gt;TX threshold expressed as a percentage of TX-Queue size&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>3</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">3</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>3'd4</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_tx_threshold_queue6</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_tx_threshold_queue7</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC TX Queue 7 Threshold&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x7c</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x4</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>3</spirit:bitOffset>
+                        <spirit:bitWidth>29</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">29</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>29'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_tx_th</spirit:name>
+                        <spirit:description>&lt;b&gt;TX threshold expressed as a percentage of TX-Queue size&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>3</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">3</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>3'd4</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_tx_threshold_queue7</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_rx_threshold_queue0</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC RX Queue 0 Threshold&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x80</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x302</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd0</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>14</spirit:bitOffset>
+                        <spirit:bitWidth>18</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">18</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>18'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_rx_high_th</spirit:name>
+                        <spirit:description>&lt;b&gt;cfg_rx_high_th[Q] =&gt; Sets the high threshold for RX-Queue. Value is calculated as cfg_rx_high_th[Q] * 128. Tx_pfc/pause is asserted if fill level is &gt;= this value&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>8</spirit:bitOffset>
+                        <spirit:bitWidth>6</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">6</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>6'd3</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>rsvd1</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>6</spirit:bitOffset>
+                        <spirit:bitWidth>2</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">2</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>2'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_rx_low_th</spirit:name>
+                        <spirit:description>&lt;b&gt;cfg_rx_low_th[Q] =&gt; Sets the low threshold for RX-Queue. Value is calculated as cfg_rx_low_th[Q] * 128. Tx_pfc/pause is de-asserted if fill level is &lt; this value&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>6</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">6</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>6'd2</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_rx_threshold_queue0</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_rx_threshold_queue1</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC RX Queue 1 Threshold&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x84</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x302</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd0</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>14</spirit:bitOffset>
+                        <spirit:bitWidth>18</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">18</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>18'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_rx_high_th</spirit:name>
+                        <spirit:description>&lt;b&gt;cfg_rx_high_th[Q] =&gt; Sets the high threshold for RX-Queue. Value is calculated as cfg_rx_high_th[Q] * 128. Tx_pfc/pause is asserted if fill level is &gt;= this value&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>8</spirit:bitOffset>
+                        <spirit:bitWidth>6</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">6</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>6'd3</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>rsvd1</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>6</spirit:bitOffset>
+                        <spirit:bitWidth>2</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">2</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>2'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_rx_low_th</spirit:name>
+                        <spirit:description>&lt;b&gt;cfg_rx_low_th[Q] =&gt; Sets the low threshold for RX-Queue. Value is calculated as cfg_rx_low_th[Q] * 128. Tx_pfc/pause is de-asserted if fill level is &lt; this value&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>6</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">6</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>6'd2</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_rx_threshold_queue1</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_rx_threshold_queue2</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC RX Queue 1 Threshold&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x88</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x302</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd0</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>14</spirit:bitOffset>
+                        <spirit:bitWidth>18</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">18</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>18'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_rx_high_th</spirit:name>
+                        <spirit:description>&lt;b&gt;cfg_rx_high_th[Q] =&gt; Sets the high threshold for RX-Queue. Value is calculated as cfg_rx_high_th[Q] * 128. Tx_pfc/pause is asserted if fill level is &gt;= this value&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>8</spirit:bitOffset>
+                        <spirit:bitWidth>6</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">6</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>6'd3</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>rsvd1</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>6</spirit:bitOffset>
+                        <spirit:bitWidth>2</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">2</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>2'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_rx_low_th</spirit:name>
+                        <spirit:description>&lt;b&gt;cfg_rx_low_th[Q] =&gt; Sets the low threshold for RX-Queue. Value is calculated as cfg_rx_low_th[Q] * 128. Tx_pfc/pause is de-asserted if fill level is &lt; this value&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>6</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">6</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>6'd2</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_rx_threshold_queue2</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_rx_threshold_queue3</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC RX Queue 1 Threshold&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x8c</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x302</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd0</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>14</spirit:bitOffset>
+                        <spirit:bitWidth>18</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">18</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>18'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_rx_high_th</spirit:name>
+                        <spirit:description>&lt;b&gt;cfg_rx_high_th[Q] =&gt; Sets the high threshold for RX-Queue. Value is calculated as cfg_rx_high_th[Q] * 128. Tx_pfc/pause is asserted if fill level is &gt;= this value&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>8</spirit:bitOffset>
+                        <spirit:bitWidth>6</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">6</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>6'd3</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>rsvd1</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>6</spirit:bitOffset>
+                        <spirit:bitWidth>2</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">2</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>2'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_rx_low_th</spirit:name>
+                        <spirit:description>&lt;b&gt;cfg_rx_low_th[Q] =&gt; Sets the low threshold for RX-Queue. Value is calculated as cfg_rx_low_th[Q] * 128. Tx_pfc/pause is de-asserted if fill level is &lt; this value&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>6</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">6</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>6'd2</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_rx_threshold_queue3</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_rx_threshold_queue4</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC RX Queue 1 Threshold&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x90</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x302</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd0</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>14</spirit:bitOffset>
+                        <spirit:bitWidth>18</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">18</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>18'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_rx_high_th</spirit:name>
+                        <spirit:description>&lt;b&gt;cfg_rx_high_th[Q] =&gt; Sets the high threshold for RX-Queue. Value is calculated as cfg_rx_high_th[Q] * 128. Tx_pfc/pause is asserted if fill level is &gt;= this value&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>8</spirit:bitOffset>
+                        <spirit:bitWidth>6</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">6</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>6'd3</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>rsvd1</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>6</spirit:bitOffset>
+                        <spirit:bitWidth>2</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">2</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>2'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_rx_low_th</spirit:name>
+                        <spirit:description>&lt;b&gt;cfg_rx_low_th[Q] =&gt; Sets the low threshold for RX-Queue. Value is calculated as cfg_rx_low_th[Q] * 128. Tx_pfc/pause is de-asserted if fill level is &lt; this value&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>6</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">6</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>6'd2</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_rx_threshold_queue4</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_rx_threshold_queue5</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC RX Queue 1 Threshold&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x94</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x302</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd0</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>14</spirit:bitOffset>
+                        <spirit:bitWidth>18</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">18</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>18'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_rx_high_th</spirit:name>
+                        <spirit:description>&lt;b&gt;cfg_rx_high_th[Q] =&gt; Sets the high threshold for RX-Queue. Value is calculated as cfg_rx_high_th[Q] * 128. Tx_pfc/pause is asserted if fill level is &gt;= this value&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>8</spirit:bitOffset>
+                        <spirit:bitWidth>6</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">6</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>6'd3</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>rsvd1</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>6</spirit:bitOffset>
+                        <spirit:bitWidth>2</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">2</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>2'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_rx_low_th</spirit:name>
+                        <spirit:description>&lt;b&gt;cfg_rx_low_th[Q] =&gt; Sets the low threshold for RX-Queue. Value is calculated as cfg_rx_low_th[Q] * 128. Tx_pfc/pause is de-asserted if fill level is &lt; this value&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>6</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">6</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>6'd2</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_rx_threshold_queue5</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_rx_threshold_queue6</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC RX Queue 1 Threshold&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x98</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x302</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd0</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>14</spirit:bitOffset>
+                        <spirit:bitWidth>18</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">18</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>18'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_rx_high_th</spirit:name>
+                        <spirit:description>&lt;b&gt;cfg_rx_high_th[Q] =&gt; Sets the high threshold for RX-Queue. Value is calculated as cfg_rx_high_th[Q] * 128. Tx_pfc/pause is asserted if fill level is &gt;= this value&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>8</spirit:bitOffset>
+                        <spirit:bitWidth>6</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">6</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>6'd3</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>rsvd1</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>6</spirit:bitOffset>
+                        <spirit:bitWidth>2</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">2</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>2'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_rx_low_th</spirit:name>
+                        <spirit:description>&lt;b&gt;cfg_rx_low_th[Q] =&gt; Sets the low threshold for RX-Queue. Value is calculated as cfg_rx_low_th[Q] * 128. Tx_pfc/pause is de-asserted if fill level is &lt; this value&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>6</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">6</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>6'd2</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_rx_threshold_queue6</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>pfccsrif_rx_threshold_queue7</spirit:name>
+                    <spirit:description>&lt;b&gt;PFC RX Queue 1 Threshold&lt;/b&gt;</spirit:description>
+                    <spirit:addressOffset>0x9c</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x302</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>rsvd0</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>14</spirit:bitOffset>
+                        <spirit:bitWidth>18</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">18</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>18'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_rx_high_th</spirit:name>
+                        <spirit:description>&lt;b&gt;cfg_rx_high_th[Q] =&gt; Sets the high threshold for RX-Queue. Value is calculated as cfg_rx_high_th[Q] * 128. Tx_pfc/pause is asserted if fill level is &gt;= this value&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>8</spirit:bitOffset>
+                        <spirit:bitWidth>6</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">6</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>6'd3</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>rsvd1</spirit:name>
+                        <spirit:description>&lt;b&gt;Reserved&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>6</spirit:bitOffset>
+                        <spirit:bitWidth>2</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">2</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>2'h0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>cfg_rx_low_th</spirit:name>
+                        <spirit:description>&lt;b&gt;cfg_rx_low_th[Q] =&gt; Sets the low threshold for RX-Queue. Value is calculated as cfg_rx_low_th[Q] * 128. Tx_pfc/pause is de-asserted if fill level is &lt; this value&lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>6</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-only</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">6</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>6'd2</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>reg_pfccsrif_rx_threshold_queue7</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+            </spirit:addressBlock>
+            <spirit:addressUnitBits>8</spirit:addressUnitBits>
+        </spirit:memoryMap>
+    </spirit:memoryMaps>
+    <spirit:model>
+        <spirit:ports>
+            <spirit:port>
+                <spirit:name>pfccsrif_control_cfg_flow_control_en_gui_value</spirit:name>
+                <spirit:wire>
+                    <spirit:direction>in</spirit:direction>
+                    <spirit:vector>
+                        <spirit:left>0</spirit:left>
+                        <spirit:right>0</spirit:right>
+                    </spirit:vector>
+                </spirit:wire>
+                <spirit:vendorExtensions>
+                    <mdsAttr:attributes>
+                        <mdsAttr:group mdsAttr:groupName="_port_parameters_">
+                            <mdsAttr:attribute mdsAttr:name="_signal_container_path_">
+<mdsAttr:value>/</mdsAttr:value>
+                            </mdsAttr:attribute>
+                            <mdsAttr:attribute mdsAttr:name="_mre_instance_name_">
+<mdsAttr:value>pfccsrif_control_cfg_flow_control_en_gui_value</mdsAttr:value>
+                            </mdsAttr:attribute>
+                        </mdsAttr:group>
+                    </mdsAttr:attributes>
+                </spirit:vendorExtensions>
+            </spirit:port>
+        </spirit:ports>
+    </spirit:model>
+    <spirit:vendorExtensions>
+        <mdsAttr:attributes>
+            <mdsAttr:group mdsAttr:groupName="MRE_UserDefinedProperties">
+                <mdsAttr:attribute mdsAttr:name="Internal">
+                    <mdsAttr:value mdsAttr:author="boolean" mdsAttr:comment="field|reg|regfile" mdsAttr:date="reg|field|regfile" mdsAttr:path="false" mdsAttr:prompt="false" mdsAttr:type="boolean"/>
+                </mdsAttr:attribute>
+                <mdsAttr:attribute mdsAttr:name="ValRTLSignal">
+                    <mdsAttr:value mdsAttr:author="string" mdsAttr:comment="field" mdsAttr:date="field" mdsAttr:path="not_set" mdsAttr:prompt="not_set" mdsAttr:type="string"/>
+                </mdsAttr:attribute>
+                <mdsAttr:attribute mdsAttr:name="AccessType">
+                    <mdsAttr:value mdsAttr:author="string" mdsAttr:comment="field" mdsAttr:date="field" mdsAttr:path="RSV" mdsAttr:prompt="RSV" mdsAttr:type="string"/>
+                </mdsAttr:attribute>
+                <mdsAttr:attribute mdsAttr:name="Release">
+                    <mdsAttr:value mdsAttr:author="string" mdsAttr:comment="field|reg" mdsAttr:date="reg|field" mdsAttr:path="" mdsAttr:type="string"/>
+                </mdsAttr:attribute>
+                <mdsAttr:attribute mdsAttr:name="UG_Desc">
+                    <mdsAttr:value mdsAttr:author="string" mdsAttr:comment="field|reg" mdsAttr:date="reg|field" mdsAttr:path="" mdsAttr:type="string"/>
+                </mdsAttr:attribute>
+                <mdsAttr:attribute mdsAttr:name="FuncGroup">
+                    <mdsAttr:value mdsAttr:author="string" mdsAttr:comment="reg" mdsAttr:date="reg" mdsAttr:path="" mdsAttr:type="string"/>
+                </mdsAttr:attribute>
+                <mdsAttr:attribute mdsAttr:name="UG_Name">
+                    <mdsAttr:value mdsAttr:author="string" mdsAttr:comment="field|reg" mdsAttr:date="reg|field" mdsAttr:path="" mdsAttr:type="string"/>
+                </mdsAttr:attribute>
+                <mdsAttr:attribute mdsAttr:name="UVM_HW_Access">
+                    <mdsAttr:value mdsAttr:author="string" mdsAttr:comment="field" mdsAttr:date="field" mdsAttr:path="" mdsAttr:type="string"/>
+                </mdsAttr:attribute>
+                <mdsAttr:attribute mdsAttr:name="UVM_SW_Access">
+                    <mdsAttr:value mdsAttr:author="string" mdsAttr:comment="field" mdsAttr:date="field" mdsAttr:path="" mdsAttr:type="string"/>
+                </mdsAttr:attribute>
+                <mdsAttr:attribute mdsAttr:name="rtl_modules">
+                    <mdsAttr:value mdsAttr:author="string" mdsAttr:comment="field" mdsAttr:date="field" mdsAttr:path="" mdsAttr:type="string"/>
+                </mdsAttr:attribute>
+                <mdsAttr:attribute mdsAttr:name="hdl_path">
+                    <mdsAttr:value mdsAttr:author="string" mdsAttr:comment="field" mdsAttr:date="field" mdsAttr:path="" mdsAttr:type="string"/>
+                </mdsAttr:attribute>
+            </mdsAttr:group>
+        </mdsAttr:attributes>
+    </spirit:vendorExtensions>
+</spirit:component>

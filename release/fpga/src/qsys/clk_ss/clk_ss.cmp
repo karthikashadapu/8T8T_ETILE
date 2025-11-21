@@ -1,0 +1,17 @@
+	component clk_ss is
+		port (
+			clk_csr_in_clk_clk              : in  std_logic := 'X'; -- clk
+			clk_csr_out_clk_clk             : out std_logic;        -- clk
+			clk_dsp_in_clk_clk              : in  std_logic := 'X'; -- clk
+			clk_dsp_out_clk_clk             : out std_logic;        -- clk
+			clk_eth_in_clk_clk              : in  std_logic := 'X'; -- clk
+			clk_eth_out_clk_clk             : out std_logic;        -- clk
+			clk_ftile_402_in_clk_clk        : in  std_logic := 'X'; -- clk
+			clk_ftile_402_out_clk_clk       : out std_logic;        -- clk
+			clock_bridge_rec_rx_in_clk_clk  : in  std_logic := 'X'; -- clk
+			clock_bridge_rec_rx_out_clk_clk : out std_logic;        -- clk
+			ftile_in_clk_clk                : in  std_logic := 'X'; -- clk
+			ftile_out_clk_clk               : out std_logic         -- clk
+		);
+	end component clk_ss;
+

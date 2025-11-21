@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="sim/subsys_jtg_mst.v"
+   type="VERILOG"
+   library="subsys_jtg_mst"
+   hasInlineConfiguration="true" />
+ <topLevel name="subsys_jtg_mst.subsys_jtg_mst" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

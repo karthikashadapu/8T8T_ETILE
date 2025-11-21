@@ -1,0 +1,95 @@
+#############################################
+# General
+#############################################
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.bak
+*.tmp
+
+#############################################
+# Documents / Media (avoid huge PDFs, MP4)
+#############################################
+*.pdf
+*.xlsx
+*.vsdx
+*.mp4
+
+#############################################
+# Matlab temporary and generated files
+#############################################
+*.mexa64
+*.mexw64
+*.mat
+*.asv
+
+#############################################
+# C/C++ build artifacts
+#############################################
+*.o
+*.out
+*.exe
+*.so
+
+#############################################
+# Quartus / FPGA tool generated files
+#############################################
+db/
+incremental_db/
+output_files/
+simulation/
+*.sof
+*.rbf
+*.pof
+*.jic
+*.smsg
+*.qws
+*.sip
+*.chg
+*.rpt
+*.summary
+*.sld
+*.pin
+*.html
+qdb/
+ip/
+*.ip/
+*.qip
+*.ip_generated/
+*.qsys_edit/
+*.qsf
+*.qar
+*.qarlog
+
+#############################################
+# ModelSim / QuestaSim generated
+#############################################
+work/
+transcript
+*.log
+*.wlf
+*.vcd
+*.ini
+vsim.dbg
+modelsim.ini
+
+#############################################
+# IDE / Editor clutter
+#############################################
+*.swp
+*.swo
+*.DS_Store
+.cache/
+
+#############################################
+# Release folders (to avoid pushing heavy build trees)
+#############################################
+
+# Generic simulation libraries
+**/work/
+**/altera/
+**/altera_lnsim/
+**/altera_mf/
+
+

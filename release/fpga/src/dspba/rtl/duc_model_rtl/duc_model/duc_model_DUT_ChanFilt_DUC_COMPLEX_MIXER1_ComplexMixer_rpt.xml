@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<island simulinkPath='duc_model/DUT/ChanFilt_DUC/COMPLEX_MIXER1/ComplexMixer' topLevelEntity='duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_ComplexMixer'>
+    <port name='clk' dir='in' role='clock'/>
+    <port name='areset' dir='in' clock='clk' role='resetHigh'/>
+    <port name='In_v' clock='clk' reset='areset' width='1' dir='in' role='valid' qsys_role='valid_In_v' stm=''/>
+    <port name='In_c' clock='clk' reset='areset' width='8' dir='in' role='channel' qsys_role='channel_In_c' stm=''/>
+    <port name='iIn_0' clock='clk' reset='areset' width='16' dir='in' role='data' qsys_role='data_iIn_0' stm=''/>
+    <port name='iIn_1' clock='clk' reset='areset' width='16' dir='in' role='data' qsys_role='data_iIn_1' stm=''/>
+    <port name='iIn_2' clock='clk' reset='areset' width='16' dir='in' role='data' qsys_role='data_iIn_2' stm=''/>
+    <port name='iIn_3' clock='clk' reset='areset' width='16' dir='in' role='data' qsys_role='data_iIn_3' stm=''/>
+    <port name='qIn_0' clock='clk' reset='areset' width='16' dir='in' role='data' qsys_role='data_qIn_0' stm=''/>
+    <port name='qIn_1' clock='clk' reset='areset' width='16' dir='in' role='data' qsys_role='data_qIn_1' stm=''/>
+    <port name='qIn_2' clock='clk' reset='areset' width='16' dir='in' role='data' qsys_role='data_qIn_2' stm=''/>
+    <port name='qIn_3' clock='clk' reset='areset' width='16' dir='in' role='data' qsys_role='data_qIn_3' stm=''/>
+    <port name='sIn_0' clock='clk' reset='areset' width='16' dir='in' role='data' qsys_role='data_sIn_0' stm=''/>
+    <port name='sIn_1' clock='clk' reset='areset' width='16' dir='in' role='data' qsys_role='data_sIn_1' stm=''/>
+    <port name='sIn_2' clock='clk' reset='areset' width='16' dir='in' role='data' qsys_role='data_sIn_2' stm=''/>
+    <port name='sIn_3' clock='clk' reset='areset' width='16' dir='in' role='data' qsys_role='data_sIn_3' stm=''/>
+    <port name='cIn_0' clock='clk' reset='areset' width='16' dir='in' role='data' qsys_role='data_cIn_0' stm=''/>
+    <port name='cIn_1' clock='clk' reset='areset' width='16' dir='in' role='data' qsys_role='data_cIn_1' stm=''/>
+    <port name='cIn_2' clock='clk' reset='areset' width='16' dir='in' role='data' qsys_role='data_cIn_2' stm=''/>
+    <port name='cIn_3' clock='clk' reset='areset' width='16' dir='in' role='data' qsys_role='data_cIn_3' stm=''/>
+    <port name='qOut_0' clock='clk' reset='areset' width='33' dir='out' role='data' qsys_role='data_qOut_0' stm=''/>
+    <port name='qOut_1' clock='clk' reset='areset' width='33' dir='out' role='data' qsys_role='data_qOut_1' stm=''/>
+    <port name='qOut_2' clock='clk' reset='areset' width='33' dir='out' role='data' qsys_role='data_qOut_2' stm=''/>
+    <port name='qOut_3' clock='clk' reset='areset' width='33' dir='out' role='data' qsys_role='data_qOut_3' stm=''/>
+    <port name='Out_v' clock='clk' reset='areset' width='1' dir='out' role='valid' qsys_role='valid_Out_v' stm=''/>
+    <port name='Out_c' clock='clk' reset='areset' width='8' dir='out' role='channel' qsys_role='channel_Out_c' stm=''/>
+    <port name='iOut_0' clock='clk' reset='areset' width='33' dir='out' role='data' qsys_role='data_iOut_0' stm=''/>
+    <port name='iOut_1' clock='clk' reset='areset' width='33' dir='out' role='data' qsys_role='data_iOut_1' stm=''/>
+    <port name='iOut_2' clock='clk' reset='areset' width='33' dir='out' role='data' qsys_role='data_iOut_2' stm=''/>
+    <port name='iOut_3' clock='clk' reset='areset' width='33' dir='out' role='data' qsys_role='data_iOut_3' stm=''/>
+    <file path='eda/sim_lib/altera_mf.v' base='quartus' type='vhdl' usage='simOnly' lib='altera_mf_ver'/>
+    <file path='eda/sim_lib/altera_lnsim_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/altera_lnsim.sv' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/tennm_atoms.vhd' base='quartus' type='vhdl' usage='simOnly' lib='tennm'/>
+    <file path='eda/sim_lib/tennm_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='tennm'/>
+    <file path='eda/sim_lib/mentor/tennm_atoms_ncrypt.sv' base='quartus' type='vhdl' usage='simOnly' lib='tennm'/>
+</island>

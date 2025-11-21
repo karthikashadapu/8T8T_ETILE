@@ -1,0 +1,23 @@
+	component rst_ss is
+		port (
+			dsp_rst_cntrl_reset_in0_reset        : in  std_logic := 'X'; -- reset
+			dsp_rst_cntrl_clk_clk                : in  std_logic := 'X'; -- clk
+			dsp_rst_cntrl_reset_out_reset        : out std_logic;        -- reset
+			ecpri_rst_cntrl_reset_in0_reset      : in  std_logic := 'X'; -- reset
+			ecpri_rst_cntrl_clk_clk              : in  std_logic := 'X'; -- clk
+			ecpri_rst_cntrl_reset_out_reset      : out std_logic;        -- reset
+			eth_rst_cntrl_reset_in0_reset        : in  std_logic := 'X'; -- reset
+			eth_rst_cntrl_clk_clk                : in  std_logic := 'X'; -- clk
+			eth_rst_cntrl_reset_out_reset        : out std_logic;        -- reset
+			reset_bridge_act_high_clk_clk        : in  std_logic := 'X'; -- clk
+			reset_bridge_act_high_in_reset_reset : in  std_logic := 'X'; -- reset
+			rst_csr_clk_clk                      : in  std_logic := 'X'; -- clk
+			rst_csr_in_reset_reset_n             : in  std_logic := 'X'; -- reset_n
+			rst_csr_out_reset_reset_n            : out std_logic;        -- reset_n
+			reset_bridge_rec_rx_clk_clk          : in  std_logic := 'X'; -- clk
+			reset_bridge_rec_rx_in_reset_reset   : in  std_logic := 'X'; -- reset
+			reset_bridge_tx_div_clk_clk          : in  std_logic := 'X'; -- clk
+			reset_bridge_tx_div_in_reset_reset   : in  std_logic := 'X'  -- reset
+		);
+	end component rst_ss;
+

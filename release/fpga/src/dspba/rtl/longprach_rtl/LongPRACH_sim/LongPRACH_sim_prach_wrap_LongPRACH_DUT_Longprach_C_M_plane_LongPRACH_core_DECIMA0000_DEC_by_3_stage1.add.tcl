@@ -1,0 +1,9 @@
+# This is the Quartus file list for 'LongPRACH_sim_prach_wrap_LongPRACH_DUT_Longprach_C_M_plane_LongPRACH_core_DECIMA0000Filt_DEC_by_3_stage1'
+
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/longprach_rtl/LongPRACH_sim/LongPRACH_sim_prach_wrap_safe_path_ver.sv
+set_global_assignment -name VHDL_FILE ../../rtl/longprach_rtl/LongPRACH_sim/LongPRACH_sim_prach_wrap_safe_path.vhd 
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/longprach_rtl/LongPRACH_sim/LongPRACH_sim_prach_wrap_LongPRACH_DUT_Longprach_C_M_plane_LongPRACH_core_DECIMA0000Filt_DEC_by_3_stage1.sv
+source ../../rtl/longprach_rtl/LongPRACH_sim/LongPRACH_sim_prach_wrap_LongPRACH_DUT_Longprach_C_M_plane_LongPRACH_core_DECIMA00001_DecimatingFIR1.add.tcl
+source ../../rtl/longprach_rtl/LongPRACH_sim/LongPRACH_sim_prach_wrap_LongPRACH_DUT_Longprach_C_M_plane_LongPRACH_core_DECIMA00001_DecimatingFIR2.add.tcl
+source ../../rtl/longprach_rtl/LongPRACH_sim/LongPRACH_sim_prach_wrap_LongPRACH_DUT_Longprach_C_M_plane_LongPRACH_core_DECIMA0000y_3_stage1_Scale.add.tcl
+source ../../rtl/longprach_rtl/LongPRACH_sim/LongPRACH_sim_prach_wrap_LongPRACH_DUT_Longprach_C_M_plane_LongPRACH_core_DECIMA0000_3_stage1_Scale1.add.tcl

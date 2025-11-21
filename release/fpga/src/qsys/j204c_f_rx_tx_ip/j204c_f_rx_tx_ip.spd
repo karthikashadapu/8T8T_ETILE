@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="sim/j204c_f_rx_tx_ip.v"
+   type="VERILOG"
+   library="j204c_f_rx_tx_ip"
+   hasInlineConfiguration="true" />
+ <topLevel name="j204c_f_rx_tx_ip.j204c_f_rx_tx_ip" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

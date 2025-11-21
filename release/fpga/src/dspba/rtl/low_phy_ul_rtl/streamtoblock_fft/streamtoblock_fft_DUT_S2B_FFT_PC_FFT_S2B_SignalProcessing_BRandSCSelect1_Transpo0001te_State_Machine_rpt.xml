@@ -1,0 +1,14 @@
+<?xml version='1.0'?>
+<island simulinkPath='streamtoblock_fft/DUT/S2B_FFT_PC/FFT_S2B/SignalProcessing/BRandSCSelect1/Transpose/Rising_edge1/Finite State Machine' topLevelEntity='streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Transpo0001Finite_State_Machine'>
+    <port name='clk' dir='in' role='clock'/>
+    <port name='areset' dir='in' clock='clk' role='resetHigh'/>
+    <port name='in_1_go_tpl' clock='clk' reset='areset' width='1' dir='in' role='data' qsys_role='data_in_1_go_tpl' stm='streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Transpo0001e_Machine_signalIn_1.stm' highLevelName='go' highLevelIndex='1' vector='0' complex='0'/>
+    <port name='in_2_x_tpl' clock='clk' reset='areset' width='1' dir='in' role='data' qsys_role='data_in_2_x_tpl' stm='streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Transpo0001e_Machine_signalIn_1.stm' highLevelName='x' highLevelIndex='2' vector='0' complex='0'/>
+    <port name='out_1_fsm_q_tpl' clock='clk' reset='areset' width='1' dir='out' role='data' qsys_role='data_out_1_fsm_q_tpl' stm='streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Transpo0001Machine_signalOut_17.stm' highLevelName='fsm_q' highLevelIndex='1' vector='0' complex='0'/>
+    <file path='eda/sim_lib/altera_mf.v' base='quartus' type='vhdl' usage='simOnly' lib='altera_mf_ver'/>
+    <file path='eda/sim_lib/altera_lnsim_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/altera_lnsim.sv' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/tennm_atoms.vhd' base='quartus' type='vhdl' usage='simOnly' lib='tennm'/>
+    <file path='eda/sim_lib/tennm_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='tennm'/>
+    <file path='eda/sim_lib/mentor/tennm_atoms_ncrypt.sv' base='quartus' type='vhdl' usage='simOnly' lib='tennm'/>
+</island>

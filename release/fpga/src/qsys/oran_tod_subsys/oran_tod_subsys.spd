@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="sim/oran_tod_subsys.v"
+   type="VERILOG"
+   library="oran_tod_subsys"
+   hasInlineConfiguration="true" />
+ <topLevel name="oran_tod_subsys.oran_tod_subsys" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

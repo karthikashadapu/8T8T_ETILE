@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<island simulinkPath='streamtoblock_fft/DUT/S2B_FFT_PC/FFT_S2B/SignalProcessing/HCShift' topLevelEntity='streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift'>
+    <port name='clk' dir='in' role='clock'/>
+    <port name='areset' dir='in' clock='clk' role='resetHigh'/>
+    <port name='bus_clk' dir='in' role='clock'/>
+    <port name='bus_areset' dir='in' clock='bus_clk' role='resetHigh'/>
+    <port name='busIn_writedata' clock='bus_clk' reset='bus_areset' width='32' dir='in' role='busData' qsys_role='writedata' stm=''/>
+    <port name='busIn_address' clock='bus_clk' reset='bus_areset' width='14' dir='in' role='busAddress' qsys_role='address' stm=''/>
+    <port name='busIn_write' clock='bus_clk' reset='bus_areset' width='1' dir='in' role='busWriteEnable' qsys_role='write' stm=''/>
+    <port name='busIn_read' clock='bus_clk' reset='bus_areset' width='1' dir='in' role='busReadEnable' qsys_role='read' stm=''/>
+    <port name='busOut_readdatavalid' clock='bus_clk' reset='bus_areset' width='1' dir='out' role='busDataValid' qsys_role='readdatavalid' stm=''/>
+    <port name='busOut_readdata' clock='bus_clk' reset='bus_areset' width='32' dir='out' role='busData' qsys_role='readdata' stm=''/>
+    <port name='in_1_vin_tpl' clock='clk' reset='areset' width='1' dir='in' role='valid' qsys_role='valid_in_1_vin_tpl' stm='' highLevelName='vin' highLevelIndex='0' vector='0' complex='0'/>
+    <port name='in_2_cin_tpl' clock='clk' reset='areset' width='8' dir='in' role='channel' qsys_role='channel_in_2_cin_tpl' stm='' highLevelName='cin' highLevelIndex='1' vector='0' complex='0'/>
+    <port name='in_3_imag_din_tpl' clock='clk' reset='areset' width='16' dir='in' role='data' qsys_role='data_in_3_imag_din_tpl' stm='' highLevelName='din' highLevelIndex='2' vector='0' complex='1'/>
+    <port name='in_3_real_din_tpl' clock='clk' reset='areset' width='16' dir='in' role='data' qsys_role='data_in_3_real_din_tpl' stm='' highLevelName='din' highLevelIndex='3' vector='0' complex='0'/>
+    <port name='in_4_sync_tpl' clock='clk' reset='areset' width='1' dir='in' role='data' qsys_role='data_in_4_sync_tpl' stm='' highLevelName='sync' highLevelIndex='4' vector='0' complex='0'/>
+    <port name='in_5_size_tpl' clock='clk' reset='areset' width='4' dir='in' role='data' qsys_role='data_in_5_size_tpl' stm='streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_Subsystem_channel_HSC1_1_in_cunroll_x.stm' highLevelName='size' highLevelIndex='5' vector='0' complex='0'/>
+    <port name='in_6_nsc_tpl' clock='clk' reset='areset' width='16' dir='in' role='data' qsys_role='data_in_6_nsc_tpl' stm='streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_Subsystem_channel_HSC1_1_in_cunroll_x.stm' highLevelName='nsc' highLevelIndex='6' vector='0' complex='0'/>
+    <port name='in_7_hcs_bypass_tpl' clock='clk' reset='areset' width='1' dir='in' role='data' qsys_role='data_in_7_hcs_bypass_tpl' stm='streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_Subsystem_channel_HSC1_1_in_cunroll_x.stm' highLevelName='hcs_bypass' highLevelIndex='7' vector='0' complex='0'/>
+    <port name='in_8_SFNin_tpl' clock='clk' reset='areset' width='64' dir='in' role='data' qsys_role='data_in_8_SFNin_tpl' stm='' highLevelName='SFNin' highLevelIndex='8' vector='0' complex='0'/>
+    <port name='in_9_eAxC_tpl' clock='clk' reset='areset' width='2' dir='in' role='data' qsys_role='data_in_9_eAxC_tpl' stm='' highLevelName='eAxC' highLevelIndex='9' vector='0' complex='0'/>
+    <port name='in_10_sym_metadata_tpl' clock='clk' reset='areset' width='64' dir='in' role='data' qsys_role='data_in_10_sym_metadata_tpl' stm='' highLevelName='sym_metadata' highLevelIndex='10' vector='0' complex='0'/>
+    <port name='out_1_vout_tpl' clock='clk' reset='areset' width='1' dir='out' role='valid' qsys_role='valid_out_1_vout_tpl' stm='streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_Subsystem_channel_HSC1_out_cunroll_x.stm' highLevelName='vout' highLevelIndex='0' vector='0' complex='0'/>
+    <port name='out_2_cout_tpl' clock='clk' reset='areset' width='8' dir='out' role='channel' qsys_role='channel_out_2_cout_tpl' stm='streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_Subsystem_channel_HSC1_out_cunroll_x.stm' highLevelName='cout' highLevelIndex='1' vector='0' complex='0'/>
+    <port name='out_3_imag_dout_tpl' clock='clk' reset='areset' width='17' dir='out' role='data' qsys_role='data_out_3_imag_dout_tpl' stm='streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_Subsystem_channel_HSC1_out_cunroll_x.stm' highLevelName='dout' highLevelIndex='2' vector='0' complex='1'/>
+    <port name='out_3_real_dout_tpl' clock='clk' reset='areset' width='17' dir='out' role='data' qsys_role='data_out_3_real_dout_tpl' stm='streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_Subsystem_channel_HSC1_out_cunroll_x.stm' highLevelName='dout' highLevelIndex='3' vector='0' complex='0'/>
+    <port name='out_4_nsc_out_tpl' clock='clk' reset='areset' width='16' dir='out' role='data' qsys_role='data_out_4_nsc_out_tpl' stm='streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_Subsystem_channel_HSC1_out_cunroll_x.stm' highLevelName='nsc_out' highLevelIndex='4' vector='0' complex='0'/>
+    <port name='out_5_size_out_tpl' clock='clk' reset='areset' width='4' dir='out' role='data' qsys_role='data_out_5_size_out_tpl' stm='streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_Subsystem_channel_HSC1_out_cunroll_x.stm' highLevelName='size_out' highLevelIndex='5' vector='0' complex='0'/>
+    <port name='out_6_SFNout_tpl' clock='clk' reset='areset' width='64' dir='out' role='data' qsys_role='data_out_6_SFNout_tpl' stm='streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_Subsystem_channel_HSC1_out_cunroll_x.stm' highLevelName='SFNout' highLevelIndex='6' vector='0' complex='0'/>
+    <port name='out_7_eAxC_out_tpl' clock='clk' reset='areset' width='2' dir='out' role='data' qsys_role='data_out_7_eAxC_out_tpl' stm='streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_Subsystem_channel_HSC1_out_cunroll_x.stm' highLevelName='eAxC_out' highLevelIndex='7' vector='0' complex='0'/>
+    <port name='out_8_sym_metadataout_tpl' clock='clk' reset='areset' width='64' dir='out' role='data' qsys_role='data_out_8_sym_metadataout_tpl' stm='streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_Subsystem_channel_HSC1_out_cunroll_x.stm' highLevelName='sym_metadataout' highLevelIndex='8' vector='0' complex='0'/>
+    <file path='eda/sim_lib/altera_mf.v' base='quartus' type='vhdl' usage='simOnly' lib='altera_mf_ver'/>
+    <file path='eda/sim_lib/altera_lnsim_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/altera_lnsim.sv' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/tennm_atoms.vhd' base='quartus' type='vhdl' usage='simOnly' lib='tennm'/>
+    <file path='eda/sim_lib/tennm_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='tennm'/>
+    <file path='eda/sim_lib/mentor/tennm_atoms_ncrypt.sv' base='quartus' type='vhdl' usage='simOnly' lib='tennm'/>
+</island>

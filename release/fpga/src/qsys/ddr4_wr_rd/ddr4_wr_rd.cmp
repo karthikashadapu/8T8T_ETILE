@@ -1,0 +1,74 @@
+	component ddr4_wr_rd is
+		port (
+			emif_mm_slave_0_address        : in  std_logic_vector(20 downto 0)  := (others => 'X'); -- address
+			emif_mm_slave_0_read           : in  std_logic                      := 'X';             -- read
+			emif_mm_slave_0_readdata       : out std_logic_vector(127 downto 0);                    -- readdata
+			emif_mm_slave_0_write          : in  std_logic                      := 'X';             -- write
+			emif_mm_slave_0_writedata      : in  std_logic_vector(127 downto 0) := (others => 'X'); -- writedata
+			emif_mm_slave_0_readdatavalid  : out std_logic;                                         -- readdatavalid
+			emif_mm_slave_0_waitrequest    : out std_logic;                                         -- waitrequest
+			emif_mm_slave_0_byteenable     : in  std_logic_vector(15 downto 0)  := (others => 'X'); -- byteenable
+			emif_mm_slave_0_burstcount     : in  std_logic_vector(6 downto 0)   := (others => 'X'); -- burstcount
+			addr_span_0_cntl_read          : in  std_logic                      := 'X';             -- read
+			addr_span_0_cntl_readdata      : out std_logic_vector(63 downto 0);                     -- readdata
+			addr_span_0_cntl_write         : in  std_logic                      := 'X';             -- write
+			addr_span_0_cntl_writedata     : in  std_logic_vector(63 downto 0)  := (others => 'X'); -- writedata
+			addr_span_0_cntl_byteenable    : in  std_logic_vector(7 downto 0)   := (others => 'X'); -- byteenable
+			emif_mm_slave_1_address        : in  std_logic_vector(20 downto 0)  := (others => 'X'); -- address
+			emif_mm_slave_1_read           : in  std_logic                      := 'X';             -- read
+			emif_mm_slave_1_readdata       : out std_logic_vector(127 downto 0);                    -- readdata
+			emif_mm_slave_1_write          : in  std_logic                      := 'X';             -- write
+			emif_mm_slave_1_writedata      : in  std_logic_vector(127 downto 0) := (others => 'X'); -- writedata
+			emif_mm_slave_1_readdatavalid  : out std_logic;                                         -- readdatavalid
+			emif_mm_slave_1_waitrequest    : out std_logic;                                         -- waitrequest
+			emif_mm_slave_1_byteenable     : in  std_logic_vector(15 downto 0)  := (others => 'X'); -- byteenable
+			emif_mm_slave_1_burstcount     : in  std_logic_vector(6 downto 0)   := (others => 'X'); -- burstcount
+			addr_span_1_cntl_read          : in  std_logic                      := 'X';             -- read
+			addr_span_1_cntl_readdata      : out std_logic_vector(63 downto 0);                     -- readdata
+			addr_span_1_cntl_write         : in  std_logic                      := 'X';             -- write
+			addr_span_1_cntl_writedata     : in  std_logic_vector(63 downto 0)  := (others => 'X'); -- writedata
+			addr_span_1_cntl_byteenable    : in  std_logic_vector(7 downto 0)   := (others => 'X'); -- byteenable
+			wr_msgdma_ddr_address          : out std_logic_vector(31 downto 0);                     -- address
+			wr_msgdma_ddr_read             : out std_logic;                                         -- read
+			wr_msgdma_ddr_waitrequest      : in  std_logic                      := 'X';             -- waitrequest
+			wr_msgdma_ddr_readdata         : in  std_logic_vector(127 downto 0) := (others => 'X'); -- readdata
+			wr_msgdma_ddr_write            : out std_logic;                                         -- write
+			wr_msgdma_ddr_writedata        : out std_logic_vector(127 downto 0);                    -- writedata
+			wr_msgdma_ddr_readdatavalid    : in  std_logic                      := 'X';             -- readdatavalid
+			wr_msgdma_ddr_byteenable       : out std_logic_vector(15 downto 0);                     -- byteenable
+			wr_msgdma_ddr_burstcount       : out std_logic_vector(6 downto 0);                      -- burstcount
+			in_clk_clk                     : in  std_logic                      := 'X';             -- clk
+			csr_bridge_s0_waitrequest      : out std_logic;                                         -- waitrequest
+			csr_bridge_s0_readdata         : out std_logic_vector(31 downto 0);                     -- readdata
+			csr_bridge_s0_readdatavalid    : out std_logic;                                         -- readdatavalid
+			csr_bridge_s0_burstcount       : in  std_logic_vector(0 downto 0)   := (others => 'X'); -- burstcount
+			csr_bridge_s0_writedata        : in  std_logic_vector(31 downto 0)  := (others => 'X'); -- writedata
+			csr_bridge_s0_address          : in  std_logic_vector(5 downto 0)   := (others => 'X'); -- address
+			csr_bridge_s0_write            : in  std_logic                      := 'X';             -- write
+			csr_bridge_s0_read             : in  std_logic                      := 'X';             -- read
+			csr_bridge_s0_byteenable       : in  std_logic_vector(3 downto 0)   := (others => 'X'); -- byteenable
+			csr_bridge_s0_debugaccess      : in  std_logic                      := 'X';             -- debugaccess
+			ocm_rd_address                 : in  std_logic_vector(12 downto 0)  := (others => 'X'); -- address
+			ocm_rd_read                    : in  std_logic                      := 'X';             -- read
+			ocm_rd_readdata                : out std_logic_vector(127 downto 0);                    -- readdata
+			ocm_rd_clk_clk                 : in  std_logic                      := 'X';             -- clk
+			ocm_rd_reset_reset             : in  std_logic                      := 'X';             -- reset
+			ocm_rd_reset_reset_req         : in  std_logic                      := 'X';             -- reset_req
+			emif_mm_master_1_waitrequest   : in  std_logic                      := 'X';             -- waitrequest
+			emif_mm_master_1_readdata      : in  std_logic_vector(127 downto 0) := (others => 'X'); -- readdata
+			emif_mm_master_1_readdatavalid : in  std_logic                      := 'X';             -- readdatavalid
+			emif_mm_master_1_burstcount    : out std_logic_vector(6 downto 0);                      -- burstcount
+			emif_mm_master_1_writedata     : out std_logic_vector(127 downto 0);                    -- writedata
+			emif_mm_master_1_address       : out std_logic_vector(9 downto 0);                      -- address
+			emif_mm_master_1_write         : out std_logic;                                         -- write
+			emif_mm_master_1_read          : out std_logic;                                         -- read
+			emif_mm_master_1_byteenable    : out std_logic_vector(15 downto 0);                     -- byteenable
+			emif_mm_master_1_debugaccess   : out std_logic;                                         -- debugaccess
+			in_reset_reset_n               : in  std_logic                      := 'X';             -- reset_n
+			wr_msgdma_0_csr_irq_irq        : out std_logic;                                         -- irq
+			wr_msgdma_0_st_sink_data       : in  std_logic_vector(127 downto 0) := (others => 'X'); -- data
+			wr_msgdma_0_st_sink_valid      : in  std_logic                      := 'X';             -- valid
+			wr_msgdma_0_st_sink_ready      : out std_logic                                          -- ready
+		);
+	end component ddr4_wr_rd;
+

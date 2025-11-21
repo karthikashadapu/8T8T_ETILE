@@ -1,0 +1,41 @@
+	subsys_jtg_mst u0 (
+		.fpga_m_master_address          (_connected_to_fpga_m_master_address_),          //  output,   width = 32,    fpga_m_master.address
+		.fpga_m_master_readdata         (_connected_to_fpga_m_master_readdata_),         //   input,   width = 32,                 .readdata
+		.fpga_m_master_read             (_connected_to_fpga_m_master_read_),             //  output,    width = 1,                 .read
+		.fpga_m_master_write            (_connected_to_fpga_m_master_write_),            //  output,    width = 1,                 .write
+		.fpga_m_master_writedata        (_connected_to_fpga_m_master_writedata_),        //  output,   width = 32,                 .writedata
+		.fpga_m_master_waitrequest      (_connected_to_fpga_m_master_waitrequest_),      //   input,    width = 1,                 .waitrequest
+		.fpga_m_master_readdatavalid    (_connected_to_fpga_m_master_readdatavalid_),    //   input,    width = 1,                 .readdatavalid
+		.fpga_m_master_byteenable       (_connected_to_fpga_m_master_byteenable_),       //  output,    width = 4,                 .byteenable
+		.fpga_m2ocm_pb_s0_waitrequest   (_connected_to_fpga_m2ocm_pb_s0_waitrequest_),   //  output,    width = 1, fpga_m2ocm_pb_s0.waitrequest
+		.fpga_m2ocm_pb_s0_readdata      (_connected_to_fpga_m2ocm_pb_s0_readdata_),      //  output,  width = 128,                 .readdata
+		.fpga_m2ocm_pb_s0_readdatavalid (_connected_to_fpga_m2ocm_pb_s0_readdatavalid_), //  output,    width = 1,                 .readdatavalid
+		.fpga_m2ocm_pb_s0_burstcount    (_connected_to_fpga_m2ocm_pb_s0_burstcount_),    //   input,    width = 1,                 .burstcount
+		.fpga_m2ocm_pb_s0_writedata     (_connected_to_fpga_m2ocm_pb_s0_writedata_),     //   input,  width = 128,                 .writedata
+		.fpga_m2ocm_pb_s0_address       (_connected_to_fpga_m2ocm_pb_s0_address_),       //   input,   width = 18,                 .address
+		.fpga_m2ocm_pb_s0_write         (_connected_to_fpga_m2ocm_pb_s0_write_),         //   input,    width = 1,                 .write
+		.fpga_m2ocm_pb_s0_read          (_connected_to_fpga_m2ocm_pb_s0_read_),          //   input,    width = 1,                 .read
+		.fpga_m2ocm_pb_s0_byteenable    (_connected_to_fpga_m2ocm_pb_s0_byteenable_),    //   input,   width = 16,                 .byteenable
+		.fpga_m2ocm_pb_s0_debugaccess   (_connected_to_fpga_m2ocm_pb_s0_debugaccess_),   //   input,    width = 1,                 .debugaccess
+		.fpga_m2ocm_pb_m0_waitrequest   (_connected_to_fpga_m2ocm_pb_m0_waitrequest_),   //   input,    width = 1, fpga_m2ocm_pb_m0.waitrequest
+		.fpga_m2ocm_pb_m0_readdata      (_connected_to_fpga_m2ocm_pb_m0_readdata_),      //   input,  width = 128,                 .readdata
+		.fpga_m2ocm_pb_m0_readdatavalid (_connected_to_fpga_m2ocm_pb_m0_readdatavalid_), //   input,    width = 1,                 .readdatavalid
+		.fpga_m2ocm_pb_m0_burstcount    (_connected_to_fpga_m2ocm_pb_m0_burstcount_),    //  output,    width = 1,                 .burstcount
+		.fpga_m2ocm_pb_m0_writedata     (_connected_to_fpga_m2ocm_pb_m0_writedata_),     //  output,  width = 128,                 .writedata
+		.fpga_m2ocm_pb_m0_address       (_connected_to_fpga_m2ocm_pb_m0_address_),       //  output,   width = 18,                 .address
+		.fpga_m2ocm_pb_m0_write         (_connected_to_fpga_m2ocm_pb_m0_write_),         //  output,    width = 1,                 .write
+		.fpga_m2ocm_pb_m0_read          (_connected_to_fpga_m2ocm_pb_m0_read_),          //  output,    width = 1,                 .read
+		.fpga_m2ocm_pb_m0_byteenable    (_connected_to_fpga_m2ocm_pb_m0_byteenable_),    //  output,   width = 16,                 .byteenable
+		.fpga_m2ocm_pb_m0_debugaccess   (_connected_to_fpga_m2ocm_pb_m0_debugaccess_),   //  output,    width = 1,                 .debugaccess
+		.hps_m_master_address           (_connected_to_hps_m_master_address_),           //  output,   width = 32,     hps_m_master.address
+		.hps_m_master_readdata          (_connected_to_hps_m_master_readdata_),          //   input,   width = 32,                 .readdata
+		.hps_m_master_read              (_connected_to_hps_m_master_read_),              //  output,    width = 1,                 .read
+		.hps_m_master_write             (_connected_to_hps_m_master_write_),             //  output,    width = 1,                 .write
+		.hps_m_master_writedata         (_connected_to_hps_m_master_writedata_),         //  output,   width = 32,                 .writedata
+		.hps_m_master_waitrequest       (_connected_to_hps_m_master_waitrequest_),       //   input,    width = 1,                 .waitrequest
+		.hps_m_master_readdatavalid     (_connected_to_hps_m_master_readdatavalid_),     //   input,    width = 1,                 .readdatavalid
+		.hps_m_master_byteenable        (_connected_to_hps_m_master_byteenable_),        //  output,    width = 4,                 .byteenable
+		.clk_clk                        (_connected_to_clk_clk_),                        //   input,    width = 1,              clk.clk
+		.reset_reset_n                  (_connected_to_reset_reset_n_)                   //   input,    width = 1,            reset.reset_n
+	);
+

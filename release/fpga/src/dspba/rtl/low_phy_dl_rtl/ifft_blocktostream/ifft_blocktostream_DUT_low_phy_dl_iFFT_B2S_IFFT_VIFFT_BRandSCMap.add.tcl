@@ -1,0 +1,10 @@
+# This is the Quartus file list for 'ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_IFFT_VIFFT_BRandSCMap'
+
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/low_phy_dl_rtl/ifft_blocktostream/ifft_blocktostream_DUT_safe_path_ver.sv
+set_global_assignment -name VHDL_FILE ../../rtl/low_phy_dl_rtl/ifft_blocktostream/ifft_blocktostream_DUT_safe_path.vhd 
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/low_phy_dl_rtl/ifft_blocktostream/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_IFFT_VIFFT_BRandSCMap.sv
+source ../../rtl/low_phy_dl_rtl/ifft_blocktostream/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_IFFT_VIFFT_BRandSCMap_Transpose_Risin0000te_State_Machine.add.tcl
+source ../../rtl/low_phy_dl_rtl/ifft_blocktostream/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_IFFT_VIFFT_BRandSCMap_Transpose_Risin0001te_State_Machine.add.tcl
+source ../../rtl/low_phy_dl_rtl/ifft_blocktostream/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_IFFT_VIFFT_BRandSCMap_Transpose_Risin0002te_State_Machine.add.tcl
+source ../../rtl/low_phy_dl_rtl/ifft_blocktostream/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_IFFT_VIFFT_BRandSCMap_Transpose_falli0000te_State_Machine.add.tcl
+source ../../rtl/low_phy_dl_rtl/ifft_blocktostream/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_IFFT_VIFFT_BRandSCMap_Transpose_falli0001te_State_Machine.add.tcl

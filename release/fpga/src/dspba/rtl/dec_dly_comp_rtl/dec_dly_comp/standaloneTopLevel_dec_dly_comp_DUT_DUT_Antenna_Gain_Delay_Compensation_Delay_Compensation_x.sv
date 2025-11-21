@@ -1,0 +1,277 @@
+// ------------------------------------------------------------------------- 
+// High Level Design Compiler for Intel(R) FPGAs Version 23.3 (Release Build #f9894c94f4)
+// Quartus Prime development tool and MATLAB/Simulink Interface
+// 
+// Legal Notice: Copyright 2023 Intel Corporation.  All rights reserved.
+// Your use of  Intel Corporation's design tools,  logic functions and other
+// software and  tools, and its AMPP partner logic functions, and any output
+// files any  of the foregoing (including  device programming  or simulation
+// files), and  any associated  documentation  or information  are expressly
+// subject  to the terms and  conditions of the  Intel FPGA Software License
+// Agreement, Intel MegaCore Function License Agreement, or other applicable
+// license agreement,  including,  without limitation,  that your use is for
+// the  sole  purpose of  programming  logic devices  manufactured by  Intel
+// and  sold by Intel  or its authorized  distributors. Please refer  to the
+// applicable agreement for further details.
+// ---------------------------------------------------------------------------
+
+// SystemVerilog created from standaloneTopLevel_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x
+// SystemVerilog created on Tue Jan  7 17:06:25 2025
+
+
+(* altera_attribute = "-name AUTO_SHIFT_REGISTER_RECOGNITION OFF; -name MESSAGE_DISABLE 10036; -name MESSAGE_DISABLE 10037; -name MESSAGE_DISABLE 14130; -name MESSAGE_DISABLE 14320; -name MESSAGE_DISABLE 15400; -name MESSAGE_DISABLE 14130; -name MESSAGE_DISABLE 10036; -name MESSAGE_DISABLE 12020; -name MESSAGE_DISABLE 12030; -name MESSAGE_DISABLE 12010; -name MESSAGE_DISABLE 12110; -name MESSAGE_DISABLE 14320; -name MESSAGE_DISABLE 13410; -name MESSAGE_DISABLE 113007; -name MESSAGE_DISABLE 10958" *)
+module standaloneTopLevel_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x (
+    input wire [31:0] busIn_writedata,
+    input wire [13:0] busIn_address,
+    input wire [0:0] busIn_write,
+    input wire [0:0] busIn_read,
+    output wire [0:0] busOut_readdatavalid,
+    output wire [31:0] busOut_readdata,
+    output wire [0:0] busOut_waitrequest,
+    input wire [31:0] din_a1_0im,
+    input wire [31:0] din_a1_0re,
+    input wire [31:0] din_a1_1im,
+    input wire [31:0] din_a1_1re,
+    input wire [31:0] din_a1_2im,
+    input wire [31:0] din_a1_2re,
+    input wire [31:0] din_a1_3im,
+    input wire [31:0] din_a1_3re,
+    input wire [0:0] vin_a1_s,
+    input wire [7:0] cin_a1_s,
+    input wire [31:0] din_a2_0im,
+    input wire [31:0] din_a2_0re,
+    input wire [31:0] din_a2_1im,
+    input wire [31:0] din_a2_1re,
+    input wire [31:0] din_a2_2im,
+    input wire [31:0] din_a2_2re,
+    input wire [31:0] din_a2_3im,
+    input wire [31:0] din_a2_3re,
+    input wire [0:0] vin_a2_s,
+    input wire [7:0] cin_a2_s,
+    output wire [31:0] altq_0im,
+    output wire [31:0] altq_0re,
+    output wire [31:0] altq_1im,
+    output wire [31:0] altq_1re,
+    output wire [31:0] altq_2im,
+    output wire [31:0] altq_2re,
+    output wire [31:0] altq_3im,
+    output wire [31:0] altq_3re,
+    output wire [0:0] altv_s,
+    output wire [7:0] altc_s,
+    output wire [31:0] altq1_0im,
+    output wire [31:0] altq1_0re,
+    output wire [31:0] altq1_1im,
+    output wire [31:0] altq1_1re,
+    output wire [31:0] altq1_2im,
+    output wire [31:0] altq1_2re,
+    output wire [31:0] altq1_3im,
+    output wire [31:0] altq1_3re,
+    output wire [0:0] altqv1_s,
+    output wire [7:0] altc1_s,
+    input wire clk,
+    input wire areset,
+    input wire bus_clk,
+    input wire bus_areset
+    );
+
+    wire [0:0] GND_q;
+    wire [0:0] VCC_q;
+    wire [31:0] dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_1_0_imag_altq_tpl;
+    wire [31:0] dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_1_0_real_altq_tpl;
+    wire [31:0] dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_1_1_imag_altq_tpl;
+    wire [31:0] dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_1_1_real_altq_tpl;
+    wire [31:0] dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_1_2_imag_altq_tpl;
+    wire [31:0] dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_1_2_real_altq_tpl;
+    wire [31:0] dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_1_3_imag_altq_tpl;
+    wire [31:0] dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_1_3_real_altq_tpl;
+    wire [0:0] dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_2_altv_tpl;
+    wire [7:0] dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_3_altc_tpl;
+    wire [31:0] dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_4_0_imag_altq1_tpl;
+    wire [31:0] dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_4_0_real_altq1_tpl;
+    wire [31:0] dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_4_1_imag_altq1_tpl;
+    wire [31:0] dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_4_1_real_altq1_tpl;
+    wire [31:0] dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_4_2_imag_altq1_tpl;
+    wire [31:0] dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_4_2_real_altq1_tpl;
+    wire [31:0] dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_4_3_imag_altq1_tpl;
+    wire [31:0] dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_4_3_real_altq1_tpl;
+    wire [0:0] dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_5_altqv1_tpl;
+    wire [7:0] dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_6_altc1_tpl;
+    wire [31:0] busFabric_dec_dly_comp_DUT_x_busOut_readdata;
+    wire [0:0] busFabric_dec_dly_comp_DUT_x_busOut_readdatavalid;
+    wire [7:0] busFabric_dec_dly_comp_DUT_x_out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField1_x_tpl;
+    wire [7:0] busFabric_dec_dly_comp_DUT_x_out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField2_x_tpl;
+    wire [7:0] busFabric_dec_dly_comp_DUT_x_out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField3_x_tpl;
+    wire [7:0] busFabric_dec_dly_comp_DUT_x_out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField4_x_tpl;
+    wire [7:0] busFabric_dec_dly_comp_DUT_x_out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField6_x_tpl;
+    wire [7:0] busFabric_dec_dly_comp_DUT_x_out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField7_x_tpl;
+    wire [7:0] busFabric_dec_dly_comp_DUT_x_out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField8_x_tpl;
+    wire [7:0] busFabric_dec_dly_comp_DUT_x_out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField9_x_tpl;
+    reg [0:0] standaloneTopLevel_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_readDelayed_q;
+    wire [0:0] standaloneTopLevel_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_readDataValid_q;
+
+    import dec_dly_comp_DUT_safe_path_ver::safe_path_ver;
+
+    // GND(CONSTANT,0)
+    assign GND_q = $unsigned(1'b0);
+
+    // busFabric_dec_dly_comp_DUT_x(BLACKBOX,5)
+    busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz thebusFabric_dec_dly_comp_DUT_x (
+        .busIn_writedata(busIn_writedata),
+        .busIn_address(busIn_address),
+        .busIn_write(busIn_write),
+        .busIn_read(busIn_read),
+        .busOut_readdata(busFabric_dec_dly_comp_DUT_x_busOut_readdata),
+        .busOut_readdatavalid(busFabric_dec_dly_comp_DUT_x_busOut_readdatavalid),
+        .out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField1_x_tpl(busFabric_dec_dly_comp_DUT_x_out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField1_x_tpl),
+        .out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField2_x_tpl(busFabric_dec_dly_comp_DUT_x_out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField2_x_tpl),
+        .out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField3_x_tpl(busFabric_dec_dly_comp_DUT_x_out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField3_x_tpl),
+        .out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField4_x_tpl(busFabric_dec_dly_comp_DUT_x_out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField4_x_tpl),
+        .out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField6_x_tpl(busFabric_dec_dly_comp_DUT_x_out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField6_x_tpl),
+        .out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField7_x_tpl(busFabric_dec_dly_comp_DUT_x_out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField7_x_tpl),
+        .out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField8_x_tpl(busFabric_dec_dly_comp_DUT_x_out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField8_x_tpl),
+        .out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField9_x_tpl(busFabric_dec_dly_comp_DUT_x_out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField9_x_tpl),
+        .clk(clk),
+        .areset(areset),
+        .bus_clk(bus_clk),
+        .bus_areset(bus_areset)
+    );
+
+    // standaloneTopLevel_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_readDelayed(DELAY,62)
+    always @ (posedge bus_clk)
+    begin
+        if (bus_areset)
+        begin
+            standaloneTopLevel_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_readDelayed_q <= '0;
+        end
+        else
+        begin
+            standaloneTopLevel_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_readDelayed_q <= $unsigned(busIn_read);
+        end
+    end
+
+    // VCC(CONSTANT,1)
+    assign VCC_q = $unsigned(1'b1);
+
+    // standaloneTopLevel_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_readDataValid(LOGICAL,63)
+    assign standaloneTopLevel_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_readDataValid_q = busFabric_dec_dly_comp_DUT_x_busOut_readdatavalid | standaloneTopLevel_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_readDelayed_q;
+
+    // busOut(BUSOUT,3)
+    assign busOut_readdatavalid = standaloneTopLevel_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_readDataValid_q;
+    assign busOut_readdata = busFabric_dec_dly_comp_DUT_x_busOut_readdata;
+    assign busOut_waitrequest = GND_q;
+
+    // dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x(BLACKBOX,4)
+    dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation thedec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x (
+        .in_1_0_imag_din_a1_tpl(din_a1_0im),
+        .in_1_0_real_din_a1_tpl(din_a1_0re),
+        .in_1_1_imag_din_a1_tpl(din_a1_1im),
+        .in_1_1_real_din_a1_tpl(din_a1_1re),
+        .in_1_2_imag_din_a1_tpl(din_a1_2im),
+        .in_1_2_real_din_a1_tpl(din_a1_2re),
+        .in_1_3_imag_din_a1_tpl(din_a1_3im),
+        .in_1_3_real_din_a1_tpl(din_a1_3re),
+        .in_2_vin_a1_tpl(vin_a1_s),
+        .in_3_cin_a1_tpl(cin_a1_s),
+        .in_4_0_imag_din_a2_tpl(din_a2_0im),
+        .in_4_0_real_din_a2_tpl(din_a2_0re),
+        .in_4_1_imag_din_a2_tpl(din_a2_1im),
+        .in_4_1_real_din_a2_tpl(din_a2_1re),
+        .in_4_2_imag_din_a2_tpl(din_a2_2im),
+        .in_4_2_real_din_a2_tpl(din_a2_2re),
+        .in_4_3_imag_din_a2_tpl(din_a2_3im),
+        .in_4_3_real_din_a2_tpl(din_a2_3re),
+        .in_5_vin_a2_tpl(vin_a2_s),
+        .in_6_cin_a2_tpl(cin_a2_s),
+        .in_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField1_x_tpl(busFabric_dec_dly_comp_DUT_x_out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField1_x_tpl),
+        .in_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField2_x_tpl(busFabric_dec_dly_comp_DUT_x_out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField2_x_tpl),
+        .in_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField3_x_tpl(busFabric_dec_dly_comp_DUT_x_out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField3_x_tpl),
+        .in_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField4_x_tpl(busFabric_dec_dly_comp_DUT_x_out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField4_x_tpl),
+        .in_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField6_x_tpl(busFabric_dec_dly_comp_DUT_x_out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField6_x_tpl),
+        .in_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField7_x_tpl(busFabric_dec_dly_comp_DUT_x_out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField7_x_tpl),
+        .in_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField8_x_tpl(busFabric_dec_dly_comp_DUT_x_out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField8_x_tpl),
+        .in_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField9_x_tpl(busFabric_dec_dly_comp_DUT_x_out_AMMregisterWireData_dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_RegField9_x_tpl),
+        .out_1_0_imag_altq_tpl(dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_1_0_imag_altq_tpl),
+        .out_1_0_real_altq_tpl(dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_1_0_real_altq_tpl),
+        .out_1_1_imag_altq_tpl(dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_1_1_imag_altq_tpl),
+        .out_1_1_real_altq_tpl(dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_1_1_real_altq_tpl),
+        .out_1_2_imag_altq_tpl(dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_1_2_imag_altq_tpl),
+        .out_1_2_real_altq_tpl(dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_1_2_real_altq_tpl),
+        .out_1_3_imag_altq_tpl(dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_1_3_imag_altq_tpl),
+        .out_1_3_real_altq_tpl(dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_1_3_real_altq_tpl),
+        .out_2_altv_tpl(dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_2_altv_tpl),
+        .out_3_altc_tpl(dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_3_altc_tpl),
+        .out_4_0_imag_altq1_tpl(dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_4_0_imag_altq1_tpl),
+        .out_4_0_real_altq1_tpl(dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_4_0_real_altq1_tpl),
+        .out_4_1_imag_altq1_tpl(dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_4_1_imag_altq1_tpl),
+        .out_4_1_real_altq1_tpl(dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_4_1_real_altq1_tpl),
+        .out_4_2_imag_altq1_tpl(dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_4_2_imag_altq1_tpl),
+        .out_4_2_real_altq1_tpl(dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_4_2_real_altq1_tpl),
+        .out_4_3_imag_altq1_tpl(dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_4_3_imag_altq1_tpl),
+        .out_4_3_real_altq1_tpl(dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_4_3_real_altq1_tpl),
+        .out_5_altqv1_tpl(dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_5_altqv1_tpl),
+        .out_6_altc1_tpl(dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_6_altc1_tpl),
+        .clk(clk),
+        .areset(areset)
+    );
+
+    // altq_0im(GPOUT,26)
+    assign altq_0im = dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_1_0_imag_altq_tpl;
+
+    // altq_0re(GPOUT,27)
+    assign altq_0re = dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_1_0_real_altq_tpl;
+
+    // altq_1im(GPOUT,28)
+    assign altq_1im = dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_1_1_imag_altq_tpl;
+
+    // altq_1re(GPOUT,29)
+    assign altq_1re = dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_1_1_real_altq_tpl;
+
+    // altq_2im(GPOUT,30)
+    assign altq_2im = dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_1_2_imag_altq_tpl;
+
+    // altq_2re(GPOUT,31)
+    assign altq_2re = dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_1_2_real_altq_tpl;
+
+    // altq_3im(GPOUT,32)
+    assign altq_3im = dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_1_3_imag_altq_tpl;
+
+    // altq_3re(GPOUT,33)
+    assign altq_3re = dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_1_3_real_altq_tpl;
+
+    // altv_s(GPOUT,34)
+    assign altv_s = dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_2_altv_tpl;
+
+    // altc_s(GPOUT,35)
+    assign altc_s = dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_3_altc_tpl;
+
+    // altq1_0im(GPOUT,36)
+    assign altq1_0im = dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_4_0_imag_altq1_tpl;
+
+    // altq1_0re(GPOUT,37)
+    assign altq1_0re = dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_4_0_real_altq1_tpl;
+
+    // altq1_1im(GPOUT,38)
+    assign altq1_1im = dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_4_1_imag_altq1_tpl;
+
+    // altq1_1re(GPOUT,39)
+    assign altq1_1re = dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_4_1_real_altq1_tpl;
+
+    // altq1_2im(GPOUT,40)
+    assign altq1_2im = dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_4_2_imag_altq1_tpl;
+
+    // altq1_2re(GPOUT,41)
+    assign altq1_2re = dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_4_2_real_altq1_tpl;
+
+    // altq1_3im(GPOUT,42)
+    assign altq1_3im = dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_4_3_imag_altq1_tpl;
+
+    // altq1_3re(GPOUT,43)
+    assign altq1_3re = dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_4_3_real_altq1_tpl;
+
+    // altqv1_s(GPOUT,44)
+    assign altqv1_s = dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_5_altqv1_tpl;
+
+    // altc1_s(GPOUT,45)
+    assign altc1_s = dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation_x_out_6_altc1_tpl;
+
+endmodule

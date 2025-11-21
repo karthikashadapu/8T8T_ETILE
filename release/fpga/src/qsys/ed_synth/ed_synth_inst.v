@@ -1,0 +1,39 @@
+	ed_synth u0 (
+		.capture_if_reset_soft_n_rst_soft_n                 (_connected_to_capture_if_reset_soft_n_rst_soft_n_),                 //   input,    width = 1,        capture_if_reset_soft_n.rst_soft_n
+		.capture_if_radio_config_status_radio_config_status (_connected_to_capture_if_radio_config_status_radio_config_status_), //   input,   width = 56, capture_if_radio_config_status.radio_config_status
+		.lphy_avst_sink_dsp_capture_valid                   (_connected_to_lphy_avst_sink_dsp_capture_valid_),                   //   input,    width = 1,     lphy_avst_sink_dsp_capture.valid
+		.lphy_avst_sink_dsp_capture_data                    (_connected_to_lphy_avst_sink_dsp_capture_data_),                    //   input,   width = 32,                               .data
+		.lphy_avst_sink_dsp_capture_channel                 (_connected_to_lphy_avst_sink_dsp_capture_channel_),                 //   input,    width = 3,                               .channel
+		.dxc_avst_sink_dsp_capture_valid                    (_connected_to_dxc_avst_sink_dsp_capture_valid_),                    //   input,    width = 1,      dxc_avst_sink_dsp_capture.valid
+		.dxc_avst_sink_dsp_capture_data                     (_connected_to_dxc_avst_sink_dsp_capture_data_),                     //   input,   width = 32,                               .data
+		.dxc_avst_sink_dsp_capture_channel                  (_connected_to_dxc_avst_sink_dsp_capture_channel_),                  //   input,    width = 3,                               .channel
+		.interface_sel_data                                 (_connected_to_interface_sel_data_),                                 //  output,   width = 32,                  interface_sel.data
+		.dsp_in_clk_clk                                     (_connected_to_dsp_in_clk_clk_),                                     //   input,    width = 1,                     dsp_in_clk.clk
+		.eth_in_clk_clk                                     (_connected_to_eth_in_clk_clk_),                                     //   input,    width = 1,                     eth_in_clk.clk
+		.clock_csr_clk                                      (_connected_to_clock_csr_clk_),                                      //   input,    width = 1,                      clock_csr.clk
+		.clock_bridge_dspby2_in_clk_clk                     (_connected_to_clock_bridge_dspby2_in_clk_clk_),                     //   input,    width = 1,     clock_bridge_dspby2_in_clk.clk
+		.ed_synth_h2f_bridge_s0_waitrequest                 (_connected_to_ed_synth_h2f_bridge_s0_waitrequest_),                 //  output,    width = 1,         ed_synth_h2f_bridge_s0.waitrequest
+		.ed_synth_h2f_bridge_s0_readdata                    (_connected_to_ed_synth_h2f_bridge_s0_readdata_),                    //  output,  width = 512,                               .readdata
+		.ed_synth_h2f_bridge_s0_readdatavalid               (_connected_to_ed_synth_h2f_bridge_s0_readdatavalid_),               //  output,    width = 1,                               .readdatavalid
+		.ed_synth_h2f_bridge_s0_burstcount                  (_connected_to_ed_synth_h2f_bridge_s0_burstcount_),                  //   input,    width = 1,                               .burstcount
+		.ed_synth_h2f_bridge_s0_writedata                   (_connected_to_ed_synth_h2f_bridge_s0_writedata_),                   //   input,  width = 512,                               .writedata
+		.ed_synth_h2f_bridge_s0_address                     (_connected_to_ed_synth_h2f_bridge_s0_address_),                     //   input,   width = 28,                               .address
+		.ed_synth_h2f_bridge_s0_write                       (_connected_to_ed_synth_h2f_bridge_s0_write_),                       //   input,    width = 1,                               .write
+		.ed_synth_h2f_bridge_s0_read                        (_connected_to_ed_synth_h2f_bridge_s0_read_),                        //   input,    width = 1,                               .read
+		.ed_synth_h2f_bridge_s0_byteenable                  (_connected_to_ed_synth_h2f_bridge_s0_byteenable_),                  //   input,   width = 64,                               .byteenable
+		.ed_synth_h2f_bridge_s0_debugaccess                 (_connected_to_ed_synth_h2f_bridge_s0_debugaccess_),                 //   input,    width = 1,                               .debugaccess
+		.h2f_lw_bridge_s0_waitrequest                       (_connected_to_h2f_lw_bridge_s0_waitrequest_),                       //  output,    width = 1,               h2f_lw_bridge_s0.waitrequest
+		.h2f_lw_bridge_s0_readdata                          (_connected_to_h2f_lw_bridge_s0_readdata_),                          //  output,   width = 32,                               .readdata
+		.h2f_lw_bridge_s0_readdatavalid                     (_connected_to_h2f_lw_bridge_s0_readdatavalid_),                     //  output,    width = 1,                               .readdatavalid
+		.h2f_lw_bridge_s0_burstcount                        (_connected_to_h2f_lw_bridge_s0_burstcount_),                        //   input,    width = 1,                               .burstcount
+		.h2f_lw_bridge_s0_writedata                         (_connected_to_h2f_lw_bridge_s0_writedata_),                         //   input,   width = 32,                               .writedata
+		.h2f_lw_bridge_s0_address                           (_connected_to_h2f_lw_bridge_s0_address_),                           //   input,   width = 13,                               .address
+		.h2f_lw_bridge_s0_write                             (_connected_to_h2f_lw_bridge_s0_write_),                             //   input,    width = 1,                               .write
+		.h2f_lw_bridge_s0_read                              (_connected_to_h2f_lw_bridge_s0_read_),                              //   input,    width = 1,                               .read
+		.h2f_lw_bridge_s0_byteenable                        (_connected_to_h2f_lw_bridge_s0_byteenable_),                        //   input,    width = 4,                               .byteenable
+		.h2f_lw_bridge_s0_debugaccess                       (_connected_to_h2f_lw_bridge_s0_debugaccess_),                       //   input,    width = 1,                               .debugaccess
+		.dsp_in_reset_reset_n                               (_connected_to_dsp_in_reset_reset_n_),                               //   input,    width = 1,                   dsp_in_reset.reset_n
+		.eth_in_reset_reset_n                               (_connected_to_eth_in_reset_reset_n_),                               //   input,    width = 1,                   eth_in_reset.reset_n
+		.reset_csr_reset_n                                  (_connected_to_reset_csr_reset_n_)                                   //   input,    width = 1,                      reset_csr.reset_n
+	);
+

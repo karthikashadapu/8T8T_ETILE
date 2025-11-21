@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pinplan
+ variation_name="hssi_ss_0"
+ megafunction_name="HSSI_SS"
+ intended_family="Agilex 7"
+ specifies="all_ports">
+ <global>
+  <pin name="app_ss_lite_clk" direction="input" scope="external" />
+  <pin name="app_ss_lite_areset_n" direction="input" scope="external" />
+  <pin name="app_ss_lite_awaddr[25..0]" direction="input" scope="external" />
+  <pin name="app_ss_lite_awprot[2..0]" direction="input" scope="external" />
+  <pin name="app_ss_lite_awvalid" direction="input" scope="external" />
+  <pin name="ss_app_lite_awready" direction="output" scope="external" />
+  <pin name="app_ss_lite_wdata[31..0]" direction="input" scope="external" />
+  <pin name="app_ss_lite_wstrb[3..0]" direction="input" scope="external" />
+  <pin name="app_ss_lite_wvalid" direction="input" scope="external" />
+  <pin name="ss_app_lite_wready" direction="output" scope="external" />
+  <pin name="ss_app_lite_bresp[1..0]" direction="output" scope="external" />
+  <pin name="ss_app_lite_bvalid" direction="output" scope="external" />
+  <pin name="app_ss_lite_bready" direction="input" scope="external" />
+  <pin name="app_ss_lite_araddr[25..0]" direction="input" scope="external" />
+  <pin name="app_ss_lite_arprot[2..0]" direction="input" scope="external" />
+  <pin name="app_ss_lite_arvalid" direction="input" scope="external" />
+  <pin name="ss_app_lite_arready" direction="output" scope="external" />
+  <pin name="ss_app_lite_rdata[31..0]" direction="output" scope="external" />
+  <pin name="ss_app_lite_rvalid" direction="output" scope="external" />
+  <pin name="app_ss_lite_rready" direction="input" scope="external" />
+  <pin name="ss_app_lite_rresp[1..0]" direction="output" scope="external" />
+  <pin name="p0_app_ss_st_tx_clk" direction="input" scope="external" />
+  <pin name="p0_app_ss_st_tx_areset_n" direction="input" scope="external" />
+  <pin name="p0_app_ss_st_tx_tvalid" direction="input" scope="external" />
+  <pin name="p0_ss_app_st_tx_tready" direction="output" scope="external" />
+  <pin
+     name="p0_app_ss_st_tx_tdata[63..0]"
+     direction="input"
+     scope="external" />
+  <pin name="p0_app_ss_st_tx_tkeep[7..0]" direction="input" scope="external" />
+  <pin name="p0_app_ss_st_tx_tlast" direction="input" scope="external" />
+  <pin
+     name="p0_app_ss_st_tx_tuser_client[1..0]"
+     direction="input"
+     scope="external" />
+  <pin name="p0_app_ss_st_rx_clk" direction="input" scope="external" />
+  <pin name="p0_app_ss_st_rx_areset_n" direction="input" scope="external" />
+  <pin name="p0_ss_app_st_rx_tvalid" direction="output" scope="external" />
+  <pin
+     name="p0_ss_app_st_rx_tdata[63..0]"
+     direction="output"
+     scope="external" />
+  <pin
+     name="p0_ss_app_st_rx_tkeep[7..0]"
+     direction="output"
+     scope="external" />
+  <pin name="p0_ss_app_st_rx_tlast" direction="output" scope="external" />
+  <pin
+     name="p0_ss_app_st_rx_tuser_client[6..0]"
+     direction="output"
+     scope="external" />
+  <pin
+     name="p0_ss_app_st_rx_tuser_sts[4..0]"
+     direction="output"
+     scope="external" />
+  <pin name="i_p0_tx_pause" direction="input" scope="external" />
+  <pin name="i_p0_tx_pfc[7..0]" direction="input" scope="external" />
+  <pin name="o_p0_rx_pause" direction="output" scope="external" />
+  <pin name="o_p0_rx_pfc[7..0]" direction="output" scope="external" />
+  <pin name="p0_tx_serial" direction="output" scope="external" />
+  <pin name="p0_tx_serial_n" direction="output" scope="external" />
+  <pin name="p0_rx_serial" direction="input" scope="external" />
+  <pin name="p0_rx_serial_n" direction="input" scope="external" />
+  <pin name="port0_led_speed[2..0]" direction="output" scope="external" />
+  <pin name="port0_led_status[2..0]" direction="output" scope="external" />
+  <pin name="port1_led_speed[2..0]" direction="output" scope="external" />
+  <pin name="port1_led_status[2..0]" direction="output" scope="external" />
+  <pin name="port2_led_speed[2..0]" direction="output" scope="external" />
+  <pin name="port2_led_status[2..0]" direction="output" scope="external" />
+  <pin name="port3_led_speed[2..0]" direction="output" scope="external" />
+  <pin name="port3_led_status[2..0]" direction="output" scope="external" />
+  <pin name="port4_led_speed[2..0]" direction="output" scope="external" />
+  <pin name="port4_led_status[2..0]" direction="output" scope="external" />
+  <pin name="port5_led_speed[2..0]" direction="output" scope="external" />
+  <pin name="port5_led_status[2..0]" direction="output" scope="external" />
+  <pin name="port6_led_speed[2..0]" direction="output" scope="external" />
+  <pin name="port6_led_status[2..0]" direction="output" scope="external" />
+  <pin name="port7_led_speed[2..0]" direction="output" scope="external" />
+  <pin name="port7_led_status[2..0]" direction="output" scope="external" />
+  <pin name="port8_led_speed[2..0]" direction="output" scope="external" />
+  <pin name="port8_led_status[2..0]" direction="output" scope="external" />
+  <pin name="port9_led_speed[2..0]" direction="output" scope="external" />
+  <pin name="port9_led_status[2..0]" direction="output" scope="external" />
+  <pin name="port10_led_speed[2..0]" direction="output" scope="external" />
+  <pin name="port10_led_status[2..0]" direction="output" scope="external" />
+  <pin name="port11_led_speed[2..0]" direction="output" scope="external" />
+  <pin name="port11_led_status[2..0]" direction="output" scope="external" />
+  <pin name="port12_led_speed[2..0]" direction="output" scope="external" />
+  <pin name="port12_led_status[2..0]" direction="output" scope="external" />
+  <pin name="port13_led_speed[2..0]" direction="output" scope="external" />
+  <pin name="port13_led_status[2..0]" direction="output" scope="external" />
+  <pin name="port14_led_speed[2..0]" direction="output" scope="external" />
+  <pin name="port14_led_status[2..0]" direction="output" scope="external" />
+  <pin name="port15_led_speed[2..0]" direction="output" scope="external" />
+  <pin name="port15_led_status[2..0]" direction="output" scope="external" />
+  <pin name="p0_tx_lanes_stable" direction="output" scope="external" />
+  <pin name="p0_rx_pcs_ready" direction="output" scope="external" />
+  <pin name="o_p0_tx_pll_locked" direction="output" scope="external" />
+  <pin name="o_p0_txfifo_pfull" direction="output" scope="external" />
+  <pin name="o_p0_txfifo_pempty" direction="output" scope="external" />
+  <pin name="o_p0_txfifo_overflow" direction="output" scope="external" />
+  <pin name="o_p0_txfifo_underflow" direction="output" scope="external" />
+  <pin name="subsystem_cold_rst_n" direction="input" scope="external" />
+  <pin name="subsystem_cold_rst_ack_n" direction="output" scope="external" />
+  <pin name="i_p0_tx_rst_n" direction="input" scope="external" />
+  <pin name="i_p0_rx_rst_n" direction="input" scope="external" />
+  <pin name="o_p0_rx_rst_ack_n" direction="output" scope="external" />
+  <pin name="o_p0_tx_rst_ack_n" direction="output" scope="external" />
+  <pin name="o_p0_ereset_n" direction="output" scope="external" />
+  <pin name="i_clk_ref[2..0]" direction="input" scope="external" />
+  <pin name="o_p0_clk_pll" direction="output" scope="external" />
+  <pin name="o_p0_clk_tx_div" direction="output" scope="external" />
+  <pin name="o_p0_clk_rec_div64" direction="output" scope="external" />
+  <pin name="o_p0_clk_rec_div" direction="output" scope="external" />
+ </global>
+</pinplan>

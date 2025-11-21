@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<island simulinkPath='streamtoblock_fft/DUT/S2B_FFT_PC/FFT_S2B/SignalProcessing/HCShift/NCO' topLevelEntity='streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_NCO'>
+    <port name='clk' dir='in' role='clock'/>
+    <port name='areset' dir='in' clock='clk' role='resetHigh'/>
+    <port name='bus_clk' dir='in' role='clock'/>
+    <port name='bus_areset' dir='in' clock='bus_clk' role='resetHigh'/>
+    <port name='xIn_v' clock='clk' reset='areset' width='1' dir='in' role='valid' qsys_role='valid_xIn_v' stm=''/>
+    <port name='xIn_c' clock='clk' reset='areset' width='8' dir='in' role='channel' qsys_role='channel_xIn_c' stm=''/>
+    <port name='xIn_p_0' clock='clk' reset='areset' width='30' dir='in' role='data' qsys_role='data_xIn_p_0' stm=''/>
+    <port name='xIn_s_0' clock='clk' reset='areset' width='1' dir='in' role='data' qsys_role='data_xIn_s_0' stm=''/>
+    <port name='busIn_writedata' clock='bus_clk' reset='bus_areset' width='32' dir='in' role='busData' qsys_role='writedata' stm=''/>
+    <port name='busIn_address' clock='bus_clk' reset='bus_areset' width='14' dir='in' role='busAddress' qsys_role='address' stm=''/>
+    <port name='busIn_write' clock='bus_clk' reset='bus_areset' width='1' dir='in' role='busWriteEnable' qsys_role='write' stm=''/>
+    <port name='busIn_read' clock='bus_clk' reset='bus_areset' width='1' dir='in' role='busReadEnable' qsys_role='read' stm=''/>
+    <port name='busOut_readdatavalid' clock='bus_clk' reset='bus_areset' width='1' dir='out' role='busDataValid' qsys_role='readdatavalid' stm=''/>
+    <port name='busOut_readdata' clock='bus_clk' reset='bus_areset' width='32' dir='out' role='busData' qsys_role='readdata' stm=''/>
+    <port name='ncoOut_v' clock='clk' reset='areset' width='1' dir='out' role='valid' qsys_role='valid_ncoOut_v' stm=''/>
+    <port name='ncoOut_c' clock='clk' reset='areset' width='8' dir='out' role='channel' qsys_role='channel_ncoOut_c' stm=''/>
+    <port name='sinOut_0' clock='clk' reset='areset' width='18' dir='out' role='data' qsys_role='data_sinOut_0' stm=''/>
+    <port name='cosOut_0' clock='clk' reset='areset' width='18' dir='out' role='data' qsys_role='data_cosOut_0' stm=''/>
+    <file path='eda/sim_lib/altera_mf.v' base='quartus' type='vhdl' usage='simOnly' lib='altera_mf_ver'/>
+    <file path='eda/sim_lib/altera_lnsim_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/altera_lnsim.sv' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/tennm_atoms.vhd' base='quartus' type='vhdl' usage='simOnly' lib='tennm'/>
+    <file path='eda/sim_lib/tennm_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='tennm'/>
+    <file path='eda/sim_lib/mentor/tennm_atoms_ncrypt.sv' base='quartus' type='vhdl' usage='simOnly' lib='tennm'/>
+</island>

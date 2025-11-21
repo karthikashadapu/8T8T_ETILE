@@ -1,0 +1,194 @@
+# pass in -Gquit_at_end=true to make vsim call exit at the end. Useful for running standalone.
+quietly set quit_at_end 0
+if {[lsearch $argv -Gquit_at_end=true] != -1} {
+    quietly set quit_at_end 1
+}
+
+if {$argc > 0} {
+    quietly set base_dir $1
+} else {
+    quietly set base_dir "./../../rtl/low_phy_ul_rtl"
+    echo The current directory is: [pwd]
+}
+quietly set base_dir [file normalize $base_dir]
+echo Creating the project under $base_dir
+
+do $base_dir/compile_modelsim_libraries.do
+onerror {resume}
+
+if { [string compare [project env] ""] != 0 } {
+    quit -sim
+    project close
+}
+
+if {! [file exists $base_dir/streamtoblock_fft_DUT]} {
+    file delete -force $base_dir/streamtoblock_fft_DUT
+}
+
+project new $base_dir streamtoblock_fft_DUT
+if {! [file exists $base_dir/work/_info]} {
+    file delete -force $base_dir/work
+    vlib work
+}
+quietly vmap work $base_dir/work
+
+do "$base_dir/streamtoblock_fft/streamtoblock_fft_DUT_fpc.do"
+
+
+quietly set vcomfailed 0
+onerror {
+    quietly set vcomfailed 1
+    resume
+}
+
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_safe_path_msim_ver.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_safe_path_msim.vhd vhdl
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_CPRemoval.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_CPRemoval_Mem_rd_sub1_Finite_State_Machine.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_CPRemoval_Mem_wr_subsystem_Finite_State_Machine.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Rising_0000Finite_State_Machine.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Rising_0001Finite_State_Machine.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Transpo0000Finite_State_Machine.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Transpo0001Finite_State_Machine.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Transpo0002Finite_State_Machine.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Transpo0003Finite_State_Machine.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Transpo0004Finite_State_Machine.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Transpo0005Finite_State_Machine.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_ComplexMixer.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_NCO.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_Scale.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_Subsystem.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_pipe.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_pipe1.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_RXGainComp.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_RXScaling.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_VFFT_btb.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_ComplexMixer.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_ComplexMixer_ComplexMixer.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_ComplexMixer_Scalei.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_ComplexMixer_Scaleq.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_PhasorGenerate.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_SOP_EOP_gen.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_SOP_EOP_gen_Rising_edge_Finite_State_Machine.sv systemverilog
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_SOP_EOP_gen_falling_edge_Finite_State_Machine.sv systemverilog
+puts {Note: Process variables may be optimized out of top-level testbench. Re-compile with the following command to disable optimizations:}
+puts {vcom -quiet -O0 $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_atb.vhd}
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_atb.vhd vhdl
+project addfile $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_stm.vhd vhdl
+project calculateorder
+
+onerror {resume}
+
+proc report_mismatch {signal cycle} {
+    puts "Mismatch in ${signal} at system clock cycle ${cycle}"
+    set modelsimvalue [examine ${signal}_dut];
+    set stmvalue [examine ${signal}_stm];
+    puts "\t${signal} (ModelSim):\t${modelsimvalue}"
+    puts "\t${signal} (Simulink):\t${stmvalue}"
+}
+
+if {$vcomfailed == 0} {
+    onbreak {
+        quietly set my_tb [string trim [tb]];
+        quietly set regOK [regexp {(.*) ([0-9]+) ([\[address]*) ([.]*)} $my_tb \ match atbfile linenum ignore_this];
+        if {$regOK == 1} {
+            quietly set simtime [expr $now - 200];
+            quietly set cyclenum [expr int($simtime / 2034.505208)];
+            if { [catch {exa mismatch_rx_valid_s} mismatch] == 0 && $mismatch } {
+                report_mismatch rx_valid_s $cyclenum
+            }
+            if { [catch {exa mismatch_rx_chout_s} mismatch] == 0 && $mismatch } {
+                report_mismatch rx_chout_s $cyclenum
+            }
+            if { [catch {exa mismatch_rx_dout_im} mismatch] == 0 && $mismatch } {
+                report_mismatch rx_dout_im $cyclenum
+            }
+            if { [catch {exa mismatch_rx_dout_re} mismatch] == 0 && $mismatch } {
+                report_mismatch rx_dout_re $cyclenum
+            }
+            if { [catch {exa mismatch_rx_time_out_s} mismatch] == 0 && $mismatch } {
+                report_mismatch rx_time_out_s $cyclenum
+            }
+            if { [catch {exa mismatch_fft_vout_s} mismatch] == 0 && $mismatch } {
+                report_mismatch fft_vout_s $cyclenum
+            }
+            if { [catch {exa mismatch_fft_chout_s} mismatch] == 0 && $mismatch } {
+                report_mismatch fft_chout_s $cyclenum
+            }
+            if { [catch {exa mismatch_fft_dout_im} mismatch] == 0 && $mismatch } {
+                report_mismatch fft_dout_im $cyclenum
+            }
+            if { [catch {exa mismatch_fft_dout_re} mismatch] == 0 && $mismatch } {
+                report_mismatch fft_dout_re $cyclenum
+            }
+            if { [catch {exa mismatch_nsc_out_s} mismatch] == 0 && $mismatch } {
+                report_mismatch nsc_out_s $cyclenum
+            }
+            if { [catch {exa mismatch_size_out_s} mismatch] == 0 && $mismatch } {
+                report_mismatch size_out_s $cyclenum
+            }
+            if { [catch {exa mismatch_td_time_out_s} mismatch] == 0 && $mismatch } {
+                report_mismatch td_time_out_s $cyclenum
+            }
+            if { [catch {exa mismatch_fd_data_v_s} mismatch] == 0 && $mismatch } {
+                report_mismatch fd_data_v_s $cyclenum
+            }
+            if { [catch {exa mismatch_fd_data_c_s} mismatch] == 0 && $mismatch } {
+                report_mismatch fd_data_c_s $cyclenum
+            }
+            if { [catch {exa mismatch_fd_data_q_im} mismatch] == 0 && $mismatch } {
+                report_mismatch fd_data_q_im $cyclenum
+            }
+            if { [catch {exa mismatch_fd_data_q_re} mismatch] == 0 && $mismatch } {
+                report_mismatch fd_data_q_re $cyclenum
+            }
+            if { [catch {exa mismatch_eAxCout_s} mismatch] == 0 && $mismatch } {
+                report_mismatch eAxCout_s $cyclenum
+            }
+            if { [catch {exa mismatch_symmetadataout_s} mismatch] == 0 && $mismatch } {
+                report_mismatch symmetadataout_s $cyclenum
+            }
+            if { [catch {exa mismatch_eop_eAxC_s} mismatch] == 0 && $mismatch } {
+                report_mismatch eop_eAxC_s $cyclenum
+            }
+            if { [catch {exa mismatch_eop_sym_s} mismatch] == 0 && $mismatch } {
+                report_mismatch eop_sym_s $cyclenum
+            }
+            if { [catch {exa mismatch_sop_eAxC_s} mismatch] == 0 && $mismatch } {
+                report_mismatch sop_eAxC_s $cyclenum
+            }
+            if { [catch {exa mismatch_sop_sym_s} mismatch] == 0 && $mismatch } {
+                report_mismatch sop_sym_s $cyclenum
+            }
+            if { [catch {exa mismatch_version_out1_s} mismatch] == 0 && $mismatch } {
+                report_mismatch version_out1_s $cyclenum
+            }
+        } else {
+            puts "Signal mismatch detected at $my_tb";
+        }
+        if {$quit_at_end == 1} {
+            quit -code 1;
+        }
+    }
+    eval vsim -quiet -suppress 14408 -error 3473 -msgmode both -voptargs="+acc" -t ps streamtoblock_fft_DUT_atb $ll
+    do $base_dir/streamtoblock_fft/streamtoblock_fft_DUT_atb.wav.do
+# Disable some warnings that occur at the very start of simulation
+    quietly set StdArithNoWarnings 1
+    run 0ns
+    quietly set StdArithNoWarnings 0
+    run -all
+} else {
+    echo At least one module failed to compile, not starting simulation
+}
+
+if {$quit_at_end == 1} {
+    exit
+}

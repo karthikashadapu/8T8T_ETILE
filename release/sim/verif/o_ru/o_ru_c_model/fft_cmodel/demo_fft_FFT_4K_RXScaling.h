@@ -1,0 +1,267 @@
+// ------------------------------------------------------------------------- 
+// High Level Design Compiler for Intel(R) FPGAs Version 23.2 (Release Build #267b0de70b)
+// Software model created on 2023-12-19 15:28:13
+// ------------------------------------------------------------------------- 
+#if defined(CSL_USE_PRAGMA_ONCE)
+#pragma once
+#endif
+
+#ifndef SOFTWARE_MODEL_DEMO_FFT_FFT_4K_RXSCALING_H_
+#define SOFTWARE_MODEL_DEMO_FFT_FFT_4K_RXSCALING_H_
+
+#include "support/csl.h"
+#ifdef WRITE_STM_FILES
+#include "support/csl_io.h"
+#endif
+
+class demo_fft_FFT_4K_RXScaling
+{
+public:
+    // IO struct for "demo_fft/FFT_4K/RXScaling/channel_RXS1_in"
+    struct io_struct_channel_RXS1_in
+    {
+        int8_t port_in_1_vin_tpl;
+        int8_t port_in_2_chin_tpl;
+        int32_t port_in_4_real_din_tpl;
+        int32_t port_in_4_imag_din_tpl;
+        int16_t port_in_3_size_tpl;
+        int16_t port_in_5_nsc_tpl;
+        int8_t port_in_6_fft_shift_tpl;
+        int16_t port_in_7_time_in_tpl;
+
+        io_struct_channel_RXS1_in()
+            : port_in_1_vin_tpl(0)
+            , port_in_2_chin_tpl(0)
+            , port_in_4_real_din_tpl(0)
+            , port_in_4_imag_din_tpl(0)
+            , port_in_3_size_tpl(0)
+            , port_in_5_nsc_tpl(0)
+            , port_in_6_fft_shift_tpl(0)
+            , port_in_7_time_in_tpl(0)
+        {
+        }
+    };
+
+    // IO struct for "demo_fft/FFT_4K/RXScaling/channel_RXS1_out"
+    struct io_struct_channel_RXS1_out
+    {
+        int8_t port_out_1_vout_tpl;
+        int8_t port_out_2_chout_tpl;
+        int16_t port_out_3_real_dout_tpl;
+        int16_t port_out_3_imag_dout_tpl;
+        int16_t port_out_4_size_out_tpl;
+        int16_t port_out_5_nsc_out_tpl;
+        int16_t port_out_6_time_out_tpl;
+
+        io_struct_channel_RXS1_out()
+            : port_out_1_vout_tpl(0)
+            , port_out_2_chout_tpl(0)
+            , port_out_3_real_dout_tpl(0)
+            , port_out_3_imag_dout_tpl(0)
+            , port_out_4_size_out_tpl(0)
+            , port_out_5_nsc_out_tpl(0)
+            , port_out_6_time_out_tpl(0)
+        {
+        }
+    };
+
+public:
+    // Resets internal simulation state to default values.
+    void reset();
+
+    // Read functions read the values of an output node from the model.
+    // Delay correction is applied if the model is bit-accurate
+    // but not cycle accurate to simulate latency from delay balancing.
+    // DSP Builder applies this same adjustment for bit-accurate
+    // non-cycle accurate simulation in Simulink.
+    // 
+    // Read functions will append output to stimulus files if compiling
+    // with WRITE_STM_FILES defined.
+    // 
+    // Read functions should be called once per cycle per instance.
+    // Subsequent calls in the same cycle will copy output values to the
+    // provided struct, but will not write stimulus or update internal state.
+    void read(io_struct_channel_RXS1_out& output)
+    {
+        bool needsToExecute = (m_io_cycle[1] == m_update_cycle);
+        if (needsToExecute)
+        {
+            m_io_cycle[1]++;
+            execute();
+            m_delay_correction_channel_RXS1_out_port_out_1_vout_tpl.delay(m_n[CHANNEL_RXS1_OUT_OUT_1_VOUT_TPL_19]);
+            m_delay_correction_channel_RXS1_out_port_out_2_chout_tpl.delay(m_n[CHANNEL_RXS1_OUT_OUT_2_CHOUT_TPL_19]);
+            m_delay_correction_channel_RXS1_out_port_out_3_real_dout_tpl.delay(m_n[CHANNEL_RXS1_OUT_OUT_3_REAL_DOUT_TPL_19]);
+            m_delay_correction_channel_RXS1_out_port_out_3_imag_dout_tpl.delay(m_n[CHANNEL_RXS1_OUT_OUT_3_IMAG_DOUT_TPL_19]);
+            m_delay_correction_channel_RXS1_out_port_out_4_size_out_tpl.delay(m_n[CHANNEL_RXS1_OUT_OUT_4_SIZE_OUT_TPL_19]);
+            m_delay_correction_channel_RXS1_out_port_out_5_nsc_out_tpl.delay(m_n[CHANNEL_RXS1_OUT_OUT_5_NSC_OUT_TPL_19]);
+            m_delay_correction_channel_RXS1_out_port_out_6_time_out_tpl.delay(m_n[CHANNEL_RXS1_OUT_OUT_6_TIME_OUT_TPL_19]);
+        }
+
+#ifndef DISABLE_DELAY_CORRECTON
+        csl_memcpy(&output.port_out_1_vout_tpl, &m_delay_correction_channel_RXS1_out_port_out_1_vout_tpl.get(), 1);
+        csl_memcpy(&output.port_out_2_chout_tpl, &m_delay_correction_channel_RXS1_out_port_out_2_chout_tpl.get(), 1);
+        csl_memcpy(&output.port_out_3_real_dout_tpl, &m_delay_correction_channel_RXS1_out_port_out_3_real_dout_tpl.get(), 2);
+        csl_memcpy(&output.port_out_3_imag_dout_tpl, &m_delay_correction_channel_RXS1_out_port_out_3_imag_dout_tpl.get(), 2);
+        csl_memcpy(&output.port_out_4_size_out_tpl, &m_delay_correction_channel_RXS1_out_port_out_4_size_out_tpl.get(), 2);
+        csl_memcpy(&output.port_out_5_nsc_out_tpl, &m_delay_correction_channel_RXS1_out_port_out_5_nsc_out_tpl.get(), 2);
+        csl_memcpy(&output.port_out_6_time_out_tpl, &m_delay_correction_channel_RXS1_out_port_out_6_time_out_tpl.get(), 2);
+#else
+        csl_memcpy(&output.port_out_1_vout_tpl, &m_n[CHANNEL_RXS1_OUT_OUT_1_VOUT_TPL_19], 1);
+        csl_memcpy(&output.port_out_2_chout_tpl, &m_n[CHANNEL_RXS1_OUT_OUT_2_CHOUT_TPL_19], 1);
+        csl_memcpy(&output.port_out_3_real_dout_tpl, &m_n[CHANNEL_RXS1_OUT_OUT_3_REAL_DOUT_TPL_19], 2);
+        csl_memcpy(&output.port_out_3_imag_dout_tpl, &m_n[CHANNEL_RXS1_OUT_OUT_3_IMAG_DOUT_TPL_19], 2);
+        csl_memcpy(&output.port_out_4_size_out_tpl, &m_n[CHANNEL_RXS1_OUT_OUT_4_SIZE_OUT_TPL_19], 2);
+        csl_memcpy(&output.port_out_5_nsc_out_tpl, &m_n[CHANNEL_RXS1_OUT_OUT_5_NSC_OUT_TPL_19], 2);
+        csl_memcpy(&output.port_out_6_time_out_tpl, &m_n[CHANNEL_RXS1_OUT_OUT_6_TIME_OUT_TPL_19], 2);
+#endif
+
+#ifdef WRITE_STM_FILES
+        if (needsToExecute)
+        {
+            m_stm_channel_rxs1_out.write_stm_data(output.port_out_1_vout_tpl, 1);
+            m_stm_channel_rxs1_out.write_stm_data(output.port_out_2_chout_tpl, 8);
+            m_stm_channel_rxs1_out.write_stm_data(output.port_out_3_real_dout_tpl, 16);
+            m_stm_channel_rxs1_out.write_stm_data(output.port_out_3_imag_dout_tpl, 16);
+            m_stm_channel_rxs1_out.write_stm_data(output.port_out_4_size_out_tpl, 16);
+            m_stm_channel_rxs1_out.write_stm_data(output.port_out_5_nsc_out_tpl, 16);
+            m_stm_channel_rxs1_out.write_stm_data(output.port_out_6_time_out_tpl, 16);
+            m_stm_channel_rxs1_out.next_line();
+        }
+#endif
+    }
+
+    // Write functions write the values of an input node to the model
+    // and initiates any internal simulation that depends on that 
+    // input and any other inputs previously provided for the
+    // current cycle. When all inputs nodes have been provided,
+    // the next cycle will begin automatically.
+    // 
+    // Write functions will append output to stimulus files if compiling
+    // with WRITE_STM_FILES defined.
+    // 
+    // Write functions should be called once per cycle per instance.
+    // Subsequent calls in the same cycle will do nothing.
+    void write(const io_struct_channel_RXS1_in& input)
+    {
+        bool needsToExecute = (m_io_cycle[0] == m_update_cycle);
+        if (needsToExecute)
+        {
+            csl_memcpy(&m_n[CHANNEL_RXS1_IN_CHANNEL_RXS1_IN_IN_1_VIN_TPL_18], &input.port_in_1_vin_tpl, 1);
+            csl_memcpy(&m_n[CHANNEL_RXS1_IN_CHANNEL_RXS1_IN_IN_2_CHIN_TPL_18], &input.port_in_2_chin_tpl, 1);
+            csl_memcpy(&m_n[CHANNEL_RXS1_IN_CHANNEL_RXS1_IN_IN_4_REAL_DIN_TPL_18], &input.port_in_4_real_din_tpl, 4);
+            csl_memcpy(&m_n[CHANNEL_RXS1_IN_CHANNEL_RXS1_IN_IN_4_IMAG_DIN_TPL_18], &input.port_in_4_imag_din_tpl, 4);
+            csl_memcpy(&m_n[CHANNEL_RXS1_IN_CHANNEL_RXS1_IN_IN_3_SIZE_TPL_18], &input.port_in_3_size_tpl, 2);
+            csl_memcpy(&m_n[CHANNEL_RXS1_IN_CHANNEL_RXS1_IN_IN_5_NSC_TPL_18], &input.port_in_5_nsc_tpl, 2);
+            csl_memcpy(&m_n[CHANNEL_RXS1_IN_CHANNEL_RXS1_IN_IN_6_FFT_SHIFT_TPL_18], &input.port_in_6_fft_shift_tpl, 1);
+            csl_memcpy(&m_n[CHANNEL_RXS1_IN_CHANNEL_RXS1_IN_IN_7_TIME_IN_TPL_18], &input.port_in_7_time_in_tpl, 2);
+#ifdef WRITE_STM_FILES
+            m_stm_channel_rxs1_in.write_stm_data(input.port_in_1_vin_tpl, 1);
+            m_stm_channel_rxs1_in.write_stm_data(input.port_in_2_chin_tpl, 8);
+            m_stm_channel_rxs1_in.write_stm_data(input.port_in_4_real_din_tpl, 29);
+            m_stm_channel_rxs1_in.write_stm_data(input.port_in_4_imag_din_tpl, 29);
+            m_stm_channel_rxs1_in.write_stm_data(input.port_in_3_size_tpl, 16);
+            m_stm_channel_rxs1_in.write_stm_data(input.port_in_5_nsc_tpl, 16);
+            m_stm_channel_rxs1_in.write_stm_data(input.port_in_6_fft_shift_tpl, 4);
+            m_stm_channel_rxs1_in.write_stm_data(input.port_in_7_time_in_tpl, 16);
+            m_stm_channel_rxs1_in.next_line();
+#endif
+            m_io_cycle[0]++;
+            execute();
+        }
+    }
+
+private:
+    // Segments are chunks of execution that depend on unique sets of inputs
+    // These functions are invoked automatically as inputs are provided to the model.
+    void execute_segment_0();
+    void execute_segment_1();
+    void execute_segment_update();
+
+    // Progresses the internal simulation state based on the currently
+    // available input values
+    void execute()
+    {
+        if ((m_segment_cycle[0] == m_update_cycle))
+        {
+            execute_segment_0();
+            ++m_segment_cycle[0];
+        }
+        if ((m_segment_cycle[1] == m_update_cycle) && (m_io_cycle[0] > m_update_cycle))
+        {
+            execute_segment_1();
+            ++m_segment_cycle[1];
+        }
+        const bool all_io_ready = (m_io_cycle[0] > m_update_cycle) && (m_io_cycle[1] > m_update_cycle);
+        if (all_io_ready && (m_segment_cycle[0] > m_update_cycle) && (m_segment_cycle[1] > m_update_cycle))
+        {
+            execute_segment_update();
+            ++m_update_cycle;
+        }
+    }
+
+    static const size_t GND_GND_Q_0;
+    static const size_t SCALE2_HCMP_SCALE2_HCMP_N_10;
+    static const size_t SCALE2_HCONST_SCALE2_HCONST_Q_11;
+    static const size_t SCALE2_LCMP_SCALE2_LCMP_N_12;
+    static const size_t SCALE2_LCONST_SCALE2_LCONST_Q_13;
+    static const size_t SCALE2_MUX_SCALE2_MUX_Q_14;
+    static const size_t SCALE2_RND_SCALE2_RND_Q_15;
+    static const size_t SHIFT_SHIFT_Q_16;
+    static const size_t SHIFT1_SHIFT1_Q_17;
+    static const size_t CHANNEL_RXS1_IN_CHANNEL_RXS1_IN_IN_4_REAL_DIN_TPL_18;
+    static const size_t CHANNEL_RXS1_IN_CHANNEL_RXS1_IN_IN_4_IMAG_DIN_TPL_18;
+    static const size_t VCC_VCC_Q_1;
+    static const size_t CHANNEL_RXS1_IN_CHANNEL_RXS1_IN_IN_3_SIZE_TPL_18;
+    static const size_t CHANNEL_RXS1_IN_CHANNEL_RXS1_IN_IN_5_NSC_TPL_18;
+    static const size_t CHANNEL_RXS1_IN_CHANNEL_RXS1_IN_IN_6_FFT_SHIFT_TPL_18;
+    static const size_t CHANNEL_RXS1_IN_CHANNEL_RXS1_IN_IN_7_TIME_IN_TPL_18;
+    static const size_t CHANNEL_RXS1_IN_CHANNEL_RXS1_IN_IN_2_CHIN_TPL_18;
+    static const size_t CHANNEL_RXS1_IN_CHANNEL_RXS1_IN_IN_1_VIN_TPL_18;
+    static const size_t SCALE1_SEL_X_SCALE1_SEL_X_B_20;
+    static const size_t SCALE2_SEL_X_SCALE2_SEL_X_B_21;
+    static const size_t DUPNAME_0_SCALE1_X_DUPNAME_0_SCALE1_X_Q_22;
+    static const size_t DUPNAME_0_SCALE2_X_DUPNAME_0_SCALE2_X_Q_23;
+    static const size_t DUPNAME_0_SHIFT_RND_X_DUPNAME_0_SHIFT_RND_X_Q_2;
+    static const size_t DUPNAME_1_SCALE1_X_DUPNAME_1_SCALE1_X_Q_24;
+    static const size_t DUPNAME_1_SCALE2_X_DUPNAME_1_SCALE2_X_Q_25;
+    static const size_t DUPNAME_0_SHIFT_SEL_X_DUPNAME_0_SHIFT_SEL_X_B_26;
+    static const size_t DUPNAME_0_SHIFT1_SEL_X_DUPNAME_0_SHIFT1_SEL_X_B_27;
+    static const size_t SCALE2_HCMP_PIPELINE_OUTPUT_TEMP_10;
+    static const size_t SCALE2_LCMP_PIPELINE_OUTPUT_TEMP_12;
+    static const size_t SCALE1_HCMP_PIPELINE_OUTPUT_TEMP_4;
+    static const size_t SCALE1_LCMP_PIPELINE_OUTPUT_TEMP_6;
+    static const size_t CHANNEL_RXS1_OUT_OUT_1_VOUT_TPL_19;
+    static const size_t CHANNEL_RXS1_OUT_OUT_2_CHOUT_TPL_19;
+    static const size_t DUPNAME_0_SHIFT1_RND_X_DUPNAME_0_SHIFT1_RND_X_Q_3;
+    static const size_t CHANNEL_RXS1_OUT_OUT_3_REAL_DOUT_TPL_19;
+    static const size_t CHANNEL_RXS1_OUT_OUT_3_IMAG_DOUT_TPL_19;
+    static const size_t CHANNEL_RXS1_OUT_OUT_4_SIZE_OUT_TPL_19;
+    static const size_t CHANNEL_RXS1_OUT_OUT_5_NSC_OUT_TPL_19;
+    static const size_t CHANNEL_RXS1_OUT_OUT_6_TIME_OUT_TPL_19;
+    static const size_t SCALE1_HCMP_SCALE1_HCMP_N_4;
+    static const size_t SCALE1_HCONST_SCALE1_HCONST_Q_5;
+    static const size_t SCALE1_LCMP_SCALE1_LCMP_N_6;
+    static const size_t SCALE1_LCONST_SCALE1_LCONST_Q_7;
+    static const size_t SCALE1_MUX_SCALE1_MUX_Q_8;
+    static const size_t SCALE1_RND_SCALE1_RND_Q_9;
+
+    csl_delay_correction<int64_t, 2> m_delay_correction_channel_RXS1_out_port_out_1_vout_tpl;
+    csl_delay_correction<int64_t, 2> m_delay_correction_channel_RXS1_out_port_out_2_chout_tpl;
+    csl_delay_correction<int64_t, 2> m_delay_correction_channel_RXS1_out_port_out_3_imag_dout_tpl;
+    csl_delay_correction<int64_t, 2> m_delay_correction_channel_RXS1_out_port_out_3_real_dout_tpl;
+    csl_delay_correction<int64_t, 2> m_delay_correction_channel_RXS1_out_port_out_4_size_out_tpl;
+    csl_delay_correction<int64_t, 2> m_delay_correction_channel_RXS1_out_port_out_5_nsc_out_tpl;
+    csl_delay_correction<int64_t, 2> m_delay_correction_channel_RXS1_out_port_out_6_time_out_tpl;
+    int64_t m_io_cycle[2];
+    int64_t m_segment_cycle[2];
+    int64_t m_update_cycle;
+
+#ifdef WRITE_STM_FILES
+    csl_output_stimulus_file m_stm_channel_rxs1_in;
+    csl_output_stimulus_file m_stm_channel_rxs1_out;
+#endif
+
+    int64_t m_n[45];
+};
+
+#endif // SOFTWARE_MODEL_DEMO_FFT_FFT_4K_RXSCALING_H_

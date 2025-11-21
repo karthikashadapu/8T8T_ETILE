@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+<island simulinkPath='ddc_model/DUT/DUT/Chan_Filter_l1/Chan_Filter' topLevelEntity='ddc_model_DUT_DUT_Chan_Filter_l1_Chan_Filter'>
+    <port name='clk' dir='in' role='clock'/>
+    <port name='areset' dir='in' clock='clk' role='resetHigh'/>
+    <port name='bus_clk' dir='in' role='clock'/>
+    <port name='bus_areset' dir='in' clock='bus_clk' role='resetHigh'/>
+    <port name='busIn_writedata' clock='bus_clk' reset='bus_areset' width='32' dir='in' role='busData' qsys_role='writedata' stm=''/>
+    <port name='busIn_address' clock='bus_clk' reset='bus_areset' width='14' dir='in' role='busAddress' qsys_role='address' stm=''/>
+    <port name='busIn_write' clock='bus_clk' reset='bus_areset' width='1' dir='in' role='busWriteEnable' qsys_role='write' stm=''/>
+    <port name='busIn_read' clock='bus_clk' reset='bus_areset' width='1' dir='in' role='busReadEnable' qsys_role='read' stm=''/>
+    <port name='busOut_readdatavalid' clock='bus_clk' reset='bus_areset' width='1' dir='out' role='busDataValid' qsys_role='readdatavalid' stm=''/>
+    <port name='busOut_readdata' clock='bus_clk' reset='bus_areset' width='32' dir='out' role='busData' qsys_role='readdata' stm=''/>
+    <port name='in_1_imag_d1_tpl' clock='clk' reset='areset' width='16' dir='in' role='data' qsys_role='data_in_1_imag_d1_tpl' stm='ddc_model/ddc_model_DUT_DUT_Chan_Filter_l1_Chan_Filter_routing_reg_chan_re1_ChannelIn.stm' highLevelName='d1' highLevelIndex='0' vector='0' complex='1'/>
+    <port name='in_1_real_d1_tpl' clock='clk' reset='areset' width='16' dir='in' role='data' qsys_role='data_in_1_real_d1_tpl' stm='ddc_model/ddc_model_DUT_DUT_Chan_Filter_l1_Chan_Filter_routing_reg_chan_re_ChannelIn.stm' highLevelName='d1' highLevelIndex='1' vector='0' complex='0'/>
+    <port name='in_2_v_tpl' clock='clk' reset='areset' width='1' dir='in' role='valid' qsys_role='valid_in_2_v_tpl' stm='ddc_model/ddc_model_DUT_DUT_Chan_Filter_l1_Chan_Filter_routing_reg_chan_re1_ChannelIn.stm' highLevelName='v' highLevelIndex='2' vector='0' complex='0'/>
+    <port name='in_3_c_tpl' clock='clk' reset='areset' width='8' dir='in' role='channel' qsys_role='channel_in_3_c_tpl' stm='ddc_model/ddc_model_DUT_DUT_Chan_Filter_l1_Chan_Filter_routing_reg_chan_re1_ChannelIn.stm' highLevelName='c' highLevelIndex='3' vector='0' complex='0'/>
+    <port name='in_4_bank_tpl' clock='clk' reset='areset' width='1' dir='in' role='data' qsys_role='data_in_4_bank_tpl' stm='ddc_model/ddc_model_DUT_DUT_Chan_Filter_l1_Chan_Filter_routing_reg_chan_re_ChannelIn.stm' highLevelName='bank' highLevelIndex='4' vector='0' complex='0'/>
+    <port name='out_1_imag_q_tpl' clock='clk' reset='areset' width='16' dir='out' role='data' qsys_role='data_out_1_imag_q_tpl' stm='ddc_model/ddc_model_DUT_DUT_Chan_Filter_l1_Chan_Filter_chan_filter_Scaleim_qOut.stm' highLevelName='q' highLevelIndex='0' vector='0' complex='1'/>
+    <port name='out_1_real_q_tpl' clock='clk' reset='areset' width='16' dir='out' role='data' qsys_role='data_out_1_real_q_tpl' stm='ddc_model/ddc_model_DUT_DUT_Chan_Filter_l1_Chan_Filter_chan_filter_Scale_re_qOut.stm' highLevelName='q' highLevelIndex='1' vector='0' complex='0'/>
+    <port name='out_2_qv_tpl' clock='clk' reset='areset' width='1' dir='out' role='valid' qsys_role='valid_out_2_qv_tpl' stm='ddc_model/ddc_model_DUT_DUT_Chan_Filter_l1_Chan_Filter_chan_filter_Scale_re_qOut.stm' highLevelName='qv' highLevelIndex='2' vector='0' complex='0'/>
+    <port name='out_3_qc_tpl' clock='clk' reset='areset' width='8' dir='out' role='channel' qsys_role='channel_out_3_qc_tpl' stm='ddc_model/ddc_model_DUT_DUT_Chan_Filter_l1_Chan_Filter_chan_filter_Scale_re_qOut.stm' highLevelName='qc' highLevelIndex='3' vector='0' complex='0'/>
+    <file path='eda/sim_lib/altera_mf.v' base='quartus' type='vhdl' usage='simOnly' lib='altera_mf_ver'/>
+    <file path='eda/sim_lib/altera_lnsim_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/altera_lnsim.sv' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/tennm_atoms.vhd' base='quartus' type='vhdl' usage='simOnly' lib='tennm'/>
+    <file path='eda/sim_lib/tennm_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='tennm'/>
+    <file path='eda/sim_lib/mentor/tennm_atoms_ncrypt.sv' base='quartus' type='vhdl' usage='simOnly' lib='tennm'/>
+</island>

@@ -1,0 +1,47 @@
+set(software_model_common_INC
+    "support/csl.h"
+    "support/csl.inl"
+    "phase_comp_phase_comp_ComplexMixer_ComplexMixer.h"
+    "phase_comp_phase_comp_ComplexMixer_Scalei.h"
+    "phase_comp_phase_comp_ComplexMixer_Scaleq.h"
+    "phase_comp_phase_comp_ComplexMixer.h"
+    "phase_comp_phase_comp_PhasorGenerate.h"
+    "phase_comp_phase_comp.h"
+)
+
+set(software_model_common_SRC
+    "support/csl.cpp"
+    "support/csl_io.cpp"
+    "phase_comp_phase_comp_ComplexMixer_ComplexMixer.cpp"
+    "phase_comp_phase_comp_ComplexMixer_Scalei.cpp"
+    "phase_comp_phase_comp_ComplexMixer_Scaleq.cpp"
+    "phase_comp_phase_comp_ComplexMixer.cpp"
+    "phase_comp_phase_comp_PhasorGenerate.cpp"
+    "phase_comp_phase_comp.cpp"
+)
+
+set(software_model_atb_INC
+    "support/csl_io.h"
+    "atb/phase_comp_phase_comp_ComplexMixer_ComplexMixer_atb.h"
+    "atb/phase_comp_phase_comp_ComplexMixer_Scalei_atb.h"
+    "atb/phase_comp_phase_comp_ComplexMixer_Scaleq_atb.h"
+    "atb/phase_comp_phase_comp_ComplexMixer_atb.h"
+    "atb/phase_comp_phase_comp_PhasorGenerate_atb.h"
+    "atb/phase_comp_phase_comp_atb.h"
+)
+
+set(software_model_atb_SRC
+    "support/csl_io.cpp"
+    "atb/atb_app.cpp"
+)
+
+set(software_model_fastsim_INC
+    "fastsim/fastsim.inl"
+)
+
+set(software_model_fastsim_SRC
+)
+
+set(cmodel_atb_SRC ${software_model_atb_INC} ${software_model_atb_SRC})
+set(cmodel_common_SRC ${software_model_common_INC} ${software_model_common_SRC})
+set(cmodel_fastsim_SRC ${software_model_fastsim_INC} ${software_model_fastsim_SRC})

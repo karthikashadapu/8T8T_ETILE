@@ -1,0 +1,22 @@
+<?xml version='1.0'?>
+<island simulinkPath='ifft_blocktostream/DUT/low_phy_dl/iFFT_B2S/B2S' topLevelEntity='ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_B2S'>
+    <port name='clk' dir='in' role='clock'/>
+    <port name='areset' dir='in' clock='clk' role='resetHigh'/>
+    <port name='in_1_v_in_tpl' clock='clk' reset='areset' width='1' dir='in' role='data' qsys_role='data_in_1_v_in_tpl' stm='ifft_blocktostream/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_B2S_B2S_Inst_GPIn_cunroll_x.stm' highLevelName='v_in' highLevelIndex='1' vector='0' complex='0'/>
+    <port name='in_2_c_in_tpl' clock='clk' reset='areset' width='8' dir='in' role='data' qsys_role='data_in_2_c_in_tpl' stm='ifft_blocktostream/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_B2S_B2S_Inst_GPIn_cunroll_x.stm' highLevelName='c_in' highLevelIndex='2' vector='0' complex='0'/>
+    <port name='in_3_imag_q_in_tpl' clock='clk' reset='areset' width='16' dir='in' role='data' qsys_role='data_in_3_imag_q_in_tpl' stm='ifft_blocktostream/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_B2S_B2S_Inst_GPIn_cunroll_x.stm' highLevelName='q_in' highLevelIndex='3' vector='0' complex='1'/>
+    <port name='in_3_real_q_in_tpl' clock='clk' reset='areset' width='16' dir='in' role='data' qsys_role='data_in_3_real_q_in_tpl' stm='ifft_blocktostream/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_B2S_B2S_Inst_GPIn_cunroll_x.stm' highLevelName='q_in' highLevelIndex='3' vector='0' complex='0'/>
+    <port name='in_4_sizein_tpl' clock='clk' reset='areset' width='4' dir='in' role='data' qsys_role='data_in_4_sizein_tpl' stm='ifft_blocktostream/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_B2S_B2S_Inst_GPIn_cunroll_x.stm' highLevelName='sizein' highLevelIndex='4' vector='0' complex='0'/>
+    <port name='in_5_cplen_tpl' clock='clk' reset='areset' width='11' dir='in' role='data' qsys_role='data_in_5_cplen_tpl' stm='ifft_blocktostream/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_B2S_B2S_Inst_GPIn_cunroll_x.stm' highLevelName='cplen' highLevelIndex='5' vector='0' complex='0'/>
+    <port name='in_6_nprb_tpl' clock='clk' reset='areset' width='12' dir='in' role='data' qsys_role='data_in_6_nprb_tpl' stm='ifft_blocktostream/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_B2S_B2S_Inst_GPIn_cunroll_x.stm' highLevelName='nprb' highLevelIndex='6' vector='0' complex='0'/>
+    <port name='out_1_vout1_tpl' clock='clk' reset='areset' width='1' dir='out' role='data' qsys_role='data_out_1_vout1_tpl' stm='ifft_blocktostream/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_B2S_B2S_Inst_GPOut_cunroll_x.stm' highLevelName='vout1' highLevelIndex='1' vector='0' complex='0'/>
+    <port name='out_2_cout1_tpl' clock='clk' reset='areset' width='2' dir='out' role='data' qsys_role='data_out_2_cout1_tpl' stm='ifft_blocktostream/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_B2S_B2S_Inst_GPOut_cunroll_x.stm' highLevelName='cout1' highLevelIndex='2' vector='0' complex='0'/>
+    <port name='out_3_imag_dout1_tpl' clock='clk' reset='areset' width='16' dir='out' role='data' qsys_role='data_out_3_imag_dout1_tpl' stm='ifft_blocktostream/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_B2S_B2S_Inst_GPOut_cunroll_x.stm' highLevelName='dout1' highLevelIndex='3' vector='0' complex='1'/>
+    <port name='out_3_real_dout1_tpl' clock='clk' reset='areset' width='16' dir='out' role='data' qsys_role='data_out_3_real_dout1_tpl' stm='ifft_blocktostream/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_B2S_B2S_Inst_GPOut_cunroll_x.stm' highLevelName='dout1' highLevelIndex='3' vector='0' complex='0'/>
+    <file path='eda/sim_lib/altera_mf.v' base='quartus' type='vhdl' usage='simOnly' lib='altera_mf_ver'/>
+    <file path='eda/sim_lib/altera_lnsim_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/altera_lnsim.sv' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/tennm_atoms.vhd' base='quartus' type='vhdl' usage='simOnly' lib='tennm'/>
+    <file path='eda/sim_lib/tennm_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='tennm'/>
+    <file path='eda/sim_lib/mentor/tennm_atoms_ncrypt.sv' base='quartus' type='vhdl' usage='simOnly' lib='tennm'/>
+</island>

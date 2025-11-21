@@ -1,0 +1,9 @@
+	component subsys_niosv is
+		port (
+			clk_clk               : in  std_logic                    := 'X'; -- clk
+			issp_reset_in_reset   : in  std_logic                    := 'X'; -- reset
+			issp_reset_out_source : out std_logic_vector(0 downto 0);        -- source
+			reset_reset_n         : in  std_logic                    := 'X'  -- reset_n
+		);
+	end component subsys_niosv;
+

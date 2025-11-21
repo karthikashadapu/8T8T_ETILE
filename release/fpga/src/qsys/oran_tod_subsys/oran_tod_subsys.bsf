@@ -1,0 +1,156 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the Intel FPGA Software License Subscription Agreements 
+on the Quartus Prime software download page.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 624 512)
+	(text "oran_tod_subsys" (rect 256 0 326 12)(font "SansSerif" (font_size 11)))
+	(text "inst" (rect 8 496 20 508)(font "Arial" ))
+	(port
+		(pt 0 76)
+		(input)
+		(text "eth_1588_tod_synchronizer_clk_master_clk" (rect 0 0 177 12)(font "SansSerif" (font_size 8)))
+		(text "eth_1588_tod_synchronizer_clk_master_clk" (rect 4 65 244 76)(font "SansSerif" (font_size 8)))
+		(line (pt 0 76)(pt 272 76)(line_width 1))
+	)
+	(port
+		(pt 0 126)
+		(input)
+		(text "eth_1588_tod_synchronizer_reset_master_reset" (rect 0 0 195 12)(font "SansSerif" (font_size 8)))
+		(text "eth_1588_tod_synchronizer_reset_master_reset" (rect 4 115 268 126)(font "SansSerif" (font_size 8)))
+		(line (pt 0 126)(pt 272 126)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "eth_1588_tod_synchronizer_clk_slave_clk" (rect 0 0 169 12)(font "SansSerif" (font_size 8)))
+		(text "eth_1588_tod_synchronizer_clk_slave_clk" (rect 4 165 238 176)(font "SansSerif" (font_size 8)))
+		(line (pt 0 176)(pt 272 176)(line_width 1))
+	)
+	(port
+		(pt 0 226)
+		(input)
+		(text "eth_1588_tod_synchronizer_reset_slave_reset" (rect 0 0 188 12)(font "SansSerif" (font_size 8)))
+		(text "eth_1588_tod_synchronizer_reset_slave_reset" (rect 4 215 262 226)(font "SansSerif" (font_size 8)))
+		(line (pt 0 226)(pt 272 226)(line_width 1))
+	)
+	(port
+		(pt 0 276)
+		(input)
+		(text "eth_1588_tod_synchronizer_clk_sampling_clk" (rect 0 0 182 12)(font "SansSerif" (font_size 8)))
+		(text "eth_1588_tod_synchronizer_clk_sampling_clk" (rect 4 265 256 276)(font "SansSerif" (font_size 8)))
+		(line (pt 0 276)(pt 272 276)(line_width 1))
+	)
+	(port
+		(pt 0 326)
+		(input)
+		(text "eth_1588_tod_synchronizer_start_tod_sync_data" (rect 0 0 199 12)(font "SansSerif" (font_size 8)))
+		(text "eth_1588_tod_synchronizer_start_tod_sync_data" (rect 4 315 274 326)(font "SansSerif" (font_size 8)))
+		(line (pt 0 326)(pt 272 326)(line_width 1))
+	)
+	(port
+		(pt 0 376)
+		(input)
+		(text "rst_tod_n_reset_n" (rect 0 0 75 12)(font "SansSerif" (font_size 8)))
+		(text "rst_tod_n_reset_n" (rect 4 365 106 376)(font "SansSerif" (font_size 8)))
+		(line (pt 0 376)(pt 272 376)(line_width 1))
+	)
+	(port
+		(pt 0 426)
+		(input)
+		(text "ptp_seconds_data[95..0]" (rect 0 0 97 12)(font "SansSerif" (font_size 8)))
+		(text "ptp_seconds_data[95..0]" (rect 4 415 142 426)(font "SansSerif" (font_size 8)))
+		(line (pt 0 426)(pt 272 426)(line_width 3))
+	)
+	(port
+		(pt 0 476)
+		(input)
+		(text "clk_tod_clk" (rect 0 0 44 12)(font "SansSerif" (font_size 8)))
+		(text "clk_tod_clk" (rect 4 465 70 476)(font "SansSerif" (font_size 8)))
+		(line (pt 0 476)(pt 272 476)(line_width 1))
+	)
+	(port
+		(pt 624 76)
+		(output)
+		(text "oran_tod_time_of_day_96b_data[95..0]" (rect 0 0 160 12)(font "SansSerif" (font_size 8)))
+		(text "oran_tod_time_of_day_96b_data[95..0]" (rect 431 65 647 76)(font "SansSerif" (font_size 8)))
+		(line (pt 624 76)(pt 357 76)(line_width 3))
+	)
+	(port
+		(pt 624 101)
+		(output)
+		(text "oran_tod_time_of_day_96b_valid" (rect 0 0 136 12)(font "SansSerif" (font_size 8)))
+		(text "oran_tod_time_of_day_96b_valid" (rect 460 90 640 101)(font "SansSerif" (font_size 8)))
+		(line (pt 624 101)(pt 357 101)(line_width 1))
+	)
+	(drawing
+		(text "eth_1588_tod_synchronizer_clk_master" (rect 41 46 298 105)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 277 71 572 152)(font "SansSerif" (color 0 0 0)))
+		(text "eth_1588_tod_synchronizer_reset_master" (rect 27 96 282 205)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "reset" (rect 277 121 584 252)(font "SansSerif" (color 0 0 0)))
+		(text "eth_1588_tod_synchronizer_clk_slave" (rect 52 146 314 305)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 277 171 572 352)(font "SansSerif" (color 0 0 0)))
+		(text "eth_1588_tod_synchronizer_reset_slave" (rect 38 196 298 405)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "reset" (rect 277 221 584 452)(font "SansSerif" (color 0 0 0)))
+		(text "eth_1588_tod_synchronizer_clk_sampling" (rect 30 246 288 505)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 277 271 572 552)(font "SansSerif" (color 0 0 0)))
+		(text "eth_1588_tod_synchronizer_start_tod_sync" (rect 19 296 278 605)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 277 321 578 652)(font "SansSerif" (color 0 0 0)))
+		(text "oran_tod_time_of_day_96b" (rect 358 46 860 105)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 336 71 696 152)(font "SansSerif" (color 0 0 0)))
+		(text "valid" (rect 334 96 698 202)(font "SansSerif" (color 0 0 0)))
+		(text "rst_tod_n" (rect 216 346 486 705)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 277 371 596 752)(font "SansSerif" (color 0 0 0)))
+		(text "ptp_seconds" (rect 199 396 464 805)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 277 421 578 852)(font "SansSerif" (color 0 0 0)))
+		(text "clk_tod" (rect 231 446 504 905)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 277 471 572 952)(font "SansSerif" (color 0 0 0)))
+		(text " oran_tod_subsys " (rect 551 501 1204 1012)(font "SansSerif" ))
+		(line (pt 272 34)(pt 357 34)(line_width 1))
+		(line (pt 357 34)(pt 357 501)(line_width 1))
+		(line (pt 272 501)(pt 357 501)(line_width 1))
+		(line (pt 272 34)(pt 272 501)(line_width 1))
+		(line (pt 273 55)(pt 273 80)(line_width 1))
+		(line (pt 274 55)(pt 274 80)(line_width 1))
+		(line (pt 273 105)(pt 273 130)(line_width 1))
+		(line (pt 274 105)(pt 274 130)(line_width 1))
+		(line (pt 273 155)(pt 273 180)(line_width 1))
+		(line (pt 274 155)(pt 274 180)(line_width 1))
+		(line (pt 273 205)(pt 273 230)(line_width 1))
+		(line (pt 274 205)(pt 274 230)(line_width 1))
+		(line (pt 273 255)(pt 273 280)(line_width 1))
+		(line (pt 274 255)(pt 274 280)(line_width 1))
+		(line (pt 273 305)(pt 273 330)(line_width 1))
+		(line (pt 274 305)(pt 274 330)(line_width 1))
+		(line (pt 356 55)(pt 356 105)(line_width 1))
+		(line (pt 355 55)(pt 355 105)(line_width 1))
+		(line (pt 273 355)(pt 273 380)(line_width 1))
+		(line (pt 274 355)(pt 274 380)(line_width 1))
+		(line (pt 273 405)(pt 273 430)(line_width 1))
+		(line (pt 274 405)(pt 274 430)(line_width 1))
+		(line (pt 273 455)(pt 273 480)(line_width 1))
+		(line (pt 274 455)(pt 274 480)(line_width 1))
+		(line (pt 0 0)(pt 624 0)(line_width 1))
+		(line (pt 624 0)(pt 624 518)(line_width 1))
+		(line (pt 0 518)(pt 624 518)(line_width 1))
+		(line (pt 0 0)(pt 0 518)(line_width 1))
+	)
+)

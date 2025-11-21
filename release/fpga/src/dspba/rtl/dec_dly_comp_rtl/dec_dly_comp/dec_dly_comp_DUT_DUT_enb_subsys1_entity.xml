@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<entity name='dec_dly_comp_DUT_DUT_enb_subsys1' floating-point-script-prefix='dec_dly_comp_DUT_DUT_enb_subsys1_fpc'>
+  <clock name='sys' port='clk' reset='areset' reset-type='high' />
+</entity>

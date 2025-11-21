@@ -1,0 +1,56 @@
+	component subsys_ftile_25gbe_tx_dma is
+		generic (
+			FP_WIDTH : integer := 8
+		);
+		port (
+			ts_chs_compl_0_clk_bus_in_clk              : in  std_logic_vector(0 downto 0)   := (others => 'X'); -- clk
+			ts_chs_compl_0_rst_bus_in_reset            : in  std_logic_vector(0 downto 0)   := (others => 'X'); -- reset
+			ts_chs_compl_0_i_ts_valid                  : in  std_logic_vector(0 downto 0)   := (others => 'X'); -- valid
+			ts_chs_compl_0_i_ts_fingerprint            : in  std_logic_vector(19 downto 0)  := (others => 'X'); -- fingerprint
+			ts_chs_compl_0_i_ts_data                   : in  std_logic_vector(95 downto 0)  := (others => 'X'); -- data
+			dma_clk_clk                                : in  std_logic                      := 'X';             -- clk
+			csr_waitrequest                            : out std_logic;                                         -- waitrequest
+			csr_readdata                               : out std_logic_vector(31 downto 0);                     -- readdata
+			csr_readdatavalid                          : out std_logic;                                         -- readdatavalid
+			csr_burstcount                             : in  std_logic_vector(0 downto 0)   := (others => 'X'); -- burstcount
+			csr_writedata                              : in  std_logic_vector(31 downto 0)  := (others => 'X'); -- writedata
+			csr_address                                : in  std_logic_vector(5 downto 0)   := (others => 'X'); -- address
+			csr_write                                  : in  std_logic                      := 'X';             -- write
+			csr_read                                   : in  std_logic                      := 'X';             -- read
+			csr_byteenable                             : in  std_logic_vector(3 downto 0)   := (others => 'X'); -- byteenable
+			csr_debugaccess                            : in  std_logic                      := 'X';             -- debugaccess
+			tx_dma_fifo_0_out_st_ready                 : in  std_logic                      := 'X';             -- ready
+			tx_dma_fifo_0_out_st_startofpacket         : out std_logic;                                         -- startofpacket
+			tx_dma_fifo_0_out_st_valid                 : out std_logic;                                         -- valid
+			tx_dma_fifo_0_out_st_endofpacket           : out std_logic;                                         -- endofpacket
+			tx_dma_fifo_0_out_st_data                  : out std_logic_vector(63 downto 0);                     -- data
+			tx_dma_fifo_0_out_st_empty                 : out std_logic_vector(2 downto 0);                      -- empty
+			tx_dma_fifo_0_out_st_error                 : out std_logic_vector(0 downto 0);                      -- error
+			tx_dma_fifo_0_out_ts_req_valid             : out std_logic;                                         -- valid
+			tx_dma_fifo_0_out_ts_req_fingerprint       : out std_logic_vector(19 downto 0);                     -- fingerprint
+			ftile_clk_clk                              : in  std_logic                      := 'X';             -- clk
+			prefetcher_read_master_address             : out std_logic_vector(36 downto 0);                     -- address
+			prefetcher_read_master_read                : out std_logic;                                         -- read
+			prefetcher_read_master_readdata            : in  std_logic_vector(127 downto 0) := (others => 'X'); -- readdata
+			prefetcher_read_master_waitrequest         : in  std_logic                      := 'X';             -- waitrequest
+			prefetcher_read_master_readdatavalid       : in  std_logic                      := 'X';             -- readdatavalid
+			prefetcher_read_master_burstcount          : out std_logic_vector(2 downto 0);                      -- burstcount
+			prefetcher_write_master_address            : out std_logic_vector(36 downto 0);                     -- address
+			prefetcher_write_master_write              : out std_logic;                                         -- write
+			prefetcher_write_master_byteenable         : out std_logic_vector(15 downto 0);                     -- byteenable
+			prefetcher_write_master_writedata          : out std_logic_vector(127 downto 0);                    -- writedata
+			prefetcher_write_master_waitrequest        : in  std_logic                      := 'X';             -- waitrequest
+			prefetcher_write_master_response           : in  std_logic_vector(1 downto 0)   := (others => 'X'); -- response
+			prefetcher_write_master_writeresponsevalid : in  std_logic                      := 'X';             -- writeresponsevalid
+			irq_irq                                    : out std_logic;                                         -- irq
+			read_master_address                        : out std_logic_vector(36 downto 0);                     -- address
+			read_master_read                           : out std_logic;                                         -- read
+			read_master_byteenable                     : out std_logic_vector(15 downto 0);                     -- byteenable
+			read_master_readdata                       : in  std_logic_vector(127 downto 0) := (others => 'X'); -- readdata
+			read_master_waitrequest                    : in  std_logic                      := 'X';             -- waitrequest
+			read_master_readdatavalid                  : in  std_logic                      := 'X';             -- readdatavalid
+			read_master_burstcount                     : out std_logic_vector(4 downto 0);                      -- burstcount
+			reset_reset_n                              : in  std_logic                      := 'X'              -- reset_n
+		);
+	end component subsys_ftile_25gbe_tx_dma;
+

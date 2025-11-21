@@ -1,0 +1,26 @@
+require version 23.3
+inputs Valid_in Cmp1 Cmp2
+
+enable ena
+start go
+
+netlist
+
+
+
+  transitions S2B : latch We cnt1E cnt2E
+    finish waitdone
+  
+    state _init
+                  if (Valid_in) CPwait 0 1 0 1 
+                   default _init 0 0 0 0
+    state CPwait
+                  if (Cmp1)  DataWrite 1 0 0 0
+                    default  CPwait 0 0 0 0
+    state DataWrite 
+                 if (Cmp2 & Valid_in)   CPwait  0 1 0 1
+                 if (Cmp2) _init  0 0 0 0
+                 default   DataWrite 0 0 0 0 
+  end
+
+

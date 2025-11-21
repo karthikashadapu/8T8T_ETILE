@@ -1,0 +1,21 @@
+# system info subsys_jtg_mst on 2025.10.16.14:51:57
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for subsys_jtg_mst on 2025.10.16.14:51:57
+files:
+filepath,kind,attributes,module,is_top
+sim/subsys_jtg_mst.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,subsys_jtg_mst,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+subsys_jtg_mst.fpga_m,fpga_m
+subsys_jtg_mst.fpga_m2ocm_pb,fpga_m2ocm_pb
+subsys_jtg_mst.hps_m,hps_m
+subsys_jtg_mst.jtag_clk,jtag_clk
+subsys_jtg_mst.jtag_rst_in,jtag_rst_in

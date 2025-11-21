@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="file:////mnt/media/Tools/Altera/Quartus_23p3/quartus/dspba/Blocksets/BaseBlocks/modelip.xsl"?>
+<MODEL>
+<NAME>ifft_blocktostream/DUT/low_phy_dl/PhaseCompensation_lite/ComplexMixer/ComplexMixer</NAME>
+<BUILD_YEAR>2023</BUILD_YEAR>
+<LATENCY block='lastTStep'>5</LATENCY>
+<DOCPATH>file:////mnt/media/Tools/Altera/Quartus_23p3/quartus/dspba/Docs/Help/</DOCPATH>
+<DESCRIPTION>
+This help page relates to the specific instance 'ifft_blocktostream_DUT_low_phy_dl_PhaseCompensation_lite_ComplexMixer_ComplexMixer' of the MIXC block
+</DESCRIPTION>
+<HELP>file:////mnt/media/Tools/Altera/Quartus_23p3/quartus/dspba/Docs/Help/MIXC_help.html</HELP>
+<BLOCKTYPE>MIXC</BLOCKTYPE>
+<INFO>
+ <TEXT>Created using DSP Builder for Intel(R) FPGAs - Advanced Blockset software</TEXT>
+</INFO>
+<INFO>
+ <TEXT>Written on Thu Jun 12 21:17:48 2025
+</TEXT>
+</INFO>
+<PORTS>
+<PORT>
+ <NAME>In_v</NAME>
+ <WIDTH>1</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>Qualifying signal to indicate validity of data signals</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>In_c</NAME>
+ <WIDTH>8</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>Qualifying signal to indicate channel of data signals</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>iIn_0</NAME>
+ <WIDTH>16</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>Data signal</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>qIn_0</NAME>
+ <WIDTH>16</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>General Purpose Input</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>sIn_0</NAME>
+ <WIDTH>18</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>General Purpose Input</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>cIn_0</NAME>
+ <WIDTH>18</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>General Purpose Input</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>qOut_0</NAME>
+ <WIDTH>35</WIDTH>
+ <DIRECTION>out</DIRECTION>
+ <DESCRIPTION>General Purpose Output</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>Out_v</NAME>
+ <WIDTH>1</WIDTH>
+ <DIRECTION>out</DIRECTION>
+ <DESCRIPTION>Qualifying signal to indicate validity of data signals</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>Out_c</NAME>
+ <WIDTH>8</WIDTH>
+ <DIRECTION>out</DIRECTION>
+ <DESCRIPTION>Qualifying signal to indicate channel of data signals</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>iOut_0</NAME>
+ <WIDTH>35</WIDTH>
+ <DIRECTION>out</DIRECTION>
+ <DESCRIPTION>Data signal</DESCRIPTION>
+</PORT>
+</PORTS>
+
+<TIMING>
+ <WAVEFORM>
+  <NAME>Overview</NAME>
+  <PATH>./cic.svg</PATH>
+ </WAVEFORM>
+</TIMING>
+<RESOURCES>
+<TOTAL>
+ <LUT4>59</LUT4>
+ <MULT>4</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</TOTAL>
+</RESOURCES>
+
+</MODEL>

@@ -1,0 +1,20 @@
+# system info master_tod_subsys on 2025.10.16.14:55:15
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for master_tod_subsys on 2025.10.16.14:55:15
+files:
+filepath,kind,attributes,module,is_top
+sim/master_tod_subsys.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,master_tod_subsys,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+master_tod_subsys.master_tod_top_0,master_tod_top_0
+master_tod_subsys.mtod_subsys_clk100,mtod_subsys_clk100
+master_tod_subsys.mtod_subsys_pps_load_tod_0,mtod_subsys_pps_load_tod_0
+master_tod_subsys.mtod_subsys_rstn,mtod_subsys_rstn

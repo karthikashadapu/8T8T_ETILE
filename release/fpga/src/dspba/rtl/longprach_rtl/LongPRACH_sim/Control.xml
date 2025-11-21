@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="file:////mnt/media/Tools/Altera/Quartus_23p3/quartus/dspba/Blocksets/BaseBlocks/modelip.xsl"?>
+<MODEL>
+<NAME>LongPRACH_sim/Control</NAME>
+<BUILD_YEAR>2023</BUILD_YEAR>
+<DOCPATH>file:////mnt/media/Tools/Altera/Quartus_23p3/quartus/dspba/Docs/Help/</DOCPATH>
+<DESCRIPTION>
+This help page relates to the specific instance 'Control' of the CONTROL block
+</DESCRIPTION>
+<HELP>file:////mnt/media/Tools/Altera/Quartus_23p3/quartus/dspba/Docs/Help/CONTROL_help.html</HELP>
+<BLOCKTYPE>CONTROL</BLOCKTYPE>
+<MEMORYMAPS path="LongPRACH_sim">
+  <REGS numregs="4" desc="NCO Phase Increment Registers (sin Inversion@MSB cos Inversion@MSB-1)" origin="LongPRACH_sim_prach_wrap_LongPRACH_DUT_Longprach_C_M_plane_LongPRACH_core_MIXER_NCO1" clashes="false" rwmode="Read/Write" bitwidth="32" fracwidth="0" privatespace="false">
+    <REG numregparts="1" desc="NCO Phase Increment Register 0 (sin@MSB cos@MSB-1)" clashes="false" double_init="424804352.000000" sint_init="424804352">
+      <REGPART part_init="424804352" part_double_init="424804352.000000" clashes="false" width="32" msb="31" lsb="0" addr="0"/>
+    </REG>
+    <REG numregparts="1" desc="NCO Phase Increment Register 1 (sin@MSB cos@MSB-1)" clashes="false" double_init="424804352.000000" sint_init="424804352">
+      <REGPART part_init="424804352" part_double_init="424804352.000000" clashes="false" width="32" msb="31" lsb="0" addr="1"/>
+    </REG>
+    <REG numregparts="1" desc="NCO Phase Increment Register 2 (sin@MSB cos@MSB-1)" clashes="false" double_init="424804352.000000" sint_init="424804352">
+      <REGPART part_init="424804352" part_double_init="424804352.000000" clashes="false" width="32" msb="31" lsb="0" addr="2"/>
+    </REG>
+    <REG numregparts="1" desc="NCO Phase Increment Register 3 (sin@MSB cos@MSB-1)" clashes="false" double_init="424804352.000000" sint_init="424804352">
+      <REGPART part_init="424804352" part_double_init="424804352.000000" clashes="false" width="32" msb="31" lsb="0" addr="3"/>
+    </REG>
+  </REGS>
+</MEMORYMAPS>
+<RESOURCES>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>3</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>0</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>0</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>0</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/CP_REMOVAL</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>0</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/CP_REMOVAL/RemoveCP5</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>210</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>0</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage1</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>0</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage1/Filt_DEC_by_3_stage1</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>0</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage1/Filt_DEC_by_3_stage1/DecimatingFIR1</FUNAME>
+ <FUTYPE>FIRD</FUTYPE>
+ <LUT4>405</LUT4>
+ <MULT>2</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage1/Filt_DEC_by_3_stage1/DecimatingFIR2</FUNAME>
+ <FUTYPE>FIRD</FUTYPE>
+ <LUT4>405</LUT4>
+ <MULT>2</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage1/Filt_DEC_by_3_stage1/Scale</FUNAME>
+ <FUTYPE>SCALE</FUTYPE>
+ <LUT4>132</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage1/Filt_DEC_by_3_stage1/Scale1</FUNAME>
+ <FUTYPE>SCALE</FUTYPE>
+ <LUT4>132</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage1/filt_flush_in</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>49</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage2</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>0</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage2/Filt_DEC_by_2_stage2</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>0</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage2/Filt_DEC_by_2_stage2/DecimatingFIR</FUNAME>
+ <FUTYPE>FIRD</FUTYPE>
+ <LUT4>312</LUT4>
+ <MULT>1</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage2/Filt_DEC_by_2_stage2/DecimatingFIR1</FUNAME>
+ <FUTYPE>FIRD</FUTYPE>
+ <LUT4>312</LUT4>
+ <MULT>1</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage2/Filt_DEC_by_2_stage2/Scale</FUNAME>
+ <FUTYPE>SCALE</FUTYPE>
+ <LUT4>125</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage2/Filt_DEC_by_2_stage2/Scale1</FUNAME>
+ <FUTYPE>SCALE</FUTYPE>
+ <LUT4>125</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage3</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>0</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage3/Filt_DEC_by_2_stage3</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>0</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage3/Filt_DEC_by_2_stage3/DecimatingFIR</FUNAME>
+ <FUTYPE>FIRD</FUTYPE>
+ <LUT4>221</LUT4>
+ <MULT>1</MULT>
+ <BITS>640</BITS>
+ <BLOCKS>1</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage3/Filt_DEC_by_2_stage3/DecimatingFIR1</FUNAME>
+ <FUTYPE>FIRD</FUTYPE>
+ <LUT4>221</LUT4>
+ <MULT>1</MULT>
+ <BITS>640</BITS>
+ <BLOCKS>1</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage3/Filt_DEC_by_2_stage3/Scale</FUNAME>
+ <FUTYPE>SCALE</FUTYPE>
+ <LUT4>129</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage3/Filt_DEC_by_2_stage3/Scale1</FUNAME>
+ <FUTYPE>SCALE</FUTYPE>
+ <LUT4>129</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage5</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>0</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage5/Filt_DEC_by_2_stage5</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>0</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage5/Filt_DEC_by_2_stage5/DecimatingFIR</FUNAME>
+ <FUTYPE>FIRD</FUTYPE>
+ <LUT4>221</LUT4>
+ <MULT>1</MULT>
+ <BITS>640</BITS>
+ <BLOCKS>1</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage5/Filt_DEC_by_2_stage5/DecimatingFIR1</FUNAME>
+ <FUTYPE>FIRD</FUTYPE>
+ <LUT4>221</LUT4>
+ <MULT>1</MULT>
+ <BITS>640</BITS>
+ <BLOCKS>1</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage5/Filt_DEC_by_2_stage5/Scale</FUNAME>
+ <FUTYPE>SCALE</FUTYPE>
+ <LUT4>129</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage5/Filt_DEC_by_2_stage5/Scale1</FUNAME>
+ <FUTYPE>SCALE</FUTYPE>
+ <LUT4>129</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage6</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>0</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage6/Filt_DEC_by_2_stage6</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>0</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage6/Filt_DEC_by_2_stage6/DecimatingFIR</FUNAME>
+ <FUTYPE>FIRD</FUTYPE>
+ <LUT4>291</LUT4>
+ <MULT>1</MULT>
+ <BITS>4096</BITS>
+ <BLOCKS>1</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage6/Filt_DEC_by_2_stage6/DecimatingFIR1</FUNAME>
+ <FUTYPE>FIRD</FUTYPE>
+ <LUT4>291</LUT4>
+ <MULT>1</MULT>
+ <BITS>4096</BITS>
+ <BLOCKS>1</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage6/Filt_DEC_by_2_stage6/Scale</FUNAME>
+ <FUTYPE>SCALE</FUTYPE>
+ <LUT4>154</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage6/Filt_DEC_by_2_stage6/Scale1</FUNAME>
+ <FUTYPE>SCALE</FUTYPE>
+ <LUT4>154</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/Stage6/filt_flush_out</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>106</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/stage4</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>0</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/stage4/Filt_DEC_by_2_stage4</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>0</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/stage4/Filt_DEC_by_2_stage4/DecimatingFIR</FUNAME>
+ <FUTYPE>FIRD</FUTYPE>
+ <LUT4>241</LUT4>
+ <MULT>1</MULT>
+ <BITS>1024</BITS>
+ <BLOCKS>1</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/stage4/Filt_DEC_by_2_stage4/DecimatingFIR1</FUNAME>
+ <FUTYPE>FIRD</FUTYPE>
+ <LUT4>241</LUT4>
+ <MULT>1</MULT>
+ <BITS>1024</BITS>
+ <BLOCKS>1</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/stage4/Filt_DEC_by_2_stage4/Scale</FUNAME>
+ <FUTYPE>SCALE</FUTYPE>
+ <LUT4>129</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/DECIMATION1/stage4/Filt_DEC_by_2_stage4/Scale1</FUNAME>
+ <FUTYPE>SCALE</FUTYPE>
+ <LUT4>129</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/FFTShift</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>153</LUT4>
+ <MULT>0</MULT>
+ <BITS>65536</BITS>
+ <BLOCKS>4</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/MIXER</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>95</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/MIXER/ComplexMixer1</FUNAME>
+ <FUTYPE>MIXC</FUTYPE>
+ <LUT4>72</LUT4>
+ <MULT>4</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/MIXER/NCO1</FUNAME>
+ <FUTYPE>NCO</FUTYPE>
+ <LUT4>742</LUT4>
+ <MULT>2</MULT>
+ <BITS>9216</BITS>
+ <BLOCKS>2</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/MIXER/Scale</FUNAME>
+ <FUTYPE>SCALE</FUTYPE>
+ <LUT4>118</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/MIXER/Scale1</FUNAME>
+ <FUTYPE>SCALE</FUTYPE>
+ <LUT4>118</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/S2B_FFT</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>0</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/S2B_FFT/FFT1</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>3144</LUT4>
+ <MULT>28</MULT>
+ <BITS>58192</BITS>
+ <BLOCKS>10</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/S2B_FFT/S2B</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>682</LUT4>
+ <MULT>0</MULT>
+ <BITS>262144</BITS>
+ <BLOCKS>16</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/S2B_FFT/S2B/S2B_control/Mem_rd_control/Mem_rd_sub1/Finite State Machine12</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>8</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/S2B_FFT/Scale</FUNAME>
+ <FUTYPE>SCALE</FUTYPE>
+ <LUT4>122</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/S2B_FFT/Scale1</FUNAME>
+ <FUTYPE>SCALE</FUTYPE>
+ <LUT4>122</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/S2B_FFT/gain</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>78</LUT4>
+ <MULT>4</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/SYM_SELECT</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>236</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/Timeref_capture_fifo</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>105</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/MUX_ConfigId</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>1392</LUT4>
+ <MULT>2</MULT>
+ <BITS>25856</BITS>
+ <BLOCKS>19</BLOCKS>
+</FUNIT>
+</RESOURCES>
+</MODEL>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="file:////mnt/media/Tools/Altera/Quartus_23p3/quartus/dspba/Blocksets/BaseBlocks/modelip.xsl"?>
+<MODEL>
+<NAME>LongPRACH_sim/prach_wrap/LongPRACH_DUT/Longprach_C_M_plane/LongPRACH_core/MIXER/NCO1</NAME>
+<BUILD_YEAR>2023</BUILD_YEAR>
+<LATENCY block='lastTStep'>17</LATENCY>
+<DOCPATH>file:////mnt/media/Tools/Altera/Quartus_23p3/quartus/dspba/Docs/Help/</DOCPATH>
+<DESCRIPTION>
+This help page relates to the specific instance 'LongPRACH_sim_prach_wrap_LongPRACH_DUT_Longprach_C_M_plane_LongPRACH_core_MIXER_NCO1' of the NCO block
+</DESCRIPTION>
+<HELP>file:////mnt/media/Tools/Altera/Quartus_23p3/quartus/dspba/Docs/Help/NCO_help.html</HELP>
+<BLOCKTYPE>NCO</BLOCKTYPE>
+<INFO>
+ <TEXT>Created using DSP Builder for Intel(R) FPGAs - Advanced Blockset software</TEXT>
+</INFO>
+<INFO>
+ <TEXT>Written on Fri Dec  6 17:01:03 2024
+</TEXT>
+</INFO>
+<PORTS>
+<PORT>
+ <NAME>xIn_v</NAME>
+ <WIDTH>1</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>Qualifying signal to indicate validity of data signals</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>xIn_c</NAME>
+ <WIDTH>8</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>Qualifying signal to indicate channel of data signals</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>xIn_p_0</NAME>
+ <WIDTH>30</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>Data signal</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>xIn_s_0</NAME>
+ <WIDTH>1</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>Data signal</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>busIn_writedata</NAME>
+ <WIDTH>32</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>Bus Data Signal</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>busIn_address</NAME>
+ <WIDTH>2</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>Bus Address Signal</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>busIn_write</NAME>
+ <WIDTH>1</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>Bus Write Enable Signal</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>busIn_read</NAME>
+ <WIDTH>1</WIDTH>
+ <DIRECTION>in</DIRECTION>
+ <DESCRIPTION>Bus Read Enable Signal</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>ncoOut_v</NAME>
+ <WIDTH>1</WIDTH>
+ <DIRECTION>out</DIRECTION>
+ <DESCRIPTION>Qualifying signal to indicate validity of data signals</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>ncoOut_c</NAME>
+ <WIDTH>8</WIDTH>
+ <DIRECTION>out</DIRECTION>
+ <DESCRIPTION>Qualifying signal to indicate channel of data signals</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>sinOut_0</NAME>
+ <WIDTH>18</WIDTH>
+ <DIRECTION>out</DIRECTION>
+ <DESCRIPTION>Data signal</DESCRIPTION>
+</PORT>
+<PORT>
+ <NAME>cosOut_0</NAME>
+ <WIDTH>18</WIDTH>
+ <DIRECTION>out</DIRECTION>
+ <DESCRIPTION>Data signal</DESCRIPTION>
+</PORT>
+</PORTS>
+
+<TIMING>
+ <WAVEFORM>
+  <NAME>Overview</NAME>
+  <PATH>./cic.svg</PATH>
+ </WAVEFORM>
+</TIMING>
+<RESOURCES>
+<TOTAL>
+ <LUT4>742</LUT4>
+ <MULT>2</MULT>
+ <BITS>9216</BITS>
+ <BLOCKS>2</BLOCKS>
+</TOTAL>
+</RESOURCES>
+
+</MODEL>

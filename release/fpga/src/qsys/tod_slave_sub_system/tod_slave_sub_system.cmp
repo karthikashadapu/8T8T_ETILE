@@ -1,0 +1,29 @@
+	component tod_slave_sub_system is
+		port (
+			master_tod_split_conduit_end_data             : in  std_logic_vector(95 downto 0) := (others => 'X'); -- data
+			master_tod_split_conduit_end_valid            : in  std_logic                     := 'X';             -- valid
+			master_tod_split_conduit_end_10_data          : out std_logic_vector(95 downto 0);                    -- data
+			master_tod_split_conduit_end_10_valid         : out std_logic;                                        -- valid
+			oran_tod_stack_tx_clk_clk                     : in  std_logic                     := 'X';             -- clk
+			oran_tod_stack_rx_clk_clk                     : in  std_logic                     := 'X';             -- clk
+			oran_tod_stack_todsync_sample_clk_clk         : in  std_logic                     := 'X';             -- clk
+			oran_tod_stack_tx_tod_interface_tdata         : out std_logic_vector(95 downto 0);                    -- tdata
+			oran_tod_stack_tx_tod_interface_tvalid        : out std_logic;                                        -- tvalid
+			oran_tod_stack_rx_tod_interface_tdata         : out std_logic_vector(95 downto 0);                    -- tdata
+			oran_tod_stack_rx_tod_interface_tvalid        : out std_logic;                                        -- tvalid
+			oran_tod_stack_tx_pll_locked_lock             : in  std_logic                     := 'X';             -- lock
+			port_8_tod_stack_tx_clk_clk                   : in  std_logic                     := 'X';             -- clk
+			port_8_tod_stack_rx_clk_clk                   : in  std_logic                     := 'X';             -- clk
+			port_8_tod_stack_todsync_sample_clk_clk       : in  std_logic                     := 'X';             -- clk
+			port_8_tod_stack_tx_tod_interface_tdata       : out std_logic_vector(95 downto 0);                    -- tdata
+			port_8_tod_stack_tx_tod_interface_tvalid      : out std_logic;                                        -- tvalid
+			port_8_tod_stack_rx_tod_interface_tdata       : out std_logic_vector(95 downto 0);                    -- tdata
+			port_8_tod_stack_rx_tod_interface_tvalid      : out std_logic;                                        -- tvalid
+			port_8_tod_stack_tx_pll_locked_lock           : in  std_logic                     := 'X';             -- lock
+			tod_subsys_clk_100_in_clk_clk                 : in  std_logic                     := 'X';             -- clk
+			tod_subsys_mtod_clk_in_clk_clk                : in  std_logic                     := 'X';             -- clk
+			tod_subsys_rst_100_in_reset_reset_n           : in  std_logic                     := 'X';             -- reset_n
+			todsync_sample_plllock_split_conduit_end_lock : in  std_logic_vector(0 downto 0)  := (others => 'X')  -- lock
+		);
+	end component tod_slave_sub_system;
+

@@ -1,0 +1,304 @@
+-- ------------------------------------------------------------------------- 
+-- High Level Design Compiler for Intel(R) FPGAs Version 23.3 (Release Build #f9894c94f4)
+-- Quartus Prime development tool and MATLAB/Simulink Interface
+-- 
+-- Legal Notice: Copyright 2023 Intel Corporation.  All rights reserved.
+-- Your use of  Intel Corporation's design tools,  logic functions and other
+-- software and  tools, and its AMPP partner logic functions, and any output
+-- files any  of the foregoing (including  device programming  or simulation
+-- files), and  any associated  documentation  or information  are expressly
+-- subject  to the terms and  conditions of the  Intel FPGA Software License
+-- Agreement, Intel MegaCore Function License Agreement, or other applicable
+-- license agreement,  including,  without limitation,  that your use is for
+-- the  sole  purpose of  programming  logic devices  manufactured by  Intel
+-- and  sold by Intel  or its authorized  distributors. Please refer  to the
+-- applicable agreement for further details.
+-- ---------------------------------------------------------------------------
+
+-- VHDL created from ca_interp_DUT_Summer_DUC_Poly_phase_Interp_hb3_im
+-- VHDL created on Tue Jan  7 17:04:28 2025
+
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.NUMERIC_STD.all;
+use std.TextIO.all;
+USE work.ca_interp_DUT_safe_path.all;
+
+entity ca_interp_DUT_Summer_DUC_Poly_phase_Interp_hb3_im_stm is
+    port (
+        xIn_v_stm : out std_logic_vector(0 downto 0);
+        xIn_c_stm : out std_logic_vector(7 downto 0);
+        xIn_0_stm : out std_logic_vector(15 downto 0);
+        xIn_1_stm : out std_logic_vector(15 downto 0);
+        xIn_2_stm : out std_logic_vector(15 downto 0);
+        xIn_3_stm : out std_logic_vector(15 downto 0);
+        xOut_v_stm : out std_logic_vector(0 downto 0);
+        xOut_c_stm : out std_logic_vector(7 downto 0);
+        xOut_0_stm : out std_logic_vector(37 downto 0);
+        xOut_1_stm : out std_logic_vector(37 downto 0);
+        xOut_2_stm : out std_logic_vector(37 downto 0);
+        xOut_3_stm : out std_logic_vector(37 downto 0);
+        xOut_4_stm : out std_logic_vector(37 downto 0);
+        xOut_5_stm : out std_logic_vector(37 downto 0);
+        xOut_6_stm : out std_logic_vector(37 downto 0);
+        xOut_7_stm : out std_logic_vector(37 downto 0);
+        clk : out std_logic;
+        areset : out std_logic
+    );
+end ca_interp_DUT_Summer_DUC_Poly_phase_Interp_hb3_im_stm;
+
+architecture normal of ca_interp_DUT_Summer_DUC_Poly_phase_Interp_hb3_im_stm is
+
+    signal clk_stm_sig : std_logic := '0';
+    signal clk_stm_sig_stop : std_logic := '0';
+    signal areset_stm_sig : std_logic := '1';
+    signal clk_xIn_stm_sig_stop : std_logic := '0';
+    signal clk_xOut_stm_sig_stop : std_logic := '0';
+
+    function str_to_stdvec(inp: string) return std_logic_vector is
+        variable temp: std_logic_vector(inp'range) := (others => 'X');
+    begin
+        for i in inp'range loop
+            IF ((inp(i) = '1')) THEN
+                temp(i) := '1';
+            elsif (inp(i) = '0') then
+                temp(i) := '0';
+            END IF;
+            end loop;
+            return temp;
+        end function str_to_stdvec;
+        
+
+    begin
+
+    clk <= clk_stm_sig;
+    clk_process: process 
+    begin
+        wait for 200 ps;
+        clk_stm_sig <= not clk_stm_sig;
+        wait for 817 ps;
+        if (clk_stm_sig_stop = '1') then
+            assert (false)
+            report "Arrived at end of stimulus data on clk clk" severity NOTE;
+            wait;
+        end if;
+        wait for 200 ps;
+        clk_stm_sig <= not clk_stm_sig;
+        wait for 817 ps;
+        if (clk_stm_sig_stop = '1') then
+            assert (false)
+            report "Arrived at end of stimulus data on clk clk" severity NOTE;
+            wait;
+        end if;
+    end process;
+
+    areset <= areset_stm_sig;
+    areset_process: process begin
+        areset_stm_sig <= '1';
+        wait for 1525 ps;
+        wait for 1023*2034 ps; -- additional reset delay
+        areset_stm_sig <= '0';
+        wait;
+    end process;
+
+
+        -- Generating stimulus for xIn
+        xIn_stm_init_p: process
+
+            variable L : line;
+            variable dummy_int : Integer;
+            file data_file_xIn : text open read_mode is safe_path("ca_interp/ca_interp_DUT_Summer_DUC_Poly_phase_Interp_hb3_im_xIn.stm");
+            variable xIn_v_int_0 : Integer;
+            variable xIn_v_temp : std_logic_vector(0 downto 0);
+            variable xIn_c_int_0 : Integer;
+            variable xIn_c_temp : std_logic_vector(7 downto 0);
+            variable xIn_0_int_0 : Integer;
+            variable xIn_0_temp : std_logic_vector(15 downto 0);
+            variable xIn_1_int_0 : Integer;
+            variable xIn_1_temp : std_logic_vector(15 downto 0);
+            variable xIn_2_int_0 : Integer;
+            variable xIn_2_temp : std_logic_vector(15 downto 0);
+            variable xIn_3_int_0 : Integer;
+            variable xIn_3_temp : std_logic_vector(15 downto 0);
+
+        begin
+            -- initialize all outputs to 0
+            xIn_v_stm <= (others => '0');
+            xIn_c_stm <= (others => '0');
+            xIn_0_stm <= (others => '0');
+            xIn_1_stm <= (others => '0');
+            xIn_2_stm <= (others => '0');
+            xIn_3_stm <= (others => '0');
+
+            wait for 201 ps; -- wait delay
+            
+            for tick in 1 to 1023 loop
+            
+                wait for 2034 ps; -- additional reset delay
+                
+                xIn_v_stm <= (others => '0');
+                xIn_c_stm <= (others => '0');
+                xIn_0_stm <= (others => '0');
+                xIn_1_stm <= (others => '0');
+                xIn_2_stm <= (others => '0');
+                xIn_3_stm <= (others => '0');
+            end loop;
+            while true loop
+            
+                IF (endfile(data_file_xIn)) THEN
+                    clk_xIn_stm_sig_stop <= '1';
+                    wait;
+                ELSE
+                    readline(data_file_xIn, L);
+                    
+                    read(L, xIn_v_int_0);
+                    xIn_v_temp(0 downto 0) := std_logic_vector(to_unsigned(xIn_v_int_0, 1));
+                    xIn_v_stm <= xIn_v_temp;
+                    read(L, xIn_c_int_0);
+                    xIn_c_temp(7 downto 0) := std_logic_vector(to_unsigned(xIn_c_int_0, 8));
+                    xIn_c_stm <= xIn_c_temp;
+                    read(L, xIn_0_int_0);
+                    xIn_0_temp(15 downto 0) := std_logic_vector(to_unsigned(xIn_0_int_0, 16));
+                    xIn_0_stm <= xIn_0_temp;
+                    read(L, xIn_1_int_0);
+                    xIn_1_temp(15 downto 0) := std_logic_vector(to_unsigned(xIn_1_int_0, 16));
+                    xIn_1_stm <= xIn_1_temp;
+                    read(L, xIn_2_int_0);
+                    xIn_2_temp(15 downto 0) := std_logic_vector(to_unsigned(xIn_2_int_0, 16));
+                    xIn_2_stm <= xIn_2_temp;
+                    read(L, xIn_3_int_0);
+                    xIn_3_temp(15 downto 0) := std_logic_vector(to_unsigned(xIn_3_int_0, 16));
+                    xIn_3_stm <= xIn_3_temp;
+
+                    deallocate(L);
+                END IF;
+                -- -- wait for rising edge to pass (assert signals just after rising edge)
+                wait until clk_stm_sig'EVENT and clk_stm_sig = '1';
+                wait for 1 ps; -- wait delay
+                
+                end loop;
+            wait;
+        END PROCESS;
+
+        -- Generating stimulus for xOut
+        xOut_stm_init_p: process
+
+            variable L : line;
+            variable dummy_int : Integer;
+            file data_file_xOut : text open read_mode is safe_path("ca_interp/ca_interp_DUT_Summer_DUC_Poly_phase_Interp_hb3_im_xOut.stm");
+            variable xOut_v_int_0 : Integer;
+            variable xOut_v_temp : std_logic_vector(0 downto 0);
+            variable xOut_c_int_0 : Integer;
+            variable xOut_c_temp : std_logic_vector(7 downto 0);
+            variable xOut_0_int_0 : Integer;
+            variable xOut_0_int_1 : Integer;
+            variable xOut_0_temp : std_logic_vector(37 downto 0);
+            variable xOut_1_int_0 : Integer;
+            variable xOut_1_int_1 : Integer;
+            variable xOut_1_temp : std_logic_vector(37 downto 0);
+            variable xOut_2_int_0 : Integer;
+            variable xOut_2_int_1 : Integer;
+            variable xOut_2_temp : std_logic_vector(37 downto 0);
+            variable xOut_3_int_0 : Integer;
+            variable xOut_3_int_1 : Integer;
+            variable xOut_3_temp : std_logic_vector(37 downto 0);
+            variable xOut_4_int_0 : Integer;
+            variable xOut_4_int_1 : Integer;
+            variable xOut_4_temp : std_logic_vector(37 downto 0);
+            variable xOut_5_int_0 : Integer;
+            variable xOut_5_int_1 : Integer;
+            variable xOut_5_temp : std_logic_vector(37 downto 0);
+            variable xOut_6_int_0 : Integer;
+            variable xOut_6_int_1 : Integer;
+            variable xOut_6_temp : std_logic_vector(37 downto 0);
+            variable xOut_7_int_0 : Integer;
+            variable xOut_7_int_1 : Integer;
+            variable xOut_7_temp : std_logic_vector(37 downto 0);
+
+        begin
+            -- initialize all outputs to 0
+            xOut_v_stm <= (others => '0');
+            xOut_c_stm <= (others => '0');
+            xOut_0_stm <= (others => '0');
+            xOut_1_stm <= (others => '0');
+            xOut_2_stm <= (others => '0');
+            xOut_3_stm <= (others => '0');
+            xOut_4_stm <= (others => '0');
+            xOut_5_stm <= (others => '0');
+            xOut_6_stm <= (others => '0');
+            xOut_7_stm <= (others => '0');
+
+            wait for 201 ps; -- wait delay
+            
+            wait for 1023*2034 ps; -- additional reset delay
+            
+            while true loop
+            
+                IF (endfile(data_file_xOut)) THEN
+                    clk_xOut_stm_sig_stop <= '1';
+                    wait;
+                ELSE
+                    readline(data_file_xOut, L);
+                    
+                    read(L, xOut_v_int_0);
+                    xOut_v_temp(0 downto 0) := std_logic_vector(to_unsigned(xOut_v_int_0, 1));
+                    xOut_v_stm <= xOut_v_temp;
+                    read(L, xOut_c_int_0);
+                    xOut_c_temp(7 downto 0) := std_logic_vector(to_unsigned(xOut_c_int_0, 8));
+                    xOut_c_stm <= xOut_c_temp;
+                    read(L, xOut_0_int_0);
+                    xOut_0_temp(31 downto 0) := std_logic_vector(to_signed(xOut_0_int_0, 32));
+                    read(L, xOut_0_int_1);
+                    xOut_0_temp(37 downto 32) := std_logic_vector(to_unsigned(xOut_0_int_1, 6));
+                    xOut_0_stm <= xOut_0_temp;
+                    read(L, xOut_1_int_0);
+                    xOut_1_temp(31 downto 0) := std_logic_vector(to_signed(xOut_1_int_0, 32));
+                    read(L, xOut_1_int_1);
+                    xOut_1_temp(37 downto 32) := std_logic_vector(to_unsigned(xOut_1_int_1, 6));
+                    xOut_1_stm <= xOut_1_temp;
+                    read(L, xOut_2_int_0);
+                    xOut_2_temp(31 downto 0) := std_logic_vector(to_signed(xOut_2_int_0, 32));
+                    read(L, xOut_2_int_1);
+                    xOut_2_temp(37 downto 32) := std_logic_vector(to_unsigned(xOut_2_int_1, 6));
+                    xOut_2_stm <= xOut_2_temp;
+                    read(L, xOut_3_int_0);
+                    xOut_3_temp(31 downto 0) := std_logic_vector(to_signed(xOut_3_int_0, 32));
+                    read(L, xOut_3_int_1);
+                    xOut_3_temp(37 downto 32) := std_logic_vector(to_unsigned(xOut_3_int_1, 6));
+                    xOut_3_stm <= xOut_3_temp;
+                    read(L, xOut_4_int_0);
+                    xOut_4_temp(31 downto 0) := std_logic_vector(to_signed(xOut_4_int_0, 32));
+                    read(L, xOut_4_int_1);
+                    xOut_4_temp(37 downto 32) := std_logic_vector(to_unsigned(xOut_4_int_1, 6));
+                    xOut_4_stm <= xOut_4_temp;
+                    read(L, xOut_5_int_0);
+                    xOut_5_temp(31 downto 0) := std_logic_vector(to_signed(xOut_5_int_0, 32));
+                    read(L, xOut_5_int_1);
+                    xOut_5_temp(37 downto 32) := std_logic_vector(to_unsigned(xOut_5_int_1, 6));
+                    xOut_5_stm <= xOut_5_temp;
+                    read(L, xOut_6_int_0);
+                    xOut_6_temp(31 downto 0) := std_logic_vector(to_signed(xOut_6_int_0, 32));
+                    read(L, xOut_6_int_1);
+                    xOut_6_temp(37 downto 32) := std_logic_vector(to_unsigned(xOut_6_int_1, 6));
+                    xOut_6_stm <= xOut_6_temp;
+                    read(L, xOut_7_int_0);
+                    xOut_7_temp(31 downto 0) := std_logic_vector(to_signed(xOut_7_int_0, 32));
+                    read(L, xOut_7_int_1);
+                    xOut_7_temp(37 downto 32) := std_logic_vector(to_unsigned(xOut_7_int_1, 6));
+                    xOut_7_stm <= xOut_7_temp;
+
+                    deallocate(L);
+                END IF;
+                -- -- wait for rising edge to pass (assert signals just after rising edge)
+                wait until clk_stm_sig'EVENT and clk_stm_sig = '1';
+                wait for 1 ps; -- wait delay
+                
+                end loop;
+            wait;
+        END PROCESS;
+
+    clk_stm_sig_stop <= clk_xIn_stm_sig_stop OR clk_xOut_stm_sig_stop OR '0';
+
+
+    END normal;

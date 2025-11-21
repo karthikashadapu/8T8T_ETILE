@@ -1,0 +1,18 @@
+# system info oran_tod_subsys on 2025.10.16.14:58:36
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for oran_tod_subsys on 2025.10.16.14:58:36
+files:
+filepath,kind,attributes,module,is_top
+sim/oran_tod_subsys.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,oran_tod_subsys,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+oran_tod_subsys.eth_1588_tod_synchronizer,eth_1588_tod_synchronizer
+oran_tod_subsys.ptp2gps_conv_0,oran_tod_subsys_ptp2gps_conv_0

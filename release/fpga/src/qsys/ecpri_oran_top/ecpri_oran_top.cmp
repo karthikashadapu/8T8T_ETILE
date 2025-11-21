@@ -1,0 +1,150 @@
+	component ecpri_oran_top is
+		port (
+			avst_axist_bridge_0_avst_tx_ptp_i_av_st_tx_skip_crc              : in  std_logic                      := 'X';             -- i_av_st_tx_skip_crc
+			avst_axist_bridge_0_avst_tx_ptp_i_av_st_tx_ptp_ts_valid          : in  std_logic_vector(1 downto 0)   := (others => 'X'); -- i_av_st_tx_ptp_ts_valid
+			avst_axist_bridge_0_avst_tx_ptp_i_av_st_tx_ptp_ins_ets           : in  std_logic                      := 'X';             -- i_av_st_tx_ptp_ins_ets
+			avst_axist_bridge_0_avst_tx_ptp_i_av_st_tx_ptp_ins_cf            : in  std_logic                      := 'X';             -- i_av_st_tx_ptp_ins_cf
+			avst_axist_bridge_0_avst_tx_ptp_i_av_st_tx_ptp_tx_its            : in  std_logic_vector(95 downto 0)  := (others => 'X'); -- i_av_st_tx_ptp_tx_its
+			avst_axist_bridge_0_avst_tx_ptp_i_av_st_tx_ptp_asym_p2p_idx      : in  std_logic_vector(6 downto 0)   := (others => 'X'); -- i_av_st_tx_ptp_asym_p2p_idx
+			avst_axist_bridge_0_avst_tx_ptp_i_av_st_tx_ptp_asym_sign         : in  std_logic                      := 'X';             -- i_av_st_tx_ptp_asym_sign
+			avst_axist_bridge_0_avst_tx_ptp_i_av_st_tx_ptp_asym              : in  std_logic                      := 'X';             -- i_av_st_tx_ptp_asym
+			avst_axist_bridge_0_avst_tx_ptp_i_av_st_tx_ptp_p2p               : in  std_logic                      := 'X';             -- i_av_st_tx_ptp_p2p
+			avst_axist_bridge_0_avst_tx_ptp_i_av_st_tx_ptp_ts_format         : in  std_logic                      := 'X';             -- i_av_st_tx_ptp_ts_format
+			avst_axist_bridge_0_avst_tx_ptp_i_av_st_tx_ptp_update_eb         : in  std_logic                      := 'X';             -- i_av_st_tx_ptp_update_eb
+			avst_axist_bridge_0_avst_tx_ptp_i_av_st_tx_ptp_zero_csum         : in  std_logic                      := 'X';             -- i_av_st_tx_ptp_zero_csum
+			avst_axist_bridge_0_avst_tx_ptp_i_av_st_tx_ptp_eb_offset         : in  std_logic_vector(15 downto 0)  := (others => 'X'); -- i_av_st_tx_ptp_eb_offset
+			avst_axist_bridge_0_avst_tx_ptp_i_av_st_tx_ptp_csum_offset       : in  std_logic_vector(15 downto 0)  := (others => 'X'); -- i_av_st_tx_ptp_csum_offset
+			avst_axist_bridge_0_avst_tx_ptp_i_av_st_tx_ptp_cf_offset         : in  std_logic_vector(15 downto 0)  := (others => 'X'); -- i_av_st_tx_ptp_cf_offset
+			avst_axist_bridge_0_avst_tx_ptp_i_av_st_tx_ptp_ts_offset         : in  std_logic_vector(15 downto 0)  := (others => 'X'); -- i_av_st_tx_ptp_ts_offset
+			avst_axist_bridge_0_axit_tx_if_tready                            : in  std_logic                      := 'X';             -- tready
+			avst_axist_bridge_0_axit_tx_if_tvalid                            : out std_logic;                                         -- tvalid
+			avst_axist_bridge_0_axit_tx_if_tdata                             : out std_logic_vector(63 downto 0);                     -- tdata
+			avst_axist_bridge_0_axit_tx_if_tlast                             : out std_logic;                                         -- tlast
+			avst_axist_bridge_0_axit_tx_if_tkeep                             : out std_logic_vector(7 downto 0);                      -- tkeep
+			avst_axist_bridge_0_axit_tx_if_tuser                             : out std_logic_vector(1 downto 0);                      -- tuser
+			avst_axist_bridge_0_axist_tx_user_o_axi_st_tx_tuser_ptp          : out std_logic_vector(93 downto 0);                     -- o_axi_st_tx_tuser_ptp
+			avst_axist_bridge_0_axist_tx_user_o_axi_st_tx_tuser_ptp_extended : out std_logic_vector(327 downto 0);                    -- o_axi_st_tx_tuser_ptp_extended
+			avst_axist_bridge_0_avst_rx_ptp_o_av_st_rxstatus_data            : out std_logic_vector(39 downto 0);                     -- o_av_st_rxstatus_data
+			avst_axist_bridge_0_avst_rx_ptp_o_av_st_rxstatus_valid           : out std_logic;                                         -- o_av_st_rxstatus_valid
+			avst_axist_bridge_0_avst_rx_ptp_o_av_st_ptp_rx_its               : out std_logic_vector(95 downto 0);                     -- o_av_st_ptp_rx_its
+			avst_axist_bridge_0_axist_rx_if_tvalid                           : in  std_logic                      := 'X';             -- tvalid
+			avst_axist_bridge_0_axist_rx_if_tdata                            : in  std_logic_vector(63 downto 0)  := (others => 'X'); -- tdata
+			avst_axist_bridge_0_axist_rx_if_tlast                            : in  std_logic                      := 'X';             -- tlast
+			avst_axist_bridge_0_axist_rx_if_tkeep                            : in  std_logic_vector(7 downto 0)   := (others => 'X'); -- tkeep
+			avst_axist_bridge_0_axist_rx_if_tuser                            : in  std_logic_vector(6 downto 0)   := (others => 'X'); -- tuser
+			avst_axist_bridge_0_axist_rx_user_i_axi_st_rx_tuser_sts          : in  std_logic_vector(4 downto 0)   := (others => 'X'); -- i_axi_st_rx_tuser_sts
+			avst_axist_bridge_0_axist_rx_user_i_axi_st_rx_tuser_sts_extended : in  std_logic_vector(31 downto 0)  := (others => 'X'); -- i_axi_st_rx_tuser_sts_extended
+			avst_axist_bridge_0_axist_rx_user_i_axi_st_rx_ingrts0_tdata      : in  std_logic_vector(95 downto 0)  := (others => 'X'); -- i_axi_st_rx_ingrts0_tdata
+			avst_axist_bridge_0_axist_rx_user_i_axi_st_rx_ingrts0_tvalid     : in  std_logic                      := 'X';             -- i_axi_st_rx_ingrts0_tvalid
+			csr_in_clk_clk                                                   : in  std_logic                      := 'X';             -- clk
+			dsp_in_clk_clk                                                   : in  std_logic                      := 'X';             -- clk
+			ecpri_rx_in_clk_clk                                              : in  std_logic                      := 'X';             -- clk
+			ecpri_tx_in_clk_clk                                              : in  std_logic                      := 'X';             -- clk
+			eth_xran_dl_in_clk_clk                                           : in  std_logic                      := 'X';             -- clk
+			eth_xran_ul_in_clk_clk                                           : in  std_logic                      := 'X';             -- clk
+			rst_ecpri_n_reset_n                                              : in  std_logic                      := 'X';             -- reset_n
+			coupling_pusch_sink_l1_valid                                     : in  std_logic                      := 'X';             -- valid
+			coupling_pusch_sink_l1_data                                      : in  std_logic_vector(31 downto 0)  := (others => 'X'); -- data
+			coupling_pusch_sink_l1_channel                                   : in  std_logic_vector(15 downto 0)  := (others => 'X'); -- channel
+			coupling_pusch_sink_l1_startofpacket                             : in  std_logic                      := 'X';             -- startofpacket
+			coupling_pusch_sink_l1_endofpacket                               : in  std_logic                      := 'X';             -- endofpacket
+			coupling_pusch_sink_l2_valid                                     : in  std_logic                      := 'X';             -- valid
+			coupling_pusch_sink_l2_data                                      : in  std_logic_vector(31 downto 0)  := (others => 'X'); -- data
+			coupling_pusch_sink_l2_channel                                   : in  std_logic_vector(15 downto 0)  := (others => 'X'); -- channel
+			coupling_pusch_sink_l2_startofpacket                             : in  std_logic                      := 'X';             -- startofpacket
+			coupling_pusch_sink_l2_endofpacket                               : in  std_logic                      := 'X';             -- endofpacket
+			coupling_prach_sink_l2_valid                                     : in  std_logic                      := 'X';             -- valid
+			coupling_prach_sink_l2_data                                      : in  std_logic_vector(31 downto 0)  := (others => 'X'); -- data
+			coupling_prach_sink_l2_channel                                   : in  std_logic_vector(15 downto 0)  := (others => 'X'); -- channel
+			coupling_prach_sink_l2_startofpacket                             : in  std_logic                      := 'X';             -- startofpacket
+			coupling_prach_sink_l2_endofpacket                               : in  std_logic                      := 'X';             -- endofpacket
+			ecpri_ext_sink_valid                                             : in  std_logic                      := 'X';             -- valid
+			ecpri_ext_sink_data                                              : in  std_logic_vector(63 downto 0)  := (others => 'X'); -- data
+			ecpri_ext_sink_startofpacket                                     : in  std_logic                      := 'X';             -- startofpacket
+			ecpri_ext_sink_endofpacket                                       : in  std_logic                      := 'X';             -- endofpacket
+			ecpri_ext_sink_empty                                             : in  std_logic_vector(2 downto 0)   := (others => 'X'); -- empty
+			ecpri_ext_sink_error                                             : in  std_logic                      := 'X';             -- error
+			ecpri_ext_sink_ready                                             : out std_logic;                                         -- ready
+			ecpri_ext_source_valid                                           : out std_logic;                                         -- valid
+			ecpri_ext_source_data                                            : out std_logic_vector(63 downto 0);                     -- data
+			ecpri_ext_source_startofpacket                                   : out std_logic;                                         -- startofpacket
+			ecpri_ext_source_endofpacket                                     : out std_logic;                                         -- endofpacket
+			ecpri_ext_source_empty                                           : out std_logic_vector(2 downto 0);                      -- empty
+			ecpri_ext_source_error                                           : out std_logic_vector(5 downto 0);                      -- error
+			xran_demapper_source_valid                                       : out std_logic;                                         -- valid
+			xran_demapper_source_data                                        : out std_logic_vector(127 downto 0);                    -- data
+			xran_demapper_source_channel                                     : out std_logic_vector(15 downto 0);                     -- channel
+			xran_demapper_source_startofpacket                               : out std_logic;                                         -- startofpacket
+			xran_demapper_source_ready                                       : in  std_logic                      := 'X';             -- ready
+			xran_demapper_source_endofpacket                                 : out std_logic;                                         -- endofpacket
+			xran_demapper_cplane_source_valid                                : out std_logic;                                         -- valid
+			xran_demapper_cplane_source_startofpacket                        : out std_logic;                                         -- startofpacket
+			xran_demapper_cplane_source_endofpacket                          : out std_logic;                                         -- endofpacket
+			ptp_tod_o_mac_ptp_fp                                             : out std_logic_vector(21 downto 0);                     -- o_mac_ptp_fp
+			ptp_tod_o_mac_ptp_ts_req                                         : out std_logic;                                         -- o_mac_ptp_ts_req
+			ptp_tod_i_mac_ptp_tx_ets_valid                                   : in  std_logic                      := 'X';             -- i_mac_ptp_tx_ets_valid
+			ptp_tod_i_mac_ptp_tx_ets                                         : in  std_logic_vector(95 downto 0)  := (others => 'X'); -- i_mac_ptp_tx_ets
+			ptp_tod_i_mac_ptp_tx_ets_fp                                      : in  std_logic_vector(21 downto 0)  := (others => 'X'); -- i_mac_ptp_tx_ets_fp
+			ptp_tod_i_mac_ptp_rx_its_valid                                   : in  std_logic                      := 'X';             -- i_mac_ptp_rx_its_valid
+			ptp_tod_i_mac_ptp_rx_its                                         : in  std_logic_vector(95 downto 0)  := (others => 'X'); -- i_mac_ptp_rx_its
+			ptp_tod_i_ext_ptp_fp                                             : in  std_logic_vector(19 downto 0)  := (others => 'X'); -- i_ext_ptp_fp
+			ptp_tod_i_ext_ptp_ts_req                                         : in  std_logic                      := 'X';             -- i_ext_ptp_ts_req
+			ptp_tod_o_ext_ptp_tx_ets_valid                                   : out std_logic;                                         -- o_ext_ptp_tx_ets_valid
+			ptp_tod_o_ext_ptp_tx_ets                                         : out std_logic_vector(95 downto 0);                     -- o_ext_ptp_tx_ets
+			ptp_tod_o_ext_ptp_tx_ets_fp                                      : out std_logic_vector(19 downto 0);                     -- o_ext_ptp_tx_ets_fp
+			ptp_tod_o_ext_ptp_rx_its                                         : out std_logic_vector(95 downto 0);                     -- o_ext_ptp_rx_its
+			ptp_tod_o_ext_ptp_rx_its_valid                                   : out std_logic;                                         -- o_ext_ptp_rx_its_valid
+			rx_pcs_ready_rx_pcs_ready                                        : in  std_logic                      := 'X';             -- rx_pcs_ready
+			tx_lanes_stable_tx_lanes_stable                                  : in  std_logic                      := 'X';             -- tx_lanes_stable
+			rst_soft_n_rst_soft_n                                            : in  std_logic                      := 'X';             -- rst_soft_n
+			oran_tx_tod_96b_data_tdata                                       : in  std_logic_vector(95 downto 0)  := (others => 'X'); -- tdata
+			oran_tx_tod_96b_data_tvalid                                      : in  std_logic                      := 'X';             -- tvalid
+			oran_rx_tod_96b_data_tdata                                       : in  std_logic_vector(95 downto 0)  := (others => 'X'); -- tdata
+			oran_rx_tod_96b_data_tvalid                                      : in  std_logic                      := 'X';             -- tvalid
+			bw_config_cc1_bw_config_cc1                                      : in  std_logic_vector(7 downto 0)   := (others => 'X'); -- bw_config_cc1
+			bw_config_cc2_bw_config_cc2                                      : in  std_logic_vector(7 downto 0)   := (others => 'X'); -- bw_config_cc2
+			short_long_prach_select_data                                     : in  std_logic                      := 'X';             -- data
+			rx_rtc_id_rx_rtc_id                                              : out std_logic_vector(15 downto 0);                     -- rx_rtc_id
+			rx_rtc_id_dl_rx_rtc_id_dl                                        : out std_logic_vector(15 downto 0);                     -- rx_rtc_id_dl
+			rx_u_axc_id_rx_u_axc_id                                          : out std_logic_vector(15 downto 0);                     -- rx_u_axc_id
+			ul_rtc_id_intr_ul_rtc_id_intr                                    : out std_logic;                                         -- ul_rtc_id_intr
+			dl_rtc_id_intr_dl_rtc_id_intr                                    : out std_logic;                                         -- dl_rtc_id_intr
+			ul_axc_id_intr_ul_axc_id_intr                                    : out std_logic;                                         -- ul_axc_id_intr
+			dl_axc_id_intr_dl_axc_id_intr                                    : out std_logic;                                         -- dl_axc_id_intr
+			coupling_pusch_timing_ref_data                                   : in  std_logic_vector(31 downto 0)  := (others => 'X'); -- data
+			coupling_prach_timing_ref_data                                   : in  std_logic_vector(31 downto 0)  := (others => 'X'); -- data
+			coupling_prach_sink_l1_valid                                     : in  std_logic                      := 'X';             -- valid
+			coupling_prach_sink_l1_data                                      : in  std_logic_vector(31 downto 0)  := (others => 'X'); -- data
+			coupling_prach_sink_l1_channel                                   : in  std_logic_vector(15 downto 0)  := (others => 'X'); -- channel
+			coupling_prach_sink_l1_startofpacket                             : in  std_logic                      := 'X';             -- startofpacket
+			coupling_prach_sink_l1_endofpacket                               : in  std_logic                      := 'X';             -- endofpacket
+			downlink_eaxc_id_concat_data                                     : in  std_logic_vector(127 downto 0) := (others => 'X'); -- data
+			oran_rx_uplane_concat_data                                       : out std_logic_vector(67 downto 0);                     -- data
+			oran_rx_cplane_concat_data                                       : out std_logic_vector(189 downto 0);                    -- data
+			uplink_eaxc_id_concat_data                                       : in  std_logic_vector(255 downto 0) := (others => 'X'); -- data
+			coupling_ul_start_pulse_latch_data                               : in  std_logic                      := 'X';             -- data
+			tod_data                                                         : in  std_logic_vector(95 downto 0)  := (others => 'X'); -- data
+			radio_config_status_data                                         : in  std_logic_vector(55 downto 0)  := (others => 'X'); -- data
+			dl_input_hfn_pulse_data                                          : in  std_logic                      := 'X';             -- data
+			xran_timestamp_mem_read                                          : in  std_logic                      := 'X';             -- read
+			xran_timestamp_mem_readdata                                      : out std_logic_vector(63 downto 0);                     -- readdata
+			timeout_cntr_intr_uplane_irq                                     : out std_logic;                                         -- irq
+			timeout_cntr_intr_cplane_irq                                     : out std_logic;                                         -- irq
+			fifo_full_intr_irq                                               : out std_logic;                                         -- irq
+			h2f_lw_bridge_s0_waitrequest                                     : out std_logic;                                         -- waitrequest
+			h2f_lw_bridge_s0_readdata                                        : out std_logic_vector(31 downto 0);                     -- readdata
+			h2f_lw_bridge_s0_readdatavalid                                   : out std_logic;                                         -- readdatavalid
+			h2f_lw_bridge_s0_burstcount                                      : in  std_logic_vector(0 downto 0)   := (others => 'X'); -- burstcount
+			h2f_lw_bridge_s0_writedata                                       : in  std_logic_vector(31 downto 0)  := (others => 'X'); -- writedata
+			h2f_lw_bridge_s0_address                                         : in  std_logic_vector(13 downto 0)  := (others => 'X'); -- address
+			h2f_lw_bridge_s0_write                                           : in  std_logic                      := 'X';             -- write
+			h2f_lw_bridge_s0_read                                            : in  std_logic                      := 'X';             -- read
+			h2f_lw_bridge_s0_byteenable                                      : in  std_logic_vector(3 downto 0)   := (others => 'X'); -- byteenable
+			h2f_lw_bridge_s0_debugaccess                                     : in  std_logic                      := 'X';             -- debugaccess
+			csr_in_reset_reset                                               : in  std_logic                      := 'X';             -- reset
+			dsp_in_reset_reset_n                                             : in  std_logic                      := 'X';             -- reset_n
+			eth_xran_dl_in_reset_reset_n                                     : in  std_logic                      := 'X';             -- reset_n
+			eth_xran_ul_in_reset_reset_n                                     : in  std_logic                      := 'X'              -- reset_n
+		);
+	end component ecpri_oran_top;
+

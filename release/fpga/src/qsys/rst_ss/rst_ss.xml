@@ -1,0 +1,3196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.11.21.13:09:57"
+ outputDirectory="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/rst_ss/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGFB014R24B2I2V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="2"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DSP_RST_CNTRL_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DSP_RST_CNTRL_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DSP_RST_CNTRL_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_ECPRI_RST_CNTRL_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_ECPRI_RST_CNTRL_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_ECPRI_RST_CNTRL_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_ETH_RST_CNTRL_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_ETH_RST_CNTRL_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_ETH_RST_CNTRL_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_RESET_BRIDGE_ACT_HIGH_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_RESET_BRIDGE_ACT_HIGH_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_RESET_BRIDGE_ACT_HIGH_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_RST_CSR_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_RST_CSR_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_RST_CSR_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_RESET_BRIDGE_REC_RX_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_RESET_BRIDGE_REC_RX_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_RESET_BRIDGE_REC_RX_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_RESET_BRIDGE_TX_DIV_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_RESET_BRIDGE_TX_DIV_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_RESET_BRIDGE_TX_DIV_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="dsp_rst_cntrl_reset_in0" kind="reset" start="0">
+   <property name="associatedClock" value="" />
+   <property name="synchronousEdges" value="NONE" />
+   <port
+       name="dsp_rst_cntrl_reset_in0_reset"
+       direction="input"
+       role="reset"
+       width="1" />
+  </interface>
+  <interface name="dsp_rst_cntrl_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="dsp_rst_cntrl_clk_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="dsp_rst_cntrl_reset_out" kind="reset" start="1">
+   <property name="associatedClock" value="dsp_rst_cntrl_clk" />
+   <property name="associatedDirectReset" value="" />
+   <property name="associatedResetSinks" value="dsp_rst_cntrl_reset_in0" />
+   <property name="synchronousEdges" value="BOTH" />
+   <port
+       name="dsp_rst_cntrl_reset_out_reset"
+       direction="output"
+       role="reset"
+       width="1" />
+  </interface>
+  <interface name="ecpri_rst_cntrl_reset_in0" kind="reset" start="0">
+   <property name="associatedClock" value="" />
+   <property name="synchronousEdges" value="NONE" />
+   <port
+       name="ecpri_rst_cntrl_reset_in0_reset"
+       direction="input"
+       role="reset"
+       width="1" />
+  </interface>
+  <interface name="ecpri_rst_cntrl_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="ecpri_rst_cntrl_clk_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="ecpri_rst_cntrl_reset_out" kind="reset" start="1">
+   <property name="associatedClock" value="ecpri_rst_cntrl_clk" />
+   <property name="associatedDirectReset" value="" />
+   <property name="associatedResetSinks" value="ecpri_rst_cntrl_reset_in0" />
+   <property name="synchronousEdges" value="BOTH" />
+   <port
+       name="ecpri_rst_cntrl_reset_out_reset"
+       direction="output"
+       role="reset"
+       width="1" />
+  </interface>
+  <interface name="eth_rst_cntrl_reset_in0" kind="reset" start="0">
+   <property name="associatedClock" value="" />
+   <property name="synchronousEdges" value="NONE" />
+   <port
+       name="eth_rst_cntrl_reset_in0_reset"
+       direction="input"
+       role="reset"
+       width="1" />
+  </interface>
+  <interface name="eth_rst_cntrl_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="eth_rst_cntrl_clk_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="eth_rst_cntrl_reset_out" kind="reset" start="1">
+   <property name="associatedClock" value="eth_rst_cntrl_clk" />
+   <property name="associatedDirectReset" value="" />
+   <property name="associatedResetSinks" value="eth_rst_cntrl_reset_in0" />
+   <property name="synchronousEdges" value="BOTH" />
+   <port
+       name="eth_rst_cntrl_reset_out_reset"
+       direction="output"
+       role="reset"
+       width="1" />
+  </interface>
+  <interface name="reset_bridge_act_high_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port
+       name="reset_bridge_act_high_clk_clk"
+       direction="input"
+       role="clk"
+       width="1" />
+  </interface>
+  <interface name="reset_bridge_act_high_in_reset" kind="reset" start="0">
+   <property name="associatedClock" value="reset_bridge_act_high_clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port
+       name="reset_bridge_act_high_in_reset_reset"
+       direction="input"
+       role="reset"
+       width="1" />
+  </interface>
+  <interface name="rst_csr_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="rst_csr_clk_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="rst_csr_in_reset" kind="reset" start="0">
+   <property name="associatedClock" value="rst_csr_clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port
+       name="rst_csr_in_reset_reset_n"
+       direction="input"
+       role="reset_n"
+       width="1" />
+  </interface>
+  <interface name="rst_csr_out_reset" kind="reset" start="1">
+   <property name="associatedClock" value="rst_csr_clk" />
+   <property name="associatedDirectReset" value="rst_csr_in_reset" />
+   <property name="associatedResetSinks" value="rst_csr_in_reset" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port
+       name="rst_csr_out_reset_reset_n"
+       direction="output"
+       role="reset_n"
+       width="1" />
+  </interface>
+  <interface name="reset_bridge_rec_rx_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port
+       name="reset_bridge_rec_rx_clk_clk"
+       direction="input"
+       role="clk"
+       width="1" />
+  </interface>
+  <interface name="reset_bridge_rec_rx_in_reset" kind="reset" start="0">
+   <property name="associatedClock" value="reset_bridge_rec_rx_clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port
+       name="reset_bridge_rec_rx_in_reset_reset"
+       direction="input"
+       role="reset"
+       width="1" />
+  </interface>
+  <interface name="reset_bridge_tx_div_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port
+       name="reset_bridge_tx_div_clk_clk"
+       direction="input"
+       role="clk"
+       width="1" />
+  </interface>
+  <interface name="reset_bridge_tx_div_in_reset" kind="reset" start="0">
+   <property name="associatedClock" value="reset_bridge_tx_div_clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port
+       name="reset_bridge_tx_div_in_reset_reset"
+       direction="input"
+       role="reset"
+       width="1" />
+  </interface>
+ </perimeter>
+ <entity kind="rst_ss" version="1.0" name="rst_ss">
+  <parameter name="AUTO_RST_CSR_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_RESET_BRIDGE_ACT_HIGH_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_RESET_BRIDGE_TX_DIV_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_DSP_RST_CNTRL_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_ETH_RST_CNTRL_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_RESET_BRIDGE_REC_RX_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_ECPRI_RST_CNTRL_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_RESET_BRIDGE_ACT_HIGH_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_ETH_RST_CNTRL_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_ECPRI_RST_CNTRL_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_DSP_RST_CNTRL_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_RST_CSR_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="AUTO_RST_CSR_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_RESET_BRIDGE_ACT_HIGH_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_ETH_RST_CNTRL_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <parameter name="AUTO_RESET_BRIDGE_TX_DIV_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_RESET_BRIDGE_TX_DIV_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_DEVICE" value="AGFB014R24B2I2V" />
+  <parameter name="AUTO_RESET_BRIDGE_REC_RX_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_DSP_RST_CNTRL_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_RESET_BRIDGE_REC_RX_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_ECPRI_RST_CNTRL_CLK_RESET_DOMAIN" value="-1" />
+  <generatedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/rst_ss/synth/rst_ss.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/rst_ss/synth/rst_ss.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/rst_ss.qsys" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <messages>
+   <message level="Info" culprit="rst_ss">"Generating: rst_ss"</message>
+   <message level="Info" culprit="rst_ss">"Generating: dsp_rst_cntrl"</message>
+   <message level="Info" culprit="rst_ss">"Generating: ecpri_rst_cntrl"</message>
+   <message level="Info" culprit="rst_ss">"Generating: eth_rst_cntrl"</message>
+   <message level="Info" culprit="rst_ss">"Generating: reset_bridge_act_high"</message>
+   <message level="Info" culprit="rst_ss">"Generating: rst_csr"</message>
+   <message level="Info" culprit="rst_ss">"Generating: rst_ss_reset_bridge_rec_rx"</message>
+   <message level="Info" culprit="rst_ss">"Generating: rst_ss_reset_bridge_tx_div"</message>
+  </messages>
+ </entity>
+ <entity kind="altera_generic_component" version="1.0" name="dsp_rst_cntrl">
+  <parameter name="hlsFile" value="" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter
+     name="defaultBoundary"
+     value="&lt;boundaryDefinition&gt;
+    &lt;interfaces&gt;
+        &lt;interface&gt;
+            &lt;name&gt;reset_in0&lt;/name&gt;
+            &lt;type&gt;reset&lt;/type&gt;
+            &lt;isStart&gt;false&lt;/isStart&gt;
+            &lt;ports&gt;
+                &lt;port&gt;
+                    &lt;name&gt;reset_in0&lt;/name&gt;
+                    &lt;role&gt;reset&lt;/role&gt;
+                    &lt;direction&gt;Input&lt;/direction&gt;
+                    &lt;width&gt;1&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+            &lt;/ports&gt;
+            &lt;assignments&gt;
+                &lt;assignmentValueMap/&gt;
+            &lt;/assignments&gt;
+            &lt;parameters&gt;
+                &lt;parameterValueMap&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;associatedClock&lt;/key&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;synchronousEdges&lt;/key&gt;
+                        &lt;value&gt;NONE&lt;/value&gt;
+                    &lt;/entry&gt;
+                &lt;/parameterValueMap&gt;
+            &lt;/parameters&gt;
+        &lt;/interface&gt;
+        &lt;interface&gt;
+            &lt;name&gt;clk&lt;/name&gt;
+            &lt;type&gt;clock&lt;/type&gt;
+            &lt;isStart&gt;false&lt;/isStart&gt;
+            &lt;ports&gt;
+                &lt;port&gt;
+                    &lt;name&gt;clk&lt;/name&gt;
+                    &lt;role&gt;clk&lt;/role&gt;
+                    &lt;direction&gt;Input&lt;/direction&gt;
+                    &lt;width&gt;1&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+            &lt;/ports&gt;
+            &lt;assignments&gt;
+                &lt;assignmentValueMap/&gt;
+            &lt;/assignments&gt;
+            &lt;parameters&gt;
+                &lt;parameterValueMap&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;clockRate&lt;/key&gt;
+                        &lt;value&gt;0&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;externallyDriven&lt;/key&gt;
+                        &lt;value&gt;false&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;ptfSchematicName&lt;/key&gt;
+                    &lt;/entry&gt;
+                &lt;/parameterValueMap&gt;
+            &lt;/parameters&gt;
+        &lt;/interface&gt;
+        &lt;interface&gt;
+            &lt;name&gt;reset_out&lt;/name&gt;
+            &lt;type&gt;reset&lt;/type&gt;
+            &lt;isStart&gt;true&lt;/isStart&gt;
+            &lt;ports&gt;
+                &lt;port&gt;
+                    &lt;name&gt;reset_out&lt;/name&gt;
+                    &lt;role&gt;reset&lt;/role&gt;
+                    &lt;direction&gt;Output&lt;/direction&gt;
+                    &lt;width&gt;1&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+            &lt;/ports&gt;
+            &lt;assignments&gt;
+                &lt;assignmentValueMap/&gt;
+            &lt;/assignments&gt;
+            &lt;parameters&gt;
+                &lt;parameterValueMap&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;associatedClock&lt;/key&gt;
+                        &lt;value&gt;clk&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;associatedDirectReset&lt;/key&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;associatedResetSinks&lt;/key&gt;
+                        &lt;value&gt;reset_in0&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;synchronousEdges&lt;/key&gt;
+                        &lt;value&gt;BOTH&lt;/value&gt;
+                    &lt;/entry&gt;
+                &lt;/parameterValueMap&gt;
+            &lt;/parameters&gt;
+        &lt;/interface&gt;
+    &lt;/interfaces&gt;
+&lt;/boundaryDefinition&gt;" />
+  <parameter name="bspCpu" value="false" />
+  <parameter
+     name="componentDefinition"
+     value="&lt;componentDefinition&gt;
+    &lt;boundary&gt;
+        &lt;interfaces&gt;
+            &lt;interface&gt;
+                &lt;name&gt;reset_in0&lt;/name&gt;
+                &lt;type&gt;reset&lt;/type&gt;
+                &lt;isStart&gt;false&lt;/isStart&gt;
+                &lt;ports&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;reset_in0&lt;/name&gt;
+                        &lt;role&gt;reset&lt;/role&gt;
+                        &lt;direction&gt;Input&lt;/direction&gt;
+                        &lt;width&gt;1&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                &lt;/ports&gt;
+                &lt;assignments&gt;
+                    &lt;assignmentValueMap/&gt;
+                &lt;/assignments&gt;
+                &lt;parameters&gt;
+                    &lt;parameterValueMap&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;associatedClock&lt;/key&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;synchronousEdges&lt;/key&gt;
+                            &lt;value&gt;NONE&lt;/value&gt;
+                        &lt;/entry&gt;
+                    &lt;/parameterValueMap&gt;
+                &lt;/parameters&gt;
+            &lt;/interface&gt;
+            &lt;interface&gt;
+                &lt;name&gt;clk&lt;/name&gt;
+                &lt;type&gt;clock&lt;/type&gt;
+                &lt;isStart&gt;false&lt;/isStart&gt;
+                &lt;ports&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;clk&lt;/name&gt;
+                        &lt;role&gt;clk&lt;/role&gt;
+                        &lt;direction&gt;Input&lt;/direction&gt;
+                        &lt;width&gt;1&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                &lt;/ports&gt;
+                &lt;assignments&gt;
+                    &lt;assignmentValueMap/&gt;
+                &lt;/assignments&gt;
+                &lt;parameters&gt;
+                    &lt;parameterValueMap&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;clockRate&lt;/key&gt;
+                            &lt;value&gt;0&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;externallyDriven&lt;/key&gt;
+                            &lt;value&gt;false&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;ptfSchematicName&lt;/key&gt;
+                        &lt;/entry&gt;
+                    &lt;/parameterValueMap&gt;
+                &lt;/parameters&gt;
+            &lt;/interface&gt;
+            &lt;interface&gt;
+                &lt;name&gt;reset_out&lt;/name&gt;
+                &lt;type&gt;reset&lt;/type&gt;
+                &lt;isStart&gt;true&lt;/isStart&gt;
+                &lt;ports&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;reset_out&lt;/name&gt;
+                        &lt;role&gt;reset&lt;/role&gt;
+                        &lt;direction&gt;Output&lt;/direction&gt;
+                        &lt;width&gt;1&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                &lt;/ports&gt;
+                &lt;assignments&gt;
+                    &lt;assignmentValueMap/&gt;
+                &lt;/assignments&gt;
+                &lt;parameters&gt;
+                    &lt;parameterValueMap&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;associatedClock&lt;/key&gt;
+                            &lt;value&gt;clk&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;associatedDirectReset&lt;/key&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;associatedResetSinks&lt;/key&gt;
+                            &lt;value&gt;reset_in0&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;synchronousEdges&lt;/key&gt;
+                            &lt;value&gt;BOTH&lt;/value&gt;
+                        &lt;/entry&gt;
+                    &lt;/parameterValueMap&gt;
+                &lt;/parameters&gt;
+            &lt;/interface&gt;
+        &lt;/interfaces&gt;
+    &lt;/boundary&gt;
+    &lt;originalModuleInfo&gt;
+        &lt;className&gt;altera_reset_controller&lt;/className&gt;
+        &lt;version&gt;19.2.2&lt;/version&gt;
+        &lt;displayName&gt;Merlin Reset Controller Intel FPGA IP&lt;/displayName&gt;
+    &lt;/originalModuleInfo&gt;
+    &lt;systemInfoParameterDescriptors&gt;
+        &lt;descriptors/&gt;
+    &lt;/systemInfoParameterDescriptors&gt;
+    &lt;systemInfos&gt;
+        &lt;connPtSystemInfos/&gt;
+    &lt;/systemInfos&gt;
+&lt;/componentDefinition&gt;" />
+  <parameter name="cpuInfo" value="" />
+  <parameter name="logicalView" value="ip/rst_ss/dsp_rst_cntrl.ip" />
+  <parameter
+     name="moduleAssignmentDefinition"
+     value="&lt;assignmentDefinition&gt;
+    &lt;assignmentValueMap/&gt;
+&lt;/assignmentDefinition&gt;" />
+  <parameter name="svInterfaceDefinition" value="" />
+  <parameter name="AUTO_DEVICE" value="AGFB014R24B2I2V" />
+  <parameter
+     name="hdlParameters"
+     value="&lt;hdlParameterDescriptorDefinitionList&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Number of input reset interfaces&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;NUM_RESET_INPUTS&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;1&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;None: The reset is asserted and deasserted asynchronously. Use this setting if you have designed internal synchronization circuitry. Both: The reset is asserted and deasserted synchronously. Deassert: The reset is deasserted synchronously and asserted asynchronously.&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;STRING&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;OUTPUT_RESET_SYNC_EDGES&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.String&lt;/parameterType&gt;
+        &lt;parameterValue&gt;both&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Specifies the number of register stages the synchronizer uses to eliminate the propagation of metastable events.&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;SYNC_DEPTH&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;2&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Selects if reset request logic is added to sequence reset entry. Only used if any periperal requires an early reset indication&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;RESET_REQUEST_PRESENT&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Defines the timing between assertion of reset_req to reset_out (min:1)&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;RESET_REQ_WAIT_TIME&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;1&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Defines the minimum amount of clock to assert reset_out (min:3) &lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;MIN_RST_ASSERTION_TIME&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;3&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Defines the timing between deassertion of reset_req to reset_out&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;RESET_REQ_EARLY_DSRT_TIME&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;1&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN0&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN1&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN2&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN3&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN4&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN5&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN6&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN7&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN8&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN9&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN10&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN11&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN12&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN13&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN14&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN15&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if only reset request adaptation is required and no reset request generation is required. This used when all sources of reset request inputs are valid.&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;ADAPT_RESET_REQUEST&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+&lt;/hdlParameterDescriptorDefinitionList&gt;" />
+  <parameter
+     name="generationInfoDefinition"
+     value="&lt;generationInfoDefinition&gt;
+    &lt;hdlLibraryName&gt;dsp_rst_cntrl&lt;/hdlLibraryName&gt;
+    &lt;fileSets&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;dsp_rst_cntrl&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;dsp_rst_cntrl&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;QUARTUS_SYNTH&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;dsp_rst_cntrl&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;dsp_rst_cntrl&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;SIM_VERILOG&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;dsp_rst_cntrl&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;dsp_rst_cntrl&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;SIM_VHDL&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;dsp_rst_cntrl&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;dsp_rst_cntrl&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;CDC&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;dsp_rst_cntrl&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;dsp_rst_cntrl&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;CDC_VHDL&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+    &lt;/fileSets&gt;
+&lt;/generationInfoDefinition&gt;" />
+  <parameter name="liveModuleName" value="dsp_rst_cntrl" />
+  <generatedFiles/>
+  <childGeneratedFiles/>
+  <sourceFiles/>
+  <childSourceFiles/>
+  <instantiator instantiator="rst_ss" as="dsp_rst_cntrl" />
+  <messages>
+   <message level="Info" culprit="rst_ss">"Generating: dsp_rst_cntrl"</message>
+  </messages>
+ </entity>
+ <entity kind="altera_generic_component" version="1.0" name="ecpri_rst_cntrl">
+  <parameter name="hlsFile" value="" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter
+     name="defaultBoundary"
+     value="&lt;boundaryDefinition&gt;
+    &lt;interfaces&gt;
+        &lt;interface&gt;
+            &lt;name&gt;reset_in0&lt;/name&gt;
+            &lt;type&gt;reset&lt;/type&gt;
+            &lt;isStart&gt;false&lt;/isStart&gt;
+            &lt;ports&gt;
+                &lt;port&gt;
+                    &lt;name&gt;reset_in0&lt;/name&gt;
+                    &lt;role&gt;reset&lt;/role&gt;
+                    &lt;direction&gt;Input&lt;/direction&gt;
+                    &lt;width&gt;1&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+            &lt;/ports&gt;
+            &lt;assignments&gt;
+                &lt;assignmentValueMap/&gt;
+            &lt;/assignments&gt;
+            &lt;parameters&gt;
+                &lt;parameterValueMap&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;associatedClock&lt;/key&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;synchronousEdges&lt;/key&gt;
+                        &lt;value&gt;NONE&lt;/value&gt;
+                    &lt;/entry&gt;
+                &lt;/parameterValueMap&gt;
+            &lt;/parameters&gt;
+        &lt;/interface&gt;
+        &lt;interface&gt;
+            &lt;name&gt;clk&lt;/name&gt;
+            &lt;type&gt;clock&lt;/type&gt;
+            &lt;isStart&gt;false&lt;/isStart&gt;
+            &lt;ports&gt;
+                &lt;port&gt;
+                    &lt;name&gt;clk&lt;/name&gt;
+                    &lt;role&gt;clk&lt;/role&gt;
+                    &lt;direction&gt;Input&lt;/direction&gt;
+                    &lt;width&gt;1&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+            &lt;/ports&gt;
+            &lt;assignments&gt;
+                &lt;assignmentValueMap/&gt;
+            &lt;/assignments&gt;
+            &lt;parameters&gt;
+                &lt;parameterValueMap&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;clockRate&lt;/key&gt;
+                        &lt;value&gt;0&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;externallyDriven&lt;/key&gt;
+                        &lt;value&gt;false&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;ptfSchematicName&lt;/key&gt;
+                    &lt;/entry&gt;
+                &lt;/parameterValueMap&gt;
+            &lt;/parameters&gt;
+        &lt;/interface&gt;
+        &lt;interface&gt;
+            &lt;name&gt;reset_out&lt;/name&gt;
+            &lt;type&gt;reset&lt;/type&gt;
+            &lt;isStart&gt;true&lt;/isStart&gt;
+            &lt;ports&gt;
+                &lt;port&gt;
+                    &lt;name&gt;reset_out&lt;/name&gt;
+                    &lt;role&gt;reset&lt;/role&gt;
+                    &lt;direction&gt;Output&lt;/direction&gt;
+                    &lt;width&gt;1&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+            &lt;/ports&gt;
+            &lt;assignments&gt;
+                &lt;assignmentValueMap/&gt;
+            &lt;/assignments&gt;
+            &lt;parameters&gt;
+                &lt;parameterValueMap&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;associatedClock&lt;/key&gt;
+                        &lt;value&gt;clk&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;associatedDirectReset&lt;/key&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;associatedResetSinks&lt;/key&gt;
+                        &lt;value&gt;reset_in0&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;synchronousEdges&lt;/key&gt;
+                        &lt;value&gt;BOTH&lt;/value&gt;
+                    &lt;/entry&gt;
+                &lt;/parameterValueMap&gt;
+            &lt;/parameters&gt;
+        &lt;/interface&gt;
+    &lt;/interfaces&gt;
+&lt;/boundaryDefinition&gt;" />
+  <parameter name="bspCpu" value="false" />
+  <parameter
+     name="componentDefinition"
+     value="&lt;componentDefinition&gt;
+    &lt;boundary&gt;
+        &lt;interfaces&gt;
+            &lt;interface&gt;
+                &lt;name&gt;reset_in0&lt;/name&gt;
+                &lt;type&gt;reset&lt;/type&gt;
+                &lt;isStart&gt;false&lt;/isStart&gt;
+                &lt;ports&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;reset_in0&lt;/name&gt;
+                        &lt;role&gt;reset&lt;/role&gt;
+                        &lt;direction&gt;Input&lt;/direction&gt;
+                        &lt;width&gt;1&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                &lt;/ports&gt;
+                &lt;assignments&gt;
+                    &lt;assignmentValueMap/&gt;
+                &lt;/assignments&gt;
+                &lt;parameters&gt;
+                    &lt;parameterValueMap&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;associatedClock&lt;/key&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;synchronousEdges&lt;/key&gt;
+                            &lt;value&gt;NONE&lt;/value&gt;
+                        &lt;/entry&gt;
+                    &lt;/parameterValueMap&gt;
+                &lt;/parameters&gt;
+            &lt;/interface&gt;
+            &lt;interface&gt;
+                &lt;name&gt;clk&lt;/name&gt;
+                &lt;type&gt;clock&lt;/type&gt;
+                &lt;isStart&gt;false&lt;/isStart&gt;
+                &lt;ports&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;clk&lt;/name&gt;
+                        &lt;role&gt;clk&lt;/role&gt;
+                        &lt;direction&gt;Input&lt;/direction&gt;
+                        &lt;width&gt;1&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                &lt;/ports&gt;
+                &lt;assignments&gt;
+                    &lt;assignmentValueMap/&gt;
+                &lt;/assignments&gt;
+                &lt;parameters&gt;
+                    &lt;parameterValueMap&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;clockRate&lt;/key&gt;
+                            &lt;value&gt;0&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;externallyDriven&lt;/key&gt;
+                            &lt;value&gt;false&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;ptfSchematicName&lt;/key&gt;
+                        &lt;/entry&gt;
+                    &lt;/parameterValueMap&gt;
+                &lt;/parameters&gt;
+            &lt;/interface&gt;
+            &lt;interface&gt;
+                &lt;name&gt;reset_out&lt;/name&gt;
+                &lt;type&gt;reset&lt;/type&gt;
+                &lt;isStart&gt;true&lt;/isStart&gt;
+                &lt;ports&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;reset_out&lt;/name&gt;
+                        &lt;role&gt;reset&lt;/role&gt;
+                        &lt;direction&gt;Output&lt;/direction&gt;
+                        &lt;width&gt;1&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                &lt;/ports&gt;
+                &lt;assignments&gt;
+                    &lt;assignmentValueMap/&gt;
+                &lt;/assignments&gt;
+                &lt;parameters&gt;
+                    &lt;parameterValueMap&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;associatedClock&lt;/key&gt;
+                            &lt;value&gt;clk&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;associatedDirectReset&lt;/key&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;associatedResetSinks&lt;/key&gt;
+                            &lt;value&gt;reset_in0&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;synchronousEdges&lt;/key&gt;
+                            &lt;value&gt;BOTH&lt;/value&gt;
+                        &lt;/entry&gt;
+                    &lt;/parameterValueMap&gt;
+                &lt;/parameters&gt;
+            &lt;/interface&gt;
+        &lt;/interfaces&gt;
+    &lt;/boundary&gt;
+    &lt;originalModuleInfo&gt;
+        &lt;className&gt;altera_reset_controller&lt;/className&gt;
+        &lt;version&gt;19.2.2&lt;/version&gt;
+        &lt;displayName&gt;Merlin Reset Controller Intel FPGA IP&lt;/displayName&gt;
+    &lt;/originalModuleInfo&gt;
+    &lt;systemInfoParameterDescriptors&gt;
+        &lt;descriptors/&gt;
+    &lt;/systemInfoParameterDescriptors&gt;
+    &lt;systemInfos&gt;
+        &lt;connPtSystemInfos/&gt;
+    &lt;/systemInfos&gt;
+&lt;/componentDefinition&gt;" />
+  <parameter name="cpuInfo" value="" />
+  <parameter name="logicalView" value="ip/rst_ss/ecpri_rst_cntrl.ip" />
+  <parameter
+     name="moduleAssignmentDefinition"
+     value="&lt;assignmentDefinition&gt;
+    &lt;assignmentValueMap/&gt;
+&lt;/assignmentDefinition&gt;" />
+  <parameter name="svInterfaceDefinition" value="" />
+  <parameter name="AUTO_DEVICE" value="AGFB014R24B2I2V" />
+  <parameter
+     name="hdlParameters"
+     value="&lt;hdlParameterDescriptorDefinitionList&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Number of input reset interfaces&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;NUM_RESET_INPUTS&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;1&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;None: The reset is asserted and deasserted asynchronously. Use this setting if you have designed internal synchronization circuitry. Both: The reset is asserted and deasserted synchronously. Deassert: The reset is deasserted synchronously and asserted asynchronously.&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;STRING&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;OUTPUT_RESET_SYNC_EDGES&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.String&lt;/parameterType&gt;
+        &lt;parameterValue&gt;both&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Specifies the number of register stages the synchronizer uses to eliminate the propagation of metastable events.&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;SYNC_DEPTH&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;2&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Selects if reset request logic is added to sequence reset entry. Only used if any periperal requires an early reset indication&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;RESET_REQUEST_PRESENT&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Defines the timing between assertion of reset_req to reset_out (min:1)&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;RESET_REQ_WAIT_TIME&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;1&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Defines the minimum amount of clock to assert reset_out (min:3) &lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;MIN_RST_ASSERTION_TIME&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;3&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Defines the timing between deassertion of reset_req to reset_out&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;RESET_REQ_EARLY_DSRT_TIME&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;1&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN0&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN1&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN2&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN3&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN4&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN5&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN6&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN7&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN8&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN9&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN10&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN11&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN12&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN13&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN14&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN15&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if only reset request adaptation is required and no reset request generation is required. This used when all sources of reset request inputs are valid.&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;ADAPT_RESET_REQUEST&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+&lt;/hdlParameterDescriptorDefinitionList&gt;" />
+  <parameter
+     name="generationInfoDefinition"
+     value="&lt;generationInfoDefinition&gt;
+    &lt;hdlLibraryName&gt;ecpri_rst_cntrl&lt;/hdlLibraryName&gt;
+    &lt;fileSets&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;ecpri_rst_cntrl&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;ecpri_rst_cntrl&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;QUARTUS_SYNTH&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;ecpri_rst_cntrl&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;ecpri_rst_cntrl&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;SIM_VERILOG&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;ecpri_rst_cntrl&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;ecpri_rst_cntrl&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;SIM_VHDL&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;ecpri_rst_cntrl&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;ecpri_rst_cntrl&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;CDC&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;ecpri_rst_cntrl&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;ecpri_rst_cntrl&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;CDC_VHDL&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+    &lt;/fileSets&gt;
+&lt;/generationInfoDefinition&gt;" />
+  <parameter name="liveModuleName" value="ecpri_rst_cntrl" />
+  <generatedFiles/>
+  <childGeneratedFiles/>
+  <sourceFiles/>
+  <childSourceFiles/>
+  <instantiator instantiator="rst_ss" as="ecpri_rst_cntrl" />
+  <messages>
+   <message level="Info" culprit="rst_ss">"Generating: ecpri_rst_cntrl"</message>
+  </messages>
+ </entity>
+ <entity kind="altera_generic_component" version="1.0" name="eth_rst_cntrl">
+  <parameter name="hlsFile" value="" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter
+     name="defaultBoundary"
+     value="&lt;boundaryDefinition&gt;
+    &lt;interfaces&gt;
+        &lt;interface&gt;
+            &lt;name&gt;reset_in0&lt;/name&gt;
+            &lt;type&gt;reset&lt;/type&gt;
+            &lt;isStart&gt;false&lt;/isStart&gt;
+            &lt;ports&gt;
+                &lt;port&gt;
+                    &lt;name&gt;reset_in0&lt;/name&gt;
+                    &lt;role&gt;reset&lt;/role&gt;
+                    &lt;direction&gt;Input&lt;/direction&gt;
+                    &lt;width&gt;1&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+            &lt;/ports&gt;
+            &lt;assignments&gt;
+                &lt;assignmentValueMap/&gt;
+            &lt;/assignments&gt;
+            &lt;parameters&gt;
+                &lt;parameterValueMap&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;associatedClock&lt;/key&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;synchronousEdges&lt;/key&gt;
+                        &lt;value&gt;NONE&lt;/value&gt;
+                    &lt;/entry&gt;
+                &lt;/parameterValueMap&gt;
+            &lt;/parameters&gt;
+        &lt;/interface&gt;
+        &lt;interface&gt;
+            &lt;name&gt;clk&lt;/name&gt;
+            &lt;type&gt;clock&lt;/type&gt;
+            &lt;isStart&gt;false&lt;/isStart&gt;
+            &lt;ports&gt;
+                &lt;port&gt;
+                    &lt;name&gt;clk&lt;/name&gt;
+                    &lt;role&gt;clk&lt;/role&gt;
+                    &lt;direction&gt;Input&lt;/direction&gt;
+                    &lt;width&gt;1&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+            &lt;/ports&gt;
+            &lt;assignments&gt;
+                &lt;assignmentValueMap/&gt;
+            &lt;/assignments&gt;
+            &lt;parameters&gt;
+                &lt;parameterValueMap&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;clockRate&lt;/key&gt;
+                        &lt;value&gt;0&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;externallyDriven&lt;/key&gt;
+                        &lt;value&gt;false&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;ptfSchematicName&lt;/key&gt;
+                    &lt;/entry&gt;
+                &lt;/parameterValueMap&gt;
+            &lt;/parameters&gt;
+        &lt;/interface&gt;
+        &lt;interface&gt;
+            &lt;name&gt;reset_out&lt;/name&gt;
+            &lt;type&gt;reset&lt;/type&gt;
+            &lt;isStart&gt;true&lt;/isStart&gt;
+            &lt;ports&gt;
+                &lt;port&gt;
+                    &lt;name&gt;reset_out&lt;/name&gt;
+                    &lt;role&gt;reset&lt;/role&gt;
+                    &lt;direction&gt;Output&lt;/direction&gt;
+                    &lt;width&gt;1&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+            &lt;/ports&gt;
+            &lt;assignments&gt;
+                &lt;assignmentValueMap/&gt;
+            &lt;/assignments&gt;
+            &lt;parameters&gt;
+                &lt;parameterValueMap&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;associatedClock&lt;/key&gt;
+                        &lt;value&gt;clk&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;associatedDirectReset&lt;/key&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;associatedResetSinks&lt;/key&gt;
+                        &lt;value&gt;reset_in0&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;synchronousEdges&lt;/key&gt;
+                        &lt;value&gt;BOTH&lt;/value&gt;
+                    &lt;/entry&gt;
+                &lt;/parameterValueMap&gt;
+            &lt;/parameters&gt;
+        &lt;/interface&gt;
+    &lt;/interfaces&gt;
+&lt;/boundaryDefinition&gt;" />
+  <parameter name="bspCpu" value="false" />
+  <parameter
+     name="componentDefinition"
+     value="&lt;componentDefinition&gt;
+    &lt;boundary&gt;
+        &lt;interfaces&gt;
+            &lt;interface&gt;
+                &lt;name&gt;reset_in0&lt;/name&gt;
+                &lt;type&gt;reset&lt;/type&gt;
+                &lt;isStart&gt;false&lt;/isStart&gt;
+                &lt;ports&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;reset_in0&lt;/name&gt;
+                        &lt;role&gt;reset&lt;/role&gt;
+                        &lt;direction&gt;Input&lt;/direction&gt;
+                        &lt;width&gt;1&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                &lt;/ports&gt;
+                &lt;assignments&gt;
+                    &lt;assignmentValueMap/&gt;
+                &lt;/assignments&gt;
+                &lt;parameters&gt;
+                    &lt;parameterValueMap&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;associatedClock&lt;/key&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;synchronousEdges&lt;/key&gt;
+                            &lt;value&gt;NONE&lt;/value&gt;
+                        &lt;/entry&gt;
+                    &lt;/parameterValueMap&gt;
+                &lt;/parameters&gt;
+            &lt;/interface&gt;
+            &lt;interface&gt;
+                &lt;name&gt;clk&lt;/name&gt;
+                &lt;type&gt;clock&lt;/type&gt;
+                &lt;isStart&gt;false&lt;/isStart&gt;
+                &lt;ports&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;clk&lt;/name&gt;
+                        &lt;role&gt;clk&lt;/role&gt;
+                        &lt;direction&gt;Input&lt;/direction&gt;
+                        &lt;width&gt;1&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                &lt;/ports&gt;
+                &lt;assignments&gt;
+                    &lt;assignmentValueMap/&gt;
+                &lt;/assignments&gt;
+                &lt;parameters&gt;
+                    &lt;parameterValueMap&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;clockRate&lt;/key&gt;
+                            &lt;value&gt;0&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;externallyDriven&lt;/key&gt;
+                            &lt;value&gt;false&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;ptfSchematicName&lt;/key&gt;
+                        &lt;/entry&gt;
+                    &lt;/parameterValueMap&gt;
+                &lt;/parameters&gt;
+            &lt;/interface&gt;
+            &lt;interface&gt;
+                &lt;name&gt;reset_out&lt;/name&gt;
+                &lt;type&gt;reset&lt;/type&gt;
+                &lt;isStart&gt;true&lt;/isStart&gt;
+                &lt;ports&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;reset_out&lt;/name&gt;
+                        &lt;role&gt;reset&lt;/role&gt;
+                        &lt;direction&gt;Output&lt;/direction&gt;
+                        &lt;width&gt;1&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                &lt;/ports&gt;
+                &lt;assignments&gt;
+                    &lt;assignmentValueMap/&gt;
+                &lt;/assignments&gt;
+                &lt;parameters&gt;
+                    &lt;parameterValueMap&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;associatedClock&lt;/key&gt;
+                            &lt;value&gt;clk&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;associatedDirectReset&lt;/key&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;associatedResetSinks&lt;/key&gt;
+                            &lt;value&gt;reset_in0&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;synchronousEdges&lt;/key&gt;
+                            &lt;value&gt;BOTH&lt;/value&gt;
+                        &lt;/entry&gt;
+                    &lt;/parameterValueMap&gt;
+                &lt;/parameters&gt;
+            &lt;/interface&gt;
+        &lt;/interfaces&gt;
+    &lt;/boundary&gt;
+    &lt;originalModuleInfo&gt;
+        &lt;className&gt;altera_reset_controller&lt;/className&gt;
+        &lt;version&gt;19.2.2&lt;/version&gt;
+        &lt;displayName&gt;Merlin Reset Controller Intel FPGA IP&lt;/displayName&gt;
+    &lt;/originalModuleInfo&gt;
+    &lt;systemInfoParameterDescriptors&gt;
+        &lt;descriptors/&gt;
+    &lt;/systemInfoParameterDescriptors&gt;
+    &lt;systemInfos&gt;
+        &lt;connPtSystemInfos/&gt;
+    &lt;/systemInfos&gt;
+&lt;/componentDefinition&gt;" />
+  <parameter name="cpuInfo" value="" />
+  <parameter name="logicalView" value="ip/rst_ss/eth_rst_cntrl.ip" />
+  <parameter
+     name="moduleAssignmentDefinition"
+     value="&lt;assignmentDefinition&gt;
+    &lt;assignmentValueMap/&gt;
+&lt;/assignmentDefinition&gt;" />
+  <parameter name="svInterfaceDefinition" value="" />
+  <parameter name="AUTO_DEVICE" value="AGFB014R24B2I2V" />
+  <parameter
+     name="hdlParameters"
+     value="&lt;hdlParameterDescriptorDefinitionList&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Number of input reset interfaces&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;NUM_RESET_INPUTS&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;1&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;None: The reset is asserted and deasserted asynchronously. Use this setting if you have designed internal synchronization circuitry. Both: The reset is asserted and deasserted synchronously. Deassert: The reset is deasserted synchronously and asserted asynchronously.&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;STRING&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;OUTPUT_RESET_SYNC_EDGES&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.String&lt;/parameterType&gt;
+        &lt;parameterValue&gt;both&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Specifies the number of register stages the synchronizer uses to eliminate the propagation of metastable events.&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;SYNC_DEPTH&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;2&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Selects if reset request logic is added to sequence reset entry. Only used if any periperal requires an early reset indication&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;RESET_REQUEST_PRESENT&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Defines the timing between assertion of reset_req to reset_out (min:1)&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;RESET_REQ_WAIT_TIME&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;1&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Defines the minimum amount of clock to assert reset_out (min:3) &lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;MIN_RST_ASSERTION_TIME&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;3&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Defines the timing between deassertion of reset_req to reset_out&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;RESET_REQ_EARLY_DSRT_TIME&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;1&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN0&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN1&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN2&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN3&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN4&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN5&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN6&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN7&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN8&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN9&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN10&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN11&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN12&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN13&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN14&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if the reset_in interface has reset_req together with reset&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;USE_RESET_REQUEST_IN15&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;description&gt;Set this if only reset request adaptation is required and no reset request generation is required. This used when all sources of reset request inputs are valid.&lt;/description&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;ADAPT_RESET_REQUEST&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;0&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+&lt;/hdlParameterDescriptorDefinitionList&gt;" />
+  <parameter
+     name="generationInfoDefinition"
+     value="&lt;generationInfoDefinition&gt;
+    &lt;hdlLibraryName&gt;eth_rst_cntrl&lt;/hdlLibraryName&gt;
+    &lt;fileSets&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;eth_rst_cntrl&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;eth_rst_cntrl&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;QUARTUS_SYNTH&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;eth_rst_cntrl&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;eth_rst_cntrl&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;SIM_VERILOG&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;eth_rst_cntrl&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;eth_rst_cntrl&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;SIM_VHDL&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;eth_rst_cntrl&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;eth_rst_cntrl&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;CDC&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;eth_rst_cntrl&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;eth_rst_cntrl&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;CDC_VHDL&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+    &lt;/fileSets&gt;
+&lt;/generationInfoDefinition&gt;" />
+  <parameter name="liveModuleName" value="eth_rst_cntrl" />
+  <generatedFiles/>
+  <childGeneratedFiles/>
+  <sourceFiles/>
+  <childSourceFiles/>
+  <instantiator instantiator="rst_ss" as="eth_rst_cntrl" />
+  <messages>
+   <message level="Info" culprit="rst_ss">"Generating: eth_rst_cntrl"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_generic_component"
+   version="1.0"
+   name="reset_bridge_act_high">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="hlsFile" value="" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter
+     name="defaultBoundary"
+     value="&lt;boundaryDefinition&gt;
+    &lt;interfaces&gt;
+        &lt;interface&gt;
+            &lt;name&gt;clk&lt;/name&gt;
+            &lt;type&gt;clock&lt;/type&gt;
+            &lt;isStart&gt;false&lt;/isStart&gt;
+            &lt;ports&gt;
+                &lt;port&gt;
+                    &lt;name&gt;clk&lt;/name&gt;
+                    &lt;role&gt;clk&lt;/role&gt;
+                    &lt;direction&gt;Input&lt;/direction&gt;
+                    &lt;width&gt;1&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+            &lt;/ports&gt;
+            &lt;assignments&gt;
+                &lt;assignmentValueMap/&gt;
+            &lt;/assignments&gt;
+            &lt;parameters&gt;
+                &lt;parameterValueMap&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;clockRate&lt;/key&gt;
+                        &lt;value&gt;0&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;externallyDriven&lt;/key&gt;
+                        &lt;value&gt;false&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;ptfSchematicName&lt;/key&gt;
+                    &lt;/entry&gt;
+                &lt;/parameterValueMap&gt;
+            &lt;/parameters&gt;
+        &lt;/interface&gt;
+        &lt;interface&gt;
+            &lt;name&gt;in_reset&lt;/name&gt;
+            &lt;type&gt;reset&lt;/type&gt;
+            &lt;isStart&gt;false&lt;/isStart&gt;
+            &lt;ports&gt;
+                &lt;port&gt;
+                    &lt;name&gt;in_reset&lt;/name&gt;
+                    &lt;role&gt;reset&lt;/role&gt;
+                    &lt;direction&gt;Input&lt;/direction&gt;
+                    &lt;width&gt;1&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+            &lt;/ports&gt;
+            &lt;assignments&gt;
+                &lt;assignmentValueMap/&gt;
+            &lt;/assignments&gt;
+            &lt;parameters&gt;
+                &lt;parameterValueMap&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;associatedClock&lt;/key&gt;
+                        &lt;value&gt;clk&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;synchronousEdges&lt;/key&gt;
+                        &lt;value&gt;DEASSERT&lt;/value&gt;
+                    &lt;/entry&gt;
+                &lt;/parameterValueMap&gt;
+            &lt;/parameters&gt;
+        &lt;/interface&gt;
+        &lt;interface&gt;
+            &lt;name&gt;out_reset&lt;/name&gt;
+            &lt;type&gt;reset&lt;/type&gt;
+            &lt;isStart&gt;true&lt;/isStart&gt;
+            &lt;ports&gt;
+                &lt;port&gt;
+                    &lt;name&gt;out_reset&lt;/name&gt;
+                    &lt;role&gt;reset&lt;/role&gt;
+                    &lt;direction&gt;Output&lt;/direction&gt;
+                    &lt;width&gt;1&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+            &lt;/ports&gt;
+            &lt;assignments&gt;
+                &lt;assignmentValueMap/&gt;
+            &lt;/assignments&gt;
+            &lt;parameters&gt;
+                &lt;parameterValueMap&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;associatedClock&lt;/key&gt;
+                        &lt;value&gt;clk&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;associatedDirectReset&lt;/key&gt;
+                        &lt;value&gt;in_reset&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;associatedResetSinks&lt;/key&gt;
+                        &lt;value&gt;in_reset&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;synchronousEdges&lt;/key&gt;
+                        &lt;value&gt;DEASSERT&lt;/value&gt;
+                    &lt;/entry&gt;
+                &lt;/parameterValueMap&gt;
+            &lt;/parameters&gt;
+        &lt;/interface&gt;
+    &lt;/interfaces&gt;
+&lt;/boundaryDefinition&gt;" />
+  <parameter name="bspCpu" value="false" />
+  <parameter
+     name="componentDefinition"
+     value="&lt;componentDefinition&gt;
+    &lt;boundary&gt;
+        &lt;interfaces&gt;
+            &lt;interface&gt;
+                &lt;name&gt;clk&lt;/name&gt;
+                &lt;type&gt;clock&lt;/type&gt;
+                &lt;isStart&gt;false&lt;/isStart&gt;
+                &lt;ports&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;clk&lt;/name&gt;
+                        &lt;role&gt;clk&lt;/role&gt;
+                        &lt;direction&gt;Input&lt;/direction&gt;
+                        &lt;width&gt;1&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                &lt;/ports&gt;
+                &lt;assignments&gt;
+                    &lt;assignmentValueMap/&gt;
+                &lt;/assignments&gt;
+                &lt;parameters&gt;
+                    &lt;parameterValueMap&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;clockRate&lt;/key&gt;
+                            &lt;value&gt;0&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;externallyDriven&lt;/key&gt;
+                            &lt;value&gt;false&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;ptfSchematicName&lt;/key&gt;
+                        &lt;/entry&gt;
+                    &lt;/parameterValueMap&gt;
+                &lt;/parameters&gt;
+            &lt;/interface&gt;
+            &lt;interface&gt;
+                &lt;name&gt;in_reset&lt;/name&gt;
+                &lt;type&gt;reset&lt;/type&gt;
+                &lt;isStart&gt;false&lt;/isStart&gt;
+                &lt;ports&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;in_reset&lt;/name&gt;
+                        &lt;role&gt;reset&lt;/role&gt;
+                        &lt;direction&gt;Input&lt;/direction&gt;
+                        &lt;width&gt;1&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                &lt;/ports&gt;
+                &lt;assignments&gt;
+                    &lt;assignmentValueMap/&gt;
+                &lt;/assignments&gt;
+                &lt;parameters&gt;
+                    &lt;parameterValueMap&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;associatedClock&lt;/key&gt;
+                            &lt;value&gt;clk&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;synchronousEdges&lt;/key&gt;
+                            &lt;value&gt;DEASSERT&lt;/value&gt;
+                        &lt;/entry&gt;
+                    &lt;/parameterValueMap&gt;
+                &lt;/parameters&gt;
+            &lt;/interface&gt;
+            &lt;interface&gt;
+                &lt;name&gt;out_reset&lt;/name&gt;
+                &lt;type&gt;reset&lt;/type&gt;
+                &lt;isStart&gt;true&lt;/isStart&gt;
+                &lt;ports&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;out_reset&lt;/name&gt;
+                        &lt;role&gt;reset&lt;/role&gt;
+                        &lt;direction&gt;Output&lt;/direction&gt;
+                        &lt;width&gt;1&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                &lt;/ports&gt;
+                &lt;assignments&gt;
+                    &lt;assignmentValueMap/&gt;
+                &lt;/assignments&gt;
+                &lt;parameters&gt;
+                    &lt;parameterValueMap&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;associatedClock&lt;/key&gt;
+                            &lt;value&gt;clk&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;associatedDirectReset&lt;/key&gt;
+                            &lt;value&gt;in_reset&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;associatedResetSinks&lt;/key&gt;
+                            &lt;value&gt;in_reset&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;synchronousEdges&lt;/key&gt;
+                            &lt;value&gt;DEASSERT&lt;/value&gt;
+                        &lt;/entry&gt;
+                    &lt;/parameterValueMap&gt;
+                &lt;/parameters&gt;
+            &lt;/interface&gt;
+        &lt;/interfaces&gt;
+    &lt;/boundary&gt;
+    &lt;originalModuleInfo&gt;
+        &lt;className&gt;altera_reset_bridge&lt;/className&gt;
+        &lt;version&gt;19.2.0&lt;/version&gt;
+        &lt;displayName&gt;Reset Bridge Intel FPGA IP&lt;/displayName&gt;
+    &lt;/originalModuleInfo&gt;
+    &lt;systemInfoParameterDescriptors&gt;
+        &lt;descriptors&gt;
+            &lt;descriptor&gt;
+                &lt;parameterDefaultValue&gt;-1&lt;/parameterDefaultValue&gt;
+                &lt;parameterName&gt;AUTO_CLK_CLOCK_RATE&lt;/parameterName&gt;
+                &lt;parameterType&gt;java.lang.Long&lt;/parameterType&gt;
+                &lt;systemInfoArgs&gt;clk&lt;/systemInfoArgs&gt;
+                &lt;systemInfotype&gt;CLOCK_RATE&lt;/systemInfotype&gt;
+            &lt;/descriptor&gt;
+        &lt;/descriptors&gt;
+    &lt;/systemInfoParameterDescriptors&gt;
+    &lt;systemInfos&gt;
+        &lt;connPtSystemInfos&gt;
+            &lt;entry&gt;
+                &lt;key&gt;clk&lt;/key&gt;
+                &lt;value&gt;
+                    &lt;connectionPointName&gt;clk&lt;/connectionPointName&gt;
+                    &lt;suppliedSystemInfos/&gt;
+                    &lt;consumedSystemInfos&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;CLOCK_RATE&lt;/key&gt;
+                            &lt;value&gt;-1&lt;/value&gt;
+                        &lt;/entry&gt;
+                    &lt;/consumedSystemInfos&gt;
+                &lt;/value&gt;
+            &lt;/entry&gt;
+        &lt;/connPtSystemInfos&gt;
+    &lt;/systemInfos&gt;
+&lt;/componentDefinition&gt;" />
+  <parameter name="cpuInfo" value="" />
+  <parameter name="logicalView" value="ip/rst_ss/reset_bridge_act_high.ip" />
+  <parameter
+     name="moduleAssignmentDefinition"
+     value="&lt;assignmentDefinition&gt;
+    &lt;assignmentValueMap/&gt;
+&lt;/assignmentDefinition&gt;" />
+  <parameter name="svInterfaceDefinition" value="" />
+  <parameter name="AUTO_DEVICE" value="AGFB014R24B2I2V" />
+  <parameter
+     name="hdlParameters"
+     value="&lt;hdlParameterDescriptorDefinitionList/&gt;" />
+  <parameter
+     name="generationInfoDefinition"
+     value="&lt;generationInfoDefinition&gt;
+    &lt;hdlLibraryName&gt;reset_bridge_act_high&lt;/hdlLibraryName&gt;
+    &lt;fileSets&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;reset_bridge_act_high&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;reset_bridge_act_high&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;QUARTUS_SYNTH&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;reset_bridge_act_high&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;reset_bridge_act_high&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;SIM_VERILOG&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;reset_bridge_act_high&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;reset_bridge_act_high&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;SIM_VHDL&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;reset_bridge_act_high&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;reset_bridge_act_high&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;CDC&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;reset_bridge_act_high&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;reset_bridge_act_high&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;CDC_VHDL&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+    &lt;/fileSets&gt;
+&lt;/generationInfoDefinition&gt;" />
+  <parameter name="liveModuleName" value="reset_bridge_act_high" />
+  <generatedFiles/>
+  <childGeneratedFiles/>
+  <sourceFiles/>
+  <childSourceFiles/>
+  <instantiator instantiator="rst_ss" as="reset_bridge_act_high" />
+  <messages>
+   <message level="Info" culprit="rst_ss">"Generating: reset_bridge_act_high"</message>
+  </messages>
+ </entity>
+ <entity kind="altera_generic_component" version="1.0" name="rst_csr">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="hlsFile" value="" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter
+     name="defaultBoundary"
+     value="&lt;boundaryDefinition&gt;
+    &lt;interfaces&gt;
+        &lt;interface&gt;
+            &lt;name&gt;clk&lt;/name&gt;
+            &lt;type&gt;clock&lt;/type&gt;
+            &lt;isStart&gt;false&lt;/isStart&gt;
+            &lt;ports&gt;
+                &lt;port&gt;
+                    &lt;name&gt;clk&lt;/name&gt;
+                    &lt;role&gt;clk&lt;/role&gt;
+                    &lt;direction&gt;Input&lt;/direction&gt;
+                    &lt;width&gt;1&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+            &lt;/ports&gt;
+            &lt;assignments&gt;
+                &lt;assignmentValueMap/&gt;
+            &lt;/assignments&gt;
+            &lt;parameters&gt;
+                &lt;parameterValueMap&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;clockRate&lt;/key&gt;
+                        &lt;value&gt;0&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;externallyDriven&lt;/key&gt;
+                        &lt;value&gt;false&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;ptfSchematicName&lt;/key&gt;
+                    &lt;/entry&gt;
+                &lt;/parameterValueMap&gt;
+            &lt;/parameters&gt;
+        &lt;/interface&gt;
+        &lt;interface&gt;
+            &lt;name&gt;in_reset&lt;/name&gt;
+            &lt;type&gt;reset&lt;/type&gt;
+            &lt;isStart&gt;false&lt;/isStart&gt;
+            &lt;ports&gt;
+                &lt;port&gt;
+                    &lt;name&gt;in_reset_n&lt;/name&gt;
+                    &lt;role&gt;reset_n&lt;/role&gt;
+                    &lt;direction&gt;Input&lt;/direction&gt;
+                    &lt;width&gt;1&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+            &lt;/ports&gt;
+            &lt;assignments&gt;
+                &lt;assignmentValueMap/&gt;
+            &lt;/assignments&gt;
+            &lt;parameters&gt;
+                &lt;parameterValueMap&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;associatedClock&lt;/key&gt;
+                        &lt;value&gt;clk&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;synchronousEdges&lt;/key&gt;
+                        &lt;value&gt;DEASSERT&lt;/value&gt;
+                    &lt;/entry&gt;
+                &lt;/parameterValueMap&gt;
+            &lt;/parameters&gt;
+        &lt;/interface&gt;
+        &lt;interface&gt;
+            &lt;name&gt;out_reset&lt;/name&gt;
+            &lt;type&gt;reset&lt;/type&gt;
+            &lt;isStart&gt;true&lt;/isStart&gt;
+            &lt;ports&gt;
+                &lt;port&gt;
+                    &lt;name&gt;out_reset_n&lt;/name&gt;
+                    &lt;role&gt;reset_n&lt;/role&gt;
+                    &lt;direction&gt;Output&lt;/direction&gt;
+                    &lt;width&gt;1&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+            &lt;/ports&gt;
+            &lt;assignments&gt;
+                &lt;assignmentValueMap/&gt;
+            &lt;/assignments&gt;
+            &lt;parameters&gt;
+                &lt;parameterValueMap&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;associatedClock&lt;/key&gt;
+                        &lt;value&gt;clk&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;associatedDirectReset&lt;/key&gt;
+                        &lt;value&gt;in_reset&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;associatedResetSinks&lt;/key&gt;
+                        &lt;value&gt;in_reset&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;synchronousEdges&lt;/key&gt;
+                        &lt;value&gt;DEASSERT&lt;/value&gt;
+                    &lt;/entry&gt;
+                &lt;/parameterValueMap&gt;
+            &lt;/parameters&gt;
+        &lt;/interface&gt;
+    &lt;/interfaces&gt;
+&lt;/boundaryDefinition&gt;" />
+  <parameter name="bspCpu" value="false" />
+  <parameter
+     name="componentDefinition"
+     value="&lt;componentDefinition&gt;
+    &lt;boundary&gt;
+        &lt;interfaces&gt;
+            &lt;interface&gt;
+                &lt;name&gt;clk&lt;/name&gt;
+                &lt;type&gt;clock&lt;/type&gt;
+                &lt;isStart&gt;false&lt;/isStart&gt;
+                &lt;ports&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;clk&lt;/name&gt;
+                        &lt;role&gt;clk&lt;/role&gt;
+                        &lt;direction&gt;Input&lt;/direction&gt;
+                        &lt;width&gt;1&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                &lt;/ports&gt;
+                &lt;assignments&gt;
+                    &lt;assignmentValueMap/&gt;
+                &lt;/assignments&gt;
+                &lt;parameters&gt;
+                    &lt;parameterValueMap&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;clockRate&lt;/key&gt;
+                            &lt;value&gt;0&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;externallyDriven&lt;/key&gt;
+                            &lt;value&gt;false&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;ptfSchematicName&lt;/key&gt;
+                        &lt;/entry&gt;
+                    &lt;/parameterValueMap&gt;
+                &lt;/parameters&gt;
+            &lt;/interface&gt;
+            &lt;interface&gt;
+                &lt;name&gt;in_reset&lt;/name&gt;
+                &lt;type&gt;reset&lt;/type&gt;
+                &lt;isStart&gt;false&lt;/isStart&gt;
+                &lt;ports&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;in_reset_n&lt;/name&gt;
+                        &lt;role&gt;reset_n&lt;/role&gt;
+                        &lt;direction&gt;Input&lt;/direction&gt;
+                        &lt;width&gt;1&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                &lt;/ports&gt;
+                &lt;assignments&gt;
+                    &lt;assignmentValueMap/&gt;
+                &lt;/assignments&gt;
+                &lt;parameters&gt;
+                    &lt;parameterValueMap&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;associatedClock&lt;/key&gt;
+                            &lt;value&gt;clk&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;synchronousEdges&lt;/key&gt;
+                            &lt;value&gt;DEASSERT&lt;/value&gt;
+                        &lt;/entry&gt;
+                    &lt;/parameterValueMap&gt;
+                &lt;/parameters&gt;
+            &lt;/interface&gt;
+            &lt;interface&gt;
+                &lt;name&gt;out_reset&lt;/name&gt;
+                &lt;type&gt;reset&lt;/type&gt;
+                &lt;isStart&gt;true&lt;/isStart&gt;
+                &lt;ports&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;out_reset_n&lt;/name&gt;
+                        &lt;role&gt;reset_n&lt;/role&gt;
+                        &lt;direction&gt;Output&lt;/direction&gt;
+                        &lt;width&gt;1&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                &lt;/ports&gt;
+                &lt;assignments&gt;
+                    &lt;assignmentValueMap/&gt;
+                &lt;/assignments&gt;
+                &lt;parameters&gt;
+                    &lt;parameterValueMap&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;associatedClock&lt;/key&gt;
+                            &lt;value&gt;clk&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;associatedDirectReset&lt;/key&gt;
+                            &lt;value&gt;in_reset&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;associatedResetSinks&lt;/key&gt;
+                            &lt;value&gt;in_reset&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;synchronousEdges&lt;/key&gt;
+                            &lt;value&gt;DEASSERT&lt;/value&gt;
+                        &lt;/entry&gt;
+                    &lt;/parameterValueMap&gt;
+                &lt;/parameters&gt;
+            &lt;/interface&gt;
+        &lt;/interfaces&gt;
+    &lt;/boundary&gt;
+    &lt;originalModuleInfo&gt;
+        &lt;className&gt;altera_reset_bridge&lt;/className&gt;
+        &lt;version&gt;19.2.0&lt;/version&gt;
+        &lt;displayName&gt;Reset Bridge Intel FPGA IP&lt;/displayName&gt;
+    &lt;/originalModuleInfo&gt;
+    &lt;systemInfoParameterDescriptors&gt;
+        &lt;descriptors&gt;
+            &lt;descriptor&gt;
+                &lt;parameterDefaultValue&gt;-1&lt;/parameterDefaultValue&gt;
+                &lt;parameterName&gt;AUTO_CLK_CLOCK_RATE&lt;/parameterName&gt;
+                &lt;parameterType&gt;java.lang.Long&lt;/parameterType&gt;
+                &lt;systemInfoArgs&gt;clk&lt;/systemInfoArgs&gt;
+                &lt;systemInfotype&gt;CLOCK_RATE&lt;/systemInfotype&gt;
+            &lt;/descriptor&gt;
+        &lt;/descriptors&gt;
+    &lt;/systemInfoParameterDescriptors&gt;
+    &lt;systemInfos&gt;
+        &lt;connPtSystemInfos&gt;
+            &lt;entry&gt;
+                &lt;key&gt;clk&lt;/key&gt;
+                &lt;value&gt;
+                    &lt;connectionPointName&gt;clk&lt;/connectionPointName&gt;
+                    &lt;suppliedSystemInfos/&gt;
+                    &lt;consumedSystemInfos&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;CLOCK_RATE&lt;/key&gt;
+                            &lt;value&gt;-1&lt;/value&gt;
+                        &lt;/entry&gt;
+                    &lt;/consumedSystemInfos&gt;
+                &lt;/value&gt;
+            &lt;/entry&gt;
+        &lt;/connPtSystemInfos&gt;
+    &lt;/systemInfos&gt;
+&lt;/componentDefinition&gt;" />
+  <parameter name="cpuInfo" value="" />
+  <parameter name="logicalView" value="ip/rst_ss/rst_csr.ip" />
+  <parameter
+     name="moduleAssignmentDefinition"
+     value="&lt;assignmentDefinition&gt;
+    &lt;assignmentValueMap/&gt;
+&lt;/assignmentDefinition&gt;" />
+  <parameter name="svInterfaceDefinition" value="" />
+  <parameter name="AUTO_DEVICE" value="AGFB014R24B2I2V" />
+  <parameter
+     name="hdlParameters"
+     value="&lt;hdlParameterDescriptorDefinitionList/&gt;" />
+  <parameter
+     name="generationInfoDefinition"
+     value="&lt;generationInfoDefinition&gt;
+    &lt;hdlLibraryName&gt;rst_csr&lt;/hdlLibraryName&gt;
+    &lt;fileSets&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;rst_csr&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;rst_csr&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;QUARTUS_SYNTH&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;rst_csr&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;rst_csr&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;SIM_VERILOG&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;rst_csr&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;rst_csr&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;SIM_VHDL&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;rst_csr&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;rst_csr&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;CDC&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;rst_csr&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;rst_csr&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;CDC_VHDL&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+    &lt;/fileSets&gt;
+&lt;/generationInfoDefinition&gt;" />
+  <parameter name="liveModuleName" value="rst_csr" />
+  <generatedFiles/>
+  <childGeneratedFiles/>
+  <sourceFiles/>
+  <childSourceFiles/>
+  <instantiator instantiator="rst_ss" as="rst_csr" />
+  <messages>
+   <message level="Info" culprit="rst_ss">"Generating: rst_csr"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_generic_component"
+   version="1.0"
+   name="rst_ss_reset_bridge_rec_rx">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="hlsFile" value="" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter
+     name="defaultBoundary"
+     value="&lt;boundaryDefinition&gt;
+    &lt;interfaces&gt;
+        &lt;interface&gt;
+            &lt;name&gt;clk&lt;/name&gt;
+            &lt;type&gt;clock&lt;/type&gt;
+            &lt;isStart&gt;false&lt;/isStart&gt;
+            &lt;ports&gt;
+                &lt;port&gt;
+                    &lt;name&gt;clk&lt;/name&gt;
+                    &lt;role&gt;clk&lt;/role&gt;
+                    &lt;direction&gt;Input&lt;/direction&gt;
+                    &lt;width&gt;1&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+            &lt;/ports&gt;
+            &lt;assignments&gt;
+                &lt;assignmentValueMap/&gt;
+            &lt;/assignments&gt;
+            &lt;parameters&gt;
+                &lt;parameterValueMap&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;clockRate&lt;/key&gt;
+                        &lt;value&gt;0&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;externallyDriven&lt;/key&gt;
+                        &lt;value&gt;false&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;ptfSchematicName&lt;/key&gt;
+                    &lt;/entry&gt;
+                &lt;/parameterValueMap&gt;
+            &lt;/parameters&gt;
+        &lt;/interface&gt;
+        &lt;interface&gt;
+            &lt;name&gt;in_reset&lt;/name&gt;
+            &lt;type&gt;reset&lt;/type&gt;
+            &lt;isStart&gt;false&lt;/isStart&gt;
+            &lt;ports&gt;
+                &lt;port&gt;
+                    &lt;name&gt;in_reset&lt;/name&gt;
+                    &lt;role&gt;reset&lt;/role&gt;
+                    &lt;direction&gt;Input&lt;/direction&gt;
+                    &lt;width&gt;1&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+            &lt;/ports&gt;
+            &lt;assignments&gt;
+                &lt;assignmentValueMap/&gt;
+            &lt;/assignments&gt;
+            &lt;parameters&gt;
+                &lt;parameterValueMap&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;associatedClock&lt;/key&gt;
+                        &lt;value&gt;clk&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;synchronousEdges&lt;/key&gt;
+                        &lt;value&gt;DEASSERT&lt;/value&gt;
+                    &lt;/entry&gt;
+                &lt;/parameterValueMap&gt;
+            &lt;/parameters&gt;
+        &lt;/interface&gt;
+        &lt;interface&gt;
+            &lt;name&gt;out_reset&lt;/name&gt;
+            &lt;type&gt;reset&lt;/type&gt;
+            &lt;isStart&gt;true&lt;/isStart&gt;
+            &lt;ports&gt;
+                &lt;port&gt;
+                    &lt;name&gt;out_reset&lt;/name&gt;
+                    &lt;role&gt;reset&lt;/role&gt;
+                    &lt;direction&gt;Output&lt;/direction&gt;
+                    &lt;width&gt;1&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+            &lt;/ports&gt;
+            &lt;assignments&gt;
+                &lt;assignmentValueMap/&gt;
+            &lt;/assignments&gt;
+            &lt;parameters&gt;
+                &lt;parameterValueMap&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;associatedClock&lt;/key&gt;
+                        &lt;value&gt;clk&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;associatedDirectReset&lt;/key&gt;
+                        &lt;value&gt;in_reset&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;associatedResetSinks&lt;/key&gt;
+                        &lt;value&gt;in_reset&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;synchronousEdges&lt;/key&gt;
+                        &lt;value&gt;DEASSERT&lt;/value&gt;
+                    &lt;/entry&gt;
+                &lt;/parameterValueMap&gt;
+            &lt;/parameters&gt;
+        &lt;/interface&gt;
+    &lt;/interfaces&gt;
+&lt;/boundaryDefinition&gt;" />
+  <parameter name="bspCpu" value="false" />
+  <parameter
+     name="componentDefinition"
+     value="&lt;componentDefinition&gt;
+    &lt;boundary&gt;
+        &lt;interfaces&gt;
+            &lt;interface&gt;
+                &lt;name&gt;clk&lt;/name&gt;
+                &lt;type&gt;clock&lt;/type&gt;
+                &lt;isStart&gt;false&lt;/isStart&gt;
+                &lt;ports&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;clk&lt;/name&gt;
+                        &lt;role&gt;clk&lt;/role&gt;
+                        &lt;direction&gt;Input&lt;/direction&gt;
+                        &lt;width&gt;1&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                &lt;/ports&gt;
+                &lt;assignments&gt;
+                    &lt;assignmentValueMap/&gt;
+                &lt;/assignments&gt;
+                &lt;parameters&gt;
+                    &lt;parameterValueMap&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;clockRate&lt;/key&gt;
+                            &lt;value&gt;0&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;externallyDriven&lt;/key&gt;
+                            &lt;value&gt;false&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;ptfSchematicName&lt;/key&gt;
+                        &lt;/entry&gt;
+                    &lt;/parameterValueMap&gt;
+                &lt;/parameters&gt;
+            &lt;/interface&gt;
+            &lt;interface&gt;
+                &lt;name&gt;in_reset&lt;/name&gt;
+                &lt;type&gt;reset&lt;/type&gt;
+                &lt;isStart&gt;false&lt;/isStart&gt;
+                &lt;ports&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;in_reset&lt;/name&gt;
+                        &lt;role&gt;reset&lt;/role&gt;
+                        &lt;direction&gt;Input&lt;/direction&gt;
+                        &lt;width&gt;1&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                &lt;/ports&gt;
+                &lt;assignments&gt;
+                    &lt;assignmentValueMap/&gt;
+                &lt;/assignments&gt;
+                &lt;parameters&gt;
+                    &lt;parameterValueMap&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;associatedClock&lt;/key&gt;
+                            &lt;value&gt;clk&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;synchronousEdges&lt;/key&gt;
+                            &lt;value&gt;DEASSERT&lt;/value&gt;
+                        &lt;/entry&gt;
+                    &lt;/parameterValueMap&gt;
+                &lt;/parameters&gt;
+            &lt;/interface&gt;
+            &lt;interface&gt;
+                &lt;name&gt;out_reset&lt;/name&gt;
+                &lt;type&gt;reset&lt;/type&gt;
+                &lt;isStart&gt;true&lt;/isStart&gt;
+                &lt;ports&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;out_reset&lt;/name&gt;
+                        &lt;role&gt;reset&lt;/role&gt;
+                        &lt;direction&gt;Output&lt;/direction&gt;
+                        &lt;width&gt;1&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                &lt;/ports&gt;
+                &lt;assignments&gt;
+                    &lt;assignmentValueMap/&gt;
+                &lt;/assignments&gt;
+                &lt;parameters&gt;
+                    &lt;parameterValueMap&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;associatedClock&lt;/key&gt;
+                            &lt;value&gt;clk&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;associatedDirectReset&lt;/key&gt;
+                            &lt;value&gt;in_reset&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;associatedResetSinks&lt;/key&gt;
+                            &lt;value&gt;in_reset&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;synchronousEdges&lt;/key&gt;
+                            &lt;value&gt;DEASSERT&lt;/value&gt;
+                        &lt;/entry&gt;
+                    &lt;/parameterValueMap&gt;
+                &lt;/parameters&gt;
+            &lt;/interface&gt;
+        &lt;/interfaces&gt;
+    &lt;/boundary&gt;
+    &lt;originalModuleInfo&gt;
+        &lt;className&gt;altera_reset_bridge&lt;/className&gt;
+        &lt;version&gt;19.2.0&lt;/version&gt;
+        &lt;displayName&gt;Reset Bridge Intel FPGA IP&lt;/displayName&gt;
+    &lt;/originalModuleInfo&gt;
+    &lt;systemInfoParameterDescriptors&gt;
+        &lt;descriptors&gt;
+            &lt;descriptor&gt;
+                &lt;parameterDefaultValue&gt;-1&lt;/parameterDefaultValue&gt;
+                &lt;parameterName&gt;AUTO_CLK_CLOCK_RATE&lt;/parameterName&gt;
+                &lt;parameterType&gt;java.lang.Long&lt;/parameterType&gt;
+                &lt;systemInfoArgs&gt;clk&lt;/systemInfoArgs&gt;
+                &lt;systemInfotype&gt;CLOCK_RATE&lt;/systemInfotype&gt;
+            &lt;/descriptor&gt;
+        &lt;/descriptors&gt;
+    &lt;/systemInfoParameterDescriptors&gt;
+    &lt;systemInfos&gt;
+        &lt;connPtSystemInfos&gt;
+            &lt;entry&gt;
+                &lt;key&gt;clk&lt;/key&gt;
+                &lt;value&gt;
+                    &lt;connectionPointName&gt;clk&lt;/connectionPointName&gt;
+                    &lt;suppliedSystemInfos/&gt;
+                    &lt;consumedSystemInfos&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;CLOCK_RATE&lt;/key&gt;
+                            &lt;value&gt;-1&lt;/value&gt;
+                        &lt;/entry&gt;
+                    &lt;/consumedSystemInfos&gt;
+                &lt;/value&gt;
+            &lt;/entry&gt;
+        &lt;/connPtSystemInfos&gt;
+    &lt;/systemInfos&gt;
+&lt;/componentDefinition&gt;" />
+  <parameter name="cpuInfo" value="" />
+  <parameter name="logicalView" value="ip/rst_ss/rst_ss_reset_bridge_rec_rx.ip" />
+  <parameter
+     name="moduleAssignmentDefinition"
+     value="&lt;assignmentDefinition&gt;
+    &lt;assignmentValueMap/&gt;
+&lt;/assignmentDefinition&gt;" />
+  <parameter name="svInterfaceDefinition" value="" />
+  <parameter name="AUTO_DEVICE" value="AGFB014R24B2I2V" />
+  <parameter
+     name="hdlParameters"
+     value="&lt;hdlParameterDescriptorDefinitionList/&gt;" />
+  <parameter
+     name="generationInfoDefinition"
+     value="&lt;generationInfoDefinition&gt;
+    &lt;hdlLibraryName&gt;rst_ss_reset_bridge_rec_rx&lt;/hdlLibraryName&gt;
+    &lt;fileSets&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;rst_ss_reset_bridge_rec_rx&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;rst_ss_reset_bridge_rec_rx&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;QUARTUS_SYNTH&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;rst_ss_reset_bridge_rec_rx&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;rst_ss_reset_bridge_rec_rx&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;SIM_VERILOG&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;rst_ss_reset_bridge_rec_rx&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;rst_ss_reset_bridge_rec_rx&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;SIM_VHDL&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;rst_ss_reset_bridge_rec_rx&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;rst_ss_reset_bridge_rec_rx&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;CDC&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;rst_ss_reset_bridge_rec_rx&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;rst_ss_reset_bridge_rec_rx&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;CDC_VHDL&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+    &lt;/fileSets&gt;
+&lt;/generationInfoDefinition&gt;" />
+  <parameter name="liveModuleName" value="rst_ss_reset_bridge_rec_rx" />
+  <generatedFiles/>
+  <childGeneratedFiles/>
+  <sourceFiles/>
+  <childSourceFiles/>
+  <instantiator instantiator="rst_ss" as="rst_ss_reset_bridge_rec_rx" />
+  <messages>
+   <message level="Info" culprit="rst_ss">"Generating: rst_ss_reset_bridge_rec_rx"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_generic_component"
+   version="1.0"
+   name="rst_ss_reset_bridge_tx_div">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="hlsFile" value="" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter
+     name="defaultBoundary"
+     value="&lt;boundaryDefinition&gt;
+    &lt;interfaces&gt;
+        &lt;interface&gt;
+            &lt;name&gt;clk&lt;/name&gt;
+            &lt;type&gt;clock&lt;/type&gt;
+            &lt;isStart&gt;false&lt;/isStart&gt;
+            &lt;ports&gt;
+                &lt;port&gt;
+                    &lt;name&gt;clk&lt;/name&gt;
+                    &lt;role&gt;clk&lt;/role&gt;
+                    &lt;direction&gt;Input&lt;/direction&gt;
+                    &lt;width&gt;1&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+            &lt;/ports&gt;
+            &lt;assignments&gt;
+                &lt;assignmentValueMap/&gt;
+            &lt;/assignments&gt;
+            &lt;parameters&gt;
+                &lt;parameterValueMap&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;clockRate&lt;/key&gt;
+                        &lt;value&gt;0&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;externallyDriven&lt;/key&gt;
+                        &lt;value&gt;false&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;ptfSchematicName&lt;/key&gt;
+                    &lt;/entry&gt;
+                &lt;/parameterValueMap&gt;
+            &lt;/parameters&gt;
+        &lt;/interface&gt;
+        &lt;interface&gt;
+            &lt;name&gt;in_reset&lt;/name&gt;
+            &lt;type&gt;reset&lt;/type&gt;
+            &lt;isStart&gt;false&lt;/isStart&gt;
+            &lt;ports&gt;
+                &lt;port&gt;
+                    &lt;name&gt;in_reset&lt;/name&gt;
+                    &lt;role&gt;reset&lt;/role&gt;
+                    &lt;direction&gt;Input&lt;/direction&gt;
+                    &lt;width&gt;1&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+            &lt;/ports&gt;
+            &lt;assignments&gt;
+                &lt;assignmentValueMap/&gt;
+            &lt;/assignments&gt;
+            &lt;parameters&gt;
+                &lt;parameterValueMap&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;associatedClock&lt;/key&gt;
+                        &lt;value&gt;clk&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;synchronousEdges&lt;/key&gt;
+                        &lt;value&gt;DEASSERT&lt;/value&gt;
+                    &lt;/entry&gt;
+                &lt;/parameterValueMap&gt;
+            &lt;/parameters&gt;
+        &lt;/interface&gt;
+        &lt;interface&gt;
+            &lt;name&gt;out_reset&lt;/name&gt;
+            &lt;type&gt;reset&lt;/type&gt;
+            &lt;isStart&gt;true&lt;/isStart&gt;
+            &lt;ports&gt;
+                &lt;port&gt;
+                    &lt;name&gt;out_reset&lt;/name&gt;
+                    &lt;role&gt;reset&lt;/role&gt;
+                    &lt;direction&gt;Output&lt;/direction&gt;
+                    &lt;width&gt;1&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+            &lt;/ports&gt;
+            &lt;assignments&gt;
+                &lt;assignmentValueMap/&gt;
+            &lt;/assignments&gt;
+            &lt;parameters&gt;
+                &lt;parameterValueMap&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;associatedClock&lt;/key&gt;
+                        &lt;value&gt;clk&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;associatedDirectReset&lt;/key&gt;
+                        &lt;value&gt;in_reset&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;associatedResetSinks&lt;/key&gt;
+                        &lt;value&gt;in_reset&lt;/value&gt;
+                    &lt;/entry&gt;
+                    &lt;entry&gt;
+                        &lt;key&gt;synchronousEdges&lt;/key&gt;
+                        &lt;value&gt;DEASSERT&lt;/value&gt;
+                    &lt;/entry&gt;
+                &lt;/parameterValueMap&gt;
+            &lt;/parameters&gt;
+        &lt;/interface&gt;
+    &lt;/interfaces&gt;
+&lt;/boundaryDefinition&gt;" />
+  <parameter name="bspCpu" value="false" />
+  <parameter
+     name="componentDefinition"
+     value="&lt;componentDefinition&gt;
+    &lt;boundary&gt;
+        &lt;interfaces&gt;
+            &lt;interface&gt;
+                &lt;name&gt;clk&lt;/name&gt;
+                &lt;type&gt;clock&lt;/type&gt;
+                &lt;isStart&gt;false&lt;/isStart&gt;
+                &lt;ports&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;clk&lt;/name&gt;
+                        &lt;role&gt;clk&lt;/role&gt;
+                        &lt;direction&gt;Input&lt;/direction&gt;
+                        &lt;width&gt;1&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                &lt;/ports&gt;
+                &lt;assignments&gt;
+                    &lt;assignmentValueMap/&gt;
+                &lt;/assignments&gt;
+                &lt;parameters&gt;
+                    &lt;parameterValueMap&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;clockRate&lt;/key&gt;
+                            &lt;value&gt;0&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;externallyDriven&lt;/key&gt;
+                            &lt;value&gt;false&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;ptfSchematicName&lt;/key&gt;
+                        &lt;/entry&gt;
+                    &lt;/parameterValueMap&gt;
+                &lt;/parameters&gt;
+            &lt;/interface&gt;
+            &lt;interface&gt;
+                &lt;name&gt;in_reset&lt;/name&gt;
+                &lt;type&gt;reset&lt;/type&gt;
+                &lt;isStart&gt;false&lt;/isStart&gt;
+                &lt;ports&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;in_reset&lt;/name&gt;
+                        &lt;role&gt;reset&lt;/role&gt;
+                        &lt;direction&gt;Input&lt;/direction&gt;
+                        &lt;width&gt;1&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                &lt;/ports&gt;
+                &lt;assignments&gt;
+                    &lt;assignmentValueMap/&gt;
+                &lt;/assignments&gt;
+                &lt;parameters&gt;
+                    &lt;parameterValueMap&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;associatedClock&lt;/key&gt;
+                            &lt;value&gt;clk&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;synchronousEdges&lt;/key&gt;
+                            &lt;value&gt;DEASSERT&lt;/value&gt;
+                        &lt;/entry&gt;
+                    &lt;/parameterValueMap&gt;
+                &lt;/parameters&gt;
+            &lt;/interface&gt;
+            &lt;interface&gt;
+                &lt;name&gt;out_reset&lt;/name&gt;
+                &lt;type&gt;reset&lt;/type&gt;
+                &lt;isStart&gt;true&lt;/isStart&gt;
+                &lt;ports&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;out_reset&lt;/name&gt;
+                        &lt;role&gt;reset&lt;/role&gt;
+                        &lt;direction&gt;Output&lt;/direction&gt;
+                        &lt;width&gt;1&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                &lt;/ports&gt;
+                &lt;assignments&gt;
+                    &lt;assignmentValueMap/&gt;
+                &lt;/assignments&gt;
+                &lt;parameters&gt;
+                    &lt;parameterValueMap&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;associatedClock&lt;/key&gt;
+                            &lt;value&gt;clk&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;associatedDirectReset&lt;/key&gt;
+                            &lt;value&gt;in_reset&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;associatedResetSinks&lt;/key&gt;
+                            &lt;value&gt;in_reset&lt;/value&gt;
+                        &lt;/entry&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;synchronousEdges&lt;/key&gt;
+                            &lt;value&gt;DEASSERT&lt;/value&gt;
+                        &lt;/entry&gt;
+                    &lt;/parameterValueMap&gt;
+                &lt;/parameters&gt;
+            &lt;/interface&gt;
+        &lt;/interfaces&gt;
+    &lt;/boundary&gt;
+    &lt;originalModuleInfo&gt;
+        &lt;className&gt;altera_reset_bridge&lt;/className&gt;
+        &lt;version&gt;19.2.0&lt;/version&gt;
+        &lt;displayName&gt;Reset Bridge Intel FPGA IP&lt;/displayName&gt;
+    &lt;/originalModuleInfo&gt;
+    &lt;systemInfoParameterDescriptors&gt;
+        &lt;descriptors&gt;
+            &lt;descriptor&gt;
+                &lt;parameterDefaultValue&gt;-1&lt;/parameterDefaultValue&gt;
+                &lt;parameterName&gt;AUTO_CLK_CLOCK_RATE&lt;/parameterName&gt;
+                &lt;parameterType&gt;java.lang.Long&lt;/parameterType&gt;
+                &lt;systemInfoArgs&gt;clk&lt;/systemInfoArgs&gt;
+                &lt;systemInfotype&gt;CLOCK_RATE&lt;/systemInfotype&gt;
+            &lt;/descriptor&gt;
+        &lt;/descriptors&gt;
+    &lt;/systemInfoParameterDescriptors&gt;
+    &lt;systemInfos&gt;
+        &lt;connPtSystemInfos&gt;
+            &lt;entry&gt;
+                &lt;key&gt;clk&lt;/key&gt;
+                &lt;value&gt;
+                    &lt;connectionPointName&gt;clk&lt;/connectionPointName&gt;
+                    &lt;suppliedSystemInfos/&gt;
+                    &lt;consumedSystemInfos&gt;
+                        &lt;entry&gt;
+                            &lt;key&gt;CLOCK_RATE&lt;/key&gt;
+                            &lt;value&gt;-1&lt;/value&gt;
+                        &lt;/entry&gt;
+                    &lt;/consumedSystemInfos&gt;
+                &lt;/value&gt;
+            &lt;/entry&gt;
+        &lt;/connPtSystemInfos&gt;
+    &lt;/systemInfos&gt;
+&lt;/componentDefinition&gt;" />
+  <parameter name="cpuInfo" value="" />
+  <parameter name="logicalView" value="ip/rst_ss/rst_ss_reset_bridge_tx_div.ip" />
+  <parameter
+     name="moduleAssignmentDefinition"
+     value="&lt;assignmentDefinition&gt;
+    &lt;assignmentValueMap/&gt;
+&lt;/assignmentDefinition&gt;" />
+  <parameter name="svInterfaceDefinition" value="" />
+  <parameter name="AUTO_DEVICE" value="AGFB014R24B2I2V" />
+  <parameter
+     name="hdlParameters"
+     value="&lt;hdlParameterDescriptorDefinitionList/&gt;" />
+  <parameter
+     name="generationInfoDefinition"
+     value="&lt;generationInfoDefinition&gt;
+    &lt;hdlLibraryName&gt;rst_ss_reset_bridge_tx_div&lt;/hdlLibraryName&gt;
+    &lt;fileSets&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;rst_ss_reset_bridge_tx_div&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;rst_ss_reset_bridge_tx_div&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;QUARTUS_SYNTH&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;rst_ss_reset_bridge_tx_div&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;rst_ss_reset_bridge_tx_div&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;SIM_VERILOG&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;rst_ss_reset_bridge_tx_div&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;rst_ss_reset_bridge_tx_div&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;SIM_VHDL&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;rst_ss_reset_bridge_tx_div&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;rst_ss_reset_bridge_tx_div&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;CDC&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;rst_ss_reset_bridge_tx_div&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;rst_ss_reset_bridge_tx_div&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;CDC_VHDL&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+    &lt;/fileSets&gt;
+&lt;/generationInfoDefinition&gt;" />
+  <parameter name="liveModuleName" value="rst_ss_reset_bridge_tx_div" />
+  <generatedFiles/>
+  <childGeneratedFiles/>
+  <sourceFiles/>
+  <childSourceFiles/>
+  <instantiator instantiator="rst_ss" as="rst_ss_reset_bridge_tx_div" />
+  <messages>
+   <message level="Info" culprit="rst_ss">"Generating: rst_ss_reset_bridge_tx_div"</message>
+  </messages>
+ </entity>
+</deploy>

@@ -1,0 +1,23 @@
+# system info rst_ss on 2025.10.16.14:56:00
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for rst_ss on 2025.10.16.14:56:00
+files:
+filepath,kind,attributes,module,is_top
+sim/rst_ss.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,rst_ss,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+rst_ss.dsp_rst_cntrl,dsp_rst_cntrl
+rst_ss.ecpri_rst_cntrl,ecpri_rst_cntrl
+rst_ss.eth_rst_cntrl,eth_rst_cntrl
+rst_ss.reset_bridge_act_high,reset_bridge_act_high
+rst_ss.rst_csr,rst_csr
+rst_ss.rst_ss_reset_bridge_rec_rx,rst_ss_reset_bridge_rec_rx
+rst_ss.rst_ss_reset_bridge_tx_div,rst_ss_reset_bridge_tx_div

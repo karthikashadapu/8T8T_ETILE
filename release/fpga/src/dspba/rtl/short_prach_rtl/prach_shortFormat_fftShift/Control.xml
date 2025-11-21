@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="file:////mnt/media/Tools/Altera/Quartus_23p3/quartus/dspba/Blocksets/BaseBlocks/modelip.xsl"?>
+<MODEL>
+<NAME>prach_shortFormat_fftShift/Control</NAME>
+<BUILD_YEAR>2023</BUILD_YEAR>
+<DOCPATH>file:////mnt/media/Tools/Altera/Quartus_23p3/quartus/dspba/Docs/Help/</DOCPATH>
+<DESCRIPTION>
+This help page relates to the specific instance 'Control' of the CONTROL block
+</DESCRIPTION>
+<HELP>file:////mnt/media/Tools/Altera/Quartus_23p3/quartus/dspba/Docs/Help/CONTROL_help.html</HELP>
+<BLOCKTYPE>CONTROL</BLOCKTYPE>
+<MEMORYMAPS path="prach_shortFormat_fftShift">
+  <REGS numregs="1" desc="PRACH_regs(InstanceNumber).PRACH_config_index_string" origin="prach_shortFormat_fftShift/prach/PRACH_CC/ControlDecode/RegField1" clashes="false" rwmode="Read/Write" bitwidth="8" fracwidth="0" privatespace="false">
+    <REG numregparts="1" desc="PRACH_regs(InstanceNumber).PRACH_config_index_string" clashes="false" double_init="167.000000" sint_init="167">
+      <REGPART part_init="167" part_double_init="167.000000" clashes="false" width="8" msb="7" lsb="0" addr="8"/>
+    </REG>
+  </REGS>
+  <REGS numregs="1" desc="PRACH_regs(InstanceNumber).PRACH_time_index_string" origin="prach_shortFormat_fftShift/prach/PRACH_CC/ControlDecode/RegField2" clashes="false" rwmode="Read/Write" bitwidth="3" fracwidth="0" privatespace="false">
+    <REG numregparts="1" desc="PRACH_regs(InstanceNumber).PRACH_time_index_string" clashes="false" double_init="0.000000" sint_init="0">
+      <REGPART part_init="0" part_double_init="0.000000" clashes="false" width="3" msb="2" lsb="0" addr="9"/>
+    </REG>
+  </REGS>
+  <REGS numregs="1" desc="PRACH_regs(InstanceNumber).PRACH_NRPRACHSlot_string" origin="prach_shortFormat_fftShift/prach/PRACH_CC/ControlDecode/RegField3" clashes="false" rwmode="Read/Write" bitwidth="1" fracwidth="0" privatespace="false">
+    <REG numregparts="1" desc="PRACH_regs(InstanceNumber).PRACH_NRPRACHSlot_string" clashes="false" double_init="0.000000" sint_init="0">
+      <REGPART part_init="0" part_double_init="0.000000" clashes="false" width="1" msb="0" lsb="0" addr="10"/>
+    </REG>
+  </REGS>
+  <REGS numregs="1" desc="PRACH_regs(InstanceNumber).PRACH_ActivePRACHSlot_string" origin="prach_shortFormat_fftShift/prach/PRACH_CC/ControlDecode/RegField4" clashes="false" rwmode="Read/Write" bitwidth="1" fracwidth="0" privatespace="false">
+    <REG numregparts="1" desc="PRACH_regs(InstanceNumber).PRACH_ActivePRACHSlot_string" clashes="false" double_init="0.000000" sint_init="0">
+      <REGPART part_init="0" part_double_init="0.000000" clashes="false" width="1" msb="0" lsb="0" addr="11"/>
+    </REG>
+  </REGS>
+  <REGS numregs="1" desc="PRACH_regs(InstanceNumber).PRACH_fft_scale_string" origin="prach_shortFormat_fftShift/prach/PRACH_CC/ScaleAndSelect/ScaleOutputAndCheck/RegField2" clashes="false" rwmode="Read/Write" bitwidth="8" fracwidth="0" privatespace="false">
+    <REG numregparts="1" desc="PRACH_regs(InstanceNumber).PRACH_fft_scale_string" clashes="false" double_init="12.000000" sint_init="12">
+      <REGPART part_init="12" part_double_init="12.000000" clashes="false" width="8" msb="7" lsb="0" addr="12"/>
+    </REG>
+  </REGS>
+  <REGS numregs="1" desc="PRACH_regs(InstanceNumber).PRACH_RB_offset_string" origin="prach_shortFormat_fftShift/prach/PRACH_CC/ScaleAndSelect/gen_139_valids/RegField1" clashes="false" rwmode="Read/Write" bitwidth="12" fracwidth="0" privatespace="false">
+    <REG numregparts="1" desc="PRACH_regs(InstanceNumber).PRACH_RB_offset_string" clashes="false" double_init="0.000000" sint_init="0">
+      <REGPART part_init="0" part_double_init="0.000000" clashes="false" width="12" msb="11" lsb="0" addr="13"/>
+    </REG>
+  </REGS>
+  <REGS numregs="1" desc="PRACH_regs(InstanceNumber).PRACH_freq_index_string" origin="prach_shortFormat_fftShift/prach/PRACH_CC/ScaleAndSelect/gen_139_valids/RegField3" clashes="false" rwmode="Read/Write" bitwidth="12" fracwidth="0" privatespace="false">
+    <REG numregparts="1" desc="PRACH_regs(InstanceNumber).PRACH_freq_index_string" clashes="false" double_init="0.000000" sint_init="0">
+      <REGPART part_init="0" part_double_init="0.000000" clashes="false" width="12" msb="11" lsb="0" addr="14"/>
+    </REG>
+  </REGS>
+</MEMORYMAPS>
+<RESOURCES>
+<FUNIT>
+ <FUNAME>prach_shortFormat_fftShift/prach</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>467</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>prach_shortFormat_fftShift/prach/PRACH_CC</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>0</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>prach_shortFormat_fftShift/prach/PRACH_CC/Cbar_mplane_selection</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>113</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>prach_shortFormat_fftShift/prach/PRACH_CC/ControlDecode</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>1170</LUT4>
+ <MULT>3</MULT>
+ <BITS>16896</BITS>
+ <BLOCKS>15</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>prach_shortFormat_fftShift/prach/PRACH_CC/RemoveCP</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>278</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>prach_shortFormat_fftShift/prach/PRACH_CC/ScaleAndSelect</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>1069</LUT4>
+ <MULT>0</MULT>
+ <BITS>16384</BITS>
+ <BLOCKS>2</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>prach_shortFormat_fftShift/prach/PRACH_CC/Stream2BlockConv</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>1477</LUT4>
+ <MULT>0</MULT>
+ <BITS>1048576</BITS>
+ <BLOCKS>64</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>prach_shortFormat_fftShift/prach/PRACH_CC/VFFT</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>4826</LUT4>
+ <MULT>36</MULT>
+ <BITS>260188</BITS>
+ <BLOCKS>21</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>prach_shortFormat_fftShift/prach/PRACH_CC/control_decode_cplane</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>342</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>prach_shortFormat_fftShift/prach/PRACH_CC/gain</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>78</LUT4>
+ <MULT>4</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+</RESOURCES>
+</MODEL>

@@ -1,0 +1,29 @@
+# system info tod_slave_sub_system on 2025.10.16.14:54:52
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for tod_slave_sub_system on 2025.10.16.14:54:52
+files:
+filepath,kind,attributes,module,is_top
+sim/tod_slave_sub_system.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,tod_slave_sub_system,true
+altera_reset_controller_1922/sim/altera_reset_controller.v,VERILOG,,altera_reset_controller,false
+altera_reset_controller_1922/sim/altera_reset_synchronizer.v,VERILOG,,altera_reset_controller,false
+altera_reset_controller_1922/sim/altera_reset_controller.sdc,SDC_ENTITY,NO_SDC_PROMOTION,altera_reset_controller,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+tod_slave_sub_system.master_tod_split,master_tod_split
+tod_slave_sub_system.oran_ptp2gps_conv_0,oran_ptp2gps_conv_0
+tod_slave_sub_system.oran_tod_stack,port_0_tod_stack_1
+tod_slave_sub_system.port_8_tod_stack,port_0_tod_stack
+tod_slave_sub_system.tod_156_reset_controller_0,tod_156_reset_controller_0
+tod_slave_sub_system.tod_subsys_clk_100,tod_subsys_clk_100
+tod_slave_sub_system.tod_subsys_mtod_clk,tod_subsys_mtod_clk
+tod_slave_sub_system.tod_subsys_rst_100,tod_subsys_rst_100
+tod_slave_sub_system.todsync_sample_plllock_split,todsync_sample_plllock_split
+tod_slave_sub_system.rst_controller,altera_reset_controller

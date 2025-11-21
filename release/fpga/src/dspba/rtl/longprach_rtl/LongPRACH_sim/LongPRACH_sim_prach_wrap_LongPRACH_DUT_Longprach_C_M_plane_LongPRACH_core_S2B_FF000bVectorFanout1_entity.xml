@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<entity name='LongPRACH_sim_prach_wrap_LongPRACH_DUT_Longprach_C_M_plane_LongPRACH_core_S2B_FFT_FFT1_FFT_Light_FFT_Pipe_Twiddle2_VectorFanout1' floating-point-script-prefix='LongPRACH_sim_prach_wrap_LongPRACH_DUT_Longprach_C_M_plane_LongPRACH_core_S2B_FF0000iddle2_VectorFanout1_fpc'>
+  <clock name='sys' port='clk' reset='areset' reset-type='high' />
+</entity>

@@ -1,0 +1,19 @@
+<?xml version='1.0'?>
+<island simulinkPath='streamtoblock_fft/DUT/S2B_FFT_PC/FFT_S2B/SignalProcessing/HCShift/pipe1' topLevelEntity='streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_pipe1'>
+    <port name='clk' dir='in' role='clock'/>
+    <port name='areset' dir='in' clock='clk' role='resetHigh'/>
+    <port name='in_1_v_in_tpl' clock='clk' reset='areset' width='1' dir='in' role='valid' qsys_role='valid_in_1_v_in_tpl' stm='streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_pipe1_ChannelIn_vunroll_x.stm' highLevelName='v_in' highLevelIndex='1' vector='0' complex='0'/>
+    <port name='in_2_ch_in_tpl' clock='clk' reset='areset' width='8' dir='in' role='channel' qsys_role='channel_in_2_ch_in_tpl' stm='streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_pipe1_ChannelIn_vunroll_x.stm' highLevelName='ch_in' highLevelIndex='2' vector='0' complex='0'/>
+    <port name='in_3_0_d_in1_tpl' clock='clk' reset='areset' width='35' dir='in' role='data' qsys_role='data_in_3_0_d_in1_tpl' stm='streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_pipe1_ChannelIn_vunroll_x.stm' highLevelName='d_in1' highLevelIndex='3' vector='0' complex='0'/>
+    <port name='in_3_1_d_in1_tpl' clock='clk' reset='areset' width='35' dir='in' role='data' qsys_role='data_in_3_1_d_in1_tpl' stm='streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_pipe1_ChannelIn_vunroll_x.stm' highLevelName='d_in1' highLevelIndex='3' vector='1' complex='0'/>
+    <port name='out_1_v_out_tpl' clock='clk' reset='areset' width='1' dir='out' role='valid' qsys_role='valid_out_1_v_out_tpl' stm='streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_pipe1_ChannelOut_vunroll_x.stm' highLevelName='v_out' highLevelIndex='1' vector='0' complex='0'/>
+    <port name='out_2_ch_out_tpl' clock='clk' reset='areset' width='8' dir='out' role='channel' qsys_role='channel_out_2_ch_out_tpl' stm='streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_pipe1_ChannelOut_vunroll_x.stm' highLevelName='ch_out' highLevelIndex='2' vector='0' complex='0'/>
+    <port name='out_3_0_d_out1_tpl' clock='clk' reset='areset' width='35' dir='out' role='data' qsys_role='data_out_3_0_d_out1_tpl' stm='streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_pipe1_ChannelOut_vunroll_x.stm' highLevelName='d_out1' highLevelIndex='3' vector='0' complex='0'/>
+    <port name='out_3_1_d_out1_tpl' clock='clk' reset='areset' width='35' dir='out' role='data' qsys_role='data_out_3_1_d_out1_tpl' stm='streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_pipe1_ChannelOut_vunroll_x.stm' highLevelName='d_out1' highLevelIndex='3' vector='1' complex='0'/>
+    <file path='eda/sim_lib/altera_mf.v' base='quartus' type='vhdl' usage='simOnly' lib='altera_mf_ver'/>
+    <file path='eda/sim_lib/altera_lnsim_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/altera_lnsim.sv' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/tennm_atoms.vhd' base='quartus' type='vhdl' usage='simOnly' lib='tennm'/>
+    <file path='eda/sim_lib/tennm_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='tennm'/>
+    <file path='eda/sim_lib/mentor/tennm_atoms_ncrypt.sv' base='quartus' type='vhdl' usage='simOnly' lib='tennm'/>
+</island>

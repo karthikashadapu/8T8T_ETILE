@@ -1,0 +1,17 @@
+require version 23.3
+inputs x 
+netlist
+transitions fsm : q
+    state _init
+        if (x)  one  0
+        if (~x) zero 0
+    state zero
+        if (x)  one  1
+        if (~x) zero 0
+    state one
+        if (x)  one  0
+        if (~x) zero 0
+end
+
+
+

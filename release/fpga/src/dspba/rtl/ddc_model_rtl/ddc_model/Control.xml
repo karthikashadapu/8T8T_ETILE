@@ -1,0 +1,2147 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="file:////mnt/media/Tools/Altera/Quartus_23p3/quartus/dspba/Blocksets/BaseBlocks/modelip.xsl"?>
+<MODEL>
+<NAME>ddc_model/Control</NAME>
+<BUILD_YEAR>2023</BUILD_YEAR>
+<DOCPATH>file:////mnt/media/Tools/Altera/Quartus_23p3/quartus/dspba/Docs/Help/</DOCPATH>
+<DESCRIPTION>
+This help page relates to the specific instance 'Control' of the CONTROL block
+</DESCRIPTION>
+<HELP>file:////mnt/media/Tools/Altera/Quartus_23p3/quartus/dspba/Docs/Help/CONTROL_help.html</HELP>
+<BLOCKTYPE>CONTROL</BLOCKTYPE>
+<MEMORYMAPS path="ddc_model">
+  <REGS numregs="4" desc="NCO Phase Increment Registers (sin Inversion@MSB cos Inversion@MSB-1)" origin="ddc_model_DUT_DUT_COMPLEX_MIXER1_Complex_NCO" clashes="false" rwmode="Read/Write" bitwidth="34" fracwidth="0" privatespace="false">
+    <REG numregparts="2" desc="NCO Phase Increment Register 0 (sin@MSB cos@MSB-1)" clashes="false" double_init="9026841258.666666" sint_init="9026841258">
+      <REGPART part_init="436906666" part_double_init="9026841258.666666" clashes="false" width="32" msb="31" lsb="0" addr="800"/>
+      <REGPART part_init="2" part_double_init="9026841258.666666" clashes="false" width="2" msb="1" lsb="0" addr="801"/>
+    </REG>
+    <REG numregparts="2" desc="NCO Phase Increment Register 1 (sin@MSB cos@MSB-1)" clashes="false" double_init="436906666.666667" sint_init="436906666">
+      <REGPART part_init="436906666" part_double_init="436906666.666667" clashes="false" width="32" msb="31" lsb="0" addr="802"/>
+      <REGPART part_init="0" part_double_init="436906666.666667" clashes="false" width="2" msb="1" lsb="0" addr="803"/>
+    </REG>
+    <REG numregparts="2" desc="NCO Phase Increment Register 2 (sin@MSB cos@MSB-1)" clashes="false" double_init="9026841258.666666" sint_init="9026841258">
+      <REGPART part_init="436906666" part_double_init="9026841258.666666" clashes="false" width="32" msb="31" lsb="0" addr="804"/>
+      <REGPART part_init="2" part_double_init="9026841258.666666" clashes="false" width="2" msb="1" lsb="0" addr="805"/>
+    </REG>
+    <REG numregparts="2" desc="NCO Phase Increment Register 3 (sin@MSB cos@MSB-1)" clashes="false" double_init="436906666.666667" sint_init="436906666">
+      <REGPART part_init="436906666" part_double_init="436906666.666667" clashes="false" width="32" msb="31" lsb="0" addr="806"/>
+      <REGPART part_init="0" part_double_init="436906666.666667" clashes="false" width="2" msb="1" lsb="0" addr="807"/>
+    </REG>
+  </REGS>
+  <REGS numregs="312" desc="FIR Coefficient Registers" origin="ddc_model_DUT_DUT_Chan_Filter_l1_Chan_Filter_chan_filter_im" clashes="false" rwmode="Read/Write" bitwidth="16" fracwidth="15" privatespace="false">
+    <REG numregparts="1" desc="FIR Coefficient Register 0 (bank 0)" clashes="false" double_init="0.001221" sint_init="40">
+      <REGPART part_init="40" part_double_init="0.001221" clashes="false" width="16" msb="15" lsb="0" addr="400"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 1 (bank 0)" clashes="false" double_init="0.000244" sint_init="8">
+      <REGPART part_init="8" part_double_init="0.000244" clashes="false" width="16" msb="15" lsb="0" addr="401"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 2 (bank 0)" clashes="false" double_init="-0.000916" sint_init="-30">
+      <REGPART part_init="65506" part_double_init="-0.000916" clashes="false" width="16" msb="15" lsb="0" addr="402"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 3 (bank 0)" clashes="false" double_init="-0.001343" sint_init="-44">
+      <REGPART part_init="65492" part_double_init="-0.001343" clashes="false" width="16" msb="15" lsb="0" addr="403"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 4 (bank 0)" clashes="false" double_init="-0.000641" sint_init="-21">
+      <REGPART part_init="65515" part_double_init="-0.000641" clashes="false" width="16" msb="15" lsb="0" addr="404"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 5 (bank 0)" clashes="false" double_init="0.000000" sint_init="0">
+      <REGPART part_init="0" part_double_init="0.000000" clashes="false" width="16" msb="15" lsb="0" addr="405"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 6 (bank 0)" clashes="false" double_init="-0.000275" sint_init="-9">
+      <REGPART part_init="65527" part_double_init="-0.000275" clashes="false" width="16" msb="15" lsb="0" addr="406"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 7 (bank 0)" clashes="false" double_init="-0.000641" sint_init="-21">
+      <REGPART part_init="65515" part_double_init="-0.000641" clashes="false" width="16" msb="15" lsb="0" addr="407"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 8 (bank 0)" clashes="false" double_init="-0.000244" sint_init="-8">
+      <REGPART part_init="65528" part_double_init="-0.000244" clashes="false" width="16" msb="15" lsb="0" addr="408"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 9 (bank 0)" clashes="false" double_init="0.000275" sint_init="9">
+      <REGPART part_init="9" part_double_init="0.000275" clashes="false" width="16" msb="15" lsb="0" addr="409"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 10 (bank 0)" clashes="false" double_init="0.000000" sint_init="0">
+      <REGPART part_init="0" part_double_init="0.000000" clashes="false" width="16" msb="15" lsb="0" addr="410"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 11 (bank 0)" clashes="false" double_init="-0.000488" sint_init="-16">
+      <REGPART part_init="65520" part_double_init="-0.000488" clashes="false" width="16" msb="15" lsb="0" addr="411"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 12 (bank 0)" clashes="false" double_init="-0.000183" sint_init="-6">
+      <REGPART part_init="65530" part_double_init="-0.000183" clashes="false" width="16" msb="15" lsb="0" addr="412"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 13 (bank 0)" clashes="false" double_init="0.000397" sint_init="13">
+      <REGPART part_init="13" part_double_init="0.000397" clashes="false" width="16" msb="15" lsb="0" addr="413"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 14 (bank 0)" clashes="false" double_init="0.000153" sint_init="5">
+      <REGPART part_init="5" part_double_init="0.000153" clashes="false" width="16" msb="15" lsb="0" addr="414"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 15 (bank 0)" clashes="false" double_init="-0.000458" sint_init="-15">
+      <REGPART part_init="65521" part_double_init="-0.000458" clashes="false" width="16" msb="15" lsb="0" addr="415"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 16 (bank 0)" clashes="false" double_init="-0.000244" sint_init="-8">
+      <REGPART part_init="65528" part_double_init="-0.000244" clashes="false" width="16" msb="15" lsb="0" addr="416"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 17 (bank 0)" clashes="false" double_init="0.000427" sint_init="14">
+      <REGPART part_init="14" part_double_init="0.000427" clashes="false" width="16" msb="15" lsb="0" addr="417"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 18 (bank 0)" clashes="false" double_init="0.000305" sint_init="10">
+      <REGPART part_init="10" part_double_init="0.000305" clashes="false" width="16" msb="15" lsb="0" addr="418"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 19 (bank 0)" clashes="false" double_init="-0.000458" sint_init="-15">
+      <REGPART part_init="65521" part_double_init="-0.000458" clashes="false" width="16" msb="15" lsb="0" addr="419"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 20 (bank 0)" clashes="false" double_init="-0.000366" sint_init="-12">
+      <REGPART part_init="65524" part_double_init="-0.000366" clashes="false" width="16" msb="15" lsb="0" addr="420"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 21 (bank 0)" clashes="false" double_init="0.000427" sint_init="14">
+      <REGPART part_init="14" part_double_init="0.000427" clashes="false" width="16" msb="15" lsb="0" addr="421"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 22 (bank 0)" clashes="false" double_init="0.000427" sint_init="14">
+      <REGPART part_init="14" part_double_init="0.000427" clashes="false" width="16" msb="15" lsb="0" addr="422"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 23 (bank 0)" clashes="false" double_init="-0.000427" sint_init="-14">
+      <REGPART part_init="65522" part_double_init="-0.000427" clashes="false" width="16" msb="15" lsb="0" addr="423"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 24 (bank 0)" clashes="false" double_init="-0.000519" sint_init="-17">
+      <REGPART part_init="65519" part_double_init="-0.000519" clashes="false" width="16" msb="15" lsb="0" addr="424"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 25 (bank 0)" clashes="false" double_init="0.000366" sint_init="12">
+      <REGPART part_init="12" part_double_init="0.000366" clashes="false" width="16" msb="15" lsb="0" addr="425"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 26 (bank 0)" clashes="false" double_init="0.000580" sint_init="19">
+      <REGPART part_init="19" part_double_init="0.000580" clashes="false" width="16" msb="15" lsb="0" addr="426"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 27 (bank 0)" clashes="false" double_init="-0.000336" sint_init="-11">
+      <REGPART part_init="65525" part_double_init="-0.000336" clashes="false" width="16" msb="15" lsb="0" addr="427"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 28 (bank 0)" clashes="false" double_init="-0.000671" sint_init="-22">
+      <REGPART part_init="65514" part_double_init="-0.000671" clashes="false" width="16" msb="15" lsb="0" addr="428"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 29 (bank 0)" clashes="false" double_init="0.000275" sint_init="9">
+      <REGPART part_init="9" part_double_init="0.000275" clashes="false" width="16" msb="15" lsb="0" addr="429"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 30 (bank 0)" clashes="false" double_init="0.000732" sint_init="24">
+      <REGPART part_init="24" part_double_init="0.000732" clashes="false" width="16" msb="15" lsb="0" addr="430"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 31 (bank 0)" clashes="false" double_init="-0.000214" sint_init="-7">
+      <REGPART part_init="65529" part_double_init="-0.000214" clashes="false" width="16" msb="15" lsb="0" addr="431"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 32 (bank 0)" clashes="false" double_init="-0.000824" sint_init="-27">
+      <REGPART part_init="65509" part_double_init="-0.000824" clashes="false" width="16" msb="15" lsb="0" addr="432"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 33 (bank 0)" clashes="false" double_init="0.000153" sint_init="5">
+      <REGPART part_init="5" part_double_init="0.000153" clashes="false" width="16" msb="15" lsb="0" addr="433"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 34 (bank 0)" clashes="false" double_init="0.000885" sint_init="29">
+      <REGPART part_init="29" part_double_init="0.000885" clashes="false" width="16" msb="15" lsb="0" addr="434"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 35 (bank 0)" clashes="false" double_init="-0.000061" sint_init="-2">
+      <REGPART part_init="65534" part_double_init="-0.000061" clashes="false" width="16" msb="15" lsb="0" addr="435"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 36 (bank 0)" clashes="false" double_init="-0.000946" sint_init="-31">
+      <REGPART part_init="65505" part_double_init="-0.000946" clashes="false" width="16" msb="15" lsb="0" addr="436"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 37 (bank 0)" clashes="false" double_init="-0.000031" sint_init="-1">
+      <REGPART part_init="65535" part_double_init="-0.000031" clashes="false" width="16" msb="15" lsb="0" addr="437"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 38 (bank 0)" clashes="false" double_init="0.000977" sint_init="32">
+      <REGPART part_init="32" part_double_init="0.000977" clashes="false" width="16" msb="15" lsb="0" addr="438"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 39 (bank 0)" clashes="false" double_init="0.000153" sint_init="5">
+      <REGPART part_init="5" part_double_init="0.000153" clashes="false" width="16" msb="15" lsb="0" addr="439"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 40 (bank 0)" clashes="false" double_init="-0.001007" sint_init="-33">
+      <REGPART part_init="65503" part_double_init="-0.001007" clashes="false" width="16" msb="15" lsb="0" addr="440"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 41 (bank 0)" clashes="false" double_init="-0.000275" sint_init="-9">
+      <REGPART part_init="65527" part_double_init="-0.000275" clashes="false" width="16" msb="15" lsb="0" addr="441"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 42 (bank 0)" clashes="false" double_init="0.001038" sint_init="34">
+      <REGPART part_init="34" part_double_init="0.001038" clashes="false" width="16" msb="15" lsb="0" addr="442"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 43 (bank 0)" clashes="false" double_init="0.000397" sint_init="13">
+      <REGPART part_init="13" part_double_init="0.000397" clashes="false" width="16" msb="15" lsb="0" addr="443"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 44 (bank 0)" clashes="false" double_init="-0.001068" sint_init="-35">
+      <REGPART part_init="65501" part_double_init="-0.001068" clashes="false" width="16" msb="15" lsb="0" addr="444"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 45 (bank 0)" clashes="false" double_init="-0.000549" sint_init="-18">
+      <REGPART part_init="65518" part_double_init="-0.000549" clashes="false" width="16" msb="15" lsb="0" addr="445"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 46 (bank 0)" clashes="false" double_init="0.001068" sint_init="35">
+      <REGPART part_init="35" part_double_init="0.001068" clashes="false" width="16" msb="15" lsb="0" addr="446"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 47 (bank 0)" clashes="false" double_init="0.000702" sint_init="23">
+      <REGPART part_init="23" part_double_init="0.000702" clashes="false" width="16" msb="15" lsb="0" addr="447"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 48 (bank 0)" clashes="false" double_init="-0.001038" sint_init="-34">
+      <REGPART part_init="65502" part_double_init="-0.001038" clashes="false" width="16" msb="15" lsb="0" addr="448"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 49 (bank 0)" clashes="false" double_init="-0.000854" sint_init="-28">
+      <REGPART part_init="65508" part_double_init="-0.000854" clashes="false" width="16" msb="15" lsb="0" addr="449"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 50 (bank 0)" clashes="false" double_init="0.001007" sint_init="33">
+      <REGPART part_init="33" part_double_init="0.001007" clashes="false" width="16" msb="15" lsb="0" addr="450"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 51 (bank 0)" clashes="false" double_init="0.001007" sint_init="33">
+      <REGPART part_init="33" part_double_init="0.001007" clashes="false" width="16" msb="15" lsb="0" addr="451"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 52 (bank 0)" clashes="false" double_init="-0.000946" sint_init="-31">
+      <REGPART part_init="65505" part_double_init="-0.000946" clashes="false" width="16" msb="15" lsb="0" addr="452"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 53 (bank 0)" clashes="false" double_init="-0.001160" sint_init="-38">
+      <REGPART part_init="65498" part_double_init="-0.001160" clashes="false" width="16" msb="15" lsb="0" addr="453"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 54 (bank 0)" clashes="false" double_init="0.000885" sint_init="29">
+      <REGPART part_init="29" part_double_init="0.000885" clashes="false" width="16" msb="15" lsb="0" addr="454"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 55 (bank 0)" clashes="false" double_init="0.001312" sint_init="43">
+      <REGPART part_init="43" part_double_init="0.001312" clashes="false" width="16" msb="15" lsb="0" addr="455"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 56 (bank 0)" clashes="false" double_init="-0.000763" sint_init="-25">
+      <REGPART part_init="65511" part_double_init="-0.000763" clashes="false" width="16" msb="15" lsb="0" addr="456"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 57 (bank 0)" clashes="false" double_init="-0.001465" sint_init="-48">
+      <REGPART part_init="65488" part_double_init="-0.001465" clashes="false" width="16" msb="15" lsb="0" addr="457"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 58 (bank 0)" clashes="false" double_init="0.000641" sint_init="21">
+      <REGPART part_init="21" part_double_init="0.000641" clashes="false" width="16" msb="15" lsb="0" addr="458"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 59 (bank 0)" clashes="false" double_init="0.001617" sint_init="53">
+      <REGPART part_init="53" part_double_init="0.001617" clashes="false" width="16" msb="15" lsb="0" addr="459"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 60 (bank 0)" clashes="false" double_init="-0.000519" sint_init="-17">
+      <REGPART part_init="65519" part_double_init="-0.000519" clashes="false" width="16" msb="15" lsb="0" addr="460"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 61 (bank 0)" clashes="false" double_init="-0.001770" sint_init="-58">
+      <REGPART part_init="65478" part_double_init="-0.001770" clashes="false" width="16" msb="15" lsb="0" addr="461"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 62 (bank 0)" clashes="false" double_init="0.000336" sint_init="11">
+      <REGPART part_init="11" part_double_init="0.000336" clashes="false" width="16" msb="15" lsb="0" addr="462"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 63 (bank 0)" clashes="false" double_init="0.001892" sint_init="62">
+      <REGPART part_init="62" part_double_init="0.001892" clashes="false" width="16" msb="15" lsb="0" addr="463"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 64 (bank 0)" clashes="false" double_init="-0.000153" sint_init="-5">
+      <REGPART part_init="65531" part_double_init="-0.000153" clashes="false" width="16" msb="15" lsb="0" addr="464"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 65 (bank 0)" clashes="false" double_init="-0.002014" sint_init="-66">
+      <REGPART part_init="65470" part_double_init="-0.002014" clashes="false" width="16" msb="15" lsb="0" addr="465"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 66 (bank 0)" clashes="false" double_init="-0.000061" sint_init="-2">
+      <REGPART part_init="65534" part_double_init="-0.000061" clashes="false" width="16" msb="15" lsb="0" addr="466"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 67 (bank 0)" clashes="false" double_init="0.002106" sint_init="69">
+      <REGPART part_init="69" part_double_init="0.002106" clashes="false" width="16" msb="15" lsb="0" addr="467"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 68 (bank 0)" clashes="false" double_init="0.000275" sint_init="9">
+      <REGPART part_init="9" part_double_init="0.000275" clashes="false" width="16" msb="15" lsb="0" addr="468"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 69 (bank 0)" clashes="false" double_init="-0.002167" sint_init="-71">
+      <REGPART part_init="65465" part_double_init="-0.002167" clashes="false" width="16" msb="15" lsb="0" addr="469"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 70 (bank 0)" clashes="false" double_init="-0.000549" sint_init="-18">
+      <REGPART part_init="65518" part_double_init="-0.000549" clashes="false" width="16" msb="15" lsb="0" addr="470"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 71 (bank 0)" clashes="false" double_init="0.002228" sint_init="73">
+      <REGPART part_init="73" part_double_init="0.002228" clashes="false" width="16" msb="15" lsb="0" addr="471"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 72 (bank 0)" clashes="false" double_init="0.000793" sint_init="26">
+      <REGPART part_init="26" part_double_init="0.000793" clashes="false" width="16" msb="15" lsb="0" addr="472"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 73 (bank 0)" clashes="false" double_init="-0.002228" sint_init="-73">
+      <REGPART part_init="65463" part_double_init="-0.002228" clashes="false" width="16" msb="15" lsb="0" addr="473"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 74 (bank 0)" clashes="false" double_init="-0.001099" sint_init="-36">
+      <REGPART part_init="65500" part_double_init="-0.001099" clashes="false" width="16" msb="15" lsb="0" addr="474"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 75 (bank 0)" clashes="false" double_init="0.002228" sint_init="73">
+      <REGPART part_init="73" part_double_init="0.002228" clashes="false" width="16" msb="15" lsb="0" addr="475"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 76 (bank 0)" clashes="false" double_init="0.001373" sint_init="45">
+      <REGPART part_init="45" part_double_init="0.001373" clashes="false" width="16" msb="15" lsb="0" addr="476"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 77 (bank 0)" clashes="false" double_init="-0.002197" sint_init="-72">
+      <REGPART part_init="65464" part_double_init="-0.002197" clashes="false" width="16" msb="15" lsb="0" addr="477"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 78 (bank 0)" clashes="false" double_init="-0.001678" sint_init="-55">
+      <REGPART part_init="65481" part_double_init="-0.001678" clashes="false" width="16" msb="15" lsb="0" addr="478"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 79 (bank 0)" clashes="false" double_init="0.002106" sint_init="69">
+      <REGPART part_init="69" part_double_init="0.002106" clashes="false" width="16" msb="15" lsb="0" addr="479"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 80 (bank 0)" clashes="false" double_init="0.002014" sint_init="66">
+      <REGPART part_init="66" part_double_init="0.002014" clashes="false" width="16" msb="15" lsb="0" addr="480"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 81 (bank 0)" clashes="false" double_init="-0.002014" sint_init="-66">
+      <REGPART part_init="65470" part_double_init="-0.002014" clashes="false" width="16" msb="15" lsb="0" addr="481"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 82 (bank 0)" clashes="false" double_init="-0.002319" sint_init="-76">
+      <REGPART part_init="65460" part_double_init="-0.002319" clashes="false" width="16" msb="15" lsb="0" addr="482"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 83 (bank 0)" clashes="false" double_init="0.001862" sint_init="61">
+      <REGPART part_init="61" part_double_init="0.001862" clashes="false" width="16" msb="15" lsb="0" addr="483"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 84 (bank 0)" clashes="false" double_init="0.002625" sint_init="86">
+      <REGPART part_init="86" part_double_init="0.002625" clashes="false" width="16" msb="15" lsb="0" addr="484"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 85 (bank 0)" clashes="false" double_init="-0.001648" sint_init="-54">
+      <REGPART part_init="65482" part_double_init="-0.001648" clashes="false" width="16" msb="15" lsb="0" addr="485"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 86 (bank 0)" clashes="false" double_init="-0.002960" sint_init="-97">
+      <REGPART part_init="65439" part_double_init="-0.002960" clashes="false" width="16" msb="15" lsb="0" addr="486"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 87 (bank 0)" clashes="false" double_init="0.001434" sint_init="47">
+      <REGPART part_init="47" part_double_init="0.001434" clashes="false" width="16" msb="15" lsb="0" addr="487"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 88 (bank 0)" clashes="false" double_init="0.003235" sint_init="106">
+      <REGPART part_init="106" part_double_init="0.003235" clashes="false" width="16" msb="15" lsb="0" addr="488"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 89 (bank 0)" clashes="false" double_init="-0.001160" sint_init="-38">
+      <REGPART part_init="65498" part_double_init="-0.001160" clashes="false" width="16" msb="15" lsb="0" addr="489"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 90 (bank 0)" clashes="false" double_init="-0.003540" sint_init="-116">
+      <REGPART part_init="65420" part_double_init="-0.003540" clashes="false" width="16" msb="15" lsb="0" addr="490"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 91 (bank 0)" clashes="false" double_init="0.000824" sint_init="27">
+      <REGPART part_init="27" part_double_init="0.000824" clashes="false" width="16" msb="15" lsb="0" addr="491"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 92 (bank 0)" clashes="false" double_init="0.003815" sint_init="125">
+      <REGPART part_init="125" part_double_init="0.003815" clashes="false" width="16" msb="15" lsb="0" addr="492"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 93 (bank 0)" clashes="false" double_init="-0.000458" sint_init="-15">
+      <REGPART part_init="65521" part_double_init="-0.000458" clashes="false" width="16" msb="15" lsb="0" addr="493"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 94 (bank 0)" clashes="false" double_init="-0.004059" sint_init="-133">
+      <REGPART part_init="65403" part_double_init="-0.004059" clashes="false" width="16" msb="15" lsb="0" addr="494"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 95 (bank 0)" clashes="false" double_init="0.000031" sint_init="1">
+      <REGPART part_init="1" part_double_init="0.000031" clashes="false" width="16" msb="15" lsb="0" addr="495"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 96 (bank 0)" clashes="false" double_init="0.004242" sint_init="139">
+      <REGPART part_init="139" part_double_init="0.004242" clashes="false" width="16" msb="15" lsb="0" addr="496"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 97 (bank 0)" clashes="false" double_init="0.000427" sint_init="14">
+      <REGPART part_init="14" part_double_init="0.000427" clashes="false" width="16" msb="15" lsb="0" addr="497"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 98 (bank 0)" clashes="false" double_init="-0.004425" sint_init="-145">
+      <REGPART part_init="65391" part_double_init="-0.004425" clashes="false" width="16" msb="15" lsb="0" addr="498"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 99 (bank 0)" clashes="false" double_init="-0.000916" sint_init="-30">
+      <REGPART part_init="65506" part_double_init="-0.000916" clashes="false" width="16" msb="15" lsb="0" addr="499"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 100 (bank 0)" clashes="false" double_init="0.004578" sint_init="150">
+      <REGPART part_init="150" part_double_init="0.004578" clashes="false" width="16" msb="15" lsb="0" addr="500"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 101 (bank 0)" clashes="false" double_init="0.001465" sint_init="48">
+      <REGPART part_init="48" part_double_init="0.001465" clashes="false" width="16" msb="15" lsb="0" addr="501"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 102 (bank 0)" clashes="false" double_init="-0.004639" sint_init="-152">
+      <REGPART part_init="65384" part_double_init="-0.004639" clashes="false" width="16" msb="15" lsb="0" addr="502"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 103 (bank 0)" clashes="false" double_init="-0.002045" sint_init="-67">
+      <REGPART part_init="65469" part_double_init="-0.002045" clashes="false" width="16" msb="15" lsb="0" addr="503"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 104 (bank 0)" clashes="false" double_init="0.004669" sint_init="153">
+      <REGPART part_init="153" part_double_init="0.004669" clashes="false" width="16" msb="15" lsb="0" addr="504"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 105 (bank 0)" clashes="false" double_init="0.002655" sint_init="87">
+      <REGPART part_init="87" part_double_init="0.002655" clashes="false" width="16" msb="15" lsb="0" addr="505"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 106 (bank 0)" clashes="false" double_init="-0.004639" sint_init="-152">
+      <REGPART part_init="65384" part_double_init="-0.004639" clashes="false" width="16" msb="15" lsb="0" addr="506"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 107 (bank 0)" clashes="false" double_init="-0.003326" sint_init="-109">
+      <REGPART part_init="65427" part_double_init="-0.003326" clashes="false" width="16" msb="15" lsb="0" addr="507"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 108 (bank 0)" clashes="false" double_init="0.004547" sint_init="149">
+      <REGPART part_init="149" part_double_init="0.004547" clashes="false" width="16" msb="15" lsb="0" addr="508"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 109 (bank 0)" clashes="false" double_init="0.003998" sint_init="131">
+      <REGPART part_init="131" part_double_init="0.003998" clashes="false" width="16" msb="15" lsb="0" addr="509"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 110 (bank 0)" clashes="false" double_init="-0.004395" sint_init="-144">
+      <REGPART part_init="65392" part_double_init="-0.004395" clashes="false" width="16" msb="15" lsb="0" addr="510"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 111 (bank 0)" clashes="false" double_init="-0.004700" sint_init="-154">
+      <REGPART part_init="65382" part_double_init="-0.004700" clashes="false" width="16" msb="15" lsb="0" addr="511"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 112 (bank 0)" clashes="false" double_init="0.004150" sint_init="136">
+      <REGPART part_init="136" part_double_init="0.004150" clashes="false" width="16" msb="15" lsb="0" addr="512"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 113 (bank 0)" clashes="false" double_init="0.005432" sint_init="178">
+      <REGPART part_init="178" part_double_init="0.005432" clashes="false" width="16" msb="15" lsb="0" addr="513"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 114 (bank 0)" clashes="false" double_init="-0.003815" sint_init="-125">
+      <REGPART part_init="65411" part_double_init="-0.003815" clashes="false" width="16" msb="15" lsb="0" addr="514"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 115 (bank 0)" clashes="false" double_init="-0.006165" sint_init="-202">
+      <REGPART part_init="65334" part_double_init="-0.006165" clashes="false" width="16" msb="15" lsb="0" addr="515"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 116 (bank 0)" clashes="false" double_init="0.003357" sint_init="110">
+      <REGPART part_init="110" part_double_init="0.003357" clashes="false" width="16" msb="15" lsb="0" addr="516"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 117 (bank 0)" clashes="false" double_init="0.006927" sint_init="227">
+      <REGPART part_init="227" part_double_init="0.006927" clashes="false" width="16" msb="15" lsb="0" addr="517"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 118 (bank 0)" clashes="false" double_init="-0.002838" sint_init="-93">
+      <REGPART part_init="65443" part_double_init="-0.002838" clashes="false" width="16" msb="15" lsb="0" addr="518"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 119 (bank 0)" clashes="false" double_init="-0.007690" sint_init="-252">
+      <REGPART part_init="65284" part_double_init="-0.007690" clashes="false" width="16" msb="15" lsb="0" addr="519"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 120 (bank 0)" clashes="false" double_init="0.002197" sint_init="72">
+      <REGPART part_init="72" part_double_init="0.002197" clashes="false" width="16" msb="15" lsb="0" addr="520"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 121 (bank 0)" clashes="false" double_init="0.008484" sint_init="278">
+      <REGPART part_init="278" part_double_init="0.008484" clashes="false" width="16" msb="15" lsb="0" addr="521"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 122 (bank 0)" clashes="false" double_init="-0.001434" sint_init="-47">
+      <REGPART part_init="65489" part_double_init="-0.001434" clashes="false" width="16" msb="15" lsb="0" addr="522"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 123 (bank 0)" clashes="false" double_init="-0.009247" sint_init="-303">
+      <REGPART part_init="65233" part_double_init="-0.009247" clashes="false" width="16" msb="15" lsb="0" addr="523"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 124 (bank 0)" clashes="false" double_init="0.000519" sint_init="17">
+      <REGPART part_init="17" part_double_init="0.000519" clashes="false" width="16" msb="15" lsb="0" addr="524"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 125 (bank 0)" clashes="false" double_init="0.009979" sint_init="327">
+      <REGPART part_init="327" part_double_init="0.009979" clashes="false" width="16" msb="15" lsb="0" addr="525"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 126 (bank 0)" clashes="false" double_init="0.000519" sint_init="17">
+      <REGPART part_init="17" part_double_init="0.000519" clashes="false" width="16" msb="15" lsb="0" addr="526"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 127 (bank 0)" clashes="false" double_init="-0.010742" sint_init="-352">
+      <REGPART part_init="65184" part_double_init="-0.010742" clashes="false" width="16" msb="15" lsb="0" addr="527"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 128 (bank 0)" clashes="false" double_init="-0.001740" sint_init="-57">
+      <REGPART part_init="65479" part_double_init="-0.001740" clashes="false" width="16" msb="15" lsb="0" addr="528"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 129 (bank 0)" clashes="false" double_init="0.011444" sint_init="375">
+      <REGPART part_init="375" part_double_init="0.011444" clashes="false" width="16" msb="15" lsb="0" addr="529"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 130 (bank 0)" clashes="false" double_init="0.003143" sint_init="103">
+      <REGPART part_init="103" part_double_init="0.003143" clashes="false" width="16" msb="15" lsb="0" addr="530"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 131 (bank 0)" clashes="false" double_init="-0.012146" sint_init="-398">
+      <REGPART part_init="65138" part_double_init="-0.012146" clashes="false" width="16" msb="15" lsb="0" addr="531"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 132 (bank 0)" clashes="false" double_init="-0.004761" sint_init="-156">
+      <REGPART part_init="65380" part_double_init="-0.004761" clashes="false" width="16" msb="15" lsb="0" addr="532"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 133 (bank 0)" clashes="false" double_init="0.012817" sint_init="420">
+      <REGPART part_init="420" part_double_init="0.012817" clashes="false" width="16" msb="15" lsb="0" addr="533"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 134 (bank 0)" clashes="false" double_init="0.006653" sint_init="218">
+      <REGPART part_init="218" part_double_init="0.006653" clashes="false" width="16" msb="15" lsb="0" addr="534"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 135 (bank 0)" clashes="false" double_init="-0.013428" sint_init="-440">
+      <REGPART part_init="65096" part_double_init="-0.013428" clashes="false" width="16" msb="15" lsb="0" addr="535"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 136 (bank 0)" clashes="false" double_init="-0.008881" sint_init="-291">
+      <REGPART part_init="65245" part_double_init="-0.008881" clashes="false" width="16" msb="15" lsb="0" addr="536"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 137 (bank 0)" clashes="false" double_init="0.014008" sint_init="459">
+      <REGPART part_init="459" part_double_init="0.014008" clashes="false" width="16" msb="15" lsb="0" addr="537"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 138 (bank 0)" clashes="false" double_init="0.011536" sint_init="378">
+      <REGPART part_init="378" part_double_init="0.011536" clashes="false" width="16" msb="15" lsb="0" addr="538"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 139 (bank 0)" clashes="false" double_init="-0.014557" sint_init="-477">
+      <REGPART part_init="65059" part_double_init="-0.014557" clashes="false" width="16" msb="15" lsb="0" addr="539"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 140 (bank 0)" clashes="false" double_init="-0.014771" sint_init="-484">
+      <REGPART part_init="65052" part_double_init="-0.014771" clashes="false" width="16" msb="15" lsb="0" addr="540"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 141 (bank 0)" clashes="false" double_init="0.015045" sint_init="493">
+      <REGPART part_init="493" part_double_init="0.015045" clashes="false" width="16" msb="15" lsb="0" addr="541"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 142 (bank 0)" clashes="false" double_init="0.018799" sint_init="616">
+      <REGPART part_init="616" part_double_init="0.018799" clashes="false" width="16" msb="15" lsb="0" addr="542"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 143 (bank 0)" clashes="false" double_init="-0.015472" sint_init="-507">
+      <REGPART part_init="65029" part_double_init="-0.015472" clashes="false" width="16" msb="15" lsb="0" addr="543"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 144 (bank 0)" clashes="false" double_init="-0.024078" sint_init="-789">
+      <REGPART part_init="64747" part_double_init="-0.024078" clashes="false" width="16" msb="15" lsb="0" addr="544"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 145 (bank 0)" clashes="false" double_init="0.015839" sint_init="519">
+      <REGPART part_init="519" part_double_init="0.015839" clashes="false" width="16" msb="15" lsb="0" addr="545"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 146 (bank 0)" clashes="false" double_init="0.031342" sint_init="1027">
+      <REGPART part_init="1027" part_double_init="0.031342" clashes="false" width="16" msb="15" lsb="0" addr="546"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 147 (bank 0)" clashes="false" double_init="-0.016144" sint_init="-529">
+      <REGPART part_init="65007" part_double_init="-0.016144" clashes="false" width="16" msb="15" lsb="0" addr="547"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 148 (bank 0)" clashes="false" double_init="-0.042297" sint_init="-1386">
+      <REGPART part_init="64150" part_double_init="-0.042297" clashes="false" width="16" msb="15" lsb="0" addr="548"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 149 (bank 0)" clashes="false" double_init="0.016357" sint_init="536">
+      <REGPART part_init="536" part_double_init="0.016357" clashes="false" width="16" msb="15" lsb="0" addr="549"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 150 (bank 0)" clashes="false" double_init="0.061401" sint_init="2012">
+      <REGPART part_init="2012" part_double_init="0.061401" clashes="false" width="16" msb="15" lsb="0" addr="550"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 151 (bank 0)" clashes="false" double_init="-0.016541" sint_init="-542">
+      <REGPART part_init="64994" part_double_init="-0.016541" clashes="false" width="16" msb="15" lsb="0" addr="551"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 152 (bank 0)" clashes="false" double_init="-0.104736" sint_init="-3432">
+      <REGPART part_init="62104" part_double_init="-0.104736" clashes="false" width="16" msb="15" lsb="0" addr="552"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 153 (bank 0)" clashes="false" double_init="0.016663" sint_init="546">
+      <REGPART part_init="546" part_double_init="0.016663" clashes="false" width="16" msb="15" lsb="0" addr="553"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 154 (bank 0)" clashes="false" double_init="0.317841" sint_init="10415">
+      <REGPART part_init="10415" part_double_init="0.317841" clashes="false" width="16" msb="15" lsb="0" addr="554"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 155 (bank 0)" clashes="false" double_init="0.483307" sint_init="15837">
+      <REGPART part_init="15837" part_double_init="0.483307" clashes="false" width="16" msb="15" lsb="0" addr="555"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 0 (bank 1)" clashes="false" double_init="0.001343" sint_init="44">
+      <REGPART part_init="44" part_double_init="0.001343" clashes="false" width="16" msb="15" lsb="0" addr="556"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 1 (bank 1)" clashes="false" double_init="0.001892" sint_init="62">
+      <REGPART part_init="62" part_double_init="0.001892" clashes="false" width="16" msb="15" lsb="0" addr="557"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 2 (bank 1)" clashes="false" double_init="-0.000793" sint_init="-26">
+      <REGPART part_init="65510" part_double_init="-0.000793" clashes="false" width="16" msb="15" lsb="0" addr="558"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 3 (bank 1)" clashes="false" double_init="0.000153" sint_init="5">
+      <REGPART part_init="5" part_double_init="0.000153" clashes="false" width="16" msb="15" lsb="0" addr="559"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 4 (bank 1)" clashes="false" double_init="0.000183" sint_init="6">
+      <REGPART part_init="6" part_double_init="0.000183" clashes="false" width="16" msb="15" lsb="0" addr="560"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 5 (bank 1)" clashes="false" double_init="-0.000366" sint_init="-12">
+      <REGPART part_init="65524" part_double_init="-0.000366" clashes="false" width="16" msb="15" lsb="0" addr="561"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 6 (bank 1)" clashes="false" double_init="0.000397" sint_init="13">
+      <REGPART part_init="13" part_double_init="0.000397" clashes="false" width="16" msb="15" lsb="0" addr="562"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 7 (bank 1)" clashes="false" double_init="-0.000305" sint_init="-10">
+      <REGPART part_init="65526" part_double_init="-0.000305" clashes="false" width="16" msb="15" lsb="0" addr="563"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 8 (bank 1)" clashes="false" double_init="0.000122" sint_init="4">
+      <REGPART part_init="4" part_double_init="0.000122" clashes="false" width="16" msb="15" lsb="0" addr="564"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 9 (bank 1)" clashes="false" double_init="0.000092" sint_init="3">
+      <REGPART part_init="3" part_double_init="0.000092" clashes="false" width="16" msb="15" lsb="0" addr="565"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 10 (bank 1)" clashes="false" double_init="-0.000305" sint_init="-10">
+      <REGPART part_init="65526" part_double_init="-0.000305" clashes="false" width="16" msb="15" lsb="0" addr="566"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 11 (bank 1)" clashes="false" double_init="0.000397" sint_init="13">
+      <REGPART part_init="13" part_double_init="0.000397" clashes="false" width="16" msb="15" lsb="0" addr="567"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 12 (bank 1)" clashes="false" double_init="-0.000397" sint_init="-13">
+      <REGPART part_init="65523" part_double_init="-0.000397" clashes="false" width="16" msb="15" lsb="0" addr="568"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 13 (bank 1)" clashes="false" double_init="0.000244" sint_init="8">
+      <REGPART part_init="8" part_double_init="0.000244" clashes="false" width="16" msb="15" lsb="0" addr="569"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 14 (bank 1)" clashes="false" double_init="0.000000" sint_init="0">
+      <REGPART part_init="0" part_double_init="0.000000" clashes="false" width="16" msb="15" lsb="0" addr="570"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 15 (bank 1)" clashes="false" double_init="-0.000275" sint_init="-9">
+      <REGPART part_init="65527" part_double_init="-0.000275" clashes="false" width="16" msb="15" lsb="0" addr="571"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 16 (bank 1)" clashes="false" double_init="0.000458" sint_init="15">
+      <REGPART part_init="15" part_double_init="0.000458" clashes="false" width="16" msb="15" lsb="0" addr="572"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 17 (bank 1)" clashes="false" double_init="-0.000488" sint_init="-16">
+      <REGPART part_init="65520" part_double_init="-0.000488" clashes="false" width="16" msb="15" lsb="0" addr="573"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 18 (bank 1)" clashes="false" double_init="0.000336" sint_init="11">
+      <REGPART part_init="11" part_double_init="0.000336" clashes="false" width="16" msb="15" lsb="0" addr="574"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 19 (bank 1)" clashes="false" double_init="-0.000061" sint_init="-2">
+      <REGPART part_init="65534" part_double_init="-0.000061" clashes="false" width="16" msb="15" lsb="0" addr="575"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 20 (bank 1)" clashes="false" double_init="-0.000244" sint_init="-8">
+      <REGPART part_init="65528" part_double_init="-0.000244" clashes="false" width="16" msb="15" lsb="0" addr="576"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 21 (bank 1)" clashes="false" double_init="0.000488" sint_init="16">
+      <REGPART part_init="16" part_double_init="0.000488" clashes="false" width="16" msb="15" lsb="0" addr="577"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 22 (bank 1)" clashes="false" double_init="-0.000580" sint_init="-19">
+      <REGPART part_init="65517" part_double_init="-0.000580" clashes="false" width="16" msb="15" lsb="0" addr="578"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 23 (bank 1)" clashes="false" double_init="0.000458" sint_init="15">
+      <REGPART part_init="15" part_double_init="0.000458" clashes="false" width="16" msb="15" lsb="0" addr="579"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 24 (bank 1)" clashes="false" double_init="-0.000153" sint_init="-5">
+      <REGPART part_init="65531" part_double_init="-0.000153" clashes="false" width="16" msb="15" lsb="0" addr="580"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 25 (bank 1)" clashes="false" double_init="-0.000214" sint_init="-7">
+      <REGPART part_init="65529" part_double_init="-0.000214" clashes="false" width="16" msb="15" lsb="0" addr="581"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 26 (bank 1)" clashes="false" double_init="0.000549" sint_init="18">
+      <REGPART part_init="18" part_double_init="0.000549" clashes="false" width="16" msb="15" lsb="0" addr="582"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 27 (bank 1)" clashes="false" double_init="-0.000671" sint_init="-22">
+      <REGPART part_init="65514" part_double_init="-0.000671" clashes="false" width="16" msb="15" lsb="0" addr="583"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 28 (bank 1)" clashes="false" double_init="0.000580" sint_init="19">
+      <REGPART part_init="19" part_double_init="0.000580" clashes="false" width="16" msb="15" lsb="0" addr="584"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 29 (bank 1)" clashes="false" double_init="-0.000275" sint_init="-9">
+      <REGPART part_init="65527" part_double_init="-0.000275" clashes="false" width="16" msb="15" lsb="0" addr="585"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 30 (bank 1)" clashes="false" double_init="-0.000153" sint_init="-5">
+      <REGPART part_init="65531" part_double_init="-0.000153" clashes="false" width="16" msb="15" lsb="0" addr="586"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 31 (bank 1)" clashes="false" double_init="0.000580" sint_init="19">
+      <REGPART part_init="19" part_double_init="0.000580" clashes="false" width="16" msb="15" lsb="0" addr="587"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 32 (bank 1)" clashes="false" double_init="-0.000793" sint_init="-26">
+      <REGPART part_init="65510" part_double_init="-0.000793" clashes="false" width="16" msb="15" lsb="0" addr="588"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 33 (bank 1)" clashes="false" double_init="0.000732" sint_init="24">
+      <REGPART part_init="24" part_double_init="0.000732" clashes="false" width="16" msb="15" lsb="0" addr="589"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 34 (bank 1)" clashes="false" double_init="-0.000427" sint_init="-14">
+      <REGPART part_init="65522" part_double_init="-0.000427" clashes="false" width="16" msb="15" lsb="0" addr="590"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 35 (bank 1)" clashes="false" double_init="-0.000061" sint_init="-2">
+      <REGPART part_init="65534" part_double_init="-0.000061" clashes="false" width="16" msb="15" lsb="0" addr="591"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 36 (bank 1)" clashes="false" double_init="0.000580" sint_init="19">
+      <REGPART part_init="19" part_double_init="0.000580" clashes="false" width="16" msb="15" lsb="0" addr="592"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 37 (bank 1)" clashes="false" double_init="-0.000885" sint_init="-29">
+      <REGPART part_init="65507" part_double_init="-0.000885" clashes="false" width="16" msb="15" lsb="0" addr="593"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 38 (bank 1)" clashes="false" double_init="0.000916" sint_init="30">
+      <REGPART part_init="30" part_double_init="0.000916" clashes="false" width="16" msb="15" lsb="0" addr="594"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 39 (bank 1)" clashes="false" double_init="-0.000580" sint_init="-19">
+      <REGPART part_init="65517" part_double_init="-0.000580" clashes="false" width="16" msb="15" lsb="0" addr="595"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 40 (bank 1)" clashes="false" double_init="0.000061" sint_init="2">
+      <REGPART part_init="2" part_double_init="0.000061" clashes="false" width="16" msb="15" lsb="0" addr="596"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 41 (bank 1)" clashes="false" double_init="0.000549" sint_init="18">
+      <REGPART part_init="18" part_double_init="0.000549" clashes="false" width="16" msb="15" lsb="0" addr="597"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 42 (bank 1)" clashes="false" double_init="-0.000977" sint_init="-32">
+      <REGPART part_init="65504" part_double_init="-0.000977" clashes="false" width="16" msb="15" lsb="0" addr="598"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 43 (bank 1)" clashes="false" double_init="0.001068" sint_init="35">
+      <REGPART part_init="35" part_double_init="0.001068" clashes="false" width="16" msb="15" lsb="0" addr="599"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 44 (bank 1)" clashes="false" double_init="-0.000793" sint_init="-26">
+      <REGPART part_init="65510" part_double_init="-0.000793" clashes="false" width="16" msb="15" lsb="0" addr="600"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 45 (bank 1)" clashes="false" double_init="0.000214" sint_init="7">
+      <REGPART part_init="7" part_double_init="0.000214" clashes="false" width="16" msb="15" lsb="0" addr="601"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 46 (bank 1)" clashes="false" double_init="0.000488" sint_init="16">
+      <REGPART part_init="16" part_double_init="0.000488" clashes="false" width="16" msb="15" lsb="0" addr="602"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 47 (bank 1)" clashes="false" double_init="-0.001038" sint_init="-34">
+      <REGPART part_init="65502" part_double_init="-0.001038" clashes="false" width="16" msb="15" lsb="0" addr="603"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 48 (bank 1)" clashes="false" double_init="0.001251" sint_init="41">
+      <REGPART part_init="41" part_double_init="0.001251" clashes="false" width="16" msb="15" lsb="0" addr="604"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 49 (bank 1)" clashes="false" double_init="-0.001038" sint_init="-34">
+      <REGPART part_init="65502" part_double_init="-0.001038" clashes="false" width="16" msb="15" lsb="0" addr="605"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 50 (bank 1)" clashes="false" double_init="0.000397" sint_init="13">
+      <REGPART part_init="13" part_double_init="0.000397" clashes="false" width="16" msb="15" lsb="0" addr="606"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 51 (bank 1)" clashes="false" double_init="0.000397" sint_init="13">
+      <REGPART part_init="13" part_double_init="0.000397" clashes="false" width="16" msb="15" lsb="0" addr="607"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 52 (bank 1)" clashes="false" double_init="-0.001099" sint_init="-36">
+      <REGPART part_init="65500" part_double_init="-0.001099" clashes="false" width="16" msb="15" lsb="0" addr="608"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 53 (bank 1)" clashes="false" double_init="0.001434" sint_init="47">
+      <REGPART part_init="47" part_double_init="0.001434" clashes="false" width="16" msb="15" lsb="0" addr="609"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 54 (bank 1)" clashes="false" double_init="-0.001282" sint_init="-42">
+      <REGPART part_init="65494" part_double_init="-0.001282" clashes="false" width="16" msb="15" lsb="0" addr="610"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 55 (bank 1)" clashes="false" double_init="0.000641" sint_init="21">
+      <REGPART part_init="21" part_double_init="0.000641" clashes="false" width="16" msb="15" lsb="0" addr="611"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 56 (bank 1)" clashes="false" double_init="0.000244" sint_init="8">
+      <REGPART part_init="8" part_double_init="0.000244" clashes="false" width="16" msb="15" lsb="0" addr="612"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 57 (bank 1)" clashes="false" double_init="-0.001099" sint_init="-36">
+      <REGPART part_init="65500" part_double_init="-0.001099" clashes="false" width="16" msb="15" lsb="0" addr="613"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 58 (bank 1)" clashes="false" double_init="0.001617" sint_init="53">
+      <REGPART part_init="53" part_double_init="0.001617" clashes="false" width="16" msb="15" lsb="0" addr="614"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 59 (bank 1)" clashes="false" double_init="-0.001556" sint_init="-51">
+      <REGPART part_init="65485" part_double_init="-0.001556" clashes="false" width="16" msb="15" lsb="0" addr="615"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 60 (bank 1)" clashes="false" double_init="0.000946" sint_init="31">
+      <REGPART part_init="31" part_double_init="0.000946" clashes="false" width="16" msb="15" lsb="0" addr="616"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 61 (bank 1)" clashes="false" double_init="0.000061" sint_init="2">
+      <REGPART part_init="2" part_double_init="0.000061" clashes="false" width="16" msb="15" lsb="0" addr="617"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 62 (bank 1)" clashes="false" double_init="-0.001068" sint_init="-35">
+      <REGPART part_init="65501" part_double_init="-0.001068" clashes="false" width="16" msb="15" lsb="0" addr="618"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 63 (bank 1)" clashes="false" double_init="0.001770" sint_init="58">
+      <REGPART part_init="58" part_double_init="0.001770" clashes="false" width="16" msb="15" lsb="0" addr="619"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 64 (bank 1)" clashes="false" double_init="-0.001862" sint_init="-61">
+      <REGPART part_init="65475" part_double_init="-0.001862" clashes="false" width="16" msb="15" lsb="0" addr="620"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 65 (bank 1)" clashes="false" double_init="0.001282" sint_init="42">
+      <REGPART part_init="42" part_double_init="0.001282" clashes="false" width="16" msb="15" lsb="0" addr="621"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 66 (bank 1)" clashes="false" double_init="-0.000214" sint_init="-7">
+      <REGPART part_init="65529" part_double_init="-0.000214" clashes="false" width="16" msb="15" lsb="0" addr="622"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 67 (bank 1)" clashes="false" double_init="-0.001007" sint_init="-33">
+      <REGPART part_init="65503" part_double_init="-0.001007" clashes="false" width="16" msb="15" lsb="0" addr="623"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 68 (bank 1)" clashes="false" double_init="0.001892" sint_init="62">
+      <REGPART part_init="62" part_double_init="0.001892" clashes="false" width="16" msb="15" lsb="0" addr="624"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 69 (bank 1)" clashes="false" double_init="-0.002136" sint_init="-70">
+      <REGPART part_init="65466" part_double_init="-0.002136" clashes="false" width="16" msb="15" lsb="0" addr="625"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 70 (bank 1)" clashes="false" double_init="0.001648" sint_init="54">
+      <REGPART part_init="54" part_double_init="0.001648" clashes="false" width="16" msb="15" lsb="0" addr="626"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 71 (bank 1)" clashes="false" double_init="-0.000519" sint_init="-17">
+      <REGPART part_init="65519" part_double_init="-0.000519" clashes="false" width="16" msb="15" lsb="0" addr="627"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 72 (bank 1)" clashes="false" double_init="-0.000824" sint_init="-27">
+      <REGPART part_init="65509" part_double_init="-0.000824" clashes="false" width="16" msb="15" lsb="0" addr="628"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 73 (bank 1)" clashes="false" double_init="0.001984" sint_init="65">
+      <REGPART part_init="65" part_double_init="0.001984" clashes="false" width="16" msb="15" lsb="0" addr="629"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 74 (bank 1)" clashes="false" double_init="-0.002441" sint_init="-80">
+      <REGPART part_init="65456" part_double_init="-0.002441" clashes="false" width="16" msb="15" lsb="0" addr="630"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 75 (bank 1)" clashes="false" double_init="0.002075" sint_init="68">
+      <REGPART part_init="68" part_double_init="0.002075" clashes="false" width="16" msb="15" lsb="0" addr="631"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 76 (bank 1)" clashes="false" double_init="-0.000916" sint_init="-30">
+      <REGPART part_init="65506" part_double_init="-0.000916" clashes="false" width="16" msb="15" lsb="0" addr="632"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 77 (bank 1)" clashes="false" double_init="-0.000610" sint_init="-20">
+      <REGPART part_init="65516" part_double_init="-0.000610" clashes="false" width="16" msb="15" lsb="0" addr="633"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 78 (bank 1)" clashes="false" double_init="0.002014" sint_init="66">
+      <REGPART part_init="66" part_double_init="0.002014" clashes="false" width="16" msb="15" lsb="0" addr="634"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 79 (bank 1)" clashes="false" double_init="-0.002747" sint_init="-90">
+      <REGPART part_init="65446" part_double_init="-0.002747" clashes="false" width="16" msb="15" lsb="0" addr="635"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 80 (bank 1)" clashes="false" double_init="0.002533" sint_init="83">
+      <REGPART part_init="83" part_double_init="0.002533" clashes="false" width="16" msb="15" lsb="0" addr="636"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 81 (bank 1)" clashes="false" double_init="-0.001404" sint_init="-46">
+      <REGPART part_init="65490" part_double_init="-0.001404" clashes="false" width="16" msb="15" lsb="0" addr="637"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 82 (bank 1)" clashes="false" double_init="-0.000305" sint_init="-10">
+      <REGPART part_init="65526" part_double_init="-0.000305" clashes="false" width="16" msb="15" lsb="0" addr="638"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 83 (bank 1)" clashes="false" double_init="0.001984" sint_init="65">
+      <REGPART part_init="65" part_double_init="0.001984" clashes="false" width="16" msb="15" lsb="0" addr="639"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 84 (bank 1)" clashes="false" double_init="-0.003021" sint_init="-99">
+      <REGPART part_init="65437" part_double_init="-0.003021" clashes="false" width="16" msb="15" lsb="0" addr="640"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 85 (bank 1)" clashes="false" double_init="0.003052" sint_init="100">
+      <REGPART part_init="100" part_double_init="0.003052" clashes="false" width="16" msb="15" lsb="0" addr="641"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 86 (bank 1)" clashes="false" double_init="-0.001953" sint_init="-64">
+      <REGPART part_init="65472" part_double_init="-0.001953" clashes="false" width="16" msb="15" lsb="0" addr="642"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 87 (bank 1)" clashes="false" double_init="0.000122" sint_init="4">
+      <REGPART part_init="4" part_double_init="0.000122" clashes="false" width="16" msb="15" lsb="0" addr="643"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 88 (bank 1)" clashes="false" double_init="0.001862" sint_init="61">
+      <REGPART part_init="61" part_double_init="0.001862" clashes="false" width="16" msb="15" lsb="0" addr="644"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 89 (bank 1)" clashes="false" double_init="-0.003265" sint_init="-107">
+      <REGPART part_init="65429" part_double_init="-0.003265" clashes="false" width="16" msb="15" lsb="0" addr="645"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 90 (bank 1)" clashes="false" double_init="0.003571" sint_init="117">
+      <REGPART part_init="117" part_double_init="0.003571" clashes="false" width="16" msb="15" lsb="0" addr="646"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 91 (bank 1)" clashes="false" double_init="-0.002594" sint_init="-85">
+      <REGPART part_init="65451" part_double_init="-0.002594" clashes="false" width="16" msb="15" lsb="0" addr="647"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 92 (bank 1)" clashes="false" double_init="0.000641" sint_init="21">
+      <REGPART part_init="21" part_double_init="0.000641" clashes="false" width="16" msb="15" lsb="0" addr="648"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 93 (bank 1)" clashes="false" double_init="0.001648" sint_init="54">
+      <REGPART part_init="54" part_double_init="0.001648" clashes="false" width="16" msb="15" lsb="0" addr="649"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 94 (bank 1)" clashes="false" double_init="-0.003448" sint_init="-113">
+      <REGPART part_init="65423" part_double_init="-0.003448" clashes="false" width="16" msb="15" lsb="0" addr="650"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 95 (bank 1)" clashes="false" double_init="0.004120" sint_init="135">
+      <REGPART part_init="135" part_double_init="0.004120" clashes="false" width="16" msb="15" lsb="0" addr="651"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 96 (bank 1)" clashes="false" double_init="-0.003326" sint_init="-109">
+      <REGPART part_init="65427" part_double_init="-0.003326" clashes="false" width="16" msb="15" lsb="0" addr="652"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 97 (bank 1)" clashes="false" double_init="0.001312" sint_init="43">
+      <REGPART part_init="43" part_double_init="0.001312" clashes="false" width="16" msb="15" lsb="0" addr="653"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 98 (bank 1)" clashes="false" double_init="0.001312" sint_init="43">
+      <REGPART part_init="43" part_double_init="0.001312" clashes="false" width="16" msb="15" lsb="0" addr="654"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 99 (bank 1)" clashes="false" double_init="-0.003571" sint_init="-117">
+      <REGPART part_init="65419" part_double_init="-0.003571" clashes="false" width="16" msb="15" lsb="0" addr="655"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 100 (bank 1)" clashes="false" double_init="0.004669" sint_init="153">
+      <REGPART part_init="153" part_double_init="0.004669" clashes="false" width="16" msb="15" lsb="0" addr="656"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 101 (bank 1)" clashes="false" double_init="-0.004150" sint_init="-136">
+      <REGPART part_init="65400" part_double_init="-0.004150" clashes="false" width="16" msb="15" lsb="0" addr="657"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 102 (bank 1)" clashes="false" double_init="0.002106" sint_init="69">
+      <REGPART part_init="69" part_double_init="0.002106" clashes="false" width="16" msb="15" lsb="0" addr="658"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 103 (bank 1)" clashes="false" double_init="0.000824" sint_init="27">
+      <REGPART part_init="27" part_double_init="0.000824" clashes="false" width="16" msb="15" lsb="0" addr="659"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 104 (bank 1)" clashes="false" double_init="-0.003601" sint_init="-118">
+      <REGPART part_init="65418" part_double_init="-0.003601" clashes="false" width="16" msb="15" lsb="0" addr="660"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 105 (bank 1)" clashes="false" double_init="0.005249" sint_init="172">
+      <REGPART part_init="172" part_double_init="0.005249" clashes="false" width="16" msb="15" lsb="0" addr="661"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 106 (bank 1)" clashes="false" double_init="-0.005066" sint_init="-166">
+      <REGPART part_init="65370" part_double_init="-0.005066" clashes="false" width="16" msb="15" lsb="0" addr="662"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 107 (bank 1)" clashes="false" double_init="0.003082" sint_init="101">
+      <REGPART part_init="101" part_double_init="0.003082" clashes="false" width="16" msb="15" lsb="0" addr="663"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 108 (bank 1)" clashes="false" double_init="0.000153" sint_init="5">
+      <REGPART part_init="5" part_double_init="0.000153" clashes="false" width="16" msb="15" lsb="0" addr="664"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 109 (bank 1)" clashes="false" double_init="-0.003510" sint_init="-115">
+      <REGPART part_init="65421" part_double_init="-0.003510" clashes="false" width="16" msb="15" lsb="0" addr="665"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 110 (bank 1)" clashes="false" double_init="0.005798" sint_init="190">
+      <REGPART part_init="190" part_double_init="0.005798" clashes="false" width="16" msb="15" lsb="0" addr="666"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 111 (bank 1)" clashes="false" double_init="-0.006134" sint_init="-201">
+      <REGPART part_init="65335" part_double_init="-0.006134" clashes="false" width="16" msb="15" lsb="0" addr="667"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 112 (bank 1)" clashes="false" double_init="0.004272" sint_init="140">
+      <REGPART part_init="140" part_double_init="0.004272" clashes="false" width="16" msb="15" lsb="0" addr="668"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 113 (bank 1)" clashes="false" double_init="-0.000732" sint_init="-24">
+      <REGPART part_init="65512" part_double_init="-0.000732" clashes="false" width="16" msb="15" lsb="0" addr="669"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 114 (bank 1)" clashes="false" double_init="-0.003265" sint_init="-107">
+      <REGPART part_init="65429" part_double_init="-0.003265" clashes="false" width="16" msb="15" lsb="0" addr="670"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 115 (bank 1)" clashes="false" double_init="0.006317" sint_init="207">
+      <REGPART part_init="207" part_double_init="0.006317" clashes="false" width="16" msb="15" lsb="0" addr="671"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 116 (bank 1)" clashes="false" double_init="-0.007294" sint_init="-239">
+      <REGPART part_init="65297" part_double_init="-0.007294" clashes="false" width="16" msb="15" lsb="0" addr="672"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 117 (bank 1)" clashes="false" double_init="0.005676" sint_init="186">
+      <REGPART part_init="186" part_double_init="0.005676" clashes="false" width="16" msb="15" lsb="0" addr="673"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 118 (bank 1)" clashes="false" double_init="-0.001923" sint_init="-63">
+      <REGPART part_init="65473" part_double_init="-0.001923" clashes="false" width="16" msb="15" lsb="0" addr="674"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 119 (bank 1)" clashes="false" double_init="-0.002808" sint_init="-92">
+      <REGPART part_init="65444" part_double_init="-0.002808" clashes="false" width="16" msb="15" lsb="0" addr="675"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 120 (bank 1)" clashes="false" double_init="0.006836" sint_init="224">
+      <REGPART part_init="224" part_double_init="0.006836" clashes="false" width="16" msb="15" lsb="0" addr="676"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 121 (bank 1)" clashes="false" double_init="-0.008636" sint_init="-283">
+      <REGPART part_init="65253" part_double_init="-0.008636" clashes="false" width="16" msb="15" lsb="0" addr="677"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 122 (bank 1)" clashes="false" double_init="0.007446" sint_init="244">
+      <REGPART part_init="244" part_double_init="0.007446" clashes="false" width="16" msb="15" lsb="0" addr="678"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 123 (bank 1)" clashes="false" double_init="-0.003479" sint_init="-114">
+      <REGPART part_init="65422" part_double_init="-0.003479" clashes="false" width="16" msb="15" lsb="0" addr="679"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 124 (bank 1)" clashes="false" double_init="-0.002075" sint_init="-68">
+      <REGPART part_init="65468" part_double_init="-0.002075" clashes="false" width="16" msb="15" lsb="0" addr="680"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 125 (bank 1)" clashes="false" double_init="0.007294" sint_init="239">
+      <REGPART part_init="239" part_double_init="0.007294" clashes="false" width="16" msb="15" lsb="0" addr="681"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 126 (bank 1)" clashes="false" double_init="-0.010254" sint_init="-336">
+      <REGPART part_init="65200" part_double_init="-0.010254" clashes="false" width="16" msb="15" lsb="0" addr="682"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 127 (bank 1)" clashes="false" double_init="0.009705" sint_init="318">
+      <REGPART part_init="318" part_double_init="0.009705" clashes="false" width="16" msb="15" lsb="0" addr="683"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 128 (bank 1)" clashes="false" double_init="-0.005554" sint_init="-182">
+      <REGPART part_init="65354" part_double_init="-0.005554" clashes="false" width="16" msb="15" lsb="0" addr="684"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 129 (bank 1)" clashes="false" double_init="-0.000946" sint_init="-31">
+      <REGPART part_init="65505" part_double_init="-0.000946" clashes="false" width="16" msb="15" lsb="0" addr="685"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 130 (bank 1)" clashes="false" double_init="0.007690" sint_init="252">
+      <REGPART part_init="252" part_double_init="0.007690" clashes="false" width="16" msb="15" lsb="0" addr="686"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 131 (bank 1)" clashes="false" double_init="-0.012238" sint_init="-401">
+      <REGPART part_init="65135" part_double_init="-0.012238" clashes="false" width="16" msb="15" lsb="0" addr="687"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 132 (bank 1)" clashes="false" double_init="0.012695" sint_init="416">
+      <REGPART part_init="416" part_double_init="0.012695" clashes="false" width="16" msb="15" lsb="0" addr="688"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 133 (bank 1)" clashes="false" double_init="-0.008545" sint_init="-280">
+      <REGPART part_init="65256" part_double_init="-0.008545" clashes="false" width="16" msb="15" lsb="0" addr="689"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 134 (bank 1)" clashes="false" double_init="0.000793" sint_init="26">
+      <REGPART part_init="26" part_double_init="0.000793" clashes="false" width="16" msb="15" lsb="0" addr="690"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 135 (bank 1)" clashes="false" double_init="0.008057" sint_init="264">
+      <REGPART part_init="264" part_double_init="0.008057" clashes="false" width="16" msb="15" lsb="0" addr="691"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 136 (bank 1)" clashes="false" double_init="-0.014893" sint_init="-488">
+      <REGPART part_init="65048" part_double_init="-0.014893" clashes="false" width="16" msb="15" lsb="0" addr="692"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 137 (bank 1)" clashes="false" double_init="0.017029" sint_init="558">
+      <REGPART part_init="558" part_double_init="0.017029" clashes="false" width="16" msb="15" lsb="0" addr="693"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 138 (bank 1)" clashes="false" double_init="-0.013062" sint_init="-428">
+      <REGPART part_init="65108" part_double_init="-0.013062" clashes="false" width="16" msb="15" lsb="0" addr="694"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 139 (bank 1)" clashes="false" double_init="0.003723" sint_init="122">
+      <REGPART part_init="122" part_double_init="0.003723" clashes="false" width="16" msb="15" lsb="0" addr="695"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 140 (bank 1)" clashes="false" double_init="0.008331" sint_init="273">
+      <REGPART part_init="273" part_double_init="0.008331" clashes="false" width="16" msb="15" lsb="0" addr="696"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 141 (bank 1)" clashes="false" double_init="-0.019012" sint_init="-623">
+      <REGPART part_init="64913" part_double_init="-0.019012" clashes="false" width="16" msb="15" lsb="0" addr="697"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 142 (bank 1)" clashes="false" double_init="0.024170" sint_init="792">
+      <REGPART part_init="792" part_double_init="0.024170" clashes="false" width="16" msb="15" lsb="0" addr="698"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 143 (bank 1)" clashes="false" double_init="-0.021027" sint_init="-689">
+      <REGPART part_init="64847" part_double_init="-0.021027" clashes="false" width="16" msb="15" lsb="0" addr="699"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 144 (bank 1)" clashes="false" double_init="0.009247" sint_init="303">
+      <REGPART part_init="303" part_double_init="0.009247" clashes="false" width="16" msb="15" lsb="0" addr="700"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 145 (bank 1)" clashes="false" double_init="0.008514" sint_init="279">
+      <REGPART part_init="279" part_double_init="0.008514" clashes="false" width="16" msb="15" lsb="0" addr="701"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 146 (bank 1)" clashes="false" double_init="-0.026978" sint_init="-884">
+      <REGPART part_init="64652" part_double_init="-0.026978" clashes="false" width="16" msb="15" lsb="0" addr="702"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 147 (bank 1)" clashes="false" double_init="0.039429" sint_init="1292">
+      <REGPART part_init="1292" part_double_init="0.039429" clashes="false" width="16" msb="15" lsb="0" addr="703"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 148 (bank 1)" clashes="false" double_init="-0.039642" sint_init="-1299">
+      <REGPART part_init="64237" part_double_init="-0.039642" clashes="false" width="16" msb="15" lsb="0" addr="704"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 149 (bank 1)" clashes="false" double_init="0.023712" sint_init="777">
+      <REGPART part_init="777" part_double_init="0.023712" clashes="false" width="16" msb="15" lsb="0" addr="705"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 150 (bank 1)" clashes="false" double_init="0.008667" sint_init="284">
+      <REGPART part_init="284" part_double_init="0.008667" clashes="false" width="16" msb="15" lsb="0" addr="706"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 151 (bank 1)" clashes="false" double_init="-0.053467" sint_init="-1752">
+      <REGPART part_init="63784" part_double_init="-0.053467" clashes="false" width="16" msb="15" lsb="0" addr="707"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 152 (bank 1)" clashes="false" double_init="0.103180" sint_init="3381">
+      <REGPART part_init="3381" part_double_init="0.103180" clashes="false" width="16" msb="15" lsb="0" addr="708"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 153 (bank 1)" clashes="false" double_init="-0.148407" sint_init="-4863">
+      <REGPART part_init="60673" part_double_init="-0.148407" clashes="false" width="16" msb="15" lsb="0" addr="709"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 154 (bank 1)" clashes="false" double_init="0.179993" sint_init="5898">
+      <REGPART part_init="5898" part_double_init="0.179993" clashes="false" width="16" msb="15" lsb="0" addr="710"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 155 (bank 1)" clashes="false" double_init="0.808685" sint_init="26499">
+      <REGPART part_init="26499" part_double_init="0.808685" clashes="false" width="16" msb="15" lsb="0" addr="711"/>
+    </REG>
+  </REGS>
+  <REGS numregs="312" desc="FIR Coefficient Registers" origin="ddc_model_DUT_DUT_Chan_Filter_l1_Chan_Filter_chan_filter_re" clashes="false" rwmode="Read/Write" bitwidth="16" fracwidth="15" privatespace="false">
+    <REG numregparts="1" desc="FIR Coefficient Register 0 (bank 0)" clashes="false" double_init="0.001221" sint_init="40">
+      <REGPART part_init="40" part_double_init="0.001221" clashes="false" width="16" msb="15" lsb="0" addr="0"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 1 (bank 0)" clashes="false" double_init="0.000244" sint_init="8">
+      <REGPART part_init="8" part_double_init="0.000244" clashes="false" width="16" msb="15" lsb="0" addr="1"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 2 (bank 0)" clashes="false" double_init="-0.000916" sint_init="-30">
+      <REGPART part_init="65506" part_double_init="-0.000916" clashes="false" width="16" msb="15" lsb="0" addr="2"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 3 (bank 0)" clashes="false" double_init="-0.001343" sint_init="-44">
+      <REGPART part_init="65492" part_double_init="-0.001343" clashes="false" width="16" msb="15" lsb="0" addr="3"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 4 (bank 0)" clashes="false" double_init="-0.000641" sint_init="-21">
+      <REGPART part_init="65515" part_double_init="-0.000641" clashes="false" width="16" msb="15" lsb="0" addr="4"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 5 (bank 0)" clashes="false" double_init="0.000000" sint_init="0">
+      <REGPART part_init="0" part_double_init="0.000000" clashes="false" width="16" msb="15" lsb="0" addr="5"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 6 (bank 0)" clashes="false" double_init="-0.000275" sint_init="-9">
+      <REGPART part_init="65527" part_double_init="-0.000275" clashes="false" width="16" msb="15" lsb="0" addr="6"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 7 (bank 0)" clashes="false" double_init="-0.000641" sint_init="-21">
+      <REGPART part_init="65515" part_double_init="-0.000641" clashes="false" width="16" msb="15" lsb="0" addr="7"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 8 (bank 0)" clashes="false" double_init="-0.000244" sint_init="-8">
+      <REGPART part_init="65528" part_double_init="-0.000244" clashes="false" width="16" msb="15" lsb="0" addr="8"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 9 (bank 0)" clashes="false" double_init="0.000275" sint_init="9">
+      <REGPART part_init="9" part_double_init="0.000275" clashes="false" width="16" msb="15" lsb="0" addr="9"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 10 (bank 0)" clashes="false" double_init="0.000000" sint_init="0">
+      <REGPART part_init="0" part_double_init="0.000000" clashes="false" width="16" msb="15" lsb="0" addr="10"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 11 (bank 0)" clashes="false" double_init="-0.000488" sint_init="-16">
+      <REGPART part_init="65520" part_double_init="-0.000488" clashes="false" width="16" msb="15" lsb="0" addr="11"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 12 (bank 0)" clashes="false" double_init="-0.000183" sint_init="-6">
+      <REGPART part_init="65530" part_double_init="-0.000183" clashes="false" width="16" msb="15" lsb="0" addr="12"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 13 (bank 0)" clashes="false" double_init="0.000397" sint_init="13">
+      <REGPART part_init="13" part_double_init="0.000397" clashes="false" width="16" msb="15" lsb="0" addr="13"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 14 (bank 0)" clashes="false" double_init="0.000153" sint_init="5">
+      <REGPART part_init="5" part_double_init="0.000153" clashes="false" width="16" msb="15" lsb="0" addr="14"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 15 (bank 0)" clashes="false" double_init="-0.000458" sint_init="-15">
+      <REGPART part_init="65521" part_double_init="-0.000458" clashes="false" width="16" msb="15" lsb="0" addr="15"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 16 (bank 0)" clashes="false" double_init="-0.000244" sint_init="-8">
+      <REGPART part_init="65528" part_double_init="-0.000244" clashes="false" width="16" msb="15" lsb="0" addr="16"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 17 (bank 0)" clashes="false" double_init="0.000427" sint_init="14">
+      <REGPART part_init="14" part_double_init="0.000427" clashes="false" width="16" msb="15" lsb="0" addr="17"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 18 (bank 0)" clashes="false" double_init="0.000305" sint_init="10">
+      <REGPART part_init="10" part_double_init="0.000305" clashes="false" width="16" msb="15" lsb="0" addr="18"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 19 (bank 0)" clashes="false" double_init="-0.000458" sint_init="-15">
+      <REGPART part_init="65521" part_double_init="-0.000458" clashes="false" width="16" msb="15" lsb="0" addr="19"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 20 (bank 0)" clashes="false" double_init="-0.000366" sint_init="-12">
+      <REGPART part_init="65524" part_double_init="-0.000366" clashes="false" width="16" msb="15" lsb="0" addr="20"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 21 (bank 0)" clashes="false" double_init="0.000427" sint_init="14">
+      <REGPART part_init="14" part_double_init="0.000427" clashes="false" width="16" msb="15" lsb="0" addr="21"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 22 (bank 0)" clashes="false" double_init="0.000427" sint_init="14">
+      <REGPART part_init="14" part_double_init="0.000427" clashes="false" width="16" msb="15" lsb="0" addr="22"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 23 (bank 0)" clashes="false" double_init="-0.000427" sint_init="-14">
+      <REGPART part_init="65522" part_double_init="-0.000427" clashes="false" width="16" msb="15" lsb="0" addr="23"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 24 (bank 0)" clashes="false" double_init="-0.000519" sint_init="-17">
+      <REGPART part_init="65519" part_double_init="-0.000519" clashes="false" width="16" msb="15" lsb="0" addr="24"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 25 (bank 0)" clashes="false" double_init="0.000366" sint_init="12">
+      <REGPART part_init="12" part_double_init="0.000366" clashes="false" width="16" msb="15" lsb="0" addr="25"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 26 (bank 0)" clashes="false" double_init="0.000580" sint_init="19">
+      <REGPART part_init="19" part_double_init="0.000580" clashes="false" width="16" msb="15" lsb="0" addr="26"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 27 (bank 0)" clashes="false" double_init="-0.000336" sint_init="-11">
+      <REGPART part_init="65525" part_double_init="-0.000336" clashes="false" width="16" msb="15" lsb="0" addr="27"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 28 (bank 0)" clashes="false" double_init="-0.000671" sint_init="-22">
+      <REGPART part_init="65514" part_double_init="-0.000671" clashes="false" width="16" msb="15" lsb="0" addr="28"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 29 (bank 0)" clashes="false" double_init="0.000275" sint_init="9">
+      <REGPART part_init="9" part_double_init="0.000275" clashes="false" width="16" msb="15" lsb="0" addr="29"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 30 (bank 0)" clashes="false" double_init="0.000732" sint_init="24">
+      <REGPART part_init="24" part_double_init="0.000732" clashes="false" width="16" msb="15" lsb="0" addr="30"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 31 (bank 0)" clashes="false" double_init="-0.000214" sint_init="-7">
+      <REGPART part_init="65529" part_double_init="-0.000214" clashes="false" width="16" msb="15" lsb="0" addr="31"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 32 (bank 0)" clashes="false" double_init="-0.000824" sint_init="-27">
+      <REGPART part_init="65509" part_double_init="-0.000824" clashes="false" width="16" msb="15" lsb="0" addr="32"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 33 (bank 0)" clashes="false" double_init="0.000153" sint_init="5">
+      <REGPART part_init="5" part_double_init="0.000153" clashes="false" width="16" msb="15" lsb="0" addr="33"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 34 (bank 0)" clashes="false" double_init="0.000885" sint_init="29">
+      <REGPART part_init="29" part_double_init="0.000885" clashes="false" width="16" msb="15" lsb="0" addr="34"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 35 (bank 0)" clashes="false" double_init="-0.000061" sint_init="-2">
+      <REGPART part_init="65534" part_double_init="-0.000061" clashes="false" width="16" msb="15" lsb="0" addr="35"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 36 (bank 0)" clashes="false" double_init="-0.000946" sint_init="-31">
+      <REGPART part_init="65505" part_double_init="-0.000946" clashes="false" width="16" msb="15" lsb="0" addr="36"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 37 (bank 0)" clashes="false" double_init="-0.000031" sint_init="-1">
+      <REGPART part_init="65535" part_double_init="-0.000031" clashes="false" width="16" msb="15" lsb="0" addr="37"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 38 (bank 0)" clashes="false" double_init="0.000977" sint_init="32">
+      <REGPART part_init="32" part_double_init="0.000977" clashes="false" width="16" msb="15" lsb="0" addr="38"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 39 (bank 0)" clashes="false" double_init="0.000153" sint_init="5">
+      <REGPART part_init="5" part_double_init="0.000153" clashes="false" width="16" msb="15" lsb="0" addr="39"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 40 (bank 0)" clashes="false" double_init="-0.001007" sint_init="-33">
+      <REGPART part_init="65503" part_double_init="-0.001007" clashes="false" width="16" msb="15" lsb="0" addr="40"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 41 (bank 0)" clashes="false" double_init="-0.000275" sint_init="-9">
+      <REGPART part_init="65527" part_double_init="-0.000275" clashes="false" width="16" msb="15" lsb="0" addr="41"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 42 (bank 0)" clashes="false" double_init="0.001038" sint_init="34">
+      <REGPART part_init="34" part_double_init="0.001038" clashes="false" width="16" msb="15" lsb="0" addr="42"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 43 (bank 0)" clashes="false" double_init="0.000397" sint_init="13">
+      <REGPART part_init="13" part_double_init="0.000397" clashes="false" width="16" msb="15" lsb="0" addr="43"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 44 (bank 0)" clashes="false" double_init="-0.001068" sint_init="-35">
+      <REGPART part_init="65501" part_double_init="-0.001068" clashes="false" width="16" msb="15" lsb="0" addr="44"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 45 (bank 0)" clashes="false" double_init="-0.000549" sint_init="-18">
+      <REGPART part_init="65518" part_double_init="-0.000549" clashes="false" width="16" msb="15" lsb="0" addr="45"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 46 (bank 0)" clashes="false" double_init="0.001068" sint_init="35">
+      <REGPART part_init="35" part_double_init="0.001068" clashes="false" width="16" msb="15" lsb="0" addr="46"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 47 (bank 0)" clashes="false" double_init="0.000702" sint_init="23">
+      <REGPART part_init="23" part_double_init="0.000702" clashes="false" width="16" msb="15" lsb="0" addr="47"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 48 (bank 0)" clashes="false" double_init="-0.001038" sint_init="-34">
+      <REGPART part_init="65502" part_double_init="-0.001038" clashes="false" width="16" msb="15" lsb="0" addr="48"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 49 (bank 0)" clashes="false" double_init="-0.000854" sint_init="-28">
+      <REGPART part_init="65508" part_double_init="-0.000854" clashes="false" width="16" msb="15" lsb="0" addr="49"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 50 (bank 0)" clashes="false" double_init="0.001007" sint_init="33">
+      <REGPART part_init="33" part_double_init="0.001007" clashes="false" width="16" msb="15" lsb="0" addr="50"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 51 (bank 0)" clashes="false" double_init="0.001007" sint_init="33">
+      <REGPART part_init="33" part_double_init="0.001007" clashes="false" width="16" msb="15" lsb="0" addr="51"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 52 (bank 0)" clashes="false" double_init="-0.000946" sint_init="-31">
+      <REGPART part_init="65505" part_double_init="-0.000946" clashes="false" width="16" msb="15" lsb="0" addr="52"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 53 (bank 0)" clashes="false" double_init="-0.001160" sint_init="-38">
+      <REGPART part_init="65498" part_double_init="-0.001160" clashes="false" width="16" msb="15" lsb="0" addr="53"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 54 (bank 0)" clashes="false" double_init="0.000885" sint_init="29">
+      <REGPART part_init="29" part_double_init="0.000885" clashes="false" width="16" msb="15" lsb="0" addr="54"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 55 (bank 0)" clashes="false" double_init="0.001312" sint_init="43">
+      <REGPART part_init="43" part_double_init="0.001312" clashes="false" width="16" msb="15" lsb="0" addr="55"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 56 (bank 0)" clashes="false" double_init="-0.000763" sint_init="-25">
+      <REGPART part_init="65511" part_double_init="-0.000763" clashes="false" width="16" msb="15" lsb="0" addr="56"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 57 (bank 0)" clashes="false" double_init="-0.001465" sint_init="-48">
+      <REGPART part_init="65488" part_double_init="-0.001465" clashes="false" width="16" msb="15" lsb="0" addr="57"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 58 (bank 0)" clashes="false" double_init="0.000641" sint_init="21">
+      <REGPART part_init="21" part_double_init="0.000641" clashes="false" width="16" msb="15" lsb="0" addr="58"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 59 (bank 0)" clashes="false" double_init="0.001617" sint_init="53">
+      <REGPART part_init="53" part_double_init="0.001617" clashes="false" width="16" msb="15" lsb="0" addr="59"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 60 (bank 0)" clashes="false" double_init="-0.000519" sint_init="-17">
+      <REGPART part_init="65519" part_double_init="-0.000519" clashes="false" width="16" msb="15" lsb="0" addr="60"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 61 (bank 0)" clashes="false" double_init="-0.001770" sint_init="-58">
+      <REGPART part_init="65478" part_double_init="-0.001770" clashes="false" width="16" msb="15" lsb="0" addr="61"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 62 (bank 0)" clashes="false" double_init="0.000336" sint_init="11">
+      <REGPART part_init="11" part_double_init="0.000336" clashes="false" width="16" msb="15" lsb="0" addr="62"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 63 (bank 0)" clashes="false" double_init="0.001892" sint_init="62">
+      <REGPART part_init="62" part_double_init="0.001892" clashes="false" width="16" msb="15" lsb="0" addr="63"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 64 (bank 0)" clashes="false" double_init="-0.000153" sint_init="-5">
+      <REGPART part_init="65531" part_double_init="-0.000153" clashes="false" width="16" msb="15" lsb="0" addr="64"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 65 (bank 0)" clashes="false" double_init="-0.002014" sint_init="-66">
+      <REGPART part_init="65470" part_double_init="-0.002014" clashes="false" width="16" msb="15" lsb="0" addr="65"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 66 (bank 0)" clashes="false" double_init="-0.000061" sint_init="-2">
+      <REGPART part_init="65534" part_double_init="-0.000061" clashes="false" width="16" msb="15" lsb="0" addr="66"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 67 (bank 0)" clashes="false" double_init="0.002106" sint_init="69">
+      <REGPART part_init="69" part_double_init="0.002106" clashes="false" width="16" msb="15" lsb="0" addr="67"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 68 (bank 0)" clashes="false" double_init="0.000275" sint_init="9">
+      <REGPART part_init="9" part_double_init="0.000275" clashes="false" width="16" msb="15" lsb="0" addr="68"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 69 (bank 0)" clashes="false" double_init="-0.002167" sint_init="-71">
+      <REGPART part_init="65465" part_double_init="-0.002167" clashes="false" width="16" msb="15" lsb="0" addr="69"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 70 (bank 0)" clashes="false" double_init="-0.000549" sint_init="-18">
+      <REGPART part_init="65518" part_double_init="-0.000549" clashes="false" width="16" msb="15" lsb="0" addr="70"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 71 (bank 0)" clashes="false" double_init="0.002228" sint_init="73">
+      <REGPART part_init="73" part_double_init="0.002228" clashes="false" width="16" msb="15" lsb="0" addr="71"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 72 (bank 0)" clashes="false" double_init="0.000793" sint_init="26">
+      <REGPART part_init="26" part_double_init="0.000793" clashes="false" width="16" msb="15" lsb="0" addr="72"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 73 (bank 0)" clashes="false" double_init="-0.002228" sint_init="-73">
+      <REGPART part_init="65463" part_double_init="-0.002228" clashes="false" width="16" msb="15" lsb="0" addr="73"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 74 (bank 0)" clashes="false" double_init="-0.001099" sint_init="-36">
+      <REGPART part_init="65500" part_double_init="-0.001099" clashes="false" width="16" msb="15" lsb="0" addr="74"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 75 (bank 0)" clashes="false" double_init="0.002228" sint_init="73">
+      <REGPART part_init="73" part_double_init="0.002228" clashes="false" width="16" msb="15" lsb="0" addr="75"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 76 (bank 0)" clashes="false" double_init="0.001373" sint_init="45">
+      <REGPART part_init="45" part_double_init="0.001373" clashes="false" width="16" msb="15" lsb="0" addr="76"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 77 (bank 0)" clashes="false" double_init="-0.002197" sint_init="-72">
+      <REGPART part_init="65464" part_double_init="-0.002197" clashes="false" width="16" msb="15" lsb="0" addr="77"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 78 (bank 0)" clashes="false" double_init="-0.001678" sint_init="-55">
+      <REGPART part_init="65481" part_double_init="-0.001678" clashes="false" width="16" msb="15" lsb="0" addr="78"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 79 (bank 0)" clashes="false" double_init="0.002106" sint_init="69">
+      <REGPART part_init="69" part_double_init="0.002106" clashes="false" width="16" msb="15" lsb="0" addr="79"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 80 (bank 0)" clashes="false" double_init="0.002014" sint_init="66">
+      <REGPART part_init="66" part_double_init="0.002014" clashes="false" width="16" msb="15" lsb="0" addr="80"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 81 (bank 0)" clashes="false" double_init="-0.002014" sint_init="-66">
+      <REGPART part_init="65470" part_double_init="-0.002014" clashes="false" width="16" msb="15" lsb="0" addr="81"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 82 (bank 0)" clashes="false" double_init="-0.002319" sint_init="-76">
+      <REGPART part_init="65460" part_double_init="-0.002319" clashes="false" width="16" msb="15" lsb="0" addr="82"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 83 (bank 0)" clashes="false" double_init="0.001862" sint_init="61">
+      <REGPART part_init="61" part_double_init="0.001862" clashes="false" width="16" msb="15" lsb="0" addr="83"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 84 (bank 0)" clashes="false" double_init="0.002625" sint_init="86">
+      <REGPART part_init="86" part_double_init="0.002625" clashes="false" width="16" msb="15" lsb="0" addr="84"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 85 (bank 0)" clashes="false" double_init="-0.001648" sint_init="-54">
+      <REGPART part_init="65482" part_double_init="-0.001648" clashes="false" width="16" msb="15" lsb="0" addr="85"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 86 (bank 0)" clashes="false" double_init="-0.002960" sint_init="-97">
+      <REGPART part_init="65439" part_double_init="-0.002960" clashes="false" width="16" msb="15" lsb="0" addr="86"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 87 (bank 0)" clashes="false" double_init="0.001434" sint_init="47">
+      <REGPART part_init="47" part_double_init="0.001434" clashes="false" width="16" msb="15" lsb="0" addr="87"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 88 (bank 0)" clashes="false" double_init="0.003235" sint_init="106">
+      <REGPART part_init="106" part_double_init="0.003235" clashes="false" width="16" msb="15" lsb="0" addr="88"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 89 (bank 0)" clashes="false" double_init="-0.001160" sint_init="-38">
+      <REGPART part_init="65498" part_double_init="-0.001160" clashes="false" width="16" msb="15" lsb="0" addr="89"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 90 (bank 0)" clashes="false" double_init="-0.003540" sint_init="-116">
+      <REGPART part_init="65420" part_double_init="-0.003540" clashes="false" width="16" msb="15" lsb="0" addr="90"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 91 (bank 0)" clashes="false" double_init="0.000824" sint_init="27">
+      <REGPART part_init="27" part_double_init="0.000824" clashes="false" width="16" msb="15" lsb="0" addr="91"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 92 (bank 0)" clashes="false" double_init="0.003815" sint_init="125">
+      <REGPART part_init="125" part_double_init="0.003815" clashes="false" width="16" msb="15" lsb="0" addr="92"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 93 (bank 0)" clashes="false" double_init="-0.000458" sint_init="-15">
+      <REGPART part_init="65521" part_double_init="-0.000458" clashes="false" width="16" msb="15" lsb="0" addr="93"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 94 (bank 0)" clashes="false" double_init="-0.004059" sint_init="-133">
+      <REGPART part_init="65403" part_double_init="-0.004059" clashes="false" width="16" msb="15" lsb="0" addr="94"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 95 (bank 0)" clashes="false" double_init="0.000031" sint_init="1">
+      <REGPART part_init="1" part_double_init="0.000031" clashes="false" width="16" msb="15" lsb="0" addr="95"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 96 (bank 0)" clashes="false" double_init="0.004242" sint_init="139">
+      <REGPART part_init="139" part_double_init="0.004242" clashes="false" width="16" msb="15" lsb="0" addr="96"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 97 (bank 0)" clashes="false" double_init="0.000427" sint_init="14">
+      <REGPART part_init="14" part_double_init="0.000427" clashes="false" width="16" msb="15" lsb="0" addr="97"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 98 (bank 0)" clashes="false" double_init="-0.004425" sint_init="-145">
+      <REGPART part_init="65391" part_double_init="-0.004425" clashes="false" width="16" msb="15" lsb="0" addr="98"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 99 (bank 0)" clashes="false" double_init="-0.000916" sint_init="-30">
+      <REGPART part_init="65506" part_double_init="-0.000916" clashes="false" width="16" msb="15" lsb="0" addr="99"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 100 (bank 0)" clashes="false" double_init="0.004578" sint_init="150">
+      <REGPART part_init="150" part_double_init="0.004578" clashes="false" width="16" msb="15" lsb="0" addr="100"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 101 (bank 0)" clashes="false" double_init="0.001465" sint_init="48">
+      <REGPART part_init="48" part_double_init="0.001465" clashes="false" width="16" msb="15" lsb="0" addr="101"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 102 (bank 0)" clashes="false" double_init="-0.004639" sint_init="-152">
+      <REGPART part_init="65384" part_double_init="-0.004639" clashes="false" width="16" msb="15" lsb="0" addr="102"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 103 (bank 0)" clashes="false" double_init="-0.002045" sint_init="-67">
+      <REGPART part_init="65469" part_double_init="-0.002045" clashes="false" width="16" msb="15" lsb="0" addr="103"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 104 (bank 0)" clashes="false" double_init="0.004669" sint_init="153">
+      <REGPART part_init="153" part_double_init="0.004669" clashes="false" width="16" msb="15" lsb="0" addr="104"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 105 (bank 0)" clashes="false" double_init="0.002655" sint_init="87">
+      <REGPART part_init="87" part_double_init="0.002655" clashes="false" width="16" msb="15" lsb="0" addr="105"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 106 (bank 0)" clashes="false" double_init="-0.004639" sint_init="-152">
+      <REGPART part_init="65384" part_double_init="-0.004639" clashes="false" width="16" msb="15" lsb="0" addr="106"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 107 (bank 0)" clashes="false" double_init="-0.003326" sint_init="-109">
+      <REGPART part_init="65427" part_double_init="-0.003326" clashes="false" width="16" msb="15" lsb="0" addr="107"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 108 (bank 0)" clashes="false" double_init="0.004547" sint_init="149">
+      <REGPART part_init="149" part_double_init="0.004547" clashes="false" width="16" msb="15" lsb="0" addr="108"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 109 (bank 0)" clashes="false" double_init="0.003998" sint_init="131">
+      <REGPART part_init="131" part_double_init="0.003998" clashes="false" width="16" msb="15" lsb="0" addr="109"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 110 (bank 0)" clashes="false" double_init="-0.004395" sint_init="-144">
+      <REGPART part_init="65392" part_double_init="-0.004395" clashes="false" width="16" msb="15" lsb="0" addr="110"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 111 (bank 0)" clashes="false" double_init="-0.004700" sint_init="-154">
+      <REGPART part_init="65382" part_double_init="-0.004700" clashes="false" width="16" msb="15" lsb="0" addr="111"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 112 (bank 0)" clashes="false" double_init="0.004150" sint_init="136">
+      <REGPART part_init="136" part_double_init="0.004150" clashes="false" width="16" msb="15" lsb="0" addr="112"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 113 (bank 0)" clashes="false" double_init="0.005432" sint_init="178">
+      <REGPART part_init="178" part_double_init="0.005432" clashes="false" width="16" msb="15" lsb="0" addr="113"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 114 (bank 0)" clashes="false" double_init="-0.003815" sint_init="-125">
+      <REGPART part_init="65411" part_double_init="-0.003815" clashes="false" width="16" msb="15" lsb="0" addr="114"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 115 (bank 0)" clashes="false" double_init="-0.006165" sint_init="-202">
+      <REGPART part_init="65334" part_double_init="-0.006165" clashes="false" width="16" msb="15" lsb="0" addr="115"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 116 (bank 0)" clashes="false" double_init="0.003357" sint_init="110">
+      <REGPART part_init="110" part_double_init="0.003357" clashes="false" width="16" msb="15" lsb="0" addr="116"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 117 (bank 0)" clashes="false" double_init="0.006927" sint_init="227">
+      <REGPART part_init="227" part_double_init="0.006927" clashes="false" width="16" msb="15" lsb="0" addr="117"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 118 (bank 0)" clashes="false" double_init="-0.002838" sint_init="-93">
+      <REGPART part_init="65443" part_double_init="-0.002838" clashes="false" width="16" msb="15" lsb="0" addr="118"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 119 (bank 0)" clashes="false" double_init="-0.007690" sint_init="-252">
+      <REGPART part_init="65284" part_double_init="-0.007690" clashes="false" width="16" msb="15" lsb="0" addr="119"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 120 (bank 0)" clashes="false" double_init="0.002197" sint_init="72">
+      <REGPART part_init="72" part_double_init="0.002197" clashes="false" width="16" msb="15" lsb="0" addr="120"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 121 (bank 0)" clashes="false" double_init="0.008484" sint_init="278">
+      <REGPART part_init="278" part_double_init="0.008484" clashes="false" width="16" msb="15" lsb="0" addr="121"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 122 (bank 0)" clashes="false" double_init="-0.001434" sint_init="-47">
+      <REGPART part_init="65489" part_double_init="-0.001434" clashes="false" width="16" msb="15" lsb="0" addr="122"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 123 (bank 0)" clashes="false" double_init="-0.009247" sint_init="-303">
+      <REGPART part_init="65233" part_double_init="-0.009247" clashes="false" width="16" msb="15" lsb="0" addr="123"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 124 (bank 0)" clashes="false" double_init="0.000519" sint_init="17">
+      <REGPART part_init="17" part_double_init="0.000519" clashes="false" width="16" msb="15" lsb="0" addr="124"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 125 (bank 0)" clashes="false" double_init="0.009979" sint_init="327">
+      <REGPART part_init="327" part_double_init="0.009979" clashes="false" width="16" msb="15" lsb="0" addr="125"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 126 (bank 0)" clashes="false" double_init="0.000519" sint_init="17">
+      <REGPART part_init="17" part_double_init="0.000519" clashes="false" width="16" msb="15" lsb="0" addr="126"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 127 (bank 0)" clashes="false" double_init="-0.010742" sint_init="-352">
+      <REGPART part_init="65184" part_double_init="-0.010742" clashes="false" width="16" msb="15" lsb="0" addr="127"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 128 (bank 0)" clashes="false" double_init="-0.001740" sint_init="-57">
+      <REGPART part_init="65479" part_double_init="-0.001740" clashes="false" width="16" msb="15" lsb="0" addr="128"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 129 (bank 0)" clashes="false" double_init="0.011444" sint_init="375">
+      <REGPART part_init="375" part_double_init="0.011444" clashes="false" width="16" msb="15" lsb="0" addr="129"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 130 (bank 0)" clashes="false" double_init="0.003143" sint_init="103">
+      <REGPART part_init="103" part_double_init="0.003143" clashes="false" width="16" msb="15" lsb="0" addr="130"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 131 (bank 0)" clashes="false" double_init="-0.012146" sint_init="-398">
+      <REGPART part_init="65138" part_double_init="-0.012146" clashes="false" width="16" msb="15" lsb="0" addr="131"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 132 (bank 0)" clashes="false" double_init="-0.004761" sint_init="-156">
+      <REGPART part_init="65380" part_double_init="-0.004761" clashes="false" width="16" msb="15" lsb="0" addr="132"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 133 (bank 0)" clashes="false" double_init="0.012817" sint_init="420">
+      <REGPART part_init="420" part_double_init="0.012817" clashes="false" width="16" msb="15" lsb="0" addr="133"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 134 (bank 0)" clashes="false" double_init="0.006653" sint_init="218">
+      <REGPART part_init="218" part_double_init="0.006653" clashes="false" width="16" msb="15" lsb="0" addr="134"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 135 (bank 0)" clashes="false" double_init="-0.013428" sint_init="-440">
+      <REGPART part_init="65096" part_double_init="-0.013428" clashes="false" width="16" msb="15" lsb="0" addr="135"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 136 (bank 0)" clashes="false" double_init="-0.008881" sint_init="-291">
+      <REGPART part_init="65245" part_double_init="-0.008881" clashes="false" width="16" msb="15" lsb="0" addr="136"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 137 (bank 0)" clashes="false" double_init="0.014008" sint_init="459">
+      <REGPART part_init="459" part_double_init="0.014008" clashes="false" width="16" msb="15" lsb="0" addr="137"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 138 (bank 0)" clashes="false" double_init="0.011536" sint_init="378">
+      <REGPART part_init="378" part_double_init="0.011536" clashes="false" width="16" msb="15" lsb="0" addr="138"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 139 (bank 0)" clashes="false" double_init="-0.014557" sint_init="-477">
+      <REGPART part_init="65059" part_double_init="-0.014557" clashes="false" width="16" msb="15" lsb="0" addr="139"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 140 (bank 0)" clashes="false" double_init="-0.014771" sint_init="-484">
+      <REGPART part_init="65052" part_double_init="-0.014771" clashes="false" width="16" msb="15" lsb="0" addr="140"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 141 (bank 0)" clashes="false" double_init="0.015045" sint_init="493">
+      <REGPART part_init="493" part_double_init="0.015045" clashes="false" width="16" msb="15" lsb="0" addr="141"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 142 (bank 0)" clashes="false" double_init="0.018799" sint_init="616">
+      <REGPART part_init="616" part_double_init="0.018799" clashes="false" width="16" msb="15" lsb="0" addr="142"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 143 (bank 0)" clashes="false" double_init="-0.015472" sint_init="-507">
+      <REGPART part_init="65029" part_double_init="-0.015472" clashes="false" width="16" msb="15" lsb="0" addr="143"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 144 (bank 0)" clashes="false" double_init="-0.024078" sint_init="-789">
+      <REGPART part_init="64747" part_double_init="-0.024078" clashes="false" width="16" msb="15" lsb="0" addr="144"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 145 (bank 0)" clashes="false" double_init="0.015839" sint_init="519">
+      <REGPART part_init="519" part_double_init="0.015839" clashes="false" width="16" msb="15" lsb="0" addr="145"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 146 (bank 0)" clashes="false" double_init="0.031342" sint_init="1027">
+      <REGPART part_init="1027" part_double_init="0.031342" clashes="false" width="16" msb="15" lsb="0" addr="146"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 147 (bank 0)" clashes="false" double_init="-0.016144" sint_init="-529">
+      <REGPART part_init="65007" part_double_init="-0.016144" clashes="false" width="16" msb="15" lsb="0" addr="147"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 148 (bank 0)" clashes="false" double_init="-0.042297" sint_init="-1386">
+      <REGPART part_init="64150" part_double_init="-0.042297" clashes="false" width="16" msb="15" lsb="0" addr="148"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 149 (bank 0)" clashes="false" double_init="0.016357" sint_init="536">
+      <REGPART part_init="536" part_double_init="0.016357" clashes="false" width="16" msb="15" lsb="0" addr="149"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 150 (bank 0)" clashes="false" double_init="0.061401" sint_init="2012">
+      <REGPART part_init="2012" part_double_init="0.061401" clashes="false" width="16" msb="15" lsb="0" addr="150"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 151 (bank 0)" clashes="false" double_init="-0.016541" sint_init="-542">
+      <REGPART part_init="64994" part_double_init="-0.016541" clashes="false" width="16" msb="15" lsb="0" addr="151"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 152 (bank 0)" clashes="false" double_init="-0.104736" sint_init="-3432">
+      <REGPART part_init="62104" part_double_init="-0.104736" clashes="false" width="16" msb="15" lsb="0" addr="152"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 153 (bank 0)" clashes="false" double_init="0.016663" sint_init="546">
+      <REGPART part_init="546" part_double_init="0.016663" clashes="false" width="16" msb="15" lsb="0" addr="153"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 154 (bank 0)" clashes="false" double_init="0.317841" sint_init="10415">
+      <REGPART part_init="10415" part_double_init="0.317841" clashes="false" width="16" msb="15" lsb="0" addr="154"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 155 (bank 0)" clashes="false" double_init="0.483307" sint_init="15837">
+      <REGPART part_init="15837" part_double_init="0.483307" clashes="false" width="16" msb="15" lsb="0" addr="155"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 0 (bank 1)" clashes="false" double_init="0.001343" sint_init="44">
+      <REGPART part_init="44" part_double_init="0.001343" clashes="false" width="16" msb="15" lsb="0" addr="156"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 1 (bank 1)" clashes="false" double_init="0.001892" sint_init="62">
+      <REGPART part_init="62" part_double_init="0.001892" clashes="false" width="16" msb="15" lsb="0" addr="157"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 2 (bank 1)" clashes="false" double_init="-0.000793" sint_init="-26">
+      <REGPART part_init="65510" part_double_init="-0.000793" clashes="false" width="16" msb="15" lsb="0" addr="158"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 3 (bank 1)" clashes="false" double_init="0.000153" sint_init="5">
+      <REGPART part_init="5" part_double_init="0.000153" clashes="false" width="16" msb="15" lsb="0" addr="159"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 4 (bank 1)" clashes="false" double_init="0.000183" sint_init="6">
+      <REGPART part_init="6" part_double_init="0.000183" clashes="false" width="16" msb="15" lsb="0" addr="160"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 5 (bank 1)" clashes="false" double_init="-0.000366" sint_init="-12">
+      <REGPART part_init="65524" part_double_init="-0.000366" clashes="false" width="16" msb="15" lsb="0" addr="161"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 6 (bank 1)" clashes="false" double_init="0.000397" sint_init="13">
+      <REGPART part_init="13" part_double_init="0.000397" clashes="false" width="16" msb="15" lsb="0" addr="162"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 7 (bank 1)" clashes="false" double_init="-0.000305" sint_init="-10">
+      <REGPART part_init="65526" part_double_init="-0.000305" clashes="false" width="16" msb="15" lsb="0" addr="163"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 8 (bank 1)" clashes="false" double_init="0.000122" sint_init="4">
+      <REGPART part_init="4" part_double_init="0.000122" clashes="false" width="16" msb="15" lsb="0" addr="164"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 9 (bank 1)" clashes="false" double_init="0.000092" sint_init="3">
+      <REGPART part_init="3" part_double_init="0.000092" clashes="false" width="16" msb="15" lsb="0" addr="165"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 10 (bank 1)" clashes="false" double_init="-0.000305" sint_init="-10">
+      <REGPART part_init="65526" part_double_init="-0.000305" clashes="false" width="16" msb="15" lsb="0" addr="166"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 11 (bank 1)" clashes="false" double_init="0.000397" sint_init="13">
+      <REGPART part_init="13" part_double_init="0.000397" clashes="false" width="16" msb="15" lsb="0" addr="167"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 12 (bank 1)" clashes="false" double_init="-0.000397" sint_init="-13">
+      <REGPART part_init="65523" part_double_init="-0.000397" clashes="false" width="16" msb="15" lsb="0" addr="168"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 13 (bank 1)" clashes="false" double_init="0.000244" sint_init="8">
+      <REGPART part_init="8" part_double_init="0.000244" clashes="false" width="16" msb="15" lsb="0" addr="169"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 14 (bank 1)" clashes="false" double_init="0.000000" sint_init="0">
+      <REGPART part_init="0" part_double_init="0.000000" clashes="false" width="16" msb="15" lsb="0" addr="170"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 15 (bank 1)" clashes="false" double_init="-0.000275" sint_init="-9">
+      <REGPART part_init="65527" part_double_init="-0.000275" clashes="false" width="16" msb="15" lsb="0" addr="171"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 16 (bank 1)" clashes="false" double_init="0.000458" sint_init="15">
+      <REGPART part_init="15" part_double_init="0.000458" clashes="false" width="16" msb="15" lsb="0" addr="172"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 17 (bank 1)" clashes="false" double_init="-0.000488" sint_init="-16">
+      <REGPART part_init="65520" part_double_init="-0.000488" clashes="false" width="16" msb="15" lsb="0" addr="173"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 18 (bank 1)" clashes="false" double_init="0.000336" sint_init="11">
+      <REGPART part_init="11" part_double_init="0.000336" clashes="false" width="16" msb="15" lsb="0" addr="174"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 19 (bank 1)" clashes="false" double_init="-0.000061" sint_init="-2">
+      <REGPART part_init="65534" part_double_init="-0.000061" clashes="false" width="16" msb="15" lsb="0" addr="175"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 20 (bank 1)" clashes="false" double_init="-0.000244" sint_init="-8">
+      <REGPART part_init="65528" part_double_init="-0.000244" clashes="false" width="16" msb="15" lsb="0" addr="176"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 21 (bank 1)" clashes="false" double_init="0.000488" sint_init="16">
+      <REGPART part_init="16" part_double_init="0.000488" clashes="false" width="16" msb="15" lsb="0" addr="177"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 22 (bank 1)" clashes="false" double_init="-0.000580" sint_init="-19">
+      <REGPART part_init="65517" part_double_init="-0.000580" clashes="false" width="16" msb="15" lsb="0" addr="178"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 23 (bank 1)" clashes="false" double_init="0.000458" sint_init="15">
+      <REGPART part_init="15" part_double_init="0.000458" clashes="false" width="16" msb="15" lsb="0" addr="179"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 24 (bank 1)" clashes="false" double_init="-0.000153" sint_init="-5">
+      <REGPART part_init="65531" part_double_init="-0.000153" clashes="false" width="16" msb="15" lsb="0" addr="180"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 25 (bank 1)" clashes="false" double_init="-0.000214" sint_init="-7">
+      <REGPART part_init="65529" part_double_init="-0.000214" clashes="false" width="16" msb="15" lsb="0" addr="181"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 26 (bank 1)" clashes="false" double_init="0.000549" sint_init="18">
+      <REGPART part_init="18" part_double_init="0.000549" clashes="false" width="16" msb="15" lsb="0" addr="182"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 27 (bank 1)" clashes="false" double_init="-0.000671" sint_init="-22">
+      <REGPART part_init="65514" part_double_init="-0.000671" clashes="false" width="16" msb="15" lsb="0" addr="183"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 28 (bank 1)" clashes="false" double_init="0.000580" sint_init="19">
+      <REGPART part_init="19" part_double_init="0.000580" clashes="false" width="16" msb="15" lsb="0" addr="184"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 29 (bank 1)" clashes="false" double_init="-0.000275" sint_init="-9">
+      <REGPART part_init="65527" part_double_init="-0.000275" clashes="false" width="16" msb="15" lsb="0" addr="185"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 30 (bank 1)" clashes="false" double_init="-0.000153" sint_init="-5">
+      <REGPART part_init="65531" part_double_init="-0.000153" clashes="false" width="16" msb="15" lsb="0" addr="186"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 31 (bank 1)" clashes="false" double_init="0.000580" sint_init="19">
+      <REGPART part_init="19" part_double_init="0.000580" clashes="false" width="16" msb="15" lsb="0" addr="187"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 32 (bank 1)" clashes="false" double_init="-0.000793" sint_init="-26">
+      <REGPART part_init="65510" part_double_init="-0.000793" clashes="false" width="16" msb="15" lsb="0" addr="188"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 33 (bank 1)" clashes="false" double_init="0.000732" sint_init="24">
+      <REGPART part_init="24" part_double_init="0.000732" clashes="false" width="16" msb="15" lsb="0" addr="189"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 34 (bank 1)" clashes="false" double_init="-0.000427" sint_init="-14">
+      <REGPART part_init="65522" part_double_init="-0.000427" clashes="false" width="16" msb="15" lsb="0" addr="190"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 35 (bank 1)" clashes="false" double_init="-0.000061" sint_init="-2">
+      <REGPART part_init="65534" part_double_init="-0.000061" clashes="false" width="16" msb="15" lsb="0" addr="191"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 36 (bank 1)" clashes="false" double_init="0.000580" sint_init="19">
+      <REGPART part_init="19" part_double_init="0.000580" clashes="false" width="16" msb="15" lsb="0" addr="192"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 37 (bank 1)" clashes="false" double_init="-0.000885" sint_init="-29">
+      <REGPART part_init="65507" part_double_init="-0.000885" clashes="false" width="16" msb="15" lsb="0" addr="193"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 38 (bank 1)" clashes="false" double_init="0.000916" sint_init="30">
+      <REGPART part_init="30" part_double_init="0.000916" clashes="false" width="16" msb="15" lsb="0" addr="194"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 39 (bank 1)" clashes="false" double_init="-0.000580" sint_init="-19">
+      <REGPART part_init="65517" part_double_init="-0.000580" clashes="false" width="16" msb="15" lsb="0" addr="195"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 40 (bank 1)" clashes="false" double_init="0.000061" sint_init="2">
+      <REGPART part_init="2" part_double_init="0.000061" clashes="false" width="16" msb="15" lsb="0" addr="196"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 41 (bank 1)" clashes="false" double_init="0.000549" sint_init="18">
+      <REGPART part_init="18" part_double_init="0.000549" clashes="false" width="16" msb="15" lsb="0" addr="197"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 42 (bank 1)" clashes="false" double_init="-0.000977" sint_init="-32">
+      <REGPART part_init="65504" part_double_init="-0.000977" clashes="false" width="16" msb="15" lsb="0" addr="198"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 43 (bank 1)" clashes="false" double_init="0.001068" sint_init="35">
+      <REGPART part_init="35" part_double_init="0.001068" clashes="false" width="16" msb="15" lsb="0" addr="199"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 44 (bank 1)" clashes="false" double_init="-0.000793" sint_init="-26">
+      <REGPART part_init="65510" part_double_init="-0.000793" clashes="false" width="16" msb="15" lsb="0" addr="200"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 45 (bank 1)" clashes="false" double_init="0.000214" sint_init="7">
+      <REGPART part_init="7" part_double_init="0.000214" clashes="false" width="16" msb="15" lsb="0" addr="201"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 46 (bank 1)" clashes="false" double_init="0.000488" sint_init="16">
+      <REGPART part_init="16" part_double_init="0.000488" clashes="false" width="16" msb="15" lsb="0" addr="202"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 47 (bank 1)" clashes="false" double_init="-0.001038" sint_init="-34">
+      <REGPART part_init="65502" part_double_init="-0.001038" clashes="false" width="16" msb="15" lsb="0" addr="203"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 48 (bank 1)" clashes="false" double_init="0.001251" sint_init="41">
+      <REGPART part_init="41" part_double_init="0.001251" clashes="false" width="16" msb="15" lsb="0" addr="204"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 49 (bank 1)" clashes="false" double_init="-0.001038" sint_init="-34">
+      <REGPART part_init="65502" part_double_init="-0.001038" clashes="false" width="16" msb="15" lsb="0" addr="205"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 50 (bank 1)" clashes="false" double_init="0.000397" sint_init="13">
+      <REGPART part_init="13" part_double_init="0.000397" clashes="false" width="16" msb="15" lsb="0" addr="206"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 51 (bank 1)" clashes="false" double_init="0.000397" sint_init="13">
+      <REGPART part_init="13" part_double_init="0.000397" clashes="false" width="16" msb="15" lsb="0" addr="207"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 52 (bank 1)" clashes="false" double_init="-0.001099" sint_init="-36">
+      <REGPART part_init="65500" part_double_init="-0.001099" clashes="false" width="16" msb="15" lsb="0" addr="208"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 53 (bank 1)" clashes="false" double_init="0.001434" sint_init="47">
+      <REGPART part_init="47" part_double_init="0.001434" clashes="false" width="16" msb="15" lsb="0" addr="209"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 54 (bank 1)" clashes="false" double_init="-0.001282" sint_init="-42">
+      <REGPART part_init="65494" part_double_init="-0.001282" clashes="false" width="16" msb="15" lsb="0" addr="210"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 55 (bank 1)" clashes="false" double_init="0.000641" sint_init="21">
+      <REGPART part_init="21" part_double_init="0.000641" clashes="false" width="16" msb="15" lsb="0" addr="211"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 56 (bank 1)" clashes="false" double_init="0.000244" sint_init="8">
+      <REGPART part_init="8" part_double_init="0.000244" clashes="false" width="16" msb="15" lsb="0" addr="212"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 57 (bank 1)" clashes="false" double_init="-0.001099" sint_init="-36">
+      <REGPART part_init="65500" part_double_init="-0.001099" clashes="false" width="16" msb="15" lsb="0" addr="213"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 58 (bank 1)" clashes="false" double_init="0.001617" sint_init="53">
+      <REGPART part_init="53" part_double_init="0.001617" clashes="false" width="16" msb="15" lsb="0" addr="214"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 59 (bank 1)" clashes="false" double_init="-0.001556" sint_init="-51">
+      <REGPART part_init="65485" part_double_init="-0.001556" clashes="false" width="16" msb="15" lsb="0" addr="215"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 60 (bank 1)" clashes="false" double_init="0.000946" sint_init="31">
+      <REGPART part_init="31" part_double_init="0.000946" clashes="false" width="16" msb="15" lsb="0" addr="216"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 61 (bank 1)" clashes="false" double_init="0.000061" sint_init="2">
+      <REGPART part_init="2" part_double_init="0.000061" clashes="false" width="16" msb="15" lsb="0" addr="217"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 62 (bank 1)" clashes="false" double_init="-0.001068" sint_init="-35">
+      <REGPART part_init="65501" part_double_init="-0.001068" clashes="false" width="16" msb="15" lsb="0" addr="218"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 63 (bank 1)" clashes="false" double_init="0.001770" sint_init="58">
+      <REGPART part_init="58" part_double_init="0.001770" clashes="false" width="16" msb="15" lsb="0" addr="219"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 64 (bank 1)" clashes="false" double_init="-0.001862" sint_init="-61">
+      <REGPART part_init="65475" part_double_init="-0.001862" clashes="false" width="16" msb="15" lsb="0" addr="220"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 65 (bank 1)" clashes="false" double_init="0.001282" sint_init="42">
+      <REGPART part_init="42" part_double_init="0.001282" clashes="false" width="16" msb="15" lsb="0" addr="221"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 66 (bank 1)" clashes="false" double_init="-0.000214" sint_init="-7">
+      <REGPART part_init="65529" part_double_init="-0.000214" clashes="false" width="16" msb="15" lsb="0" addr="222"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 67 (bank 1)" clashes="false" double_init="-0.001007" sint_init="-33">
+      <REGPART part_init="65503" part_double_init="-0.001007" clashes="false" width="16" msb="15" lsb="0" addr="223"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 68 (bank 1)" clashes="false" double_init="0.001892" sint_init="62">
+      <REGPART part_init="62" part_double_init="0.001892" clashes="false" width="16" msb="15" lsb="0" addr="224"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 69 (bank 1)" clashes="false" double_init="-0.002136" sint_init="-70">
+      <REGPART part_init="65466" part_double_init="-0.002136" clashes="false" width="16" msb="15" lsb="0" addr="225"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 70 (bank 1)" clashes="false" double_init="0.001648" sint_init="54">
+      <REGPART part_init="54" part_double_init="0.001648" clashes="false" width="16" msb="15" lsb="0" addr="226"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 71 (bank 1)" clashes="false" double_init="-0.000519" sint_init="-17">
+      <REGPART part_init="65519" part_double_init="-0.000519" clashes="false" width="16" msb="15" lsb="0" addr="227"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 72 (bank 1)" clashes="false" double_init="-0.000824" sint_init="-27">
+      <REGPART part_init="65509" part_double_init="-0.000824" clashes="false" width="16" msb="15" lsb="0" addr="228"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 73 (bank 1)" clashes="false" double_init="0.001984" sint_init="65">
+      <REGPART part_init="65" part_double_init="0.001984" clashes="false" width="16" msb="15" lsb="0" addr="229"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 74 (bank 1)" clashes="false" double_init="-0.002441" sint_init="-80">
+      <REGPART part_init="65456" part_double_init="-0.002441" clashes="false" width="16" msb="15" lsb="0" addr="230"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 75 (bank 1)" clashes="false" double_init="0.002075" sint_init="68">
+      <REGPART part_init="68" part_double_init="0.002075" clashes="false" width="16" msb="15" lsb="0" addr="231"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 76 (bank 1)" clashes="false" double_init="-0.000916" sint_init="-30">
+      <REGPART part_init="65506" part_double_init="-0.000916" clashes="false" width="16" msb="15" lsb="0" addr="232"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 77 (bank 1)" clashes="false" double_init="-0.000610" sint_init="-20">
+      <REGPART part_init="65516" part_double_init="-0.000610" clashes="false" width="16" msb="15" lsb="0" addr="233"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 78 (bank 1)" clashes="false" double_init="0.002014" sint_init="66">
+      <REGPART part_init="66" part_double_init="0.002014" clashes="false" width="16" msb="15" lsb="0" addr="234"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 79 (bank 1)" clashes="false" double_init="-0.002747" sint_init="-90">
+      <REGPART part_init="65446" part_double_init="-0.002747" clashes="false" width="16" msb="15" lsb="0" addr="235"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 80 (bank 1)" clashes="false" double_init="0.002533" sint_init="83">
+      <REGPART part_init="83" part_double_init="0.002533" clashes="false" width="16" msb="15" lsb="0" addr="236"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 81 (bank 1)" clashes="false" double_init="-0.001404" sint_init="-46">
+      <REGPART part_init="65490" part_double_init="-0.001404" clashes="false" width="16" msb="15" lsb="0" addr="237"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 82 (bank 1)" clashes="false" double_init="-0.000305" sint_init="-10">
+      <REGPART part_init="65526" part_double_init="-0.000305" clashes="false" width="16" msb="15" lsb="0" addr="238"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 83 (bank 1)" clashes="false" double_init="0.001984" sint_init="65">
+      <REGPART part_init="65" part_double_init="0.001984" clashes="false" width="16" msb="15" lsb="0" addr="239"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 84 (bank 1)" clashes="false" double_init="-0.003021" sint_init="-99">
+      <REGPART part_init="65437" part_double_init="-0.003021" clashes="false" width="16" msb="15" lsb="0" addr="240"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 85 (bank 1)" clashes="false" double_init="0.003052" sint_init="100">
+      <REGPART part_init="100" part_double_init="0.003052" clashes="false" width="16" msb="15" lsb="0" addr="241"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 86 (bank 1)" clashes="false" double_init="-0.001953" sint_init="-64">
+      <REGPART part_init="65472" part_double_init="-0.001953" clashes="false" width="16" msb="15" lsb="0" addr="242"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 87 (bank 1)" clashes="false" double_init="0.000122" sint_init="4">
+      <REGPART part_init="4" part_double_init="0.000122" clashes="false" width="16" msb="15" lsb="0" addr="243"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 88 (bank 1)" clashes="false" double_init="0.001862" sint_init="61">
+      <REGPART part_init="61" part_double_init="0.001862" clashes="false" width="16" msb="15" lsb="0" addr="244"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 89 (bank 1)" clashes="false" double_init="-0.003265" sint_init="-107">
+      <REGPART part_init="65429" part_double_init="-0.003265" clashes="false" width="16" msb="15" lsb="0" addr="245"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 90 (bank 1)" clashes="false" double_init="0.003571" sint_init="117">
+      <REGPART part_init="117" part_double_init="0.003571" clashes="false" width="16" msb="15" lsb="0" addr="246"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 91 (bank 1)" clashes="false" double_init="-0.002594" sint_init="-85">
+      <REGPART part_init="65451" part_double_init="-0.002594" clashes="false" width="16" msb="15" lsb="0" addr="247"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 92 (bank 1)" clashes="false" double_init="0.000641" sint_init="21">
+      <REGPART part_init="21" part_double_init="0.000641" clashes="false" width="16" msb="15" lsb="0" addr="248"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 93 (bank 1)" clashes="false" double_init="0.001648" sint_init="54">
+      <REGPART part_init="54" part_double_init="0.001648" clashes="false" width="16" msb="15" lsb="0" addr="249"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 94 (bank 1)" clashes="false" double_init="-0.003448" sint_init="-113">
+      <REGPART part_init="65423" part_double_init="-0.003448" clashes="false" width="16" msb="15" lsb="0" addr="250"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 95 (bank 1)" clashes="false" double_init="0.004120" sint_init="135">
+      <REGPART part_init="135" part_double_init="0.004120" clashes="false" width="16" msb="15" lsb="0" addr="251"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 96 (bank 1)" clashes="false" double_init="-0.003326" sint_init="-109">
+      <REGPART part_init="65427" part_double_init="-0.003326" clashes="false" width="16" msb="15" lsb="0" addr="252"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 97 (bank 1)" clashes="false" double_init="0.001312" sint_init="43">
+      <REGPART part_init="43" part_double_init="0.001312" clashes="false" width="16" msb="15" lsb="0" addr="253"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 98 (bank 1)" clashes="false" double_init="0.001312" sint_init="43">
+      <REGPART part_init="43" part_double_init="0.001312" clashes="false" width="16" msb="15" lsb="0" addr="254"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 99 (bank 1)" clashes="false" double_init="-0.003571" sint_init="-117">
+      <REGPART part_init="65419" part_double_init="-0.003571" clashes="false" width="16" msb="15" lsb="0" addr="255"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 100 (bank 1)" clashes="false" double_init="0.004669" sint_init="153">
+      <REGPART part_init="153" part_double_init="0.004669" clashes="false" width="16" msb="15" lsb="0" addr="256"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 101 (bank 1)" clashes="false" double_init="-0.004150" sint_init="-136">
+      <REGPART part_init="65400" part_double_init="-0.004150" clashes="false" width="16" msb="15" lsb="0" addr="257"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 102 (bank 1)" clashes="false" double_init="0.002106" sint_init="69">
+      <REGPART part_init="69" part_double_init="0.002106" clashes="false" width="16" msb="15" lsb="0" addr="258"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 103 (bank 1)" clashes="false" double_init="0.000824" sint_init="27">
+      <REGPART part_init="27" part_double_init="0.000824" clashes="false" width="16" msb="15" lsb="0" addr="259"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 104 (bank 1)" clashes="false" double_init="-0.003601" sint_init="-118">
+      <REGPART part_init="65418" part_double_init="-0.003601" clashes="false" width="16" msb="15" lsb="0" addr="260"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 105 (bank 1)" clashes="false" double_init="0.005249" sint_init="172">
+      <REGPART part_init="172" part_double_init="0.005249" clashes="false" width="16" msb="15" lsb="0" addr="261"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 106 (bank 1)" clashes="false" double_init="-0.005066" sint_init="-166">
+      <REGPART part_init="65370" part_double_init="-0.005066" clashes="false" width="16" msb="15" lsb="0" addr="262"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 107 (bank 1)" clashes="false" double_init="0.003082" sint_init="101">
+      <REGPART part_init="101" part_double_init="0.003082" clashes="false" width="16" msb="15" lsb="0" addr="263"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 108 (bank 1)" clashes="false" double_init="0.000153" sint_init="5">
+      <REGPART part_init="5" part_double_init="0.000153" clashes="false" width="16" msb="15" lsb="0" addr="264"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 109 (bank 1)" clashes="false" double_init="-0.003510" sint_init="-115">
+      <REGPART part_init="65421" part_double_init="-0.003510" clashes="false" width="16" msb="15" lsb="0" addr="265"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 110 (bank 1)" clashes="false" double_init="0.005798" sint_init="190">
+      <REGPART part_init="190" part_double_init="0.005798" clashes="false" width="16" msb="15" lsb="0" addr="266"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 111 (bank 1)" clashes="false" double_init="-0.006134" sint_init="-201">
+      <REGPART part_init="65335" part_double_init="-0.006134" clashes="false" width="16" msb="15" lsb="0" addr="267"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 112 (bank 1)" clashes="false" double_init="0.004272" sint_init="140">
+      <REGPART part_init="140" part_double_init="0.004272" clashes="false" width="16" msb="15" lsb="0" addr="268"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 113 (bank 1)" clashes="false" double_init="-0.000732" sint_init="-24">
+      <REGPART part_init="65512" part_double_init="-0.000732" clashes="false" width="16" msb="15" lsb="0" addr="269"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 114 (bank 1)" clashes="false" double_init="-0.003265" sint_init="-107">
+      <REGPART part_init="65429" part_double_init="-0.003265" clashes="false" width="16" msb="15" lsb="0" addr="270"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 115 (bank 1)" clashes="false" double_init="0.006317" sint_init="207">
+      <REGPART part_init="207" part_double_init="0.006317" clashes="false" width="16" msb="15" lsb="0" addr="271"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 116 (bank 1)" clashes="false" double_init="-0.007294" sint_init="-239">
+      <REGPART part_init="65297" part_double_init="-0.007294" clashes="false" width="16" msb="15" lsb="0" addr="272"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 117 (bank 1)" clashes="false" double_init="0.005676" sint_init="186">
+      <REGPART part_init="186" part_double_init="0.005676" clashes="false" width="16" msb="15" lsb="0" addr="273"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 118 (bank 1)" clashes="false" double_init="-0.001923" sint_init="-63">
+      <REGPART part_init="65473" part_double_init="-0.001923" clashes="false" width="16" msb="15" lsb="0" addr="274"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 119 (bank 1)" clashes="false" double_init="-0.002808" sint_init="-92">
+      <REGPART part_init="65444" part_double_init="-0.002808" clashes="false" width="16" msb="15" lsb="0" addr="275"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 120 (bank 1)" clashes="false" double_init="0.006836" sint_init="224">
+      <REGPART part_init="224" part_double_init="0.006836" clashes="false" width="16" msb="15" lsb="0" addr="276"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 121 (bank 1)" clashes="false" double_init="-0.008636" sint_init="-283">
+      <REGPART part_init="65253" part_double_init="-0.008636" clashes="false" width="16" msb="15" lsb="0" addr="277"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 122 (bank 1)" clashes="false" double_init="0.007446" sint_init="244">
+      <REGPART part_init="244" part_double_init="0.007446" clashes="false" width="16" msb="15" lsb="0" addr="278"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 123 (bank 1)" clashes="false" double_init="-0.003479" sint_init="-114">
+      <REGPART part_init="65422" part_double_init="-0.003479" clashes="false" width="16" msb="15" lsb="0" addr="279"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 124 (bank 1)" clashes="false" double_init="-0.002075" sint_init="-68">
+      <REGPART part_init="65468" part_double_init="-0.002075" clashes="false" width="16" msb="15" lsb="0" addr="280"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 125 (bank 1)" clashes="false" double_init="0.007294" sint_init="239">
+      <REGPART part_init="239" part_double_init="0.007294" clashes="false" width="16" msb="15" lsb="0" addr="281"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 126 (bank 1)" clashes="false" double_init="-0.010254" sint_init="-336">
+      <REGPART part_init="65200" part_double_init="-0.010254" clashes="false" width="16" msb="15" lsb="0" addr="282"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 127 (bank 1)" clashes="false" double_init="0.009705" sint_init="318">
+      <REGPART part_init="318" part_double_init="0.009705" clashes="false" width="16" msb="15" lsb="0" addr="283"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 128 (bank 1)" clashes="false" double_init="-0.005554" sint_init="-182">
+      <REGPART part_init="65354" part_double_init="-0.005554" clashes="false" width="16" msb="15" lsb="0" addr="284"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 129 (bank 1)" clashes="false" double_init="-0.000946" sint_init="-31">
+      <REGPART part_init="65505" part_double_init="-0.000946" clashes="false" width="16" msb="15" lsb="0" addr="285"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 130 (bank 1)" clashes="false" double_init="0.007690" sint_init="252">
+      <REGPART part_init="252" part_double_init="0.007690" clashes="false" width="16" msb="15" lsb="0" addr="286"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 131 (bank 1)" clashes="false" double_init="-0.012238" sint_init="-401">
+      <REGPART part_init="65135" part_double_init="-0.012238" clashes="false" width="16" msb="15" lsb="0" addr="287"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 132 (bank 1)" clashes="false" double_init="0.012695" sint_init="416">
+      <REGPART part_init="416" part_double_init="0.012695" clashes="false" width="16" msb="15" lsb="0" addr="288"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 133 (bank 1)" clashes="false" double_init="-0.008545" sint_init="-280">
+      <REGPART part_init="65256" part_double_init="-0.008545" clashes="false" width="16" msb="15" lsb="0" addr="289"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 134 (bank 1)" clashes="false" double_init="0.000793" sint_init="26">
+      <REGPART part_init="26" part_double_init="0.000793" clashes="false" width="16" msb="15" lsb="0" addr="290"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 135 (bank 1)" clashes="false" double_init="0.008057" sint_init="264">
+      <REGPART part_init="264" part_double_init="0.008057" clashes="false" width="16" msb="15" lsb="0" addr="291"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 136 (bank 1)" clashes="false" double_init="-0.014893" sint_init="-488">
+      <REGPART part_init="65048" part_double_init="-0.014893" clashes="false" width="16" msb="15" lsb="0" addr="292"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 137 (bank 1)" clashes="false" double_init="0.017029" sint_init="558">
+      <REGPART part_init="558" part_double_init="0.017029" clashes="false" width="16" msb="15" lsb="0" addr="293"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 138 (bank 1)" clashes="false" double_init="-0.013062" sint_init="-428">
+      <REGPART part_init="65108" part_double_init="-0.013062" clashes="false" width="16" msb="15" lsb="0" addr="294"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 139 (bank 1)" clashes="false" double_init="0.003723" sint_init="122">
+      <REGPART part_init="122" part_double_init="0.003723" clashes="false" width="16" msb="15" lsb="0" addr="295"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 140 (bank 1)" clashes="false" double_init="0.008331" sint_init="273">
+      <REGPART part_init="273" part_double_init="0.008331" clashes="false" width="16" msb="15" lsb="0" addr="296"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 141 (bank 1)" clashes="false" double_init="-0.019012" sint_init="-623">
+      <REGPART part_init="64913" part_double_init="-0.019012" clashes="false" width="16" msb="15" lsb="0" addr="297"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 142 (bank 1)" clashes="false" double_init="0.024170" sint_init="792">
+      <REGPART part_init="792" part_double_init="0.024170" clashes="false" width="16" msb="15" lsb="0" addr="298"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 143 (bank 1)" clashes="false" double_init="-0.021027" sint_init="-689">
+      <REGPART part_init="64847" part_double_init="-0.021027" clashes="false" width="16" msb="15" lsb="0" addr="299"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 144 (bank 1)" clashes="false" double_init="0.009247" sint_init="303">
+      <REGPART part_init="303" part_double_init="0.009247" clashes="false" width="16" msb="15" lsb="0" addr="300"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 145 (bank 1)" clashes="false" double_init="0.008514" sint_init="279">
+      <REGPART part_init="279" part_double_init="0.008514" clashes="false" width="16" msb="15" lsb="0" addr="301"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 146 (bank 1)" clashes="false" double_init="-0.026978" sint_init="-884">
+      <REGPART part_init="64652" part_double_init="-0.026978" clashes="false" width="16" msb="15" lsb="0" addr="302"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 147 (bank 1)" clashes="false" double_init="0.039429" sint_init="1292">
+      <REGPART part_init="1292" part_double_init="0.039429" clashes="false" width="16" msb="15" lsb="0" addr="303"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 148 (bank 1)" clashes="false" double_init="-0.039642" sint_init="-1299">
+      <REGPART part_init="64237" part_double_init="-0.039642" clashes="false" width="16" msb="15" lsb="0" addr="304"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 149 (bank 1)" clashes="false" double_init="0.023712" sint_init="777">
+      <REGPART part_init="777" part_double_init="0.023712" clashes="false" width="16" msb="15" lsb="0" addr="305"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 150 (bank 1)" clashes="false" double_init="0.008667" sint_init="284">
+      <REGPART part_init="284" part_double_init="0.008667" clashes="false" width="16" msb="15" lsb="0" addr="306"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 151 (bank 1)" clashes="false" double_init="-0.053467" sint_init="-1752">
+      <REGPART part_init="63784" part_double_init="-0.053467" clashes="false" width="16" msb="15" lsb="0" addr="307"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 152 (bank 1)" clashes="false" double_init="0.103180" sint_init="3381">
+      <REGPART part_init="3381" part_double_init="0.103180" clashes="false" width="16" msb="15" lsb="0" addr="308"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 153 (bank 1)" clashes="false" double_init="-0.148407" sint_init="-4863">
+      <REGPART part_init="60673" part_double_init="-0.148407" clashes="false" width="16" msb="15" lsb="0" addr="309"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 154 (bank 1)" clashes="false" double_init="0.179993" sint_init="5898">
+      <REGPART part_init="5898" part_double_init="0.179993" clashes="false" width="16" msb="15" lsb="0" addr="310"/>
+    </REG>
+    <REG numregparts="1" desc="FIR Coefficient Register 155 (bank 1)" clashes="false" double_init="0.808685" sint_init="26499">
+      <REGPART part_init="26499" part_double_init="0.808685" clashes="false" width="16" msb="15" lsb="0" addr="311"/>
+    </REG>
+  </REGS>
+  <REGS numregs="1" desc="Version_Output" origin="ddc_model/DUT/RegField" clashes="false" rwmode="Read/Write" bitwidth="32" fracwidth="0" privatespace="false">
+    <REG numregparts="1" desc="Version_Output" clashes="false" double_init="1.000000" sint_init="1">
+      <REGPART part_init="1" part_double_init="1.000000" clashes="false" width="32" msb="31" lsb="0" addr="808"/>
+    </REG>
+  </REGS>
+</MEMORYMAPS>
+<RESOURCES>
+<FUNIT>
+ <FUNAME>ddc_model/DUT</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>193</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>ddc_model/DUT/DUT</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>64</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>ddc_model/DUT/DUT/COMPLEX_MIXER1</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>192</LUT4>
+ <MULT>0</MULT>
+ <BITS>16384</BITS>
+ <BLOCKS>8</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>ddc_model/DUT/DUT/COMPLEX_MIXER1/ComplexMixer</FUNAME>
+ <FUTYPE>MIXC</FUTYPE>
+ <LUT4>1525</LUT4>
+ <MULT>32</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>ddc_model/DUT/DUT/COMPLEX_MIXER1/ComplexMixer_Scale</FUNAME>
+ <FUTYPE>SCALE</FUTYPE>
+ <LUT4>241</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>ddc_model/DUT/DUT/COMPLEX_MIXER1/Complex_NCO</FUNAME>
+ <FUTYPE>NCO</FUTYPE>
+ <LUT4>2520</LUT4>
+ <MULT>8</MULT>
+ <BITS>32768</BITS>
+ <BLOCKS>8</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>ddc_model/DUT/DUT/Chan_Filter_l1</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>0</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>ddc_model/DUT/DUT/Chan_Filter_l1/Chan_Filter</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>64</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>ddc_model/DUT/DUT/Chan_Filter_l1/Chan_Filter/chan_filter_Scale_re</FUNAME>
+ <FUTYPE>SCALE</FUTYPE>
+ <LUT4>46</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>ddc_model/DUT/DUT/Chan_Filter_l1/Chan_Filter/chan_filter_Scaleim</FUNAME>
+ <FUTYPE>SCALE</FUTYPE>
+ <LUT4>46</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>ddc_model/DUT/DUT/Chan_Filter_l1/Chan_Filter/chan_filter_im</FUNAME>
+ <FUTYPE>FIRS</FUTYPE>
+ <LUT4>17640</LUT4>
+ <MULT>156</MULT>
+ <BITS>4992</BITS>
+ <BLOCKS>1</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>ddc_model/DUT/DUT/Chan_Filter_l1/Chan_Filter/chan_filter_re</FUNAME>
+ <FUTYPE>FIRS</FUTYPE>
+ <LUT4>17640</LUT4>
+ <MULT>156</MULT>
+ <BITS>4992</BITS>
+ <BLOCKS>1</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>ddc_model/DUT/DUT/Chan_Filter_l1/Chan_Filter/routing_reg_chan_re</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>27</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>ddc_model/DUT/DUT/Chan_Filter_l1/Chan_Filter/routing_reg_chan_re1</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>27</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>ddc_model/DUT/DUT/Chan_Filter_l1/Filter-Reconfig</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>21</LUT4>
+ <MULT>0</MULT>
+ <BITS>256</BITS>
+ <BLOCKS>1</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>ddc_model/DUT/DUT/Const_sel</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>256</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>ddc_model/DUT/DUT/DDC_l1 </FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>0</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>ddc_model/DUT/DUT/DDC_l1 /HB1</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>0</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>ddc_model/DUT/DUT/DDC_l1 /HB1/HB1_im</FUNAME>
+ <FUTYPE>FIRD</FUTYPE>
+ <LUT4>1247</LUT4>
+ <MULT>20</MULT>
+ <BITS>2240</BITS>
+ <BLOCKS>2</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>ddc_model/DUT/DUT/DDC_l1 /HB1/HB1_re</FUNAME>
+ <FUTYPE>FIRD</FUTYPE>
+ <LUT4>1247</LUT4>
+ <MULT>20</MULT>
+ <BITS>2240</BITS>
+ <BLOCKS>2</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>ddc_model/DUT/DUT/DDC_l1 /HB1/scale_HB1_im</FUNAME>
+ <FUTYPE>SCALE</FUTYPE>
+ <LUT4>43</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>ddc_model/DUT/DUT/DDC_l1 /HB1/scale_HB1_re</FUNAME>
+ <FUTYPE>SCALE</FUTYPE>
+ <LUT4>43</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>ddc_model/DUT/DUT/DDC_l1 /HB2</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>0</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>ddc_model/DUT/DUT/DDC_l1 /HB2/HB2_im</FUNAME>
+ <FUTYPE>FIRD</FUTYPE>
+ <LUT4>1259</LUT4>
+ <MULT>16</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>ddc_model/DUT/DUT/DDC_l1 /HB2/HB2_re</FUNAME>
+ <FUTYPE>FIRD</FUTYPE>
+ <LUT4>1259</LUT4>
+ <MULT>16</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>ddc_model/DUT/DUT/DDC_l1 /HB2/scale_HB2_im</FUNAME>
+ <FUTYPE>SCALE</FUTYPE>
+ <LUT4>71</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>ddc_model/DUT/DUT/DDC_l1 /HB2/scale_HB2_re</FUNAME>
+ <FUTYPE>SCALE</FUTYPE>
+ <LUT4>71</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>ddc_model/DUT/DUT/DDC_l1 /routing_reg_hb62hb7</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>74</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+<FUNIT>
+ <FUNAME>ddc_model/DUT/DUT/routing_reg_hb72chan_l1</FUNAME>
+ <FUTYPE>SYNTH</FUTYPE>
+ <LUT4>42</LUT4>
+ <MULT>0</MULT>
+ <BITS>0</BITS>
+ <BLOCKS>0</BLOCKS>
+</FUNIT>
+</RESOURCES>
+</MODEL>

@@ -1,0 +1,22 @@
+require version 23.3
+inputs WbaNERba LastRd
+
+enable ena
+start go
+
+netlist
+
+
+
+  transitions S2B : Go ToggleRba
+  
+    state _init
+                  if (WbaNERba) ReadWait  0 1  
+                   default _init 0 0 
+    state ReadWait
+                  if (LastRd)  _init 1 0 
+                    default  ReadWait 0 0 
+
+  end
+
+

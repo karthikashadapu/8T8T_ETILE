@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<entity name='LongPRACH_sim_prach_wrap_LongPRACH_DUT_Longprach_C_M_plane_LongPRACH_core_SYM_SELECT_Zero_insertion_Zeropad_front' floating-point-script-prefix='LongPRACH_sim_prach_wrap_LongPRACH_DUT_Longprach_C_M_plane_LongPRACH_core_SYM_SE0000ertion_Zeropad_front_fpc'>
+  <clock name='sys' port='clk' reset='areset' reset-type='high' />
+</entity>

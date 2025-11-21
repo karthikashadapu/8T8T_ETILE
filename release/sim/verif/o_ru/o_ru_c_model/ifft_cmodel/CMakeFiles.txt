@@ -1,0 +1,37 @@
+set(software_model_common_INC
+    "support/csl.h"
+    "support/csl.inl"
+    "demo_ifft_IFFT_4K_BitReverseCoreC.h"
+    "demo_ifft_IFFT_4K_FFT.h"
+    "demo_ifft_IFFT_4K.h"
+)
+
+set(software_model_common_SRC
+    "support/csl.cpp"
+    "support/csl_io.cpp"
+    "demo_ifft_IFFT_4K_BitReverseCoreC.cpp"
+    "demo_ifft_IFFT_4K_FFT.cpp"
+    "demo_ifft_IFFT_4K.cpp"
+)
+
+set(software_model_atb_INC
+    "support/csl_io.h"
+    "atb/demo_ifft_IFFT_4K_BitReverseCoreC_atb.h"
+    "atb/demo_ifft_IFFT_4K_FFT_atb.h"
+)
+
+set(software_model_atb_SRC
+    "support/csl_io.cpp"
+    "atb/atb_app.cpp"
+)
+
+set(software_model_fastsim_INC
+    "fastsim/fastsim.inl"
+)
+
+set(software_model_fastsim_SRC
+)
+
+set(cmodel_atb_SRC ${software_model_atb_INC} ${software_model_atb_SRC})
+set(cmodel_common_SRC ${software_model_common_INC} ${software_model_common_SRC})
+set(cmodel_fastsim_SRC ${software_model_fastsim_INC} ${software_model_fastsim_SRC})

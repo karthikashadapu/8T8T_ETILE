@@ -1,0 +1,42 @@
+## set ModeBit 0000
+#1           0		0           1	0   1           ffff
+## check RegOut
+#1           b		0           0	1   0           ffff
+## set ModeBit 0001
+#1           0		1           1	0   1           ffff
+## check RegOut
+#1           b		0           0	1   4           ffff
+## set ModeBit 0010
+#1           0		2           1	0   2           ffff
+## check RegOut
+#1           b		0           0	1   2           ffff
+## set ModeBit 0100
+#1           0		4           1	0   4           ffff
+## check RegOut
+#1           b		0           0	1   3           ffff
+## set ModeBit 1000
+#1           0		8           1	0   8           ffff
+## check RegOut
+#1           b		0           0	1   1           ffff
+## change InputB
+#1           a		2           1	0   2           ffff
+## set ModeBit 0000
+#1           0		0           1	0   0           ffff
+## check RegOut
+#1           b		0           0	1   0           ffff
+## set ModeBit 0001
+#1           0		1           1	0   1           ffff
+## check RegOut
+#1           b		0           0	1   5           ffff
+## set ModeBit 0010
+#1           0		2           1	0   2           ffff
+## check RegOut
+#1           b		0           0	1   1           ffff
+## set ModeBit 0100
+#1           0		4           1	0   4           ffff
+## check RegOut
+#1           b		0           0	1   6           ffff
+## set ModeBit 1000
+#1           0		8           1	0   8           ffff
+## check RegOut
+#1           b		0           0	1   0           ffff
