@@ -1,0 +1,39 @@
+set_global_assignment -entity "storeandforward_fifo_pusch" -library "storeandforward_fifo_pusch" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "storeandforward_fifo_pusch" -library "storeandforward_fifo_pusch" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "storeandforward_fifo_pusch" -library "storeandforward_fifo_pusch" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "storeandforward_fifo_pusch" -library "storeandforward_fifo_pusch" -name IP_TOOL_VENDOR_NAME "Intel Corporation"
+set_global_assignment -entity "storeandforward_fifo_pusch" -library "storeandforward_fifo_pusch" -name IP_TOP_LEVEL_COMPONENT_NAME "altera_avalon_sc_fifo"
+set_global_assignment -library "storeandforward_fifo_pusch" -name SOPCINFO_FILE [file join $::quartus(qip_path) "storeandforward_fifo_pusch.sopcinfo"]
+set_global_assignment -entity "storeandforward_fifo_pusch" -library "storeandforward_fifo_pusch" -name SLD_INFO "QSYS_NAME storeandforward_fifo_pusch HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "storeandforward_fifo_pusch" -name MISC_FILE [file join $::quartus(qip_path) "storeandforward_fifo_pusch.cmp"]
+set_global_assignment -entity "storeandforward_fifo_pusch" -library "storeandforward_fifo_pusch" -name IP_TARGETED_DEVICE_FAMILY "Agilex 7"
+set_global_assignment -entity "storeandforward_fifo_pusch" -library "storeandforward_fifo_pusch" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 7}"
+set_global_assignment -entity "storeandforward_fifo_pusch" -library "storeandforward_fifo_pusch" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "storeandforward_fifo_pusch" -name MISC_FILE [file join $::quartus(qip_path) "../storeandforward_fifo_pusch.ip"]
+
+set_global_assignment -entity "storeandforward_fifo_pusch_altera_avalon_sc_fifo_1932_5j7ufsq" -library "altera_avalon_sc_fifo_1932" -name IP_COMPONENT_NAME "c3RvcmVhbmRmb3J3YXJkX2ZpZm9fcHVzY2hfYWx0ZXJhX2F2YWxvbl9zY19maWZvXzE5MzJfNWo3dWZzcQ=="
+set_global_assignment -entity "storeandforward_fifo_pusch_altera_avalon_sc_fifo_1932_5j7ufsq" -library "altera_avalon_sc_fifo_1932" -name IP_COMPONENT_DISPLAY_NAME "QXZhbG9uIFN0cmVhbWluZyBTaW5nbGUgQ2xvY2sgRklGTyBJbnRlbCBGUEdBIElQ"
+set_global_assignment -entity "storeandforward_fifo_pusch_altera_avalon_sc_fifo_1932_5j7ufsq" -library "altera_avalon_sc_fifo_1932" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "storeandforward_fifo_pusch_altera_avalon_sc_fifo_1932_5j7ufsq" -library "altera_avalon_sc_fifo_1932" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "storeandforward_fifo_pusch_altera_avalon_sc_fifo_1932_5j7ufsq" -library "altera_avalon_sc_fifo_1932" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "storeandforward_fifo_pusch_altera_avalon_sc_fifo_1932_5j7ufsq" -library "altera_avalon_sc_fifo_1932" -name IP_COMPONENT_VERSION "MTkuMy4y"
+set_global_assignment -entity "storeandforward_fifo_pusch_altera_avalon_sc_fifo_1932_5j7ufsq" -library "altera_avalon_sc_fifo_1932" -name IP_COMPONENT_GROUP "QmFzaWMgRnVuY3Rpb25zL09uIENoaXAgTWVtb3J5"
+set_global_assignment -entity "storeandforward_fifo_pusch_altera_avalon_sc_fifo_1932_5j7ufsq" -library "altera_avalon_sc_fifo_1932" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly9kb2N1bWVudGF0aW9uLmFsdGVyYS5jb20vIy9saW5rL3NmbzE0MDA3ODc5NTI5MzIvaWdhMTQwMTM5NTU2Mzc3OQ=="
+set_global_assignment -entity "storeandforward_fifo_pusch_altera_avalon_sc_fifo_1932_5j7ufsq" -library "altera_avalon_sc_fifo_1932" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly9kb2N1bWVudGF0aW9uLmFsdGVyYS5jb20vIy9saW5rL2hjbzE0MjE2OTgwNDIwODcvaGNvMTQyMTY5NzY4OTMwMA=="
+set_global_assignment -entity "storeandforward_fifo_pusch" -library "storeandforward_fifo_pusch" -name IP_COMPONENT_NAME "c3RvcmVhbmRmb3J3YXJkX2ZpZm9fcHVzY2g="
+set_global_assignment -entity "storeandforward_fifo_pusch" -library "storeandforward_fifo_pusch" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "storeandforward_fifo_pusch" -library "storeandforward_fifo_pusch" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "storeandforward_fifo_pusch" -library "storeandforward_fifo_pusch" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "storeandforward_fifo_pusch" -library "storeandforward_fifo_pusch" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "storeandforward_fifo_pusch" -library "storeandforward_fifo_pusch" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "altera_avalon_sc_fifo_1932" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_avalon_sc_fifo_1932/synth/storeandforward_fifo_pusch_altera_avalon_sc_fifo_1932_5j7ufsq.v"]
+set_global_assignment -library "storeandforward_fifo_pusch" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/storeandforward_fifo_pusch.v"]
+
+
+set_global_assignment -entity "storeandforward_fifo_pusch_altera_avalon_sc_fifo_1932_5j7ufsq" -library "altera_avalon_sc_fifo_1932" -name IP_TOOL_NAME "altera_avalon_sc_fifo"
+set_global_assignment -entity "storeandforward_fifo_pusch_altera_avalon_sc_fifo_1932_5j7ufsq" -library "altera_avalon_sc_fifo_1932" -name IP_TOOL_VERSION "19.3.2"
+set_global_assignment -entity "storeandforward_fifo_pusch_altera_avalon_sc_fifo_1932_5j7ufsq" -library "altera_avalon_sc_fifo_1932" -name IP_TOOL_ENV "QsysPrimePro"
+

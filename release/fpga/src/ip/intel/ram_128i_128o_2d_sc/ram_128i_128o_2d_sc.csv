@@ -1,0 +1,18 @@
+# system info ram_128i_128o_2d_sc on 2025.10.16.13:46:02
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for ram_128i_128o_2d_sc on 2025.10.16.13:46:02
+files:
+filepath,kind,attributes,module,is_top
+sim/ram_128i_128o_2d_sc.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,ram_128i_128o_2d_sc,true
+ram_2port_2041/sim/ram_128i_128o_2d_sc_ram_2port_2041_mf6vryq.v,VERILOG,,ram_128i_128o_2d_sc_ram_2port_2041_mf6vryq,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+ram_128i_128o_2d_sc.ram_2port_0,ram_128i_128o_2d_sc_ram_2port_2041_mf6vryq

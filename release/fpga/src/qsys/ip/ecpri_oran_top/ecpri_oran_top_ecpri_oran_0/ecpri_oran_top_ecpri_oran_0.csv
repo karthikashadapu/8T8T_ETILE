@@ -1,0 +1,43 @@
+# system info ecpri_oran_top_ecpri_oran_0 on 2025.11.21.14:06:11
+system_info:
+name,value
+DEVICE,AGFB014R24B2I2V
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for ecpri_oran_top_ecpri_oran_0 on 2025.11.21.14:06:11
+files:
+filepath,kind,attributes,module,is_top
+sim/ecpri_oran_top_ecpri_oran_0.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,ecpri_oran_top_ecpri_oran_0,true
+ecpri_oran_10/sim/struct_typedef.sv,SYSTEM_VERILOG,,ecpri_oran_ss,false
+ecpri_oran_10/sim/ecpri_oran_ss.sv,SYSTEM_VERILOG,,ecpri_oran_ss,false
+ecpri_oran_10/sim/ul_eaxc_config.v,VERILOG,,ecpri_oran_ss,false
+ecpri_oran_10/sim/ul_rtc_id_config.v,VERILOG,,ecpri_oran_ss,false
+ecpri_oran_10/sim/dl_rtc_id_config.v,VERILOG,,ecpri_oran_ss,false
+ecpri_oran_10/sim/dl_eaxc_config.v,VERILOG,,ecpri_oran_ss,false
+ecpri_oran_10/sim/prach_data_in_long.mif,MIF,,ecpri_oran_ss,false
+ecpri_oran_10/sim/cplane_pusch_fdv.mif,MIF,,ecpri_oran_ss,false
+ecpri_oran_10/sim/cplane_prach_fdv.mif,MIF,,ecpri_oran_ss,false
+ecpri_oran_10/sim/map_table.mif,MIF,,ecpri_oran_ss,false
+ecpri_oran_10/sim/uplink_arbiter.v,VERILOG,,ecpri_oran_ss,false
+ecpri_oran_10/sim/cu_plane_coupling_top.v,VERILOG,,ecpri_oran_ss,false
+ecpri_oran_10/sim/cu_plane_coupling_prach_wrapper.v,VERILOG,,ecpri_oran_ss,false
+ecpri_oran_10/sim/cu_plane_coupling_pusch_wrapper.v,VERILOG,,ecpri_oran_ss,false
+ecpri_oran_10/sim/prach_fdv_read_state_machine.v,VERILOG,,ecpri_oran_ss,false
+ecpri_oran_10/sim/pusch_fdv_read_state_machine.v,VERILOG,,ecpri_oran_ss,false
+ecpri_oran_10/sim/pusch_fifo_read_state_machine.v,VERILOG,,ecpri_oran_ss,false
+ecpri_oran_10/sim/prach_fifo_read_state_machine.v,VERILOG,,ecpri_oran_ss,false
+ecpri_oran_10/sim/pusch_raw_packet_formation.v,VERILOG,,ecpri_oran_ss,false
+ecpri_oran_10/sim/prach_raw_packet_formation.v,VERILOG,,ecpri_oran_ss,false
+ecpri_oran_10/sim/pusch_cplane_fdv_buffer.v,VERILOG,,ecpri_oran_ss,false
+ecpri_oran_10/sim/prach_cplane_fdv_buffer.v,VERILOG,,ecpri_oran_ss,false
+ecpri_oran_10/sim/oran_wrapper.v,VERILOG,,ecpri_oran_ss,false
+ecpri_oran_10/sim/Oran_SS_Registers.v,VERILOG,,ecpri_oran_ss,false
+ecpri_oran_10/sim/idle_time_counter.v,VERILOG,,ecpri_oran_ss,false
+ecpri_oran_10/sim/xran_timestamp.v,VERILOG,,ecpri_oran_ss,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+ecpri_oran_top_ecpri_oran_0.ecpri_oran_0,ecpri_oran_ss

@@ -1,0 +1,9 @@
+	component j204c_f_rx_tx_ip_iopll_1 is
+		port (
+			refclk   : in  std_logic := 'X'; -- clk
+			locked   : out std_logic;        -- export
+			rst      : in  std_logic := 'X'; -- reset
+			outclk_0 : out std_logic         -- clk
+		);
+	end component j204c_f_rx_tx_ip_iopll_1;
+

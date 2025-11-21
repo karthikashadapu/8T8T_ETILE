@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="sim/qsys_top_ninit_done.v"
+   type="VERILOG"
+   library="qsys_top_ninit_done"
+   hasInlineConfiguration="true" />
+ <topLevel name="qsys_top_ninit_done.qsys_top_ninit_done" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

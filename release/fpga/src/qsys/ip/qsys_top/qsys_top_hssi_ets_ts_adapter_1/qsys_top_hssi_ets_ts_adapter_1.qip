@@ -1,0 +1,31 @@
+set_global_assignment -entity "qsys_top_hssi_ets_ts_adapter_1" -library "qsys_top_hssi_ets_ts_adapter_1" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "qsys_top_hssi_ets_ts_adapter_1" -library "qsys_top_hssi_ets_ts_adapter_1" -name IP_TOOL_VERSION "23.3"
+set_global_assignment -entity "qsys_top_hssi_ets_ts_adapter_1" -library "qsys_top_hssi_ets_ts_adapter_1" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "qsys_top_hssi_ets_ts_adapter_1" -library "qsys_top_hssi_ets_ts_adapter_1" -name IP_TOOL_VENDOR_NAME "Altera Corporation"
+set_global_assignment -entity "qsys_top_hssi_ets_ts_adapter_1" -library "qsys_top_hssi_ets_ts_adapter_1" -name IP_TOP_LEVEL_COMPONENT_NAME "hssi_ets_ts_adapter"
+set_global_assignment -library "qsys_top_hssi_ets_ts_adapter_1" -name SOPCINFO_FILE [file join $::quartus(qip_path) "qsys_top_hssi_ets_ts_adapter_1.sopcinfo"]
+set_global_assignment -entity "qsys_top_hssi_ets_ts_adapter_1" -library "qsys_top_hssi_ets_ts_adapter_1" -name SLD_INFO "QSYS_NAME qsys_top_hssi_ets_ts_adapter_1 HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "qsys_top_hssi_ets_ts_adapter_1" -name MISC_FILE [file join $::quartus(qip_path) "qsys_top_hssi_ets_ts_adapter_1.cmp"]
+set_global_assignment -entity "qsys_top_hssi_ets_ts_adapter_1" -library "qsys_top_hssi_ets_ts_adapter_1" -name IP_TARGETED_DEVICE_FAMILY "Agilex 7"
+set_global_assignment -entity "qsys_top_hssi_ets_ts_adapter_1" -library "qsys_top_hssi_ets_ts_adapter_1" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 7}"
+set_global_assignment -entity "qsys_top_hssi_ets_ts_adapter_1" -library "qsys_top_hssi_ets_ts_adapter_1" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "qsys_top_hssi_ets_ts_adapter_1" -name MISC_FILE [file join $::quartus(qip_path) "../qsys_top_hssi_ets_ts_adapter_1.ip"]
+
+set_global_assignment -entity "hssi_ets_ts_adapter" -library "hssi_ets_ts_adapter_100" -name IP_COMPONENT_NAME "aHNzaV9ldHNfdHNfYWRhcHRlcg=="
+set_global_assignment -entity "hssi_ets_ts_adapter" -library "hssi_ets_ts_adapter_100" -name IP_COMPONENT_DISPLAY_NAME "SFNTSSBFVFMgV0lEVEggQURBUFRFUg=="
+set_global_assignment -entity "hssi_ets_ts_adapter" -library "hssi_ets_ts_adapter_100" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "hssi_ets_ts_adapter" -library "hssi_ets_ts_adapter_100" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "hssi_ets_ts_adapter" -library "hssi_ets_ts_adapter_100" -name IP_COMPONENT_VERSION "MS4wLjA="
+set_global_assignment -entity "hssi_ets_ts_adapter" -library "hssi_ets_ts_adapter_100" -name IP_COMPONENT_GROUP "RXhhbXBsZSBEZXNpZ25zL0V0aGVybmV0L01pc2M="
+set_global_assignment -entity "qsys_top_hssi_ets_ts_adapter_1" -library "qsys_top_hssi_ets_ts_adapter_1" -name IP_COMPONENT_NAME "cXN5c190b3BfaHNzaV9ldHNfdHNfYWRhcHRlcl8x"
+set_global_assignment -entity "qsys_top_hssi_ets_ts_adapter_1" -library "qsys_top_hssi_ets_ts_adapter_1" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "qsys_top_hssi_ets_ts_adapter_1" -library "qsys_top_hssi_ets_ts_adapter_1" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "qsys_top_hssi_ets_ts_adapter_1" -library "qsys_top_hssi_ets_ts_adapter_1" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "qsys_top_hssi_ets_ts_adapter_1" -library "qsys_top_hssi_ets_ts_adapter_1" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "qsys_top_hssi_ets_ts_adapter_1" -library "qsys_top_hssi_ets_ts_adapter_1" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "hssi_ets_ts_adapter_100" -name VERILOG_FILE [file join $::quartus(qip_path) "hssi_ets_ts_adapter_100/synth/hssi_ets_ts_adapter.v"]
+set_global_assignment -library "qsys_top_hssi_ets_ts_adapter_1" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/qsys_top_hssi_ets_ts_adapter_1.v"]
+

@@ -1,0 +1,18 @@
+# system info ff_128i_128o_1024d_sc on 2025.10.16.13:41:49
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for ff_128i_128o_1024d_sc on 2025.10.16.13:41:49
+files:
+filepath,kind,attributes,module,is_top
+sim/ff_128i_128o_1024d_sc.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,ff_128i_128o_1024d_sc,true
+fifo_1927/sim/ff_128i_128o_1024d_sc_fifo_1927_zmbyveq.v,VERILOG,,ff_128i_128o_1024d_sc_fifo_1927_zmbyveq,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+ff_128i_128o_1024d_sc.fifo_0,ff_128i_128o_1024d_sc_fifo_1927_zmbyveq

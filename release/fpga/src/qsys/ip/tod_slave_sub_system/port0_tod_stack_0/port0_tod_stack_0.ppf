@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pinplan
+ variation_name="port0_tod_stack_0"
+ megafunction_name="ETH_F_PTP_MTOD_TOP"
+ specifies="all_ports">
+ <global>
+  <pin name="i_csr_write" direction="input" scope="external" />
+  <pin name="i_csr_writedata[31..0]" direction="input" scope="external" />
+  <pin name="i_csr_read" direction="input" scope="external" />
+  <pin name="o_csr_readdata[31..0]" direction="output" scope="external" />
+  <pin name="o_csr_waitrequest" direction="output" scope="external" />
+  <pin name="i_csr_addr[3..0]" direction="input" scope="external" />
+  <pin name="i_clk_reconfig" direction="input" scope="external" />
+  <pin name="i_clk_tod" direction="input" scope="external" />
+  <pin name="i_reconfig_rst_n" direction="input" scope="external" />
+  <pin name="i_tod_rst_n" direction="input" scope="external" />
+  <pin name="i_tod_96b_load_valid" direction="input" scope="external" />
+  <pin name="i_tod_96b_load_data[95..0]" direction="input" scope="external" />
+  <pin name="o_pps" direction="output" scope="external" />
+  <pin name="o_tod_96b_valid" direction="output" scope="external" />
+  <pin name="o_tod_96b_data[95..0]" direction="output" scope="external" />
+  <pin name="i_upstr_pll_lock" direction="input" scope="external" />
+ </global>
+</pinplan>

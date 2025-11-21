@@ -1,0 +1,44 @@
+set_global_assignment -entity "tx_dma_prefetcher" -library "tx_dma_prefetcher" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "tx_dma_prefetcher" -library "tx_dma_prefetcher" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "tx_dma_prefetcher" -library "tx_dma_prefetcher" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "tx_dma_prefetcher" -library "tx_dma_prefetcher" -name IP_TOOL_VENDOR_NAME "Intel Corporation"
+set_global_assignment -entity "tx_dma_prefetcher" -library "tx_dma_prefetcher" -name IP_TOP_LEVEL_COMPONENT_NAME "altera_msgdma_prefetcher"
+set_global_assignment -library "tx_dma_prefetcher" -name SOPCINFO_FILE [file join $::quartus(qip_path) "tx_dma_prefetcher.sopcinfo"]
+set_global_assignment -entity "tx_dma_prefetcher" -library "tx_dma_prefetcher" -name SLD_INFO "QSYS_NAME tx_dma_prefetcher HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "tx_dma_prefetcher" -name MISC_FILE [file join $::quartus(qip_path) "tx_dma_prefetcher.cmp"]
+set_global_assignment -entity "tx_dma_prefetcher" -library "tx_dma_prefetcher" -name IP_TARGETED_DEVICE_FAMILY "Agilex 7"
+set_global_assignment -entity "tx_dma_prefetcher" -library "tx_dma_prefetcher" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 7}"
+set_global_assignment -entity "tx_dma_prefetcher" -library "tx_dma_prefetcher" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "tx_dma_prefetcher" -name MISC_FILE [file join $::quartus(qip_path) "../tx_dma_prefetcher.ip"]
+
+set_global_assignment -entity "altera_msgdma_prefetcher" -library "altera_msgdma_prefetcher_1931" -name IP_COMPONENT_NAME "YWx0ZXJhX21zZ2RtYV9wcmVmZXRjaGVy"
+set_global_assignment -entity "altera_msgdma_prefetcher" -library "altera_msgdma_prefetcher_1931" -name IP_COMPONENT_DISPLAY_NAME "TW9kdWxhciBTR0RNQSBQcmVmZXRjaGVyIEludGVsIEZQR0EgSVA="
+set_global_assignment -entity "altera_msgdma_prefetcher" -library "altera_msgdma_prefetcher_1931" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "altera_msgdma_prefetcher" -library "altera_msgdma_prefetcher_1931" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "altera_msgdma_prefetcher" -library "altera_msgdma_prefetcher_1931" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "altera_msgdma_prefetcher" -library "altera_msgdma_prefetcher_1931" -name IP_COMPONENT_VERSION "MTkuMy4x"
+set_global_assignment -entity "altera_msgdma_prefetcher" -library "altera_msgdma_prefetcher_1931" -name IP_COMPONENT_DESCRIPTION "U0dETUEgcHJlZmV0Y2hpbmcgYmxvY2s="
+set_global_assignment -entity "altera_msgdma_prefetcher" -library "altera_msgdma_prefetcher_1931" -name IP_COMPONENT_GROUP "QmFzaWMgRnVuY3Rpb25zL0RNQS9tU0dETUEgU3ViLWNvcmU="
+set_global_assignment -entity "altera_msgdma_prefetcher" -library "altera_msgdma_prefetcher_1931" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly9kb2N1bWVudGF0aW9uLmFsdGVyYS5jb20vIy9saW5rL2hjbzE0MjE2OTgwNDIwODcvaGNvMTQyMTY5ODAxMzQwOA=="
+set_global_assignment -entity "tx_dma_prefetcher" -library "tx_dma_prefetcher" -name IP_COMPONENT_NAME "dHhfZG1hX3ByZWZldGNoZXI="
+set_global_assignment -entity "tx_dma_prefetcher" -library "tx_dma_prefetcher" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "tx_dma_prefetcher" -library "tx_dma_prefetcher" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "tx_dma_prefetcher" -library "tx_dma_prefetcher" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "tx_dma_prefetcher" -library "tx_dma_prefetcher" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "tx_dma_prefetcher" -library "tx_dma_prefetcher" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "altera_msgdma_prefetcher_1931" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_msgdma_prefetcher_1931/synth/altera_msgdma_prefetcher.v"]
+set_global_assignment -library "altera_msgdma_prefetcher_1931" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_msgdma_prefetcher_1931/synth/altera_msgdma_prefetcher_read.v"]
+set_global_assignment -library "altera_msgdma_prefetcher_1931" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_msgdma_prefetcher_1931/synth/altera_msgdma_prefetcher_write_back.v"]
+set_global_assignment -library "altera_msgdma_prefetcher_1931" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_msgdma_prefetcher_1931/synth/altera_msgdma_prefetcher_fifo.v"]
+set_global_assignment -library "altera_msgdma_prefetcher_1931" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_msgdma_prefetcher_1931/synth/altera_msgdma_prefetcher_interrrupt.v"]
+set_global_assignment -library "altera_msgdma_prefetcher_1931" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_msgdma_prefetcher_1931/synth/altera_msgdma_prefetcher_csr.v"]
+set_global_assignment -library "tx_dma_prefetcher" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/tx_dma_prefetcher.v"]
+
+
+set_global_assignment -entity "altera_msgdma_prefetcher" -library "altera_msgdma_prefetcher_1931" -name IP_TOOL_NAME "altera_msgdma_prefetcher"
+set_global_assignment -entity "altera_msgdma_prefetcher" -library "altera_msgdma_prefetcher_1931" -name IP_TOOL_VERSION "19.3.1"
+set_global_assignment -entity "altera_msgdma_prefetcher" -library "altera_msgdma_prefetcher_1931" -name IP_TOOL_ENV "QsysPrimePro"
+

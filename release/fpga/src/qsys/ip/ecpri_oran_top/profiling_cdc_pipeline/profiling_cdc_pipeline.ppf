@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pinplan
+ variation_name="profiling_cdc_pipeline"
+ megafunction_name="CDC_PIPELINE"
+ specifies="all_ports">
+ <global>
+  <pin name="src_clk" direction="input" scope="external" />
+  <pin name="rst_src_clk_n" direction="input" scope="external" />
+  <pin name="dst_clk" direction="input" scope="external" />
+  <pin name="rst_dst_clk_n" direction="input" scope="external" />
+  <pin name="datain[55..0]" direction="input" scope="external" />
+  <pin name="dataout[55..0]" direction="output" scope="external" />
+ </global>
+</pinplan>

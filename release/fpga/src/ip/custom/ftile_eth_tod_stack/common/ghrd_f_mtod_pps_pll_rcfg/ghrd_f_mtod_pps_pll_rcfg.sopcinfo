@@ -1,0 +1,1363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EnsembleReport
+ name="ghrd_f_mtod_pps_pll_rcfg"
+ kind="ghrd_f_mtod_pps_pll_rcfg"
+ version="1.0"
+ fabric="QSYS">
+ <!-- Format version 24.1 115 (Future versions may contain additional information.) -->
+ <!-- 2025.10.16.14:12:36 -->
+ <!-- A collection of modules and connections -->
+ <parameter name="AUTO_GENERATION_ID">
+  <type>java.lang.Integer</type>
+  <value>0</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>GENERATION_ID</sysinfo_type>
+ </parameter>
+ <parameter name="AUTO_UNIQUE_ID">
+  <type>java.lang.String</type>
+  <value></value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>UNIQUE_ID</sysinfo_type>
+ </parameter>
+ <parameter name="AUTO_DEVICE_FAMILY">
+  <type>java.lang.String</type>
+  <value>Agilex 7</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>DEVICE_FAMILY</sysinfo_type>
+ </parameter>
+ <parameter name="AUTO_DEVICE">
+  <type>java.lang.String</type>
+  <value>AGFB027R24C2E2VR2</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>DEVICE</sysinfo_type>
+ </parameter>
+ <parameter name="AUTO_DEVICE_SPEEDGRADE">
+  <type>java.lang.String</type>
+  <value>2</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>DEVICE_SPEEDGRADE</sysinfo_type>
+ </parameter>
+ <parameter name="AUTO_BOARD">
+  <type>java.lang.String</type>
+  <value>default</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>BOARD</sysinfo_type>
+ </parameter>
+ <parameter name="AUTO_MGMT_CLK_CLOCK_RATE">
+  <type>java.lang.Long</type>
+  <value>-1</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>CLOCK_RATE</sysinfo_type>
+  <sysinfo_arg>mgmt_clk</sysinfo_arg>
+ </parameter>
+ <parameter name="AUTO_MGMT_CLK_CLOCK_DOMAIN">
+  <type>java.lang.Integer</type>
+  <value>-1</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>CLOCK_DOMAIN</sysinfo_type>
+  <sysinfo_arg>mgmt_clk</sysinfo_arg>
+ </parameter>
+ <parameter name="AUTO_MGMT_CLK_RESET_DOMAIN">
+  <type>java.lang.Integer</type>
+  <value>-1</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>RESET_DOMAIN</sysinfo_type>
+  <sysinfo_arg>mgmt_clk</sysinfo_arg>
+ </parameter>
+ <parameter name="deviceFamily">
+  <type>java.lang.String</type>
+  <value>Agilex 7</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>DEVICE_FAMILY</sysinfo_type>
+ </parameter>
+ <parameter name="generateLegacySim">
+  <type>boolean</type>
+  <value>false</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>true</visible>
+  <valid>true</valid>
+ </parameter>
+ <module
+   name="altera_iopll_reconfig_0"
+   kind="altera_iopll_reconfig"
+   version="19.4.0"
+   entity="altera_iopll_reconfig_top"
+   library="altera_iopll_reconfig_1940"
+   path="altera_iopll_reconfig_0"
+   hpath="altera_iopll_reconfig_0"
+   className="altera_iopll_reconfig">
+  <!-- Describes a single module. Module parameters are
+the requested settings for a module instance. -->
+  <parameter name="device_family">
+   <type>java.lang.String</type>
+   <value>Agilex 7</value>
+   <derived>false</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+   <sysinfo_type>DEVICE_FAMILY</sysinfo_type>
+  </parameter>
+  <parameter name="gui_device_family">
+   <type>java.lang.String</type>
+   <value>Agilex 7</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="gui_advanced_reconfig">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="gui_cal_mode">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="gui_avalon_addr_width">
+   <type>int</type>
+   <value>10</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="device_opn">
+   <type>java.lang.String</type>
+   <value>AGFB027R24C2E2VR2</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+   <sysinfo_type>DEVICE</sysinfo_type>
+  </parameter>
+  <parameter name="gui_reconfig_mif_filename">
+   <type>java.lang.String</type>
+   <value>recalibration.mif</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="gui_wait_for_lock">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="validated_mif_filename">
+   <type>java.lang.String</type>
+   <value>/home/lena/intelFPGA_pro/24.1/ip/altera/altera_iopll_reconfig/recalibration.mif</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="gui_copy_mif">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="SHIFT_REGISTER_DEPTH">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="DPRIO_ADDR_WIDTH">
+   <type>int</type>
+   <value>8</value>
+   <derived>true</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="DPRIO_DATA_WIDTH">
+   <type>int</type>
+   <value>8</value>
+   <derived>true</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="DPRIO_MODE_SEL_WIDTH">
+   <type>int</type>
+   <value>2</value>
+   <derived>true</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="ROM_ADDR_WIDTH">
+   <type>int</type>
+   <value>2</value>
+   <derived>true</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="ROM_DATA_WIDTH">
+   <type>int</type>
+   <value>16</value>
+   <derived>true</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="ROM_NUM_WORDS">
+   <type>int</type>
+   <value>4</value>
+   <derived>true</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="TO_PLL_WIDTH">
+   <type>int</type>
+   <value>30</value>
+   <derived>true</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="FROM_PLL_WIDTH">
+   <type>int</type>
+   <value>11</value>
+   <derived>true</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="DPRIO_GATING_ADDR">
+   <type>int</type>
+   <value>22</value>
+   <derived>true</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_EOF">
+   <type>int</type>
+   <value>65535</value>
+   <derived>true</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="WAIT_FOR_LOCK">
+   <type>java.lang.String</type>
+   <value>false</value>
+   <derived>true</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="AVALON_ADDR_TIEOFF_WIDTH">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="reconfig_mif_filename">
+   <type>java.lang.String</type>
+   <value>/home/lena/intelFPGA_pro/24.1/ip/altera/altera_iopll_reconfig/recalibration.mif</value>
+   <derived>true</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="ADVANCED_RECONFIG">
+   <type>java.lang.String</type>
+   <value>false</value>
+   <derived>true</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_0">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_1">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_2">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_3">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_4">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_5">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_6">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_7">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_8">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_9">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_10">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_11">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_12">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_13">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_14">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_15">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_16">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_17">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_18">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_19">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_20">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_21">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_22">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_23">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_24">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_25">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_26">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_27">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_28">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_29">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_30">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="MIF_ADDRESS_31">
+   <type>int</type>
+   <value>0</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="debug_mode">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="table_names">
+   <type>[Ljava.lang.String;</type>
+   <value><![CDATA[<html><b>General Information</b><br>,Number of IOPLL Configurations,Depth of MIF File,Width of MIF File,,<html><b>Configuration 0 parameters</b><br>,Configuration 0 size,Configuration 0 name,Configuration 1 size]]></value>
+   <derived>true</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="table_values">
+   <type>[Ljava.lang.String;</type>
+   <value>,1,4,15,,,2,recalibration,0</value>
+   <derived>true</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="deviceFamily">
+   <type>java.lang.String</type>
+   <value>UNKNOWN</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="generateLegacySim">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <interface name="mgmt_clk" kind="clock_sink" version="24.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <parameter name="externallyDriven">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="ptfSchematicName">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>clock</type>
+   <span>0</span>
+   <isStart>false</isStart>
+   <port>
+    <name>mgmt_clk</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>clk</role>
+   </port>
+  </interface>
+  <interface name="mgmt_reset" kind="reset_sink" version="24.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value>mgmt_clk</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="synchronousEdges">
+    <type>com.altera.sopcmodel.reset.Reset$Edges</type>
+    <value>DEASSERT</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>reset</type>
+   <span>0</span>
+   <isStart>false</isStart>
+   <port>
+    <name>mgmt_reset</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>reset</role>
+   </port>
+  </interface>
+  <interface name="mgmt_avalon_slave" kind="avalon_slave" version="24.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>embeddedsw.configuration.isFlash</name>
+    <value>0</value>
+   </assignment>
+   <assignment>
+    <name>embeddedsw.configuration.isMemoryDevice</name>
+    <value>0</value>
+   </assignment>
+   <assignment>
+    <name>embeddedsw.configuration.isNonVolatileStorage</name>
+    <value>0</value>
+   </assignment>
+   <assignment>
+    <name>embeddedsw.configuration.isPrintableDevice</name>
+    <value>0</value>
+   </assignment>
+   <parameter name="addressAlignment">
+    <type>com.altera.sopcmodel.avalon.AvalonConnectionPoint$AddressAlignment</type>
+    <value>DYNAMIC</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="addressGroup">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="addressSpan">
+    <type>java.math.BigInteger</type>
+    <value>1024</value>
+    <derived>true</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="addressUnits">
+    <type>com.altera.sopcmodel.avalon.EAddrBurstUnits</type>
+    <value>WORDS</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="alwaysBurstMaxBurst">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value>mgmt_clk</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value>mgmt_reset</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="bitsPerSymbol">
+    <type>int</type>
+    <value>8</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="bridgedAddressOffset">
+    <type>java.math.BigInteger</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="bridgesToMaster">
+    <type>com.altera.entityinterfaces.IConnectionPoint</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="burstOnBurstBoundariesOnly">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="burstcountUnits">
+    <type>com.altera.sopcmodel.avalon.EAddrBurstUnits</type>
+    <value>WORDS</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="constantBurstBehavior">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="explicitAddressSpan">
+    <type>java.math.BigInteger</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="holdTime">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>false</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="interleaveBursts">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="isBigEndian">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="isFlash">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="isMemoryDevice">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="isNonVolatileStorage">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="linewrapBursts">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="maximumPendingReadTransactions">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>false</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="maximumPendingWriteTransactions">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>false</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="minimumReadLatency">
+    <type>int</type>
+    <value>1</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="minimumResponseLatency">
+    <type>int</type>
+    <value>1</value>
+    <derived>false</derived>
+    <enabled>false</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="minimumUninterruptedRunLength">
+    <type>int</type>
+    <value>1</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="printableDevice">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="readLatency">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="readWaitStates">
+    <type>int</type>
+    <value>1</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="readWaitTime">
+    <type>int</type>
+    <value>1</value>
+    <derived>false</derived>
+    <enabled>false</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="registerIncomingSignals">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="registerOutgoingSignals">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="setupTime">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>false</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="timingUnits">
+    <type>com.altera.sopcmodel.avalon.TimingUnits</type>
+    <value>Cycles</value>
+    <derived>false</derived>
+    <enabled>false</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="transparentBridge">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="waitrequestAllowance">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="wellBehavedWaitrequest">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="writeLatency">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="writeWaitStates">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="writeWaitTime">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>false</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="dfhFeatureGuid">
+    <type>java.math.BigInteger</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="dfhGroupId">
+    <type>java.lang.Integer</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="dfhParameterId">
+    <type>[Ljava.lang.Integer;</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="dfhParameterName">
+    <type>[Ljava.lang.String;</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="dfhParameterVersion">
+    <type>[Ljava.lang.Integer;</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="dfhParameterData">
+    <type>[Ljava.lang.String;</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="dfhParameterDataLength">
+    <type>[Ljava.lang.Integer;</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="dfhFeatureMajorVersion">
+    <type>java.lang.Integer</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="dfhFeatureMinorVersion">
+    <type>java.lang.Integer</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="dfhFeatureId">
+    <type>java.lang.Integer</type>
+    <value>35</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="dfhFeatureType">
+    <type>java.lang.Integer</type>
+    <value>3</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>avalon</type>
+   <span>1024</span>
+   <isStart>false</isStart>
+   <port>
+    <name>mgmt_waitrequest</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>waitrequest</role>
+   </port>
+   <port>
+    <name>mgmt_write</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>write</role>
+   </port>
+   <port>
+    <name>mgmt_read</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>read</role>
+   </port>
+   <port>
+    <name>mgmt_writedata</name>
+    <direction>Input</direction>
+    <width>8</width>
+    <role>writedata</role>
+   </port>
+   <port>
+    <name>mgmt_readdata</name>
+    <direction>Output</direction>
+    <width>8</width>
+    <role>readdata</role>
+   </port>
+   <port>
+    <name>mgmt_address</name>
+    <direction>Input</direction>
+    <width>10</width>
+    <role>address</role>
+   </port>
+  </interface>
+  <interface name="reconfig_to_pll" kind="conduit_end" version="24.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>ui.blockdiagram.direction</name>
+    <value>OUTPUT</value>
+   </assignment>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <span>0</span>
+   <isStart>false</isStart>
+   <port>
+    <name>reconfig_to_pll</name>
+    <direction>Output</direction>
+    <width>30</width>
+    <role>reconfig_to_pll</role>
+   </port>
+  </interface>
+  <interface name="reconfig_from_pll" kind="conduit_end" version="24.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>ui.blockdiagram.direction</name>
+    <value>INPUT</value>
+   </assignment>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <span>0</span>
+   <isStart>false</isStart>
+   <port>
+    <name>reconfig_from_pll</name>
+    <direction>Input</direction>
+    <width>11</width>
+    <role>reconfig_from_pll</role>
+   </port>
+  </interface>
+ </module>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_iopll_reconfig</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>IOPLL Reconfig Intel FPGA IP</displayName>
+  <version>19.4.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>clock_sink</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Clock Input</displayName>
+  <version>24.1</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>reset_sink</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Reset Input</displayName>
+  <version>24.1</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>avalon_slave</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Avalon Memory Mapped Agent</displayName>
+  <version>24.1</version>
+ </plugin>
+ <plugin>
+  <instanceCount>2</instanceCount>
+  <name>conduit_end</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Conduit</displayName>
+  <version>24.1</version>
+ </plugin>
+ <reportVersion>24.1 115</reportVersion>
+ <uniqueIdentifier></uniqueIdentifier>
+</EnsembleReport>

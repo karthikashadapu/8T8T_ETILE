@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_in_system_sources_probes_1921/sim/altsource_probe.v"
+   type="VERILOG"
+   library="altera_in_system_sources_probes_1921" />
+ <file
+   path="sim/dely_meas_enable_pio.v"
+   type="VERILOG"
+   library="dely_meas_enable_pio"
+   hasInlineConfiguration="true" />
+ <topLevel name="dely_meas_enable_pio.dely_meas_enable_pio" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

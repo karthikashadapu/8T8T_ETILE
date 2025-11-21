@@ -1,0 +1,51 @@
+set_global_assignment -entity "rx_dma_dispatcher" -library "rx_dma_dispatcher" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "rx_dma_dispatcher" -library "rx_dma_dispatcher" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "rx_dma_dispatcher" -library "rx_dma_dispatcher" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "rx_dma_dispatcher" -library "rx_dma_dispatcher" -name IP_TOOL_VENDOR_NAME "Intel Corporation"
+set_global_assignment -entity "rx_dma_dispatcher" -library "rx_dma_dispatcher" -name IP_TOP_LEVEL_COMPONENT_NAME "modular_sgdma_dispatcher"
+set_global_assignment -entity "rx_dma_dispatcher" -library "rx_dma_dispatcher" -name PRE_COMPILED_MODULE "ON"
+set_global_assignment -entity "rx_dma_dispatcher" -library "rx_dma_dispatcher" -name OCS_IP_FILE "/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/subsys_ftile_25gbe_rx_dma/rx_dma_dispatcher.ip"
+set_global_assignment -entity "rx_dma_dispatcher" -library "rx_dma_dispatcher" -name OCS_IP_TYPE "modular_sgdma_dispatcher"
+set_global_assignment -entity "rx_dma_dispatcher" -library "rx_dma_dispatcher" -name OCS_IP_VERSION "19.2.0"
+set_global_assignment -entity "rx_dma_dispatcher" -library "rx_dma_dispatcher" -name OCS_IP_HASH "p3kdrbi"
+set_global_assignment -library "rx_dma_dispatcher" -name SOPCINFO_FILE [file join $::quartus(qip_path) "rx_dma_dispatcher.sopcinfo"]
+set_global_assignment -entity "rx_dma_dispatcher" -library "rx_dma_dispatcher" -name SLD_INFO "QSYS_NAME rx_dma_dispatcher HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "rx_dma_dispatcher" -name MISC_FILE [file join $::quartus(qip_path) "rx_dma_dispatcher.cmp"]
+set_global_assignment -entity "rx_dma_dispatcher" -library "rx_dma_dispatcher" -name IP_TARGETED_DEVICE_FAMILY "Agilex 7"
+set_global_assignment -entity "rx_dma_dispatcher" -library "rx_dma_dispatcher" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 7}"
+set_global_assignment -entity "rx_dma_dispatcher" -library "rx_dma_dispatcher" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "rx_dma_dispatcher" -name MISC_FILE [file join $::quartus(qip_path) "../rx_dma_dispatcher.ip"]
+
+set_global_assignment -entity "dispatcher" -library "modular_sgdma_dispatcher_1920" -name IP_COMPONENT_NAME "ZGlzcGF0Y2hlcg=="
+set_global_assignment -entity "dispatcher" -library "modular_sgdma_dispatcher_1920" -name IP_COMPONENT_DISPLAY_NAME "TW9kdWxhciBTR0RNQSBEaXNwYXRjaGVyIEludGVsIEZQR0EgSVA="
+set_global_assignment -entity "dispatcher" -library "modular_sgdma_dispatcher_1920" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "dispatcher" -library "modular_sgdma_dispatcher_1920" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "dispatcher" -library "modular_sgdma_dispatcher_1920" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "dispatcher" -library "modular_sgdma_dispatcher_1920" -name IP_COMPONENT_VERSION "MTkuMi4w"
+set_global_assignment -entity "dispatcher" -library "modular_sgdma_dispatcher_1920" -name IP_COMPONENT_DESCRIPTION "U0dETUEgc2NoZWR1bGluZyBibG9jaw=="
+set_global_assignment -entity "dispatcher" -library "modular_sgdma_dispatcher_1920" -name IP_COMPONENT_GROUP "QmFzaWMgRnVuY3Rpb25zL0RNQS9tU0dETUEgU3ViLWNvcmU="
+set_global_assignment -entity "dispatcher" -library "modular_sgdma_dispatcher_1920" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly9kb2N1bWVudGF0aW9uLmFsdGVyYS5jb20vIy9saW5rL3NmbzE0MDA3ODc5NTI5MzIvbHJvMTQwMjE5Njk0NjA2MQ=="
+set_global_assignment -entity "dispatcher" -library "modular_sgdma_dispatcher_1920" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly9kb2N1bWVudGF0aW9uLmFsdGVyYS5jb20vIy9saW5rL2hjbzE0MjE2OTgwNDIwODcvaGNvMTQyMTY5ODAxMzQwOA=="
+set_global_assignment -entity "rx_dma_dispatcher" -library "rx_dma_dispatcher" -name IP_COMPONENT_NAME "cnhfZG1hX2Rpc3BhdGNoZXI="
+set_global_assignment -entity "rx_dma_dispatcher" -library "rx_dma_dispatcher" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "rx_dma_dispatcher" -library "rx_dma_dispatcher" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "rx_dma_dispatcher" -library "rx_dma_dispatcher" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "rx_dma_dispatcher" -library "rx_dma_dispatcher" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "rx_dma_dispatcher" -library "rx_dma_dispatcher" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "modular_sgdma_dispatcher_1920" -name VERILOG_FILE [file join $::quartus(qip_path) "modular_sgdma_dispatcher_1920/synth/dispatcher.v"]
+set_global_assignment -library "modular_sgdma_dispatcher_1920" -name VERILOG_FILE [file join $::quartus(qip_path) "modular_sgdma_dispatcher_1920/synth/descriptor_buffers.v"]
+set_global_assignment -library "modular_sgdma_dispatcher_1920" -name VERILOG_FILE [file join $::quartus(qip_path) "modular_sgdma_dispatcher_1920/synth/csr_block.v"]
+set_global_assignment -library "modular_sgdma_dispatcher_1920" -name VERILOG_FILE [file join $::quartus(qip_path) "modular_sgdma_dispatcher_1920/synth/response_block.v"]
+set_global_assignment -library "modular_sgdma_dispatcher_1920" -name VERILOG_FILE [file join $::quartus(qip_path) "modular_sgdma_dispatcher_1920/synth/fifo_with_byteenables.v"]
+set_global_assignment -library "modular_sgdma_dispatcher_1920" -name VERILOG_FILE [file join $::quartus(qip_path) "modular_sgdma_dispatcher_1920/synth/read_signal_breakout.v"]
+set_global_assignment -library "modular_sgdma_dispatcher_1920" -name VERILOG_FILE [file join $::quartus(qip_path) "modular_sgdma_dispatcher_1920/synth/write_signal_breakout.v"]
+set_global_assignment -library "rx_dma_dispatcher" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/rx_dma_dispatcher.v"]
+
+
+set_global_assignment -entity "dispatcher" -library "modular_sgdma_dispatcher_1920" -name IP_TOOL_NAME "modular_sgdma_dispatcher"
+set_global_assignment -entity "dispatcher" -library "modular_sgdma_dispatcher_1920" -name IP_TOOL_VERSION "19.2.0"
+set_global_assignment -entity "dispatcher" -library "modular_sgdma_dispatcher_1920" -name IP_TOOL_ENV "QsysPrimePro"
+

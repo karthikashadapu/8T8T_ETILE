@@ -1,0 +1,20 @@
+-- safe_path for standaloneTopLevel_dec_dly_comp_DUT_DUT_By_Pass_x given rtl dir is ../../rtl/dec_dly_comp_rtl (flat)
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+PACKAGE dec_dly_comp_DUT_safe_path is
+	FUNCTION safe_path( path: string ) RETURN string;
+END dec_dly_comp_DUT_safe_path;
+
+PACKAGE body dec_dly_comp_DUT_safe_path IS
+	FUNCTION safe_path( path: string )
+		RETURN string IS
+	BEGIN
+		FOR i IN path'reverse_range loop
+			IF (path(i) = '/') THEN
+				RETURN path(i+1 to path'right);
+			END IF;
+		END LOOP;
+		RETURN path;
+	END FUNCTION safe_path;
+END dec_dly_comp_DUT_safe_path;

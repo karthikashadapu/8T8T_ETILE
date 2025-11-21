@@ -34,7 +34,7 @@
 db/
 incremental_db/
 output_files/
-simulation/
+
 *.sof
 *.rbf
 *.pof
@@ -49,11 +49,9 @@ simulation/
 *.pin
 *.html
 qdb/
-ip/
-*.qip
-*.ip_generated/
+
 *.qsys_edit/
-*.qsf
+
 *.qar
 *.qarlog
 

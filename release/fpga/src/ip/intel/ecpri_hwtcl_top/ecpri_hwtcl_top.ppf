@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pinplan
+ variation_name="ecpri_hwtcl_top"
+ megafunction_name="ECPRI"
+ intended_family="Agilex 7"
+ specifies="all_ports">
+ <global>
+  <pin name="mac_clk_tx" direction="input" scope="external" />
+  <pin name="mac_clk_rx" direction="input" scope="external" />
+  <pin name="clk_tx" direction="input" scope="external" />
+  <pin name="clk_rx" direction="input" scope="external" />
+  <pin name="clk_csr" direction="input" scope="external" />
+  <pin name="ext_sink_clk" direction="input" scope="external" />
+  <pin name="rst_tx_n" direction="input" scope="external" />
+  <pin name="rst_rx_n" direction="input" scope="external" />
+  <pin name="rst_csr_n" direction="input" scope="external" />
+  <pin name="csr_address[15..0]" direction="input" scope="external" />
+  <pin name="csr_write" direction="input" scope="external" />
+  <pin name="csr_writedata[31..0]" direction="input" scope="external" />
+  <pin name="csr_read" direction="input" scope="external" />
+  <pin name="csr_readdata[31..0]" direction="output" scope="external" />
+  <pin name="csr_readdatavalid" direction="output" scope="external" />
+  <pin name="csr_waitrequest" direction="output" scope="external" />
+  <pin name="mac_source_valid" direction="output" scope="external" />
+  <pin name="mac_source_data[63..0]" direction="output" scope="external" />
+  <pin name="mac_source_sop" direction="output" scope="external" />
+  <pin name="mac_source_eop" direction="output" scope="external" />
+  <pin name="mac_source_empty[2..0]" direction="output" scope="external" />
+  <pin name="mac_source_error" direction="output" scope="external" />
+  <pin name="mac_source_ready" direction="input" scope="external" />
+  <pin name="avst_sink_valid" direction="input" scope="external" />
+  <pin name="avst_sink_data[63..0]" direction="input" scope="external" />
+  <pin name="avst_sink_sop" direction="input" scope="external" />
+  <pin name="avst_sink_eop" direction="input" scope="external" />
+  <pin name="avst_sink_empty[2..0]" direction="input" scope="external" />
+  <pin name="avst_sink_error" direction="input" scope="external" />
+  <pin name="avst_sink_ready" direction="output" scope="external" />
+  <pin name="avst_source_valid" direction="output" scope="external" />
+  <pin name="avst_source_data[63..0]" direction="output" scope="external" />
+  <pin name="avst_source_sop" direction="output" scope="external" />
+  <pin name="avst_source_eop" direction="output" scope="external" />
+  <pin name="avst_source_empty[2..0]" direction="output" scope="external" />
+  <pin name="avst_source_error" direction="output" scope="external" />
+  <pin name="mac_sink_valid" direction="input" scope="external" />
+  <pin name="mac_sink_data[63..0]" direction="input" scope="external" />
+  <pin name="mac_sink_sop" direction="input" scope="external" />
+  <pin name="mac_sink_eop" direction="input" scope="external" />
+  <pin name="mac_sink_empty[2..0]" direction="input" scope="external" />
+  <pin name="mac_sink_error[5..0]" direction="input" scope="external" />
+  <pin name="mac_sink_ready" direction="output" scope="external" />
+  <pin name="ext_sink_0_valid" direction="input" scope="external" />
+  <pin name="ext_sink_0_data[63..0]" direction="input" scope="external" />
+  <pin name="ext_sink_0_sop" direction="input" scope="external" />
+  <pin name="ext_sink_0_eop" direction="input" scope="external" />
+  <pin name="ext_sink_0_empty[2..0]" direction="input" scope="external" />
+  <pin name="ext_sink_0_error" direction="input" scope="external" />
+  <pin name="ext_sink_0_ready" direction="output" scope="external" />
+  <pin name="ext_source_valid" direction="output" scope="external" />
+  <pin name="ext_source_data[63..0]" direction="output" scope="external" />
+  <pin name="ext_source_sop" direction="output" scope="external" />
+  <pin name="ext_source_eop" direction="output" scope="external" />
+  <pin name="ext_source_empty[2..0]" direction="output" scope="external" />
+  <pin name="ext_source_error[5..0]" direction="output" scope="external" />
+  <pin name="ext_source_pkt_type[2..0]" direction="output" scope="external" />
+  <pin name="err_interrupt" direction="output" scope="external" />
+  <pin name="source_pc_id[31..0]" direction="output" scope="external" />
+  <pin name="source_seq_id[31..0]" direction="output" scope="external" />
+  <pin name="source_rtc_id[15..0]" direction="output" scope="external" />
+  <pin name="source_msg_type[7..0]" direction="output" scope="external" />
+  <pin name="source_mem_acc_id[7..0]" direction="output" scope="external" />
+  <pin name="source_op_type[7..0]" direction="output" scope="external" />
+  <pin name="source_element_id[15..0]" direction="output" scope="external" />
+  <pin name="source_address[47..0]" direction="output" scope="external" />
+  <pin name="source_length[15..0]" direction="output" scope="external" />
+  <pin name="source_reset_id[15..0]" direction="output" scope="external" />
+  <pin name="source_reset_op[7..0]" direction="output" scope="external" />
+  <pin name="source_event_id[7..0]" direction="output" scope="external" />
+  <pin name="source_event_type[7..0]" direction="output" scope="external" />
+  <pin name="source_notif[7..0]" direction="output" scope="external" />
+  <pin name="source_concatenation" direction="output" scope="external" />
+  <pin name="sink_pc_id[31..0]" direction="input" scope="external" />
+  <pin name="sink_seq_id[31..0]" direction="input" scope="external" />
+  <pin name="sink_rtc_id[15..0]" direction="input" scope="external" />
+  <pin name="sink_concatenation" direction="input" scope="external" />
+  <pin name="sink_msg_type[7..0]" direction="input" scope="external" />
+  <pin name="sink_mem_acc_id[7..0]" direction="input" scope="external" />
+  <pin name="sink_op_type[7..0]" direction="input" scope="external" />
+  <pin name="sink_element_id[15..0]" direction="input" scope="external" />
+  <pin name="sink_address[47..0]" direction="input" scope="external" />
+  <pin name="sink_length[15..0]" direction="input" scope="external" />
+  <pin name="sink_reset_id[15..0]" direction="input" scope="external" />
+  <pin name="sink_reset_op[7..0]" direction="input" scope="external" />
+  <pin name="sink_event_id[7..0]" direction="input" scope="external" />
+  <pin name="sink_event_type[7..0]" direction="input" scope="external" />
+  <pin name="tx_lanes_stable" direction="input" scope="external" />
+  <pin name="rx_pcs_ready" direction="input" scope="external" />
+  <pin
+     name="ptp_offset_timestamp[15..0]"
+     direction="output"
+     scope="external" />
+  <pin
+     name="ptp_offset_correction_field[15..0]"
+     direction="output"
+     scope="external" />
+  <pin name="ptp_timestamp_insert" direction="output" scope="external" />
+  <pin
+     name="ptp_tx_etstamp_ins_ctrl_residence_time_update"
+     direction="output"
+     scope="external" />
+  <pin
+     name="ptp_timestamp_request_fingerprint[7..0]"
+     direction="output"
+     scope="external" />
+  <pin
+     name="ptp_timestamp_request_valid"
+     direction="output"
+     scope="external" />
+  <pin
+     name="tx_etstamp_ins_ctrl_timestamp_format"
+     direction="output"
+     scope="external" />
+  <pin
+     name="tx_etstamp_ins_ctrl_residence_time_calc_format"
+     direction="output"
+     scope="external" />
+  <pin
+     name="tx_etstamp_ins_ctrl_offset_checksum_field[15..0]"
+     direction="output"
+     scope="external" />
+  <pin
+     name="tx_etstamp_ins_ctrl_offset_checksum_correction[15..0]"
+     direction="output"
+     scope="external" />
+  <pin
+     name="tx_etstamp_ins_ctrl_ingress_timestamp_96b[95..0]"
+     direction="output"
+     scope="external" />
+  <pin
+     name="tx_etstamp_ins_ctrl_checksum_zero"
+     direction="output"
+     scope="external" />
+  <pin
+     name="tx_etstamp_ins_ctrl_checksum_correct"
+     direction="output"
+     scope="external" />
+  <pin
+     name="tx_egress_timestamp_96b_valid"
+     direction="input"
+     scope="external" />
+  <pin
+     name="tx_egress_timestamp_96b_data[95..0]"
+     direction="input"
+     scope="external" />
+  <pin
+     name="tx_egress_timestamp_96b_fingerprint[7..0]"
+     direction="input"
+     scope="external" />
+  <pin
+     name="rx_ingress_timestamp_96b_valid"
+     direction="input"
+     scope="external" />
+  <pin
+     name="rx_ingress_timestamp_96b_data[95..0]"
+     direction="input"
+     scope="external" />
+  <pin
+     name="ext_sink_0_tx_egress_timestamp_96b_valid"
+     direction="output"
+     scope="external" />
+  <pin
+     name="ext_sink_0_tx_egress_timestamp_96b_data[95..0]"
+     direction="output"
+     scope="external" />
+  <pin
+     name="ext_rx_ingress_timestamp_96b_data[95..0]"
+     direction="output"
+     scope="external" />
+  <pin
+     name="ext_sink_0_tx_ingress_timestamp_96b_data[95..0]"
+     direction="input"
+     scope="external" />
+  <pin
+     name="ptp_tx_ingress_timestamp_96b_data[95..0]"
+     direction="output"
+     scope="external" />
+  <pin
+     name="rx_tod_time_of_day_96b_data[95..0]"
+     direction="input"
+     scope="external" />
+  <pin
+     name="tx_tod_time_of_day_96b_data[95..0]"
+     direction="input"
+     scope="external" />
+  <pin name="tx_transport_c_u" direction="input" scope="external" />
+  <pin name="rx_transport_c_u" direction="output" scope="external" />
+  <pin name="sink_pkt_size[15..0]" direction="input" scope="external" />
+  <pin name="sink_pkt_checksum[15..0]" direction="input" scope="external" />
+  <pin
+     name="ext_sink_0_tx_egress_timestamp_96b_fingerprint[5..0]"
+     direction="output"
+     scope="external" />
+  <pin
+     name="ext_sink_0_timestamp_request_fingerprint[5..0]"
+     direction="input"
+     scope="external" />
+  <pin
+     name="ext_sink_0_timestamp_request_valid"
+     direction="input"
+     scope="external" />
+ </global>
+</pinplan>

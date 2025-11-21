@@ -1,0 +1,16 @@
+# system info ecpri_oran_top_reset_bridge_csr on 2025.11.21.14:06:23
+system_info:
+name,value
+DEVICE,AGFB014R24B2I2V
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for ecpri_oran_top_reset_bridge_csr on 2025.11.21.14:06:23
+files:
+filepath,kind,attributes,module,is_top
+sim/ecpri_oran_top_reset_bridge_csr.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,ecpri_oran_top_reset_bridge_csr,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module

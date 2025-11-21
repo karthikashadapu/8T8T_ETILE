@@ -1,0 +1,18 @@
+# system info dma_subsystem_agilex_axi_bridge_for_acp_0 on 2025.10.16.14:10:47
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for dma_subsystem_agilex_axi_bridge_for_acp_0 on 2025.10.16.14:10:47
+files:
+filepath,kind,attributes,module,is_top
+sim/dma_subsystem_agilex_axi_bridge_for_acp_0.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,dma_subsystem_agilex_axi_bridge_for_acp_0,true
+agilex_axi_bridge_for_acp_1920/sim/agilex_axi_bridge_for_acp.v,VERILOG,,agilex_axi_bridge_for_acp,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+dma_subsystem_agilex_axi_bridge_for_acp_0.agilex_axi_bridge_for_acp_0,agilex_axi_bridge_for_acp

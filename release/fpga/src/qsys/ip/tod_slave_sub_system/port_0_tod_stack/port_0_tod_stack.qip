@@ -1,0 +1,30 @@
+set_global_assignment -entity "port_0_tod_stack" -library "port_0_tod_stack" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "port_0_tod_stack" -library "port_0_tod_stack" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "port_0_tod_stack" -library "port_0_tod_stack" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "port_0_tod_stack" -library "port_0_tod_stack" -name IP_TOOL_VENDOR_NAME "Altera Corporation"
+set_global_assignment -entity "port_0_tod_stack" -library "port_0_tod_stack" -name IP_TOP_LEVEL_COMPONENT_NAME "port_tod_stack"
+set_global_assignment -library "port_0_tod_stack" -name SOPCINFO_FILE [file join $::quartus(qip_path) "port_0_tod_stack.sopcinfo"]
+set_global_assignment -entity "port_0_tod_stack" -library "port_0_tod_stack" -name SLD_INFO "QSYS_NAME port_0_tod_stack HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "port_0_tod_stack" -name MISC_FILE [file join $::quartus(qip_path) "port_0_tod_stack.cmp"]
+set_global_assignment -entity "port_0_tod_stack" -library "port_0_tod_stack" -name IP_TARGETED_DEVICE_FAMILY "Agilex 7"
+set_global_assignment -entity "port_0_tod_stack" -library "port_0_tod_stack" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 7}"
+set_global_assignment -entity "port_0_tod_stack" -library "port_0_tod_stack" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "port_0_tod_stack" -name MISC_FILE [file join $::quartus(qip_path) "../port_0_tod_stack.ip"]
+
+set_global_assignment -entity "pp_tod_stack" -library "port_tod_stack_10" -name IP_COMPONENT_NAME "cHBfdG9kX3N0YWNr"
+set_global_assignment -entity "pp_tod_stack" -library "port_tod_stack_10" -name IP_COMPONENT_DISPLAY_NAME "cG9ydF90b2Rfc3RhY2s="
+set_global_assignment -entity "pp_tod_stack" -library "port_tod_stack_10" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "pp_tod_stack" -library "port_tod_stack_10" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "pp_tod_stack" -library "port_tod_stack_10" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "port_0_tod_stack" -library "port_0_tod_stack" -name IP_COMPONENT_NAME "cG9ydF8wX3RvZF9zdGFjaw=="
+set_global_assignment -entity "port_0_tod_stack" -library "port_0_tod_stack" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "port_0_tod_stack" -library "port_0_tod_stack" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "port_0_tod_stack" -library "port_0_tod_stack" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "port_0_tod_stack" -library "port_0_tod_stack" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "port_0_tod_stack" -library "port_0_tod_stack" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "port_tod_stack_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "port_tod_stack_10/synth/pp_tod_stack.sv"]
+set_global_assignment -library "port_0_tod_stack" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/port_0_tod_stack.v"]
+

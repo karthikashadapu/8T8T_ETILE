@@ -1,0 +1,43 @@
+	dxc_ss_top_duc_model_DUT_0 u0 (
+		.clk                  (_connected_to_clk_),                  //   input,   width = 1,           clock.clk
+		.areset               (_connected_to_areset_),               //   input,   width = 1,     clock_reset.reset
+		.bus_clk              (_connected_to_bus_clk_),              //   input,   width = 1,       bus_clock.clk
+		.bus_areset           (_connected_to_bus_areset_),           //   input,   width = 1, bus_clock_reset.reset
+		.busIn_address        (_connected_to_busIn_address_),        //   input,  width = 14,             bus.address
+		.busIn_read           (_connected_to_busIn_read_),           //   input,   width = 1,                .read
+		.busIn_write          (_connected_to_busIn_write_),          //   input,   width = 1,                .write
+		.busIn_writedata      (_connected_to_busIn_writedata_),      //   input,  width = 32,                .writedata
+		.busOut_readdata      (_connected_to_busOut_readdata_),      //  output,  width = 32,                .readdata
+		.busOut_readdatavalid (_connected_to_busOut_readdatavalid_), //  output,   width = 1,                .readdatavalid
+		.busOut_waitrequest   (_connected_to_busOut_waitrequest_),   //  output,   width = 1,                .waitrequest
+		.DUC_Valid_l1_s       (_connected_to_DUC_Valid_l1_s_),       //   input,   width = 1,             exp.valid_DUC_Valid_l1_s
+		.DUC_Chan_l1_s        (_connected_to_DUC_Chan_l1_s_),        //   input,   width = 8,                .channel_DUC_Chan_l1_s
+		.DUC_Data_l1_im       (_connected_to_DUC_Data_l1_im_),       //   input,  width = 16,                .data_DUC_Data_l1_im
+		.DUC_Data_l1_re       (_connected_to_DUC_Data_l1_re_),       //   input,  width = 16,                .data_DUC_Data_l1_re
+		.DUC_NCO_sync_0       (_connected_to_DUC_NCO_sync_0_),       //   input,   width = 1,                .data_DUC_NCO_sync_0
+		.DUC_NCO_sync_1       (_connected_to_DUC_NCO_sync_1_),       //   input,   width = 1,                .data_DUC_NCO_sync_1
+		.DUC_NCO_sync_2       (_connected_to_DUC_NCO_sync_2_),       //   input,   width = 1,                .data_DUC_NCO_sync_2
+		.DUC_NCO_sync_3       (_connected_to_DUC_NCO_sync_3_),       //   input,   width = 1,                .data_DUC_NCO_sync_3
+		.BW_Config_CC1_s      (_connected_to_BW_Config_CC1_s_),      //   input,   width = 8,                .data_BW_Config_CC1_s
+		.DUC_Valid_Out_s      (_connected_to_DUC_Valid_Out_s_),      //  output,   width = 1,                .valid_DUC_Valid_Out_s
+		.DUC_Chan_Out_s       (_connected_to_DUC_Chan_Out_s_),       //  output,   width = 8,                .channel_DUC_Chan_Out_s
+		.DUC_Data_Out_0im     (_connected_to_DUC_Data_Out_0im_),     //  output,  width = 16,                .data_DUC_Data_Out_0im
+		.DUC_Data_Out_0re     (_connected_to_DUC_Data_Out_0re_),     //  output,  width = 16,                .data_DUC_Data_Out_0re
+		.DUC_Data_Out_1im     (_connected_to_DUC_Data_Out_1im_),     //  output,  width = 16,                .data_DUC_Data_Out_1im
+		.DUC_Data_Out_1re     (_connected_to_DUC_Data_Out_1re_),     //  output,  width = 16,                .data_DUC_Data_Out_1re
+		.DUC_Data_Out_2im     (_connected_to_DUC_Data_Out_2im_),     //  output,  width = 16,                .data_DUC_Data_Out_2im
+		.DUC_Data_Out_2re     (_connected_to_DUC_Data_Out_2re_),     //  output,  width = 16,                .data_DUC_Data_Out_2re
+		.DUC_Data_Out_3im     (_connected_to_DUC_Data_Out_3im_),     //  output,  width = 16,                .data_DUC_Data_Out_3im
+		.DUC_Data_Out_3re     (_connected_to_DUC_Data_Out_3re_),     //  output,  width = 16,                .data_DUC_Data_Out_3re
+		.duc_l1_vout_s        (_connected_to_duc_l1_vout_s_),        //  output,   width = 1,                .valid_duc_l1_vout_s
+		.duc_l1_cout_s        (_connected_to_duc_l1_cout_s_),        //  output,   width = 8,                .channel_duc_l1_cout_s
+		.duc_l1_dout_0im      (_connected_to_duc_l1_dout_0im_),      //  output,  width = 16,                .data_duc_l1_dout_0im
+		.duc_l1_dout_0re      (_connected_to_duc_l1_dout_0re_),      //  output,  width = 16,                .data_duc_l1_dout_0re
+		.duc_l1_dout_1im      (_connected_to_duc_l1_dout_1im_),      //  output,  width = 16,                .data_duc_l1_dout_1im
+		.duc_l1_dout_1re      (_connected_to_duc_l1_dout_1re_),      //  output,  width = 16,                .data_duc_l1_dout_1re
+		.duc_l1_dout_2im      (_connected_to_duc_l1_dout_2im_),      //  output,  width = 16,                .data_duc_l1_dout_2im
+		.duc_l1_dout_2re      (_connected_to_duc_l1_dout_2re_),      //  output,  width = 16,                .data_duc_l1_dout_2re
+		.duc_l1_dout_3im      (_connected_to_duc_l1_dout_3im_),      //  output,  width = 16,                .data_duc_l1_dout_3im
+		.duc_l1_dout_3re      (_connected_to_duc_l1_dout_3re_)       //  output,  width = 16,                .data_duc_l1_dout_3re
+	);
+

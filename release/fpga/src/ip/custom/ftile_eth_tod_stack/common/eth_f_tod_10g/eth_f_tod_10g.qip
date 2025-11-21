@@ -1,0 +1,53 @@
+set_global_assignment -entity "eth_f_tod_10g" -library "eth_f_tod_10g" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "eth_f_tod_10g" -library "eth_f_tod_10g" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "eth_f_tod_10g" -library "eth_f_tod_10g" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "eth_f_tod_10g" -library "eth_f_tod_10g" -name IP_TOOL_VENDOR_NAME "Intel Corporation"
+set_global_assignment -entity "eth_f_tod_10g" -library "eth_f_tod_10g" -name IP_TOP_LEVEL_COMPONENT_NAME "altera_eth_1588_tod"
+set_global_assignment -library "eth_f_tod_10g" -name SOPCINFO_FILE [file join $::quartus(qip_path) "eth_f_tod_10g.sopcinfo"]
+set_global_assignment -entity "eth_f_tod_10g" -library "eth_f_tod_10g" -name SLD_INFO "QSYS_NAME eth_f_tod_10g HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "eth_f_tod_10g" -name MISC_FILE [file join $::quartus(qip_path) "eth_f_tod_10g.cmp"]
+set_global_assignment -entity "eth_f_tod_10g" -library "eth_f_tod_10g" -name IP_TARGETED_DEVICE_FAMILY "Agilex 7"
+set_global_assignment -entity "eth_f_tod_10g" -library "eth_f_tod_10g" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 7}"
+set_global_assignment -entity "eth_f_tod_10g" -library "eth_f_tod_10g" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "eth_f_tod_10g" -name MISC_FILE [file join $::quartus(qip_path) "../eth_f_tod_10g.ip"]
+
+set_global_assignment -entity "altera_eth_1588_tod" -library "altera_eth_1588_tod_2011" -name IP_COMPONENT_NAME "YWx0ZXJhX2V0aF8xNTg4X3RvZA=="
+set_global_assignment -entity "altera_eth_1588_tod" -library "altera_eth_1588_tod_2011" -name IP_COMPONENT_DISPLAY_NAME "RXRoZXJuZXQgSUVFRSAxNTg4IFRpbWUgb2YgRGF5IENsb2NrIEludGVsIEZQR0EgSVA="
+set_global_assignment -entity "altera_eth_1588_tod" -library "altera_eth_1588_tod_2011" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "altera_eth_1588_tod" -library "altera_eth_1588_tod_2011" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "altera_eth_1588_tod" -library "altera_eth_1588_tod_2011" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "altera_eth_1588_tod" -library "altera_eth_1588_tod_2011" -name IP_COMPONENT_VERSION "MjAuMS4x"
+set_global_assignment -entity "altera_eth_1588_tod" -library "altera_eth_1588_tod_2011" -name IP_COMPONENT_DESCRIPTION "UHJvdmlkZXMgYSBzdHJlYW0gb2YgdGltZXN0YW1wcyBmb3IgdXNlIHRpbWVzdGFtcGluZyBJRUVFIDE1ODggcGFja2V0cyBhbmQgb3RoZXIgZXZlbnRzLg=="
+set_global_assignment -entity "altera_eth_1588_tod" -library "altera_eth_1588_tod_2011" -name IP_COMPONENT_GROUP "SW50ZXJmYWNlIFByb3RvY29scy9FdGhlcm5ldC9SZWZlcmVuY2UgRGVzaWduIENvbXBvbmVudHM="
+set_global_assignment -entity "altera_eth_1588_tod" -library "altera_eth_1588_tod_2011" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzA0NC9jdXJyZW50L3RpbWUtb2YtZGF5LWNsb2NrLmh0bWw="
+set_global_assignment -entity "altera_eth_1588_tod" -library "altera_eth_1588_tod_2011" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzU5OC8="
+set_global_assignment -entity "eth_f_tod_10g" -library "eth_f_tod_10g" -name IP_COMPONENT_NAME "ZXRoX2ZfdG9kXzEwZw=="
+set_global_assignment -entity "eth_f_tod_10g" -library "eth_f_tod_10g" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "eth_f_tod_10g" -library "eth_f_tod_10g" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "eth_f_tod_10g" -library "eth_f_tod_10g" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "eth_f_tod_10g" -library "eth_f_tod_10g" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "eth_f_tod_10g" -library "eth_f_tod_10g" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "altera_eth_1588_tod_2011" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_2011/synth/altera_eth_1588_tod.v"]
+set_global_assignment -library "altera_eth_1588_tod_2011" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_2011/synth/altera_eth_1588_tod_ojw.v"]
+set_global_assignment -library "altera_eth_1588_tod_2011" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_2011/synth/altera_eth_1588_tod_xojw.sv"]
+set_global_assignment -library "altera_eth_1588_tod_2011" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_2011/synth/altera_eth_1588_tod_clock_crosser.v"]
+set_global_assignment -library "altera_eth_1588_tod_2011" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_2011/synth/altera_eth_1588_pps.v"]
+set_global_assignment -library "altera_eth_1588_tod_2011" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_2011/synth/altera_eth_1588_pps_adv.sv"]
+set_global_assignment -library "altera_eth_1588_tod_2011" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_2011/synth/altera_eth_1588_pps_wrapper.v"]
+set_global_assignment -library "altera_eth_1588_tod_2011" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_2011/synth/altera_eth_1588_tod_std_synchronizer.v"]
+set_global_assignment -library "altera_eth_1588_tod_2011" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_2011/synth/altera_eth_1588_tod_fifo.sv"]
+set_global_assignment -library "altera_eth_1588_tod_2011" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_2011/synth/altera_eth_1588_tod_gray_cnt.v"]
+set_global_assignment -library "altera_eth_1588_tod_2011" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_2011/synth/altera_eth_1588_tod_sdpm_altsyncram.v"]
+set_global_assignment -library "altera_eth_1588_tod_2011" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_2011/synth/altera_eth_1588_tod_std_sync_nocut.v"]
+set_instance_assignment -entity "altera_eth_1588_tod" -library "altera_eth_1588_tod_2011" -name SDC_ENTITY_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_2011/synth/altera_eth_1588_tod.sdc"] -no_sdc_promotion  -no_auto_inst_discovery 
+set_global_assignment -library "altera_eth_1588_tod_2011" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_2011/synth/altera_eth_1588_tod_std_synchr_nocut.v"]
+set_global_assignment -library "eth_f_tod_10g" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/eth_f_tod_10g.v"]
+
+
+set_global_assignment -entity "altera_eth_1588_tod" -library "altera_eth_1588_tod_2011" -name IP_TOOL_NAME "altera_eth_1588_tod"
+set_global_assignment -entity "altera_eth_1588_tod" -library "altera_eth_1588_tod_2011" -name IP_TOOL_VERSION "20.1.1"
+set_global_assignment -entity "altera_eth_1588_tod" -library "altera_eth_1588_tod_2011" -name IP_TOOL_ENV "QsysPrimePro"
+

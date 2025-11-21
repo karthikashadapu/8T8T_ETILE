@@ -1,0 +1,166 @@
+set_global_assignment -entity "lphy_ss_lphy_ss_top" -library "lphy_ss_lphy_ss_top" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "lphy_ss_lphy_ss_top" -library "lphy_ss_lphy_ss_top" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "lphy_ss_lphy_ss_top" -library "lphy_ss_lphy_ss_top" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "lphy_ss_lphy_ss_top" -library "lphy_ss_lphy_ss_top" -name IP_TOOL_VENDOR_NAME "Altera Corporation"
+set_global_assignment -entity "lphy_ss_lphy_ss_top" -library "lphy_ss_lphy_ss_top" -name IP_TOP_LEVEL_COMPONENT_NAME "lphy_ss"
+set_global_assignment -library "lphy_ss_lphy_ss_top" -name SOPCINFO_FILE [file join $::quartus(qip_path) "lphy_ss_lphy_ss_top.sopcinfo"]
+set_global_assignment -entity "lphy_ss_lphy_ss_top" -library "lphy_ss_lphy_ss_top" -name SLD_INFO "QSYS_NAME lphy_ss_lphy_ss_top HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "lphy_ss_lphy_ss_top" -name MISC_FILE [file join $::quartus(qip_path) "lphy_ss_lphy_ss_top.cmp"]
+set_global_assignment -entity "lphy_ss_lphy_ss_top" -library "lphy_ss_lphy_ss_top" -name IP_TARGETED_DEVICE_FAMILY "Agilex 7"
+set_global_assignment -entity "lphy_ss_lphy_ss_top" -library "lphy_ss_lphy_ss_top" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 7}"
+set_global_assignment -entity "lphy_ss_lphy_ss_top" -library "lphy_ss_lphy_ss_top" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "lphy_ss_lphy_ss_top" -name MISC_FILE [file join $::quartus(qip_path) "../lphy_ss_lphy_ss_top.ip"]
+
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_NAME "bHBoeV9zcw=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DISPLAY_NAME "bHBoeV9zcw=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmFsc2U="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9waGVlcHNfcGVhay9JTi1QaGlwcHNQZWFrL2Rlc2lnbnMvbGliL3FzeXNfY29tcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9QaGlwcHNfcGVha19oaHNpX21pZy9JTi1QaGlwcHNQZWFrX0ZQR0Evc3JjL2lwL2N1c3RvbS9scGh5X3NzX3RvcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9QaGlwcHNfcGVha19oaHNpX21pZy9JTi1QaGlwcHNQZWFrX0ZQR0Evc3JjL2lwL2N1c3RvbS9scGh5X3NzX3RvcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9QaGlwcHNfcGVha19oaHNpX21pZy9JTi1QaGlwcHNQZWFrX0ZQR0Evc3JjL2lwL2N1c3RvbS9scGh5X3NzX3RvcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9QaGlwcHNfcGVha19oaHNpX21pZy9JTi1QaGlwcHNQZWFrX0ZQR0Evc3JjL2lwL2N1c3RvbS9scGh5X3NzX3RvcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9QaGlwcHNfcGVha19oaHNpX21pZy9JTi1QaGlwcHNQZWFrX0ZQR0Evc3JjL2lwL2N1c3RvbS9scGh5X3NzX3RvcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9QaGlwcHNfcGVha19oaHNpX21pZy9JTi1QaGlwcHNQZWFrX0ZQR0Evc3JjL2lwL2N1c3RvbS9scGh5X3NzX3RvcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9QaGlwcHNfcGVha19oaHNpX21pZy9JTi1QaGlwcHNQZWFrX0ZQR0Evc3JjL2lwL2N1c3RvbS9scGh5X3NzX3RvcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9QaGlwcHNfcGVha19oaHNpX21pZy9JTi1QaGlwcHNQZWFrX0ZQR0Evc3JjL2lwL2N1c3RvbS9scGh5X3NzX3RvcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9QaGlwcHNfcGVha19oaHNpX21pZy9JTi1QaGlwcHNQZWFrX0ZQR0Evc3JjL2lwL2N1c3RvbS9scGh5X3NzX3RvcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9QaGlwcHNfcGVha19oaHNpX21pZy9JTi1QaGlwcHNQZWFrX0ZQR0Evc3JjL2lwL2N1c3RvbS9scGh5X3NzX3RvcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9QaGlwcHNfcGVha19oaHNpX21pZy9JTi1QaGlwcHNQZWFrX0ZQR0Evc3JjL2lwL2N1c3RvbS9scGh5X3NzX3RvcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9QaGlwcHNfcGVha19oaHNpX21pZy9JTi1QaGlwcHNQZWFrX0ZQR0Evc3JjL2lwL2N1c3RvbS9scGh5X3NzX3RvcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9QaGlwcHNfcGVha19oaHNpX21pZy9JTi1QaGlwcHNQZWFrX0ZQR0Evc3JjL2lwL2N1c3RvbS9scGh5X3NzX3RvcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9QaGlwcHNfcGVha19oaHNpX21pZy9JTi1QaGlwcHNQZWFrX0ZQR0Evc3JjL2lwL2N1c3RvbS9scGh5X3NzX3RvcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9QaGlwcHNfcGVha19oaHNpX21pZy9JTi1QaGlwcHNQZWFrX0ZQR0Evc3JjL2lwL2N1c3RvbS9scGh5X3NzX3RvcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9QaGlwcHNfcGVha19oaHNpX21pZy9JTi1QaGlwcHNQZWFrX0ZQR0Evc3JjL2lwL2N1c3RvbS9scGh5X3NzX3RvcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9QaGlwcHNfcGVha19oaHNpX21pZy9JTi1QaGlwcHNQZWFrX0ZQR0Evc3JjL2lwL2N1c3RvbS9scGh5X3NzX3RvcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9QaGlwcHNfcGVha19oaHNpX21pZy9JTi1QaGlwcHNQZWFrX0ZQR0Evc3JjL2lwL2N1c3RvbS9scGh5X3NzX3RvcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9QaGlwcHNfcGVha19oaHNpX21pZy9JTi1QaGlwcHNQZWFrX0ZQR0Evc3JjL2lwL2N1c3RvbS9scGh5X3NzX3RvcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9QaGlwcHNfcGVha19oaHNpX21pZy9JTi1QaGlwcHNQZWFrX0ZQR0Evc3JjL2lwL2N1c3RvbS9scGh5X3NzX3RvcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL2F2aW5hc2gvYXp1cmUvcGhpcHBzX3BlYWsvSU4tUGhpcHBzUGVha19GUEdBL3NyYy9pcC9jdXN0b20vbHBoeV9zc190b3AvZmFsc2U="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL2F2aW5hc2gvYXp1cmUvSU4tUGhpcHBzUGVha19GUEdBL3NyYy9pcC9jdXN0b20vbHBoeV9zc190b3AvZmFsc2U="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL2F2aW5hc2gvYXp1cmUvSU4tUGhpcHBzUGVha19GUEdBL3NyYy9pcC9jdXN0b20vbHBoeV9zc190b3AvZmFsc2U="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL2F2aW5hc2gvYXp1cmUvSU4tUGhpcHBzUGVha19GUEdBL3NyYy9pcC9jdXN0b20vbHBoeV9zc190b3AvZmFsc2U="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL2F2aW5hc2gvYXp1cmUvSU4tUGhpcHBzUGVha19GUEdBL3NyYy9pcC9jdXN0b20vbHBoeV9zc190b3AvZmFsc2U="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL2F2aW5hc2gvYXp1cmUvSU4tUGhpcHBzUGVha19GUEdBL3NyYy9pcC9jdXN0b20vbHBoeV9zc190b3AvZmFsc2U="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL2F2aW5hc2gvYXp1cmUvSU4tUGhpcHBzUGVha19GUEdBL3NyYy9pcC9jdXN0b20vbHBoeV9zc190b3AvZmFsc2U="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL2F2aW5hc2gvYXp1cmUvSU4tUGhpcHBzUGVha19GUEdBL3NyYy9pcC9jdXN0b20vbHBoeV9zc190b3AvZmFsc2U="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL2F2aW5hc2gvYXp1cmUvSU4tUGhpcHBzUGVha19GUEdBL3NyYy9pcC9jdXN0b20vbHBoeV9zc190b3AvZmFsc2U="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL2F2aW5hc2gvYXp1cmUvSU4tUGhpcHBzUGVha19GUEdBL3NyYy9pcC9jdXN0b20vbHBoeV9zc190b3AvZmFsc2U="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL2F2aW5hc2gvYXp1cmUvSU4tUGhpcHBzUGVha19GUEdBL3NyYy9pcC9jdXN0b20vbHBoeV9zc190b3AvZmFsc2U="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL2F2aW5hc2gvYXp1cmUvSU4tUGhpcHBzUGVha19GUEdBL3NyYy9pcC9jdXN0b20vbHBoeV9zc190b3AvZmFsc2U="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL2F2aW5hc2gvYXp1cmUvSU4tUGhpcHBzUGVha19GUEdBL3NyYy9pcC9jdXN0b20vbHBoeV9zc190b3AvZmFsc2U="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL2F2aW5hc2gvYXp1cmUvcGhpcHBzX3BlYWsvSU4tUGhpcHBzUGVha19GUEdBL3NyYy9pcC9jdXN0b20vbHBoeV9zc190b3AvZmFsc2U="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL2F2aW5hc2gvYXp1cmUvcGhpcHBzX3BlYWtfdjEvSU4tUGhpcHBzUGVha19GUEdBL3NyYy9pcC9jdXN0b20vbHBoeV9zc190b3AvZmFsc2U="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL2F2aW5hc2gvYXp1cmUvaHNzaV9kcF9wdHAvSU4tUGhpcHBzUGVha19GUEdBL3NyYy9pcC9jdXN0b20vbHBoeV9zc190b3AvZmFsc2U="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL3ZpdmVrL2F6dXJlL0lOLVBoaXBwc1BlYWtfRlBHQS9zcmMvaXAvY3VzdG9tL2xwaHlfc3NfdG9wL2ZhbHNl"
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL2F2aW5hc2gvYXp1cmUvcGhpcHBzX3BlYWtfZDIvSU4tUGhpcHBzUGVha19GUEdBL2ZwZ2Evc3JjL2lwL2N1c3RvbS9scGh5X3NzX3RvcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL2F2aW5hc2gvYXp1cmUvcGhpcHBzX3BlYWtfZDIvSU4tUGhpcHBzUGVha19GUEdBL2ZwZ2Evc3JjL2lwL2N1c3RvbS9scGh5X3NzX3RvcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL2F2aW5hc2gvYXp1cmUvcGhpcHBzX3BlYWtfZDIvSU4tUGhpcHBzUGVha19GUEdBL2ZwZ2Evc3JjL2lwL2N1c3RvbS9scGh5X3NzX3RvcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL2F2aW5hc2gvYXp1cmUvcGhpcHBzX3BlYWtfZDIvSU4tUGhpcHBzUGVha19GUEdBL2ZwZ2Evc3JjL2lwL2N1c3RvbS9scGh5X3NzX3RvcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL2F2aW5hc2gvYXp1cmUvcGhpcHBzX3BlYWtfZDIvSU4tUGhpcHBzUGVha19GUEdBL2ZwZ2Evc3JjL2lwL2N1c3RvbS9scGh5X3NzX3RvcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL2F2aW5hc2gvYXp1cmUvUFBfRDJfVjEvSU4tUGhpcHBzUGVha19GUEdBL2ZwZ2Evc3JjL2lwL2N1c3RvbS9scGh5X3NzX3RvcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL2F2aW5hc2gvYXp1cmUvUFBfRDJfVjEvSU4tUGhpcHBzUGVha19GUEdBL2ZwZ2Evc3JjL2lwL2N1c3RvbS9scGh5X3NzX3RvcC9mYWxzZQ=="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL2F2aW5hc2gvYXp1cmUvUFBfRDIvSU4tUGhpcHBzUGVha19GUEdBL3NyYy9pcC9jdXN0b20vbHBoeV9zc190b3AvZmFsc2U="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL2F2aW5hc2gvYXp1cmUvUFBfRDIvSU4tUGhpcHBzUGVha19GUEdBL3NyYy9pcC9jdXN0b20vbHBoeV9zc190b3AvZmFsc2U="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL2F2aW5hc2gvYXp1cmUvUFBfRDJfVjEvSU4tUGhpcHBzUGVha19GUEdBL3NyYy9pcC9jdXN0b20vbHBoeV9zc190b3AvZmFsc2U="
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL3ZpdmVrL2F6dXJlL0lOLVBoaXBwc1BlYWtfRlBHQS9zcmMvaXAvY3VzdG9tL2xwaHlfc3NfdG9wL2ZhbHNl"
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL3ZpdmVrL2F6dXJlL0lOLVBoaXBwc1BlYWtfRlBHQS9zcmMvaXAvY3VzdG9tL2xwaHlfc3NfdG9wL2ZhbHNl"
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL3ZpdmVrL2F6dXJlL0lOLVBoaXBwc1BlYWtfRlBHQS9zcmMvaXAvY3VzdG9tL2xwaHlfc3NfdG9wL2ZhbHNl"
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL3ZpdmVrL2F6dXJlL0lOLVBoaXBwc1BlYWtfRlBHQS9zcmMvaXAvY3VzdG9tL2xwaHlfc3NfdG9wL2ZhbHNl"
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL3ZpdmVrL2F6dXJlL0lOLVBoaXBwc1BlYWtfRlBHQS9zcmMvaXAvY3VzdG9tL2xwaHlfc3NfdG9wL2ZhbHNl"
+set_global_assignment -entity "lphy_ss" -library "lphy_ss_10" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9Qcm9qZWN0cy9QcmVldGhpL0lOLVBQLVJGLUFESS1GUEdBL3NyYy9pcC9jdXN0b20vbHBoeV9zc190b3AvZmFsc2U="
+set_global_assignment -entity "lphy_ss_lphy_ss_top" -library "lphy_ss_lphy_ss_top" -name IP_COMPONENT_NAME "bHBoeV9zc19scGh5X3NzX3RvcA=="
+set_global_assignment -entity "lphy_ss_lphy_ss_top" -library "lphy_ss_lphy_ss_top" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "lphy_ss_lphy_ss_top" -library "lphy_ss_lphy_ss_top" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "lphy_ss_lphy_ss_top" -library "lphy_ss_lphy_ss_top" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "lphy_ss_lphy_ss_top" -library "lphy_ss_lphy_ss_top" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "lphy_ss_lphy_ss_top" -library "lphy_ss_lphy_ss_top" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "lphy_ss_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/struct_typedef.sv"]
+set_global_assignment -library "lphy_ss_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/lphy_ss.sv"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/clock_crossing.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/ValidLowCounter.v"]
+set_global_assignment -library "lphy_ss_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/dl_fdv_buffer.sv"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/dl_ant_scheduler.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/ifft_if.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/fft_if.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/ul_ant_scheduler.v"]
+set_global_assignment -library "lphy_ss_10" -name SOURCE_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/prach_data_in_short.mif"]
+set_global_assignment -library "lphy_ss_10" -name SOURCE_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/prach_data_in_long.mif"]
+set_global_assignment -library "lphy_ss_10" -name SOURCE_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/cplane_pusch_fdv.mif"]
+set_global_assignment -library "lphy_ss_10" -name SOURCE_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/cplane_prach_fdv.mif"]
+set_global_assignment -library "lphy_ss_10" -name SOURCE_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/dl_blanking.mif"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/prach_ant_mux.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/prach_if.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/pb_st.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/short_prach_c_m_config.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/prach_top.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/pipeline.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/prach_cplane_decode.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/long_prach_nco_config.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/short_long_prach_config_wrapper.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/prach_config_ip_top.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/channel_calc.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/dl_lphy_ss.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/ul_lphy_ss.v"]
+set_global_assignment -library "lphy_ss_10" -name MISC_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/def_param.vh"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/lphy_ss_config.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/LPHY_SS_Registers.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/Short_PRACH_Registers_L1.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/Short_PRACH_Registers_L2.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/Long_PRACH_Registers_L1.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/Long_PRACH_Registers_L2.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/power_meter_top_ss.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/power_meter_ss.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/mean_ss.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/square_ss.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/accumulator_ss.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/enable_ss.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/histogram_state_machine.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/pulsegen_ss.v"]
+set_global_assignment -library "lphy_ss_10" -name VERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/PWR_MTR_SS_Registers.v"]
+set_global_assignment -library "lphy_ss_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/dl_blanking.sv"]
+set_global_assignment -library "lphy_ss_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "lphy_ss_10/synth/incremental_counter.sv"]
+set_global_assignment -library "lphy_ss_lphy_ss_top" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/lphy_ss_lphy_ss_top.v"]
+

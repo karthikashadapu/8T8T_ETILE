@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.11.21.13:10:05"
+ outputDirectory="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/phipps_peak/phipps_peak_signal_replicator_0/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGFB014R24B2I2V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="3"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="bw_config_cc1" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="bw_config_cc1" direction="input" role="bw_config_cc1" width="8" />
+  </interface>
+  <interface name="bw_config_cc2" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="bw_config_cc2" direction="input" role="bw_config_cc2" width="8" />
+  </interface>
+  <interface name="radio_config_status" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="radio_config_status"
+       direction="input"
+       role="radio_config_status"
+       width="56" />
+  </interface>
+  <interface name="short_long_prach_sel" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="short_long_prach_sel"
+       direction="input"
+       role="short_long_prach_sel"
+       width="1" />
+  </interface>
+  <interface name="bw_config_cc1_dup1" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="bw_config_cc1_dup1"
+       direction="output"
+       role="bw_config_cc1"
+       width="8" />
+  </interface>
+  <interface name="bw_config_cc2_dup1" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="bw_config_cc2_dup1"
+       direction="output"
+       role="bw_config_cc2"
+       width="8" />
+  </interface>
+  <interface name="radio_config_status_dup1" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="radio_config_status_dup1"
+       direction="output"
+       role="radio_config_status"
+       width="56" />
+  </interface>
+  <interface name="short_long_prach_sel_dup1" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="short_long_prach_sel_dup1"
+       direction="output"
+       role="short_long_prach_sel"
+       width="1" />
+  </interface>
+  <interface name="rst_soft_n_dup1" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="rst_soft_n_dup1" direction="output" role="rst_soft_n" width="1" />
+  </interface>
+  <interface name="bw_config_cc1_dup2" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="bw_config_cc1_dup2"
+       direction="output"
+       role="bw_config_cc1"
+       width="8" />
+  </interface>
+  <interface name="bw_config_cc2_dup2" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="bw_config_cc2_dup2"
+       direction="output"
+       role="bw_config_cc2"
+       width="8" />
+  </interface>
+  <interface name="radio_config_status_dup2" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="radio_config_status_dup2"
+       direction="output"
+       role="radio_config_status"
+       width="56" />
+  </interface>
+  <interface name="short_long_prach_sel_dup2" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="short_long_prach_sel_dup2"
+       direction="output"
+       role="short_long_prach_sel"
+       width="1" />
+  </interface>
+  <interface name="rst_soft_n_dup2" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="rst_soft_n_dup2" direction="output" role="rst_soft_n" width="1" />
+  </interface>
+  <interface name="bw_config_cc1_dup3" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="bw_config_cc1_dup3"
+       direction="output"
+       role="bw_config_cc1"
+       width="8" />
+  </interface>
+  <interface name="bw_config_cc2_dup3" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="bw_config_cc2_dup3"
+       direction="output"
+       role="bw_config_cc2"
+       width="8" />
+  </interface>
+  <interface name="radio_config_status_dup3" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="radio_config_status_dup3"
+       direction="output"
+       role="data"
+       width="56" />
+  </interface>
+  <interface name="short_long_prach_sel_dup3" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="short_long_prach_sel_dup3"
+       direction="output"
+       role="short_long_prach_sel"
+       width="1" />
+  </interface>
+  <interface name="rst_soft_n_dup3" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="rst_soft_n_dup3" direction="output" role="rst_soft_n" width="1" />
+  </interface>
+  <interface name="rst_soft_n" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="rst_soft_n" direction="input" role="rst_soft_n" width="1" />
+  </interface>
+  <interface name="rst_soft_n_dup4" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="rst_soft_n_dup4" direction="output" role="rst_soft_n" width="1" />
+  </interface>
+  <interface name="interface_sel" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="interface_sel" direction="input" role="data" width="32" />
+  </interface>
+  <interface name="interface_sel_dup1" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="interface_sel_dup1" direction="output" role="data" width="32" />
+  </interface>
+  <interface name="interface_sel_dup2" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="interface_sel_dup2" direction="output" role="data" width="32" />
+  </interface>
+ </perimeter>
+ <entity
+   kind="phipps_peak_signal_replicator_0"
+   version="1.0"
+   name="phipps_peak_signal_replicator_0">
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="AGFB014R24B2I2V" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <generatedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/phipps_peak/phipps_peak_signal_replicator_0/synth/phipps_peak_signal_replicator_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/phipps_peak/phipps_peak_signal_replicator_0/synth/phipps_peak_signal_replicator_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/phipps_peak/phipps_peak_signal_replicator_0.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/phipps_peak/signal_replicator_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="phipps_peak_signal_replicator_0">"Generating: phipps_peak_signal_replicator_0"</message>
+   <message level="Info" culprit="phipps_peak_signal_replicator_0">"Generating: signal_replicator"</message>
+  </messages>
+ </entity>
+ <entity kind="signal_replicator" version="1.0" name="signal_replicator">
+  <generatedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/phipps_peak/phipps_peak_signal_replicator_0/signal_replicator_10/synth/signal_replicator.v"
+       attributes="TOP_LEVEL_FILE" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/phipps_peak/phipps_peak_signal_replicator_0/signal_replicator_10/synth/signal_replicator.v"
+       attributes="TOP_LEVEL_FILE" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/phipps_peak/signal_replicator_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="phipps_peak_signal_replicator_0"
+     as="signal_replicator_0" />
+  <messages>
+   <message level="Info" culprit="phipps_peak_signal_replicator_0">"Generating: signal_replicator"</message>
+  </messages>
+ </entity>
+</deploy>

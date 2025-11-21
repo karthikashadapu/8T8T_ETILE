@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="sim/jtg_rst_bridge.v"
+   type="VERILOG"
+   library="jtg_rst_bridge"
+   hasInlineConfiguration="true" />
+ <topLevel name="jtg_rst_bridge.jtg_rst_bridge" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

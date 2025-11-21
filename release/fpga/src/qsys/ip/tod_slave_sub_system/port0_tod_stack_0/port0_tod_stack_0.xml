@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.10.16.14:15:35"
+ outputDirectory="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_slave_sub_system/port0_tod_stack_0/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGIB027R31B1E2V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="2"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_I_CLK_RECONFIG_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_I_CLK_RECONFIG_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_I_CLK_RECONFIG_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_I_CLK_TOD_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_I_CLK_TOD_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_I_CLK_TOD_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="csr" kind="avalon" start="0">
+   <property name="addressAlignment" value="DYNAMIC" />
+   <property name="addressGroup" value="0" />
+   <property name="addressSpan" value="64" />
+   <property name="addressUnits" value="WORDS" />
+   <property name="alwaysBurstMaxBurst" value="false" />
+   <property name="associatedClock" value="i_clk_reconfig" />
+   <property name="associatedReset" value="i_reconfig_rst_n" />
+   <property name="bitsPerSymbol" value="8" />
+   <property name="bridgedAddressOffset" value="0" />
+   <property name="bridgesToMaster" value="" />
+   <property name="burstOnBurstBoundariesOnly" value="false" />
+   <property name="burstcountUnits" value="WORDS" />
+   <property name="constantBurstBehavior" value="false" />
+   <property name="explicitAddressSpan" value="0" />
+   <property name="holdTime" value="0" />
+   <property name="interleaveBursts" value="false" />
+   <property name="isBigEndian" value="false" />
+   <property name="isFlash" value="false" />
+   <property name="isMemoryDevice" value="false" />
+   <property name="isNonVolatileStorage" value="false" />
+   <property name="linewrapBursts" value="false" />
+   <property name="maximumPendingReadTransactions" value="0" />
+   <property name="maximumPendingWriteTransactions" value="0" />
+   <property name="minimumReadLatency" value="1" />
+   <property name="minimumResponseLatency" value="1" />
+   <property name="minimumUninterruptedRunLength" value="1" />
+   <property name="prSafe" value="false" />
+   <property name="printableDevice" value="false" />
+   <property name="readLatency" value="0" />
+   <property name="readWaitStates" value="1" />
+   <property name="readWaitTime" value="1" />
+   <property name="registerIncomingSignals" value="false" />
+   <property name="registerOutgoingSignals" value="false" />
+   <property name="setupTime" value="0" />
+   <property name="timingUnits" value="Cycles" />
+   <property name="transparentBridge" value="false" />
+   <property name="waitrequestAllowance" value="0" />
+   <property name="wellBehavedWaitrequest" value="false" />
+   <property name="writeLatency" value="0" />
+   <property name="writeWaitStates" value="0" />
+   <property name="writeWaitTime" value="0" />
+   <property name="dfhFeatureGuid" value="0" />
+   <property name="dfhGroupId" value="0" />
+   <property name="dfhParameterId" value="" />
+   <property name="dfhParameterName" value="" />
+   <property name="dfhParameterVersion" value="" />
+   <property name="dfhParameterData" value="" />
+   <property name="dfhParameterDataLength" value="" />
+   <property name="dfhFeatureMajorVersion" value="0" />
+   <property name="dfhFeatureMinorVersion" value="0" />
+   <property name="dfhFeatureId" value="35" />
+   <property name="dfhFeatureType" value="3" />
+   <port name="i_csr_write" direction="input" role="write" width="1" />
+   <port name="i_csr_writedata" direction="input" role="writedata" width="32" />
+   <port name="i_csr_read" direction="input" role="read" width="1" />
+   <port name="o_csr_readdata" direction="output" role="readdata" width="32" />
+   <port
+       name="o_csr_waitrequest"
+       direction="output"
+       role="waitrequest"
+       width="1" />
+   <port name="i_csr_addr" direction="input" role="address" width="4" />
+  </interface>
+  <interface name="i_clk_reconfig" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="i_clk_reconfig" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="i_clk_tod" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="i_clk_tod" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="i_reconfig_rst_n" kind="reset" start="0">
+   <property name="associatedClock" value="i_clk_reconfig" />
+   <property name="synchronousEdges" value="BOTH" />
+   <port name="i_reconfig_rst_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="i_tod_rst_n" kind="reset" start="0">
+   <property name="associatedClock" value="i_clk_tod" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="i_tod_rst_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="avst_tod_load_data" kind="conduit" start="0">
+   <property name="associatedClock" value="i_clk_tod" />
+   <property name="associatedReset" value="i_tod_rst_n" />
+   <property name="prSafe" value="false" />
+   <port name="i_tod_96b_load_valid" direction="input" role="valid" width="1" />
+   <port name="i_tod_96b_load_data" direction="input" role="data" width="96" />
+  </interface>
+  <interface name="pulse_per_second" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="o_pps" direction="output" role="writeresponsevalid_n" width="1" />
+  </interface>
+  <interface name="avst_tod_data" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="o_tod_96b_valid" direction="output" role="valid" width="1" />
+   <port name="o_tod_96b_data" direction="output" role="data" width="96" />
+  </interface>
+  <interface name="i_upstr_pll" kind="conduit" start="0">
+   <property name="associatedClock" value="i_clk_reconfig" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="i_upstr_pll_lock" direction="input" role="lock" width="1" />
+  </interface>
+ </perimeter>
+ <entity kind="port0_tod_stack_0" version="1.0" name="port0_tod_stack_0">
+  <parameter name="AUTO_I_CLK_RECONFIG_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="AGFB027R24C2E2VR2" />
+  <parameter name="AUTO_I_CLK_RECONFIG_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_I_CLK_TOD_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_I_CLK_TOD_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_I_CLK_TOD_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <parameter name="AUTO_I_CLK_RECONFIG_CLOCK_RATE" value="-1" />
+  <generatedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_slave_sub_system/port0_tod_stack_0/synth/port0_tod_stack_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_slave_sub_system/port0_tod_stack_0/synth/port0_tod_stack_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_slave_sub_system/port0_tod_stack_0.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/ftile_eth_tod_stack/eth_f_ptp_mtod_top_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="port0_tod_stack_0">"Generating: port0_tod_stack_0"</message>
+   <message level="Info" culprit="port0_tod_stack_0">"Generating: eth_f_ptp_mtod_top"</message>
+  </messages>
+ </entity>
+ <entity kind="eth_f_ptp_mtod_top" version="1.0" name="eth_f_ptp_mtod_top">
+  <generatedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_slave_sub_system/port0_tod_stack_0/eth_f_ptp_mtod_top_10/synth/eth_f_ptp_mtod_top.sv"
+       attributes="TOP_LEVEL_FILE" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_slave_sub_system/port0_tod_stack_0/eth_f_ptp_mtod_top_10/synth/eth_f_ptp_mtod_top.sv"
+       attributes="TOP_LEVEL_FILE" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/ftile_eth_tod_stack/eth_f_ptp_mtod_top_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="port0_tod_stack_0" as="port0_tod_stack_0" />
+  <messages>
+   <message level="Info" culprit="port0_tod_stack_0">"Generating: eth_f_ptp_mtod_top"</message>
+  </messages>
+ </entity>
+</deploy>

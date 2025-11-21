@@ -1,0 +1,18 @@
+# system info ptp_ed_issp on 2025.10.16.13:57:28
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for ptp_ed_issp on 2025.10.16.13:57:28
+files:
+filepath,kind,attributes,module,is_top
+sim/ptp_ed_issp.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,ptp_ed_issp,true
+altera_in_system_sources_probes_1921/sim/altsource_probe.v,VERILOG,,altsource_probe,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+ptp_ed_issp.in_system_sources_probes_0,altsource_probe

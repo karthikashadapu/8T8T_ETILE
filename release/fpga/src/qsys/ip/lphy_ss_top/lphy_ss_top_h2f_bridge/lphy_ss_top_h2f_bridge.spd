@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_avalon_mm_bridge_2010/sim/lphy_ss_top_h2f_bridge_altera_avalon_mm_bridge_2010_xnk2xbi.v"
+   type="VERILOG"
+   library="altera_avalon_mm_bridge_2010" />
+ <file
+   path="altera_avalon_mm_bridge_2010/sim/altera_merlin_waitrequest_adapter.v"
+   type="VERILOG"
+   library="altera_avalon_mm_bridge_2010" />
+ <file
+   path="altera_avalon_mm_bridge_2010/sim/altera_avalon_sc_fifo.v"
+   type="VERILOG"
+   library="altera_avalon_mm_bridge_2010" />
+ <file
+   path="sim/lphy_ss_top_h2f_bridge.v"
+   type="VERILOG"
+   library="lphy_ss_top_h2f_bridge"
+   hasInlineConfiguration="true" />
+ <topLevel name="lphy_ss_top_h2f_bridge.lphy_ss_top_h2f_bridge" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB014R24B2I2V" />
+</simPackage>

@@ -1,0 +1,142 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the Intel FPGA Software License Subscription Agreements 
+on the Quartus Prime software download page.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 368 416)
+	(text "tod_subsys_tod_sync_interface_adapter_0_0" (rect 32 0 219 12)(font "SansSerif" (font_size 11)))
+	(text "inst" (rect 8 400 20 412)(font "Arial" ))
+	(port
+		(pt 0 76)
+		(input)
+		(text "time_of_day_96b[95..0]" (rect 0 0 96 12)(font "SansSerif" (font_size 8)))
+		(text "time_of_day_96b[95..0]" (rect 4 65 136 76)(font "SansSerif" (font_size 8)))
+		(line (pt 0 76)(pt 153 76)(line_width 3))
+	)
+	(port
+		(pt 0 101)
+		(input)
+		(text "valid" (rect 0 0 17 12)(font "SansSerif" (font_size 8)))
+		(text "valid" (rect 4 90 34 101)(font "SansSerif" (font_size 8)))
+		(line (pt 0 101)(pt 153 101)(line_width 1))
+	)
+	(port
+		(pt 0 326)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "SansSerif" (font_size 8)))
+		(text "clk" (rect 4 315 22 326)(font "SansSerif" (font_size 8)))
+		(line (pt 0 326)(pt 153 326)(line_width 1))
+	)
+	(port
+		(pt 0 376)
+		(input)
+		(text "rst_n" (rect 0 0 21 12)(font "SansSerif" (font_size 8)))
+		(text "rst_n" (rect 4 365 34 376)(font "SansSerif" (font_size 8)))
+		(line (pt 0 376)(pt 153 376)(line_width 1))
+	)
+	(port
+		(pt 0 151)
+		(output)
+		(text "tx0_tod_master_data[95..0]" (rect 0 0 110 12)(font "SansSerif" (font_size 8)))
+		(text "tx0_tod_master_data[95..0]" (rect 4 140 160 151)(font "SansSerif" (font_size 8)))
+	)
+	(port
+		(pt 0 176)
+		(output)
+		(text "valid_0" (rect 0 0 28 12)(font "SansSerif" (font_size 8)))
+		(text "valid_0" (rect 4 165 46 176)(font "SansSerif" (font_size 8)))
+	)
+	(port
+		(pt 0 226)
+		(output)
+		(text "tx1_tod_master_data[95..0]" (rect 0 0 109 12)(font "SansSerif" (font_size 8)))
+		(text "tx1_tod_master_data[95..0]" (rect 4 215 160 226)(font "SansSerif" (font_size 8)))
+	)
+	(port
+		(pt 368 76)
+		(output)
+		(text "tx2_tod_master_data[95..0]" (rect 0 0 110 12)(font "SansSerif" (font_size 8)))
+		(text "tx2_tod_master_data[95..0]" (rect 237 65 393 76)(font "SansSerif" (font_size 8)))
+		(line (pt 368 76)(pt 221 76)(line_width 3))
+	)
+	(port
+		(pt 0 276)
+		(output)
+		(text "tx3_tod_master_data[95..0]" (rect 0 0 110 12)(font "SansSerif" (font_size 8)))
+		(text "tx3_tod_master_data[95..0]" (rect 4 265 160 276)(font "SansSerif" (font_size 8)))
+	)
+	(port
+		(pt 368 126)
+		(output)
+		(text "rx0_tod_master_data[95..0]" (rect 0 0 112 12)(font "SansSerif" (font_size 8)))
+		(text "rx0_tod_master_data[95..0]" (rect 236 115 392 126)(font "SansSerif" (font_size 8)))
+		(line (pt 368 126)(pt 221 126)(line_width 3))
+	)
+	(drawing
+		(text "time_of_day_96b" (rect 52 46 194 105)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 158 71 340 152)(font "SansSerif" (color 0 0 0)))
+		(text "valid" (rect 158 96 346 202)(font "SansSerif" (color 0 0 0)))
+		(text "tx0_tod_master_data" (rect 29 121 172 255)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 158 146 340 302)(font "SansSerif" (color 0 0 0)))
+		(text "valid" (rect 158 171 346 352)(font "SansSerif" (color 0 0 0)))
+		(text "tx1_tod_master_data" (rect 31 196 176 405)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 158 221 340 452)(font "SansSerif" (color 0 0 0)))
+		(text "tx2_tod_master_data" (rect 222 46 558 105)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 200 71 424 152)(font "SansSerif" (color 0 0 0)))
+		(text "tx3_tod_master_data" (rect 29 246 172 505)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 158 271 340 552)(font "SansSerif" (color 0 0 0)))
+		(text "rx0_tod_master_data" (rect 222 96 558 205)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 200 121 424 252)(font "SansSerif" (color 0 0 0)))
+		(text "clock" (rect 125 296 280 605)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 158 321 334 652)(font "SansSerif" (color 0 0 0)))
+		(text "reset_sink" (rect 92 346 244 705)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 158 371 358 752)(font "SansSerif" (color 0 0 0)))
+		(text " tod_subsys_tod_sync_interface_adapter_0_0 " (rect 171 401 600 812)(font "SansSerif" ))
+		(line (pt 153 34)(pt 221 34)(line_width 1))
+		(line (pt 221 34)(pt 221 401)(line_width 1))
+		(line (pt 153 401)(pt 221 401)(line_width 1))
+		(line (pt 153 34)(pt 153 401)(line_width 1))
+		(line (pt 154 55)(pt 154 105)(line_width 1))
+		(line (pt 155 55)(pt 155 105)(line_width 1))
+		(line (pt 368 151)(pt 153 151)(line_width 3))
+		(line (pt 368 176)(pt 153 176)(line_width 1))
+		(line (pt 154 130)(pt 154 180)(line_width 1))
+		(line (pt 155 130)(pt 155 180)(line_width 1))
+		(line (pt 368 226)(pt 153 226)(line_width 3))
+		(line (pt 154 205)(pt 154 230)(line_width 1))
+		(line (pt 155 205)(pt 155 230)(line_width 1))
+		(line (pt 220 55)(pt 220 80)(line_width 1))
+		(line (pt 219 55)(pt 219 80)(line_width 1))
+		(line (pt 368 276)(pt 153 276)(line_width 3))
+		(line (pt 154 255)(pt 154 280)(line_width 1))
+		(line (pt 155 255)(pt 155 280)(line_width 1))
+		(line (pt 220 105)(pt 220 130)(line_width 1))
+		(line (pt 219 105)(pt 219 130)(line_width 1))
+		(line (pt 154 305)(pt 154 330)(line_width 1))
+		(line (pt 155 305)(pt 155 330)(line_width 1))
+		(line (pt 154 355)(pt 154 380)(line_width 1))
+		(line (pt 155 355)(pt 155 380)(line_width 1))
+		(line (pt 0 0)(pt 368 0)(line_width 1))
+		(line (pt 368 0)(pt 368 418)(line_width 1))
+		(line (pt 0 418)(pt 368 418)(line_width 1))
+		(line (pt 0 0)(pt 0 418)(line_width 1))
+	)
+)

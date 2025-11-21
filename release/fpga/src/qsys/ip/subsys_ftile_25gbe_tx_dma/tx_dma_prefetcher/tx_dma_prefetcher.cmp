@@ -1,0 +1,37 @@
+	component tx_dma_prefetcher is
+		generic (
+			ADDRESS_WIDTH            : integer := 37;
+			RESPONSE_FIFO_DEPTH      : integer := 256;
+			RESPONSE_FIFO_DEPTH_LOG2 : integer := 8
+		);
+		port (
+			clk                         : in  std_logic                      := 'X';             -- clk
+			reset                       : in  std_logic                      := 'X';             -- reset
+			mm_read_address             : out std_logic_vector(36 downto 0);                     -- address
+			mm_read_read                : out std_logic;                                         -- read
+			mm_read_readdata            : in  std_logic_vector(127 downto 0) := (others => 'X'); -- readdata
+			mm_read_waitrequest         : in  std_logic                      := 'X';             -- waitrequest
+			mm_read_readdatavalid       : in  std_logic                      := 'X';             -- readdatavalid
+			mm_read_burstcount          : out std_logic_vector(2 downto 0);                      -- burstcount
+			mm_write_address            : out std_logic_vector(36 downto 0);                     -- address
+			mm_write_write              : out std_logic;                                         -- write
+			mm_write_byteenable         : out std_logic_vector(15 downto 0);                     -- byteenable
+			mm_write_writedata          : out std_logic_vector(127 downto 0);                    -- writedata
+			mm_write_waitrequest        : in  std_logic                      := 'X';             -- waitrequest
+			mm_write_response           : in  std_logic_vector(1 downto 0)   := (others => 'X'); -- response
+			mm_write_writeresponsevalid : in  std_logic                      := 'X';             -- writeresponsevalid
+			st_src_descr_data           : out std_logic_vector(255 downto 0);                    -- data
+			st_src_descr_valid          : out std_logic;                                         -- valid
+			st_src_descr_ready          : in  std_logic                      := 'X';             -- ready
+			st_snk_data                 : in  std_logic_vector(255 downto 0) := (others => 'X'); -- data
+			st_snk_valid                : in  std_logic                      := 'X';             -- valid
+			st_snk_ready                : out std_logic;                                         -- ready
+			mm_csr_address              : in  std_logic_vector(2 downto 0)   := (others => 'X'); -- address
+			mm_csr_read                 : in  std_logic                      := 'X';             -- read
+			mm_csr_write                : in  std_logic                      := 'X';             -- write
+			mm_csr_writedata            : in  std_logic_vector(31 downto 0)  := (others => 'X'); -- writedata
+			mm_csr_readdata             : out std_logic_vector(31 downto 0);                     -- readdata
+			csr_irq                     : out std_logic                                          -- irq
+		);
+	end component tx_dma_prefetcher;
+

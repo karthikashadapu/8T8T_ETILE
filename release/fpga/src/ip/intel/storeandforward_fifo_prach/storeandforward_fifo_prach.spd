@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_avalon_sc_fifo_1932/sim/storeandforward_fifo_prach_altera_avalon_sc_fifo_1932_5j7ufsq.v"
+   type="VERILOG"
+   library="altera_avalon_sc_fifo_1932" />
+ <file
+   path="sim/storeandforward_fifo_prach.v"
+   type="VERILOG"
+   library="storeandforward_fifo_prach"
+   hasInlineConfiguration="true" />
+ <topLevel name="storeandforward_fifo_prach.storeandforward_fifo_prach" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

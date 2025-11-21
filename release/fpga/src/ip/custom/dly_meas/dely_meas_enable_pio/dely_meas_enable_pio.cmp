@@ -1,0 +1,6 @@
+	component dely_meas_enable_pio is
+		port (
+			source : out std_logic_vector(15 downto 0)   -- source
+		);
+	end component dely_meas_enable_pio;
+

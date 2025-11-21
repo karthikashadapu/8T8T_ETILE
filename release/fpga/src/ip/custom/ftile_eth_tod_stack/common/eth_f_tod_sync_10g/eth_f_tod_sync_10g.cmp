@@ -1,0 +1,21 @@
+	component eth_f_tod_sync_10g is
+		generic (
+			TOD_MODE     : integer := 1;
+			SYNC_MODE    : integer := 2;
+			SAMPLE_SIZE  : integer := 256;
+			PERIOD_NSEC  : integer := 6;
+			PERIOD_FNSEC : integer := 26214
+		);
+		port (
+			clk_master      : in  std_logic                     := 'X';             -- clk
+			reset_master    : in  std_logic                     := 'X';             -- reset
+			clk_slave       : in  std_logic                     := 'X';             -- clk
+			reset_slave     : in  std_logic                     := 'X';             -- reset
+			clk_sampling    : in  std_logic                     := 'X';             -- clk
+			start_tod_sync  : in  std_logic                     := 'X';             -- data
+			tod_master_data : in  std_logic_vector(95 downto 0) := (others => 'X'); -- data
+			tod_slave_data  : out std_logic_vector(95 downto 0);                    -- data
+			tod_slave_valid : out std_logic                                         -- valid
+		);
+	end component eth_f_tod_sync_10g;
+

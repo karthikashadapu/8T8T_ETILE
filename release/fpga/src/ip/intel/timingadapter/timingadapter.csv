@@ -1,0 +1,19 @@
+# system info timingadapter on 2025.10.16.13:48:01
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for timingadapter on 2025.10.16.13:48:01
+files:
+filepath,kind,attributes,module,is_top
+sim/timingadapter.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,timingadapter,true
+timing_adapter_1940/sim/timingadapter_timing_adapter_1940_4rcaqxq.sv,SYSTEM_VERILOG,,timingadapter_timing_adapter_1940_4rcaqxq,false
+timing_adapter_1940/sim/timingadapter_timing_adapter_1940_4rcaqxq_fifo.sv,SYSTEM_VERILOG,,timingadapter_timing_adapter_1940_4rcaqxq,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+timingadapter.timing_adapter_0,timingadapter_timing_adapter_1940_4rcaqxq

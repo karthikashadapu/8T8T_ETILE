@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="dec_dly_comp_DUT_10/sim/dspba_library_ver.sv"
+   type="SYSTEM_VERILOG"
+   library="dec_dly_comp_DUT_10" />
+ <file
+   path="dec_dly_comp_DUT_10/sim/dec_dly_comp_DUT_safe_path_flat_ver.sv"
+   type="SYSTEM_VERILOG"
+   library="dec_dly_comp_DUT_10" />
+ <file
+   path="dec_dly_comp_DUT_10/sim/dec_dly_comp_DUT_safe_path_flat.vhd"
+   type="VHDL"
+   library="dec_dly_comp_DUT_10" />
+ <file
+   path="dec_dly_comp_DUT_10/sim/dec_dly_comp_DUT.sv"
+   type="SYSTEM_VERILOG"
+   library="dec_dly_comp_DUT_10" />
+ <file
+   path="dec_dly_comp_DUT_10/sim/busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz.sv"
+   type="SYSTEM_VERILOG"
+   library="dec_dly_comp_DUT_10" />
+ <file
+   path="dec_dly_comp_DUT_10/sim/dec_dly_comp_DUT_DUT.sv"
+   type="SYSTEM_VERILOG"
+   library="dec_dly_comp_DUT_10" />
+ <file
+   path="dec_dly_comp_DUT_10/sim/dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation.sv"
+   type="SYSTEM_VERILOG"
+   library="dec_dly_comp_DUT_10" />
+ <file
+   path="dec_dly_comp_DUT_10/sim/dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Ant_Gain.sv"
+   type="SYSTEM_VERILOG"
+   library="dec_dly_comp_DUT_10" />
+ <file
+   path="dec_dly_comp_DUT_10/sim/dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation.sv"
+   type="SYSTEM_VERILOG"
+   library="dec_dly_comp_DUT_10" />
+ <file
+   path="dec_dly_comp_DUT_10/sim/dec_dly_comp_DUT_DUT_By_Pass.sv"
+   type="SYSTEM_VERILOG"
+   library="dec_dly_comp_DUT_10" />
+ <file
+   path="dec_dly_comp_DUT_10/sim/dec_dly_comp_DUT_DUT_Polyphase_Decimator.sv"
+   type="SYSTEM_VERILOG"
+   library="dec_dly_comp_DUT_10" />
+ <file
+   path="dec_dly_comp_DUT_10/sim/dec_dly_comp_DUT_DUT_Polyphase_Decimator_HB3_im.sv"
+   type="SYSTEM_VERILOG"
+   library="dec_dly_comp_DUT_10" />
+ <file
+   path="dec_dly_comp_DUT_10/sim/dec_dly_comp_DUT_DUT_Polyphase_Decimator_HB3_re.sv"
+   type="SYSTEM_VERILOG"
+   library="dec_dly_comp_DUT_10" />
+ <file
+   path="dec_dly_comp_DUT_10/sim/dec_dly_comp_DUT_DUT_Polyphase_Decimator_scale_HB3_im.sv"
+   type="SYSTEM_VERILOG"
+   library="dec_dly_comp_DUT_10" />
+ <file
+   path="dec_dly_comp_DUT_10/sim/dec_dly_comp_DUT_DUT_Polyphase_Decimator_scale_HB3_re.sv"
+   type="SYSTEM_VERILOG"
+   library="dec_dly_comp_DUT_10" />
+ <file
+   path="sim/dxc_ss_top_dec_dly_comp_DUT_0.v"
+   type="VERILOG"
+   library="dxc_ss_top_dec_dly_comp_DUT_0"
+   hasInlineConfiguration="true" />
+ <topLevel name="dxc_ss_top_dec_dly_comp_DUT_0.dxc_ss_top_dec_dly_comp_DUT_0" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

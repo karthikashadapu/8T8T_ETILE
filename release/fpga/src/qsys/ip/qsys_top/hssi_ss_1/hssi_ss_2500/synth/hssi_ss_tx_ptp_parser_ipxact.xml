@@ -1,0 +1,2083 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  Generated with Magillem 5.11.2.1 ( build id: 201707071153_5.11.2.1 ) at 11/21/23 6:26:32 AM
+-->
+<spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:mdsAttr="http://www.magillem.com/XMLSchema/Parameters/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009 http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009/index.xsd">
+    <spirit:vendor>Vendor</spirit:vendor>
+    <spirit:library>Library</spirit:library>
+    <spirit:name>parser_gen</spirit:name>
+    <spirit:version>1.0</spirit:version>
+    <spirit:busInterfaces>
+        <spirit:busInterface>
+            <spirit:name>parser_gen_slave</spirit:name>
+            <spirit:busType spirit:vendor="Magillem" spirit:library="MRV" spirit:name="MRVBusDef" spirit:version="1.0"/>
+            <spirit:abstractionType spirit:vendor="Magillem" spirit:library="MRV" spirit:name="MRVAbsDef" spirit:version="1.0"/>
+            <spirit:slave>
+                <spirit:memoryMapRef spirit:memoryMapRef="parser_gen"/>
+            </spirit:slave>
+            <spirit:bitsInLau>16</spirit:bitsInLau>
+            <spirit:endianness>little</spirit:endianness>
+            <spirit:parameters>
+                <spirit:parameter>
+                    <spirit:name>_mre_definition_</spirit:name>
+                    <spirit:value>parser_gen</spirit:value>
+                </spirit:parameter>
+            </spirit:parameters>
+        </spirit:busInterface>
+    </spirit:busInterfaces>
+    <spirit:memoryMaps>
+        <spirit:memoryMap>
+            <spirit:name>parser_gen</spirit:name>
+            <spirit:addressBlock>
+                <spirit:name>parser_gen_block</spirit:name>
+                <spirit:baseAddress>0x0</spirit:baseAddress>
+                <spirit:range>0x200</spirit:range>
+                <spirit:width>32</spirit:width>
+                <spirit:usage>register</spirit:usage>
+                <spirit:access>read-write</spirit:access>
+                <spirit:parameters>
+                    <spirit:parameter>
+                        <spirit:name>_mre_default_</spirit:name>
+                        <spirit:value>true</spirit:value>
+                    </spirit:parameter>
+                </spirit:parameters>
+                <spirit:register>
+                    <spirit:name>lcntr_0</spirit:name>
+                    <spirit:description>recognized pkts number</spirit:description>
+                    <spirit:addressOffset>0x100</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; low cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>32</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">32</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>lcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>hcntr_0</spirit:name>
+                    <spirit:description>recognized pkts number</spirit:description>
+                    <spirit:addressOffset>0x104</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; high cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>reserved</spirit:name>
+                        <spirit:description>&lt;b&gt; reserved &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>hcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">16</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>lcntr_1</spirit:name>
+                    <spirit:description>non recognized pkts number</spirit:description>
+                    <spirit:addressOffset>0x108</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; low cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>32</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">32</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>lcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>hcntr_1</spirit:name>
+                    <spirit:description>non recognized pkts number</spirit:description>
+                    <spirit:addressOffset>0x10c</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; high cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>reserved</spirit:name>
+                        <spirit:description>&lt;b&gt; reserved &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>hcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">16</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>lcntr_2</spirit:name>
+                    <spirit:description> [eth] (type) ptp  [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x110</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; low cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>32</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">32</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>lcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>hcntr_2</spirit:name>
+                    <spirit:description> [eth] (type) ptp  [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x114</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; high cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>reserved</spirit:name>
+                        <spirit:description>&lt;b&gt; reserved &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>hcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">16</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>lcntr_3</spirit:name>
+                    <spirit:description> [eth] (type) ipv4 [ipv4] [udp] (dport) ptp_ev  [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x118</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; low cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>32</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">32</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>lcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>hcntr_3</spirit:name>
+                    <spirit:description> [eth] (type) ipv4 [ipv4] [udp] (dport) ptp_ev  [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x11c</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; high cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>reserved</spirit:name>
+                        <spirit:description>&lt;b&gt; reserved &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>hcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">16</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>lcntr_4</spirit:name>
+                    <spirit:description> [eth] (type) ipv4 [ipv4] [udp] (dport) ptp_msc [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x120</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; low cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>32</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">32</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>lcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>hcntr_4</spirit:name>
+                    <spirit:description> [eth] (type) ipv4 [ipv4] [udp] (dport) ptp_msc [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x124</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; high cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>reserved</spirit:name>
+                        <spirit:description>&lt;b&gt; reserved &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>hcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">16</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>lcntr_5</spirit:name>
+                    <spirit:description> [eth] (type) ipv6 [ipv6] [udp] (dport) ptp_ev  [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x128</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; low cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>32</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">32</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>lcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>hcntr_5</spirit:name>
+                    <spirit:description> [eth] (type) ipv6 [ipv6] [udp] (dport) ptp_ev  [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x12c</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; high cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>reserved</spirit:name>
+                        <spirit:description>&lt;b&gt; reserved &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>hcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">16</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>lcntr_6</spirit:name>
+                    <spirit:description> [eth] (type) ipv6 [ipv6] [udp] (dport) ptp_msc [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x130</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; low cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>32</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">32</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>lcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>hcntr_6</spirit:name>
+                    <spirit:description> [eth] (type) ipv6 [ipv6] [udp] (dport) ptp_msc [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x134</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; high cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>reserved</spirit:name>
+                        <spirit:description>&lt;b&gt; reserved &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>hcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">16</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>lcntr_7</spirit:name>
+                    <spirit:description> [eth] (type) vlan [vlan] (type) vlan [vlan2] (type) ptp  [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x138</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; low cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>32</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">32</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>lcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>hcntr_7</spirit:name>
+                    <spirit:description> [eth] (type) vlan [vlan] (type) vlan [vlan2] (type) ptp  [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x13c</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; high cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>reserved</spirit:name>
+                        <spirit:description>&lt;b&gt; reserved &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>hcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">16</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>lcntr_8</spirit:name>
+                    <spirit:description> [eth] (type) vlan [vlan] (type) vlan [vlan2] (type) ipv4 [ipv4] [udp] (dport) ptp_ev  [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x140</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; low cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>32</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">32</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>lcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>hcntr_8</spirit:name>
+                    <spirit:description> [eth] (type) vlan [vlan] (type) vlan [vlan2] (type) ipv4 [ipv4] [udp] (dport) ptp_ev  [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x144</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; high cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>reserved</spirit:name>
+                        <spirit:description>&lt;b&gt; reserved &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>hcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">16</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>lcntr_9</spirit:name>
+                    <spirit:description> [eth] (type) vlan [vlan] (type) vlan [vlan2] (type) ipv4 [ipv4] [udp] (dport) ptp_msc [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x148</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; low cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>32</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">32</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>lcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>hcntr_9</spirit:name>
+                    <spirit:description> [eth] (type) vlan [vlan] (type) vlan [vlan2] (type) ipv4 [ipv4] [udp] (dport) ptp_msc [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x14c</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; high cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>reserved</spirit:name>
+                        <spirit:description>&lt;b&gt; reserved &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>hcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">16</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>lcntr_10</spirit:name>
+                    <spirit:description> [eth] (type) vlan [vlan] (type) vlan [vlan2] (type) ipv6 [ipv6] [udp] (dport) ptp_ev  [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x150</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; low cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>32</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">32</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>lcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>hcntr_10</spirit:name>
+                    <spirit:description> [eth] (type) vlan [vlan] (type) vlan [vlan2] (type) ipv6 [ipv6] [udp] (dport) ptp_ev  [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x154</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; high cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>reserved</spirit:name>
+                        <spirit:description>&lt;b&gt; reserved &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>hcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">16</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>lcntr_11</spirit:name>
+                    <spirit:description> [eth] (type) vlan [vlan] (type) vlan [vlan2] (type) ipv6 [ipv6] [udp] (dport) ptp_msc [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x158</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; low cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>32</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">32</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>lcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>hcntr_11</spirit:name>
+                    <spirit:description> [eth] (type) vlan [vlan] (type) vlan [vlan2] (type) ipv6 [ipv6] [udp] (dport) ptp_msc [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x15c</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; high cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>reserved</spirit:name>
+                        <spirit:description>&lt;b&gt; reserved &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>hcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">16</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>lcntr_12</spirit:name>
+                    <spirit:description> [eth] (type) vlan [vlan] (type) ptp  [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x160</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; low cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>32</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">32</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>lcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>hcntr_12</spirit:name>
+                    <spirit:description> [eth] (type) vlan [vlan] (type) ptp  [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x164</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; high cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>reserved</spirit:name>
+                        <spirit:description>&lt;b&gt; reserved &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>hcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">16</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>lcntr_13</spirit:name>
+                    <spirit:description> [eth] (type) vlan [vlan] (type) ipv4 [ipv4] [udp] (dport) ptp_ev  [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x168</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; low cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>32</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">32</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>lcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>hcntr_13</spirit:name>
+                    <spirit:description> [eth] (type) vlan [vlan] (type) ipv4 [ipv4] [udp] (dport) ptp_ev  [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x16c</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; high cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>reserved</spirit:name>
+                        <spirit:description>&lt;b&gt; reserved &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>hcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">16</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>lcntr_14</spirit:name>
+                    <spirit:description> [eth] (type) vlan [vlan] (type) ipv4 [ipv4] [udp] (dport) ptp_msc [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x170</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; low cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>32</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">32</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>lcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>hcntr_14</spirit:name>
+                    <spirit:description> [eth] (type) vlan [vlan] (type) ipv4 [ipv4] [udp] (dport) ptp_msc [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x174</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; high cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>reserved</spirit:name>
+                        <spirit:description>&lt;b&gt; reserved &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>hcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">16</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>lcntr_15</spirit:name>
+                    <spirit:description> [eth] (type) vlan [vlan] (type) ipv6 [ipv6] [udp] (dport) ptp_ev  [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x178</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; low cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>32</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">32</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>lcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>hcntr_15</spirit:name>
+                    <spirit:description> [eth] (type) vlan [vlan] (type) ipv6 [ipv6] [udp] (dport) ptp_ev  [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x17c</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; high cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>reserved</spirit:name>
+                        <spirit:description>&lt;b&gt; reserved &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>hcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">16</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>lcntr_16</spirit:name>
+                    <spirit:description> [eth] (type) vlan [vlan] (type) ipv6 [ipv6] [udp] (dport) ptp_msc [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x180</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; low cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>32</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">32</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>lcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>hcntr_16</spirit:name>
+                    <spirit:description> [eth] (type) vlan [vlan] (type) ipv6 [ipv6] [udp] (dport) ptp_msc [PTPv2]</spirit:description>
+                    <spirit:addressOffset>0x184</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>cntr</spirit:name>
+                        <spirit:description>&lt;b&gt; high cntr &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>reserved</spirit:name>
+                        <spirit:description>&lt;b&gt; reserved &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>16</spirit:bitOffset>
+                        <spirit:bitWidth>16</spirit:bitWidth>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value></spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">16</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>hcntr</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">16</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>axil_const0</spirit:name>
+                    <spirit:description>axil_const_0([15:0]=ptp_result_0,[31:16]=ptp_result1)</spirit:description>
+                    <spirit:addressOffset>0x1f8</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>constant</spirit:name>
+                        <spirit:description>&lt;b&gt; axi lite constant &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>32</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">32</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>axil_const</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+                <spirit:register>
+                    <spirit:name>axil_const1</spirit:name>
+                    <spirit:description>axil_const_1(preamble_en)</spirit:description>
+                    <spirit:addressOffset>0x1fc</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x0</spirit:value>
+                        <spirit:mask>0xffffffff</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>constant</spirit:name>
+                        <spirit:description>&lt;b&gt; axi lite constant &lt;/b&gt;</spirit:description>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>32</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:parameters>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_hw_</spirit:name>
+<spirit:value>read-write</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_sysrdl_fieldwidth_</spirit:name>
+<spirit:value spirit:format="long">32</spirit:value>
+                            </spirit:parameter>
+                            <spirit:parameter>
+<spirit:name>_mre_formatted_reset_value_</spirit:name>
+<spirit:value>0</spirit:value>
+                            </spirit:parameter>
+                        </spirit:parameters>
+                    </spirit:field>
+                    <spirit:parameters>
+                        <spirit:parameter>
+                            <spirit:name>_mre_definition_</spirit:name>
+                            <spirit:value>axil_const</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_sysrdl_accesswidth_</spirit:name>
+                            <spirit:value spirit:format="long">32</spirit:value>
+                        </spirit:parameter>
+                        <spirit:parameter>
+                            <spirit:name>_mre_external_</spirit:name>
+                            <spirit:value>true</spirit:value>
+                        </spirit:parameter>
+                    </spirit:parameters>
+                </spirit:register>
+            </spirit:addressBlock>
+            <spirit:addressUnitBits>8</spirit:addressUnitBits>
+        </spirit:memoryMap>
+    </spirit:memoryMaps>
+    <spirit:vendorExtensions>
+        <mdsAttr:attributes>
+            <mdsAttr:group mdsAttr:groupName="MRE_UserDefinedProperties">
+                <mdsAttr:attribute mdsAttr:name="Internal">
+                    <mdsAttr:value mdsAttr:author="boolean" mdsAttr:comment="field|reg|regfile" mdsAttr:date="field|regfile|reg" mdsAttr:path="false" mdsAttr:prompt="false" mdsAttr:type="boolean"/>
+                </mdsAttr:attribute>
+                <mdsAttr:attribute mdsAttr:name="ValRTLSignal">
+                    <mdsAttr:value mdsAttr:author="string" mdsAttr:comment="field" mdsAttr:date="field" mdsAttr:path="not_set" mdsAttr:prompt="not_set" mdsAttr:type="string"/>
+                </mdsAttr:attribute>
+                <mdsAttr:attribute mdsAttr:name="AccessType">
+                    <mdsAttr:value mdsAttr:author="string" mdsAttr:comment="field" mdsAttr:date="field" mdsAttr:path="RSV" mdsAttr:prompt="RSV" mdsAttr:type="string"/>
+                </mdsAttr:attribute>
+                <mdsAttr:attribute mdsAttr:name="Release">
+                    <mdsAttr:value mdsAttr:author="string" mdsAttr:comment="field|reg" mdsAttr:date="field|reg" mdsAttr:path="" mdsAttr:type="string"/>
+                </mdsAttr:attribute>
+                <mdsAttr:attribute mdsAttr:name="UG_Desc">
+                    <mdsAttr:value mdsAttr:author="string" mdsAttr:comment="field|reg" mdsAttr:date="field|reg" mdsAttr:path="" mdsAttr:type="string"/>
+                </mdsAttr:attribute>
+                <mdsAttr:attribute mdsAttr:name="FuncGroup">
+                    <mdsAttr:value mdsAttr:author="string" mdsAttr:comment="reg" mdsAttr:date="reg" mdsAttr:path="" mdsAttr:type="string"/>
+                </mdsAttr:attribute>
+                <mdsAttr:attribute mdsAttr:name="UG_Name">
+                    <mdsAttr:value mdsAttr:author="string" mdsAttr:comment="field|reg" mdsAttr:date="field|reg" mdsAttr:path="" mdsAttr:type="string"/>
+                </mdsAttr:attribute>
+                <mdsAttr:attribute mdsAttr:name="UVM_HW_Access">
+                    <mdsAttr:value mdsAttr:author="string" mdsAttr:comment="field" mdsAttr:date="field" mdsAttr:path="" mdsAttr:type="string"/>
+                </mdsAttr:attribute>
+                <mdsAttr:attribute mdsAttr:name="UVM_SW_Access">
+                    <mdsAttr:value mdsAttr:author="string" mdsAttr:comment="field" mdsAttr:date="field" mdsAttr:path="" mdsAttr:type="string"/>
+                </mdsAttr:attribute>
+                <mdsAttr:attribute mdsAttr:name="rtl_modules">
+                    <mdsAttr:value mdsAttr:author="string" mdsAttr:comment="field" mdsAttr:date="field" mdsAttr:path="" mdsAttr:type="string"/>
+                </mdsAttr:attribute>
+                <mdsAttr:attribute mdsAttr:name="hdl_path">
+                    <mdsAttr:value mdsAttr:author="string" mdsAttr:comment="field" mdsAttr:date="field" mdsAttr:path="" mdsAttr:type="string"/>
+                </mdsAttr:attribute>
+            </mdsAttr:group>
+        </mdsAttr:attributes>
+    </spirit:vendorExtensions>
+</spirit:component>

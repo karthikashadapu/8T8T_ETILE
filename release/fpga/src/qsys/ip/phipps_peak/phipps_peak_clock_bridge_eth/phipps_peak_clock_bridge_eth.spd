@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="sim/phipps_peak_clock_bridge_eth.v"
+   type="VERILOG"
+   library="phipps_peak_clock_bridge_eth"
+   hasInlineConfiguration="true" />
+ <topLevel name="phipps_peak_clock_bridge_eth.phipps_peak_clock_bridge_eth" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB014R24B2I2V" />
+</simPackage>

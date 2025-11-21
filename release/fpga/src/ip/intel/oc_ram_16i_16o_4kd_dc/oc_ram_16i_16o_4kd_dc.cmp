@@ -1,0 +1,18 @@
+	component oc_ram_16i_16o_4kd_dc is
+		port (
+			data_a    : in  std_logic_vector(15 downto 0) := (others => 'X'); -- datain_a
+			q_a       : out std_logic_vector(15 downto 0);                    -- dataout_a
+			data_b    : in  std_logic_vector(15 downto 0) := (others => 'X'); -- datain_b
+			q_b       : out std_logic_vector(15 downto 0);                    -- dataout_b
+			address_a : in  std_logic_vector(11 downto 0) := (others => 'X'); -- address_a
+			address_b : in  std_logic_vector(11 downto 0) := (others => 'X'); -- address_b
+			wren_a    : in  std_logic                     := 'X';             -- wren_a
+			wren_b    : in  std_logic                     := 'X';             -- wren_b
+			inclock   : in  std_logic                     := 'X';             -- clk
+			outclock  : in  std_logic                     := 'X';             -- clk
+			rden_a    : in  std_logic                     := 'X';             -- rden_a
+			rden_b    : in  std_logic                     := 'X';             -- rden_b
+			out_aclr  : in  std_logic                     := 'X'              -- reset
+		);
+	end component oc_ram_16i_16o_4kd_dc;
+

@@ -1,0 +1,7 @@
+# This is the QIP file for DSP Builder for Intel FPGAs system 'streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_NCO'
+
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/low_phy_ul_rtl/streamtoblock_fft/streamtoblock_fft_DUT_safe_path_ver.sv
+set_global_assignment -name VHDL_FILE ../../rtl/low_phy_ul_rtl/streamtoblock_fft/streamtoblock_fft_DUT_safe_path.vhd
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/low_phy_ul_rtl/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_NCO.sv
+set_global_assignment -name HEX_FILE ../../rtl/low_phy_ul_rtl/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_NCO_u0_sinTable.hex
+set_global_assignment -name HEX_FILE ../../rtl/low_phy_ul_rtl/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_NCO_u0_cosTable.hex

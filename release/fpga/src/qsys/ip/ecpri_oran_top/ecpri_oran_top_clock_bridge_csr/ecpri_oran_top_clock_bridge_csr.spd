@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="sim/ecpri_oran_top_clock_bridge_csr.v"
+   type="VERILOG"
+   library="ecpri_oran_top_clock_bridge_csr"
+   hasInlineConfiguration="true" />
+ <topLevel
+   name="ecpri_oran_top_clock_bridge_csr.ecpri_oran_top_clock_bridge_csr" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

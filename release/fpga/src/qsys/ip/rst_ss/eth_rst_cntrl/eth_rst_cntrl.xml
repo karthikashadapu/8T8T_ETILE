@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.11.21.13:09:40"
+ outputDirectory="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/rst_ss/eth_rst_cntrl/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGFB014R24B2I2V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="3"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="reset_in0" kind="reset" start="0">
+   <property name="associatedClock" value="" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="reset_in0" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="reset_out" kind="reset" start="1">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedDirectReset" value="" />
+   <property name="associatedResetSinks" value="reset_in0" />
+   <property name="synchronousEdges" value="BOTH" />
+   <port name="reset_out" direction="output" role="reset" width="1" />
+  </interface>
+ </perimeter>
+ <entity kind="eth_rst_cntrl" version="1.0" name="eth_rst_cntrl">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="AGFB014R24B2I2V" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <generatedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/rst_ss/eth_rst_cntrl/synth/eth_rst_cntrl.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/rst_ss/eth_rst_cntrl/synth/eth_rst_cntrl.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/rst_ss/eth_rst_cntrl.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/sibgath/intelFPGA_pro/24.1/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="eth_rst_cntrl">"Generating: eth_rst_cntrl"</message>
+   <message level="Info" culprit="eth_rst_cntrl">"Generating: altera_reset_controller"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_reset_controller"
+   version="19.2.2"
+   name="altera_reset_controller">
+  <generatedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/rst_ss/eth_rst_cntrl/altera_reset_controller_1922/synth/altera_reset_controller.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/rst_ss/eth_rst_cntrl/altera_reset_controller_1922/synth/altera_reset_synchronizer.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/rst_ss/eth_rst_cntrl/altera_reset_controller_1922/synth/altera_reset_controller.sdc"
+       attributes="NO_SDC_PROMOTION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/rst_ss/eth_rst_cntrl/altera_reset_controller_1922/synth/altera_reset_controller.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/rst_ss/eth_rst_cntrl/altera_reset_controller_1922/synth/altera_reset_synchronizer.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/rst_ss/eth_rst_cntrl/altera_reset_controller_1922/synth/altera_reset_controller.sdc"
+       attributes="NO_SDC_PROMOTION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/sibgath/intelFPGA_pro/24.1/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="eth_rst_cntrl" as="eth_rst_cntrl" />
+  <messages>
+   <message level="Info" culprit="eth_rst_cntrl">"Generating: altera_reset_controller"</message>
+  </messages>
+ </entity>
+</deploy>

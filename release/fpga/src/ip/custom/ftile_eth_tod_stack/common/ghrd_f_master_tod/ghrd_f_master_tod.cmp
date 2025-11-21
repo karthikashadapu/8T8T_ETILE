@@ -1,0 +1,42 @@
+	component ghrd_f_master_tod is
+		generic (
+			PERIOD_CLOCK_FREQUENCY        : integer := 0;
+			OFFSET_JITTER_WANDER_EN       : integer := 0;
+			DEFAULT_NSEC_PERIOD           : integer := 6;
+			DEFAULT_FNSEC_PERIOD          : integer := 26214;
+			DEFAULT_NSEC_ADJPERIOD        : integer := 6;
+			DEFAULT_FNSEC_ADJPERIOD       : integer := 26214;
+			PPS_PULSE_ASSERT_CYCLE_MASTER : integer := 100000;
+			PLL_SCAN_CLK_FREQ             : integer := 78;
+			UNIT_PHASE_SHIFT              : integer := 88
+		);
+		port (
+			clk                        : in  std_logic                     := 'X';             -- clk
+			rst_n                      : in  std_logic                     := 'X';             -- reset_n
+			period_clk                 : in  std_logic                     := 'X';             -- clk
+			period_rst_n               : in  std_logic                     := 'X';             -- reset_n
+			csr_readdata               : out std_logic_vector(31 downto 0);                    -- readdata
+			csr_write                  : in  std_logic                     := 'X';             -- write
+			csr_read                   : in  std_logic                     := 'X';             -- read
+			csr_writedata              : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			csr_waitrequest            : out std_logic;                                        -- waitrequest
+			csr_address                : in  std_logic_vector(3 downto 0)  := (others => 'X'); -- address
+			time_of_day_96b            : out std_logic_vector(95 downto 0);                    -- data
+			time_of_day_64b            : out std_logic_vector(63 downto 0);                    -- data
+			time_of_day_96b_load_data  : in  std_logic_vector(95 downto 0) := (others => 'X'); -- data
+			time_of_day_96b_load_valid : in  std_logic                     := 'X';             -- valid
+			time_of_day_64b_load_data  : in  std_logic_vector(63 downto 0) := (others => 'X'); -- data
+			time_of_day_64b_load_valid : in  std_logic                     := 'X';             -- valid
+			iopll_scan_clk             : in  std_logic                     := 'X';             -- clk
+			pps_sampling_clk           : in  std_logic                     := 'X';             -- clk
+			iopll_phased_clk           : in  std_logic                     := 'X';             -- clk
+			iopll_locked               : in  std_logic                     := 'X';             -- lock
+			iopll_phase_done           : in  std_logic                     := 'X';             -- done
+			iopll_phase_en             : out std_logic;                                        -- enable
+			iopll_updn                 : out std_logic;                                        -- up_down
+			iopll_num_phase_shifts     : out std_logic_vector(2 downto 0);                     -- num
+			iopll_cnt_sel              : out std_logic_vector(4 downto 0);                     -- count_select
+			pps_pulse_per_second       : out std_logic                                         -- phased_pulse
+		);
+	end component ghrd_f_master_tod;
+

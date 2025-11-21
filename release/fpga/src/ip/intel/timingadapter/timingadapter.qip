@@ -1,0 +1,44 @@
+set_global_assignment -entity "timingadapter" -library "timingadapter" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "timingadapter" -library "timingadapter" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "timingadapter" -library "timingadapter" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "timingadapter" -library "timingadapter" -name IP_TOOL_VENDOR_NAME "Intel Corporation"
+set_global_assignment -entity "timingadapter" -library "timingadapter" -name IP_TOP_LEVEL_COMPONENT_NAME "timing_adapter"
+set_global_assignment -entity "timingadapter" -library "timingadapter" -name PRE_COMPILED_MODULE "ON"
+set_global_assignment -entity "timingadapter" -library "timingadapter" -name OCS_IP_TYPE "timing_adapter"
+set_global_assignment -entity "timingadapter" -library "timingadapter" -name OCS_IP_VERSION "19.4.0"
+set_global_assignment -entity "timingadapter" -library "timingadapter" -name OCS_IP_HASH "4rcaqxq"
+set_global_assignment -library "timingadapter" -name SOPCINFO_FILE [file join $::quartus(qip_path) "timingadapter.sopcinfo"]
+set_global_assignment -entity "timingadapter" -library "timingadapter" -name SLD_INFO "QSYS_NAME timingadapter HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "timingadapter" -name MISC_FILE [file join $::quartus(qip_path) "timingadapter.cmp"]
+set_global_assignment -entity "timingadapter" -library "timingadapter" -name IP_TARGETED_DEVICE_FAMILY "Agilex 7"
+set_global_assignment -entity "timingadapter" -library "timingadapter" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 7}"
+set_global_assignment -entity "timingadapter" -library "timingadapter" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "timingadapter" -name MISC_FILE [file join $::quartus(qip_path) "../timingadapter.ip"]
+
+set_global_assignment -entity "timingadapter_timing_adapter_1940_4rcaqxq" -library "timing_adapter_1940" -name IP_COMPONENT_NAME "dGltaW5nYWRhcHRlcl90aW1pbmdfYWRhcHRlcl8xOTQwXzRyY2FxeHE="
+set_global_assignment -entity "timingadapter_timing_adapter_1940_4rcaqxq" -library "timing_adapter_1940" -name IP_COMPONENT_DISPLAY_NAME "QXZhbG9uIFN0cmVhbWluZyBUaW1pbmcgQWRhcHRlciBJbnRlbCBGUEdBIElQ"
+set_global_assignment -entity "timingadapter_timing_adapter_1940_4rcaqxq" -library "timing_adapter_1940" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "timingadapter_timing_adapter_1940_4rcaqxq" -library "timing_adapter_1940" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "timingadapter_timing_adapter_1940_4rcaqxq" -library "timing_adapter_1940" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "timingadapter_timing_adapter_1940_4rcaqxq" -library "timing_adapter_1940" -name IP_COMPONENT_VERSION "MTkuNC4w"
+set_global_assignment -entity "timingadapter_timing_adapter_1940_4rcaqxq" -library "timing_adapter_1940" -name IP_COMPONENT_GROUP "QmFzaWMgRnVuY3Rpb25zL0JyaWRnZXMgYW5kIEFkYXB0b3JzL1N0cmVhbWluZw=="
+set_global_assignment -entity "timingadapter_timing_adapter_1940_4rcaqxq" -library "timing_adapter_1940" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly9kb2N1bWVudGF0aW9uLmFsdGVyYS5jb20vIy9saW5rL213aDE0MDk5NjAxODE2NDEvbXdoMTQwOTk1ODgyODczMg=="
+set_global_assignment -entity "timingadapter_timing_adapter_1940_4rcaqxq" -library "timing_adapter_1940" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly9kb2N1bWVudGF0aW9uLmFsdGVyYS5jb20vIy9saW5rL2hjbzE0MjE2OTgwNDIwODcvaGNvMTQyMTY5ODAxMzQwOA=="
+set_global_assignment -entity "timingadapter" -library "timingadapter" -name IP_COMPONENT_NAME "dGltaW5nYWRhcHRlcg=="
+set_global_assignment -entity "timingadapter" -library "timingadapter" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "timingadapter" -library "timingadapter" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "timingadapter" -library "timingadapter" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "timingadapter" -library "timingadapter" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "timingadapter" -library "timingadapter" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "timing_adapter_1940" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "timing_adapter_1940/synth/timingadapter_timing_adapter_1940_4rcaqxq.sv"]
+set_global_assignment -library "timing_adapter_1940" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "timing_adapter_1940/synth/timingadapter_timing_adapter_1940_4rcaqxq_fifo.sv"]
+set_global_assignment -library "timingadapter" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/timingadapter.v"]
+
+
+set_global_assignment -entity "timingadapter_timing_adapter_1940_4rcaqxq" -library "timing_adapter_1940" -name IP_TOOL_NAME "timing_adapter"
+set_global_assignment -entity "timingadapter_timing_adapter_1940_4rcaqxq" -library "timing_adapter_1940" -name IP_TOOL_VERSION "19.4.0"
+set_global_assignment -entity "timingadapter_timing_adapter_1940_4rcaqxq" -library "timing_adapter_1940" -name IP_TOOL_ENV "QsysPrimePro"
+

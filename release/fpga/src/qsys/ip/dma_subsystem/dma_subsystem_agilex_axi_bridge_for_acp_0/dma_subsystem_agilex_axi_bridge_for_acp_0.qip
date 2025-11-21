@@ -1,0 +1,33 @@
+set_global_assignment -entity "dma_subsystem_agilex_axi_bridge_for_acp_0" -library "dma_subsystem_agilex_axi_bridge_for_acp_0" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "dma_subsystem_agilex_axi_bridge_for_acp_0" -library "dma_subsystem_agilex_axi_bridge_for_acp_0" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "dma_subsystem_agilex_axi_bridge_for_acp_0" -library "dma_subsystem_agilex_axi_bridge_for_acp_0" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "dma_subsystem_agilex_axi_bridge_for_acp_0" -library "dma_subsystem_agilex_axi_bridge_for_acp_0" -name IP_TOOL_VENDOR_NAME "RSF"
+set_global_assignment -entity "dma_subsystem_agilex_axi_bridge_for_acp_0" -library "dma_subsystem_agilex_axi_bridge_for_acp_0" -name IP_TOP_LEVEL_COMPONENT_NAME "agilex_axi_bridge_for_acp"
+set_global_assignment -library "dma_subsystem_agilex_axi_bridge_for_acp_0" -name SOPCINFO_FILE [file join $::quartus(qip_path) "dma_subsystem_agilex_axi_bridge_for_acp_0.sopcinfo"]
+set_global_assignment -entity "dma_subsystem_agilex_axi_bridge_for_acp_0" -library "dma_subsystem_agilex_axi_bridge_for_acp_0" -name SLD_INFO "QSYS_NAME dma_subsystem_agilex_axi_bridge_for_acp_0 HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "dma_subsystem_agilex_axi_bridge_for_acp_0" -name MISC_FILE [file join $::quartus(qip_path) "dma_subsystem_agilex_axi_bridge_for_acp_0.cmp"]
+set_global_assignment -entity "dma_subsystem_agilex_axi_bridge_for_acp_0" -library "dma_subsystem_agilex_axi_bridge_for_acp_0" -name IP_TARGETED_DEVICE_FAMILY "Agilex 7"
+set_global_assignment -entity "dma_subsystem_agilex_axi_bridge_for_acp_0" -library "dma_subsystem_agilex_axi_bridge_for_acp_0" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 7}"
+set_global_assignment -entity "dma_subsystem_agilex_axi_bridge_for_acp_0" -library "dma_subsystem_agilex_axi_bridge_for_acp_0" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "dma_subsystem_agilex_axi_bridge_for_acp_0" -name MISC_FILE [file join $::quartus(qip_path) "../dma_subsystem_agilex_axi_bridge_for_acp_0.ip"]
+
+set_global_assignment -entity "agilex_axi_bridge_for_acp" -library "agilex_axi_bridge_for_acp_1920" -name IP_COMPONENT_NAME "YWdpbGV4X2F4aV9icmlkZ2VfZm9yX2FjcA=="
+set_global_assignment -entity "agilex_axi_bridge_for_acp" -library "agilex_axi_bridge_for_acp_1920" -name IP_COMPONENT_DISPLAY_NAME "YWdpbGV4X2F4aV9icmlkZ2VfZm9yX2FjcA=="
+set_global_assignment -entity "agilex_axi_bridge_for_acp" -library "agilex_axi_bridge_for_acp_1920" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "agilex_axi_bridge_for_acp" -library "agilex_axi_bridge_for_acp_1920" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "agilex_axi_bridge_for_acp" -library "agilex_axi_bridge_for_acp_1920" -name IP_COMPONENT_AUTHOR "UlNG"
+set_global_assignment -entity "agilex_axi_bridge_for_acp" -library "agilex_axi_bridge_for_acp_1920" -name IP_COMPONENT_VERSION "MTkuMi4w"
+set_global_assignment -entity "agilex_axi_bridge_for_acp" -library "agilex_axi_bridge_for_acp_1920" -name IP_COMPONENT_DESCRIPTION "U2ltcGxlIEFDRS1MSVRFIGJyaWRnZSB0byBjb25kaXRpb24gRE9NQUlOLCBCQVIsIFNOT09QLCBDQUNIRSwgUFJPVCBhbmQgVVNFUiBwb3J0cyBmb3IgQUNQIG9wZXJhdGlvbi4="
+set_global_assignment -entity "agilex_axi_bridge_for_acp" -library "agilex_axi_bridge_for_acp_1920" -name IP_COMPONENT_GROUP "RXhhbXBsZSBEZXNpZ25zL0NvbXBvbmVudA=="
+set_global_assignment -entity "dma_subsystem_agilex_axi_bridge_for_acp_0" -library "dma_subsystem_agilex_axi_bridge_for_acp_0" -name IP_COMPONENT_NAME "ZG1hX3N1YnN5c3RlbV9hZ2lsZXhfYXhpX2JyaWRnZV9mb3JfYWNwXzA="
+set_global_assignment -entity "dma_subsystem_agilex_axi_bridge_for_acp_0" -library "dma_subsystem_agilex_axi_bridge_for_acp_0" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "dma_subsystem_agilex_axi_bridge_for_acp_0" -library "dma_subsystem_agilex_axi_bridge_for_acp_0" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "dma_subsystem_agilex_axi_bridge_for_acp_0" -library "dma_subsystem_agilex_axi_bridge_for_acp_0" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "dma_subsystem_agilex_axi_bridge_for_acp_0" -library "dma_subsystem_agilex_axi_bridge_for_acp_0" -name IP_COMPONENT_AUTHOR "UlNG"
+set_global_assignment -entity "dma_subsystem_agilex_axi_bridge_for_acp_0" -library "dma_subsystem_agilex_axi_bridge_for_acp_0" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "agilex_axi_bridge_for_acp_1920" -name VERILOG_FILE [file join $::quartus(qip_path) "agilex_axi_bridge_for_acp_1920/synth/agilex_axi_bridge_for_acp.v"]
+set_global_assignment -library "dma_subsystem_agilex_axi_bridge_for_acp_0" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/dma_subsystem_agilex_axi_bridge_for_acp_0.v"]
+

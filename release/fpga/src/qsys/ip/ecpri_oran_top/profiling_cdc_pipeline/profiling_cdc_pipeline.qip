@@ -1,0 +1,30 @@
+set_global_assignment -entity "profiling_cdc_pipeline" -library "profiling_cdc_pipeline" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "profiling_cdc_pipeline" -library "profiling_cdc_pipeline" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "profiling_cdc_pipeline" -library "profiling_cdc_pipeline" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "profiling_cdc_pipeline" -library "profiling_cdc_pipeline" -name IP_TOOL_VENDOR_NAME "Altera Corporation"
+set_global_assignment -entity "profiling_cdc_pipeline" -library "profiling_cdc_pipeline" -name IP_TOP_LEVEL_COMPONENT_NAME "cdc_pipeline"
+set_global_assignment -library "profiling_cdc_pipeline" -name SOPCINFO_FILE [file join $::quartus(qip_path) "profiling_cdc_pipeline.sopcinfo"]
+set_global_assignment -entity "profiling_cdc_pipeline" -library "profiling_cdc_pipeline" -name SLD_INFO "QSYS_NAME profiling_cdc_pipeline HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "profiling_cdc_pipeline" -name MISC_FILE [file join $::quartus(qip_path) "profiling_cdc_pipeline.cmp"]
+set_global_assignment -entity "profiling_cdc_pipeline" -library "profiling_cdc_pipeline" -name IP_TARGETED_DEVICE_FAMILY "Agilex 7"
+set_global_assignment -entity "profiling_cdc_pipeline" -library "profiling_cdc_pipeline" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 7}"
+set_global_assignment -entity "profiling_cdc_pipeline" -library "profiling_cdc_pipeline" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "profiling_cdc_pipeline" -name MISC_FILE [file join $::quartus(qip_path) "../profiling_cdc_pipeline.ip"]
+
+set_global_assignment -entity "cdc_pipeline" -library "cdc_pipeline_10" -name IP_COMPONENT_NAME "Y2RjX3BpcGVsaW5l"
+set_global_assignment -entity "cdc_pipeline" -library "cdc_pipeline_10" -name IP_COMPONENT_DISPLAY_NAME "Y2RjX3BpcGVsaW5l"
+set_global_assignment -entity "cdc_pipeline" -library "cdc_pipeline_10" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "cdc_pipeline" -library "cdc_pipeline_10" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "cdc_pipeline" -library "cdc_pipeline_10" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "profiling_cdc_pipeline" -library "profiling_cdc_pipeline" -name IP_COMPONENT_NAME "cHJvZmlsaW5nX2NkY19waXBlbGluZQ=="
+set_global_assignment -entity "profiling_cdc_pipeline" -library "profiling_cdc_pipeline" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "profiling_cdc_pipeline" -library "profiling_cdc_pipeline" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "profiling_cdc_pipeline" -library "profiling_cdc_pipeline" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "profiling_cdc_pipeline" -library "profiling_cdc_pipeline" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "profiling_cdc_pipeline" -library "profiling_cdc_pipeline" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "cdc_pipeline_10" -name VERILOG_FILE [file join $::quartus(qip_path) "cdc_pipeline_10/synth/cdc_pipeline.v"]
+set_global_assignment -library "profiling_cdc_pipeline" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/profiling_cdc_pipeline.v"]
+

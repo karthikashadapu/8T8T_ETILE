@@ -1,0 +1,18 @@
+# system info qsys_top_sc_fifo_0 on 2025.10.16.14:42:38
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for qsys_top_sc_fifo_0 on 2025.10.16.14:42:38
+files:
+filepath,kind,attributes,module,is_top
+sim/qsys_top_sc_fifo_0.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,qsys_top_sc_fifo_0,true
+altera_avalon_sc_fifo_1932/sim/qsys_top_sc_fifo_0_altera_avalon_sc_fifo_1932_jh4ijda.v,VERILOG,,qsys_top_sc_fifo_0_altera_avalon_sc_fifo_1932_jh4ijda,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+qsys_top_sc_fifo_0.sc_fifo_0,qsys_top_sc_fifo_0_altera_avalon_sc_fifo_1932_jh4ijda

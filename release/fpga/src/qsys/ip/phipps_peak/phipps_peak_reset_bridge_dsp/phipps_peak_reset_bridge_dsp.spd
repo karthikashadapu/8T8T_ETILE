@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="sim/phipps_peak_reset_bridge_dsp.v"
+   type="VERILOG"
+   library="phipps_peak_reset_bridge_dsp"
+   hasInlineConfiguration="true" />
+ <topLevel name="phipps_peak_reset_bridge_dsp.phipps_peak_reset_bridge_dsp" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB014R24B2I2V" />
+</simPackage>

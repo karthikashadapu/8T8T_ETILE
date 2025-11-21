@@ -1,0 +1,104 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the Intel FPGA Software License Subscription Agreements 
+on the Quartus Prime software download page.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 248 368)
+	(text "tod_subsys_cdc_pipeline_0" (rect 35 0 145 12)(font "SansSerif" (font_size 11)))
+	(text "inst" (rect 8 352 20 364)(font "Arial" ))
+	(port
+		(pt 0 76)
+		(input)
+		(text "src_clk" (rect 0 0 29 12)(font "SansSerif" (font_size 8)))
+		(text "src_clk" (rect 4 65 46 76)(font "SansSerif" (font_size 8)))
+		(line (pt 0 76)(pt 102 76)(line_width 1))
+	)
+	(port
+		(pt 0 126)
+		(input)
+		(text "rst_src_clk_n" (rect 0 0 56 12)(font "SansSerif" (font_size 8)))
+		(text "rst_src_clk_n" (rect 4 115 82 126)(font "SansSerif" (font_size 8)))
+		(line (pt 0 126)(pt 102 126)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "dst_clk" (rect 0 0 28 12)(font "SansSerif" (font_size 8)))
+		(text "dst_clk" (rect 4 165 46 176)(font "SansSerif" (font_size 8)))
+		(line (pt 0 176)(pt 102 176)(line_width 1))
+	)
+	(port
+		(pt 0 226)
+		(input)
+		(text "rst_dst_clk_n" (rect 0 0 55 12)(font "SansSerif" (font_size 8)))
+		(text "rst_dst_clk_n" (rect 4 215 82 226)(font "SansSerif" (font_size 8)))
+		(line (pt 0 226)(pt 102 226)(line_width 1))
+	)
+	(port
+		(pt 0 276)
+		(input)
+		(text "datain[95..0]" (rect 0 0 47 12)(font "SansSerif" (font_size 8)))
+		(text "datain[95..0]" (rect 4 265 82 276)(font "SansSerif" (font_size 8)))
+		(line (pt 0 276)(pt 102 276)(line_width 3))
+	)
+	(port
+		(pt 0 326)
+		(output)
+		(text "dataout[95..0]" (rect 0 0 53 12)(font "SansSerif" (font_size 8)))
+		(text "dataout[95..0]" (rect 4 315 88 326)(font "SansSerif" (font_size 8)))
+	)
+	(drawing
+		(text "src_clk" (rect 61 46 164 105)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 107 71 232 152)(font "SansSerif" (color 0 0 0)))
+		(text "rst_src_clk_n" (rect 22 96 122 205)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 107 121 256 252)(font "SansSerif" (color 0 0 0)))
+		(text "dst_clk" (rect 61 146 164 305)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 107 171 232 352)(font "SansSerif" (color 0 0 0)))
+		(text "rst_dst_clk_n" (rect 22 196 122 405)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 107 221 256 452)(font "SansSerif" (color 0 0 0)))
+		(text "datain" (rect 68 246 172 505)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 107 271 238 552)(font "SansSerif" (color 0 0 0)))
+		(text "dataout" (rect 60 296 162 605)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 107 321 238 652)(font "SansSerif" (color 0 0 0)))
+		(text " tod_subsys_cdc_pipeline_0 " (rect 133 351 428 712)(font "SansSerif" ))
+		(line (pt 102 34)(pt 153 34)(line_width 1))
+		(line (pt 153 34)(pt 153 351)(line_width 1))
+		(line (pt 102 351)(pt 153 351)(line_width 1))
+		(line (pt 102 34)(pt 102 351)(line_width 1))
+		(line (pt 103 55)(pt 103 80)(line_width 1))
+		(line (pt 104 55)(pt 104 80)(line_width 1))
+		(line (pt 103 105)(pt 103 130)(line_width 1))
+		(line (pt 104 105)(pt 104 130)(line_width 1))
+		(line (pt 103 155)(pt 103 180)(line_width 1))
+		(line (pt 104 155)(pt 104 180)(line_width 1))
+		(line (pt 103 205)(pt 103 230)(line_width 1))
+		(line (pt 104 205)(pt 104 230)(line_width 1))
+		(line (pt 103 255)(pt 103 280)(line_width 1))
+		(line (pt 104 255)(pt 104 280)(line_width 1))
+		(line (pt 248 326)(pt 102 326)(line_width 3))
+		(line (pt 103 305)(pt 103 330)(line_width 1))
+		(line (pt 104 305)(pt 104 330)(line_width 1))
+		(line (pt 0 0)(pt 248 0)(line_width 1))
+		(line (pt 248 0)(pt 248 368)(line_width 1))
+		(line (pt 0 368)(pt 248 368)(line_width 1))
+		(line (pt 0 0)(pt 0 368)(line_width 1))
+	)
+)

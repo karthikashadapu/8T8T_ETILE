@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.11.21.16:58:51"
+ outputDirectory="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGFB014R24B2I2V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="2"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_MASTER_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_MASTER_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_MASTER_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_SLAVE_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_SLAVE_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_SLAVE_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_SAMPLING_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_SAMPLING_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_SAMPLING_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clk_master" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk_master" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="reset_master" kind="reset" start="0">
+   <property name="associatedClock" value="clk_master" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="reset_master" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="clk_slave" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk_slave" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="reset_slave" kind="reset" start="0">
+   <property name="associatedClock" value="clk_slave" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="reset_slave" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="clk_sampling" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk_sampling" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="start_tod_sync" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="start_tod_sync" direction="input" role="data" width="1" />
+  </interface>
+  <interface name="tod_master_data" kind="avalon_streaming" start="0">
+   <property name="associatedClock" value="clk_master" />
+   <property name="associatedReset" value="reset_master" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port name="tod_master_data" direction="input" role="data" width="96" />
+  </interface>
+  <interface name="tod_slave_data" kind="avalon_streaming" start="1">
+   <property name="associatedClock" value="clk_slave" />
+   <property name="associatedReset" value="reset_slave" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port name="tod_slave_data" direction="output" role="data" width="96" />
+   <port name="tod_slave_valid" direction="output" role="valid" width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   kind="eth_1588_tod_synchronizer"
+   version="1.0"
+   name="eth_1588_tod_synchronizer">
+  <parameter name="AUTO_CLK_MASTER_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_SLAVE_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_CLK_MASTER_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_SLAVE_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <parameter name="AUTO_CLK_MASTER_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CLK_SAMPLING_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_SAMPLING_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_DEVICE" value="AGFB014R24B2I2V" />
+  <parameter name="AUTO_CLK_SLAVE_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CLK_SAMPLING_CLOCK_RATE" value="-1" />
+  <generatedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/synth/eth_1588_tod_synchronizer.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/synth/eth_1588_tod_synchronizer.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/sibgath/intelFPGA_pro/24.1/ip/altera/ethernet/ethernet_ucore/altera_eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="eth_1588_tod_synchronizer">"Generating: eth_1588_tod_synchronizer"</message>
+   <message level="Info" culprit="eth_1588_tod_synchronizer">"Generating: altera_eth_1588_tod_synchronizer"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_eth_1588_tod_synchronizer"
+   version="20.0.5"
+   name="altera_eth_1588_tod_synchronizer">
+  <parameter name="DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="DEVICE_FAMILY_ID" value="Agilex" />
+  <generatedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer_0to15.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/tod_sync_clk_align.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/tod_sync_ppm_counter.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/tod_sync_clk_align_clock_div.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/tod_sync_clk_align_std_sync.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/tod_sync_clock_crosser.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/tod_sync_clk_align.sdc"
+       attributes="NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer_clock_crosser.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer_clock_div.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer_fifo.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer_gray_cnt.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer_sdpm_altsyncram.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer_std_sync.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer.sdc"
+       attributes="NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer_std_synchr_nocut.v"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer_0to15.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/tod_sync_clk_align.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/tod_sync_ppm_counter.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/tod_sync_clk_align_clock_div.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/tod_sync_clk_align_std_sync.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/tod_sync_clock_crosser.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/tod_sync_clk_align.sdc"
+       attributes="NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer_clock_crosser.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer_clock_div.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer_fifo.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer_gray_cnt.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer_sdpm_altsyncram.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer_std_sync.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer.sdc"
+       attributes="NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/oran_tod_subsys/eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer_std_synchr_nocut.v"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/sibgath/intelFPGA_pro/24.1/ip/altera/ethernet/ethernet_ucore/altera_eth_1588_tod_synchronizer/altera_eth_1588_tod_synchronizer_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="eth_1588_tod_synchronizer"
+     as="eth_1588_tod_synchronizer" />
+  <messages>
+   <message level="Info" culprit="eth_1588_tod_synchronizer">"Generating: altera_eth_1588_tod_synchronizer"</message>
+  </messages>
+ </entity>
+</deploy>

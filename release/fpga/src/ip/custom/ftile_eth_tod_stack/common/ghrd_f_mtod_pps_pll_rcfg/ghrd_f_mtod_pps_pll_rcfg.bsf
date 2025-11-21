@@ -1,0 +1,133 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the Intel FPGA Software License Subscription Agreements 
+on the Quartus Prime software download page.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 440 392)
+	(text "ghrd_f_mtod_pps_pll_rcfg" (rect 132 0 240 12)(font "SansSerif" (font_size 11)))
+	(text "inst" (rect 8 376 20 388)(font "Arial" ))
+	(port
+		(pt 0 76)
+		(input)
+		(text "mgmt_clk" (rect 0 0 40 12)(font "SansSerif" (font_size 8)))
+		(text "mgmt_clk" (rect 4 65 52 76)(font "SansSerif" (font_size 8)))
+		(line (pt 0 76)(pt 136 76)(line_width 1))
+	)
+	(port
+		(pt 0 126)
+		(input)
+		(text "mgmt_reset" (rect 0 0 49 12)(font "SansSerif" (font_size 8)))
+		(text "mgmt_reset" (rect 4 115 64 126)(font "SansSerif" (font_size 8)))
+		(line (pt 0 126)(pt 136 126)(line_width 1))
+	)
+	(port
+		(pt 0 201)
+		(input)
+		(text "mgmt_write" (rect 0 0 47 12)(font "SansSerif" (font_size 8)))
+		(text "mgmt_write" (rect 4 190 64 201)(font "SansSerif" (font_size 8)))
+		(line (pt 0 201)(pt 136 201)(line_width 1))
+	)
+	(port
+		(pt 0 226)
+		(input)
+		(text "mgmt_read" (rect 0 0 47 12)(font "SansSerif" (font_size 8)))
+		(text "mgmt_read" (rect 4 215 58 226)(font "SansSerif" (font_size 8)))
+		(line (pt 0 226)(pt 136 226)(line_width 1))
+	)
+	(port
+		(pt 0 251)
+		(input)
+		(text "mgmt_writedata[7..0]" (rect 0 0 83 12)(font "SansSerif" (font_size 8)))
+		(text "mgmt_writedata[7..0]" (rect 4 240 124 251)(font "SansSerif" (font_size 8)))
+		(line (pt 0 251)(pt 136 251)(line_width 3))
+	)
+	(port
+		(pt 0 301)
+		(input)
+		(text "mgmt_address[9..0]" (rect 0 0 81 12)(font "SansSerif" (font_size 8)))
+		(text "mgmt_address[9..0]" (rect 4 290 112 301)(font "SansSerif" (font_size 8)))
+		(line (pt 0 301)(pt 136 301)(line_width 3))
+	)
+	(port
+		(pt 0 351)
+		(input)
+		(text "reconfig_from_pll[10..0]" (rect 0 0 94 12)(font "SansSerif" (font_size 8)))
+		(text "reconfig_from_pll[10..0]" (rect 4 340 148 351)(font "SansSerif" (font_size 8)))
+		(line (pt 0 351)(pt 136 351)(line_width 3))
+	)
+	(port
+		(pt 0 176)
+		(output)
+		(text "mgmt_waitrequest" (rect 0 0 73 12)(font "SansSerif" (font_size 8)))
+		(text "mgmt_waitrequest" (rect 4 165 100 176)(font "SansSerif" (font_size 8)))
+	)
+	(port
+		(pt 0 276)
+		(output)
+		(text "mgmt_readdata[7..0]" (rect 0 0 83 12)(font "SansSerif" (font_size 8)))
+		(text "mgmt_readdata[7..0]" (rect 4 265 118 276)(font "SansSerif" (font_size 8)))
+	)
+	(port
+		(pt 440 76)
+		(output)
+		(text "reconfig_to_pll[29..0]" (rect 0 0 82 12)(font "SansSerif" (font_size 8)))
+		(text "reconfig_to_pll[29..0]" (rect 336 65 468 76)(font "SansSerif" (font_size 8)))
+		(line (pt 440 76)(pt 306 76)(line_width 3))
+	)
+	(drawing
+		(text "mgmt_clk" (rect 80 46 208 105)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 141 71 300 152)(font "SansSerif" (color 0 0 0)))
+		(text "mgmt_reset" (rect 66 96 192 205)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "reset" (rect 141 121 312 252)(font "SansSerif" (color 0 0 0)))
+		(text "mgmt_avalon_slave" (rect 21 146 144 305)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "waitrequest" (rect 141 171 348 352)(font "SansSerif" (color 0 0 0)))
+		(text "write" (rect 141 196 312 402)(font "SansSerif" (color 0 0 0)))
+		(text "read" (rect 141 221 306 452)(font "SansSerif" (color 0 0 0)))
+		(text "writedata" (rect 141 246 336 502)(font "SansSerif" (color 0 0 0)))
+		(text "readdata" (rect 141 271 330 552)(font "SansSerif" (color 0 0 0)))
+		(text "address" (rect 141 296 324 602)(font "SansSerif" (color 0 0 0)))
+		(text "reconfig_to_pll" (rect 307 46 704 105)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "reconfig_to_pll" (rect 239 71 568 152)(font "SansSerif" (color 0 0 0)))
+		(text "reconfig_from_pll" (rect 33 321 168 655)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "reconfig_from_pll" (rect 141 346 384 702)(font "SansSerif" (color 0 0 0)))
+		(text " ghrd_f_mtod_pps_pll_rcfg " (rect 323 376 802 762)(font "SansSerif" ))
+		(line (pt 136 34)(pt 306 34)(line_width 1))
+		(line (pt 306 34)(pt 306 376)(line_width 1))
+		(line (pt 136 376)(pt 306 376)(line_width 1))
+		(line (pt 136 34)(pt 136 376)(line_width 1))
+		(line (pt 137 55)(pt 137 80)(line_width 1))
+		(line (pt 138 55)(pt 138 80)(line_width 1))
+		(line (pt 137 105)(pt 137 130)(line_width 1))
+		(line (pt 138 105)(pt 138 130)(line_width 1))
+		(line (pt 440 176)(pt 136 176)(line_width 1))
+		(line (pt 440 276)(pt 136 276)(line_width 3))
+		(line (pt 137 155)(pt 137 305)(line_width 1))
+		(line (pt 138 155)(pt 138 305)(line_width 1))
+		(line (pt 305 55)(pt 305 80)(line_width 1))
+		(line (pt 304 55)(pt 304 80)(line_width 1))
+		(line (pt 137 330)(pt 137 355)(line_width 1))
+		(line (pt 138 330)(pt 138 355)(line_width 1))
+		(line (pt 0 0)(pt 440 0)(line_width 1))
+		(line (pt 440 0)(pt 440 393)(line_width 1))
+		(line (pt 0 393)(pt 440 393)(line_width 1))
+		(line (pt 0 0)(pt 0 393)(line_width 1))
+	)
+)

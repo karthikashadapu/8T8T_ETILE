@@ -1,0 +1,22 @@
+# system info dxc_ss_top_dxc_ss_0 on 2025.11.21.14:05:56
+system_info:
+name,value
+DEVICE,AGFB014R24B2I2V
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for dxc_ss_top_dxc_ss_0 on 2025.11.21.14:05:56
+files:
+filepath,kind,attributes,module,is_top
+sim/dxc_ss_top_dxc_ss_0.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,dxc_ss_top_dxc_ss_0,true
+dxc_ss_10/sim/dxc_ss.sv,SYSTEM_VERILOG,,dxc_ss,false
+dxc_ss_10/sim/ddc_top_ss.sv,SYSTEM_VERILOG,,dxc_ss,false
+dxc_ss_10/sim/duc_top_ss.sv,SYSTEM_VERILOG,,dxc_ss,false
+dxc_ss_10/sim/DXC_SS_Registers.v,VERILOG,,dxc_ss,false
+dxc_ss_10/sim/def_param.vh,VERILOG_INCLUDE,,dxc_ss,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+dxc_ss_top_dxc_ss_0.dxc_ss_0,dxc_ss

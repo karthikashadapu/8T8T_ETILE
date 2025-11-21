@@ -1,0 +1,134 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the Intel FPGA Software License Subscription Agreements 
+on the Quartus Prime software download page.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 336 416)
+	(text "eth_f_tod_sync_10g" (rect 102 0 185 12)(font "SansSerif" (font_size 11)))
+	(text "inst" (rect 8 400 20 412)(font "Arial" ))
+	(port
+		(pt 0 76)
+		(input)
+		(text "clk_master" (rect 0 0 44 12)(font "SansSerif" (font_size 8)))
+		(text "clk_master" (rect 4 65 64 76)(font "SansSerif" (font_size 8)))
+		(line (pt 0 76)(pt 136 76)(line_width 1))
+	)
+	(port
+		(pt 0 126)
+		(input)
+		(text "reset_master" (rect 0 0 54 12)(font "SansSerif" (font_size 8)))
+		(text "reset_master" (rect 4 115 76 126)(font "SansSerif" (font_size 8)))
+		(line (pt 0 126)(pt 136 126)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "clk_slave" (rect 0 0 37 12)(font "SansSerif" (font_size 8)))
+		(text "clk_slave" (rect 4 165 58 176)(font "SansSerif" (font_size 8)))
+		(line (pt 0 176)(pt 136 176)(line_width 1))
+	)
+	(port
+		(pt 0 226)
+		(input)
+		(text "reset_slave" (rect 0 0 47 12)(font "SansSerif" (font_size 8)))
+		(text "reset_slave" (rect 4 215 70 226)(font "SansSerif" (font_size 8)))
+		(line (pt 0 226)(pt 136 226)(line_width 1))
+	)
+	(port
+		(pt 0 276)
+		(input)
+		(text "clk_sampling" (rect 0 0 50 12)(font "SansSerif" (font_size 8)))
+		(text "clk_sampling" (rect 4 265 76 276)(font "SansSerif" (font_size 8)))
+		(line (pt 0 276)(pt 136 276)(line_width 1))
+	)
+	(port
+		(pt 0 326)
+		(input)
+		(text "start_tod_sync" (rect 0 0 61 12)(font "SansSerif" (font_size 8)))
+		(text "start_tod_sync" (rect 4 315 88 326)(font "SansSerif" (font_size 8)))
+		(line (pt 0 326)(pt 136 326)(line_width 1))
+	)
+	(port
+		(pt 0 376)
+		(input)
+		(text "tod_master_data[95..0]" (rect 0 0 93 12)(font "SansSerif" (font_size 8)))
+		(text "tod_master_data[95..0]" (rect 4 365 136 376)(font "SansSerif" (font_size 8)))
+		(line (pt 0 376)(pt 136 376)(line_width 3))
+	)
+	(port
+		(pt 336 76)
+		(output)
+		(text "tod_slave_data[95..0]" (rect 0 0 86 12)(font "SansSerif" (font_size 8)))
+		(text "tod_slave_data[95..0]" (rect 232 65 358 76)(font "SansSerif" (font_size 8)))
+		(line (pt 336 76)(pt 204 76)(line_width 3))
+	)
+	(port
+		(pt 336 101)
+		(output)
+		(text "tod_slave_valid" (rect 0 0 62 12)(font "SansSerif" (font_size 8)))
+		(text "tod_slave_valid" (rect 261 90 351 101)(font "SansSerif" (font_size 8)))
+		(line (pt 336 101)(pt 204 101)(line_width 1))
+	)
+	(drawing
+		(text "clk_master" (rect 72 46 204 105)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 141 71 300 152)(font "SansSerif" (color 0 0 0)))
+		(text "reset_master" (rect 58 96 188 205)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "reset" (rect 141 121 312 252)(font "SansSerif" (color 0 0 0)))
+		(text "clk_slave" (rect 83 146 220 305)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 141 171 300 352)(font "SansSerif" (color 0 0 0)))
+		(text "reset_slave" (rect 69 196 204 405)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "reset" (rect 141 221 312 452)(font "SansSerif" (color 0 0 0)))
+		(text "clk_sampling" (rect 61 246 194 505)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 141 271 300 552)(font "SansSerif" (color 0 0 0)))
+		(text "start_tod_sync" (rect 50 296 184 605)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 141 321 306 652)(font "SansSerif" (color 0 0 0)))
+		(text "tod_master_data" (rect 37 346 164 705)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 141 371 306 752)(font "SansSerif" (color 0 0 0)))
+		(text "tod_slave_data" (rect 205 46 494 105)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 183 71 390 152)(font "SansSerif" (color 0 0 0)))
+		(text "valid" (rect 181 96 392 202)(font "SansSerif" (color 0 0 0)))
+		(text " system " (rect 305 401 658 812)(font "SansSerif" ))
+		(line (pt 136 34)(pt 204 34)(line_width 1))
+		(line (pt 204 34)(pt 204 401)(line_width 1))
+		(line (pt 136 401)(pt 204 401)(line_width 1))
+		(line (pt 136 34)(pt 136 401)(line_width 1))
+		(line (pt 137 55)(pt 137 80)(line_width 1))
+		(line (pt 138 55)(pt 138 80)(line_width 1))
+		(line (pt 137 105)(pt 137 130)(line_width 1))
+		(line (pt 138 105)(pt 138 130)(line_width 1))
+		(line (pt 137 155)(pt 137 180)(line_width 1))
+		(line (pt 138 155)(pt 138 180)(line_width 1))
+		(line (pt 137 205)(pt 137 230)(line_width 1))
+		(line (pt 138 205)(pt 138 230)(line_width 1))
+		(line (pt 137 255)(pt 137 280)(line_width 1))
+		(line (pt 138 255)(pt 138 280)(line_width 1))
+		(line (pt 137 305)(pt 137 330)(line_width 1))
+		(line (pt 138 305)(pt 138 330)(line_width 1))
+		(line (pt 137 355)(pt 137 380)(line_width 1))
+		(line (pt 138 355)(pt 138 380)(line_width 1))
+		(line (pt 203 55)(pt 203 105)(line_width 1))
+		(line (pt 202 55)(pt 202 105)(line_width 1))
+		(line (pt 0 0)(pt 336 0)(line_width 1))
+		(line (pt 336 0)(pt 336 418)(line_width 1))
+		(line (pt 0 418)(pt 336 418)(line_width 1))
+		(line (pt 0 0)(pt 0 418)(line_width 1))
+	)
+)

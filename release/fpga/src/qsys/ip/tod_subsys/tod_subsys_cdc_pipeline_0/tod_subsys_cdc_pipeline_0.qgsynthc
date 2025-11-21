@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<node xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:altera="http://www.altera.com/XMLSchema/Qsys/SystemTree">
+  <instanceKey xsi:type="xs:string">tod_subsys_cdc_pipeline_0</instanceKey>
+  <instanceData xsi:type="data">
+    <parameters></parameters>
+    <interconnectAssignments></interconnectAssignments>
+    <className>tod_subsys_cdc_pipeline_0</className>
+    <version>1.0</version>
+    <name>tod_subsys_cdc_pipeline_0</name>
+    <uniqueName>tod_subsys_cdc_pipeline_0</uniqueName>
+    <nonce>0</nonce>
+    <incidentConnections></incidentConnections>
+  </instanceData>
+  <children>
+    <node>
+      <instanceKey xsi:type="xs:string">cdc_pipeline_0</instanceKey>
+      <instanceData xsi:type="data">
+        <parameters>
+          <parameter>
+            <name>DELAYS</name>
+            <value>2</value>
+          </parameter>
+          <parameter>
+            <name>DW</name>
+            <value>96</value>
+          </parameter>
+        </parameters>
+        <interconnectAssignments></interconnectAssignments>
+        <className>cdc_pipeline</className>
+        <version>1.0</version>
+        <name>cdc_pipeline_0</name>
+        <uniqueName>cdc_pipeline</uniqueName>
+        <fixedName>cdc_pipeline</fixedName>
+        <nonce>0</nonce>
+        <incidentConnections></incidentConnections>
+        <path>tod_subsys_cdc_pipeline_0.cdc_pipeline_0</path>
+      </instanceData>
+      <children></children>
+    </node>
+  </children>
+</node>

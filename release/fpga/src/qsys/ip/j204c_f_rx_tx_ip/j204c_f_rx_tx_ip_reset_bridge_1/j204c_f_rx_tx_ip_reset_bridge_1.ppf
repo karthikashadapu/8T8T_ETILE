@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pinplan
+ variation_name="reset_bridge_1"
+ megafunction_name="ALTERA_RESET_BRIDGE"
+ specifies="all_ports">
+ <global>
+  <pin name="clk" direction="input" scope="external" />
+  <pin name="in_reset" direction="input" scope="external" />
+  <pin name="out_reset" direction="output" scope="external" />
+ </global>
+</pinplan>

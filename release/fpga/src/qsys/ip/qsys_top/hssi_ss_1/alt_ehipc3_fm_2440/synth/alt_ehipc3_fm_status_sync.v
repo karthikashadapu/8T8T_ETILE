@@ -1,0 +1,51 @@
+// (C) 2001-2024 Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions and other 
+// software and tools, and its AMPP partner logic functions, and any output 
+// files from any of the foregoing (including device programming or simulation 
+// files), and any associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License Subscription 
+// Agreement, Intel FPGA IP License Agreement, or other applicable 
+// license agreement, including, without limitation, that your use is for the 
+// sole purpose of programming logic devices manufactured by Intel and sold by 
+// Intel or its authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+
+// $Id: //acds/main/ip/ethernet/alt_e100s10_100g/rtl/lib/alt_e100s10_status_sync.v#2 $
+// $Revision: #2 $
+// $Date: 2013/09/04 $
+// $Author: jilee $
+//-----------------------------------------------------------------------------
+
+`timescale 1 ps / 1 ps
+// baeckler - 01-20-2010
+// weak meta hardening intended for low toggle rate / low priority status signals
+
+module alt_ehipc3_fm_status_sync #(
+	parameter WIDTH = 32
+)(
+	input clk,
+	input [WIDTH-1:0] din,
+	output [WIDTH-1:0] dout
+);
+
+generate
+genvar i;
+for (i=0; i<WIDTH; i=i+1)
+begin : sync
+           alt_ehipc3_fm_altera_std_synchronizer_nocut #(
+                .depth(3),
+                .rst_value({WIDTH{1'b0}})
+            )  synchronizer_nocut_inst  (
+                .clk(clk),
+                .reset_n(1'b1),
+                .din(din[i]),
+                .dout(dout[i])
+            );
+end
+endgenerate
+
+endmodule
+`ifdef QUESTA_INTEL_OEM
+`pragma questa_oem_00 "sj2EnSVIknGz65j61L+DMMO3HDcSN2jhvr55koJ1ECJkPtG0Fw9q9R2fIYYgv2BPR8BrsR+RYKuIJjlYQNmgnXVjvtJtJool3uQURgCFpQL23pok+Wr2TXSNbySMdXxV2gz6CwxUk+0+/rDLrsroCzkAiFw2amgz6Do5tJQltYjCIPqHFj/3UZep9T4dBvB83T//SpBFZzgCz+Lzrx+1A17RXSmjyar6SF3JSJg+7B0F3BDNRMdmU5eY9MhYjmICLQZBZYzYdR5nDQ0y8eEOXD4fNnIwddPTdMKK9W0Hl5njSivy5FWZ4YNc4rOEaztz+e394sLS2J++fO//QlDQ9bdoFQNWwKxh1ZW90jatLciyEHgSK01j4mrpYsJ+NSAlGab2bJ6bctbFCmwab6oTUvdMoLYM2vTU+qPMjfUsyX5UeM+rnnMguPCoOJwAj+gPWJavhzLBxTrOf7/XWEfPMbyBWxF6aia+UHrX2SZRrOHY+C4ngz8RHRw/0pDxXfTKsqpPM7Tkr8XxWqOF+jZ14AF3jq4Iz9LNt95tCUFVxAM4er2DgQsldLfwyAYc779McX7Nfzo8B5MwZMfefT3frk9rhOI3uFOSCukOgen1UnMiJuGxmeAtfMKz7hXi/VYRkhvTGuAEHbDV3LBfwEy/QixzHoTIabXue8f/jZONLudp/fQ1MHGrOhz7GVq0XcTu99EsS6vsKRxTGHBrYWNG+AqjCjpaGfu+itYeR/4OvUm4J1ZnoKd6bFbp+i/uJd5IqzLxEp9d3yCHM5lph0rkDdL9OyVyzA2soYZpWVyMoRBhKwJjXXhHFIHv36sbOVIdgWgdFX5TfteyIMBQKWu3Akt2FfHlQR7tRpz2q2KPtAdHhE7Mv/tGoEMCUfhmBTP3CvLhQW1lMHIeItsoTCRhYqmZDMx+7Jb5vspAfK4CKjrSApBIwhWzZJJlptsUyAxz0+8hWu0AyC6tiHwbNJ2rInvdjqDWYXjFxdm6Kn85dxHw70oyeKw6wiXFrcpf5r3m"
+`endif

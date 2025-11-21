@@ -1,0 +1,20 @@
+# system info msgdma_ptp_subsys_8chs_ts_chs_compl_0 on 2025.10.16.14:20:25
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for msgdma_ptp_subsys_8chs_ts_chs_compl_0 on 2025.10.16.14:20:25
+files:
+filepath,kind,attributes,module,is_top
+sim/msgdma_ptp_subsys_8chs_ts_chs_compl_0.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,msgdma_ptp_subsys_8chs_ts_chs_compl_0,true
+ts_chs_compl_10/sim/ts_chs_compl.sv,SYSTEM_VERILOG,TOP_LEVEL_FILE,ts_chs_compl,false
+ts_chs_compl_10/sim/dc_fifo_param.sv,SYSTEM_VERILOG,,ts_chs_compl,false
+ts_chs_compl_10/sim/dc_fifo_param_ts_compl.sdc,SDC,,ts_chs_compl,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+msgdma_ptp_subsys_8chs_ts_chs_compl_0.ts_chs_compl_0,ts_chs_compl

@@ -1,0 +1,1831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="ecpri_302/sim/mentor/ecpri_pkg.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/IWF/src/iwf_pkg.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/IWF/src/ecpri_iwf_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ecpri_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/alt_ecpri_offset_compute.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/csrunit.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ecpri.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ecpri_avst_guard.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ecpri_csr.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ecpri_cunit_8w.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ecpri_cunit_8w_st.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ecpri_hdrinsert.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ecpri_mac.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ecpri_msg4_buffer.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ecpri_msg4_timebank8.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ecpri_msg5_rx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ecpri_msg5_tx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ecpri_msg5_unit.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ecpri_msg6_timebank8.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ecpri_pkt_cnt.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ecpri_pkt_cnt_st.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ecpri_rx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ecpri_rx_adapter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/alt_ecpri_dw8_decon.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ecpri_tx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ecpri_tx_adapter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/sync_reset_logic.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_avalon_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_avalon_fifo_wrapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_barrel_layer.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_barrel_shift.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_clkcrosser.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_dcfifo_m20k_ecc.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_dcfifo_noecc.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_delay_mlab.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_delay_regs.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_fifo_ratematch.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_fifo_8.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_fmmlab.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_iw16_sync_fifo_mlab.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_iwX_addr_gen.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_leftmost_one_8.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_m20k_ecc_1r1w.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_m20k_group.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_maddr_sel.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_mx4r.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_mx8r.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_pulse_stretch_sync.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_s10mlab.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_scfifo_m20k.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_scfifo_mlab.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_seg_shift.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_seg_shift_layer.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_seg_shift_split.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_std_synchronizer_nocut.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_wram_m20k.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/alt_ecpri_wram_mult_inst.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/altera_std_synchronizer_nocut.v"
+   type="VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/chksum_ver.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/ecpri_eq_18.v"
+   type="VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/ecpri_eq_3.v"
+   type="VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/components/ecpri_wys_lut.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ethframe/ethframe_ins.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ethframe/ethframe_rem.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ethframe/ethframe_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ethframe/packet_parser.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ethframe/ecpri_l2cos_arbiter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ethframe/ecpri_l2cos_packet_queue_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ethframe/ecpri_l2cos_packet_queue_fifo_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ethframe/ecpri_pcp_checker.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ethframe/ecpri_l2cos_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ethframe/packet_queue.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ethframe/packet_queue_fixed_arb.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/ethframe/packet_queue_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/IWF/src/iwf_ctl_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/IWF/src/iwf_inband_ctl.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/IWF/src/iwf_iq_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/IWF/src/iwf_rx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/IWF/src/iwf_rx_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/IWF/src/iwf_shifter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/IWF/src/iwf_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/IWF/src/iwf_tx_aggregator.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/IWF/src/iwf_tx_scheduler.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/IWF/src/iwf_tx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/IWF/src/iwf_tx_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/IWF/src/iwf_wrapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/IWF/src/component/alt_iwf_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/IWF/src/component/alt_iwf_std_synchronizer_nocut.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/IWF/src/component/altera_std_synchronizer_nocut.v"
+   type="VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/mentor/IWF/src/component/alt_iwf_clkcrosser.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="modelsim" />
+ <file
+   path="ecpri_302/sim/cadence/ecpri_pkg.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/IWF/src/iwf_pkg.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/IWF/src/ecpri_iwf_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ecpri_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/alt_ecpri_offset_compute.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/csrunit.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ecpri.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ecpri_avst_guard.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ecpri_csr.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ecpri_cunit_8w.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ecpri_cunit_8w_st.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ecpri_hdrinsert.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ecpri_mac.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ecpri_msg4_buffer.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ecpri_msg4_timebank8.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ecpri_msg5_rx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ecpri_msg5_tx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ecpri_msg5_unit.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ecpri_msg6_timebank8.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ecpri_pkt_cnt.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ecpri_pkt_cnt_st.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ecpri_rx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ecpri_rx_adapter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/alt_ecpri_dw8_decon.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ecpri_tx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ecpri_tx_adapter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/sync_reset_logic.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_avalon_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_avalon_fifo_wrapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_barrel_layer.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_barrel_shift.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_clkcrosser.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_dcfifo_m20k_ecc.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_dcfifo_noecc.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_delay_mlab.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_delay_regs.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_fifo_ratematch.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_fifo_8.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_fmmlab.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_iw16_sync_fifo_mlab.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_iwX_addr_gen.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_leftmost_one_8.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_m20k_ecc_1r1w.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_m20k_group.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_maddr_sel.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_mx4r.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_mx8r.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_pulse_stretch_sync.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_s10mlab.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_scfifo_m20k.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_scfifo_mlab.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_seg_shift.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_seg_shift_layer.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_seg_shift_split.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_std_synchronizer_nocut.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_wram_m20k.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/alt_ecpri_wram_mult_inst.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/altera_std_synchronizer_nocut.v"
+   type="VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/chksum_ver.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/ecpri_eq_18.v"
+   type="VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/ecpri_eq_3.v"
+   type="VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/components/ecpri_wys_lut.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ethframe/ethframe_ins.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ethframe/ethframe_rem.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ethframe/ethframe_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ethframe/packet_parser.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ethframe/ecpri_l2cos_arbiter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ethframe/ecpri_l2cos_packet_queue_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ethframe/ecpri_l2cos_packet_queue_fifo_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ethframe/ecpri_pcp_checker.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ethframe/ecpri_l2cos_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ethframe/packet_queue.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ethframe/packet_queue_fixed_arb.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/ethframe/packet_queue_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/IWF/src/iwf_ctl_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/IWF/src/iwf_inband_ctl.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/IWF/src/iwf_iq_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/IWF/src/iwf_rx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/IWF/src/iwf_rx_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/IWF/src/iwf_shifter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/IWF/src/iwf_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/IWF/src/iwf_tx_aggregator.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/IWF/src/iwf_tx_scheduler.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/IWF/src/iwf_tx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/IWF/src/iwf_tx_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/IWF/src/iwf_wrapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/IWF/src/component/alt_iwf_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/IWF/src/component/alt_iwf_std_synchronizer_nocut.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/IWF/src/component/altera_std_synchronizer_nocut.v"
+   type="VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/cadence/IWF/src/component/alt_iwf_clkcrosser.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="ncsim" />
+ <file
+   path="ecpri_302/sim/synopsys/ecpri_pkg.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/IWF/src/iwf_pkg.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/IWF/src/ecpri_iwf_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ecpri_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/alt_ecpri_offset_compute.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/csrunit.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ecpri.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ecpri_avst_guard.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ecpri_csr.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ecpri_cunit_8w.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ecpri_cunit_8w_st.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ecpri_hdrinsert.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ecpri_mac.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ecpri_msg4_buffer.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ecpri_msg4_timebank8.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ecpri_msg5_rx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ecpri_msg5_tx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ecpri_msg5_unit.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ecpri_msg6_timebank8.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ecpri_pkt_cnt.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ecpri_pkt_cnt_st.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ecpri_rx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ecpri_rx_adapter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/alt_ecpri_dw8_decon.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ecpri_tx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ecpri_tx_adapter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/sync_reset_logic.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_avalon_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_avalon_fifo_wrapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_barrel_layer.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_barrel_shift.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_clkcrosser.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_dcfifo_m20k_ecc.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_dcfifo_noecc.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_delay_mlab.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_delay_regs.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_fifo_ratematch.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_fifo_8.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_fmmlab.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_iw16_sync_fifo_mlab.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_iwX_addr_gen.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_leftmost_one_8.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_m20k_ecc_1r1w.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_m20k_group.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_maddr_sel.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_mx4r.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_mx8r.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_pulse_stretch_sync.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_s10mlab.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_scfifo_m20k.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_scfifo_mlab.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_seg_shift.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_seg_shift_layer.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_seg_shift_split.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_std_synchronizer_nocut.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_wram_m20k.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/alt_ecpri_wram_mult_inst.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/altera_std_synchronizer_nocut.v"
+   type="VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/chksum_ver.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/ecpri_eq_18.v"
+   type="VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/ecpri_eq_3.v"
+   type="VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/components/ecpri_wys_lut.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ethframe/ethframe_ins.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ethframe/ethframe_rem.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ethframe/ethframe_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ethframe/packet_parser.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ethframe/ecpri_l2cos_arbiter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ethframe/ecpri_l2cos_packet_queue_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ethframe/ecpri_l2cos_packet_queue_fifo_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ethframe/ecpri_pcp_checker.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ethframe/ecpri_l2cos_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ethframe/packet_queue.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ethframe/packet_queue_fixed_arb.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/ethframe/packet_queue_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/IWF/src/iwf_ctl_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/IWF/src/iwf_inband_ctl.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/IWF/src/iwf_iq_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/IWF/src/iwf_rx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/IWF/src/iwf_rx_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/IWF/src/iwf_shifter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/IWF/src/iwf_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/IWF/src/iwf_tx_aggregator.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/IWF/src/iwf_tx_scheduler.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/IWF/src/iwf_tx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/IWF/src/iwf_tx_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/IWF/src/iwf_wrapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/IWF/src/component/alt_iwf_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/IWF/src/component/alt_iwf_std_synchronizer_nocut.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/IWF/src/component/altera_std_synchronizer_nocut.v"
+   type="VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/synopsys/IWF/src/component/alt_iwf_clkcrosser.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="vcs, vcsmx" />
+ <file
+   path="ecpri_302/sim/aldec/ecpri_pkg.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/IWF/src/iwf_pkg.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/IWF/src/ecpri_iwf_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ecpri_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/alt_ecpri_offset_compute.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/csrunit.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ecpri.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ecpri_avst_guard.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ecpri_csr.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ecpri_cunit_8w.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ecpri_cunit_8w_st.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ecpri_hdrinsert.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ecpri_mac.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ecpri_msg4_buffer.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ecpri_msg4_timebank8.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ecpri_msg5_rx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ecpri_msg5_tx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ecpri_msg5_unit.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ecpri_msg6_timebank8.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ecpri_pkt_cnt.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ecpri_pkt_cnt_st.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ecpri_rx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ecpri_rx_adapter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/alt_ecpri_dw8_decon.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ecpri_tx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ecpri_tx_adapter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/sync_reset_logic.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_avalon_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_avalon_fifo_wrapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_barrel_layer.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_barrel_shift.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_clkcrosser.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_dcfifo_m20k_ecc.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_dcfifo_noecc.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_delay_mlab.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_delay_regs.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_fifo_ratematch.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_fifo_8.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_fmmlab.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_iw16_sync_fifo_mlab.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_iwX_addr_gen.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_leftmost_one_8.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_m20k_ecc_1r1w.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_m20k_group.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_maddr_sel.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_mx4r.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_mx8r.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_pulse_stretch_sync.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_s10mlab.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_scfifo_m20k.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_scfifo_mlab.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_seg_shift.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_seg_shift_layer.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_seg_shift_split.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_std_synchronizer_nocut.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_wram_m20k.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/alt_ecpri_wram_mult_inst.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/altera_std_synchronizer_nocut.v"
+   type="VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/chksum_ver.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/ecpri_eq_18.v"
+   type="VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/ecpri_eq_3.v"
+   type="VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/components/ecpri_wys_lut.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ethframe/ethframe_ins.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ethframe/ethframe_rem.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ethframe/ethframe_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ethframe/packet_parser.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ethframe/ecpri_l2cos_arbiter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ethframe/ecpri_l2cos_packet_queue_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ethframe/ecpri_l2cos_packet_queue_fifo_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ethframe/ecpri_pcp_checker.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ethframe/ecpri_l2cos_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ethframe/packet_queue.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ethframe/packet_queue_fixed_arb.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/ethframe/packet_queue_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/IWF/src/iwf_ctl_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/IWF/src/iwf_inband_ctl.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/IWF/src/iwf_iq_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/IWF/src/iwf_rx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/IWF/src/iwf_rx_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/IWF/src/iwf_shifter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/IWF/src/iwf_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/IWF/src/iwf_tx_aggregator.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/IWF/src/iwf_tx_scheduler.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/IWF/src/iwf_tx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/IWF/src/iwf_tx_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/IWF/src/iwf_wrapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/IWF/src/component/alt_iwf_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/IWF/src/component/alt_iwf_std_synchronizer_nocut.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/IWF/src/component/altera_std_synchronizer_nocut.v"
+   type="VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="ecpri_302/sim/aldec/IWF/src/component/alt_iwf_clkcrosser.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="ecpri_302"
+   simulator="riviera" />
+ <file
+   path="sim/ecpri_hwtcl_top.v"
+   type="VERILOG"
+   library="ecpri_hwtcl_top"
+   hasInlineConfiguration="true" />
+ <topLevel name="ecpri_hwtcl_top.ecpri_hwtcl_top" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB014R24B2I2V" />
+</simPackage>

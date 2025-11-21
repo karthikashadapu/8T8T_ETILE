@@ -1,0 +1,43 @@
+	component lphy_ss_top_LongPRACH_prach_wrap_0 is
+		port (
+			clk                  : in  std_logic                     := 'X';             -- clk
+			areset               : in  std_logic                     := 'X';             -- reset
+			bus_clk              : in  std_logic                     := 'X';             -- clk
+			bus_areset           : in  std_logic                     := 'X';             -- reset
+			busIn_address        : in  std_logic_vector(1 downto 0)  := (others => 'X'); -- address
+			busIn_read           : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- read
+			busIn_write          : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- write
+			busIn_writedata      : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			busOut_readdata      : out std_logic_vector(31 downto 0);                    -- readdata
+			busOut_readdatavalid : out std_logic_vector(0 downto 0);                     -- readdatavalid
+			busOut_waitrequest   : out std_logic_vector(0 downto 0);                     -- waitrequest
+			vin0_s               : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- valid_vin0_s
+			chin0_s              : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- channel_chin0_s
+			din0_im              : in  std_logic_vector(15 downto 0) := (others => 'X'); -- data_din0_im
+			din0_re              : in  std_logic_vector(15 downto 0) := (others => 'X'); -- data_din0_re
+			RFN_s                : in  std_logic_vector(11 downto 0) := (others => 'X'); -- data_RFN_s
+			subframe_s           : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- data_subframe_s
+			prach_cfg_idx_s      : in  std_logic_vector(15 downto 0) := (others => 'X'); -- data_prach_cfg_idx_s
+			cp_len_s             : in  std_logic_vector(20 downto 0) := (others => 'X'); -- data_cp_len_s
+			offset_s             : in  std_logic_vector(20 downto 0) := (others => 'X'); -- data_offset_s
+			c_m_plane_sel_s      : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- data_c_m_plane_sel_s
+			prach_tech_s         : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- data_prach_tech_s
+			filt_flush_en_s      : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- data_filt_flush_en_s
+			start_sym_s          : in  std_logic_vector(3 downto 0)  := (others => 'X'); -- data_start_sym_s
+			SubFrame_cplane_s    : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- data_SubFrame_cplane_s
+			gain_re_s            : in  std_logic_vector(15 downto 0) := (others => 'X'); -- data_gain_re_s
+			gain_im_s            : in  std_logic_vector(15 downto 0) := (others => 'X'); -- data_gain_im_s
+			ch0_info_s           : in  std_logic_vector(15 downto 0) := (others => 'X'); -- data_ch0_info_s
+			ch1_info_s           : in  std_logic_vector(15 downto 0) := (others => 'X'); -- data_ch1_info_s
+			ch2_info_s           : in  std_logic_vector(15 downto 0) := (others => 'X'); -- data_ch2_info_s
+			ch3_info_s           : in  std_logic_vector(15 downto 0) := (others => 'X'); -- data_ch3_info_s
+			RFN_cplane_s         : in  std_logic_vector(11 downto 0) := (others => 'X'); -- data_RFN_cplane_s
+			dout_im              : out std_logic_vector(15 downto 0);                    -- data_dout_im
+			dout_re              : out std_logic_vector(15 downto 0);                    -- data_dout_re
+			vout_s               : out std_logic_vector(0 downto 0);                     -- valid_vout_s
+			cout_s               : out std_logic_vector(7 downto 0);                     -- channel_cout_s
+			TimeReference_s      : out std_logic_vector(31 downto 0);                    -- data_TimeReference_s
+			ch_info_s            : out std_logic_vector(15 downto 0)                     -- data_ch_info_s
+		);
+	end component lphy_ss_top_LongPRACH_prach_wrap_0;
+

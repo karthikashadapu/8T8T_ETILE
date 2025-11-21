@@ -1,0 +1,8 @@
+	component ptp_ed_issp is
+		port (
+			source     : out std_logic_vector(7 downto 0);                     -- source
+			source_clk : in  std_logic                     := 'X';             -- clk
+			probe      : in  std_logic_vector(19 downto 0) := (others => 'X')  -- probe
+		);
+	end component ptp_ed_issp;
+

@@ -1,0 +1,18 @@
+# system info storeandforward_fifo_prach on 2025.10.16.13:47:17
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for storeandforward_fifo_prach on 2025.10.16.13:47:17
+files:
+filepath,kind,attributes,module,is_top
+sim/storeandforward_fifo_prach.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,storeandforward_fifo_prach,true
+altera_avalon_sc_fifo_1932/sim/storeandforward_fifo_prach_altera_avalon_sc_fifo_1932_5j7ufsq.v,VERILOG,,storeandforward_fifo_prach_altera_avalon_sc_fifo_1932_5j7ufsq,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+storeandforward_fifo_prach.sc_fifo_0,storeandforward_fifo_prach_altera_avalon_sc_fifo_1932_5j7ufsq

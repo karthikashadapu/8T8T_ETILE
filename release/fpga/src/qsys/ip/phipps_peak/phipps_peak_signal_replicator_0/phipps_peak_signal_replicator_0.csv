@@ -1,0 +1,18 @@
+# system info phipps_peak_signal_replicator_0 on 2025.11.21.14:05:27
+system_info:
+name,value
+DEVICE,AGFB014R24B2I2V
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for phipps_peak_signal_replicator_0 on 2025.11.21.14:05:27
+files:
+filepath,kind,attributes,module,is_top
+sim/phipps_peak_signal_replicator_0.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,phipps_peak_signal_replicator_0,true
+signal_replicator_10/sim/signal_replicator.v,VERILOG,,signal_replicator,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+phipps_peak_signal_replicator_0.signal_replicator_0,signal_replicator

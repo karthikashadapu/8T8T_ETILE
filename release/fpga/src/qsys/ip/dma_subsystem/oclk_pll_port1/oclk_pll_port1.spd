@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="sim/oclk_pll_port1.v"
+   type="VERILOG"
+   library="oclk_pll_port1"
+   hasInlineConfiguration="true" />
+ <topLevel name="oclk_pll_port1.oclk_pll_port1" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

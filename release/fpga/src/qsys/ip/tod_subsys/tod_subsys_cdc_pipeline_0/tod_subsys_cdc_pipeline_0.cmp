@@ -1,0 +1,15 @@
+	component tod_subsys_cdc_pipeline_0 is
+		generic (
+			DW     : integer := 96;
+			DELAYS : integer := 2
+		);
+		port (
+			src_clk       : in  std_logic                       := 'X';             -- clk
+			rst_src_clk_n : in  std_logic                       := 'X';             -- reset_n
+			dst_clk       : in  std_logic                       := 'X';             -- clk
+			rst_dst_clk_n : in  std_logic                       := 'X';             -- reset_n
+			datain        : in  std_logic_vector(DW-1 downto 0) := (others => 'X'); -- data
+			dataout       : out std_logic_vector(DW-1 downto 0)                     -- data
+		);
+	end component tod_subsys_cdc_pipeline_0;
+

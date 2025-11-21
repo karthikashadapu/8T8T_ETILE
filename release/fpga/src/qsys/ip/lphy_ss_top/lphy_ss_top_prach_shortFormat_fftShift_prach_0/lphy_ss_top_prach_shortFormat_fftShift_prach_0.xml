@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.10.16.14:43:26"
+ outputDirectory="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGFB027R24C2E3V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="3"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BUS_CLOCK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BUS_CLOCK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BUS_CLOCK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clock" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="clock_reset" kind="reset" start="0">
+   <property name="associatedClock" value="clock" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="areset" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="bus_clock" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="bus_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="bus_clock_reset" kind="reset" start="0">
+   <property name="associatedClock" value="bus_clock" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="bus_areset" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="bus" kind="avalon" start="0">
+   <property name="addressAlignment" value="DYNAMIC" />
+   <property name="addressGroup" value="0" />
+   <property name="addressSpan" value="4096" />
+   <property name="addressUnits" value="WORDS" />
+   <property name="alwaysBurstMaxBurst" value="false" />
+   <property name="associatedClock" value="bus_clock" />
+   <property name="associatedReset" value="bus_clock_reset" />
+   <property name="bitsPerSymbol" value="8" />
+   <property name="bridgedAddressOffset" value="0" />
+   <property name="bridgesToMaster" value="" />
+   <property name="burstOnBurstBoundariesOnly" value="false" />
+   <property name="burstcountUnits" value="WORDS" />
+   <property name="constantBurstBehavior" value="false" />
+   <property name="explicitAddressSpan" value="0" />
+   <property name="holdTime" value="0" />
+   <property name="interleaveBursts" value="false" />
+   <property name="isBigEndian" value="false" />
+   <property name="isFlash" value="false" />
+   <property name="isMemoryDevice" value="false" />
+   <property name="isNonVolatileStorage" value="false" />
+   <property name="linewrapBursts" value="false" />
+   <property name="maximumPendingReadTransactions" value="1" />
+   <property name="maximumPendingWriteTransactions" value="0" />
+   <property name="minimumReadLatency" value="1" />
+   <property name="minimumResponseLatency" value="1" />
+   <property name="minimumUninterruptedRunLength" value="1" />
+   <property name="prSafe" value="false" />
+   <property name="printableDevice" value="false" />
+   <property name="readLatency" value="0" />
+   <property name="readWaitStates" value="1" />
+   <property name="readWaitTime" value="1" />
+   <property name="registerIncomingSignals" value="false" />
+   <property name="registerOutgoingSignals" value="false" />
+   <property name="setupTime" value="0" />
+   <property name="timingUnits" value="Cycles" />
+   <property name="transparentBridge" value="false" />
+   <property name="waitrequestAllowance" value="0" />
+   <property name="wellBehavedWaitrequest" value="false" />
+   <property name="writeLatency" value="0" />
+   <property name="writeWaitStates" value="0" />
+   <property name="writeWaitTime" value="0" />
+   <property name="dfhFeatureGuid" value="0" />
+   <property name="dfhGroupId" value="0" />
+   <property name="dfhParameterId" value="" />
+   <property name="dfhParameterName" value="" />
+   <property name="dfhParameterVersion" value="" />
+   <property name="dfhParameterData" value="" />
+   <property name="dfhParameterDataLength" value="" />
+   <property name="dfhFeatureMajorVersion" value="0" />
+   <property name="dfhFeatureMinorVersion" value="0" />
+   <property name="dfhFeatureId" value="35" />
+   <property name="dfhFeatureType" value="3" />
+   <port name="busIn_address" direction="input" role="address" width="10" />
+   <port name="busIn_read" direction="input" role="read" width="1" />
+   <port name="busIn_write" direction="input" role="write" width="1" />
+   <port name="busIn_writedata" direction="input" role="writedata" width="32" />
+   <port name="busOut_readdata" direction="output" role="readdata" width="32" />
+   <port
+       name="busOut_readdatavalid"
+       direction="output"
+       role="readdatavalid"
+       width="1" />
+   <port
+       name="busOut_waitrequest"
+       direction="output"
+       role="waitrequest"
+       width="1" />
+  </interface>
+  <interface name="exp" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="vin1_s" direction="input" role="valid_vin1_s" width="1" />
+   <port name="chin1_s" direction="input" role="channel_chin1_s" width="8" />
+   <port name="din1_im" direction="input" role="data_din1_im" width="16" />
+   <port name="din1_re" direction="input" role="data_din1_re" width="16" />
+   <port name="SFN_s" direction="input" role="data_SFN_s" width="12" />
+   <port name="SubFN_s" direction="input" role="data_SubFN_s" width="8" />
+   <port name="SCSby15_s" direction="input" role="data_SCSby15_s" width="2" />
+   <port name="BWby10_s" direction="input" role="data_BWby10_s" width="8" />
+   <port
+       name="CPLen_cplane_s"
+       direction="input"
+       role="data_CPLen_cplane_s"
+       width="23" />
+   <port
+       name="timeoffset_cplane_s"
+       direction="input"
+       role="data_timeoffset_cplane_s"
+       width="23" />
+   <port
+       name="numsym_cplane_s"
+       direction="input"
+       role="data_numsym_cplane_s"
+       width="4" />
+   <port
+       name="slotID_cplane_s"
+       direction="input"
+       role="data_slotID_cplane_s"
+       width="2" />
+   <port
+       name="startsym_cplane_s"
+       direction="input"
+       role="data_startsym_cplane_s"
+       width="4" />
+   <port
+       name="timerefin_cplane_s"
+       direction="input"
+       role="data_timerefin_cplane_s"
+       width="29" />
+   <port name="cur_slot_s" direction="input" role="data_cur_slot_s" width="2" />
+   <port
+       name="SubFN_cplane_s"
+       direction="input"
+       role="data_SubFN_cplane_s"
+       width="8" />
+   <port
+       name="cbar_mplane_s"
+       direction="input"
+       role="data_cbar_mplane_s"
+       width="1" />
+   <port
+       name="timeoffset_bias_cplane_s"
+       direction="input"
+       role="data_timeoffset_bias_cplane_s"
+       width="23" />
+   <port
+       name="startsym_bias_cplane_s"
+       direction="input"
+       role="data_startsym_bias_cplane_s"
+       width="23" />
+   <port
+       name="gain_in_re_s"
+       direction="input"
+       role="data_gain_in_re_s"
+       width="16" />
+   <port
+       name="gain_in_imag_s"
+       direction="input"
+       role="data_gain_in_imag_s"
+       width="16" />
+   <port
+       name="fftShift_v_s"
+       direction="output"
+       role="valid_fftShift_v_s"
+       width="1" />
+   <port
+       name="fftShift_c_s"
+       direction="output"
+       role="channel_fftShift_c_s"
+       width="8" />
+   <port
+       name="fftShift_d_im"
+       direction="output"
+       role="data_fftShift_d_im"
+       width="16" />
+   <port
+       name="fftShift_d_re"
+       direction="output"
+       role="data_fftShift_d_re"
+       width="16" />
+   <port
+       name="TimeReference_s"
+       direction="output"
+       role="data_TimeReference_s"
+       width="29" />
+  </interface>
+ </perimeter>
+ <entity
+   kind="lphy_ss_top_prach_shortFormat_fftShift_prach_0"
+   version="1.0"
+   name="lphy_ss_top_prach_shortFormat_fftShift_prach_0">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CLOCK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLOCK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_BUS_CLOCK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="AGFB027R24C2E2VR2" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_BUS_CLOCK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <parameter name="AUTO_BUS_CLOCK_CLOCK_DOMAIN" value="-1" />
+  <generatedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/synth/lphy_ss_top_prach_shortFormat_fftShift_prach_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/synth/lphy_ss_top_prach_shortFormat_fftShift_prach_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/dspba/rtl/short_prach_rtl/prach_shortFormat_fftShift/prach_shortFormat_fftShift_prach_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="lphy_ss_top_prach_shortFormat_fftShift_prach_0">"Generating: lphy_ss_top_prach_shortFormat_fftShift_prach_0"</message>
+   <message level="Info" culprit="lphy_ss_top_prach_shortFormat_fftShift_prach_0">"Generating: prach_shortFormat_fftShift_prach"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="prach_shortFormat_fftShift_prach"
+   version="1.0"
+   name="prach_shortFormat_fftShift_prach">
+  <generatedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/dspba_library_ver.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_safe_path_flat_ver.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_safe_path_flat.vhd"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/busFabric_prach_shortFormat_fftShift_prach_3i06i3ib0063663c63o60160760uq5ux5gubo0u.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_Cbar_mplane_selection.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_LutX_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_LutY_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_PRACHSymDuration_LUT_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_PrachOccPerSlotMinus1_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_StartOfSymbol_LUT_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_0_x_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_1_x_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_2_x_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_3_x_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_4_x_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_5_x_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_6_x_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_7_x_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_8_x_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_9_x_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_RemoveCP.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ScaleAndSelect.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_Stream2BlockConv.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_VFFT.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_VFFT_prach_shortFormat_fftShift_prach_0000OptimizedDualMem_x_a.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_VFFT_prach_shortFormat_fftShift_prach_0000OptimizedDualMem_x_b.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_control_decode_cplane.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_gain.sv"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/dspba_library_ver.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_safe_path_flat_ver.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_safe_path_flat.vhd"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/busFabric_prach_shortFormat_fftShift_prach_3i06i3ib0063663c63o60160760uq5ux5gubo0u.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_Cbar_mplane_selection.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_LutX_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_LutY_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_PRACHSymDuration_LUT_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_PrachOccPerSlotMinus1_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_StartOfSymbol_LUT_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_0_x_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_1_x_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_2_x_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_3_x_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_4_x_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_5_x_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_6_x_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_7_x_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_8_x_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_9_x_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_RemoveCP.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ScaleAndSelect.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_Stream2BlockConv.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_VFFT.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_VFFT_prach_shortFormat_fftShift_prach_0000OptimizedDualMem_x_a.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_VFFT_prach_shortFormat_fftShift_prach_0000OptimizedDualMem_x_b.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_control_decode_cplane.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_prach_shortFormat_fftShift_prach_0/prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_gain.sv"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/dspba/rtl/short_prach_rtl/prach_shortFormat_fftShift/prach_shortFormat_fftShift_prach_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="lphy_ss_top_prach_shortFormat_fftShift_prach_0"
+     as="prach_shortFormat_fftShift_prach_0" />
+  <messages>
+   <message level="Info" culprit="lphy_ss_top_prach_shortFormat_fftShift_prach_0">"Generating: prach_shortFormat_fftShift_prach"</message>
+  </messages>
+ </entity>
+</deploy>

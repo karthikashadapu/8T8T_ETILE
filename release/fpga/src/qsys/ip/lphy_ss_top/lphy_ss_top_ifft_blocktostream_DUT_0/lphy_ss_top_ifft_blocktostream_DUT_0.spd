@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="ifft_blocktostream_DUT_10/sim/dspba_library_ver.sv"
+   type="SYSTEM_VERILOG"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT_safe_path_flat_ver.sv"
+   type="SYSTEM_VERILOG"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT_safe_path_flat.vhd"
+   type="VHDL"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT.sv"
+   type="SYSTEM_VERILOG"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/busFabric_ifft_blocktostream_DUT_2ouiy5b06j6e6s6h6u0qu5xajz.sv"
+   type="SYSTEM_VERILOG"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/busFabric_ifft_blocktostream_DUT_2ouiy5b06j6e6s6h6u0qu5xajz_ifft_blocktostream_D0000e_100MHz_mem_x_part0.hex"
+   type="HEX"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/busFabric_ifft_blocktostream_DUT_2ouiy5b06j6e6s6h6u0qu5xajz_ifft_blocktostream_D0000e_100MHz_mem_x_part1.hex"
+   type="HEX"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/busFabric_ifft_blocktostream_DUT_2ouiy5b06j6e6s6h6u0qu5xajz_ifft_blocktostream_D0000le_60MHz_mem_x_part0.hex"
+   type="HEX"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/busFabric_ifft_blocktostream_DUT_2ouiy5b06j6e6s6h6u0qu5xajz_ifft_blocktostream_D0000le_60MHz_mem_x_part1.hex"
+   type="HEX"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/busFabric_ifft_blocktostream_DUT_2ouiy5b06j6e6s6h6u0qu5xajz_ifft_blocktostream_D0000100MHz_mem_x_a_part0.hex"
+   type="HEX"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/busFabric_ifft_blocktostream_DUT_2ouiy5b06j6e6s6h6u0qu5xajz_ifft_blocktostream_D0000100MHz_mem_x_a_part1.hex"
+   type="HEX"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/busFabric_ifft_blocktostream_DUT_2ouiy5b06j6e6s6h6u0qu5xajz_ifft_blocktostream_D0000_60MHz_mem_x_a_part0.hex"
+   type="HEX"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/busFabric_ifft_blocktostream_DUT_2ouiy5b06j6e6s6h6u0qu5xajz_ifft_blocktostream_D0000_60MHz_mem_x_a_part1.hex"
+   type="HEX"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT_low_phy_dl.sv"
+   type="SYSTEM_VERILOG"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT_low_phy_dl_PhaseCompensation_lite.sv"
+   type="SYSTEM_VERILOG"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT_low_phy_dl_PhaseCompensation_lite_ComplexMixer.sv"
+   type="SYSTEM_VERILOG"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT_low_phy_dl_PhaseCompensation_lite_ComplexMixer_ComplexMixer.sv"
+   type="SYSTEM_VERILOG"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT_low_phy_dl_PhaseCompensation_lite_ComplexMixer_Scalei.sv"
+   type="SYSTEM_VERILOG"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT_low_phy_dl_PhaseCompensation_lite_ComplexMixer_Scaleq.sv"
+   type="SYSTEM_VERILOG"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT_low_phy_dl_PhaseCompensation_lite_PhasorGenerate.sv"
+   type="SYSTEM_VERILOG"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT_low_phy_dl_PhaseCompensation_lite_SOP_EOP_gen.sv"
+   type="SYSTEM_VERILOG"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT_low_phy_dl_PhaseCompensation_lite_SOP_EOP_gen_Rising_edge_Finite_State_Machine.sv"
+   type="SYSTEM_VERILOG"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT_low_phy_dl_PhaseCompensation_lite_SOP_EOP_gen_falling_edge_Finite_State_Machine.sv"
+   type="SYSTEM_VERILOG"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S.sv"
+   type="SYSTEM_VERILOG"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_B2S.sv"
+   type="SYSTEM_VERILOG"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_B2S_B2S_Inst.sv"
+   type="SYSTEM_VERILOG"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_IFFT.sv"
+   type="SYSTEM_VERILOG"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_IFFT_Input_signal_latch.sv"
+   type="SYSTEM_VERILOG"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_IFFT_VIFFT.sv"
+   type="SYSTEM_VERILOG"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_IFFT_VIFFT_BRandSCMap.sv"
+   type="SYSTEM_VERILOG"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_IFFT_VIFFT_BRandSCMap_Transpose_Risin0000Finite_State_Machine.sv"
+   type="SYSTEM_VERILOG"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_IFFT_VIFFT_BRandSCMap_Transpose_Risin0001Finite_State_Machine.sv"
+   type="SYSTEM_VERILOG"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_IFFT_VIFFT_BRandSCMap_Transpose_Risin0002Finite_State_Machine.sv"
+   type="SYSTEM_VERILOG"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_IFFT_VIFFT_BRandSCMap_Transpose_falli0000Finite_State_Machine.sv"
+   type="SYSTEM_VERILOG"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_IFFT_VIFFT_BRandSCMap_Transpose_falli0001Finite_State_Machine.sv"
+   type="SYSTEM_VERILOG"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_IFFT_VIFFT_TXGainComp.sv"
+   type="SYSTEM_VERILOG"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_IFFT_VIFFT_VFFT.sv"
+   type="SYSTEM_VERILOG"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_IFFT_VIFFT_VFFT_ifft_blocktostream_DU0000OptimizedDualMem_x_a.hex"
+   type="HEX"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="ifft_blocktostream_DUT_10/sim/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_IFFT_VIFFT_VFFT_ifft_blocktostream_DU0000OptimizedDualMem_x_b.hex"
+   type="HEX"
+   library="ifft_blocktostream_DUT_10" />
+ <file
+   path="sim/lphy_ss_top_ifft_blocktostream_DUT_0.v"
+   type="VERILOG"
+   library="lphy_ss_top_ifft_blocktostream_DUT_0"
+   hasInlineConfiguration="true" />
+ <topLevel
+   name="lphy_ss_top_ifft_blocktostream_DUT_0.lphy_ss_top_ifft_blocktostream_DUT_0" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

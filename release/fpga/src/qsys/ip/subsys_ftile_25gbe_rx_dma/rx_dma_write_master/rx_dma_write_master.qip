@@ -1,0 +1,43 @@
+set_global_assignment -entity "rx_dma_write_master" -library "rx_dma_write_master" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "rx_dma_write_master" -library "rx_dma_write_master" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "rx_dma_write_master" -library "rx_dma_write_master" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "rx_dma_write_master" -library "rx_dma_write_master" -name IP_TOOL_VENDOR_NAME "Intel Corporation"
+set_global_assignment -entity "rx_dma_write_master" -library "rx_dma_write_master" -name IP_TOP_LEVEL_COMPONENT_NAME "dma_write_master"
+set_global_assignment -library "rx_dma_write_master" -name SOPCINFO_FILE [file join $::quartus(qip_path) "rx_dma_write_master.sopcinfo"]
+set_global_assignment -entity "rx_dma_write_master" -library "rx_dma_write_master" -name SLD_INFO "QSYS_NAME rx_dma_write_master HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "rx_dma_write_master" -name MISC_FILE [file join $::quartus(qip_path) "rx_dma_write_master.cmp"]
+set_global_assignment -entity "rx_dma_write_master" -library "rx_dma_write_master" -name IP_TARGETED_DEVICE_FAMILY "Agilex 7"
+set_global_assignment -entity "rx_dma_write_master" -library "rx_dma_write_master" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 7}"
+set_global_assignment -entity "rx_dma_write_master" -library "rx_dma_write_master" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "rx_dma_write_master" -name MISC_FILE [file join $::quartus(qip_path) "../rx_dma_write_master.ip"]
+
+set_global_assignment -entity "write_master" -library "dma_write_master_1920" -name IP_COMPONENT_NAME "d3JpdGVfbWFzdGVy"
+set_global_assignment -entity "write_master" -library "dma_write_master_1920" -name IP_COMPONENT_DISPLAY_NAME "V3JpdGUgTWFzdGVyIEludGVsIEZQR0EgSVA="
+set_global_assignment -entity "write_master" -library "dma_write_master_1920" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "write_master" -library "dma_write_master_1920" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "write_master" -library "dma_write_master_1920" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "write_master" -library "dma_write_master_1920" -name IP_COMPONENT_VERSION "MTkuMi4w"
+set_global_assignment -entity "write_master" -library "dma_write_master_1920" -name IP_COMPONENT_DESCRIPTION "QSBtb2R1bGUgcmVzcG9uc2libGUgZm9yIHdyaXRpbmcgc3RyZWFtaW5nIGRhdGEgdG8gbWVtb3J5"
+set_global_assignment -entity "write_master" -library "dma_write_master_1920" -name IP_COMPONENT_GROUP "QmFzaWMgRnVuY3Rpb25zL0RNQS9tU0dETUEgU3ViLWNvcmU="
+set_global_assignment -entity "write_master" -library "dma_write_master_1920" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly9kb2N1bWVudGF0aW9uLmFsdGVyYS5jb20vIy9saW5rL2RtaTE0MjA4MTMyNjg5NTUvZG1pMTQyMTQxOTE5ODY0OQ=="
+set_global_assignment -entity "write_master" -library "dma_write_master_1920" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly9kb2N1bWVudGF0aW9uLmFsdGVyYS5jb20vIy9saW5rL2hjbzE0MjE2OTgwNDIwODcvaGNvMTQyMTY5ODAxMzQwOA=="
+set_global_assignment -entity "rx_dma_write_master" -library "rx_dma_write_master" -name IP_COMPONENT_NAME "cnhfZG1hX3dyaXRlX21hc3Rlcg=="
+set_global_assignment -entity "rx_dma_write_master" -library "rx_dma_write_master" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "rx_dma_write_master" -library "rx_dma_write_master" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "rx_dma_write_master" -library "rx_dma_write_master" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "rx_dma_write_master" -library "rx_dma_write_master" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "rx_dma_write_master" -library "rx_dma_write_master" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "dma_write_master_1920" -name VERILOG_FILE [file join $::quartus(qip_path) "dma_write_master_1920/synth/write_master.v"]
+set_global_assignment -library "dma_write_master_1920" -name VERILOG_FILE [file join $::quartus(qip_path) "dma_write_master_1920/synth/byte_enable_generator.v"]
+set_global_assignment -library "dma_write_master_1920" -name VERILOG_FILE [file join $::quartus(qip_path) "dma_write_master_1920/synth/ST_to_MM_Adapter.v"]
+set_global_assignment -library "dma_write_master_1920" -name VERILOG_FILE [file join $::quartus(qip_path) "dma_write_master_1920/synth/write_burst_control.v"]
+set_global_assignment -library "rx_dma_write_master" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/rx_dma_write_master.v"]
+
+
+set_global_assignment -entity "write_master" -library "dma_write_master_1920" -name IP_TOOL_NAME "dma_write_master"
+set_global_assignment -entity "write_master" -library "dma_write_master_1920" -name IP_TOOL_VERSION "19.2.0"
+set_global_assignment -entity "write_master" -library "dma_write_master_1920" -name IP_TOOL_ENV "QsysPrimePro"
+

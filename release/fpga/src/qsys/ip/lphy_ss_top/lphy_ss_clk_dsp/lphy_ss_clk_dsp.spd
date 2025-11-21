@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="sim/lphy_ss_clk_dsp.v"
+   type="VERILOG"
+   library="lphy_ss_clk_dsp"
+   hasInlineConfiguration="true" />
+ <topLevel name="lphy_ss_clk_dsp.lphy_ss_clk_dsp" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB014R24B2I2V" />
+</simPackage>

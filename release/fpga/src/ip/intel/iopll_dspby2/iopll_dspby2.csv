@@ -1,0 +1,18 @@
+# system info iopll_dspby2 on 2025.10.16.14:30:35
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for iopll_dspby2 on 2025.10.16.14:30:35
+files:
+filepath,kind,attributes,module,is_top
+sim/iopll_dspby2.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,iopll_dspby2,true
+altera_iopll_1931/sim/iopll_dspby2_altera_iopll_1931_gsvun3q.vo,VERILOG,,iopll_dspby2_altera_iopll_1931_gsvun3q,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+iopll_dspby2.iopll_0,iopll_dspby2_altera_iopll_1931_gsvun3q

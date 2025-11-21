@@ -1,0 +1,18 @@
+# system info rom_8i_56o_256d_sc on 2025.10.16.13:47:47
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for rom_8i_56o_256d_sc on 2025.10.16.13:47:47
+files:
+filepath,kind,attributes,module,is_top
+sim/rom_8i_56o_256d_sc.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,rom_8i_56o_256d_sc,true
+rom_1port_2021/sim/rom_8i_56o_256d_sc_rom_1port_2021_7qtq23q.v,VERILOG,,rom_8i_56o_256d_sc_rom_1port_2021_7qtq23q,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+rom_8i_56o_256d_sc.rom_1port_0,rom_8i_56o_256d_sc_rom_1port_2021_7qtq23q

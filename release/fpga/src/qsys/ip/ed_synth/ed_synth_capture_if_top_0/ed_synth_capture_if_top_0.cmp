@@ -1,0 +1,47 @@
+	component ed_synth_capture_if_top_0 is
+		generic (
+			NUM_OF_ANT              : integer := 8;
+			CAPTURE_DMA_WIDTH       : integer := 128;
+			ECPRI_CAPTURE_INSTANCES : integer := 2;
+			DSP_CAPTURE_INSTANCES   : integer := 30;
+			LPHY_DSP_CAPTURE_INST   : integer := 6;
+			DXC_DSP_CAPTURE_INST    : integer := 22;
+			IQ_DATAWIDTH            : integer := 32;
+			NUM_OF_FFT              : integer := 2;
+			CPRI_ETH_DATAWIDTH      : integer := 128;
+			XRAN_ETH_DATAWIDTH      : integer := 128;
+			CH_DW                   : integer := 8;
+			NUM_OF_PRACH            : integer := 2;
+			ANTENNA_DWIDTH          : integer := 3
+		);
+		port (
+			csr_dsp_capture_address          : in  std_logic_vector(4 downto 0)                               := (others => 'X'); -- address
+			csr_dsp_capture_write            : in  std_logic                                                  := 'X';             -- write
+			csr_dsp_capture_read             : in  std_logic                                                  := 'X';             -- read
+			csr_dsp_capture_writedata        : in  std_logic_vector(31 downto 0)                              := (others => 'X'); -- writedata
+			csr_dsp_capture_readdata         : out std_logic_vector(31 downto 0);                                                 -- readdata
+			csr_dsp_capture_waitrequest      : out std_logic;                                                                     -- waitrequest
+			csr_dsp_capture_readdatavalid    : out std_logic;                                                                     -- readdatavalid
+			clk_dsp                          : in  std_logic                                                  := 'X';             -- clk
+			clk_csr                          : in  std_logic                                                  := 'X';             -- clk
+			clk_eth_xran_ul                  : in  std_logic                                                  := 'X';             -- clk
+			clk_capture_dma                  : in  std_logic                                                  := 'X';             -- clk
+			rst_csr_n                        : in  std_logic                                                  := 'X';             -- reset_n
+			rst_dsp_n                        : in  std_logic                                                  := 'X';             -- reset_n
+			rst_eth_xran_n_ul                : in  std_logic                                                  := 'X';             -- reset_n
+			rst_capture_dma_n                : in  std_logic                                                  := 'X';             -- reset_n
+			rst_soft_n                       : in  std_logic                                                  := 'X';             -- rst_soft_n
+			avst_src_capture_valid           : out std_logic;                                                                     -- valid
+			avst_src_capture_data            : out std_logic_vector((((CAPTURE_DMA_WIDTH-1)-0)+1)-1 downto 0);                    -- data
+			avst_src_capture_ready           : in  std_logic                                                  := 'X';             -- ready
+			radio_config_status              : in  std_logic_vector(55 downto 0)                              := (others => 'X'); -- radio_config_status
+			lphy_avst_sink_dsp_capture_valid : in  std_logic                                                  := 'X';             -- valid
+			lphy_avst_sink_dsp_capture_data  : in  std_logic_vector((((IQ_DATAWIDTH-1)-0)+1)-1 downto 0)      := (others => 'X'); -- data
+			lphy_avst_sink_dsp_capture_chan  : in  std_logic_vector((((ANTENNA_DWIDTH-1)-0)+1)-1 downto 0)    := (others => 'X'); -- channel
+			dxc_avst_sink_dsp_capture_valid  : in  std_logic                                                  := 'X';             -- valid
+			dxc_avst_sink_dsp_capture_data   : in  std_logic_vector((((IQ_DATAWIDTH-1)-0)+1)-1 downto 0)      := (others => 'X'); -- data
+			dxc_avst_sink_dsp_capture_chan   : in  std_logic_vector((((ANTENNA_DWIDTH-1)-0)+1)-1 downto 0)    := (others => 'X'); -- channel
+			interface_sel                    : out std_logic_vector(31 downto 0)                                                  -- data
+		);
+	end component ed_synth_capture_if_top_0;
+

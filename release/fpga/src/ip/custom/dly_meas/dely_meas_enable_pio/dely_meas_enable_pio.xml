@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.10.16.13:19:15"
+ outputDirectory="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/dly_meas/dely_meas_enable_pio/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGFB027R24C2E2VR2"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="2"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="Intel Agilex 7 2_F-Tile FPGA F-Series Development Kit"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="sources" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="source" direction="output" role="source" width="16" />
+  </interface>
+ </perimeter>
+ <entity kind="dely_meas_enable_pio" version="1.0" name="dely_meas_enable_pio">
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="AGFB027R24C2E2VR2" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter
+     name="AUTO_BOARD"
+     value="Intel Agilex 7 2_F-Tile FPGA F-Series Development Kit" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <generatedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/dly_meas/dely_meas_enable_pio/synth/dely_meas_enable_pio.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/dly_meas/dely_meas_enable_pio/synth/dely_meas_enable_pio.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/dly_meas/dely_meas_enable_pio.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/ip/altera/sld/jtag/altera_in_system_sources_probes/altera_in_system_sources_probes_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="dely_meas_enable_pio">"Generating: dely_meas_enable_pio"</message>
+   <message level="Info" culprit="dely_meas_enable_pio">"Generating: altsource_probe_top"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_in_system_sources_probes"
+   version="19.2.1"
+   name="altsource_probe_top">
+  <parameter name="create_source_clock" value="false" />
+  <parameter name="instance_id" value="NONE" />
+  <parameter name="source_initial_value" value="0" />
+  <parameter name="sld_auto_instance_index" value="YES" />
+  <parameter name="sld_instance_index" value="0" />
+  <parameter name="probe_width" value="0" />
+  <parameter name="source_width" value="16" />
+  <parameter name="create_source_clock_enable" value="false" />
+  <parameter name="device_family" value="Agilex 7" />
+  <parameter name="enable_metastability" value="NO" />
+  <parameter name="gui_use_auto_index" value="true" />
+  <generatedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/dly_meas/dely_meas_enable_pio/altera_in_system_sources_probes_1921/synth/altsource_probe_top.v"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/dly_meas/dely_meas_enable_pio/altera_in_system_sources_probes_1921/synth/altera_in_system_sources_probes.sdc"
+       attributes="NO_SDC_PROMOTION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/dly_meas/dely_meas_enable_pio/altera_in_system_sources_probes_1921/synth/altsource_probe_top.v"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/dly_meas/dely_meas_enable_pio/altera_in_system_sources_probes_1921/synth/altera_in_system_sources_probes.sdc"
+       attributes="NO_SDC_PROMOTION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/ip/altera/sld/jtag/altera_in_system_sources_probes/altera_in_system_sources_probes_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="dely_meas_enable_pio" as="in_system_sources_probes_0" />
+  <messages>
+   <message level="Info" culprit="dely_meas_enable_pio">"Generating: altsource_probe_top"</message>
+  </messages>
+ </entity>
+</deploy>

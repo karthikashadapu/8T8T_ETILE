@@ -1,0 +1,7 @@
+	component j204c_f_rx_tx_ip_clock_bridge_0 is
+		port (
+			in_clk  : in  std_logic := 'X'; -- clk
+			out_clk : out std_logic         -- clk
+		);
+	end component j204c_f_rx_tx_ip_clock_bridge_0;
+

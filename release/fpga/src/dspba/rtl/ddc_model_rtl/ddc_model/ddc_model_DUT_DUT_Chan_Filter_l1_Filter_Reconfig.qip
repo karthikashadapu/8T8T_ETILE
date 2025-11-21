@@ -1,0 +1,6 @@
+# This is the QIP file for DSP Builder for Intel FPGAs system 'ddc_model_DUT_DUT_Chan_Filter_l1_Filter_Reconfig'
+
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/ddc_model_rtl/ddc_model/ddc_model_DUT_safe_path_ver.sv
+set_global_assignment -name VHDL_FILE ../../rtl/ddc_model_rtl/ddc_model/ddc_model_DUT_safe_path.vhd
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/ddc_model_rtl/ddc_model/ddc_model_DUT_DUT_Chan_Filter_l1_Filter_Reconfig.sv
+set_global_assignment -name HEX_FILE ../../rtl/ddc_model_rtl/ddc_model/ddc_model_DUT_DUT_Chan_Filter_l1_Filter_Reconfig_Lut_lutmem.hex

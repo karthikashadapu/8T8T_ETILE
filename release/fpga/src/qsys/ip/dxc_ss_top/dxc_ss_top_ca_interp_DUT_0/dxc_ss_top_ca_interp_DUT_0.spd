@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="ca_interp_DUT_10/sim/dspba_library_ver.sv"
+   type="SYSTEM_VERILOG"
+   library="ca_interp_DUT_10" />
+ <file
+   path="ca_interp_DUT_10/sim/ca_interp_DUT_safe_path_flat_ver.sv"
+   type="SYSTEM_VERILOG"
+   library="ca_interp_DUT_10" />
+ <file
+   path="ca_interp_DUT_10/sim/ca_interp_DUT_safe_path_flat.vhd"
+   type="VHDL"
+   library="ca_interp_DUT_10" />
+ <file
+   path="ca_interp_DUT_10/sim/ca_interp_DUT.sv"
+   type="SYSTEM_VERILOG"
+   library="ca_interp_DUT_10" />
+ <file
+   path="ca_interp_DUT_10/sim/busFabric_ca_interp_DUT_2ouiflr06j62696x6u0qu5xajz.sv"
+   type="SYSTEM_VERILOG"
+   library="ca_interp_DUT_10" />
+ <file
+   path="ca_interp_DUT_10/sim/ca_interp_DUT_Summer_DUC.sv"
+   type="SYSTEM_VERILOG"
+   library="ca_interp_DUT_10" />
+ <file
+   path="ca_interp_DUT_10/sim/ca_interp_DUT_Summer_DUC_Poly_phase_Interp.sv"
+   type="SYSTEM_VERILOG"
+   library="ca_interp_DUT_10" />
+ <file
+   path="ca_interp_DUT_10/sim/ca_interp_DUT_Summer_DUC_Poly_phase_Interp_hb3_im.sv"
+   type="SYSTEM_VERILOG"
+   library="ca_interp_DUT_10" />
+ <file
+   path="ca_interp_DUT_10/sim/ca_interp_DUT_Summer_DUC_Poly_phase_Interp_hb3_re.sv"
+   type="SYSTEM_VERILOG"
+   library="ca_interp_DUT_10" />
+ <file
+   path="ca_interp_DUT_10/sim/ca_interp_DUT_Summer_DUC_Poly_phase_Interp_scale_HB3_im.sv"
+   type="SYSTEM_VERILOG"
+   library="ca_interp_DUT_10" />
+ <file
+   path="ca_interp_DUT_10/sim/ca_interp_DUT_Summer_DUC_Poly_phase_Interp_scale_HB3_re.sv"
+   type="SYSTEM_VERILOG"
+   library="ca_interp_DUT_10" />
+ <file
+   path="ca_interp_DUT_10/sim/ca_interp_DUT_Summer_DUC_Subsystem.sv"
+   type="SYSTEM_VERILOG"
+   library="ca_interp_DUT_10" />
+ <file
+   path="ca_interp_DUT_10/sim/ca_interp_DUT_Summer_DUC_Summer.sv"
+   type="SYSTEM_VERILOG"
+   library="ca_interp_DUT_10" />
+ <file
+   path="ca_interp_DUT_10/sim/ca_interp_DUT_Summer_DUC_Summer_scale_Antenna_Summer2.sv"
+   type="SYSTEM_VERILOG"
+   library="ca_interp_DUT_10" />
+ <file
+   path="ca_interp_DUT_10/sim/ca_interp_DUT_Summer_DUC_Summer_scale_Antenna_Summer3.sv"
+   type="SYSTEM_VERILOG"
+   library="ca_interp_DUT_10" />
+ <file
+   path="ca_interp_DUT_10/sim/ca_interp_DUT_Summer_DUC_Summer_Carrier_Aggregation_and_Gain.sv"
+   type="SYSTEM_VERILOG"
+   library="ca_interp_DUT_10" />
+ <file
+   path="ca_interp_DUT_10/sim/ca_interp_DUT_Summer_DUC_Summer_Delay_Compensation.sv"
+   type="SYSTEM_VERILOG"
+   library="ca_interp_DUT_10" />
+ <file
+   path="sim/dxc_ss_top_ca_interp_DUT_0.v"
+   type="VERILOG"
+   library="dxc_ss_top_ca_interp_DUT_0"
+   hasInlineConfiguration="true" />
+ <topLevel name="dxc_ss_top_ca_interp_DUT_0.dxc_ss_top_ca_interp_DUT_0" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

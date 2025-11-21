@@ -1,0 +1,20 @@
+# system info dxc_ss_top_mm_bridge_0 on 2025.11.21.14:05:54
+system_info:
+name,value
+DEVICE,AGFB014R24B2I2V
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for dxc_ss_top_mm_bridge_0 on 2025.11.21.14:05:54
+files:
+filepath,kind,attributes,module,is_top
+sim/dxc_ss_top_mm_bridge_0.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,dxc_ss_top_mm_bridge_0,true
+altera_avalon_mm_bridge_2010/sim/dxc_ss_top_mm_bridge_0_altera_avalon_mm_bridge_2010_xnk2xbi.v,VERILOG,,dxc_ss_top_mm_bridge_0_altera_avalon_mm_bridge_2010_xnk2xbi,false
+altera_avalon_mm_bridge_2010/sim/altera_merlin_waitrequest_adapter.v,VERILOG,,dxc_ss_top_mm_bridge_0_altera_avalon_mm_bridge_2010_xnk2xbi,false
+altera_avalon_mm_bridge_2010/sim/altera_avalon_sc_fifo.v,VERILOG,,dxc_ss_top_mm_bridge_0_altera_avalon_mm_bridge_2010_xnk2xbi,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+dxc_ss_top_mm_bridge_0.mm_bridge_0,dxc_ss_top_mm_bridge_0_altera_avalon_mm_bridge_2010_xnk2xbi

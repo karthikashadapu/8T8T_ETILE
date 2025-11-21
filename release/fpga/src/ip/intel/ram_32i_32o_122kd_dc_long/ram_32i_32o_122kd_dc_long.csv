@@ -1,0 +1,18 @@
+# system info ram_32i_32o_122kd_dc_long on 2025.10.16.13:46:47
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for ram_32i_32o_122kd_dc_long on 2025.10.16.13:46:47
+files:
+filepath,kind,attributes,module,is_top
+sim/ram_32i_32o_122kd_dc_long.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,ram_32i_32o_122kd_dc_long,true
+ram_2port_2041/sim/ram_32i_32o_122kd_dc_long_ram_2port_2041_xrw3sri.v,VERILOG,,ram_32i_32o_122kd_dc_long_ram_2port_2041_xrw3sri,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+ram_32i_32o_122kd_dc_long.ram_2port_0,ram_32i_32o_122kd_dc_long_ram_2port_2041_xrw3sri

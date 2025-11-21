@@ -1,0 +1,27 @@
+	component master_tod_split is
+		port (
+			data_conduit_in      : in  std_logic_vector(95 downto 0) := (others => 'X'); -- data
+			valid_conduit_in     : in  std_logic                     := 'X';             -- valid
+			data_conduit_out_1   : out std_logic_vector(95 downto 0);                    -- data
+			valid_conduit_out_1  : out std_logic;                                        -- valid
+			data_conduit_out_2   : out std_logic_vector(95 downto 0);                    -- data
+			valid_conduit_out_2  : out std_logic;                                        -- valid
+			data_conduit_out_3   : out std_logic_vector(95 downto 0);                    -- data
+			valid_conduit_out_3  : out std_logic;                                        -- valid
+			data_conduit_out_4   : out std_logic_vector(95 downto 0);                    -- data
+			valid_conduit_out_4  : out std_logic;                                        -- valid
+			data_conduit_out_5   : out std_logic_vector(95 downto 0);                    -- data
+			valid_conduit_out_5  : out std_logic;                                        -- valid
+			data_conduit_out_6   : out std_logic_vector(95 downto 0);                    -- data
+			valid_conduit_out_6  : out std_logic;                                        -- valid
+			data_conduit_out_7   : out std_logic_vector(95 downto 0);                    -- data
+			valid_conduit_out_7  : out std_logic;                                        -- valid
+			data_conduit_out_8   : out std_logic_vector(95 downto 0);                    -- data
+			valid_conduit_out_8  : out std_logic;                                        -- valid
+			data_conduit_out_9   : out std_logic_vector(95 downto 0);                    -- data
+			valid_conduit_out_9  : out std_logic;                                        -- valid
+			data_conduit_out_10  : out std_logic_vector(95 downto 0);                    -- data
+			valid_conduit_out_10 : out std_logic                                         -- valid
+		);
+	end component master_tod_split;
+

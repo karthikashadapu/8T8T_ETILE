@@ -1,0 +1,1546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.11.21.13:10:04"
+ outputDirectory="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGFB014R24B2I2V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="2"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CSR_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CSR_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CSR_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_DSP_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_DSP_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_DSP_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_ECPRI_TX_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_ECPRI_TX_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_ECPRI_TX_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_ECPRI_RX_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_ECPRI_RX_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_ECPRI_RX_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_ETH_XRAN_DL_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_ETH_XRAN_DL_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_ETH_XRAN_DL_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_ETH_XRAN_UL_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_ETH_XRAN_UL_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_ETH_XRAN_UL_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="ecpri_csr" kind="avalon" start="0">
+   <property name="addressAlignment" value="DYNAMIC" />
+   <property name="addressGroup" value="0" />
+   <property name="addressSpan" value="4096" />
+   <property name="addressUnits" value="WORDS" />
+   <property name="alwaysBurstMaxBurst" value="false" />
+   <property name="associatedClock" value="clock_csr" />
+   <property name="associatedReset" value="reset_csr_n" />
+   <property name="bitsPerSymbol" value="8" />
+   <property name="bridgedAddressOffset" value="0" />
+   <property name="bridgesToMaster" value="" />
+   <property name="burstOnBurstBoundariesOnly" value="false" />
+   <property name="burstcountUnits" value="WORDS" />
+   <property name="constantBurstBehavior" value="false" />
+   <property name="explicitAddressSpan" value="0" />
+   <property name="holdTime" value="0" />
+   <property name="interleaveBursts" value="false" />
+   <property name="isBigEndian" value="false" />
+   <property name="isFlash" value="false" />
+   <property name="isMemoryDevice" value="false" />
+   <property name="isNonVolatileStorage" value="false" />
+   <property name="linewrapBursts" value="false" />
+   <property name="maximumPendingReadTransactions" value="1" />
+   <property name="maximumPendingWriteTransactions" value="0" />
+   <property name="minimumReadLatency" value="1" />
+   <property name="minimumResponseLatency" value="1" />
+   <property name="minimumUninterruptedRunLength" value="1" />
+   <property name="prSafe" value="false" />
+   <property name="printableDevice" value="false" />
+   <property name="readLatency" value="0" />
+   <property name="readWaitStates" value="1" />
+   <property name="readWaitTime" value="1" />
+   <property name="registerIncomingSignals" value="false" />
+   <property name="registerOutgoingSignals" value="false" />
+   <property name="setupTime" value="0" />
+   <property name="timingUnits" value="Cycles" />
+   <property name="transparentBridge" value="false" />
+   <property name="waitrequestAllowance" value="0" />
+   <property name="wellBehavedWaitrequest" value="false" />
+   <property name="writeLatency" value="0" />
+   <property name="writeWaitStates" value="0" />
+   <property name="writeWaitTime" value="0" />
+   <property name="dfhFeatureGuid" value="0" />
+   <property name="dfhGroupId" value="0" />
+   <property name="dfhParameterId" value="" />
+   <property name="dfhParameterName" value="" />
+   <property name="dfhParameterVersion" value="" />
+   <property name="dfhParameterData" value="" />
+   <property name="dfhParameterDataLength" value="" />
+   <property name="dfhFeatureMajorVersion" value="0" />
+   <property name="dfhFeatureMinorVersion" value="0" />
+   <property name="dfhFeatureId" value="35" />
+   <property name="dfhFeatureType" value="3" />
+   <port name="ecpri_csr_address" direction="input" role="address" width="10" />
+   <port name="ecpri_csr_write" direction="input" role="write" width="1" />
+   <port name="ecpri_csr_read" direction="input" role="read" width="1" />
+   <port
+       name="ecpri_csr_writedata"
+       direction="input"
+       role="writedata"
+       width="32" />
+   <port
+       name="ecpri_csr_readdata"
+       direction="output"
+       role="readdata"
+       width="32" />
+   <port
+       name="ecpri_csr_readdatavalid"
+       direction="output"
+       role="readdatavalid"
+       width="1" />
+   <port
+       name="ecpri_csr_waitrequest"
+       direction="output"
+       role="waitrequest"
+       width="1" />
+  </interface>
+  <interface name="oran_csr" kind="avalon" start="0">
+   <property name="addressAlignment" value="DYNAMIC" />
+   <property name="addressGroup" value="0" />
+   <property name="addressSpan" value="4096" />
+   <property name="addressUnits" value="WORDS" />
+   <property name="alwaysBurstMaxBurst" value="false" />
+   <property name="associatedClock" value="clock_csr" />
+   <property name="associatedReset" value="reset_csr_n" />
+   <property name="bitsPerSymbol" value="8" />
+   <property name="bridgedAddressOffset" value="0" />
+   <property name="bridgesToMaster" value="" />
+   <property name="burstOnBurstBoundariesOnly" value="false" />
+   <property name="burstcountUnits" value="WORDS" />
+   <property name="constantBurstBehavior" value="false" />
+   <property name="explicitAddressSpan" value="0" />
+   <property name="holdTime" value="0" />
+   <property name="interleaveBursts" value="false" />
+   <property name="isBigEndian" value="false" />
+   <property name="isFlash" value="false" />
+   <property name="isMemoryDevice" value="false" />
+   <property name="isNonVolatileStorage" value="false" />
+   <property name="linewrapBursts" value="false" />
+   <property name="maximumPendingReadTransactions" value="1" />
+   <property name="maximumPendingWriteTransactions" value="0" />
+   <property name="minimumReadLatency" value="1" />
+   <property name="minimumResponseLatency" value="1" />
+   <property name="minimumUninterruptedRunLength" value="1" />
+   <property name="prSafe" value="false" />
+   <property name="printableDevice" value="false" />
+   <property name="readLatency" value="0" />
+   <property name="readWaitStates" value="1" />
+   <property name="readWaitTime" value="1" />
+   <property name="registerIncomingSignals" value="false" />
+   <property name="registerOutgoingSignals" value="false" />
+   <property name="setupTime" value="0" />
+   <property name="timingUnits" value="Cycles" />
+   <property name="transparentBridge" value="false" />
+   <property name="waitrequestAllowance" value="0" />
+   <property name="wellBehavedWaitrequest" value="false" />
+   <property name="writeLatency" value="0" />
+   <property name="writeWaitStates" value="0" />
+   <property name="writeWaitTime" value="0" />
+   <property name="dfhFeatureGuid" value="0" />
+   <property name="dfhGroupId" value="0" />
+   <property name="dfhParameterId" value="" />
+   <property name="dfhParameterName" value="" />
+   <property name="dfhParameterVersion" value="" />
+   <property name="dfhParameterData" value="" />
+   <property name="dfhParameterDataLength" value="" />
+   <property name="dfhFeatureMajorVersion" value="0" />
+   <property name="dfhFeatureMinorVersion" value="0" />
+   <property name="dfhFeatureId" value="35" />
+   <property name="dfhFeatureType" value="3" />
+   <port name="oran_csr_address" direction="input" role="address" width="10" />
+   <port name="oran_csr_write" direction="input" role="write" width="1" />
+   <port name="oran_csr_read" direction="input" role="read" width="1" />
+   <port
+       name="oran_csr_writedata"
+       direction="input"
+       role="writedata"
+       width="32" />
+   <port
+       name="oran_csr_readdata"
+       direction="output"
+       role="readdata"
+       width="32" />
+   <port
+       name="oran_csr_readdatavalid"
+       direction="output"
+       role="readdatavalid"
+       width="1" />
+   <port
+       name="oran_csr_waitrequest"
+       direction="output"
+       role="waitrequest"
+       width="1" />
+  </interface>
+  <interface name="clock_csr" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk_csr" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="clock_dsp" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk_dsp" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="clock_ecpri_tx" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk_ecpri_tx" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="clock_ecpri_rx" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk_ecpri_rx" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="clock_eth_xran_dl" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk_eth_xran_dl" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="clock_eth_xran_ul" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk_eth_xran_ul" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="reset_dsp_n" kind="reset" start="0">
+   <property name="associatedClock" value="clock_dsp" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="rst_dsp_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="rst_ecpri_n" kind="reset" start="0">
+   <property name="associatedClock" value="clock_ecpri_rx" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="rst_ecpri_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="reset_csr_n" kind="reset" start="0">
+   <property name="associatedClock" value="clock_csr" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="rst_csr_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="reset_eth_xran_dl_n" kind="reset" start="0">
+   <property name="associatedClock" value="clock_eth_xran_dl" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="rst_eth_xran_n_dl" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="reset_eth_xran_ul_n" kind="reset" start="0">
+   <property name="associatedClock" value="clock_eth_xran_ul" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="rst_eth_xran_n_ul" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="coupling_pusch_sink_l1" kind="avalon_streaming" start="0">
+   <property name="associatedClock" value="clock_dsp" />
+   <property name="associatedReset" value="reset_dsp_n" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port
+       name="coupling_pusch_avst_sink_valid_l1"
+       direction="input"
+       role="valid"
+       width="1" />
+   <port
+       name="coupling_pusch_avst_sink_data_l1"
+       direction="input"
+       role="data"
+       width="32" />
+   <port
+       name="coupling_pusch_avst_sink_channel_l1"
+       direction="input"
+       role="channel"
+       width="16" />
+   <port
+       name="coupling_pusch_avst_sink_sop_l1"
+       direction="input"
+       role="startofpacket"
+       width="1" />
+   <port
+       name="coupling_pusch_avst_sink_eop_l1"
+       direction="input"
+       role="endofpacket"
+       width="1" />
+  </interface>
+  <interface name="coupling_pusch_sink_l2" kind="avalon_streaming" start="0">
+   <property name="associatedClock" value="clock_dsp" />
+   <property name="associatedReset" value="reset_dsp_n" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port
+       name="coupling_pusch_avst_sink_valid_l2"
+       direction="input"
+       role="valid"
+       width="1" />
+   <port
+       name="coupling_pusch_avst_sink_data_l2"
+       direction="input"
+       role="data"
+       width="32" />
+   <port
+       name="coupling_pusch_avst_sink_channel_l2"
+       direction="input"
+       role="channel"
+       width="16" />
+   <port
+       name="coupling_pusch_avst_sink_sop_l2"
+       direction="input"
+       role="startofpacket"
+       width="1" />
+   <port
+       name="coupling_pusch_avst_sink_eop_l2"
+       direction="input"
+       role="endofpacket"
+       width="1" />
+  </interface>
+  <interface name="coupling_prach_sink_l2" kind="avalon_streaming" start="0">
+   <property name="associatedClock" value="clock_dsp" />
+   <property name="associatedReset" value="reset_dsp_n" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port
+       name="coupling_prach_avst_sink_valid_l2"
+       direction="input"
+       role="valid"
+       width="1" />
+   <port
+       name="coupling_prach_avst_sink_data_l2"
+       direction="input"
+       role="data"
+       width="32" />
+   <port
+       name="coupling_prach_avst_sink_channel_l2"
+       direction="input"
+       role="channel"
+       width="16" />
+   <port
+       name="coupling_prach_avst_sink_sop_l2"
+       direction="input"
+       role="startofpacket"
+       width="1" />
+   <port
+       name="coupling_prach_avst_sink_eop_l2"
+       direction="input"
+       role="endofpacket"
+       width="1" />
+  </interface>
+  <interface name="avst_source_ul_bridge" kind="avalon_streaming" start="1">
+   <property name="associatedClock" value="clock_ecpri_tx" />
+   <property name="associatedReset" value="" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port
+       name="avst_source_ul_bridge_valid"
+       direction="output"
+       role="valid"
+       width="1" />
+   <port
+       name="avst_source_ul_bridge_data"
+       direction="output"
+       role="data"
+       width="64" />
+   <port
+       name="avst_source_ul_bridge_ready"
+       direction="input"
+       role="ready"
+       width="1" />
+   <port
+       name="avst_source_ul_bridge_startofpacket"
+       direction="output"
+       role="startofpacket"
+       width="1" />
+   <port
+       name="avst_source_ul_bridge_empty"
+       direction="output"
+       role="empty"
+       width="3" />
+   <port
+       name="avst_source_ul_bridge_endofpacket"
+       direction="output"
+       role="endofpacket"
+       width="1" />
+  </interface>
+  <interface name="avst_sink_dl" kind="avalon_streaming" start="0">
+   <property name="associatedClock" value="clock_ecpri_rx" />
+   <property name="associatedReset" value="" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port name="avst_sink_dl_valid" direction="input" role="valid" width="1" />
+   <port name="avst_sink_dl_data" direction="input" role="data" width="64" />
+   <port
+       name="avst_sink_dl_endofpacket"
+       direction="input"
+       role="endofpacket"
+       width="1" />
+   <port name="avst_sink_dl_ready" direction="output" role="ready" width="1" />
+   <port
+       name="avst_sink_dl_startofpacket"
+       direction="input"
+       role="startofpacket"
+       width="1" />
+   <port name="avst_sink_dl_empty" direction="input" role="empty" width="3" />
+   <port name="avst_sink_dl_error" direction="input" role="error" width="6" />
+  </interface>
+  <interface name="ecpri_ext_sink" kind="avalon_streaming" start="0">
+   <property name="associatedClock" value="clock_ecpri_rx" />
+   <property name="associatedReset" value="reset_csr_n" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port name="ecpri_ext_sink_valid" direction="input" role="valid" width="1" />
+   <port name="ecpri_ext_sink_data" direction="input" role="data" width="64" />
+   <port
+       name="ecpri_ext_sink_sop"
+       direction="input"
+       role="startofpacket"
+       width="1" />
+   <port
+       name="ecpri_ext_sink_eop"
+       direction="input"
+       role="endofpacket"
+       width="1" />
+   <port name="ecpri_ext_sink_empty" direction="input" role="empty" width="3" />
+   <port name="ecpri_ext_sink_error" direction="input" role="error" width="1" />
+   <port name="ecpri_ext_sink_ready" direction="output" role="ready" width="1" />
+  </interface>
+  <interface name="ecpri_ext_source" kind="avalon_streaming" start="1">
+   <property name="associatedClock" value="clock_ecpri_tx" />
+   <property name="associatedReset" value="reset_csr_n" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port
+       name="ecpri_ext_source_valid"
+       direction="output"
+       role="valid"
+       width="1" />
+   <port
+       name="ecpri_ext_source_data"
+       direction="output"
+       role="data"
+       width="64" />
+   <port
+       name="ecpri_ext_source_sop"
+       direction="output"
+       role="startofpacket"
+       width="1" />
+   <port
+       name="ecpri_ext_source_eop"
+       direction="output"
+       role="endofpacket"
+       width="1" />
+   <port
+       name="ecpri_ext_source_empty"
+       direction="output"
+       role="empty"
+       width="3" />
+   <port
+       name="ecpri_ext_source_error"
+       direction="output"
+       role="error"
+       width="6" />
+  </interface>
+  <interface name="xran_demapper_source" kind="avalon_streaming" start="1">
+   <property name="associatedClock" value="clock_eth_xran_dl" />
+   <property name="associatedReset" value="reset_eth_xran_dl_n" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port
+       name="xran_demapper_source_valid"
+       direction="output"
+       role="valid"
+       width="1" />
+   <port
+       name="xran_demapper_source_data"
+       direction="output"
+       role="data"
+       width="128" />
+   <port
+       name="xran_demapper_source_channel"
+       direction="output"
+       role="channel"
+       width="16" />
+   <port
+       name="xran_demapper_source_startofpacket"
+       direction="output"
+       role="startofpacket"
+       width="1" />
+   <port
+       name="xran_demapper_source_ready"
+       direction="input"
+       role="ready"
+       width="1" />
+   <port
+       name="xran_demapper_source_endofpacket"
+       direction="output"
+       role="endofpacket"
+       width="1" />
+  </interface>
+  <interface name="xran_demapper_cplane_source" kind="avalon_streaming" start="1">
+   <property name="associatedClock" value="clock_eth_xran_dl" />
+   <property name="associatedReset" value="reset_eth_xran_dl_n" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port
+       name="xran_demapper_cplane_valid"
+       direction="output"
+       role="valid"
+       width="1" />
+   <port
+       name="xran_demapper_cplane_startofpacket"
+       direction="output"
+       role="startofpacket"
+       width="1" />
+   <port
+       name="xran_demapper_cplane_endofpacket"
+       direction="output"
+       role="endofpacket"
+       width="1" />
+  </interface>
+  <interface name="ptp_tod" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="o_mac_ptp_fp" direction="output" role="o_mac_ptp_fp" width="22" />
+   <port
+       name="o_mac_ptp_ts_req"
+       direction="output"
+       role="o_mac_ptp_ts_req"
+       width="1" />
+   <port
+       name="i_mac_ptp_tx_ets_valid"
+       direction="input"
+       role="i_mac_ptp_tx_ets_valid"
+       width="1" />
+   <port
+       name="i_mac_ptp_tx_ets"
+       direction="input"
+       role="i_mac_ptp_tx_ets"
+       width="96" />
+   <port
+       name="i_mac_ptp_tx_ets_fp"
+       direction="input"
+       role="i_mac_ptp_tx_ets_fp"
+       width="22" />
+   <port
+       name="i_mac_ptp_rx_its_valid"
+       direction="input"
+       role="i_mac_ptp_rx_its_valid"
+       width="1" />
+   <port
+       name="i_mac_ptp_rx_its"
+       direction="input"
+       role="i_mac_ptp_rx_its"
+       width="96" />
+   <port name="i_ext_ptp_fp" direction="input" role="i_ext_ptp_fp" width="20" />
+   <port
+       name="i_ext_ptp_ts_req"
+       direction="input"
+       role="i_ext_ptp_ts_req"
+       width="1" />
+   <port
+       name="o_ext_ptp_tx_ets_valid"
+       direction="output"
+       role="o_ext_ptp_tx_ets_valid"
+       width="1" />
+   <port
+       name="o_ext_ptp_tx_ets"
+       direction="output"
+       role="o_ext_ptp_tx_ets"
+       width="96" />
+   <port
+       name="o_ext_ptp_tx_ets_fp"
+       direction="output"
+       role="o_ext_ptp_tx_ets_fp"
+       width="20" />
+   <port
+       name="o_ext_ptp_rx_its"
+       direction="output"
+       role="o_ext_ptp_rx_its"
+       width="96" />
+   <port
+       name="o_ext_ptp_rx_its_valid"
+       direction="output"
+       role="o_ext_ptp_rx_its_valid"
+       width="1" />
+  </interface>
+  <interface name="rx_pcs_ready" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="rx_pcs_ready" direction="input" role="rx_pcs_ready" width="1" />
+  </interface>
+  <interface name="tx_lanes_stable" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="tx_lanes_stable"
+       direction="input"
+       role="tx_lanes_stable"
+       width="1" />
+  </interface>
+  <interface name="rst_soft_n" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="rst_soft_n" direction="input" role="rst_soft_n" width="1" />
+  </interface>
+  <interface name="oran_tx_tod_96b_data" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="oran_tx_time_of_day_96b_data"
+       direction="input"
+       role="tdata"
+       width="96" />
+   <port
+       name="oran_tx_time_of_day_96b_valid"
+       direction="input"
+       role="tvalid"
+       width="1" />
+  </interface>
+  <interface name="oran_rx_tod_96b_data" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="oran_rx_time_of_day_96b_data"
+       direction="input"
+       role="tdata"
+       width="96" />
+   <port
+       name="oran_rx_time_of_day_96b_valid"
+       direction="input"
+       role="tvalid"
+       width="1" />
+  </interface>
+  <interface name="bw_config_cc1" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="bw_config_cc1" direction="input" role="bw_config_cc1" width="8" />
+  </interface>
+  <interface name="bw_config_cc2" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="bw_config_cc2" direction="input" role="bw_config_cc2" width="8" />
+  </interface>
+  <interface name="short_long_prach_select" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="short_long_prach_select"
+       direction="input"
+       role="data"
+       width="1" />
+  </interface>
+  <interface name="rx_rtc_id" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="rx_rtc_id" direction="output" role="rx_rtc_id" width="16" />
+  </interface>
+  <interface name="rx_rtc_id_dl" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="rx_rtc_id_dl" direction="output" role="rx_rtc_id_dl" width="16" />
+  </interface>
+  <interface name="rx_u_axc_id" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="rx_u_axc_id" direction="output" role="rx_u_axc_id" width="16" />
+  </interface>
+  <interface name="ul_rtc_id_intr" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="ul_rtc_id_intr"
+       direction="output"
+       role="ul_rtc_id_intr"
+       width="1" />
+  </interface>
+  <interface name="dl_rtc_id_intr" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="dl_rtc_id_intr"
+       direction="output"
+       role="dl_rtc_id_intr"
+       width="1" />
+  </interface>
+  <interface name="ul_axc_id_intr" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="ul_axc_id_intr"
+       direction="output"
+       role="ul_axc_id_intr"
+       width="1" />
+  </interface>
+  <interface name="dl_axc_id_intr" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="dl_axc_id_intr"
+       direction="output"
+       role="dl_axc_id_intr"
+       width="1" />
+  </interface>
+  <interface name="coupling_pusch_timing_ref" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="coupling_pusch_timing_ref"
+       direction="input"
+       role="data"
+       width="32" />
+  </interface>
+  <interface name="coupling_prach_timing_ref" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="coupling_prach_timing_ref"
+       direction="input"
+       role="data"
+       width="32" />
+  </interface>
+  <interface name="coupling_prach_sink_l1" kind="avalon_streaming" start="0">
+   <property name="associatedClock" value="clock_dsp" />
+   <property name="associatedReset" value="reset_dsp_n" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port
+       name="coupling_prach_avst_sink_valid_l1"
+       direction="input"
+       role="valid"
+       width="1" />
+   <port
+       name="coupling_prach_avst_sink_data_l1"
+       direction="input"
+       role="data"
+       width="32" />
+   <port
+       name="coupling_prach_avst_sink_channel_l1"
+       direction="input"
+       role="channel"
+       width="16" />
+   <port
+       name="coupling_prach_avst_sink_sop_l1"
+       direction="input"
+       role="startofpacket"
+       width="1" />
+   <port
+       name="coupling_prach_avst_sink_eop_l1"
+       direction="input"
+       role="endofpacket"
+       width="1" />
+  </interface>
+  <interface name="downlink_eaxc_id_concat" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="downlink_eaxc_id_concat"
+       direction="input"
+       role="data"
+       width="128" />
+  </interface>
+  <interface name="oran_rx_uplane_concat" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="oran_rx_uplane_concat"
+       direction="output"
+       role="data"
+       width="68" />
+  </interface>
+  <interface name="oran_rx_cplane_concat" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="oran_rx_cplane_concat"
+       direction="output"
+       role="data"
+       width="190" />
+  </interface>
+  <interface name="uplink_eaxc_id_concat" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="uplink_eaxc_id_concat"
+       direction="input"
+       role="data"
+       width="256" />
+  </interface>
+  <interface name="coupling_ul_start_pulse_latch" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="ul_start_pulse_latch" direction="input" role="data" width="1" />
+  </interface>
+  <interface name="fh_comp_csr" kind="avalon" start="0">
+   <property name="addressAlignment" value="DYNAMIC" />
+   <property name="addressGroup" value="0" />
+   <property name="addressSpan" value="64" />
+   <property name="addressUnits" value="WORDS" />
+   <property name="alwaysBurstMaxBurst" value="false" />
+   <property name="associatedClock" value="clock_csr" />
+   <property name="associatedReset" value="reset_csr_n" />
+   <property name="bitsPerSymbol" value="8" />
+   <property name="bridgedAddressOffset" value="0" />
+   <property name="bridgesToMaster" value="" />
+   <property name="burstOnBurstBoundariesOnly" value="false" />
+   <property name="burstcountUnits" value="WORDS" />
+   <property name="constantBurstBehavior" value="false" />
+   <property name="explicitAddressSpan" value="0" />
+   <property name="holdTime" value="0" />
+   <property name="interleaveBursts" value="false" />
+   <property name="isBigEndian" value="false" />
+   <property name="isFlash" value="false" />
+   <property name="isMemoryDevice" value="false" />
+   <property name="isNonVolatileStorage" value="false" />
+   <property name="linewrapBursts" value="false" />
+   <property name="maximumPendingReadTransactions" value="1" />
+   <property name="maximumPendingWriteTransactions" value="0" />
+   <property name="minimumReadLatency" value="1" />
+   <property name="minimumResponseLatency" value="1" />
+   <property name="minimumUninterruptedRunLength" value="1" />
+   <property name="prSafe" value="false" />
+   <property name="printableDevice" value="false" />
+   <property name="readLatency" value="0" />
+   <property name="readWaitStates" value="1" />
+   <property name="readWaitTime" value="1" />
+   <property name="registerIncomingSignals" value="false" />
+   <property name="registerOutgoingSignals" value="false" />
+   <property name="setupTime" value="0" />
+   <property name="timingUnits" value="Cycles" />
+   <property name="transparentBridge" value="false" />
+   <property name="waitrequestAllowance" value="0" />
+   <property name="wellBehavedWaitrequest" value="false" />
+   <property name="writeLatency" value="0" />
+   <property name="writeWaitStates" value="0" />
+   <property name="writeWaitTime" value="0" />
+   <property name="dfhFeatureGuid" value="0" />
+   <property name="dfhGroupId" value="0" />
+   <property name="dfhParameterId" value="" />
+   <property name="dfhParameterName" value="" />
+   <property name="dfhParameterVersion" value="" />
+   <property name="dfhParameterData" value="" />
+   <property name="dfhParameterDataLength" value="" />
+   <property name="dfhFeatureMajorVersion" value="0" />
+   <property name="dfhFeatureMinorVersion" value="0" />
+   <property name="dfhFeatureId" value="35" />
+   <property name="dfhFeatureType" value="3" />
+   <port name="fh_comp_csr_address" direction="input" role="address" width="4" />
+   <port name="fh_comp_csr_write" direction="input" role="write" width="1" />
+   <port name="fh_comp_csr_read" direction="input" role="read" width="1" />
+   <port
+       name="fh_comp_csr_writedata"
+       direction="input"
+       role="writedata"
+       width="32" />
+   <port
+       name="fh_comp_csr_readdata"
+       direction="output"
+       role="readdata"
+       width="32" />
+   <port
+       name="fh_comp_csr_readdatavalid"
+       direction="output"
+       role="readdatavalid"
+       width="1" />
+   <port
+       name="fh_comp_csr_waitrequest"
+       direction="output"
+       role="waitrequest"
+       width="1" />
+  </interface>
+  <interface name="oran_ss_config_csr" kind="avalon" start="0">
+   <property name="addressAlignment" value="DYNAMIC" />
+   <property name="addressGroup" value="0" />
+   <property name="addressSpan" value="1024" />
+   <property name="addressUnits" value="WORDS" />
+   <property name="alwaysBurstMaxBurst" value="false" />
+   <property name="associatedClock" value="clock_csr" />
+   <property name="associatedReset" value="reset_csr_n" />
+   <property name="bitsPerSymbol" value="8" />
+   <property name="bridgedAddressOffset" value="0" />
+   <property name="bridgesToMaster" value="" />
+   <property name="burstOnBurstBoundariesOnly" value="false" />
+   <property name="burstcountUnits" value="WORDS" />
+   <property name="constantBurstBehavior" value="false" />
+   <property name="explicitAddressSpan" value="0" />
+   <property name="holdTime" value="0" />
+   <property name="interleaveBursts" value="false" />
+   <property name="isBigEndian" value="false" />
+   <property name="isFlash" value="false" />
+   <property name="isMemoryDevice" value="false" />
+   <property name="isNonVolatileStorage" value="false" />
+   <property name="linewrapBursts" value="false" />
+   <property name="maximumPendingReadTransactions" value="1" />
+   <property name="maximumPendingWriteTransactions" value="0" />
+   <property name="minimumReadLatency" value="1" />
+   <property name="minimumResponseLatency" value="1" />
+   <property name="minimumUninterruptedRunLength" value="1" />
+   <property name="prSafe" value="false" />
+   <property name="printableDevice" value="false" />
+   <property name="readLatency" value="0" />
+   <property name="readWaitStates" value="1" />
+   <property name="readWaitTime" value="1" />
+   <property name="registerIncomingSignals" value="false" />
+   <property name="registerOutgoingSignals" value="false" />
+   <property name="setupTime" value="0" />
+   <property name="timingUnits" value="Cycles" />
+   <property name="transparentBridge" value="false" />
+   <property name="waitrequestAllowance" value="0" />
+   <property name="wellBehavedWaitrequest" value="false" />
+   <property name="writeLatency" value="0" />
+   <property name="writeWaitStates" value="1" />
+   <property name="writeWaitTime" value="1" />
+   <property name="dfhFeatureGuid" value="0" />
+   <property name="dfhGroupId" value="0" />
+   <property name="dfhParameterId" value="" />
+   <property name="dfhParameterName" value="" />
+   <property name="dfhParameterVersion" value="" />
+   <property name="dfhParameterData" value="" />
+   <property name="dfhParameterDataLength" value="" />
+   <property name="dfhFeatureMajorVersion" value="0" />
+   <property name="dfhFeatureMinorVersion" value="0" />
+   <property name="dfhFeatureId" value="35" />
+   <property name="dfhFeatureType" value="3" />
+   <port
+       name="oran_ss_config_csr_address"
+       direction="input"
+       role="address"
+       width="8" />
+   <port
+       name="oran_ss_config_csr_write"
+       direction="input"
+       role="write"
+       width="1" />
+   <port
+       name="oran_ss_config_csr_writedata"
+       direction="input"
+       role="writedata"
+       width="32" />
+   <port
+       name="oran_ss_config_csr_readdata"
+       direction="output"
+       role="readdata"
+       width="32" />
+   <port
+       name="oran_ss_config_csr_read"
+       direction="input"
+       role="read"
+       width="1" />
+   <port
+       name="oran_ss_config_csr_readdata_valid"
+       direction="output"
+       role="readdatavalid"
+       width="1" />
+   <port
+       name="oran_ss_config_csr_waitrequest"
+       direction="output"
+       role="waitrequest"
+       width="1" />
+  </interface>
+  <interface name="tod" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="tod" direction="input" role="data" width="96" />
+  </interface>
+  <interface name="radio_config_status" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="radio_config_status" direction="input" role="data" width="56" />
+  </interface>
+  <interface name="dl_input_hfn_pulse" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="dl_input_hfn_pulse" direction="input" role="data" width="1" />
+  </interface>
+  <interface name="xran_timestamp_mem" kind="avalon" start="0">
+   <property name="addressAlignment" value="DYNAMIC" />
+   <property name="addressGroup" value="0" />
+   <property name="addressSpan" value="8" />
+   <property name="addressUnits" value="WORDS" />
+   <property name="alwaysBurstMaxBurst" value="false" />
+   <property name="associatedClock" value="clock_csr" />
+   <property name="associatedReset" value="reset_csr_n" />
+   <property name="bitsPerSymbol" value="8" />
+   <property name="bridgedAddressOffset" value="0" />
+   <property name="bridgesToMaster" value="" />
+   <property name="burstOnBurstBoundariesOnly" value="false" />
+   <property name="burstcountUnits" value="WORDS" />
+   <property name="constantBurstBehavior" value="false" />
+   <property name="explicitAddressSpan" value="0" />
+   <property name="holdTime" value="0" />
+   <property name="interleaveBursts" value="false" />
+   <property name="isBigEndian" value="false" />
+   <property name="isFlash" value="false" />
+   <property name="isMemoryDevice" value="false" />
+   <property name="isNonVolatileStorage" value="false" />
+   <property name="linewrapBursts" value="false" />
+   <property name="maximumPendingReadTransactions" value="0" />
+   <property name="maximumPendingWriteTransactions" value="0" />
+   <property name="minimumReadLatency" value="1" />
+   <property name="minimumResponseLatency" value="1" />
+   <property name="minimumUninterruptedRunLength" value="1" />
+   <property name="prSafe" value="false" />
+   <property name="printableDevice" value="false" />
+   <property name="readLatency" value="2" />
+   <property name="readWaitStates" value="1" />
+   <property name="readWaitTime" value="1" />
+   <property name="registerIncomingSignals" value="false" />
+   <property name="registerOutgoingSignals" value="false" />
+   <property name="setupTime" value="0" />
+   <property name="timingUnits" value="Cycles" />
+   <property name="transparentBridge" value="false" />
+   <property name="waitrequestAllowance" value="0" />
+   <property name="wellBehavedWaitrequest" value="false" />
+   <property name="writeLatency" value="0" />
+   <property name="writeWaitStates" value="0" />
+   <property name="writeWaitTime" value="0" />
+   <property name="dfhFeatureGuid" value="0" />
+   <property name="dfhGroupId" value="0" />
+   <property name="dfhParameterId" value="" />
+   <property name="dfhParameterName" value="" />
+   <property name="dfhParameterVersion" value="" />
+   <property name="dfhParameterData" value="" />
+   <property name="dfhParameterDataLength" value="" />
+   <property name="dfhFeatureMajorVersion" value="0" />
+   <property name="dfhFeatureMinorVersion" value="0" />
+   <property name="dfhFeatureId" value="35" />
+   <property name="dfhFeatureType" value="3" />
+   <port
+       name="xran_timestamp_ram_read"
+       direction="input"
+       role="read"
+       width="1" />
+   <port
+       name="xran_timestamp_ram_readdata"
+       direction="output"
+       role="readdata"
+       width="64" />
+  </interface>
+  <interface name="timeout_cntr_intr_uplane" kind="interrupt" start="0">
+   <property name="associatedAddressablePoint" value="" />
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="bridgedReceiverOffset" value="0" />
+   <property name="bridgesToReceiver" value="" />
+   <property name="irqScheme" value="NONE" />
+   <port
+       name="timeout_cntr_intr_uplane"
+       direction="output"
+       role="irq"
+       width="1" />
+  </interface>
+  <interface name="timeout_cntr_intr_cplane" kind="interrupt" start="0">
+   <property name="associatedAddressablePoint" value="" />
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="bridgedReceiverOffset" value="0" />
+   <property name="bridgesToReceiver" value="" />
+   <property name="irqScheme" value="NONE" />
+   <port
+       name="timeout_cntr_intr_cplane"
+       direction="output"
+       role="irq"
+       width="1" />
+  </interface>
+  <interface name="fifo_full_intr" kind="interrupt" start="0">
+   <property name="associatedAddressablePoint" value="" />
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="bridgedReceiverOffset" value="0" />
+   <property name="bridgesToReceiver" value="" />
+   <property name="irqScheme" value="NONE" />
+   <port name="fifo_full_intr" direction="output" role="irq" width="1" />
+  </interface>
+  <interface name="tx_ptp_req_fp" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="tx_ptp_fp_bridge"
+       direction="output"
+       role="fingerprint"
+       width="32" />
+   <port
+       name="tx_ptp_ts_req_bridge"
+       direction="output"
+       role="ts_request"
+       width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   kind="ecpri_oran_top_ecpri_oran_0"
+   version="1.0"
+   name="ecpri_oran_top_ecpri_oran_0">
+  <parameter name="AUTO_CLOCK_CSR_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLOCK_CSR_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLOCK_ETH_XRAN_UL_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLOCK_DSP_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CLOCK_ETH_XRAN_UL_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_CLOCK_ETH_XRAN_UL_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CLOCK_ECPRI_TX_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CLOCK_ECPRI_RX_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_CLOCK_ETH_XRAN_DL_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CLOCK_ETH_XRAN_DL_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLOCK_ETH_XRAN_DL_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <parameter name="AUTO_DEVICE" value="AGFB014R24B2I2V" />
+  <parameter name="AUTO_CLOCK_CSR_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CLOCK_ECPRI_TX_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLOCK_DSP_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLOCK_ECPRI_TX_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLOCK_DSP_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLOCK_ECPRI_RX_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLOCK_ECPRI_RX_RESET_DOMAIN" value="-1" />
+  <generatedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/synth/ecpri_oran_top_ecpri_oran_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/synth/ecpri_oran_top_ecpri_oran_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/ecpri_oran_ss_top/ecpri_oran_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="ecpri_oran_top_ecpri_oran_0">"Generating: ecpri_oran_top_ecpri_oran_0"</message>
+   <message level="Info" culprit="ecpri_oran_top_ecpri_oran_0">"Generating: ecpri_oran_ss"</message>
+  </messages>
+ </entity>
+ <entity kind="ecpri_oran" version="1.0" name="ecpri_oran_ss">
+  <generatedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/struct_typedef.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/ecpri_oran_ss.sv"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/ul_eaxc_config.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/ul_rtc_id_config.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/dl_rtc_id_config.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/dl_eaxc_config.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/prach_data_in_long.mif"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/cplane_pusch_fdv.mif"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/cplane_prach_fdv.mif"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/map_table.mif"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/uplink_arbiter.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/cu_plane_coupling_top.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/cu_plane_coupling_prach_wrapper.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/cu_plane_coupling_pusch_wrapper.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/prach_fdv_read_state_machine.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/pusch_fdv_read_state_machine.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/pusch_fifo_read_state_machine.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/prach_fifo_read_state_machine.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/pusch_raw_packet_formation.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/prach_raw_packet_formation.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/pusch_cplane_fdv_buffer.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/prach_cplane_fdv_buffer.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/oran_wrapper.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/Oran_SS_Registers.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/idle_time_counter.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/xran_timestamp.v"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/struct_typedef.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/ecpri_oran_ss.sv"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/ul_eaxc_config.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/ul_rtc_id_config.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/dl_rtc_id_config.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/dl_eaxc_config.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/prach_data_in_long.mif"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/cplane_pusch_fdv.mif"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/cplane_prach_fdv.mif"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/map_table.mif"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/uplink_arbiter.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/cu_plane_coupling_top.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/cu_plane_coupling_prach_wrapper.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/cu_plane_coupling_pusch_wrapper.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/prach_fdv_read_state_machine.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/pusch_fdv_read_state_machine.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/pusch_fifo_read_state_machine.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/prach_fifo_read_state_machine.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/pusch_raw_packet_formation.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/prach_raw_packet_formation.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/pusch_cplane_fdv_buffer.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/prach_cplane_fdv_buffer.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/oran_wrapper.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/Oran_SS_Registers.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/idle_time_counter.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_ecpri_oran_0/ecpri_oran_10/synth/xran_timestamp.v"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/ecpri_oran_ss_top/ecpri_oran_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="ecpri_oran_top_ecpri_oran_0" as="ecpri_oran_0" />
+  <messages>
+   <message level="Info" culprit="ecpri_oran_top_ecpri_oran_0">"Generating: ecpri_oran_ss"</message>
+  </messages>
+ </entity>
+</deploy>

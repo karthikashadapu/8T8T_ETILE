@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.11.21.13:09:46"
+ outputDirectory="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ed_synth/ed_synth_ninit_done_inst/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGFB014R24B2I2V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="3"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="ninit_done" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="ninit_done" direction="output" role="ninit_done" width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   kind="ed_synth_ninit_done_inst"
+   version="1.0"
+   name="ed_synth_ninit_done_inst">
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="AGFB014R24B2I2V" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <generatedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ed_synth/ed_synth_ninit_done_inst/synth/ed_synth_ninit_done_inst.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ed_synth/ed_synth_ninit_done_inst/synth/ed_synth_ninit_done_inst.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ed_synth/ed_synth_ninit_done_inst.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/sibgath/intelFPGA_pro/24.1/ip/altera/pgm/altera_s10_user_rst_clkgate/altera_s10_user_rst_clkgate_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="ed_synth_ninit_done_inst">"Generating: ed_synth_ninit_done_inst"</message>
+   <message level="Info" culprit="ed_synth_ninit_done_inst">"Generating: altera_s10_user_rst_clkgate"</message>
+   <message level="Info" culprit="ninit_done_inst">generating top-level entity altera_s10_user_rst_clkgate</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_s10_user_rst_clkgate"
+   version="19.4.7"
+   name="altera_s10_user_rst_clkgate">
+  <parameter name="DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="outputType" value="Conduit Interface" />
+  <generatedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ed_synth/ed_synth_ninit_done_inst/altera_s10_user_rst_clkgate_1947/synth/altera_s10_user_rst_clkgate.sv"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ed_synth/ed_synth_ninit_done_inst/altera_s10_user_rst_clkgate_1947/synth/altera_s10_user_rst_clkgate_fm.sdc"
+       attributes="NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ed_synth/ed_synth_ninit_done_inst/altera_s10_user_rst_clkgate_1947/synth/altera_s10_user_rst_clkgate.sv"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ed_synth/ed_synth_ninit_done_inst/altera_s10_user_rst_clkgate_1947/synth/altera_s10_user_rst_clkgate_fm.sdc"
+       attributes="NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/sibgath/intelFPGA_pro/24.1/ip/altera/pgm/altera_s10_user_rst_clkgate/altera_s10_user_rst_clkgate_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="ed_synth_ninit_done_inst" as="ninit_done_inst" />
+  <messages>
+   <message level="Info" culprit="ed_synth_ninit_done_inst">"Generating: altera_s10_user_rst_clkgate"</message>
+   <message level="Info" culprit="ninit_done_inst">generating top-level entity altera_s10_user_rst_clkgate</message>
+  </messages>
+ </entity>
+</deploy>

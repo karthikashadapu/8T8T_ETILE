@@ -1,0 +1,9 @@
+# This is the QIP file for DSP Builder for Intel FPGAs system 'ddc_model_DUT_DUT_DDC_l1_x_HB1'
+
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/ddc_model_rtl/ddc_model/ddc_model_DUT_safe_path_ver.sv
+set_global_assignment -name VHDL_FILE ../../rtl/ddc_model_rtl/ddc_model/ddc_model_DUT_safe_path.vhd
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/ddc_model_rtl/ddc_model/ddc_model_DUT_DUT_DDC_l1_x_HB1.sv
+set_global_assignment -name QIP_FILE ../../rtl/ddc_model_rtl/ddc_model/ddc_model_DUT_DUT_DDC_l1_x_HB1_HB1_im.qip
+set_global_assignment -name QIP_FILE ../../rtl/ddc_model_rtl/ddc_model/ddc_model_DUT_DUT_DDC_l1_x_HB1_HB1_re.qip
+set_global_assignment -name QIP_FILE ../../rtl/ddc_model_rtl/ddc_model/ddc_model_DUT_DUT_DDC_l1_x_HB1_scale_HB1_im.qip
+set_global_assignment -name QIP_FILE ../../rtl/ddc_model_rtl/ddc_model/ddc_model_DUT_DUT_DDC_l1_x_HB1_scale_HB1_re.qip

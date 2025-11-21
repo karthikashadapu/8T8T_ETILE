@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.10.16.14:11:17"
+ outputDirectory="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/qsys_top/qsys_top_ninit_done/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGIB027R31B1E2V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="2"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="in_reset" kind="reset" start="0">
+   <property name="associatedClock" value="" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="in_reset" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="out_reset" kind="reset" start="1">
+   <property name="associatedClock" value="" />
+   <property name="associatedDirectReset" value="in_reset" />
+   <property name="associatedResetSinks" value="in_reset" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="out_reset" direction="output" role="reset" width="1" />
+  </interface>
+ </perimeter>
+ <entity kind="qsys_top_ninit_done" version="1.0" name="qsys_top_ninit_done">
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="AGFB027R24C2E2VR2" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <generatedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/qsys_top/qsys_top_ninit_done/synth/qsys_top_ninit_done.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/qsys_top/qsys_top_ninit_done/synth/qsys_top_ninit_done.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/qsys_top/qsys_top_ninit_done.ip" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <messages>
+   <message level="Info" culprit="qsys_top_ninit_done">"Generating: qsys_top_ninit_done"</message>
+  </messages>
+ </entity>
+</deploy>

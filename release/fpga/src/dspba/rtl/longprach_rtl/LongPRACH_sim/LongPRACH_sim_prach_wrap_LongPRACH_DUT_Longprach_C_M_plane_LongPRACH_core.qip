@@ -1,0 +1,12 @@
+# This is the QIP file for DSP Builder for Intel FPGAs system 'LongPRACH_sim_prach_wrap_LongPRACH_DUT_Longprach_C_M_plane_LongPRACH_core'
+
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/longprach_rtl/LongPRACH_sim/LongPRACH_sim_prach_wrap_safe_path_ver.sv
+set_global_assignment -name VHDL_FILE ../../rtl/longprach_rtl/LongPRACH_sim/LongPRACH_sim_prach_wrap_safe_path.vhd
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/longprach_rtl/LongPRACH_sim/LongPRACH_sim_prach_wrap_LongPRACH_DUT_Longprach_C_M_plane_LongPRACH_core.sv
+set_global_assignment -name QIP_FILE ../../rtl/longprach_rtl/LongPRACH_sim/LongPRACH_sim_prach_wrap_LongPRACH_DUT_Longprach_C_M_plane_LongPRACH_core_Timeref_capture_fifo.qip
+set_global_assignment -name QIP_FILE ../../rtl/longprach_rtl/LongPRACH_sim/LongPRACH_sim_prach_wrap_LongPRACH_DUT_Longprach_C_M_plane_LongPRACH_core_CP_REMOVAL.qip
+set_global_assignment -name QIP_FILE ../../rtl/longprach_rtl/LongPRACH_sim/LongPRACH_sim_prach_wrap_LongPRACH_DUT_Longprach_C_M_plane_LongPRACH_core_DECIMATION1.qip
+set_global_assignment -name QIP_FILE ../../rtl/longprach_rtl/LongPRACH_sim/LongPRACH_sim_prach_wrap_LongPRACH_DUT_Longprach_C_M_plane_LongPRACH_core_FFTShift.qip
+set_global_assignment -name QIP_FILE ../../rtl/longprach_rtl/LongPRACH_sim/LongPRACH_sim_prach_wrap_LongPRACH_DUT_Longprach_C_M_plane_LongPRACH_core_MIXER.qip
+set_global_assignment -name QIP_FILE ../../rtl/longprach_rtl/LongPRACH_sim/LongPRACH_sim_prach_wrap_LongPRACH_DUT_Longprach_C_M_plane_LongPRACH_core_S2B_FFT.qip
+set_global_assignment -name QIP_FILE ../../rtl/longprach_rtl/LongPRACH_sim/LongPRACH_sim_prach_wrap_LongPRACH_DUT_Longprach_C_M_plane_LongPRACH_core_SYM_SELECT.qip

@@ -1,0 +1,80 @@
+	component j204c_f_rx_tx_ip_reset_sequencer_0 is
+		generic (
+			NUM_OUTPUTS                   : integer := 6;
+			ENABLE_DEASSERTION_INPUT_QUAL : integer := 22;
+			ENABLE_ASSERTION_SEQUENCE     : integer := 0;
+			ENABLE_DEASSERTION_SEQUENCE   : integer := 1;
+			MIN_ASRT_TIME                 : integer := 20;
+			ASRT_DELAY0                   : integer := 0;
+			DSRT_DELAY0                   : integer := 2;
+			ASRT_REMAP0                   : integer := 0;
+			DSRT_REMAP0                   : integer := 0;
+			DSRT_QUALCNT_0                : integer := 0;
+			ASRT_DELAY1                   : integer := 0;
+			DSRT_DELAY1                   : integer := 0;
+			ASRT_REMAP1                   : integer := 1;
+			DSRT_REMAP1                   : integer := 1;
+			DSRT_QUALCNT_1                : integer := 2;
+			ASRT_DELAY2                   : integer := 0;
+			DSRT_DELAY2                   : integer := 0;
+			ASRT_REMAP2                   : integer := 2;
+			DSRT_REMAP2                   : integer := 2;
+			DSRT_QUALCNT_2                : integer := 0;
+			ASRT_DELAY3                   : integer := 0;
+			DSRT_DELAY3                   : integer := 100;
+			ASRT_REMAP3                   : integer := 3;
+			DSRT_REMAP3                   : integer := 3;
+			DSRT_QUALCNT_3                : integer := 0;
+			ASRT_DELAY4                   : integer := 0;
+			DSRT_DELAY4                   : integer := 0;
+			ASRT_REMAP4                   : integer := 4;
+			DSRT_REMAP4                   : integer := 4;
+			DSRT_QUALCNT_4                : integer := 0;
+			ASRT_DELAY5                   : integer := 0;
+			DSRT_DELAY5                   : integer := 50;
+			ASRT_REMAP5                   : integer := 5;
+			DSRT_REMAP5                   : integer := 5;
+			DSRT_QUALCNT_5                : integer := 0;
+			ASRT_DELAY6                   : integer := 0;
+			DSRT_DELAY6                   : integer := 0;
+			ASRT_REMAP6                   : integer := 6;
+			DSRT_REMAP6                   : integer := 6;
+			DSRT_QUALCNT_6                : integer := 0;
+			ASRT_DELAY7                   : integer := 0;
+			DSRT_DELAY7                   : integer := 0;
+			ASRT_REMAP7                   : integer := 7;
+			DSRT_REMAP7                   : integer := 7;
+			DSRT_QUALCNT_7                : integer := 0;
+			ASRT_DELAY8                   : integer := 0;
+			DSRT_DELAY8                   : integer := 0;
+			ASRT_REMAP8                   : integer := 8;
+			DSRT_REMAP8                   : integer := 8;
+			DSRT_QUALCNT_8                : integer := 0;
+			ASRT_DELAY9                   : integer := 0;
+			DSRT_DELAY9                   : integer := 0;
+			ASRT_REMAP9                   : integer := 9;
+			DSRT_REMAP9                   : integer := 9;
+			DSRT_QUALCNT_9                : integer := 0
+		);
+		port (
+			clk              : in  std_logic                     := 'X';             -- clk
+			reset_in0        : in  std_logic                     := 'X';             -- reset
+			reset_out0       : out std_logic;                                        -- reset
+			reset_out1       : out std_logic;                                        -- reset
+			reset_out2       : out std_logic;                                        -- reset
+			reset_out3       : out std_logic;                                        -- reset
+			reset_out4       : out std_logic;                                        -- reset
+			reset_out5       : out std_logic;                                        -- reset
+			reset1_dsrt_qual : in  std_logic                     := 'X';             -- reset1_dsrt_qual
+			reset2_dsrt_qual : in  std_logic                     := 'X';             -- reset2_dsrt_qual
+			reset4_dsrt_qual : in  std_logic                     := 'X';             -- reset4_dsrt_qual
+			csr_reset        : in  std_logic                     := 'X';             -- reset
+			av_address       : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- address
+			av_readdata      : out std_logic_vector(31 downto 0);                    -- readdata
+			av_read          : in  std_logic                     := 'X';             -- read
+			av_writedata     : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			av_write         : in  std_logic                     := 'X';             -- write
+			irq              : out std_logic                                         -- irq
+		);
+	end component j204c_f_rx_tx_ip_reset_sequencer_0;
+

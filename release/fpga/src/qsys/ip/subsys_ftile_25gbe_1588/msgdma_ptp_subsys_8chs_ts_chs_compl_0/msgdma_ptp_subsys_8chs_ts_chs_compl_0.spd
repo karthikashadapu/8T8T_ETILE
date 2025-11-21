@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="ts_chs_compl_10/sim/ts_chs_compl.sv"
+   type="SYSTEM_VERILOG"
+   library="ts_chs_compl_10" />
+ <file
+   path="ts_chs_compl_10/sim/dc_fifo_param.sv"
+   type="SYSTEM_VERILOG"
+   library="ts_chs_compl_10" />
+ <file
+   path="ts_chs_compl_10/sim/dc_fifo_param_ts_compl.sdc"
+   type="SDC"
+   library="ts_chs_compl_10" />
+ <file
+   path="sim/msgdma_ptp_subsys_8chs_ts_chs_compl_0.v"
+   type="VERILOG"
+   library="msgdma_ptp_subsys_8chs_ts_chs_compl_0"
+   hasInlineConfiguration="true" />
+ <topLevel
+   name="msgdma_ptp_subsys_8chs_ts_chs_compl_0.msgdma_ptp_subsys_8chs_ts_chs_compl_0" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

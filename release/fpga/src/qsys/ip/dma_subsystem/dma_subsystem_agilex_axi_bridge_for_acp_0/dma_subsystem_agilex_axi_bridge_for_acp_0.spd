@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="agilex_axi_bridge_for_acp_1920/sim/agilex_axi_bridge_for_acp.v"
+   type="VERILOG"
+   library="agilex_axi_bridge_for_acp_1920" />
+ <file
+   path="sim/dma_subsystem_agilex_axi_bridge_for_acp_0.v"
+   type="VERILOG"
+   library="dma_subsystem_agilex_axi_bridge_for_acp_0"
+   hasInlineConfiguration="true" />
+ <topLevel
+   name="dma_subsystem_agilex_axi_bridge_for_acp_0.dma_subsystem_agilex_axi_bridge_for_acp_0" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

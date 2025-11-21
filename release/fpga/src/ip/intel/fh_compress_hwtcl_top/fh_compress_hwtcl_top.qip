@@ -1,0 +1,71 @@
+set_global_assignment -entity "fh_compress_hwtcl_top" -library "fh_compress_hwtcl_top" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "fh_compress_hwtcl_top" -library "fh_compress_hwtcl_top" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "fh_compress_hwtcl_top" -library "fh_compress_hwtcl_top" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "fh_compress_hwtcl_top" -library "fh_compress_hwtcl_top" -name IP_TOOL_VENDOR_NAME "Intel Corporation"
+set_global_assignment -entity "fh_compress_hwtcl_top" -library "fh_compress_hwtcl_top" -name IP_TOP_LEVEL_COMPONENT_NAME "fh_comp_top"
+set_global_assignment -entity "fh_compress_hwtcl_top" -library "fh_compress_hwtcl_top" -name PRE_COMPILED_MODULE "ON"
+set_global_assignment -entity "fh_compress_hwtcl_top" -library "fh_compress_hwtcl_top" -name OCS_IP_TYPE "fh_comp_top"
+set_global_assignment -entity "fh_compress_hwtcl_top" -library "fh_compress_hwtcl_top" -name OCS_IP_VERSION "1.0.7"
+set_global_assignment -entity "fh_compress_hwtcl_top" -library "fh_compress_hwtcl_top" -name OCS_IP_HASH "2zpgqny"
+set_global_assignment -library "fh_compress_hwtcl_top" -name SOPCINFO_FILE [file join $::quartus(qip_path) "fh_compress_hwtcl_top.sopcinfo"]
+set_global_assignment -entity "fh_compress_hwtcl_top" -library "fh_compress_hwtcl_top" -name SLD_INFO "QSYS_NAME fh_compress_hwtcl_top HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "fh_compress_hwtcl_top" -name MISC_FILE [file join $::quartus(qip_path) "fh_compress_hwtcl_top.cmp"]
+set_global_assignment -entity "fh_compress_hwtcl_top" -library "fh_compress_hwtcl_top" -name IP_TARGETED_DEVICE_FAMILY "Agilex 7"
+set_global_assignment -entity "fh_compress_hwtcl_top" -library "fh_compress_hwtcl_top" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 7}"
+set_global_assignment -entity "fh_compress_hwtcl_top" -library "fh_compress_hwtcl_top" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "fh_compress_hwtcl_top" -name MISC_FILE [file join $::quartus(qip_path) "../fh_compress_hwtcl_top.ip"]
+
+set_global_assignment -entity "fh_comp_top" -library "fh_comp_top_107" -name IP_COMPONENT_NAME "ZmhfY29tcF90b3A="
+set_global_assignment -entity "fh_comp_top" -library "fh_comp_top_107" -name IP_COMPONENT_DISPLAY_NAME "RnJvbnRoYXVsIENvbXByZXNzaW9uIEludGVsIEZQR0EgSVA="
+set_global_assignment -entity "fh_comp_top" -library "fh_comp_top_107" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "fh_comp_top" -library "fh_comp_top_107" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "fh_comp_top" -library "fh_comp_top_107" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "fh_comp_top" -library "fh_comp_top_107" -name IP_COMPONENT_VERSION "MS4wLjc="
+set_global_assignment -entity "fh_comp_top" -library "fh_comp_top_107" -name IP_COMPONENT_DESCRIPTION "RnJvbnRoYXVsIENvbXByZXNzaW9uIEludGVsIEZQR0EgSVAgZGVzY3JpcHRpb25u"
+set_global_assignment -entity "fh_comp_top" -library "fh_comp_top_107" -name IP_COMPONENT_GROUP "SW50ZXJmYWNlIFByb3RvY29scy9PLVJBTg=="
+set_global_assignment -entity "fh_comp_top" -library "fh_comp_top_107" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzcwOTMwMQ=="
+set_global_assignment -entity "fh_compress_hwtcl_top" -library "fh_compress_hwtcl_top" -name IP_COMPONENT_NAME "ZmhfY29tcHJlc3NfaHd0Y2xfdG9w"
+set_global_assignment -entity "fh_compress_hwtcl_top" -library "fh_compress_hwtcl_top" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "fh_compress_hwtcl_top" -library "fh_compress_hwtcl_top" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "fh_compress_hwtcl_top" -library "fh_compress_hwtcl_top" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "fh_compress_hwtcl_top" -library "fh_compress_hwtcl_top" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "fh_compress_hwtcl_top" -library "fh_compress_hwtcl_top" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "fh_comp_top_107" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/fh_comp_top.sv"]
+set_global_assignment -library "fh_comp_top_107" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/alt_oran_fifo.sv"]
+set_global_assignment -library "fh_comp_top_107" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/alt_oran_scfifo.sv"]
+set_global_assignment -library "fh_comp_top_107" -name VERILOG_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/altera_std_synchronizer_nocut.v"]
+set_global_assignment -library "fh_comp_top_107" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/bitshift_preproc.sv"]
+set_global_assignment -library "fh_comp_top_107" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/bitshift_preproc_engine.sv"]
+set_global_assignment -library "fh_comp_top_107" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/ccam_bfp.sv"]
+set_global_assignment -library "fh_comp_top_107" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/ccam_mulaw.sv"]
+set_global_assignment -library "fh_comp_top_107" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/ccam_unbiased.sv"]
+set_global_assignment -library "fh_comp_top_107" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/ceam.sv"]
+set_global_assignment -library "fh_comp_top_107" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/ceam_bfp.sv"]
+set_global_assignment -library "fh_comp_top_107" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/ceam_mulaw.sv"]
+set_global_assignment -library "fh_comp_top_107" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/fh_comp_csr.sv"]
+set_global_assignment -library "fh_comp_top_107" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/fh_comp_csrunit.sv"]
+set_global_assignment -library "fh_comp_top_107" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/compression_top.sv"]
+set_global_assignment -library "fh_comp_top_107" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/decompression_top.sv"]
+set_global_assignment -library "fh_comp_top_107" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/oran_comp_data_adapter.sv"]
+set_global_assignment -library "fh_comp_top_107" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/fh_comp.sv"]
+set_global_assignment -library "fh_comp_top_107" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/fh_decomp.sv"]
+set_global_assignment -library "fh_comp_top_107" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/fh_prb_barrel_shifter.sv"]
+set_global_assignment -library "fh_comp_top_107" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/oran_std_synchronizer_nocut.sv"]
+set_global_assignment -library "fh_comp_top_107" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/oran_uplane_byte_shift.sv"]
+set_global_assignment -library "fh_comp_top_107" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/oran_uplane_prb_fifo.sv"]
+set_global_assignment -library "fh_comp_top_107" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/oran_uplane_prb_size.sv"]
+set_global_assignment -library "fh_comp_top_107" -name VERILOG_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/pipeline_oran.v"]
+set_global_assignment -library "fh_comp_top_107" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/fh_sync_reset_logic.sv"]
+set_global_assignment -library "fh_comp_top_107" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/fh_check.sv"]
+set_global_assignment -library "fh_comp_top_107" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/oran_pulse_stretch_sync.sv"]
+set_instance_assignment -entity "fh_comp_top" -library "fh_comp_top_107" -name SDC_ENTITY_FILE [file join $::quartus(qip_path) "fh_comp_top_107/synth/fh_comp.sdc"] -no_sdc_promotion  -no_auto_inst_discovery 
+set_global_assignment -library "fh_compress_hwtcl_top" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/fh_compress_hwtcl_top.v"]
+
+
+set_global_assignment -entity "fh_comp_top" -library "fh_comp_top_107" -name IP_TOOL_NAME "fh_comp_top"
+set_global_assignment -entity "fh_comp_top" -library "fh_comp_top_107" -name IP_TOOL_VERSION "1.0.7"
+set_global_assignment -entity "fh_comp_top" -library "fh_comp_top_107" -name IP_TOOL_ENV "QsysPrimePro"
+

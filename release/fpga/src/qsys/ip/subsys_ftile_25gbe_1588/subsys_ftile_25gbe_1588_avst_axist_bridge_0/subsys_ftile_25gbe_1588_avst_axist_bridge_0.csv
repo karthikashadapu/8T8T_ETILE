@@ -1,0 +1,23 @@
+# system info subsys_ftile_25gbe_1588_avst_axist_bridge_0 on 2025.10.16.14:11:33
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for subsys_ftile_25gbe_1588_avst_axist_bridge_0 on 2025.10.16.14:11:33
+files:
+filepath,kind,attributes,module,is_top
+sim/subsys_ftile_25gbe_1588_avst_axist_bridge_0.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,subsys_ftile_25gbe_1588_avst_axist_bridge_0,true
+avst_axist_bridge_14/sim/ftile_ghrd_avst_axist_bridge.sv,SYSTEM_VERILOG,,ftile_ghrd_avst_axist_bridge,false
+avst_axist_bridge_14/sim/avst_to_axist_rx_mac_seg_if_v2.sv,SYSTEM_VERILOG,,ftile_ghrd_avst_axist_bridge,false
+avst_axist_bridge_14/sim/axist_to_avst_bridge_v2.sv,SYSTEM_VERILOG,,ftile_ghrd_avst_axist_bridge,false
+avst_axist_bridge_14/sim/axist_to_avst_tx_mac_seg_if_v2.sv,SYSTEM_VERILOG,,ftile_ghrd_avst_axist_bridge,false
+avst_axist_bridge_14/sim/keep2empty_v2.sv,SYSTEM_VERILOG,,ftile_ghrd_avst_axist_bridge,false
+avst_axist_bridge_14/sim/hssi_ss_delay_reg_v2.v,VERILOG,,ftile_ghrd_avst_axist_bridge,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+subsys_ftile_25gbe_1588_avst_axist_bridge_0.subsys_ftile_25gbe_1588_avst_axist_bridge_0,ftile_ghrd_avst_axist_bridge

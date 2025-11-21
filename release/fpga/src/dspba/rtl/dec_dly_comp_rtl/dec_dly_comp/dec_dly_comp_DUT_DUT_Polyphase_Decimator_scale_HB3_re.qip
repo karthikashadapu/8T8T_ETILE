@@ -1,0 +1,5 @@
+# This is the QIP file for DSP Builder for Intel FPGAs system 'dec_dly_comp_DUT_DUT_Polyphase_Decimator_scale_HB3_re'
+
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/dec_dly_comp_rtl/dec_dly_comp/dec_dly_comp_DUT_safe_path_ver.sv
+set_global_assignment -name VHDL_FILE ../../rtl/dec_dly_comp_rtl/dec_dly_comp/dec_dly_comp_DUT_safe_path.vhd
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/dec_dly_comp_rtl/dec_dly_comp/dec_dly_comp_DUT_DUT_Polyphase_Decimator_scale_HB3_re.sv

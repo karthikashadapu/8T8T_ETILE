@@ -1,0 +1,126 @@
+	component ecpri_hwtcl_top is
+		port (
+			mac_clk_tx                                     : in  std_logic                     := 'X';             -- clk
+			mac_clk_rx                                     : in  std_logic                     := 'X';             -- clk
+			clk_tx                                         : in  std_logic                     := 'X';             -- clk
+			clk_rx                                         : in  std_logic                     := 'X';             -- clk
+			clk_csr                                        : in  std_logic                     := 'X';             -- clk
+			ext_sink_clk                                   : in  std_logic                     := 'X';             -- clk
+			rst_tx_n                                       : in  std_logic                     := 'X';             -- reset_n
+			rst_rx_n                                       : in  std_logic                     := 'X';             -- reset_n
+			rst_csr_n                                      : in  std_logic                     := 'X';             -- reset_n
+			csr_address                                    : in  std_logic_vector(15 downto 0) := (others => 'X'); -- address
+			csr_write                                      : in  std_logic                     := 'X';             -- write
+			csr_writedata                                  : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			csr_read                                       : in  std_logic                     := 'X';             -- read
+			csr_readdata                                   : out std_logic_vector(31 downto 0);                    -- readdata
+			csr_readdatavalid                              : out std_logic;                                        -- readdatavalid
+			csr_waitrequest                                : out std_logic;                                        -- waitrequest
+			mac_source_valid                               : out std_logic;                                        -- valid
+			mac_source_data                                : out std_logic_vector(63 downto 0);                    -- data
+			mac_source_sop                                 : out std_logic;                                        -- startofpacket
+			mac_source_eop                                 : out std_logic;                                        -- endofpacket
+			mac_source_empty                               : out std_logic_vector(2 downto 0);                     -- empty
+			mac_source_error                               : out std_logic;                                        -- error
+			mac_source_ready                               : in  std_logic                     := 'X';             -- ready
+			avst_sink_valid                                : in  std_logic                     := 'X';             -- valid
+			avst_sink_data                                 : in  std_logic_vector(63 downto 0) := (others => 'X'); -- data
+			avst_sink_sop                                  : in  std_logic                     := 'X';             -- startofpacket
+			avst_sink_eop                                  : in  std_logic                     := 'X';             -- endofpacket
+			avst_sink_empty                                : in  std_logic_vector(2 downto 0)  := (others => 'X'); -- empty
+			avst_sink_error                                : in  std_logic                     := 'X';             -- error
+			avst_sink_ready                                : out std_logic;                                        -- ready
+			avst_source_valid                              : out std_logic;                                        -- valid
+			avst_source_data                               : out std_logic_vector(63 downto 0);                    -- data
+			avst_source_sop                                : out std_logic;                                        -- startofpacket
+			avst_source_eop                                : out std_logic;                                        -- endofpacket
+			avst_source_empty                              : out std_logic_vector(2 downto 0);                     -- empty
+			avst_source_error                              : out std_logic;                                        -- error
+			mac_sink_valid                                 : in  std_logic                     := 'X';             -- valid
+			mac_sink_data                                  : in  std_logic_vector(63 downto 0) := (others => 'X'); -- data
+			mac_sink_sop                                   : in  std_logic                     := 'X';             -- startofpacket
+			mac_sink_eop                                   : in  std_logic                     := 'X';             -- endofpacket
+			mac_sink_empty                                 : in  std_logic_vector(2 downto 0)  := (others => 'X'); -- empty
+			mac_sink_error                                 : in  std_logic_vector(5 downto 0)  := (others => 'X'); -- error
+			mac_sink_ready                                 : out std_logic;                                        -- ready
+			ext_sink_0_valid                               : in  std_logic                     := 'X';             -- valid
+			ext_sink_0_data                                : in  std_logic_vector(63 downto 0) := (others => 'X'); -- data
+			ext_sink_0_sop                                 : in  std_logic                     := 'X';             -- startofpacket
+			ext_sink_0_eop                                 : in  std_logic                     := 'X';             -- endofpacket
+			ext_sink_0_empty                               : in  std_logic_vector(2 downto 0)  := (others => 'X'); -- empty
+			ext_sink_0_error                               : in  std_logic                     := 'X';             -- error
+			ext_sink_0_ready                               : out std_logic;                                        -- ready
+			ext_source_valid                               : out std_logic;                                        -- valid
+			ext_source_data                                : out std_logic_vector(63 downto 0);                    -- data
+			ext_source_sop                                 : out std_logic;                                        -- startofpacket
+			ext_source_eop                                 : out std_logic;                                        -- endofpacket
+			ext_source_empty                               : out std_logic_vector(2 downto 0);                     -- empty
+			ext_source_error                               : out std_logic_vector(5 downto 0);                     -- error
+			ext_source_pkt_type                            : out std_logic_vector(2 downto 0);                     -- conduit
+			err_interrupt                                  : out std_logic;                                        -- conduit
+			source_pc_id                                   : out std_logic_vector(31 downto 0);                    -- conduit
+			source_seq_id                                  : out std_logic_vector(31 downto 0);                    -- conduit
+			source_rtc_id                                  : out std_logic_vector(15 downto 0);                    -- conduit
+			source_msg_type                                : out std_logic_vector(7 downto 0);                     -- conduit
+			source_mem_acc_id                              : out std_logic_vector(7 downto 0);                     -- conduit
+			source_op_type                                 : out std_logic_vector(7 downto 0);                     -- conduit
+			source_element_id                              : out std_logic_vector(15 downto 0);                    -- conduit
+			source_address                                 : out std_logic_vector(47 downto 0);                    -- conduit
+			source_length                                  : out std_logic_vector(15 downto 0);                    -- conduit
+			source_reset_id                                : out std_logic_vector(15 downto 0);                    -- conduit
+			source_reset_op                                : out std_logic_vector(7 downto 0);                     -- conduit
+			source_event_id                                : out std_logic_vector(7 downto 0);                     -- conduit
+			source_event_type                              : out std_logic_vector(7 downto 0);                     -- conduit
+			source_notif                                   : out std_logic_vector(7 downto 0);                     -- conduit
+			source_concatenation                           : out std_logic;                                        -- conduit
+			sink_pc_id                                     : in  std_logic_vector(31 downto 0) := (others => 'X'); -- conduit
+			sink_seq_id                                    : in  std_logic_vector(31 downto 0) := (others => 'X'); -- conduit
+			sink_rtc_id                                    : in  std_logic_vector(15 downto 0) := (others => 'X'); -- conduit
+			sink_concatenation                             : in  std_logic                     := 'X';             -- conduit
+			sink_msg_type                                  : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- conduit
+			sink_mem_acc_id                                : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- conduit
+			sink_op_type                                   : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- conduit
+			sink_element_id                                : in  std_logic_vector(15 downto 0) := (others => 'X'); -- conduit
+			sink_address                                   : in  std_logic_vector(47 downto 0) := (others => 'X'); -- conduit
+			sink_length                                    : in  std_logic_vector(15 downto 0) := (others => 'X'); -- conduit
+			sink_reset_id                                  : in  std_logic_vector(15 downto 0) := (others => 'X'); -- conduit
+			sink_reset_op                                  : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- conduit
+			sink_event_id                                  : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- conduit
+			sink_event_type                                : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- conduit
+			tx_lanes_stable                                : in  std_logic                     := 'X';             -- conduit
+			rx_pcs_ready                                   : in  std_logic                     := 'X';             -- conduit
+			ptp_offset_timestamp                           : out std_logic_vector(15 downto 0);                    -- conduit
+			ptp_offset_correction_field                    : out std_logic_vector(15 downto 0);                    -- conduit
+			ptp_timestamp_insert                           : out std_logic;                                        -- conduit
+			ptp_tx_etstamp_ins_ctrl_residence_time_update  : out std_logic;                                        -- conduit
+			ptp_timestamp_request_fingerprint              : out std_logic_vector(7 downto 0);                     -- conduit
+			ptp_timestamp_request_valid                    : out std_logic;                                        -- conduit
+			tx_etstamp_ins_ctrl_timestamp_format           : out std_logic;                                        -- conduit
+			tx_etstamp_ins_ctrl_residence_time_calc_format : out std_logic;                                        -- conduit
+			tx_etstamp_ins_ctrl_offset_checksum_field      : out std_logic_vector(15 downto 0);                    -- conduit
+			tx_etstamp_ins_ctrl_offset_checksum_correction : out std_logic_vector(15 downto 0);                    -- conduit
+			tx_etstamp_ins_ctrl_ingress_timestamp_96b      : out std_logic_vector(95 downto 0);                    -- conduit
+			tx_etstamp_ins_ctrl_checksum_zero              : out std_logic;                                        -- conduit
+			tx_etstamp_ins_ctrl_checksum_correct           : out std_logic;                                        -- conduit
+			tx_egress_timestamp_96b_valid                  : in  std_logic                     := 'X';             -- conduit
+			tx_egress_timestamp_96b_data                   : in  std_logic_vector(95 downto 0) := (others => 'X'); -- conduit
+			tx_egress_timestamp_96b_fingerprint            : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- conduit
+			rx_ingress_timestamp_96b_valid                 : in  std_logic                     := 'X';             -- conduit
+			rx_ingress_timestamp_96b_data                  : in  std_logic_vector(95 downto 0) := (others => 'X'); -- conduit
+			ext_sink_0_tx_egress_timestamp_96b_valid       : out std_logic;                                        -- conduit
+			ext_sink_0_tx_egress_timestamp_96b_data        : out std_logic_vector(95 downto 0);                    -- conduit
+			ext_rx_ingress_timestamp_96b_data              : out std_logic_vector(95 downto 0);                    -- conduit
+			ext_sink_0_tx_ingress_timestamp_96b_data       : in  std_logic_vector(95 downto 0) := (others => 'X'); -- conduit
+			ptp_tx_ingress_timestamp_96b_data              : out std_logic_vector(95 downto 0);                    -- conduit
+			rx_tod_time_of_day_96b_data                    : in  std_logic_vector(95 downto 0) := (others => 'X'); -- conduit
+			tx_tod_time_of_day_96b_data                    : in  std_logic_vector(95 downto 0) := (others => 'X'); -- conduit
+			tx_transport_c_u                               : in  std_logic                     := 'X';             -- conduit
+			rx_transport_c_u                               : out std_logic;                                        -- conduit
+			sink_pkt_size                                  : in  std_logic_vector(15 downto 0) := (others => 'X'); -- conduit
+			sink_pkt_checksum                              : in  std_logic_vector(15 downto 0) := (others => 'X'); -- conduit
+			ext_sink_0_tx_egress_timestamp_96b_fingerprint : out std_logic_vector(5 downto 0);                     -- conduit
+			ext_sink_0_timestamp_request_fingerprint       : in  std_logic_vector(5 downto 0)  := (others => 'X'); -- conduit
+			ext_sink_0_timestamp_request_valid             : in  std_logic                     := 'X'              -- conduit
+		);
+	end component ecpri_hwtcl_top;
+

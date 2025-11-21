@@ -1,0 +1,45 @@
+set_global_assignment -entity "ram" -library "ram" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "ram" -library "ram" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "ram" -library "ram" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "ram" -library "ram" -name IP_TOOL_VENDOR_NAME "Intel Corporation"
+set_global_assignment -entity "ram" -library "ram" -name IP_TOP_LEVEL_COMPONENT_NAME "altera_avalon_onchip_memory2"
+set_global_assignment -entity "ram" -library "ram" -name PRE_COMPILED_MODULE "ON"
+set_global_assignment -entity "ram" -library "ram" -name OCS_IP_FILE "/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/subsys_niosv/ram.ip"
+set_global_assignment -entity "ram" -library "ram" -name OCS_IP_TYPE "altera_avalon_onchip_memory2"
+set_global_assignment -entity "ram" -library "ram" -name OCS_IP_VERSION "19.3.9"
+set_global_assignment -entity "ram" -library "ram" -name OCS_IP_HASH "n4ihqwi"
+set_global_assignment -library "ram" -name SOPCINFO_FILE [file join $::quartus(qip_path) "ram.sopcinfo"]
+set_global_assignment -entity "ram" -library "ram" -name SLD_INFO "QSYS_NAME ram HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "ram" -name MISC_FILE [file join $::quartus(qip_path) "ram.cmp"]
+set_global_assignment -entity "ram" -library "ram" -name IP_TARGETED_DEVICE_FAMILY "Agilex 7"
+set_global_assignment -entity "ram" -library "ram" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 7}"
+set_global_assignment -entity "ram" -library "ram" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "ram" -name MISC_FILE [file join $::quartus(qip_path) "../ram.ip"]
+
+set_global_assignment -entity "ram_altera_avalon_onchip_memory2_1939_n4ihqwi" -library "altera_avalon_onchip_memory2_1939" -name IP_COMPONENT_NAME "cmFtX2FsdGVyYV9hdmFsb25fb25jaGlwX21lbW9yeTJfMTkzOV9uNGlocXdp"
+set_global_assignment -entity "ram_altera_avalon_onchip_memory2_1939_n4ihqwi" -library "altera_avalon_onchip_memory2_1939" -name IP_COMPONENT_DISPLAY_NAME "T24tQ2hpcCBNZW1vcnkgKFJBTSBvciBST00pIEludGVsIEZQR0EgSVA="
+set_global_assignment -entity "ram_altera_avalon_onchip_memory2_1939_n4ihqwi" -library "altera_avalon_onchip_memory2_1939" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "ram_altera_avalon_onchip_memory2_1939_n4ihqwi" -library "altera_avalon_onchip_memory2_1939" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "ram_altera_avalon_onchip_memory2_1939_n4ihqwi" -library "altera_avalon_onchip_memory2_1939" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "ram_altera_avalon_onchip_memory2_1939_n4ihqwi" -library "altera_avalon_onchip_memory2_1939" -name IP_COMPONENT_VERSION "MTkuMy45"
+set_global_assignment -entity "ram_altera_avalon_onchip_memory2_1939_n4ihqwi" -library "altera_avalon_onchip_memory2_1939" -name IP_COMPONENT_GROUP "QmFzaWMgRnVuY3Rpb25zL09uIENoaXAgTWVtb3J5"
+set_global_assignment -entity "ram_altera_avalon_onchip_memory2_1939_n4ihqwi" -library "altera_avalon_onchip_memory2_1939" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzEzMC8="
+set_global_assignment -entity "ram_altera_avalon_onchip_memory2_1939_n4ihqwi" -library "altera_avalon_onchip_memory2_1939" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2xybzE0NjU0MDc0NzQ4MzMuaHRtbCNoYnIxNTk5NzUxMDc0Mzgy"
+set_global_assignment -entity "ram" -library "ram" -name IP_COMPONENT_NAME "cmFt"
+set_global_assignment -entity "ram" -library "ram" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "ram" -library "ram" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "ram" -library "ram" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "ram" -library "ram" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "ram" -library "ram" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "altera_avalon_onchip_memory2_1939" -name SOURCE_FILE [file join $::quartus(qip_path) "altera_avalon_onchip_memory2_1939/synth/ram_ram.hex"]
+set_global_assignment -library "altera_avalon_onchip_memory2_1939" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_avalon_onchip_memory2_1939/synth/ram_altera_avalon_onchip_memory2_1939_n4ihqwi.v"]
+set_global_assignment -library "ram" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/ram.v"]
+
+
+set_global_assignment -entity "ram_altera_avalon_onchip_memory2_1939_n4ihqwi" -library "altera_avalon_onchip_memory2_1939" -name IP_TOOL_NAME "altera_avalon_onchip_memory2"
+set_global_assignment -entity "ram_altera_avalon_onchip_memory2_1939_n4ihqwi" -library "altera_avalon_onchip_memory2_1939" -name IP_TOOL_VERSION "19.3.9"
+set_global_assignment -entity "ram_altera_avalon_onchip_memory2_1939_n4ihqwi" -library "altera_avalon_onchip_memory2_1939" -name IP_TOOL_ENV "QsysPrimePro"
+

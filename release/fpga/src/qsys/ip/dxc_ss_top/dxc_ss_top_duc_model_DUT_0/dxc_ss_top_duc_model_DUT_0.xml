@@ -1,0 +1,1394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.10.16.14:44:46"
+ outputDirectory="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGFB027R24C2E3V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="3"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BUS_CLOCK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BUS_CLOCK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BUS_CLOCK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clock" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="clock_reset" kind="reset" start="0">
+   <property name="associatedClock" value="clock" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="areset" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="bus_clock" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="bus_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="bus_clock_reset" kind="reset" start="0">
+   <property name="associatedClock" value="bus_clock" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="bus_areset" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="bus" kind="avalon" start="0">
+   <property name="addressAlignment" value="DYNAMIC" />
+   <property name="addressGroup" value="0" />
+   <property name="addressSpan" value="65536" />
+   <property name="addressUnits" value="WORDS" />
+   <property name="alwaysBurstMaxBurst" value="false" />
+   <property name="associatedClock" value="bus_clock" />
+   <property name="associatedReset" value="bus_clock_reset" />
+   <property name="bitsPerSymbol" value="8" />
+   <property name="bridgedAddressOffset" value="0" />
+   <property name="bridgesToMaster" value="" />
+   <property name="burstOnBurstBoundariesOnly" value="false" />
+   <property name="burstcountUnits" value="WORDS" />
+   <property name="constantBurstBehavior" value="false" />
+   <property name="explicitAddressSpan" value="0" />
+   <property name="holdTime" value="0" />
+   <property name="interleaveBursts" value="false" />
+   <property name="isBigEndian" value="false" />
+   <property name="isFlash" value="false" />
+   <property name="isMemoryDevice" value="false" />
+   <property name="isNonVolatileStorage" value="false" />
+   <property name="linewrapBursts" value="false" />
+   <property name="maximumPendingReadTransactions" value="6" />
+   <property name="maximumPendingWriteTransactions" value="0" />
+   <property name="minimumReadLatency" value="1" />
+   <property name="minimumResponseLatency" value="1" />
+   <property name="minimumUninterruptedRunLength" value="1" />
+   <property name="prSafe" value="false" />
+   <property name="printableDevice" value="false" />
+   <property name="readLatency" value="0" />
+   <property name="readWaitStates" value="1" />
+   <property name="readWaitTime" value="1" />
+   <property name="registerIncomingSignals" value="false" />
+   <property name="registerOutgoingSignals" value="false" />
+   <property name="setupTime" value="0" />
+   <property name="timingUnits" value="Cycles" />
+   <property name="transparentBridge" value="false" />
+   <property name="waitrequestAllowance" value="0" />
+   <property name="wellBehavedWaitrequest" value="false" />
+   <property name="writeLatency" value="0" />
+   <property name="writeWaitStates" value="0" />
+   <property name="writeWaitTime" value="0" />
+   <property name="dfhFeatureGuid" value="0" />
+   <property name="dfhGroupId" value="0" />
+   <property name="dfhParameterId" value="" />
+   <property name="dfhParameterName" value="" />
+   <property name="dfhParameterVersion" value="" />
+   <property name="dfhParameterData" value="" />
+   <property name="dfhParameterDataLength" value="" />
+   <property name="dfhFeatureMajorVersion" value="0" />
+   <property name="dfhFeatureMinorVersion" value="0" />
+   <property name="dfhFeatureId" value="35" />
+   <property name="dfhFeatureType" value="3" />
+   <port name="busIn_address" direction="input" role="address" width="14" />
+   <port name="busIn_read" direction="input" role="read" width="1" />
+   <port name="busIn_write" direction="input" role="write" width="1" />
+   <port name="busIn_writedata" direction="input" role="writedata" width="32" />
+   <port name="busOut_readdata" direction="output" role="readdata" width="32" />
+   <port
+       name="busOut_readdatavalid"
+       direction="output"
+       role="readdatavalid"
+       width="1" />
+   <port
+       name="busOut_waitrequest"
+       direction="output"
+       role="waitrequest"
+       width="1" />
+  </interface>
+  <interface name="exp" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="DUC_Valid_l1_s"
+       direction="input"
+       role="valid_DUC_Valid_l1_s"
+       width="1" />
+   <port
+       name="DUC_Chan_l1_s"
+       direction="input"
+       role="channel_DUC_Chan_l1_s"
+       width="8" />
+   <port
+       name="DUC_Data_l1_im"
+       direction="input"
+       role="data_DUC_Data_l1_im"
+       width="16" />
+   <port
+       name="DUC_Data_l1_re"
+       direction="input"
+       role="data_DUC_Data_l1_re"
+       width="16" />
+   <port
+       name="DUC_NCO_sync_0"
+       direction="input"
+       role="data_DUC_NCO_sync_0"
+       width="1" />
+   <port
+       name="DUC_NCO_sync_1"
+       direction="input"
+       role="data_DUC_NCO_sync_1"
+       width="1" />
+   <port
+       name="DUC_NCO_sync_2"
+       direction="input"
+       role="data_DUC_NCO_sync_2"
+       width="1" />
+   <port
+       name="DUC_NCO_sync_3"
+       direction="input"
+       role="data_DUC_NCO_sync_3"
+       width="1" />
+   <port
+       name="BW_Config_CC1_s"
+       direction="input"
+       role="data_BW_Config_CC1_s"
+       width="8" />
+   <port
+       name="DUC_Valid_Out_s"
+       direction="output"
+       role="valid_DUC_Valid_Out_s"
+       width="1" />
+   <port
+       name="DUC_Chan_Out_s"
+       direction="output"
+       role="channel_DUC_Chan_Out_s"
+       width="8" />
+   <port
+       name="DUC_Data_Out_0im"
+       direction="output"
+       role="data_DUC_Data_Out_0im"
+       width="16" />
+   <port
+       name="DUC_Data_Out_0re"
+       direction="output"
+       role="data_DUC_Data_Out_0re"
+       width="16" />
+   <port
+       name="DUC_Data_Out_1im"
+       direction="output"
+       role="data_DUC_Data_Out_1im"
+       width="16" />
+   <port
+       name="DUC_Data_Out_1re"
+       direction="output"
+       role="data_DUC_Data_Out_1re"
+       width="16" />
+   <port
+       name="DUC_Data_Out_2im"
+       direction="output"
+       role="data_DUC_Data_Out_2im"
+       width="16" />
+   <port
+       name="DUC_Data_Out_2re"
+       direction="output"
+       role="data_DUC_Data_Out_2re"
+       width="16" />
+   <port
+       name="DUC_Data_Out_3im"
+       direction="output"
+       role="data_DUC_Data_Out_3im"
+       width="16" />
+   <port
+       name="DUC_Data_Out_3re"
+       direction="output"
+       role="data_DUC_Data_Out_3re"
+       width="16" />
+   <port
+       name="duc_l1_vout_s"
+       direction="output"
+       role="valid_duc_l1_vout_s"
+       width="1" />
+   <port
+       name="duc_l1_cout_s"
+       direction="output"
+       role="channel_duc_l1_cout_s"
+       width="8" />
+   <port
+       name="duc_l1_dout_0im"
+       direction="output"
+       role="data_duc_l1_dout_0im"
+       width="16" />
+   <port
+       name="duc_l1_dout_0re"
+       direction="output"
+       role="data_duc_l1_dout_0re"
+       width="16" />
+   <port
+       name="duc_l1_dout_1im"
+       direction="output"
+       role="data_duc_l1_dout_1im"
+       width="16" />
+   <port
+       name="duc_l1_dout_1re"
+       direction="output"
+       role="data_duc_l1_dout_1re"
+       width="16" />
+   <port
+       name="duc_l1_dout_2im"
+       direction="output"
+       role="data_duc_l1_dout_2im"
+       width="16" />
+   <port
+       name="duc_l1_dout_2re"
+       direction="output"
+       role="data_duc_l1_dout_2re"
+       width="16" />
+   <port
+       name="duc_l1_dout_3im"
+       direction="output"
+       role="data_duc_l1_dout_3im"
+       width="16" />
+   <port
+       name="duc_l1_dout_3re"
+       direction="output"
+       role="data_duc_l1_dout_3re"
+       width="16" />
+  </interface>
+ </perimeter>
+ <entity
+   kind="dxc_ss_top_duc_model_DUT_0"
+   version="1.0"
+   name="dxc_ss_top_duc_model_DUT_0">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CLOCK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLOCK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_BUS_CLOCK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="AGFB027R24C2E2VR2" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_BUS_CLOCK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <parameter name="AUTO_BUS_CLOCK_CLOCK_DOMAIN" value="-1" />
+  <generatedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/synth/dxc_ss_top_duc_model_DUT_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/synth/dxc_ss_top_duc_model_DUT_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/dspba/rtl/duc_model_rtl/duc_model/duc_model_DUT_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="dxc_ss_top_duc_model_DUT_0">"Generating: dxc_ss_top_duc_model_DUT_0"</message>
+   <message level="Info" culprit="dxc_ss_top_duc_model_DUT_0">"Generating: duc_model_DUT"</message>
+  </messages>
+ </entity>
+ <entity kind="duc_model_DUT" version="1.0" name="duc_model_DUT">
+  <generatedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/dspba_library_ver.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_safe_path_flat_ver.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_safe_path_flat.vhd"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/busFabric_duc_model_DUT_2ouiflr06j68696x6u0qu5xajz.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_Scale.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_Scale1.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_rm.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm0.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm1.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm2.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm3.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm4.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm5.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm6.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm7.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm8.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm9.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm10.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm11.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm12.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm13.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm14.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm15.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm16.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm17.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm18.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm19.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm20.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm21.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm22.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm23.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm24.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm25.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm26.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm27.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm28.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm29.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm30.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm31.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm32.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm33.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm34.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm35.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm36.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm37.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm38.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm39.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm40.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm41.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm42.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm43.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm44.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm45.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm46.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm47.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm48.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm49.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm50.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm51.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm52.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm53.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm54.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm55.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm56.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm57.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm58.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm59.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm60.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm61.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm62.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm63.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm64.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_rm.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm0.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm1.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm2.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm3.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm4.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm5.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm6.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm7.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm8.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm9.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm10.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm11.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm12.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm13.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm14.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm15.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm16.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm17.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm18.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm19.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm20.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm21.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm22.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm23.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm24.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm25.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm26.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm27.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm28.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm29.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm30.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm31.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm32.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm33.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm34.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm35.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm36.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm37.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm38.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm39.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm40.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm41.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm42.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm43.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm44.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm45.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm46.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm47.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm48.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm49.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm50.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm51.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm52.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm53.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm54.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm55.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm56.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm57.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm58.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm59.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm60.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm61.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm62.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm63.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm64.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Filter_Reconfig.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Filter_Reconfig_Lut_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_ComplexMixer.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_ComplexMixer_Scale1.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_readbackMem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u0_sinTable.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u0_cosTable.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u1_sinTable.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u1_cosTable.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u2_sinTable.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u2_cosTable.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u3_sinTable.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u3_cosTable.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_DUC_l1.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB1.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB1_HB1_im.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB1_HB1_re.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB1_scale_HB1_im.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB1_scale_HB1_re.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB2.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB2_HB2_im.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB2_HB2_re.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB2_scale_HB2_im.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB2_scale_HB2_re.sv"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/dspba_library_ver.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_safe_path_flat_ver.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_safe_path_flat.vhd"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/busFabric_duc_model_DUT_2ouiflr06j68696x6u0qu5xajz.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_Scale.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_Scale1.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_rm.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm0.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm1.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm2.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm3.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm4.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm5.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm6.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm7.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm8.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm9.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm10.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm11.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm12.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm13.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm14.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm15.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm16.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm17.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm18.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm19.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm20.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm21.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm22.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm23.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm24.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm25.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm26.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm27.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm28.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm29.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm30.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm31.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm32.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm33.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm34.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm35.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm36.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm37.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm38.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm39.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm40.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm41.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm42.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm43.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm44.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm45.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm46.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm47.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm48.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm49.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm50.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm51.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm52.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm53.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm54.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm55.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm56.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm57.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm58.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm59.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm60.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm61.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm62.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm63.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm64.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_rm.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm0.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm1.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm2.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm3.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm4.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm5.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm6.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm7.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm8.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm9.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm10.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm11.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm12.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm13.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm14.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm15.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm16.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm17.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm18.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm19.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm20.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm21.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm22.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm23.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm24.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm25.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm26.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm27.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm28.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm29.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm30.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm31.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm32.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm33.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm34.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm35.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm36.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm37.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm38.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm39.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm40.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm41.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm42.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm43.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm44.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm45.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm46.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm47.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm48.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm49.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm50.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm51.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm52.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm53.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm54.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm55.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm56.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm57.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm58.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm59.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm60.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm61.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm62.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm63.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm64.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Filter_Reconfig.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Filter_Reconfig_Lut_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_ComplexMixer.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_ComplexMixer_Scale1.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_readbackMem.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u0_sinTable.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u0_cosTable.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u1_sinTable.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u1_cosTable.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u2_sinTable.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u2_cosTable.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u3_sinTable.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u3_cosTable.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_DUC_l1.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB1.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB1_HB1_im.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB1_HB1_re.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB1_scale_HB1_im.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB1_scale_HB1_re.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB2.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB2_HB2_im.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB2_HB2_re.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB2_scale_HB2_im.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dxc_ss_top/dxc_ss_top_duc_model_DUT_0/duc_model_DUT_10/synth/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB2_scale_HB2_re.sv"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/dspba/rtl/duc_model_rtl/duc_model/duc_model_DUT_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="dxc_ss_top_duc_model_DUT_0" as="duc_model_DUT_0" />
+  <messages>
+   <message level="Info" culprit="dxc_ss_top_duc_model_DUT_0">"Generating: duc_model_DUT"</message>
+  </messages>
+ </entity>
+</deploy>

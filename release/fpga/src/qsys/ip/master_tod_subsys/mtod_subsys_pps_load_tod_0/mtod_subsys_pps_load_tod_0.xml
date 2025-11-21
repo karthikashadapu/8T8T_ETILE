@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.11.21.13:10:05"
+ outputDirectory="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/master_tod_subsys/mtod_subsys_pps_load_tod_0/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGFB014R24B2I2V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="2"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_PERIOD_CLOCK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_PERIOD_CLOCK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_PERIOD_CLOCK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CSR_CLOCK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CSR_CLOCK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CSR_CLOCK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="period_clock" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="period_clock" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="reset" kind="reset" start="0">
+   <property name="associatedClock" value="period_clock" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="reset" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="csr_clock" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="csr_clock" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="csr_reset" kind="reset" start="0">
+   <property name="associatedClock" value="period_clock" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="csr_reset" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="csr" kind="avalon" start="0">
+   <property name="addressAlignment" value="DYNAMIC" />
+   <property name="addressGroup" value="0" />
+   <property name="addressSpan" value="256" />
+   <property name="addressUnits" value="WORDS" />
+   <property name="alwaysBurstMaxBurst" value="false" />
+   <property name="associatedClock" value="csr_clock" />
+   <property name="associatedReset" value="csr_reset" />
+   <property name="bitsPerSymbol" value="8" />
+   <property name="bridgedAddressOffset" value="0" />
+   <property name="bridgesToMaster" value="" />
+   <property name="burstOnBurstBoundariesOnly" value="false" />
+   <property name="burstcountUnits" value="WORDS" />
+   <property name="constantBurstBehavior" value="false" />
+   <property name="explicitAddressSpan" value="0" />
+   <property name="holdTime" value="0" />
+   <property name="interleaveBursts" value="false" />
+   <property name="isBigEndian" value="false" />
+   <property name="isFlash" value="false" />
+   <property name="isMemoryDevice" value="false" />
+   <property name="isNonVolatileStorage" value="false" />
+   <property name="linewrapBursts" value="false" />
+   <property name="maximumPendingReadTransactions" value="0" />
+   <property name="maximumPendingWriteTransactions" value="0" />
+   <property name="minimumReadLatency" value="1" />
+   <property name="minimumResponseLatency" value="1" />
+   <property name="minimumUninterruptedRunLength" value="1" />
+   <property name="prSafe" value="false" />
+   <property name="printableDevice" value="false" />
+   <property name="readLatency" value="1" />
+   <property name="readWaitStates" value="1" />
+   <property name="readWaitTime" value="1" />
+   <property name="registerIncomingSignals" value="false" />
+   <property name="registerOutgoingSignals" value="false" />
+   <property name="setupTime" value="0" />
+   <property name="timingUnits" value="Cycles" />
+   <property name="transparentBridge" value="false" />
+   <property name="waitrequestAllowance" value="0" />
+   <property name="wellBehavedWaitrequest" value="false" />
+   <property name="writeLatency" value="0" />
+   <property name="writeWaitStates" value="0" />
+   <property name="writeWaitTime" value="0" />
+   <property name="dfhFeatureGuid" value="0" />
+   <property name="dfhGroupId" value="0" />
+   <property name="dfhParameterId" value="" />
+   <property name="dfhParameterName" value="" />
+   <property name="dfhParameterVersion" value="" />
+   <property name="dfhParameterData" value="" />
+   <property name="dfhParameterDataLength" value="" />
+   <property name="dfhFeatureMajorVersion" value="0" />
+   <property name="dfhFeatureMinorVersion" value="0" />
+   <property name="dfhFeatureId" value="35" />
+   <property name="dfhFeatureType" value="3" />
+   <port name="csr_readdata" direction="output" role="readdata" width="32" />
+   <port name="csr_write" direction="input" role="write" width="1" />
+   <port name="csr_read" direction="input" role="read" width="1" />
+   <port name="csr_writedata" direction="input" role="writedata" width="32" />
+   <port
+       name="csr_waitrequest"
+       direction="output"
+       role="waitrequest"
+       width="1" />
+   <port name="csr_address" direction="input" role="address" width="6" />
+  </interface>
+  <interface name="pps_interface" kind="conduit" start="0">
+   <property name="associatedClock" value="period_clock" />
+   <property name="associatedReset" value="reset" />
+   <property name="prSafe" value="false" />
+   <port
+       name="pps_pulse_per_second"
+       direction="input"
+       role="pulse_per_second"
+       width="1" />
+  </interface>
+  <interface name="time_of_day_96b" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="time_of_day_96b" direction="input" role="data" width="96" />
+  </interface>
+  <interface name="time_of_data_96b_load" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="time_of_data_96b_load_data"
+       direction="output"
+       role="data"
+       width="96" />
+   <port
+       name="time_of_data_96b_load_valid"
+       direction="output"
+       role="valid"
+       width="1" />
+  </interface>
+  <interface name="pps_irq" kind="interrupt" start="0">
+   <property
+       name="associatedAddressablePoint"
+       value="mtod_subsys_pps_load_tod_0.csr" />
+   <property name="associatedClock" value="csr_clock" />
+   <property name="associatedReset" value="" />
+   <property name="bridgedReceiverOffset" value="0" />
+   <property name="bridgesToReceiver" value="" />
+   <property name="irqScheme" value="NONE" />
+   <port name="pps_irq" direction="output" role="irq" width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   kind="mtod_subsys_pps_load_tod_0"
+   version="1.0"
+   name="mtod_subsys_pps_load_tod_0">
+  <parameter name="AUTO_PERIOD_CLOCK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CSR_CLOCK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="AGFB014R24B2I2V" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_PERIOD_CLOCK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_CSR_CLOCK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_PERIOD_CLOCK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <parameter name="AUTO_CSR_CLOCK_CLOCK_DOMAIN" value="-1" />
+  <generatedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/master_tod_subsys/mtod_subsys_pps_load_tod_0/synth/mtod_subsys_pps_load_tod_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/master_tod_subsys/mtod_subsys_pps_load_tod_0/synth/mtod_subsys_pps_load_tod_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/master_tod_subsys/mtod_subsys_pps_load_tod_0.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/pps_load_tod/pps_load_tod_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="mtod_subsys_pps_load_tod_0">"Generating: mtod_subsys_pps_load_tod_0"</message>
+   <message level="Info" culprit="mtod_subsys_pps_load_tod_0">"Generating: pps_load_tod"</message>
+  </messages>
+ </entity>
+ <entity kind="pps_load_tod" version="1.0" name="pps_load_tod">
+  <generatedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/master_tod_subsys/mtod_subsys_pps_load_tod_0/pps_load_tod_10/synth/pps_load_tod.v"
+       attributes="TOP_LEVEL_FILE" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/master_tod_subsys/mtod_subsys_pps_load_tod_0/pps_load_tod_10/synth/pps_load_tod.v"
+       attributes="TOP_LEVEL_FILE" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/pps_load_tod/pps_load_tod_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="mtod_subsys_pps_load_tod_0"
+     as="mtod_subsys_pps_load_tod_0" />
+  <messages>
+   <message level="Info" culprit="mtod_subsys_pps_load_tod_0">"Generating: pps_load_tod"</message>
+  </messages>
+ </entity>
+</deploy>

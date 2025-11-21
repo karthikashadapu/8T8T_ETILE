@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="dxc_ss_10/sim/dxc_ss.sv"
+   type="SYSTEM_VERILOG"
+   library="dxc_ss_10">
+  <include path="dxc_ss_10/sim/def_param.vh" />
+ </file>
+ <file
+   path="dxc_ss_10/sim/ddc_top_ss.sv"
+   type="SYSTEM_VERILOG"
+   library="dxc_ss_10">
+  <include path="dxc_ss_10/sim/def_param.vh" />
+ </file>
+ <file
+   path="dxc_ss_10/sim/duc_top_ss.sv"
+   type="SYSTEM_VERILOG"
+   library="dxc_ss_10">
+  <include path="dxc_ss_10/sim/def_param.vh" />
+ </file>
+ <file
+   path="dxc_ss_10/sim/DXC_SS_Registers.v"
+   type="VERILOG"
+   library="dxc_ss_10">
+  <include path="dxc_ss_10/sim/def_param.vh" />
+ </file>
+ <file
+   path="sim/dxc_ss_top_dxc_ss_0.v"
+   type="VERILOG"
+   library="dxc_ss_top_dxc_ss_0"
+   hasInlineConfiguration="true" />
+ <topLevel name="dxc_ss_top_dxc_ss_0.dxc_ss_top_dxc_ss_0" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB014R24B2I2V" />
+</simPackage>

@@ -1,0 +1,10 @@
+	component ghrd_f_mtod_master_pll is
+		port (
+			refclk     : in  std_logic := 'X'; -- clk
+			locked     : out std_logic;        -- export
+			rst        : in  std_logic := 'X'; -- reset
+			permit_cal : in  std_logic := 'X'; -- export
+			outclk_0   : out std_logic         -- clk
+		);
+	end component ghrd_f_mtod_master_pll;
+

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="ecpri_oran_10/sim/struct_typedef.sv"
+   type="SYSTEM_VERILOG"
+   library="ecpri_oran_10" />
+ <file
+   path="ecpri_oran_10/sim/ecpri_oran_ss.sv"
+   type="SYSTEM_VERILOG"
+   library="ecpri_oran_10" />
+ <file
+   path="ecpri_oran_10/sim/ul_eaxc_config.v"
+   type="VERILOG"
+   library="ecpri_oran_10" />
+ <file
+   path="ecpri_oran_10/sim/ul_rtc_id_config.v"
+   type="VERILOG"
+   library="ecpri_oran_10" />
+ <file
+   path="ecpri_oran_10/sim/dl_rtc_id_config.v"
+   type="VERILOG"
+   library="ecpri_oran_10" />
+ <file
+   path="ecpri_oran_10/sim/dl_eaxc_config.v"
+   type="VERILOG"
+   library="ecpri_oran_10" />
+ <file
+   path="ecpri_oran_10/sim/prach_data_in_long.mif"
+   type="MIF"
+   library="ecpri_oran_10" />
+ <file
+   path="ecpri_oran_10/sim/cplane_pusch_fdv.mif"
+   type="MIF"
+   library="ecpri_oran_10" />
+ <file
+   path="ecpri_oran_10/sim/cplane_prach_fdv.mif"
+   type="MIF"
+   library="ecpri_oran_10" />
+ <file
+   path="ecpri_oran_10/sim/map_table.mif"
+   type="MIF"
+   library="ecpri_oran_10" />
+ <file
+   path="ecpri_oran_10/sim/uplink_arbiter.v"
+   type="VERILOG"
+   library="ecpri_oran_10" />
+ <file
+   path="ecpri_oran_10/sim/cu_plane_coupling_top.v"
+   type="VERILOG"
+   library="ecpri_oran_10" />
+ <file
+   path="ecpri_oran_10/sim/cu_plane_coupling_prach_wrapper.v"
+   type="VERILOG"
+   library="ecpri_oran_10" />
+ <file
+   path="ecpri_oran_10/sim/cu_plane_coupling_pusch_wrapper.v"
+   type="VERILOG"
+   library="ecpri_oran_10" />
+ <file
+   path="ecpri_oran_10/sim/prach_fdv_read_state_machine.v"
+   type="VERILOG"
+   library="ecpri_oran_10" />
+ <file
+   path="ecpri_oran_10/sim/pusch_fdv_read_state_machine.v"
+   type="VERILOG"
+   library="ecpri_oran_10" />
+ <file
+   path="ecpri_oran_10/sim/pusch_fifo_read_state_machine.v"
+   type="VERILOG"
+   library="ecpri_oran_10" />
+ <file
+   path="ecpri_oran_10/sim/prach_fifo_read_state_machine.v"
+   type="VERILOG"
+   library="ecpri_oran_10" />
+ <file
+   path="ecpri_oran_10/sim/pusch_raw_packet_formation.v"
+   type="VERILOG"
+   library="ecpri_oran_10" />
+ <file
+   path="ecpri_oran_10/sim/prach_raw_packet_formation.v"
+   type="VERILOG"
+   library="ecpri_oran_10" />
+ <file
+   path="ecpri_oran_10/sim/pusch_cplane_fdv_buffer.v"
+   type="VERILOG"
+   library="ecpri_oran_10" />
+ <file
+   path="ecpri_oran_10/sim/prach_cplane_fdv_buffer.v"
+   type="VERILOG"
+   library="ecpri_oran_10" />
+ <file
+   path="ecpri_oran_10/sim/oran_wrapper.v"
+   type="VERILOG"
+   library="ecpri_oran_10" />
+ <file
+   path="ecpri_oran_10/sim/Oran_SS_Registers.v"
+   type="VERILOG"
+   library="ecpri_oran_10" />
+ <file
+   path="ecpri_oran_10/sim/idle_time_counter.v"
+   type="VERILOG"
+   library="ecpri_oran_10" />
+ <file
+   path="ecpri_oran_10/sim/xran_timestamp.v"
+   type="VERILOG"
+   library="ecpri_oran_10" />
+ <file
+   path="sim/ecpri_oran_top_ecpri_oran_0.v"
+   type="VERILOG"
+   library="ecpri_oran_top_ecpri_oran_0"
+   hasInlineConfiguration="true" />
+ <topLevel name="ecpri_oran_top_ecpri_oran_0.ecpri_oran_top_ecpri_oran_0" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB014R24B2I2V" />
+</simPackage>

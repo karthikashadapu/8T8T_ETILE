@@ -1,0 +1,43 @@
+	component storeandforward_fifo_pusch is
+		generic (
+			SYMBOLS_PER_BEAT    : integer := 2;
+			BITS_PER_SYMBOL     : integer := 128;
+			FIFO_DEPTH          : integer := 1024;
+			CHANNEL_WIDTH       : integer := 16;
+			ERROR_WIDTH         : integer := 0;
+			USE_PACKETS         : integer := 1;
+			USE_FILL_LEVEL      : integer := 1;
+			EMPTY_LATENCY       : integer := 3;
+			USE_MEMORY_BLOCKS   : integer := 1;
+			USE_STORE_FORWARD   : integer := 1;
+			USE_ALMOST_FULL_IF  : integer := 1;
+			USE_ALMOST_EMPTY_IF : integer := 1;
+			MEM_TYPE            : string  := "M20K"
+		);
+		port (
+			clk               : in  std_logic                      := 'X';             -- clk
+			reset             : in  std_logic                      := 'X';             -- reset
+			csr_address       : in  std_logic_vector(2 downto 0)   := (others => 'X'); -- address
+			csr_read          : in  std_logic                      := 'X';             -- read
+			csr_write         : in  std_logic                      := 'X';             -- write
+			csr_readdata      : out std_logic_vector(31 downto 0);                     -- readdata
+			csr_writedata     : in  std_logic_vector(31 downto 0)  := (others => 'X'); -- writedata
+			almost_full_data  : out std_logic;                                         -- data
+			almost_empty_data : out std_logic;                                         -- data
+			in_data           : in  std_logic_vector(255 downto 0) := (others => 'X'); -- data
+			in_valid          : in  std_logic                      := 'X';             -- valid
+			in_ready          : out std_logic;                                         -- ready
+			in_startofpacket  : in  std_logic                      := 'X';             -- startofpacket
+			in_endofpacket    : in  std_logic                      := 'X';             -- endofpacket
+			in_empty          : in  std_logic_vector(0 downto 0)   := (others => 'X'); -- empty
+			in_channel        : in  std_logic_vector(15 downto 0)  := (others => 'X'); -- channel
+			out_data          : out std_logic_vector(255 downto 0);                    -- data
+			out_valid         : out std_logic;                                         -- valid
+			out_ready         : in  std_logic                      := 'X';             -- ready
+			out_startofpacket : out std_logic;                                         -- startofpacket
+			out_endofpacket   : out std_logic;                                         -- endofpacket
+			out_empty         : out std_logic_vector(0 downto 0);                      -- empty
+			out_channel       : out std_logic_vector(15 downto 0)                      -- channel
+		);
+	end component storeandforward_fifo_pusch;
+

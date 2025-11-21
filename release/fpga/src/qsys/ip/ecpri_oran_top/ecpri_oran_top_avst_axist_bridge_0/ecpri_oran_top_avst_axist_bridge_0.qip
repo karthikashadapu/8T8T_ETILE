@@ -1,0 +1,39 @@
+set_global_assignment -entity "ecpri_oran_top_avst_axist_bridge_0" -library "ecpri_oran_top_avst_axist_bridge_0" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "ecpri_oran_top_avst_axist_bridge_0" -library "ecpri_oran_top_avst_axist_bridge_0" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "ecpri_oran_top_avst_axist_bridge_0" -library "ecpri_oran_top_avst_axist_bridge_0" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "ecpri_oran_top_avst_axist_bridge_0" -library "ecpri_oran_top_avst_axist_bridge_0" -name IP_TOOL_VENDOR_NAME "Altera Corporation"
+set_global_assignment -entity "ecpri_oran_top_avst_axist_bridge_0" -library "ecpri_oran_top_avst_axist_bridge_0" -name IP_TOP_LEVEL_COMPONENT_NAME "avst_axist_bridge"
+set_global_assignment -library "ecpri_oran_top_avst_axist_bridge_0" -name SOPCINFO_FILE [file join $::quartus(qip_path) "ecpri_oran_top_avst_axist_bridge_0.sopcinfo"]
+set_global_assignment -entity "ecpri_oran_top_avst_axist_bridge_0" -library "ecpri_oran_top_avst_axist_bridge_0" -name SLD_INFO "QSYS_NAME ecpri_oran_top_avst_axist_bridge_0 HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "ecpri_oran_top_avst_axist_bridge_0" -name MISC_FILE [file join $::quartus(qip_path) "ecpri_oran_top_avst_axist_bridge_0.cmp"]
+set_global_assignment -entity "ecpri_oran_top_avst_axist_bridge_0" -library "ecpri_oran_top_avst_axist_bridge_0" -name IP_TARGETED_DEVICE_FAMILY "Agilex 7"
+set_global_assignment -entity "ecpri_oran_top_avst_axist_bridge_0" -library "ecpri_oran_top_avst_axist_bridge_0" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 7}"
+set_global_assignment -entity "ecpri_oran_top_avst_axist_bridge_0" -library "ecpri_oran_top_avst_axist_bridge_0" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "ecpri_oran_top_avst_axist_bridge_0" -name MISC_FILE [file join $::quartus(qip_path) "../ecpri_oran_top_avst_axist_bridge_0.ip"]
+
+set_global_assignment -entity "ftile_ghrd_avst_axist_bridge" -library "avst_axist_bridge_14" -name IP_COMPONENT_NAME "ZnRpbGVfZ2hyZF9hdnN0X2F4aXN0X2JyaWRnZQ=="
+set_global_assignment -entity "ftile_ghrd_avst_axist_bridge" -library "avst_axist_bridge_14" -name IP_COMPONENT_DISPLAY_NAME "YXZzdF9heGlzdF9icmlkZ2U="
+set_global_assignment -entity "ftile_ghrd_avst_axist_bridge" -library "avst_axist_bridge_14" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "ftile_ghrd_avst_axist_bridge" -library "avst_axist_bridge_14" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "ftile_ghrd_avst_axist_bridge" -library "avst_axist_bridge_14" -name IP_COMPONENT_VERSION "MS40"
+set_global_assignment -entity "ftile_ghrd_avst_axist_bridge" -library "avst_axist_bridge_14" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmFsc2U="
+set_global_assignment -entity "ftile_ghrd_avst_axist_bridge" -library "avst_axist_bridge_14" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9tbnQvbWVkaWEvVG9vbHMvQXZpbmFzaC9QaGlwcHNfcGVha19oaHNpX21pZy9JTi1QaGlwcHNQZWFrX0ZQR0EvaHNzaV8xNTg4X3BwL2ZhbHNl"
+set_global_assignment -entity "ftile_ghrd_avst_axist_bridge" -library "avst_axist_bridge_14" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL2F2aW5hc2gvYXp1cmUvcGhpcHBzX3BlYWtfdjQvSU4tUGhpcHBzUGVha19GUEdBL3NyYy9pcC9jdXN0b20vYXhpc3RfdG9fYXZzdF9icmlkZ2UvZmFsc2U="
+set_global_assignment -entity "ftile_ghrd_avst_axist_bridge" -library "avst_axist_bridge_14" -name IP_COMPONENT_DOCUMENTATION_LINK "ZmlsZTovLy9ob21lL2F2aW5hc2gvYXp1cmUvcGhpcHBzX3BlYWtfdjEvSU4tUGhpcHBzUGVha19GUEdBL3NyYy9pcC9jdXN0b20vYXhpc3RfdG9fYXZzdF9icmlkZ2UvZmFsc2U="
+set_global_assignment -entity "ecpri_oran_top_avst_axist_bridge_0" -library "ecpri_oran_top_avst_axist_bridge_0" -name IP_COMPONENT_NAME "ZWNwcmlfb3Jhbl90b3BfYXZzdF9heGlzdF9icmlkZ2VfMA=="
+set_global_assignment -entity "ecpri_oran_top_avst_axist_bridge_0" -library "ecpri_oran_top_avst_axist_bridge_0" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "ecpri_oran_top_avst_axist_bridge_0" -library "ecpri_oran_top_avst_axist_bridge_0" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "ecpri_oran_top_avst_axist_bridge_0" -library "ecpri_oran_top_avst_axist_bridge_0" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "ecpri_oran_top_avst_axist_bridge_0" -library "ecpri_oran_top_avst_axist_bridge_0" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "ecpri_oran_top_avst_axist_bridge_0" -library "ecpri_oran_top_avst_axist_bridge_0" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "avst_axist_bridge_14" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "avst_axist_bridge_14/synth/ftile_ghrd_avst_axist_bridge.sv"]
+set_global_assignment -library "avst_axist_bridge_14" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "avst_axist_bridge_14/synth/avst_to_axist_rx_mac_seg_if_v2.sv"]
+set_global_assignment -library "avst_axist_bridge_14" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "avst_axist_bridge_14/synth/axist_to_avst_bridge_v2.sv"]
+set_global_assignment -library "avst_axist_bridge_14" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "avst_axist_bridge_14/synth/axist_to_avst_tx_mac_seg_if_v2.sv"]
+set_global_assignment -library "avst_axist_bridge_14" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "avst_axist_bridge_14/synth/keep2empty_v2.sv"]
+set_global_assignment -library "avst_axist_bridge_14" -name VERILOG_FILE [file join $::quartus(qip_path) "avst_axist_bridge_14/synth/hssi_ss_delay_reg_v2.v"]
+set_global_assignment -library "ecpri_oran_top_avst_axist_bridge_0" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/ecpri_oran_top_avst_axist_bridge_0.v"]
+

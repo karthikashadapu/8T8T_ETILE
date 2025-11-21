@@ -1,0 +1,19 @@
+# system info ff_32i_32o_1024d_dc on 2025.10.16.13:43:18
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for ff_32i_32o_1024d_dc on 2025.10.16.13:43:18
+files:
+filepath,kind,attributes,module,is_top
+sim/ff_32i_32o_1024d_dc.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,ff_32i_32o_1024d_dc,true
+fifo_1927/sim/ff_32i_32o_1024d_dc_fifo_1927_qxlm76q.v,VERILOG,,ff_32i_32o_1024d_dc_fifo_1927_qxlm76q,false
+fifo_1927/sim/ff_32i_32o_1024d_dc_fifo_1927_qxlm76q.sdc,SDC_ENTITY,NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION,ff_32i_32o_1024d_dc_fifo_1927_qxlm76q,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+ff_32i_32o_1024d_dc.fifo_0,ff_32i_32o_1024d_dc_fifo_1927_qxlm76q

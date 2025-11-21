@@ -1,0 +1,18 @@
+# system info ghrd_f_mtod_master_pll on 2025.10.16.14:12:03
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for ghrd_f_mtod_master_pll on 2025.10.16.14:12:03
+files:
+filepath,kind,attributes,module,is_top
+sim/ghrd_f_mtod_master_pll.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,ghrd_f_mtod_master_pll,true
+altera_iopll_1931/sim/ghrd_f_mtod_master_pll_altera_iopll_1931_v46372q.vo,VERILOG,,ghrd_f_mtod_master_pll_altera_iopll_1931_v46372q,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+ghrd_f_mtod_master_pll.altera_iopll_0,ghrd_f_mtod_master_pll_altera_iopll_1931_v46372q

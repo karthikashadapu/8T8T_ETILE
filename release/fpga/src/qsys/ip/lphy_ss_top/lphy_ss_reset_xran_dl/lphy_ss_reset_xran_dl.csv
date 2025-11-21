@@ -1,0 +1,16 @@
+# system info lphy_ss_reset_xran_dl on 2025.11.21.14:06:46
+system_info:
+name,value
+DEVICE,AGFB014R24B2I2V
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for lphy_ss_reset_xran_dl on 2025.11.21.14:06:46
+files:
+filepath,kind,attributes,module,is_top
+sim/lphy_ss_reset_xran_dl.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,lphy_ss_reset_xran_dl,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module

@@ -1,0 +1,18 @@
+# system info eth_f_ptp_todsync_samp_pll_10g on 2025.10.16.13:56:00
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for eth_f_ptp_todsync_samp_pll_10g on 2025.10.16.13:56:00
+files:
+filepath,kind,attributes,module,is_top
+sim/eth_f_ptp_todsync_samp_pll_10g.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,eth_f_ptp_todsync_samp_pll_10g,true
+altera_iopll_1931/sim/eth_f_ptp_todsync_samp_pll_10g_altera_iopll_1931_xpxxefa.vo,VERILOG,,eth_f_ptp_todsync_samp_pll_10g_altera_iopll_1931_xpxxefa,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+eth_f_ptp_todsync_samp_pll_10g.altera_iopll_0,eth_f_ptp_todsync_samp_pll_10g_altera_iopll_1931_xpxxefa

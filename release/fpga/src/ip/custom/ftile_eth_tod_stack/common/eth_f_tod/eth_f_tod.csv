@@ -1,0 +1,30 @@
+# system info eth_f_tod on 2025.10.16.13:56:29
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for eth_f_tod on 2025.10.16.13:56:29
+files:
+filepath,kind,attributes,module,is_top
+sim/eth_f_tod.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,eth_f_tod,true
+altera_eth_1588_tod_2011/sim/intelfpga/altera_eth_1588_tod.v,VERILOG,,altera_eth_1588_tod,false
+altera_eth_1588_tod_2011/sim/intelfpga/altera_eth_1588_tod_ojw.v,VERILOG,,altera_eth_1588_tod,false
+altera_eth_1588_tod_2011/sim/intelfpga/altera_eth_1588_tod_xojw.sv,SYSTEM_VERILOG,,altera_eth_1588_tod,false
+altera_eth_1588_tod_2011/sim/intelfpga/altera_eth_1588_tod_clock_crosser.v,VERILOG,,altera_eth_1588_tod,false
+altera_eth_1588_tod_2011/sim/intelfpga/altera_eth_1588_pps.v,VERILOG,,altera_eth_1588_tod,false
+altera_eth_1588_tod_2011/sim/intelfpga/altera_eth_1588_pps_adv.sv,SYSTEM_VERILOG,,altera_eth_1588_tod,false
+altera_eth_1588_tod_2011/sim/intelfpga/altera_eth_1588_pps_wrapper.v,VERILOG,,altera_eth_1588_tod,false
+altera_eth_1588_tod_2011/sim/intelfpga/altera_eth_1588_tod_std_synchronizer.v,VERILOG,,altera_eth_1588_tod,false
+altera_eth_1588_tod_2011/sim/intelfpga/altera_eth_1588_tod_fifo.sv,SYSTEM_VERILOG,,altera_eth_1588_tod,false
+altera_eth_1588_tod_2011/sim/intelfpga/altera_eth_1588_tod_gray_cnt.v,VERILOG,,altera_eth_1588_tod,false
+altera_eth_1588_tod_2011/sim/intelfpga/altera_eth_1588_tod_sdpm_altsyncram.v,VERILOG,,altera_eth_1588_tod,false
+altera_eth_1588_tod_2011/sim/intelfpga/altera_eth_1588_tod_std_sync_nocut.v,VERILOG,,altera_eth_1588_tod,false
+altera_eth_1588_tod_2011/sim/altera_eth_1588_tod_std_synchr_nocut.v,VERILOG,,altera_eth_1588_tod,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+eth_f_tod.altera_eth_1588_tod_0,altera_eth_1588_tod

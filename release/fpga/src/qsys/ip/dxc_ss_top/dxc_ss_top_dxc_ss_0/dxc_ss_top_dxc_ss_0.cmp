@@ -1,0 +1,112 @@
+	component dxc_ss_top_dxc_ss_0 is
+		generic (
+			NUM_OF_ANT              : integer := 8;
+			NUM_OF_FFT              : integer := 2;
+			CPRI_ETH_DATAWIDTH      : integer := 128;
+			XRAN_ETH_DATAWIDTH      : integer := 128;
+			CH_DW                   : integer := 8;
+			NUM_OF_PRACH            : integer := 2;
+			CAPTURE_DMA_WIDTH       : integer := 512;
+			IQ_DATAWIDTH            : integer := 32;
+			CPRI_FRAME_DATAWIDTH    : integer := 64;
+			ECPRI_CAPTURE_INSTANCES : integer := 2;
+			DSP_CAPTURE_INSTANCES   : integer := 30;
+			DXC_DSP_CAPTURE_INST    : integer := 22
+		);
+		port (
+			clk_csr                           : in  std_logic                                             := 'X';             -- clk
+			clk_dsp                           : in  std_logic                                             := 'X';             -- clk
+			rst_csr_n                         : in  std_logic                                             := 'X';             -- reset_n
+			rst_dsp_n                         : in  std_logic                                             := 'X';             -- reset_n
+			rst_soft_n                        : in  std_logic                                             := 'X';             -- rst_soft_n
+			ifft_duc_sink_valid1              : in  std_logic                                             := 'X';             -- valid
+			ifft_duc_sink_data1               : in  std_logic_vector((((IQ_DATAWIDTH-1)-0)+1)-1 downto 0) := (others => 'X'); -- data
+			ifft_duc_sink_channel1            : in  std_logic_vector(7 downto 0)                          := (others => 'X'); -- channel
+			ifft_duc_sink_valid2              : in  std_logic                                             := 'X';             -- valid
+			ifft_duc_sink_data2               : in  std_logic_vector((((IQ_DATAWIDTH-1)-0)+1)-1 downto 0) := (others => 'X'); -- data
+			ifft_duc_sink_channel2            : in  std_logic_vector(7 downto 0)                          := (others => 'X'); -- channel
+			avst_sink_valid                   : in  std_logic                                             := 'X';             -- avst_sink_valid
+			avst_sink_channel                 : in  std_logic_vector(7 downto 0)                          := (others => 'X'); -- avst_sink_channel
+			avst_sink_data_l1                 : in  std_logic_vector((((IQ_DATAWIDTH-1)-0)+1)-1 downto 0) := (others => 'X'); -- avst_sink_data_l1
+			avst_sink_data_l2                 : in  std_logic_vector((((IQ_DATAWIDTH-1)-0)+1)-1 downto 0) := (others => 'X'); -- avst_sink_data_l2
+			avst_sink_data_l3                 : in  std_logic_vector((((IQ_DATAWIDTH-1)-0)+1)-1 downto 0) := (others => 'X'); -- avst_sink_data_l3
+			avst_sink_data_l4                 : in  std_logic_vector((((IQ_DATAWIDTH-1)-0)+1)-1 downto 0) := (others => 'X'); -- avst_sink_data_l4
+			avst_sink_data_l5                 : in  std_logic_vector((((IQ_DATAWIDTH-1)-0)+1)-1 downto 0) := (others => 'X'); -- avst_sink_data_l5
+			avst_sink_data_l6                 : in  std_logic_vector((((IQ_DATAWIDTH-1)-0)+1)-1 downto 0) := (others => 'X'); -- avst_sink_data_l6
+			avst_sink_data_l7                 : in  std_logic_vector((((IQ_DATAWIDTH-1)-0)+1)-1 downto 0) := (others => 'X'); -- avst_sink_data_l7
+			avst_sink_data_l8                 : in  std_logic_vector((((IQ_DATAWIDTH-1)-0)+1)-1 downto 0) := (others => 'X'); -- avst_sink_data_l8
+			duc_avst_source_valid             : out std_logic;                                                                -- duc_avst_source_valid
+			duc_avst_source_data0             : out std_logic_vector((((IQ_DATAWIDTH-1)-0)+1)-1 downto 0);                    -- duc_avst_source_data0
+			duc_avst_source_data1             : out std_logic_vector((((IQ_DATAWIDTH-1)-0)+1)-1 downto 0);                    -- duc_avst_source_data1
+			duc_avst_source_data2             : out std_logic_vector((((IQ_DATAWIDTH-1)-0)+1)-1 downto 0);                    -- duc_avst_source_data2
+			duc_avst_source_data3             : out std_logic_vector((((IQ_DATAWIDTH-1)-0)+1)-1 downto 0);                    -- duc_avst_source_data3
+			duc_avst_source_data4             : out std_logic_vector((((IQ_DATAWIDTH-1)-0)+1)-1 downto 0);                    -- duc_avst_source_data4
+			duc_avst_source_data5             : out std_logic_vector((((IQ_DATAWIDTH-1)-0)+1)-1 downto 0);                    -- duc_avst_source_data5
+			duc_avst_source_data6             : out std_logic_vector((((IQ_DATAWIDTH-1)-0)+1)-1 downto 0);                    -- duc_avst_source_data6
+			duc_avst_source_data7             : out std_logic_vector((((IQ_DATAWIDTH-1)-0)+1)-1 downto 0);                    -- duc_avst_source_data7
+			duc_avst_source_channel           : out std_logic_vector(7 downto 0);                                             -- duc_avst_source_channel
+			ddc_source_valid1                 : out std_logic;                                                                -- valid
+			ddc_source_data1                  : out std_logic_vector((((IQ_DATAWIDTH-1)-0)+1)-1 downto 0);                    -- data
+			ddc_source_channel1               : out std_logic_vector(7 downto 0);                                             -- channel
+			ddc_source_valid2                 : out std_logic;                                                                -- valid
+			ddc_source_data2                  : out std_logic_vector((((IQ_DATAWIDTH-1)-0)+1)-1 downto 0);                    -- data
+			ddc_source_channel2               : out std_logic_vector(7 downto 0);                                             -- channel
+			rfp_pul                           : in  std_logic                                             := 'X';             -- data
+			bw_config_cc1                     : in  std_logic_vector(7 downto 0)                          := (others => 'X'); -- bw_config_cc1
+			bw_config_cc2                     : in  std_logic_vector(7 downto 0)                          := (others => 'X'); -- bw_config_cc2
+			dxc_avst_selctd_cap_intf_valid    : out std_logic;                                                                -- valid
+			dxc_avst_selctd_cap_intf_data     : out std_logic_vector((((IQ_DATAWIDTH-1)-0)+1)-1 downto 0);                    -- data
+			dxc_avst_selctd_cap_intf_chan     : out std_logic_vector(2 downto 0);                                             -- channel
+			dxc_ss_config_csr_address         : in  std_logic_vector(6 downto 0)                          := (others => 'X'); -- address
+			dxc_ss_config_csr_write           : in  std_logic                                             := 'X';             -- write
+			dxc_ss_config_csr_writedata       : in  std_logic_vector(31 downto 0)                         := (others => 'X'); -- writedata
+			dxc_ss_config_csr_readdata        : out std_logic_vector(31 downto 0);                                            -- readdata
+			dxc_ss_config_csr_readdatavalid   : out std_logic;                                                                -- readdatavalid
+			dxc_ss_config_csr_waitrequest     : out std_logic;                                                                -- waitrequest
+			dxc_ss_config_csr_read            : in  std_logic                                             := 'X';             -- read
+			duc_l1_busIn_writedata            : in  std_logic_vector(31 downto 0)                         := (others => 'X'); -- writedata
+			duc_l1_busIn_address              : in  std_logic_vector(11 downto 0)                         := (others => 'X'); -- address
+			duc_l1_busIn_write                : in  std_logic                                             := 'X';             -- write
+			duc_l1_busIn_read                 : in  std_logic                                             := 'X';             -- read
+			duc_l1_busOut_readdatavalid       : out std_logic;                                                                -- readdatavalid
+			duc_l1_busOut_readdata            : out std_logic_vector(31 downto 0);                                            -- readdata
+			duc_l1_busOut_waitrequest         : out std_logic;                                                                -- waitrequest
+			ddc_l1_busIn_writedata            : in  std_logic_vector(31 downto 0)                         := (others => 'X'); -- writedata
+			ddc_l1_busIn_address              : in  std_logic_vector(11 downto 0)                         := (others => 'X'); -- address
+			ddc_l1_busIn_write                : in  std_logic                                             := 'X';             -- write
+			ddc_l1_busIn_read                 : in  std_logic                                             := 'X';             -- read
+			ddc_l1_busOut_readdatavalid       : out std_logic;                                                                -- readdatavalid
+			ddc_l1_busOut_readdata            : out std_logic_vector(31 downto 0);                                            -- readdata
+			ddc_l1_busOut_waitrequest         : out std_logic;                                                                -- waitrequest
+			duc_l2_busIn_writedata            : in  std_logic_vector(31 downto 0)                         := (others => 'X'); -- writedata
+			duc_l2_busIn_address              : in  std_logic_vector(11 downto 0)                         := (others => 'X'); -- address
+			duc_l2_busIn_write                : in  std_logic                                             := 'X';             -- write
+			duc_l2_busIn_read                 : in  std_logic                                             := 'X';             -- read
+			duc_l2_busOut_readdatavalid       : out std_logic;                                                                -- readdatavalid
+			duc_l2_busOut_readdata            : out std_logic_vector(31 downto 0);                                            -- readdata
+			duc_l2_busOut_waitrequest         : out std_logic;                                                                -- waitrequest
+			ddc_l2_busIn_writedata            : in  std_logic_vector(31 downto 0)                         := (others => 'X'); -- writedata
+			ddc_l2_busIn_address              : in  std_logic_vector(11 downto 0)                         := (others => 'X'); -- address
+			ddc_l2_busIn_write                : in  std_logic                                             := 'X';             -- write
+			ddc_l2_busIn_read                 : in  std_logic                                             := 'X';             -- read
+			ddc_l2_busOut_readdatavalid       : out std_logic;                                                                -- readdatavalid
+			ddc_l2_busOut_readdata            : out std_logic_vector(31 downto 0);                                            -- readdata
+			ddc_l2_busOut_waitrequest         : out std_logic;                                                                -- waitrequest
+			ca_interp_busIn_writedata         : in  std_logic_vector(31 downto 0)                         := (others => 'X'); -- writedata
+			ca_interp_busIn_address           : in  std_logic_vector(6 downto 0)                          := (others => 'X'); -- address
+			ca_interp_busIn_write             : in  std_logic                                             := 'X';             -- write
+			ca_interp_busIn_read              : in  std_logic                                             := 'X';             -- read
+			ca_interp_busOut_readdatavalid    : out std_logic;                                                                -- readdatavalid
+			ca_interp_busOut_readdata         : out std_logic_vector(31 downto 0);                                            -- readdata
+			ca_interp_busOut_waitrequest      : out std_logic;                                                                -- waitrequest
+			dec_dly_comp_busIn_writedata      : in  std_logic_vector(31 downto 0)                         := (others => 'X'); -- writedata
+			dec_dly_comp_busIn_address        : in  std_logic_vector(6 downto 0)                          := (others => 'X'); -- address
+			dec_dly_comp_busIn_write          : in  std_logic                                             := 'X';             -- write
+			dec_dly_comp_busIn_read           : in  std_logic                                             := 'X';             -- read
+			dec_dly_comp_busOut_readdatavalid : out std_logic;                                                                -- readdatavalid
+			dec_dly_comp_busOut_readdata      : out std_logic_vector(31 downto 0);                                            -- readdata
+			dec_dly_comp_busOut_waitrequest   : out std_logic;                                                                -- waitrequest
+			interface_sel                     : in  std_logic_vector(31 downto 0)                         := (others => 'X')  -- data
+		);
+	end component dxc_ss_top_dxc_ss_0;
+

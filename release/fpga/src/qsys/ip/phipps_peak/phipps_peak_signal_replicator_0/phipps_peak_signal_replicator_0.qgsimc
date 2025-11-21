@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<node xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:altera="http://www.altera.com/XMLSchema/Qsys/SystemTree">
+  <instanceKey xsi:type="xs:string">phipps_peak_signal_replicator_0</instanceKey>
+  <instanceData xsi:type="data">
+    <parameters></parameters>
+    <interconnectAssignments></interconnectAssignments>
+    <className>phipps_peak_signal_replicator_0</className>
+    <version>1.0</version>
+    <name>phipps_peak_signal_replicator_0</name>
+    <uniqueName>phipps_peak_signal_replicator_0</uniqueName>
+    <nonce>0</nonce>
+    <incidentConnections></incidentConnections>
+  </instanceData>
+  <children>
+    <node>
+      <instanceKey xsi:type="xs:string">signal_replicator_0</instanceKey>
+      <instanceData xsi:type="data">
+        <parameters></parameters>
+        <interconnectAssignments></interconnectAssignments>
+        <className>signal_replicator</className>
+        <version>1.0</version>
+        <name>signal_replicator_0</name>
+        <uniqueName>signal_replicator</uniqueName>
+        <fixedName>signal_replicator</fixedName>
+        <nonce>0</nonce>
+        <incidentConnections></incidentConnections>
+        <path>phipps_peak_signal_replicator_0.signal_replicator_0</path>
+      </instanceData>
+      <children></children>
+    </node>
+  </children>
+</node>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="sim/phipps_peak_clock_bridge_ecpri_rx.v"
+   type="VERILOG"
+   library="phipps_peak_clock_bridge_ecpri_rx"
+   hasInlineConfiguration="true" />
+ <topLevel
+   name="phipps_peak_clock_bridge_ecpri_rx.phipps_peak_clock_bridge_ecpri_rx" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB014R24B2I2V" />
+</simPackage>

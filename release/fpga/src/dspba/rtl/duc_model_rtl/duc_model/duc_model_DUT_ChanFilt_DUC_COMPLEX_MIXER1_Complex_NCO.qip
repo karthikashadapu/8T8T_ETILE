@@ -1,0 +1,14 @@
+# This is the QIP file for DSP Builder for Intel FPGAs system 'duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO'
+
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/duc_model_rtl/duc_model/duc_model_DUT_safe_path_ver.sv
+set_global_assignment -name VHDL_FILE ../../rtl/duc_model_rtl/duc_model/duc_model_DUT_safe_path.vhd
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/duc_model_rtl/duc_model/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO.sv
+set_global_assignment -name HEX_FILE ../../rtl/duc_model_rtl/duc_model/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_readbackMem.hex
+set_global_assignment -name HEX_FILE ../../rtl/duc_model_rtl/duc_model/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u0_sinTable.hex
+set_global_assignment -name HEX_FILE ../../rtl/duc_model_rtl/duc_model/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u0_cosTable.hex
+set_global_assignment -name HEX_FILE ../../rtl/duc_model_rtl/duc_model/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u1_sinTable.hex
+set_global_assignment -name HEX_FILE ../../rtl/duc_model_rtl/duc_model/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u1_cosTable.hex
+set_global_assignment -name HEX_FILE ../../rtl/duc_model_rtl/duc_model/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u2_sinTable.hex
+set_global_assignment -name HEX_FILE ../../rtl/duc_model_rtl/duc_model/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u2_cosTable.hex
+set_global_assignment -name HEX_FILE ../../rtl/duc_model_rtl/duc_model/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u3_sinTable.hex
+set_global_assignment -name HEX_FILE ../../rtl/duc_model_rtl/duc_model/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u3_cosTable.hex

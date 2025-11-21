@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="signal_replicator_10/sim/signal_replicator.v"
+   type="VERILOG"
+   library="signal_replicator_10" />
+ <file
+   path="sim/phipps_peak_signal_replicator_0.v"
+   type="VERILOG"
+   library="phipps_peak_signal_replicator_0"
+   hasInlineConfiguration="true" />
+ <topLevel
+   name="phipps_peak_signal_replicator_0.phipps_peak_signal_replicator_0" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB014R24B2I2V" />
+</simPackage>

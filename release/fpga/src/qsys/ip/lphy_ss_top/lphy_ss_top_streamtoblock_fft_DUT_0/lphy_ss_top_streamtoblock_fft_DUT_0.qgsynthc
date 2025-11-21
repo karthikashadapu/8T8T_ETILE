@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<node xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:altera="http://www.altera.com/XMLSchema/Qsys/SystemTree">
+  <instanceKey xsi:type="xs:string">lphy_ss_top_streamtoblock_fft_DUT_0</instanceKey>
+  <instanceData xsi:type="data">
+    <parameters></parameters>
+    <interconnectAssignments></interconnectAssignments>
+    <className>lphy_ss_top_streamtoblock_fft_DUT_0</className>
+    <version>1.0</version>
+    <name>lphy_ss_top_streamtoblock_fft_DUT_0</name>
+    <uniqueName>lphy_ss_top_streamtoblock_fft_DUT_0</uniqueName>
+    <nonce>0</nonce>
+    <incidentConnections></incidentConnections>
+  </instanceData>
+  <children>
+    <node>
+      <instanceKey xsi:type="xs:string">streamtoblock_fft_DUT_0</instanceKey>
+      <instanceData xsi:type="data">
+        <parameters></parameters>
+        <interconnectAssignments></interconnectAssignments>
+        <className>streamtoblock_fft_DUT</className>
+        <version>1.0</version>
+        <name>streamtoblock_fft_DUT_0</name>
+        <uniqueName>streamtoblock_fft_DUT</uniqueName>
+        <fixedName>streamtoblock_fft_DUT</fixedName>
+        <nonce>0</nonce>
+        <incidentConnections></incidentConnections>
+        <path>lphy_ss_top_streamtoblock_fft_DUT_0.streamtoblock_fft_DUT_0</path>
+      </instanceData>
+      <children></children>
+    </node>
+  </children>
+</node>

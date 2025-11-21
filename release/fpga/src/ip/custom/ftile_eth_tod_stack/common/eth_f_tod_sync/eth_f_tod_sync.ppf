@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pinplan
+ variation_name="altera_eth_1588_tod_synchronizer_0"
+ megafunction_name="ALTERA_ETH_1588_TOD_SYNCHRONIZER"
+ intended_family="Agilex 7"
+ specifies="all_ports">
+ <global>
+  <pin name="clk_master" direction="input" scope="external" />
+  <pin name="reset_master" direction="input" scope="external" />
+  <pin name="clk_slave" direction="input" scope="external" />
+  <pin name="reset_slave" direction="input" scope="external" />
+  <pin name="clk_sampling" direction="input" scope="external" />
+  <pin name="start_tod_sync" direction="input" scope="external" />
+  <pin name="tod_master_data[95..0]" direction="input" scope="external" />
+  <pin name="tod_slave_data[95..0]" direction="output" scope="external" />
+  <pin name="tod_slave_valid" direction="output" scope="external" />
+ </global>
+</pinplan>

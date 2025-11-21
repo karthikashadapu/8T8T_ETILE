@@ -1,0 +1,5 @@
+# This is the QIP file for DSP Builder for Intel FPGAs system 'streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_SOP_EOP_gen_falling_edge_Finite_State_Machine'
+
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/low_phy_ul_rtl/streamtoblock_fft/streamtoblock_fft_DUT_safe_path_ver.sv
+set_global_assignment -name VHDL_FILE ../../rtl/low_phy_ul_rtl/streamtoblock_fft/streamtoblock_fft_DUT_safe_path.vhd
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/low_phy_ul_rtl/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_SOP_EOP_gen_falling_edge_Finite_State_Machine.sv

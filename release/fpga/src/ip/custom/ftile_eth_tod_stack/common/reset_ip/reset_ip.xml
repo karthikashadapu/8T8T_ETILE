@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.10.16.13:56:16"
+ outputDirectory="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/ftile_eth_tod_stack/common/reset_ip/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGFB027R24C2E3V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="3"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="ninit_done" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="ninit_done" direction="output" role="ninit_done" width="1" />
+  </interface>
+ </perimeter>
+ <entity kind="reset_ip" version="1.0" name="reset_ip">
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="AGFB027R24C2E2VR2" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <generatedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/ftile_eth_tod_stack/common/reset_ip/synth/reset_ip.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/ftile_eth_tod_stack/common/reset_ip/synth/reset_ip.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/ftile_eth_tod_stack/common/reset_ip.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/ip/altera/pgm/altera_s10_user_rst_clkgate/altera_s10_user_rst_clkgate_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="reset_ip">"Generating: reset_ip"</message>
+   <message level="Info" culprit="reset_ip">"Generating: altera_s10_user_rst_clkgate"</message>
+   <message level="Info" culprit="altera_s10_user_rst_clkgate_0">generating top-level entity altera_s10_user_rst_clkgate</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_s10_user_rst_clkgate"
+   version="19.4.7"
+   name="altera_s10_user_rst_clkgate">
+  <parameter name="DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="outputType" value="Conduit Interface" />
+  <generatedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/ftile_eth_tod_stack/common/reset_ip/altera_s10_user_rst_clkgate_1947/synth/altera_s10_user_rst_clkgate.sv"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/ftile_eth_tod_stack/common/reset_ip/altera_s10_user_rst_clkgate_1947/synth/altera_s10_user_rst_clkgate_fm.sdc"
+       attributes="NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/ftile_eth_tod_stack/common/reset_ip/altera_s10_user_rst_clkgate_1947/synth/altera_s10_user_rst_clkgate.sv"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/ftile_eth_tod_stack/common/reset_ip/altera_s10_user_rst_clkgate_1947/synth/altera_s10_user_rst_clkgate_fm.sdc"
+       attributes="NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/ip/altera/pgm/altera_s10_user_rst_clkgate/altera_s10_user_rst_clkgate_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="reset_ip" as="altera_s10_user_rst_clkgate_0" />
+  <messages>
+   <message level="Info" culprit="reset_ip">"Generating: altera_s10_user_rst_clkgate"</message>
+   <message level="Info" culprit="altera_s10_user_rst_clkgate_0">generating top-level entity altera_s10_user_rst_clkgate</message>
+  </messages>
+ </entity>
+</deploy>

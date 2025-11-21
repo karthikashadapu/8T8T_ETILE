@@ -1,0 +1,16 @@
+# system info jtg_rst_bridge on 2025.10.16.14:14:07
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for jtg_rst_bridge on 2025.10.16.14:14:07
+files:
+filepath,kind,attributes,module,is_top
+sim/jtg_rst_bridge.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,jtg_rst_bridge,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="eth_f_ptp_mtod_top_10/sim/eth_f_ptp_mtod_top.sv"
+   type="SYSTEM_VERILOG"
+   library="eth_f_ptp_mtod_top_10" />
+ <file
+   path="sim/port0_tod_stack_0.v"
+   type="VERILOG"
+   library="port0_tod_stack_0"
+   hasInlineConfiguration="true" />
+ <topLevel name="port0_tod_stack_0.port0_tod_stack_0" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

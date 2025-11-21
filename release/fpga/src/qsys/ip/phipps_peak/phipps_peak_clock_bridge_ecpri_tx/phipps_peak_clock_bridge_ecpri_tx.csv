@@ -1,0 +1,16 @@
+# system info phipps_peak_clock_bridge_ecpri_tx on 2025.11.21.14:05:22
+system_info:
+name,value
+DEVICE,AGFB014R24B2I2V
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for phipps_peak_clock_bridge_ecpri_tx on 2025.11.21.14:05:22
+files:
+filepath,kind,attributes,module,is_top
+sim/phipps_peak_clock_bridge_ecpri_tx.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,phipps_peak_clock_bridge_ecpri_tx,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.11.21.13:09:56"
+ outputDirectory="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_subsys/tod_subsys_tod_sync_interface_adapter_0_0/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGFB014R24B2I2V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="3"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="time_of_day_96b" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="time_of_day_96b" direction="input" role="data" width="96" />
+   <port name="valid" direction="input" role="valid" width="1" />
+  </interface>
+  <interface name="tx0_tod_master_data" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="tx0_tod_master_data" direction="output" role="data" width="96" />
+   <port name="valid_0" direction="output" role="valid" width="1" />
+  </interface>
+  <interface name="tx1_tod_master_data" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="tx1_tod_master_data" direction="output" role="data" width="96" />
+  </interface>
+  <interface name="tx2_tod_master_data" kind="avalon_streaming" start="1">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port name="tx2_tod_master_data" direction="output" role="data" width="96" />
+  </interface>
+  <interface name="tx3_tod_master_data" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="tx3_tod_master_data" direction="output" role="data" width="96" />
+  </interface>
+  <interface name="rx0_tod_master_data" kind="avalon_streaming" start="1">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port name="rx0_tod_master_data" direction="output" role="data" width="96" />
+  </interface>
+  <interface name="clock" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="reset_sink" kind="reset" start="0">
+   <property name="associatedClock" value="clock" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="rst_n" direction="input" role="reset_n" width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   kind="tod_subsys_tod_sync_interface_adapter_0_0"
+   version="1.0"
+   name="tod_subsys_tod_sync_interface_adapter_0_0">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CLOCK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLOCK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="AGFB014R24B2I2V" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <generatedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_subsys/tod_subsys_tod_sync_interface_adapter_0_0/synth/tod_subsys_tod_sync_interface_adapter_0_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_subsys/tod_subsys_tod_sync_interface_adapter_0_0/synth/tod_subsys_tod_sync_interface_adapter_0_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_subsys/tod_subsys_tod_sync_interface_adapter_0_0.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/tod_sync_interface_adapter/tod_sync_interface_adapter_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="tod_subsys_tod_sync_interface_adapter_0_0">"Generating: tod_subsys_tod_sync_interface_adapter_0_0"</message>
+   <message level="Info" culprit="tod_subsys_tod_sync_interface_adapter_0_0">"Generating: tod_sync_interface_adapter"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="tod_sync_interface_adapter_0"
+   version="1.0"
+   name="tod_sync_interface_adapter">
+  <generatedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_subsys/tod_subsys_tod_sync_interface_adapter_0_0/tod_sync_interface_adapter_0_10/synth/tod_sync_interface_adapter.v"
+       attributes="TOP_LEVEL_FILE" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_subsys/tod_subsys_tod_sync_interface_adapter_0_0/tod_sync_interface_adapter_0_10/synth/tod_sync_interface_adapter.v"
+       attributes="TOP_LEVEL_FILE" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/tod_sync_interface_adapter/tod_sync_interface_adapter_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="tod_subsys_tod_sync_interface_adapter_0_0"
+     as="tod_sync_interface_adapter_0_0" />
+  <messages>
+   <message level="Info" culprit="tod_subsys_tod_sync_interface_adapter_0_0">"Generating: tod_sync_interface_adapter"</message>
+  </messages>
+ </entity>
+</deploy>

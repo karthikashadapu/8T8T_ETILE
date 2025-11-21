@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_avalon_sc_fifo_1932/sim/qsys_top_sc_fifo_0_altera_avalon_sc_fifo_1932_jh4ijda.v"
+   type="VERILOG"
+   library="altera_avalon_sc_fifo_1932" />
+ <file
+   path="sim/qsys_top_sc_fifo_0.v"
+   type="VERILOG"
+   library="qsys_top_sc_fifo_0"
+   hasInlineConfiguration="true" />
+ <topLevel name="qsys_top_sc_fifo_0.qsys_top_sc_fifo_0" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

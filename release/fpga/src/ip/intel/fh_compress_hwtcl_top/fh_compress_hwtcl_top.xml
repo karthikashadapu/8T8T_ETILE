@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.10.16.13:45:17"
+ outputDirectory="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGFB027R24C2E3V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="3"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_TX_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_TX_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_TX_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_RX_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_RX_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_RX_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CSR_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CSR_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CSR_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="tx_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="tx_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="rx_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="rx_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="csr_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="csr_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="tx_rst_n" kind="reset" start="0">
+   <property name="associatedClock" value="" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="tx_rst_n" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="rx_rst_n" kind="reset" start="0">
+   <property name="associatedClock" value="" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="rx_rst_n" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="csr_rst_n" kind="reset" start="0">
+   <property name="associatedClock" value="" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="csr_rst_n" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="avalon_slave" kind="avalon" start="0">
+   <property name="addressAlignment" value="DYNAMIC" />
+   <property name="addressGroup" value="0" />
+   <property name="addressSpan" value="262144" />
+   <property name="addressUnits" value="WORDS" />
+   <property name="alwaysBurstMaxBurst" value="false" />
+   <property name="associatedClock" value="csr_clk" />
+   <property name="associatedReset" value="csr_rst_n" />
+   <property name="bitsPerSymbol" value="8" />
+   <property name="bridgedAddressOffset" value="0" />
+   <property name="bridgesToMaster" value="" />
+   <property name="burstOnBurstBoundariesOnly" value="false" />
+   <property name="burstcountUnits" value="WORDS" />
+   <property name="constantBurstBehavior" value="false" />
+   <property name="explicitAddressSpan" value="0" />
+   <property name="holdTime" value="0" />
+   <property name="interleaveBursts" value="false" />
+   <property name="isBigEndian" value="false" />
+   <property name="isFlash" value="false" />
+   <property name="isMemoryDevice" value="false" />
+   <property name="isNonVolatileStorage" value="false" />
+   <property name="linewrapBursts" value="false" />
+   <property name="maximumPendingReadTransactions" value="1" />
+   <property name="maximumPendingWriteTransactions" value="0" />
+   <property name="minimumReadLatency" value="1" />
+   <property name="minimumResponseLatency" value="1" />
+   <property name="minimumUninterruptedRunLength" value="1" />
+   <property name="prSafe" value="false" />
+   <property name="printableDevice" value="false" />
+   <property name="readLatency" value="0" />
+   <property name="readWaitStates" value="1" />
+   <property name="readWaitTime" value="1" />
+   <property name="registerIncomingSignals" value="false" />
+   <property name="registerOutgoingSignals" value="false" />
+   <property name="setupTime" value="0" />
+   <property name="timingUnits" value="Cycles" />
+   <property name="transparentBridge" value="false" />
+   <property name="waitrequestAllowance" value="0" />
+   <property name="wellBehavedWaitrequest" value="false" />
+   <property name="writeLatency" value="0" />
+   <property name="writeWaitStates" value="0" />
+   <property name="writeWaitTime" value="0" />
+   <property name="dfhFeatureGuid" value="0" />
+   <property name="dfhGroupId" value="0" />
+   <property name="dfhParameterId" value="" />
+   <property name="dfhParameterName" value="" />
+   <property name="dfhParameterVersion" value="" />
+   <property name="dfhParameterData" value="" />
+   <property name="dfhParameterDataLength" value="" />
+   <property name="dfhFeatureMajorVersion" value="0" />
+   <property name="dfhFeatureMinorVersion" value="0" />
+   <property name="dfhFeatureId" value="35" />
+   <property name="dfhFeatureType" value="3" />
+   <port name="csr_address" direction="input" role="address" width="16" />
+   <port name="csr_write" direction="input" role="write" width="1" />
+   <port name="csr_writedata" direction="input" role="writedata" width="32" />
+   <port name="csr_readdata" direction="output" role="readdata" width="32" />
+   <port name="csr_read" direction="input" role="read" width="1" />
+   <port
+       name="csr_readdatavalid"
+       direction="output"
+       role="readdatavalid"
+       width="1" />
+   <port
+       name="csr_waitrequest"
+       direction="output"
+       role="waitrequest"
+       width="1" />
+  </interface>
+  <interface name="conduit_end" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="irq" direction="output" role="irq" width="1" />
+   <port
+       name="tx_metadata_i"
+       direction="input"
+       role="tx_metadata_i"
+       width="128" />
+   <port
+       name="tx_udcomphdr_i"
+       direction="input"
+       role="tx_udcomphdr_i"
+       width="8" />
+   <port
+       name="comp_fs_offset"
+       direction="input"
+       role="comp_fs_offset"
+       width="4" />
+   <port
+       name="rx_metadata_o"
+       direction="output"
+       role="rx_metadata_o"
+       width="128" />
+   <port
+       name="rx_udcomphdr_o"
+       direction="output"
+       role="rx_udcomphdr_o"
+       width="8" />
+   <port
+       name="rx_metadata_valid_o"
+       direction="output"
+       role="rx_metadata_valid_o"
+       width="1" />
+   <port
+       name="tx_metadata_o"
+       direction="output"
+       role="tx_metadata_o"
+       width="128" />
+   <port
+       name="tx_udcomphdr_o"
+       direction="output"
+       role="tx_udcomphdr_o"
+       width="8" />
+   <port
+       name="rx_metadata_i"
+       direction="input"
+       role="rx_metadata_i"
+       width="128" />
+   <port
+       name="rx_udcomphdr_i"
+       direction="input"
+       role="rx_udcomphdr_i"
+       width="8" />
+   <port
+       name="rx_metadata_valid_i"
+       direction="input"
+       role="rx_metadata_valid_i"
+       width="1" />
+   <port
+       name="decomp_fs_offset"
+       direction="input"
+       role="decomp_fs_offset"
+       width="4" />
+  </interface>
+  <interface name="tx_avst_sink" kind="avalon_streaming" start="0">
+   <property name="associatedClock" value="tx_clk" />
+   <property name="associatedReset" value="tx_rst_n" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port name="tx_avst_sink_valid" direction="input" role="valid" width="1" />
+   <port name="tx_avst_sink_data" direction="input" role="data" width="128" />
+   <port
+       name="tx_avst_sink_startofpacket"
+       direction="input"
+       role="startofpacket"
+       width="1" />
+   <port
+       name="tx_avst_sink_endofpacket"
+       direction="input"
+       role="endofpacket"
+       width="1" />
+   <port name="tx_avst_sink_ready" direction="output" role="ready" width="1" />
+  </interface>
+  <interface name="rx_avst_source" kind="avalon_streaming" start="1">
+   <property name="associatedClock" value="rx_clk" />
+   <property name="associatedReset" value="rx_rst_n" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port name="rx_avst_source_valid" direction="output" role="valid" width="1" />
+   <port name="rx_avst_source_data" direction="output" role="data" width="128" />
+   <port
+       name="rx_avst_source_startofpacket"
+       direction="output"
+       role="startofpacket"
+       width="1" />
+   <port
+       name="rx_avst_source_endofpacket"
+       direction="output"
+       role="endofpacket"
+       width="1" />
+   <port name="rx_avst_source_error" direction="output" role="error" width="1" />
+  </interface>
+  <interface name="tx_avst_source" kind="avalon_streaming" start="1">
+   <property name="associatedClock" value="tx_clk" />
+   <property name="associatedReset" value="tx_rst_n" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port name="tx_avst_source_valid" direction="output" role="valid" width="1" />
+   <port name="tx_avst_source_data" direction="output" role="data" width="64" />
+   <port
+       name="tx_avst_source_startofpacket"
+       direction="output"
+       role="startofpacket"
+       width="1" />
+   <port
+       name="tx_avst_source_endofpacket"
+       direction="output"
+       role="endofpacket"
+       width="1" />
+   <port name="tx_avst_source_ready" direction="input" role="ready" width="1" />
+   <port name="tx_avst_source_empty" direction="output" role="empty" width="3" />
+  </interface>
+  <interface name="rx_avst_sink" kind="avalon_streaming" start="0">
+   <property name="associatedClock" value="rx_clk" />
+   <property name="associatedReset" value="rx_rst_n" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port name="rx_avst_sink_valid" direction="input" role="valid" width="1" />
+   <port name="rx_avst_sink_data" direction="input" role="data" width="64" />
+   <port
+       name="rx_avst_sink_startofpacket"
+       direction="input"
+       role="startofpacket"
+       width="1" />
+   <port
+       name="rx_avst_sink_endofpacket"
+       direction="input"
+       role="endofpacket"
+       width="1" />
+   <port name="rx_avst_sink_error" direction="input" role="error" width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   kind="fh_compress_hwtcl_top"
+   version="1.0"
+   name="fh_compress_hwtcl_top">
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_TX_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_RX_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_RX_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <parameter name="AUTO_TX_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_DEVICE" value="AGFB027R24C2E2VR2" />
+  <parameter name="AUTO_TX_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CSR_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CSR_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CSR_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_RX_CLK_CLOCK_RATE" value="-1" />
+  <generatedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/synth/fh_compress_hwtcl_top.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/synth/fh_compress_hwtcl_top.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/ip/altera_cloud/fh_compress/src/fh_comp_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="fh_compress_hwtcl_top">"Generating: fh_compress_hwtcl_top"</message>
+   <message level="Info" culprit="fh_compress_hwtcl_top">"Generating: fh_comp_top"</message>
+  </messages>
+ </entity>
+ <entity kind="fh_comp_top" version="1.0.7" name="fh_comp_top">
+  <parameter name="ORAN_COMPLIANT" value="true" />
+  <parameter name="EN_BFP" value="1" />
+  <parameter name="ED_TYPE" value="0" />
+  <parameter name="IQDATAWIDTH" value="8" />
+  <parameter name="DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="DIRECTION" value="TX_RX" />
+  <parameter name="UDCOMPMETHOD" value="2" />
+  <parameter name="DEVICE" value="AGFB027R24C2E2VR2" />
+  <parameter name="DEVICE_DIE_TYPES" value="HSSI_GDR,MAIN_FM8" />
+  <parameter name="ED_HDL_LANGUAGE" value="Verilog" />
+  <parameter name="DISABLE_FH_COMPRESS_IP_SDC" value="true" />
+  <parameter name="METADATA_WIDTH_GUI" value="128" />
+  <parameter name="METADATA_WIDTH" value="128" />
+  <parameter name="ORAN_COMPLIANT_GUI" value="true" />
+  <parameter name="ED_TARGET_DEVKIT_GUI" value="None" />
+  <parameter name="COMP_METH_GUI" value="0" />
+  <parameter name="EN_MULAW" value="0" />
+  <parameter name="EN_EXTIQWIDTH" value="false" />
+  <generatedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/fh_comp_top.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/alt_oran_fifo.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/alt_oran_scfifo.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/altera_std_synchronizer_nocut.v"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/bitshift_preproc.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/bitshift_preproc_engine.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/ccam_bfp.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/ccam_mulaw.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/ccam_unbiased.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/ceam.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/ceam_bfp.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/ceam_mulaw.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/fh_comp_csr.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/fh_comp_csrunit.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/compression_top.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/decompression_top.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/oran_comp_data_adapter.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/fh_comp.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/fh_decomp.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/fh_prb_barrel_shifter.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/oran_std_synchronizer_nocut.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/oran_uplane_byte_shift.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/oran_uplane_prb_fifo.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/oran_uplane_prb_size.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/pipeline_oran.v"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/fh_sync_reset_logic.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/fh_check.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/oran_pulse_stretch_sync.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/fh_comp.sdc"
+       attributes="NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/fh_comp_top.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/alt_oran_fifo.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/alt_oran_scfifo.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/altera_std_synchronizer_nocut.v"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/bitshift_preproc.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/bitshift_preproc_engine.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/ccam_bfp.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/ccam_mulaw.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/ccam_unbiased.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/ceam.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/ceam_bfp.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/ceam_mulaw.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/fh_comp_csr.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/fh_comp_csrunit.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/compression_top.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/decompression_top.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/oran_comp_data_adapter.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/fh_comp.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/fh_decomp.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/fh_prb_barrel_shifter.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/oran_std_synchronizer_nocut.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/oran_uplane_byte_shift.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/oran_uplane_prb_fifo.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/oran_uplane_prb_size.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/pipeline_oran.v"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/fh_sync_reset_logic.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/fh_check.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/oran_pulse_stretch_sync.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/fh_compress_hwtcl_top/fh_comp_top_107/synth/fh_comp.sdc"
+       attributes="NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/ip/altera_cloud/fh_compress/src/fh_comp_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="fh_compress_hwtcl_top" as="fh_compress_hwtcl_top" />
+  <messages>
+   <message level="Info" culprit="fh_compress_hwtcl_top">"Generating: fh_comp_top"</message>
+  </messages>
+ </entity>
+</deploy>

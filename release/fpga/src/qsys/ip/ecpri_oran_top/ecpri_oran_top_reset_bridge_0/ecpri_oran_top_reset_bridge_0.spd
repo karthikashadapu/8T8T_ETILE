@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="sim/ecpri_oran_top_reset_bridge_0.v"
+   type="VERILOG"
+   library="ecpri_oran_top_reset_bridge_0"
+   hasInlineConfiguration="true" />
+ <topLevel name="ecpri_oran_top_reset_bridge_0.ecpri_oran_top_reset_bridge_0" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB014R24B2I2V" />
+</simPackage>

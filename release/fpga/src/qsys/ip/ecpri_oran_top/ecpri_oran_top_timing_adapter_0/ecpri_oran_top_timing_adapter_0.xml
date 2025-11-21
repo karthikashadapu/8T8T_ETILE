@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.10.16.14:41:57"
+ outputDirectory="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_timing_adapter_0/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGFB027R24C2E3V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="3"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="reset" kind="reset" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="reset_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="in" kind="avalon_streaming" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="reset" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="3" />
+   <property name="symbolsPerBeat" value="11" />
+   <port name="in_data" direction="input" role="data" width="88" />
+   <port name="in_valid" direction="input" role="valid" width="1" />
+   <port name="in_ready" direction="output" role="ready" width="1" />
+   <port
+       name="in_startofpacket"
+       direction="input"
+       role="startofpacket"
+       width="1" />
+   <port name="in_endofpacket" direction="input" role="endofpacket" width="1" />
+   <port name="in_empty" direction="input" role="empty" width="4" />
+  </interface>
+  <interface name="out" kind="avalon_streaming" start="1">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="reset" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="11" />
+   <port name="out_data" direction="output" role="data" width="88" />
+   <port name="out_valid" direction="output" role="valid" width="1" />
+   <port name="out_ready" direction="input" role="ready" width="1" />
+   <port
+       name="out_startofpacket"
+       direction="output"
+       role="startofpacket"
+       width="1" />
+   <port
+       name="out_endofpacket"
+       direction="output"
+       role="endofpacket"
+       width="1" />
+   <port name="out_empty" direction="output" role="empty" width="4" />
+  </interface>
+ </perimeter>
+ <entity
+   kind="ecpri_oran_top_timing_adapter_0"
+   version="1.0"
+   name="ecpri_oran_top_timing_adapter_0">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="AGFB027R24C2E2VR2" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <generatedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_timing_adapter_0/synth/ecpri_oran_top_timing_adapter_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_timing_adapter_0/synth/ecpri_oran_top_timing_adapter_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_timing_adapter_0.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/ip/altera/avalon_st/altera_avalon_st_timing_adapter/avalon-st_timing_adapter_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="ecpri_oran_top_timing_adapter_0">"Generating: ecpri_oran_top_timing_adapter_0"</message>
+   <message level="Info" culprit="ecpri_oran_top_timing_adapter_0">"Generating: ecpri_oran_top_timing_adapter_0_timing_adapter_1940_o3asvza"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="timing_adapter"
+   version="19.4.0"
+   name="ecpri_oran_top_timing_adapter_0_timing_adapter_1940_o3asvza">
+  <parameter name="inErrorWidth" value="0" />
+  <parameter name="inUseValid" value="true" />
+  <parameter name="inUseReady" value="true" />
+  <parameter name="inBitsPerSymbol" value="8" />
+  <parameter name="outReadyLatency" value="0" />
+  <parameter name="inChannelWidth" value="0" />
+  <parameter name="inSymbolsPerBeat" value="11" />
+  <parameter name="inUseEmptyPort" value="YES" />
+  <parameter name="outUseReady" value="true" />
+  <parameter name="outUseValid" value="true" />
+  <parameter name="inReadyLatency" value="3" />
+  <parameter name="inUseEmpty" value="false" />
+  <parameter name="SYNC_RESET" value="0" />
+  <parameter name="inUsePackets" value="true" />
+  <generatedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_timing_adapter_0/timing_adapter_1940/synth/ecpri_oran_top_timing_adapter_0_timing_adapter_1940_o3asvza.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_timing_adapter_0/timing_adapter_1940/synth/ecpri_oran_top_timing_adapter_0_timing_adapter_1940_o3asvza_fifo.sv"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_timing_adapter_0/timing_adapter_1940/synth/ecpri_oran_top_timing_adapter_0_timing_adapter_1940_o3asvza.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/ecpri_oran_top_timing_adapter_0/timing_adapter_1940/synth/ecpri_oran_top_timing_adapter_0_timing_adapter_1940_o3asvza_fifo.sv"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/ip/altera/avalon_st/altera_avalon_st_timing_adapter/avalon-st_timing_adapter_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="ecpri_oran_top_timing_adapter_0" as="timing_adapter_0" />
+  <messages>
+   <message level="Info" culprit="ecpri_oran_top_timing_adapter_0">"Generating: ecpri_oran_top_timing_adapter_0_timing_adapter_1940_o3asvza"</message>
+  </messages>
+ </entity>
+</deploy>

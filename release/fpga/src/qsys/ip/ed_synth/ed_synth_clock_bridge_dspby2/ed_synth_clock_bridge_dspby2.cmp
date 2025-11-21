@@ -1,0 +1,7 @@
+	component ed_synth_clock_bridge_dspby2 is
+		port (
+			in_clk  : in  std_logic := 'X'; -- clk
+			out_clk : out std_logic         -- clk
+		);
+	end component ed_synth_clock_bridge_dspby2;
+

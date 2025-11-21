@@ -1,0 +1,45 @@
+	component dxc_ss_top_duc_model_DUT_0 is
+		port (
+			clk                  : in  std_logic                     := 'X';             -- clk
+			areset               : in  std_logic                     := 'X';             -- reset
+			bus_clk              : in  std_logic                     := 'X';             -- clk
+			bus_areset           : in  std_logic                     := 'X';             -- reset
+			busIn_address        : in  std_logic_vector(13 downto 0) := (others => 'X'); -- address
+			busIn_read           : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- read
+			busIn_write          : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- write
+			busIn_writedata      : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			busOut_readdata      : out std_logic_vector(31 downto 0);                    -- readdata
+			busOut_readdatavalid : out std_logic_vector(0 downto 0);                     -- readdatavalid
+			busOut_waitrequest   : out std_logic_vector(0 downto 0);                     -- waitrequest
+			DUC_Valid_l1_s       : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- valid_DUC_Valid_l1_s
+			DUC_Chan_l1_s        : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- channel_DUC_Chan_l1_s
+			DUC_Data_l1_im       : in  std_logic_vector(15 downto 0) := (others => 'X'); -- data_DUC_Data_l1_im
+			DUC_Data_l1_re       : in  std_logic_vector(15 downto 0) := (others => 'X'); -- data_DUC_Data_l1_re
+			DUC_NCO_sync_0       : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- data_DUC_NCO_sync_0
+			DUC_NCO_sync_1       : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- data_DUC_NCO_sync_1
+			DUC_NCO_sync_2       : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- data_DUC_NCO_sync_2
+			DUC_NCO_sync_3       : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- data_DUC_NCO_sync_3
+			BW_Config_CC1_s      : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- data_BW_Config_CC1_s
+			DUC_Valid_Out_s      : out std_logic_vector(0 downto 0);                     -- valid_DUC_Valid_Out_s
+			DUC_Chan_Out_s       : out std_logic_vector(7 downto 0);                     -- channel_DUC_Chan_Out_s
+			DUC_Data_Out_0im     : out std_logic_vector(15 downto 0);                    -- data_DUC_Data_Out_0im
+			DUC_Data_Out_0re     : out std_logic_vector(15 downto 0);                    -- data_DUC_Data_Out_0re
+			DUC_Data_Out_1im     : out std_logic_vector(15 downto 0);                    -- data_DUC_Data_Out_1im
+			DUC_Data_Out_1re     : out std_logic_vector(15 downto 0);                    -- data_DUC_Data_Out_1re
+			DUC_Data_Out_2im     : out std_logic_vector(15 downto 0);                    -- data_DUC_Data_Out_2im
+			DUC_Data_Out_2re     : out std_logic_vector(15 downto 0);                    -- data_DUC_Data_Out_2re
+			DUC_Data_Out_3im     : out std_logic_vector(15 downto 0);                    -- data_DUC_Data_Out_3im
+			DUC_Data_Out_3re     : out std_logic_vector(15 downto 0);                    -- data_DUC_Data_Out_3re
+			duc_l1_vout_s        : out std_logic_vector(0 downto 0);                     -- valid_duc_l1_vout_s
+			duc_l1_cout_s        : out std_logic_vector(7 downto 0);                     -- channel_duc_l1_cout_s
+			duc_l1_dout_0im      : out std_logic_vector(15 downto 0);                    -- data_duc_l1_dout_0im
+			duc_l1_dout_0re      : out std_logic_vector(15 downto 0);                    -- data_duc_l1_dout_0re
+			duc_l1_dout_1im      : out std_logic_vector(15 downto 0);                    -- data_duc_l1_dout_1im
+			duc_l1_dout_1re      : out std_logic_vector(15 downto 0);                    -- data_duc_l1_dout_1re
+			duc_l1_dout_2im      : out std_logic_vector(15 downto 0);                    -- data_duc_l1_dout_2im
+			duc_l1_dout_2re      : out std_logic_vector(15 downto 0);                    -- data_duc_l1_dout_2re
+			duc_l1_dout_3im      : out std_logic_vector(15 downto 0);                    -- data_duc_l1_dout_3im
+			duc_l1_dout_3re      : out std_logic_vector(15 downto 0)                     -- data_duc_l1_dout_3re
+		);
+	end component dxc_ss_top_duc_model_DUT_0;
+

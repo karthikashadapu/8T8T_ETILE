@@ -1,0 +1,32 @@
+# system info dxc_ss_top_dec_dly_comp_DUT_0 on 2025.10.16.14:44:28
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for dxc_ss_top_dec_dly_comp_DUT_0 on 2025.10.16.14:44:28
+files:
+filepath,kind,attributes,module,is_top
+sim/dxc_ss_top_dec_dly_comp_DUT_0.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,dxc_ss_top_dec_dly_comp_DUT_0,true
+dec_dly_comp_DUT_10/sim/dspba_library_ver.sv,SYSTEM_VERILOG,,dec_dly_comp_DUT,false
+dec_dly_comp_DUT_10/sim/dec_dly_comp_DUT_safe_path_flat_ver.sv,SYSTEM_VERILOG,,dec_dly_comp_DUT,false
+dec_dly_comp_DUT_10/sim/dec_dly_comp_DUT_safe_path_flat.vhd,VHDL,,dec_dly_comp_DUT,false
+dec_dly_comp_DUT_10/sim/dec_dly_comp_DUT.sv,SYSTEM_VERILOG,,dec_dly_comp_DUT,false
+dec_dly_comp_DUT_10/sim/busFabric_dec_dly_comp_DUT_2o1ix4a06j686w6r6g6u0qu5xgbuoz.sv,SYSTEM_VERILOG,,dec_dly_comp_DUT,false
+dec_dly_comp_DUT_10/sim/dec_dly_comp_DUT_DUT.sv,SYSTEM_VERILOG,,dec_dly_comp_DUT,false
+dec_dly_comp_DUT_10/sim/dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation.sv,SYSTEM_VERILOG,,dec_dly_comp_DUT,false
+dec_dly_comp_DUT_10/sim/dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Ant_Gain.sv,SYSTEM_VERILOG,,dec_dly_comp_DUT,false
+dec_dly_comp_DUT_10/sim/dec_dly_comp_DUT_DUT_Antenna_Gain_Delay_Compensation_Delay_Compensation.sv,SYSTEM_VERILOG,,dec_dly_comp_DUT,false
+dec_dly_comp_DUT_10/sim/dec_dly_comp_DUT_DUT_By_Pass.sv,SYSTEM_VERILOG,,dec_dly_comp_DUT,false
+dec_dly_comp_DUT_10/sim/dec_dly_comp_DUT_DUT_Polyphase_Decimator.sv,SYSTEM_VERILOG,,dec_dly_comp_DUT,false
+dec_dly_comp_DUT_10/sim/dec_dly_comp_DUT_DUT_Polyphase_Decimator_HB3_im.sv,SYSTEM_VERILOG,,dec_dly_comp_DUT,false
+dec_dly_comp_DUT_10/sim/dec_dly_comp_DUT_DUT_Polyphase_Decimator_HB3_re.sv,SYSTEM_VERILOG,,dec_dly_comp_DUT,false
+dec_dly_comp_DUT_10/sim/dec_dly_comp_DUT_DUT_Polyphase_Decimator_scale_HB3_im.sv,SYSTEM_VERILOG,,dec_dly_comp_DUT,false
+dec_dly_comp_DUT_10/sim/dec_dly_comp_DUT_DUT_Polyphase_Decimator_scale_HB3_re.sv,SYSTEM_VERILOG,,dec_dly_comp_DUT,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+dxc_ss_top_dec_dly_comp_DUT_0.dec_dly_comp_DUT_0,dec_dly_comp_DUT

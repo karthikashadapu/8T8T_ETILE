@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="duc_model_DUT_10/sim/dspba_library_ver.sv"
+   type="SYSTEM_VERILOG"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_safe_path_flat_ver.sv"
+   type="SYSTEM_VERILOG"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_safe_path_flat.vhd"
+   type="VHDL"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT.sv"
+   type="SYSTEM_VERILOG"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/busFabric_duc_model_DUT_2ouiflr06j68696x6u0qu5xajz.sv"
+   type="SYSTEM_VERILOG"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC.sv"
+   type="SYSTEM_VERILOG"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1.sv"
+   type="SYSTEM_VERILOG"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter.sv"
+   type="SYSTEM_VERILOG"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_Scale.sv"
+   type="SYSTEM_VERILOG"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_Scale1.sv"
+   type="SYSTEM_VERILOG"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im.sv"
+   type="SYSTEM_VERILOG"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_rm.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm0.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm1.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm2.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm3.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm4.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm5.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm6.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm7.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm8.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm9.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm10.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm11.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm12.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm13.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm14.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm15.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm16.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm17.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm18.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm19.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm20.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm21.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm22.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm23.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm24.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm25.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm26.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm27.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm28.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm29.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm30.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm31.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm32.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm33.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm34.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm35.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm36.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm37.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm38.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm39.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm40.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm41.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm42.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm43.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm44.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm45.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm46.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm47.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm48.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm49.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm50.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm51.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm52.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm53.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm54.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm55.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm56.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm57.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm58.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm59.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm60.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm61.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm62.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm63.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Im_u0_m0_wo0_cm64.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re.sv"
+   type="SYSTEM_VERILOG"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_rm.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm0.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm1.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm2.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm3.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm4.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm5.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm6.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm7.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm8.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm9.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm10.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm11.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm12.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm13.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm14.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm15.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm16.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm17.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm18.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm19.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm20.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm21.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm22.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm23.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm24.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm25.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm26.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm27.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm28.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm29.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm30.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm31.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm32.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm33.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm34.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm35.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm36.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm37.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm38.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm39.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm40.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm41.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm42.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm43.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm44.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm45.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm46.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm47.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm48.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm49.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm50.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm51.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm52.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm53.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm54.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm55.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm56.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm57.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm58.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm59.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm60.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm61.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm62.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm63.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Chan_Filter_SingleRateFIR_Re_u0_m0_wo0_cm64.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Filter_Reconfig.sv"
+   type="SYSTEM_VERILOG"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_Chan_Filter_lineup1_Filter_Reconfig_Lut_lutmem.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1.sv"
+   type="SYSTEM_VERILOG"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_ComplexMixer.sv"
+   type="SYSTEM_VERILOG"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_ComplexMixer_Scale1.sv"
+   type="SYSTEM_VERILOG"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO.sv"
+   type="SYSTEM_VERILOG"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_readbackMem.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u0_sinTable.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u0_cosTable.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u1_sinTable.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u1_cosTable.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u2_sinTable.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u2_cosTable.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u3_sinTable.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_COMPLEX_MIXER1_Complex_NCO_u3_cosTable.hex"
+   type="HEX"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_DUC_l1.sv"
+   type="SYSTEM_VERILOG"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB1.sv"
+   type="SYSTEM_VERILOG"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB1_HB1_im.sv"
+   type="SYSTEM_VERILOG"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB1_HB1_re.sv"
+   type="SYSTEM_VERILOG"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB1_scale_HB1_im.sv"
+   type="SYSTEM_VERILOG"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB1_scale_HB1_re.sv"
+   type="SYSTEM_VERILOG"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB2.sv"
+   type="SYSTEM_VERILOG"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB2_HB2_im.sv"
+   type="SYSTEM_VERILOG"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB2_HB2_re.sv"
+   type="SYSTEM_VERILOG"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB2_scale_HB2_im.sv"
+   type="SYSTEM_VERILOG"
+   library="duc_model_DUT_10" />
+ <file
+   path="duc_model_DUT_10/sim/duc_model_DUT_ChanFilt_DUC_DUC_l1_HB2_scale_HB2_re.sv"
+   type="SYSTEM_VERILOG"
+   library="duc_model_DUT_10" />
+ <file
+   path="sim/dxc_ss_top_duc_model_DUT_0.v"
+   type="VERILOG"
+   library="dxc_ss_top_duc_model_DUT_0"
+   hasInlineConfiguration="true" />
+ <topLevel name="dxc_ss_top_duc_model_DUT_0.dxc_ss_top_duc_model_DUT_0" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

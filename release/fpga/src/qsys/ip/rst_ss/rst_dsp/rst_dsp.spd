@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="sim/rst_dsp.v"
+   type="VERILOG"
+   library="rst_dsp"
+   hasInlineConfiguration="true" />
+ <topLevel name="rst_dsp.rst_dsp" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

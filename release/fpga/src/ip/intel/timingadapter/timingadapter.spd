@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="timing_adapter_1940/sim/timingadapter_timing_adapter_1940_4rcaqxq.sv"
+   type="SYSTEM_VERILOG"
+   library="timing_adapter_1940" />
+ <file
+   path="timing_adapter_1940/sim/timingadapter_timing_adapter_1940_4rcaqxq_fifo.sv"
+   type="SYSTEM_VERILOG"
+   library="timing_adapter_1940" />
+ <file
+   path="sim/timingadapter.v"
+   type="VERILOG"
+   library="timingadapter"
+   hasInlineConfiguration="true" />
+ <topLevel name="timingadapter.timingadapter" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

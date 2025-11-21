@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.10.16.13:19:28"
+ outputDirectory="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/profiling_cdc_pipeline/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGFB027R24C2E3V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="3"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_SRC_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_SRC_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_SRC_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DST_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DST_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DST_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="src_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="src_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="rst_src_clk_n" kind="reset" start="0">
+   <property name="associatedClock" value="src_clk" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="rst_src_clk_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="dst_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="dst_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="rst_dst_clk_n" kind="reset" start="0">
+   <property name="associatedClock" value="dst_clk" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="rst_dst_clk_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="datain" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="datain" direction="input" role="data" width="56" />
+  </interface>
+  <interface name="dataout" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="dataout" direction="output" role="data" width="56" />
+  </interface>
+ </perimeter>
+ <entity
+   kind="profiling_cdc_pipeline"
+   version="1.0"
+   name="profiling_cdc_pipeline">
+  <parameter name="AUTO_SRC_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_DST_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="AGFB027R24C2E2VR2" />
+  <parameter name="AUTO_SRC_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_SRC_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DST_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <parameter name="AUTO_DST_CLK_CLOCK_RATE" value="-1" />
+  <generatedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/profiling_cdc_pipeline/synth/profiling_cdc_pipeline.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/profiling_cdc_pipeline/synth/profiling_cdc_pipeline.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/profiling_cdc_pipeline.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/cdc_pipeline/cdc_pipeline_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="profiling_cdc_pipeline">"Generating: profiling_cdc_pipeline"</message>
+   <message level="Info" culprit="profiling_cdc_pipeline">"Generating: cdc_pipeline"</message>
+  </messages>
+ </entity>
+ <entity kind="cdc_pipeline" version="1.0" name="cdc_pipeline">
+  <generatedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/profiling_cdc_pipeline/cdc_pipeline_10/synth/cdc_pipeline.v"
+       attributes="TOP_LEVEL_FILE" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/ecpri_oran_top/profiling_cdc_pipeline/cdc_pipeline_10/synth/cdc_pipeline.v"
+       attributes="TOP_LEVEL_FILE" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/cdc_pipeline/cdc_pipeline_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="profiling_cdc_pipeline" as="profiling_cdc_pipeline" />
+  <messages>
+   <message level="Info" culprit="profiling_cdc_pipeline">"Generating: cdc_pipeline"</message>
+  </messages>
+ </entity>
+</deploy>

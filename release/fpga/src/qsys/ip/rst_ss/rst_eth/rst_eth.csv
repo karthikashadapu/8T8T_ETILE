@@ -1,0 +1,16 @@
+# system info rst_eth on 2025.10.16.14:22:35
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for rst_eth on 2025.10.16.14:22:35
+files:
+filepath,kind,attributes,module,is_top
+sim/rst_eth.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,rst_eth,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module

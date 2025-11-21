@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="sim/rst_eth.v"
+   type="VERILOG"
+   library="rst_eth"
+   hasInlineConfiguration="true" />
+ <topLevel name="rst_eth.rst_eth" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

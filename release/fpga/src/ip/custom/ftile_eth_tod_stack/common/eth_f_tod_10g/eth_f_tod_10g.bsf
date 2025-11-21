@@ -1,0 +1,193 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the Intel FPGA Software License Subscription Agreements 
+on the Quartus Prime software download page.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 456 592)
+	(text "eth_f_tod_10g" (rect 182 0 239 12)(font "SansSerif" (font_size 11)))
+	(text "inst" (rect 8 576 20 588)(font "Arial" ))
+	(port
+		(pt 0 76)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "SansSerif" (font_size 8)))
+		(text "clk" (rect 4 65 22 76)(font "SansSerif" (font_size 8)))
+		(line (pt 0 76)(pt 187 76)(line_width 1))
+	)
+	(port
+		(pt 0 126)
+		(input)
+		(text "rst_n" (rect 0 0 21 12)(font "SansSerif" (font_size 8)))
+		(text "rst_n" (rect 4 115 34 126)(font "SansSerif" (font_size 8)))
+		(line (pt 0 126)(pt 187 126)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "period_clk" (rect 0 0 40 12)(font "SansSerif" (font_size 8)))
+		(text "period_clk" (rect 4 165 64 176)(font "SansSerif" (font_size 8)))
+		(line (pt 0 176)(pt 187 176)(line_width 1))
+	)
+	(port
+		(pt 0 226)
+		(input)
+		(text "period_rst_n" (rect 0 0 50 12)(font "SansSerif" (font_size 8)))
+		(text "period_rst_n" (rect 4 215 76 226)(font "SansSerif" (font_size 8)))
+		(line (pt 0 226)(pt 187 226)(line_width 1))
+	)
+	(port
+		(pt 0 301)
+		(input)
+		(text "csr_write" (rect 0 0 36 12)(font "SansSerif" (font_size 8)))
+		(text "csr_write" (rect 4 290 58 301)(font "SansSerif" (font_size 8)))
+		(line (pt 0 301)(pt 187 301)(line_width 1))
+	)
+	(port
+		(pt 0 326)
+		(input)
+		(text "csr_read" (rect 0 0 36 12)(font "SansSerif" (font_size 8)))
+		(text "csr_read" (rect 4 315 52 326)(font "SansSerif" (font_size 8)))
+		(line (pt 0 326)(pt 187 326)(line_width 1))
+	)
+	(port
+		(pt 0 351)
+		(input)
+		(text "csr_writedata[31..0]" (rect 0 0 76 12)(font "SansSerif" (font_size 8)))
+		(text "csr_writedata[31..0]" (rect 4 340 124 351)(font "SansSerif" (font_size 8)))
+		(line (pt 0 351)(pt 187 351)(line_width 3))
+	)
+	(port
+		(pt 0 401)
+		(input)
+		(text "csr_address[3..0]" (rect 0 0 70 12)(font "SansSerif" (font_size 8)))
+		(text "csr_address[3..0]" (rect 4 390 106 401)(font "SansSerif" (font_size 8)))
+		(line (pt 0 401)(pt 187 401)(line_width 3))
+	)
+	(port
+		(pt 0 451)
+		(input)
+		(text "time_of_day_96b_load_data[95..0]" (rect 0 0 140 12)(font "SansSerif" (font_size 8)))
+		(text "time_of_day_96b_load_data[95..0]" (rect 4 440 196 451)(font "SansSerif" (font_size 8)))
+		(line (pt 0 451)(pt 187 451)(line_width 3))
+	)
+	(port
+		(pt 0 476)
+		(input)
+		(text "time_of_day_96b_load_valid" (rect 0 0 116 12)(font "SansSerif" (font_size 8)))
+		(text "time_of_day_96b_load_valid" (rect 4 465 160 476)(font "SansSerif" (font_size 8)))
+		(line (pt 0 476)(pt 187 476)(line_width 1))
+	)
+	(port
+		(pt 0 526)
+		(input)
+		(text "time_of_day_64b_load_data[63..0]" (rect 0 0 141 12)(font "SansSerif" (font_size 8)))
+		(text "time_of_day_64b_load_data[63..0]" (rect 4 515 196 526)(font "SansSerif" (font_size 8)))
+		(line (pt 0 526)(pt 187 526)(line_width 3))
+	)
+	(port
+		(pt 0 551)
+		(input)
+		(text "time_of_day_64b_load_valid" (rect 0 0 118 12)(font "SansSerif" (font_size 8)))
+		(text "time_of_day_64b_load_valid" (rect 4 540 160 551)(font "SansSerif" (font_size 8)))
+		(line (pt 0 551)(pt 187 551)(line_width 1))
+	)
+	(port
+		(pt 0 276)
+		(output)
+		(text "csr_readdata[31..0]" (rect 0 0 76 12)(font "SansSerif" (font_size 8)))
+		(text "csr_readdata[31..0]" (rect 4 265 118 276)(font "SansSerif" (font_size 8)))
+	)
+	(port
+		(pt 0 376)
+		(output)
+		(text "csr_waitrequest" (rect 0 0 62 12)(font "SansSerif" (font_size 8)))
+		(text "csr_waitrequest" (rect 4 365 94 376)(font "SansSerif" (font_size 8)))
+	)
+	(port
+		(pt 456 76)
+		(output)
+		(text "time_of_day_96b[95..0]" (rect 0 0 96 12)(font "SansSerif" (font_size 8)))
+		(text "time_of_day_96b[95..0]" (rect 340 65 472 76)(font "SansSerif" (font_size 8)))
+		(line (pt 456 76)(pt 272 76)(line_width 3))
+	)
+	(port
+		(pt 456 126)
+		(output)
+		(text "time_of_day_64b[63..0]" (rect 0 0 97 12)(font "SansSerif" (font_size 8)))
+		(text "time_of_day_64b[63..0]" (rect 340 115 472 126)(font "SansSerif" (font_size 8)))
+		(line (pt 456 126)(pt 272 126)(line_width 3))
+	)
+	(drawing
+		(text "csr_clock" (rect 133 46 320 105)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 192 71 402 152)(font "SansSerif" (color 0 0 0)))
+		(text "csr_reset" (rect 132 96 318 205)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 192 121 426 252)(font "SansSerif" (color 0 0 0)))
+		(text "period_clock" (rect 115 146 302 305)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 192 171 402 352)(font "SansSerif" (color 0 0 0)))
+		(text "period_clock_reset" (rect 77 196 262 405)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 192 221 426 452)(font "SansSerif" (color 0 0 0)))
+		(text "csr" (rect 170 246 358 505)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "readdata" (rect 192 271 432 552)(font "SansSerif" (color 0 0 0)))
+		(text "write" (rect 192 296 414 602)(font "SansSerif" (color 0 0 0)))
+		(text "read" (rect 192 321 408 652)(font "SansSerif" (color 0 0 0)))
+		(text "writedata" (rect 192 346 438 702)(font "SansSerif" (color 0 0 0)))
+		(text "waitrequest" (rect 192 371 450 752)(font "SansSerif" (color 0 0 0)))
+		(text "address" (rect 192 396 426 802)(font "SansSerif" (color 0 0 0)))
+		(text "time_of_day_96b" (rect 273 46 636 105)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 251 71 526 152)(font "SansSerif" (color 0 0 0)))
+		(text "time_of_day_64b" (rect 273 96 636 205)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 251 121 526 252)(font "SansSerif" (color 0 0 0)))
+		(text "time_of_day_96b_load" (rect 54 421 228 855)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 192 446 408 902)(font "SansSerif" (color 0 0 0)))
+		(text "valid" (rect 192 471 414 952)(font "SansSerif" (color 0 0 0)))
+		(text "time_of_day_64b_load" (rect 54 496 228 1005)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 192 521 408 1052)(font "SansSerif" (color 0 0 0)))
+		(text "valid" (rect 192 546 414 1102)(font "SansSerif" (color 0 0 0)))
+		(text " eth_f_tod_10g " (rect 394 576 878 1162)(font "SansSerif" ))
+		(line (pt 187 34)(pt 272 34)(line_width 1))
+		(line (pt 272 34)(pt 272 576)(line_width 1))
+		(line (pt 187 576)(pt 272 576)(line_width 1))
+		(line (pt 187 34)(pt 187 576)(line_width 1))
+		(line (pt 188 55)(pt 188 80)(line_width 1))
+		(line (pt 189 55)(pt 189 80)(line_width 1))
+		(line (pt 188 105)(pt 188 130)(line_width 1))
+		(line (pt 189 105)(pt 189 130)(line_width 1))
+		(line (pt 188 155)(pt 188 180)(line_width 1))
+		(line (pt 189 155)(pt 189 180)(line_width 1))
+		(line (pt 188 205)(pt 188 230)(line_width 1))
+		(line (pt 189 205)(pt 189 230)(line_width 1))
+		(line (pt 456 276)(pt 187 276)(line_width 3))
+		(line (pt 456 376)(pt 187 376)(line_width 1))
+		(line (pt 188 255)(pt 188 405)(line_width 1))
+		(line (pt 189 255)(pt 189 405)(line_width 1))
+		(line (pt 271 55)(pt 271 80)(line_width 1))
+		(line (pt 270 55)(pt 270 80)(line_width 1))
+		(line (pt 271 105)(pt 271 130)(line_width 1))
+		(line (pt 270 105)(pt 270 130)(line_width 1))
+		(line (pt 188 430)(pt 188 480)(line_width 1))
+		(line (pt 189 430)(pt 189 480)(line_width 1))
+		(line (pt 188 505)(pt 188 555)(line_width 1))
+		(line (pt 189 505)(pt 189 555)(line_width 1))
+		(line (pt 0 0)(pt 456 0)(line_width 1))
+		(line (pt 456 0)(pt 456 593)(line_width 1))
+		(line (pt 0 593)(pt 456 593)(line_width 1))
+		(line (pt 0 0)(pt 0 593)(line_width 1))
+	)
+)

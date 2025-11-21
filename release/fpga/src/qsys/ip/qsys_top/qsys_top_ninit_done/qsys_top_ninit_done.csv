@@ -1,0 +1,16 @@
+# system info qsys_top_ninit_done on 2025.10.16.14:11:16
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for qsys_top_ninit_done on 2025.10.16.14:11:16
+files:
+filepath,kind,attributes,module,is_top
+sim/qsys_top_ninit_done.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,qsys_top_ninit_done,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module

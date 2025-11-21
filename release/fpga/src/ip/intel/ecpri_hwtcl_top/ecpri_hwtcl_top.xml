@@ -1,0 +1,1693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.11.11.13:16:39"
+ outputDirectory="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGFB014R24B2I2V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="2"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_MAC_CLK_TX_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_MAC_CLK_TX_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_MAC_CLK_TX_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_MAC_CLK_RX_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_MAC_CLK_RX_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_MAC_CLK_RX_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_TX_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_TX_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_TX_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RX_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RX_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RX_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CSR_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CSR_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CSR_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_EXT_SINK_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_EXT_SINK_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_EXT_SINK_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="mac_clk_tx" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="mac_clk_tx" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="mac_clk_rx" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="mac_clk_rx" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="clk_tx" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk_tx" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="clk_rx" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk_rx" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="clk_csr" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk_csr" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="ext_sink_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="ext_sink_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="rst_tx_n" kind="reset" start="0">
+   <property name="associatedClock" value="clk_tx" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="rst_tx_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="rst_rx_n" kind="reset" start="0">
+   <property name="associatedClock" value="clk_rx" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="rst_rx_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="rst_csr_n" kind="reset" start="0">
+   <property name="associatedClock" value="clk_csr" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="rst_csr_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="csr" kind="avalon" start="0">
+   <property name="addressAlignment" value="DYNAMIC" />
+   <property name="addressGroup" value="0" />
+   <property name="addressSpan" value="262144" />
+   <property name="addressUnits" value="WORDS" />
+   <property name="alwaysBurstMaxBurst" value="false" />
+   <property name="associatedClock" value="clk_csr" />
+   <property name="associatedReset" value="rst_csr_n" />
+   <property name="bitsPerSymbol" value="8" />
+   <property name="bridgedAddressOffset" value="0" />
+   <property name="bridgesToMaster" value="" />
+   <property name="burstOnBurstBoundariesOnly" value="false" />
+   <property name="burstcountUnits" value="WORDS" />
+   <property name="constantBurstBehavior" value="false" />
+   <property name="explicitAddressSpan" value="0" />
+   <property name="holdTime" value="0" />
+   <property name="interleaveBursts" value="false" />
+   <property name="isBigEndian" value="false" />
+   <property name="isFlash" value="false" />
+   <property name="isMemoryDevice" value="false" />
+   <property name="isNonVolatileStorage" value="false" />
+   <property name="linewrapBursts" value="false" />
+   <property name="maximumPendingReadTransactions" value="1" />
+   <property name="maximumPendingWriteTransactions" value="0" />
+   <property name="minimumReadLatency" value="1" />
+   <property name="minimumResponseLatency" value="1" />
+   <property name="minimumUninterruptedRunLength" value="1" />
+   <property name="prSafe" value="false" />
+   <property name="printableDevice" value="false" />
+   <property name="readLatency" value="0" />
+   <property name="readWaitStates" value="1" />
+   <property name="readWaitTime" value="1" />
+   <property name="registerIncomingSignals" value="false" />
+   <property name="registerOutgoingSignals" value="false" />
+   <property name="setupTime" value="0" />
+   <property name="timingUnits" value="Cycles" />
+   <property name="transparentBridge" value="false" />
+   <property name="waitrequestAllowance" value="0" />
+   <property name="wellBehavedWaitrequest" value="false" />
+   <property name="writeLatency" value="0" />
+   <property name="writeWaitStates" value="0" />
+   <property name="writeWaitTime" value="0" />
+   <property name="dfhFeatureGuid" value="0" />
+   <property name="dfhGroupId" value="0" />
+   <property name="dfhParameterId" value="" />
+   <property name="dfhParameterName" value="" />
+   <property name="dfhParameterVersion" value="" />
+   <property name="dfhParameterData" value="" />
+   <property name="dfhParameterDataLength" value="" />
+   <property name="dfhFeatureMajorVersion" value="0" />
+   <property name="dfhFeatureMinorVersion" value="0" />
+   <property name="dfhFeatureId" value="35" />
+   <property name="dfhFeatureType" value="3" />
+   <port name="csr_address" direction="input" role="address" width="16" />
+   <port name="csr_write" direction="input" role="write" width="1" />
+   <port name="csr_writedata" direction="input" role="writedata" width="32" />
+   <port name="csr_read" direction="input" role="read" width="1" />
+   <port name="csr_readdata" direction="output" role="readdata" width="32" />
+   <port
+       name="csr_readdatavalid"
+       direction="output"
+       role="readdatavalid"
+       width="1" />
+   <port
+       name="csr_waitrequest"
+       direction="output"
+       role="waitrequest"
+       width="1" />
+  </interface>
+  <interface name="mac_source" kind="avalon_streaming" start="1">
+   <property name="associatedClock" value="mac_clk_tx" />
+   <property name="associatedReset" value="rst_tx_n" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port name="mac_source_valid" direction="output" role="valid" width="1" />
+   <port name="mac_source_data" direction="output" role="data" width="64" />
+   <port
+       name="mac_source_sop"
+       direction="output"
+       role="startofpacket"
+       width="1" />
+   <port name="mac_source_eop" direction="output" role="endofpacket" width="1" />
+   <port name="mac_source_empty" direction="output" role="empty" width="3" />
+   <port name="mac_source_error" direction="output" role="error" width="1" />
+   <port name="mac_source_ready" direction="input" role="ready" width="1" />
+  </interface>
+  <interface name="avst_sink" kind="avalon_streaming" start="0">
+   <property name="associatedClock" value="clk_tx" />
+   <property name="associatedReset" value="rst_tx_n" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port name="avst_sink_valid" direction="input" role="valid" width="1" />
+   <port name="avst_sink_data" direction="input" role="data" width="64" />
+   <port name="avst_sink_sop" direction="input" role="startofpacket" width="1" />
+   <port name="avst_sink_eop" direction="input" role="endofpacket" width="1" />
+   <port name="avst_sink_empty" direction="input" role="empty" width="3" />
+   <port name="avst_sink_error" direction="input" role="error" width="1" />
+   <port name="avst_sink_ready" direction="output" role="ready" width="1" />
+  </interface>
+  <interface name="avst_source" kind="avalon_streaming" start="1">
+   <property name="associatedClock" value="clk_rx" />
+   <property name="associatedReset" value="rst_rx_n" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port name="avst_source_valid" direction="output" role="valid" width="1" />
+   <port name="avst_source_data" direction="output" role="data" width="64" />
+   <port
+       name="avst_source_sop"
+       direction="output"
+       role="startofpacket"
+       width="1" />
+   <port
+       name="avst_source_eop"
+       direction="output"
+       role="endofpacket"
+       width="1" />
+   <port name="avst_source_empty" direction="output" role="empty" width="3" />
+   <port name="avst_source_error" direction="output" role="error" width="1" />
+  </interface>
+  <interface name="mac_sink" kind="avalon_streaming" start="0">
+   <property name="associatedClock" value="mac_clk_rx" />
+   <property name="associatedReset" value="rst_rx_n" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port name="mac_sink_valid" direction="input" role="valid" width="1" />
+   <port name="mac_sink_data" direction="input" role="data" width="64" />
+   <port name="mac_sink_sop" direction="input" role="startofpacket" width="1" />
+   <port name="mac_sink_eop" direction="input" role="endofpacket" width="1" />
+   <port name="mac_sink_empty" direction="input" role="empty" width="3" />
+   <port name="mac_sink_error" direction="input" role="error" width="6" />
+   <port name="mac_sink_ready" direction="output" role="ready" width="1" />
+  </interface>
+  <interface name="ext_sink_0" kind="avalon_streaming" start="0">
+   <property name="associatedClock" value="ext_sink_clk" />
+   <property name="associatedReset" value="rst_rx_n" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port name="ext_sink_0_valid" direction="input" role="valid" width="1" />
+   <port name="ext_sink_0_data" direction="input" role="data" width="64" />
+   <port
+       name="ext_sink_0_sop"
+       direction="input"
+       role="startofpacket"
+       width="1" />
+   <port name="ext_sink_0_eop" direction="input" role="endofpacket" width="1" />
+   <port name="ext_sink_0_empty" direction="input" role="empty" width="3" />
+   <port name="ext_sink_0_error" direction="input" role="error" width="1" />
+   <port name="ext_sink_0_ready" direction="output" role="ready" width="1" />
+  </interface>
+  <interface name="ext_source" kind="avalon_streaming" start="1">
+   <property name="associatedClock" value="ext_sink_clk" />
+   <property name="associatedReset" value="rst_tx_n" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port name="ext_source_valid" direction="output" role="valid" width="1" />
+   <port name="ext_source_data" direction="output" role="data" width="64" />
+   <port
+       name="ext_source_sop"
+       direction="output"
+       role="startofpacket"
+       width="1" />
+   <port name="ext_source_eop" direction="output" role="endofpacket" width="1" />
+   <port name="ext_source_empty" direction="output" role="empty" width="3" />
+   <port name="ext_source_error" direction="output" role="error" width="6" />
+  </interface>
+  <interface name="ext_source_pkt_type" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="ext_source_pkt_type"
+       direction="output"
+       role="conduit"
+       width="3" />
+  </interface>
+  <interface name="err_interrupt" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="err_interrupt" direction="output" role="conduit" width="1" />
+  </interface>
+  <interface name="source_pc_id" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="source_pc_id" direction="output" role="conduit" width="32" />
+  </interface>
+  <interface name="source_seq_id" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="source_seq_id" direction="output" role="conduit" width="32" />
+  </interface>
+  <interface name="source_rtc_id" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="source_rtc_id" direction="output" role="conduit" width="16" />
+  </interface>
+  <interface name="source_msg_type" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="source_msg_type" direction="output" role="conduit" width="8" />
+  </interface>
+  <interface name="source_mem_acc_id" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="source_mem_acc_id" direction="output" role="conduit" width="8" />
+  </interface>
+  <interface name="source_op_type" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="source_op_type" direction="output" role="conduit" width="8" />
+  </interface>
+  <interface name="source_element_id" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="source_element_id" direction="output" role="conduit" width="16" />
+  </interface>
+  <interface name="source_address" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="source_address" direction="output" role="conduit" width="48" />
+  </interface>
+  <interface name="source_length" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="source_length" direction="output" role="conduit" width="16" />
+  </interface>
+  <interface name="source_reset_id" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="source_reset_id" direction="output" role="conduit" width="16" />
+  </interface>
+  <interface name="source_reset_op" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="source_reset_op" direction="output" role="conduit" width="8" />
+  </interface>
+  <interface name="source_event_id" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="source_event_id" direction="output" role="conduit" width="8" />
+  </interface>
+  <interface name="source_event_type" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="source_event_type" direction="output" role="conduit" width="8" />
+  </interface>
+  <interface name="source_notif" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="source_notif" direction="output" role="conduit" width="8" />
+  </interface>
+  <interface name="source_concatenation" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="source_concatenation"
+       direction="output"
+       role="conduit"
+       width="1" />
+  </interface>
+  <interface name="sink_pc_id" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="sink_pc_id" direction="input" role="conduit" width="32" />
+  </interface>
+  <interface name="sink_seq_id" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="sink_seq_id" direction="input" role="conduit" width="32" />
+  </interface>
+  <interface name="sink_rtc_id" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="sink_rtc_id" direction="input" role="conduit" width="16" />
+  </interface>
+  <interface name="sink_concatenation" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="sink_concatenation" direction="input" role="conduit" width="1" />
+  </interface>
+  <interface name="sink_msg_type" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="sink_msg_type" direction="input" role="conduit" width="8" />
+  </interface>
+  <interface name="sink_mem_acc_id" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="sink_mem_acc_id" direction="input" role="conduit" width="8" />
+  </interface>
+  <interface name="sink_op_type" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="sink_op_type" direction="input" role="conduit" width="8" />
+  </interface>
+  <interface name="sink_element_id" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="sink_element_id" direction="input" role="conduit" width="16" />
+  </interface>
+  <interface name="sink_address" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="sink_address" direction="input" role="conduit" width="48" />
+  </interface>
+  <interface name="sink_length" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="sink_length" direction="input" role="conduit" width="16" />
+  </interface>
+  <interface name="sink_reset_id" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="sink_reset_id" direction="input" role="conduit" width="16" />
+  </interface>
+  <interface name="sink_reset_op" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="sink_reset_op" direction="input" role="conduit" width="8" />
+  </interface>
+  <interface name="sink_event_id" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="sink_event_id" direction="input" role="conduit" width="8" />
+  </interface>
+  <interface name="sink_event_type" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="sink_event_type" direction="input" role="conduit" width="8" />
+  </interface>
+  <interface name="tx_lanes_stable" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="tx_lanes_stable" direction="input" role="conduit" width="1" />
+  </interface>
+  <interface name="rx_pcs_ready" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="rx_pcs_ready" direction="input" role="conduit" width="1" />
+  </interface>
+  <interface name="ptp_offset_timestamp" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="ptp_offset_timestamp"
+       direction="output"
+       role="conduit"
+       width="16" />
+  </interface>
+  <interface name="ptp_offset_correction_field" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="ptp_offset_correction_field"
+       direction="output"
+       role="conduit"
+       width="16" />
+  </interface>
+  <interface name="ptp_timestamp_insert" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="ptp_timestamp_insert"
+       direction="output"
+       role="conduit"
+       width="1" />
+  </interface>
+  <interface
+     name="ptp_tx_etstamp_ins_ctrl_residence_time_update"
+     kind="conduit"
+     start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="ptp_tx_etstamp_ins_ctrl_residence_time_update"
+       direction="output"
+       role="conduit"
+       width="1" />
+  </interface>
+  <interface name="ptp_timestamp_request_fingerprint" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="ptp_timestamp_request_fingerprint"
+       direction="output"
+       role="conduit"
+       width="8" />
+  </interface>
+  <interface name="ptp_timestamp_request_valid" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="ptp_timestamp_request_valid"
+       direction="output"
+       role="conduit"
+       width="1" />
+  </interface>
+  <interface name="tx_etstamp_ins_ctrl_timestamp_format" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="tx_etstamp_ins_ctrl_timestamp_format"
+       direction="output"
+       role="conduit"
+       width="1" />
+  </interface>
+  <interface
+     name="tx_etstamp_ins_ctrl_residence_time_calc_format"
+     kind="conduit"
+     start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="tx_etstamp_ins_ctrl_residence_time_calc_format"
+       direction="output"
+       role="conduit"
+       width="1" />
+  </interface>
+  <interface
+     name="tx_etstamp_ins_ctrl_offset_checksum_field"
+     kind="conduit"
+     start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="tx_etstamp_ins_ctrl_offset_checksum_field"
+       direction="output"
+       role="conduit"
+       width="16" />
+  </interface>
+  <interface
+     name="tx_etstamp_ins_ctrl_offset_checksum_correction"
+     kind="conduit"
+     start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="tx_etstamp_ins_ctrl_offset_checksum_correction"
+       direction="output"
+       role="conduit"
+       width="16" />
+  </interface>
+  <interface
+     name="tx_etstamp_ins_ctrl_ingress_timestamp_96b"
+     kind="conduit"
+     start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="tx_etstamp_ins_ctrl_ingress_timestamp_96b"
+       direction="output"
+       role="conduit"
+       width="96" />
+  </interface>
+  <interface name="tx_etstamp_ins_ctrl_checksum_zero" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="tx_etstamp_ins_ctrl_checksum_zero"
+       direction="output"
+       role="conduit"
+       width="1" />
+  </interface>
+  <interface name="tx_etstamp_ins_ctrl_checksum_correct" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="tx_etstamp_ins_ctrl_checksum_correct"
+       direction="output"
+       role="conduit"
+       width="1" />
+  </interface>
+  <interface name="tx_egress_timestamp_96b_valid" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="tx_egress_timestamp_96b_valid"
+       direction="input"
+       role="conduit"
+       width="1" />
+  </interface>
+  <interface name="tx_egress_timestamp_96b_data" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="tx_egress_timestamp_96b_data"
+       direction="input"
+       role="conduit"
+       width="96" />
+  </interface>
+  <interface name="tx_egress_timestamp_96b_fingerprint" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="tx_egress_timestamp_96b_fingerprint"
+       direction="input"
+       role="conduit"
+       width="8" />
+  </interface>
+  <interface name="rx_ingress_timestamp_96b_valid" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="rx_ingress_timestamp_96b_valid"
+       direction="input"
+       role="conduit"
+       width="1" />
+  </interface>
+  <interface name="rx_ingress_timestamp_96b_data" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="rx_ingress_timestamp_96b_data"
+       direction="input"
+       role="conduit"
+       width="96" />
+  </interface>
+  <interface
+     name="ext_sink_0_tx_egress_timestamp_96b_valid"
+     kind="conduit"
+     start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="ext_sink_0_tx_egress_timestamp_96b_valid"
+       direction="output"
+       role="conduit"
+       width="1" />
+  </interface>
+  <interface
+     name="ext_sink_0_tx_egress_timestamp_96b_data"
+     kind="conduit"
+     start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="ext_sink_0_tx_egress_timestamp_96b_data"
+       direction="output"
+       role="conduit"
+       width="96" />
+  </interface>
+  <interface name="ext_rx_ingress_timestamp_96b_data" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="ext_rx_ingress_timestamp_96b_data"
+       direction="output"
+       role="conduit"
+       width="96" />
+  </interface>
+  <interface
+     name="ext_sink_0_tx_ingress_timestamp_96b_data"
+     kind="conduit"
+     start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="ext_sink_0_tx_ingress_timestamp_96b_data"
+       direction="input"
+       role="conduit"
+       width="96" />
+  </interface>
+  <interface name="ptp_tx_ingress_timestamp_96b_data" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="ptp_tx_ingress_timestamp_96b_data"
+       direction="output"
+       role="conduit"
+       width="96" />
+  </interface>
+  <interface name="rx_tod_time_of_day_96b_data" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="rx_tod_time_of_day_96b_data"
+       direction="input"
+       role="conduit"
+       width="96" />
+  </interface>
+  <interface name="tx_tod_time_of_day_96b_data" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="tx_tod_time_of_day_96b_data"
+       direction="input"
+       role="conduit"
+       width="96" />
+  </interface>
+  <interface name="tx_transport_c_u" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="tx_transport_c_u" direction="input" role="conduit" width="1" />
+  </interface>
+  <interface name="rx_transport_c_u" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="rx_transport_c_u" direction="output" role="conduit" width="1" />
+  </interface>
+  <interface name="sink_pkt_size" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="sink_pkt_size" direction="input" role="conduit" width="16" />
+  </interface>
+  <interface name="sink_pkt_checksum" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="sink_pkt_checksum" direction="input" role="conduit" width="16" />
+  </interface>
+  <interface
+     name="ext_sink_0_tx_egress_timestamp_96b_fingerprint"
+     kind="conduit"
+     start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="ext_sink_0_tx_egress_timestamp_96b_fingerprint"
+       direction="output"
+       role="conduit"
+       width="6" />
+  </interface>
+  <interface
+     name="ext_sink_0_timestamp_request_fingerprint"
+     kind="conduit"
+     start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="ext_sink_0_timestamp_request_fingerprint"
+       direction="input"
+       role="conduit"
+       width="6" />
+  </interface>
+  <interface name="ext_sink_0_timestamp_request_valid" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="ext_sink_0_timestamp_request_valid"
+       direction="input"
+       role="conduit"
+       width="1" />
+  </interface>
+ </perimeter>
+ <entity kind="ecpri_hwtcl_top" version="1.0" name="ecpri_hwtcl_top">
+  <parameter name="AUTO_EXT_SINK_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_MAC_CLK_RX_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_MAC_CLK_RX_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_CLK_TX_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_MAC_CLK_TX_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_MAC_CLK_RX_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CLK_TX_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <parameter name="AUTO_CLK_TX_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_RX_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CLK_CSR_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_CSR_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_EXT_SINK_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CLK_CSR_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_DEVICE" value="AGFB014R24B2I2V" />
+  <parameter name="AUTO_CLK_RX_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_RX_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_MAC_CLK_TX_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_MAC_CLK_TX_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_EXT_SINK_CLK_RESET_DOMAIN" value="-1" />
+  <generatedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/synth/ecpri_hwtcl_top.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/synth/ecpri_hwtcl_top.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/sibgath/intelFPGA_pro/24.1/ip/altera_cloud/ecpri/ecpri_hw_tcl/ecpri_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="ecpri_hwtcl_top">"Generating: ecpri_hwtcl_top"</message>
+   <message level="Info" culprit="ecpri_hwtcl_top">"Generating: ecpri_iwf_top"</message>
+  </messages>
+ </entity>
+ <entity kind="ecpri" version="3.0.2" name="ecpri_iwf_top">
+  <parameter name="DEST_MAC_ADDR0" value="0" />
+  <parameter name="DEST_MAC_ADDR1" value="0" />
+  <parameter name="DEST_MAC_ADDR4" value="0" />
+  <parameter name="DEST_MAC_ADDR5" value="0" />
+  <parameter name="ARB_QUEUE_7_DEPTH_GUI" value="256" />
+  <parameter name="DEST_MAC_ADDR2" value="0" />
+  <parameter name="ARB_QUEUE_1_DEPTH" value="256" />
+  <parameter name="DEST_MAC_ADDR3" value="0" />
+  <parameter name="IWF_TYPE" value="0" />
+  <parameter name="ARB_QUEUE_0_DEPTH_GUI" value="256" />
+  <parameter name="DEST_MAC_ADDR6" value="0" />
+  <parameter name="DEST_MAC_ADDR7" value="0" />
+  <parameter name="ED_TARGET_DEVKIT" value="None" />
+  <parameter name="ARB_QUEUE_4_DEPTH" value="256" />
+  <parameter name="ECPRI_EXTERNAL_TRAFFIC_ENABLE" value="true" />
+  <parameter name="MSG4_TIMER_EN_GUI" value="true" />
+  <parameter name="MATCH_MACADDR_VLANID_GUI" value="MACADDR" />
+  <parameter name="IWF_SUPPORT_GUI" value="false" />
+  <parameter name="ARB_QUEUE_7_DEPTH" value="256" />
+  <parameter name="NUM_CHANNELS_PER_INST" value="1" />
+  <parameter name="PTP_TS_FP_WIDTH_GUI" value="6" />
+  <parameter name="ED_SYNTH_LANGUAGE_GUI" value="Verilog" />
+  <parameter name="ED_FAST_SIM_EN" value="false" />
+  <parameter name="DEST_MAC_ADDR1_GUI" value="0" />
+  <parameter name="NUMBER_EXT_SINK_INT" value="1" />
+  <parameter name="ADV_MAP_GUI" value="true" />
+  <parameter name="ED_TARGET_DEVKIT_GUI" value="None" />
+  <parameter name="EXT_SINK_0_DFIFO_DEPTH_GUI" value="256" />
+  <parameter name="ONE_STEP_DELAY" value="ON" />
+  <parameter name="TILE_GUI" value="E" />
+  <parameter name="MSG6_TIMER_EN" value="ON" />
+  <parameter name="MSG4_TIMER_WIDTH_GUI" value="12" />
+  <parameter name="DEVICE_GUI" value="AGFB014R24B2I2V" />
+  <parameter name="ETH_MTU" value="9000" />
+  <parameter name="EXT_SINK_1_DFIFO_DEPTH_GUI" value="256" />
+  <parameter name="DATA_WIDTH_GUI" value="64" />
+  <parameter name="EXT_SOURCE_FIFO_DEPTH" value="256" />
+  <parameter name="DEVICE_FAMILY_GUI" value="Agilex 7" />
+  <parameter name="EXT_SINK_0_DFIFO_DEPTH" value="256" />
+  <parameter name="EXT_SINK_1_DFIFO_DEPTH" value="256" />
+  <parameter name="DELAY_MEASUREMENT_GUI" value="one_step" />
+  <parameter name="ARB_QUEUE_1_DEPTH_GUI" value="256" />
+  <parameter name="IWF_TYPE_GUI" value="0" />
+  <parameter name="DEST_MAC_ADDR4_GUI" value="0" />
+  <parameter name="IOPLLCASCADE" value="true" />
+  <parameter name="ARB_QUEUE_2_DEPTH" value="256" />
+  <parameter name="PC_ID" value="0000" />
+  <parameter name="DELAY_MEASUREMENT" value="ON" />
+  <parameter name="ARB_QUEUE_6_DEPTH_GUI" value="256" />
+  <parameter name="MSG6_TIMER_WIDTH_GUI" value="12" />
+  <parameter name="ED_NIOSV_EN" value="true" />
+  <parameter name="MSG4_TIMER_EN" value="ON" />
+  <parameter name="RTC_ID" value="0000" />
+  <parameter name="LINE_BIT_RATE_NEGOTIATION" value="false" />
+  <parameter name="PROTOCOL_REVISION_GUI" value="1" />
+  <parameter name="TX_ARBITRATION_SCHEME_GUI" value="FIXED" />
+  <parameter name="DEST_MAC_ADDR6_GUI" value="0" />
+  <parameter name="EXT_SOURCE_FIFO_DEPTH_GUI" value="256" />
+  <parameter name="TILE" value="E" />
+  <parameter name="SEQ_ID" value="0000" />
+  <parameter name="DIE_TYPES_GUI" value="HSSI_WHR,HSSI_CRETE3,MAIN_FM6" />
+  <parameter name="VID_ADDR_DF_GUI" value="0" />
+  <parameter name="DATA_WIDTH" value="64" />
+  <parameter name="IWF_CPRI_LINE_RATE_GUI" value="24.33024" />
+  <parameter name="DEST_MAC_ADDR0_GUI" value="0" />
+  <parameter name="MATCH_MACADDR_VLANID" value="MACADDR" />
+  <parameter name="MSG6_TIMER_EN_GUI" value="true" />
+  <parameter name="ARB_QUEUE_3_DEPTH_GUI" value="256" />
+  <parameter name="ONE_STEP_DELAY_GUI" value="ON" />
+  <parameter name="ARB_QUEUE_0_DEPTH" value="256" />
+  <parameter name="ED_SYNTH_LANGUAGE" value="Verilog" />
+  <parameter name="DEST_MAC_ADDR2_GUI" value="0" />
+  <parameter name="ED_TYPE" value="0" />
+  <parameter name="VID_ADDR_DF" value="0" />
+  <parameter name="DEVICE" value="AGFB014R24B2I2V" />
+  <parameter name="ARB_QUEUE_4_DEPTH_GUI" value="256" />
+  <parameter name="ETHERNET_DR_ENABLE" value="true" />
+  <parameter name="ARB_QUEUE_3_DEPTH" value="256" />
+  <parameter name="IWF_EXT_FIFO" value="true" />
+  <parameter name="MSG_TYPE" value="1" />
+  <parameter name="ED_SIM_LANGUAGE_GUI" value="Verilog" />
+  <parameter name="PROTOCOL_REVISION" value="1" />
+  <parameter name="PTP_TS_FP_WIDTH" value="6" />
+  <parameter name="IWF_CPRI_LINE_RATE" value="24.33024" />
+  <parameter name="STARTUP_SEQ_EN" value="true" />
+  <parameter name="TX_ARBITRATION_SCHEME" value="FIXED" />
+  <parameter name="ARB_QUEUE_6_DEPTH" value="256" />
+  <parameter name="ED_TYPE_GUI" value="0" />
+  <parameter name="SRC_MAC_ADDR0" value="0" />
+  <parameter name="ED_SEARCH_PATH_GUI" value="false" />
+  <parameter name="DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="ED_INTERNAL_TEST_EN" value="false" />
+  <parameter name="SRC_MAC_ADDR0_GUI" value="0" />
+  <parameter name="MSG5_TIMER_WIDTH_GUI" value="16" />
+  <parameter name="ARB_QUEUE_5_DEPTH_GUI" value="256" />
+  <parameter name="ED_SEARCH_PATH" value="OFF" />
+  <parameter name="DEST_MAC_ADDR5_GUI" value="0" />
+  <parameter name="DEST_MAC_ADDR3_GUI" value="0" />
+  <parameter name="ED_TRAFFIC_DIRECTION_FLOW" value="0" />
+  <parameter name="NUMBER_EXT_SINK_INT_GUI" value="1" />
+  <parameter name="ETH_MTU_GUI" value="true" />
+  <parameter name="MSG4_TIMER_WIDTH" value="12" />
+  <parameter name="NUM_OF_CHANNEL" value="1" />
+  <parameter name="MSG5_TIMER_WIDTH" value="16" />
+  <parameter name="MSG6_TIMER_WIDTH" value="12" />
+  <parameter name="ARB_QUEUE_5_DEPTH" value="256" />
+  <parameter name="NUM_IWF_CPRI" value="1" />
+  <parameter name="DIE_TYPES" value="HSSI_WHR,HSSI_CRETE3,MAIN_FM6" />
+  <parameter name="DEST_MAC_ADDR7_GUI" value="0" />
+  <parameter name="ARB_QUEUE_2_DEPTH_GUI" value="256" />
+  <parameter name="ED_SIM_LANGUAGE" value="Verilog" />
+  <parameter name="INTEL_ORAN" value="ON" />
+  <parameter name="ADV_MAP" value="ON" />
+  <parameter name="CPRI_LINE_BIT_RATE" value="0" />
+  <parameter name="IWF_SUPPORT" value="OFF" />
+  <parameter name="NUM_IWF_CPRI_GUI" value="1" />
+  <parameter name="INTEL_ORAN_GUI" value="true" />
+  <generatedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_pkg.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/iwf_pkg.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/ecpri_iwf_top.sv"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_top.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/alt_ecpri_offset_compute.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/csrunit.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_avst_guard.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_csr.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_cunit_8w.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_cunit_8w_st.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_hdrinsert.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_mac.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_msg4_buffer.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_msg4_timebank8.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_msg5_rx.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_msg5_tx.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_msg5_unit.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_msg6_timebank8.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_pkt_cnt.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_pkt_cnt_st.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_rx.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_rx_adapter.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/alt_ecpri_dw8_decon.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_tx.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_tx_adapter.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/sync_reset_logic.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_avalon_fifo.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_avalon_fifo_wrapper.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_barrel_layer.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_barrel_shift.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_clkcrosser.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_dcfifo_m20k_ecc.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_dcfifo_noecc.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_delay_mlab.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_delay_regs.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_fifo.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_fifo_ratematch.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_fifo_8.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_fmmlab.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_iw16_sync_fifo_mlab.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_iwX_addr_gen.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_leftmost_one_8.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_m20k_ecc_1r1w.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_m20k_group.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_maddr_sel.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_mx4r.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_mx8r.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_pulse_stretch_sync.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_s10mlab.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_scfifo_m20k.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_scfifo_mlab.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_seg_shift.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_seg_shift_layer.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_seg_shift_split.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_std_synchronizer_nocut.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_wram_m20k.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_wram_mult_inst.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/altera_std_synchronizer_nocut.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/chksum_ver.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/ecpri_eq_18.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/ecpri_eq_3.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/ecpri_wys_lut.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ethframe/ethframe_ins.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ethframe/ethframe_rem.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ethframe/ethframe_top.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ethframe/packet_parser.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ethframe/ecpri_l2cos_arbiter.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ethframe/ecpri_l2cos_packet_queue_fifo.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ethframe/ecpri_l2cos_packet_queue_fifo_top.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ethframe/ecpri_pcp_checker.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ethframe/ecpri_l2cos_top.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ethframe/packet_queue.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ethframe/packet_queue_fixed_arb.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ethframe/packet_queue_fifo.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/iwf_ctl_demapper.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/iwf_inband_ctl.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/iwf_iq_demapper.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/iwf_rx.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/iwf_rx_top.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/iwf_shifter.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/iwf_top.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/iwf_tx_aggregator.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/iwf_tx_scheduler.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/iwf_tx.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/iwf_tx_top.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/iwf_wrapper.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/component/alt_iwf_fifo.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/component/alt_iwf_std_synchronizer_nocut.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/component/altera_std_synchronizer_nocut.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/component/alt_iwf_clkcrosser.sv"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_pkg.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/iwf_pkg.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/ecpri_iwf_top.sv"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_top.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/alt_ecpri_offset_compute.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/csrunit.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_avst_guard.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_csr.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_cunit_8w.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_cunit_8w_st.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_hdrinsert.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_mac.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_msg4_buffer.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_msg4_timebank8.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_msg5_rx.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_msg5_tx.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_msg5_unit.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_msg6_timebank8.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_pkt_cnt.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_pkt_cnt_st.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_rx.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_rx_adapter.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/alt_ecpri_dw8_decon.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_tx.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ecpri_tx_adapter.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/sync_reset_logic.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_avalon_fifo.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_avalon_fifo_wrapper.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_barrel_layer.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_barrel_shift.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_clkcrosser.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_dcfifo_m20k_ecc.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_dcfifo_noecc.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_delay_mlab.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_delay_regs.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_fifo.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_fifo_ratematch.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_fifo_8.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_fmmlab.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_iw16_sync_fifo_mlab.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_iwX_addr_gen.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_leftmost_one_8.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_m20k_ecc_1r1w.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_m20k_group.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_maddr_sel.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_mx4r.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_mx8r.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_pulse_stretch_sync.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_s10mlab.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_scfifo_m20k.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_scfifo_mlab.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_seg_shift.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_seg_shift_layer.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_seg_shift_split.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_std_synchronizer_nocut.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_wram_m20k.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/alt_ecpri_wram_mult_inst.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/altera_std_synchronizer_nocut.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/chksum_ver.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/ecpri_eq_18.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/ecpri_eq_3.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/components/ecpri_wys_lut.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ethframe/ethframe_ins.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ethframe/ethframe_rem.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ethframe/ethframe_top.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ethframe/packet_parser.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ethframe/ecpri_l2cos_arbiter.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ethframe/ecpri_l2cos_packet_queue_fifo.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ethframe/ecpri_l2cos_packet_queue_fifo_top.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ethframe/ecpri_pcp_checker.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ethframe/ecpri_l2cos_top.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ethframe/packet_queue.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ethframe/packet_queue_fixed_arb.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/ethframe/packet_queue_fifo.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/iwf_ctl_demapper.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/iwf_inband_ctl.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/iwf_iq_demapper.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/iwf_rx.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/iwf_rx_top.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/iwf_shifter.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/iwf_top.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/iwf_tx_aggregator.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/iwf_tx_scheduler.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/iwf_tx.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/iwf_tx_top.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/iwf_wrapper.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/component/alt_iwf_fifo.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/component/alt_iwf_std_synchronizer_nocut.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/component/altera_std_synchronizer_nocut.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top/ecpri_302/synth/IWF/src/component/alt_iwf_clkcrosser.sv"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/sibgath/intelFPGA_pro/24.1/ip/altera_cloud/ecpri/ecpri_hw_tcl/ecpri_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="ecpri_hwtcl_top" as="ecpri_hwtcl_top" />
+  <messages>
+   <message level="Info" culprit="ecpri_hwtcl_top">"Generating: ecpri_iwf_top"</message>
+  </messages>
+ </entity>
+</deploy>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_s10_user_rst_clkgate_1947/sim/altera_s10_user_rst_clkgate.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_s10_user_rst_clkgate_1947" />
+ <file
+   path="sim/reset_ip.v"
+   type="VERILOG"
+   library="reset_ip"
+   hasInlineConfiguration="true" />
+ <topLevel name="reset_ip.reset_ip" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

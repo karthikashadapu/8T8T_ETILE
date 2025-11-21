@@ -1,0 +1,18 @@
+# system info port0_tod_stack_0 on 2025.10.16.14:15:34
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for port0_tod_stack_0 on 2025.10.16.14:15:34
+files:
+filepath,kind,attributes,module,is_top
+sim/port0_tod_stack_0.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,port0_tod_stack_0,true
+eth_f_ptp_mtod_top_10/sim/eth_f_ptp_mtod_top.sv,SYSTEM_VERILOG,,eth_f_ptp_mtod_top,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+port0_tod_stack_0.port0_tod_stack_0,eth_f_ptp_mtod_top

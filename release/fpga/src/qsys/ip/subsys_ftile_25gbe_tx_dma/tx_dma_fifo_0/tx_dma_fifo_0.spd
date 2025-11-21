@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="tx_dma_fifo_10/sim/tx_dma_fifo.sv"
+   type="SYSTEM_VERILOG"
+   library="tx_dma_fifo_10" />
+ <file
+   path="tx_dma_fifo_10/sim/components_pkg.sv"
+   type="SYSTEM_VERILOG"
+   library="tx_dma_fifo_10" />
+ <file
+   path="tx_dma_fifo_10/sim/cdc_packet_fifo.sv"
+   type="SYSTEM_VERILOG"
+   library="tx_dma_fifo_10" />
+ <file
+   path="tx_dma_fifo_10/sim/dc_fifo_param.sv"
+   type="SYSTEM_VERILOG"
+   library="tx_dma_fifo_10" />
+ <file
+   path="tx_dma_fifo_10/sim/cdc_avmm_sync_v2.sv"
+   type="SYSTEM_VERILOG"
+   library="tx_dma_fifo_10" />
+ <file
+   path="tx_dma_fifo_10/sim/cdc_synchronizer.sv"
+   type="SYSTEM_VERILOG"
+   library="tx_dma_fifo_10" />
+ <file
+   path="tx_dma_fifo_10/sim/s10_memory.sv"
+   type="SYSTEM_VERILOG"
+   library="tx_dma_fifo_10" />
+ <file
+   path="tx_dma_fifo_10/sim/cdc_toggle_synchronizer.sv"
+   type="SYSTEM_VERILOG"
+   library="tx_dma_fifo_10" />
+ <file
+   path="tx_dma_fifo_10/sim/period_bus_sync.sv"
+   type="SYSTEM_VERILOG"
+   library="tx_dma_fifo_10" />
+ <file
+   path="tx_dma_fifo_10/sim/dc_fifo_param.sdc"
+   type="SDC"
+   library="tx_dma_fifo_10" />
+ <file
+   path="sim/tx_dma_fifo_0.v"
+   type="VERILOG"
+   library="tx_dma_fifo_0"
+   hasInlineConfiguration="true" />
+ <topLevel name="tx_dma_fifo_0.tx_dma_fifo_0" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

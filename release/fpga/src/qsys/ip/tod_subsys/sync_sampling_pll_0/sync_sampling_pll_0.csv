@@ -1,0 +1,18 @@
+# system info sync_sampling_pll_0 on 2025.10.16.14:36:02
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for sync_sampling_pll_0 on 2025.10.16.14:36:02
+files:
+filepath,kind,attributes,module,is_top
+sim/sync_sampling_pll_0.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,sync_sampling_pll_0,true
+altera_iopll_1931/sim/sync_sampling_pll_0_altera_iopll_1931_hnon5py.vo,VERILOG,,sync_sampling_pll_0_altera_iopll_1931_hnon5py,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+sync_sampling_pll_0.sync_sampling_pll_0,sync_sampling_pll_0_altera_iopll_1931_hnon5py

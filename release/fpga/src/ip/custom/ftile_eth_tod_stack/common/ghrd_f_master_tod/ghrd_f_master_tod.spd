@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_eth_1588_tod_2011/sim/intelfpga/altera_eth_1588_tod.v"
+   type="VERILOG"
+   library="altera_eth_1588_tod_2011" />
+ <file
+   path="altera_eth_1588_tod_2011/sim/intelfpga/altera_eth_1588_tod_ojw.v"
+   type="VERILOG"
+   library="altera_eth_1588_tod_2011" />
+ <file
+   path="altera_eth_1588_tod_2011/sim/intelfpga/altera_eth_1588_tod_xojw.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_eth_1588_tod_2011" />
+ <file
+   path="altera_eth_1588_tod_2011/sim/intelfpga/altera_eth_1588_tod_clock_crosser.v"
+   type="VERILOG"
+   library="altera_eth_1588_tod_2011" />
+ <file
+   path="altera_eth_1588_tod_2011/sim/intelfpga/altera_eth_1588_pps.v"
+   type="VERILOG"
+   library="altera_eth_1588_tod_2011" />
+ <file
+   path="altera_eth_1588_tod_2011/sim/intelfpga/altera_eth_1588_pps_adv.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_eth_1588_tod_2011" />
+ <file
+   path="altera_eth_1588_tod_2011/sim/intelfpga/altera_eth_1588_pps_wrapper.v"
+   type="VERILOG"
+   library="altera_eth_1588_tod_2011" />
+ <file
+   path="altera_eth_1588_tod_2011/sim/intelfpga/altera_eth_1588_tod_std_synchronizer.v"
+   type="VERILOG"
+   library="altera_eth_1588_tod_2011" />
+ <file
+   path="altera_eth_1588_tod_2011/sim/intelfpga/altera_eth_1588_tod_fifo.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_eth_1588_tod_2011" />
+ <file
+   path="altera_eth_1588_tod_2011/sim/intelfpga/altera_eth_1588_tod_gray_cnt.v"
+   type="VERILOG"
+   library="altera_eth_1588_tod_2011" />
+ <file
+   path="altera_eth_1588_tod_2011/sim/intelfpga/altera_eth_1588_tod_sdpm_altsyncram.v"
+   type="VERILOG"
+   library="altera_eth_1588_tod_2011" />
+ <file
+   path="altera_eth_1588_tod_2011/sim/intelfpga/altera_eth_1588_tod_std_sync_nocut.v"
+   type="VERILOG"
+   library="altera_eth_1588_tod_2011" />
+ <file
+   path="altera_eth_1588_tod_2011/sim/altera_eth_1588_tod_std_synchr_nocut.v"
+   type="VERILOG"
+   library="altera_eth_1588_tod_2011" />
+ <file
+   path="sim/ghrd_f_master_tod.v"
+   type="VERILOG"
+   library="ghrd_f_master_tod"
+   hasInlineConfiguration="true" />
+ <topLevel name="ghrd_f_master_tod.ghrd_f_master_tod" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.11.21.13:09:51"
+ outputDirectory="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_slave_sub_system/master_tod_split/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGFB014R24B2I2V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="2"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="conduit_end" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="data_conduit_in" direction="input" role="data" width="96" />
+   <port name="valid_conduit_in" direction="input" role="valid" width="1" />
+  </interface>
+  <interface name="conduit_end_1" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="data_conduit_out_1" direction="output" role="data" width="96" />
+   <port name="valid_conduit_out_1" direction="output" role="valid" width="1" />
+  </interface>
+  <interface name="conduit_end_2" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="data_conduit_out_2" direction="output" role="data" width="96" />
+   <port name="valid_conduit_out_2" direction="output" role="valid" width="1" />
+  </interface>
+  <interface name="conduit_end_3" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="data_conduit_out_3" direction="output" role="data" width="96" />
+   <port name="valid_conduit_out_3" direction="output" role="valid" width="1" />
+  </interface>
+  <interface name="conduit_end_4" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="data_conduit_out_4" direction="output" role="data" width="96" />
+   <port name="valid_conduit_out_4" direction="output" role="valid" width="1" />
+  </interface>
+  <interface name="conduit_end_5" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="data_conduit_out_5" direction="output" role="data" width="96" />
+   <port name="valid_conduit_out_5" direction="output" role="valid" width="1" />
+  </interface>
+  <interface name="conduit_end_6" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="data_conduit_out_6" direction="output" role="data" width="96" />
+   <port name="valid_conduit_out_6" direction="output" role="valid" width="1" />
+  </interface>
+  <interface name="conduit_end_7" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="data_conduit_out_7" direction="output" role="data" width="96" />
+   <port name="valid_conduit_out_7" direction="output" role="valid" width="1" />
+  </interface>
+  <interface name="conduit_end_8" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="data_conduit_out_8" direction="output" role="data" width="96" />
+   <port name="valid_conduit_out_8" direction="output" role="valid" width="1" />
+  </interface>
+  <interface name="conduit_end_9" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="data_conduit_out_9" direction="output" role="data" width="96" />
+   <port name="valid_conduit_out_9" direction="output" role="valid" width="1" />
+  </interface>
+  <interface name="conduit_end_10" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="data_conduit_out_10" direction="output" role="data" width="96" />
+   <port name="valid_conduit_out_10" direction="output" role="valid" width="1" />
+  </interface>
+ </perimeter>
+ <entity kind="master_tod_split" version="1.0" name="master_tod_split">
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="AGFB014R24B2I2V" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <generatedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_slave_sub_system/master_tod_split/synth/master_tod_split.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_slave_sub_system/master_tod_split/synth/master_tod_split.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_slave_sub_system/master_tod_split.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/conduit_splitter/tod_conduit_split_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="master_tod_split">"Generating: master_tod_split"</message>
+   <message level="Info" culprit="master_tod_split">"Generating: tod_conduit_split"</message>
+  </messages>
+ </entity>
+ <entity kind="tod_conduit_split" version="1.0" name="tod_conduit_split">
+  <generatedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_slave_sub_system/master_tod_split/tod_conduit_split_10/synth/tod_conduit_split.sv"
+       attributes="TOP_LEVEL_FILE" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_slave_sub_system/master_tod_split/tod_conduit_split_10/synth/tod_conduit_split.sv"
+       attributes="TOP_LEVEL_FILE" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/conduit_splitter/tod_conduit_split_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="master_tod_split" as="master_tod_split" />
+  <messages>
+   <message level="Info" culprit="master_tod_split">"Generating: tod_conduit_split"</message>
+  </messages>
+ </entity>
+</deploy>

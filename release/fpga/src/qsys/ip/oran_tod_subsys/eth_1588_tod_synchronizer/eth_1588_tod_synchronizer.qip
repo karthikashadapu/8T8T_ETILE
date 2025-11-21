@@ -1,0 +1,55 @@
+set_global_assignment -entity "eth_1588_tod_synchronizer" -library "eth_1588_tod_synchronizer" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "eth_1588_tod_synchronizer" -library "eth_1588_tod_synchronizer" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "eth_1588_tod_synchronizer" -library "eth_1588_tod_synchronizer" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "eth_1588_tod_synchronizer" -library "eth_1588_tod_synchronizer" -name IP_TOOL_VENDOR_NAME "Intel Corporation"
+set_global_assignment -entity "eth_1588_tod_synchronizer" -library "eth_1588_tod_synchronizer" -name IP_TOP_LEVEL_COMPONENT_NAME "altera_eth_1588_tod_synchronizer"
+set_global_assignment -library "eth_1588_tod_synchronizer" -name SOPCINFO_FILE [file join $::quartus(qip_path) "eth_1588_tod_synchronizer.sopcinfo"]
+set_global_assignment -entity "eth_1588_tod_synchronizer" -library "eth_1588_tod_synchronizer" -name SLD_INFO "QSYS_NAME eth_1588_tod_synchronizer HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "eth_1588_tod_synchronizer" -name MISC_FILE [file join $::quartus(qip_path) "eth_1588_tod_synchronizer.cmp"]
+set_global_assignment -entity "eth_1588_tod_synchronizer" -library "eth_1588_tod_synchronizer" -name IP_TARGETED_DEVICE_FAMILY "Agilex 7"
+set_global_assignment -entity "eth_1588_tod_synchronizer" -library "eth_1588_tod_synchronizer" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 7}"
+set_global_assignment -entity "eth_1588_tod_synchronizer" -library "eth_1588_tod_synchronizer" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "eth_1588_tod_synchronizer" -name MISC_FILE [file join $::quartus(qip_path) "../eth_1588_tod_synchronizer.ip"]
+
+set_global_assignment -entity "altera_eth_1588_tod_synchronizer" -library "altera_eth_1588_tod_synchronizer_2005" -name IP_COMPONENT_NAME "YWx0ZXJhX2V0aF8xNTg4X3RvZF9zeW5jaHJvbml6ZXI="
+set_global_assignment -entity "altera_eth_1588_tod_synchronizer" -library "altera_eth_1588_tod_synchronizer_2005" -name IP_COMPONENT_DISPLAY_NAME "RXRoZXJuZXQgSUVFRSAxNTg4IFRPRCBTeW5jaHJvbml6ZXIgSW50ZWwgRlBHQSBJUA=="
+set_global_assignment -entity "altera_eth_1588_tod_synchronizer" -library "altera_eth_1588_tod_synchronizer_2005" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "altera_eth_1588_tod_synchronizer" -library "altera_eth_1588_tod_synchronizer_2005" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "altera_eth_1588_tod_synchronizer" -library "altera_eth_1588_tod_synchronizer_2005" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "altera_eth_1588_tod_synchronizer" -library "altera_eth_1588_tod_synchronizer_2005" -name IP_COMPONENT_VERSION "MjAuMC41"
+set_global_assignment -entity "altera_eth_1588_tod_synchronizer" -library "altera_eth_1588_tod_synchronizer_2005" -name IP_COMPONENT_DESCRIPTION "UHJvdmlkZSBzeW5jaHJvbml6YXRpb24gYmV0d2VlbiAyIFRPRCB3aXRoIGRpZmZlcmVudCBwaGFzZSBvciBwcG0gb3IgZnJlcSwgZWcgMUcgYW5kIDEwRy4="
+set_global_assignment -entity "altera_eth_1588_tod_synchronizer" -library "altera_eth_1588_tod_synchronizer_2005" -name IP_COMPONENT_GROUP "SW50ZXJmYWNlIFByb3RvY29scy9FdGhlcm5ldC9SZWZlcmVuY2UgRGVzaWduIENvbXBvbmVudHM="
+set_global_assignment -entity "altera_eth_1588_tod_synchronizer" -library "altera_eth_1588_tod_synchronizer_2005" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzA0NC9jdXJyZW50L3RpbWUtb2YtZGF5LXN5bmNocm9uaXplci5odG1s"
+set_global_assignment -entity "altera_eth_1588_tod_synchronizer" -library "altera_eth_1588_tod_synchronizer_2005" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzU5OC8="
+set_global_assignment -entity "eth_1588_tod_synchronizer" -library "eth_1588_tod_synchronizer" -name IP_COMPONENT_NAME "ZXRoXzE1ODhfdG9kX3N5bmNocm9uaXplcg=="
+set_global_assignment -entity "eth_1588_tod_synchronizer" -library "eth_1588_tod_synchronizer" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "eth_1588_tod_synchronizer" -library "eth_1588_tod_synchronizer" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "eth_1588_tod_synchronizer" -library "eth_1588_tod_synchronizer" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "eth_1588_tod_synchronizer" -library "eth_1588_tod_synchronizer" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "eth_1588_tod_synchronizer" -library "eth_1588_tod_synchronizer" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "altera_eth_1588_tod_synchronizer_2005" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer_0to15.v"]
+set_global_assignment -library "altera_eth_1588_tod_synchronizer_2005" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer.v"]
+set_global_assignment -library "altera_eth_1588_tod_synchronizer_2005" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_synchronizer_2005/synth/tod_sync_clk_align.sv"]
+set_global_assignment -library "altera_eth_1588_tod_synchronizer_2005" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_synchronizer_2005/synth/tod_sync_ppm_counter.sv"]
+set_global_assignment -library "altera_eth_1588_tod_synchronizer_2005" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_synchronizer_2005/synth/tod_sync_clk_align_clock_div.v"]
+set_global_assignment -library "altera_eth_1588_tod_synchronizer_2005" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_synchronizer_2005/synth/tod_sync_clk_align_std_sync.v"]
+set_global_assignment -library "altera_eth_1588_tod_synchronizer_2005" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_synchronizer_2005/synth/tod_sync_clock_crosser.v"]
+set_instance_assignment -entity "altera_eth_1588_tod_synchronizer" -library "altera_eth_1588_tod_synchronizer_2005" -name SDC_ENTITY_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_synchronizer_2005/synth/tod_sync_clk_align.sdc"] -no_sdc_promotion  -no_auto_inst_discovery 
+set_global_assignment -library "altera_eth_1588_tod_synchronizer_2005" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer_clock_crosser.v"]
+set_global_assignment -library "altera_eth_1588_tod_synchronizer_2005" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer_clock_div.v"]
+set_global_assignment -library "altera_eth_1588_tod_synchronizer_2005" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer_fifo.v"]
+set_global_assignment -library "altera_eth_1588_tod_synchronizer_2005" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer_gray_cnt.v"]
+set_global_assignment -library "altera_eth_1588_tod_synchronizer_2005" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer_sdpm_altsyncram.v"]
+set_global_assignment -library "altera_eth_1588_tod_synchronizer_2005" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer_std_sync.v"]
+set_instance_assignment -entity "altera_eth_1588_tod_synchronizer" -library "altera_eth_1588_tod_synchronizer_2005" -name SDC_ENTITY_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer.sdc"] -no_sdc_promotion  -no_auto_inst_discovery 
+set_global_assignment -library "altera_eth_1588_tod_synchronizer_2005" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_eth_1588_tod_synchronizer_2005/synth/altera_eth_1588_tod_synchronizer_std_synchr_nocut.v"]
+set_global_assignment -library "eth_1588_tod_synchronizer" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/eth_1588_tod_synchronizer.v"]
+
+
+set_global_assignment -entity "altera_eth_1588_tod_synchronizer" -library "altera_eth_1588_tod_synchronizer_2005" -name IP_TOOL_NAME "altera_eth_1588_tod_synchronizer"
+set_global_assignment -entity "altera_eth_1588_tod_synchronizer" -library "altera_eth_1588_tod_synchronizer_2005" -name IP_TOOL_VERSION "20.0.5"
+set_global_assignment -entity "altera_eth_1588_tod_synchronizer" -library "altera_eth_1588_tod_synchronizer_2005" -name IP_TOOL_ENV "QsysPrimePro"
+

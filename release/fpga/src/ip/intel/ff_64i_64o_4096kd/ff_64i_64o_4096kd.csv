@@ -1,0 +1,19 @@
+# system info ff_64i_64o_4096kd on 2025.10.16.13:44:16
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for ff_64i_64o_4096kd on 2025.10.16.13:44:16
+files:
+filepath,kind,attributes,module,is_top
+sim/ff_64i_64o_4096kd.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,ff_64i_64o_4096kd,true
+fifo_1927/sim/ff_64i_64o_4096kd_fifo_1927_ppasn2i.v,VERILOG,,ff_64i_64o_4096kd_fifo_1927_ppasn2i,false
+fifo_1927/sim/ff_64i_64o_4096kd_fifo_1927_ppasn2i.sdc,SDC_ENTITY,NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION,ff_64i_64o_4096kd_fifo_1927_ppasn2i,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+ff_64i_64o_4096kd.fifo_0,ff_64i_64o_4096kd_fifo_1927_ppasn2i

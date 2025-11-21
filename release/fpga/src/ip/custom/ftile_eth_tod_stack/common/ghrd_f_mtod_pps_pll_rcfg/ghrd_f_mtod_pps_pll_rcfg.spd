@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_iopll_reconfig_1940/sim/altera_iopll_reconfig_top.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_iopll_reconfig_1940" />
+ <file
+   path="altera_iopll_reconfig_1940/sim/altera_iopll_reconfig_fsm.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_iopll_reconfig_1940" />
+ <file
+   path="altera_iopll_reconfig_1940/sim/pulse_gen.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_iopll_reconfig_1940" />
+ <file
+   path="altera_iopll_reconfig_1940/sim/shift.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_iopll_reconfig_1940" />
+ <file
+   path="altera_iopll_reconfig_1940/sim/recalibration.mif"
+   type="MIF"
+   library="altera_iopll_reconfig_1940" />
+ <file
+   path="sim/ghrd_f_mtod_pps_pll_rcfg.v"
+   type="VERILOG"
+   library="ghrd_f_mtod_pps_pll_rcfg"
+   hasInlineConfiguration="true" />
+ <topLevel name="ghrd_f_mtod_pps_pll_rcfg.ghrd_f_mtod_pps_pll_rcfg" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

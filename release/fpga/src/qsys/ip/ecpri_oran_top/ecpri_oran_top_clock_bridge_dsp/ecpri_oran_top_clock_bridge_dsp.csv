@@ -1,0 +1,16 @@
+# system info ecpri_oran_top_clock_bridge_dsp on 2025.10.16.13:50:10
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for ecpri_oran_top_clock_bridge_dsp on 2025.10.16.13:50:10
+files:
+filepath,kind,attributes,module,is_top
+sim/ecpri_oran_top_clock_bridge_dsp.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,ecpri_oran_top_clock_bridge_dsp,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module

@@ -1,0 +1,18 @@
+# system info iopll_491p52 on 2025.10.16.13:41:03
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for iopll_491p52 on 2025.10.16.13:41:03
+files:
+filepath,kind,attributes,module,is_top
+sim/iopll_491p52.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,iopll_491p52,true
+altera_iopll_1931/sim/iopll_491p52_altera_iopll_1931_k5tivbi.vo,VERILOG,,iopll_491p52_altera_iopll_1931_k5tivbi,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+iopll_491p52.iopll_0,iopll_491p52_altera_iopll_1931_k5tivbi

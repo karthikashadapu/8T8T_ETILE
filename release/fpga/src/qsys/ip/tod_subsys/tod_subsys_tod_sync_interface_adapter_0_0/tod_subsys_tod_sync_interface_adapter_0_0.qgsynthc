@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<node xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:altera="http://www.altera.com/XMLSchema/Qsys/SystemTree">
+  <instanceKey xsi:type="xs:string">tod_subsys_tod_sync_interface_adapter_0_0</instanceKey>
+  <instanceData xsi:type="data">
+    <parameters></parameters>
+    <interconnectAssignments></interconnectAssignments>
+    <className>tod_subsys_tod_sync_interface_adapter_0_0</className>
+    <version>1.0</version>
+    <name>tod_subsys_tod_sync_interface_adapter_0_0</name>
+    <uniqueName>tod_subsys_tod_sync_interface_adapter_0_0</uniqueName>
+    <nonce>0</nonce>
+    <incidentConnections></incidentConnections>
+  </instanceData>
+  <children>
+    <node>
+      <instanceKey xsi:type="xs:string">tod_sync_interface_adapter_0_0</instanceKey>
+      <instanceData xsi:type="data">
+        <parameters></parameters>
+        <interconnectAssignments></interconnectAssignments>
+        <className>tod_sync_interface_adapter_0</className>
+        <version>1.0</version>
+        <name>tod_sync_interface_adapter_0_0</name>
+        <uniqueName>tod_sync_interface_adapter</uniqueName>
+        <fixedName>tod_sync_interface_adapter</fixedName>
+        <nonce>0</nonce>
+        <incidentConnections></incidentConnections>
+        <path>tod_subsys_tod_sync_interface_adapter_0_0.tod_sync_interface_adapter_0_0</path>
+      </instanceData>
+      <children></children>
+    </node>
+  </children>
+</node>

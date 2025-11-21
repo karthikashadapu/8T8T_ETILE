@@ -1,0 +1,34 @@
+# system info dxc_ss_top_ca_interp_DUT_0 on 2025.10.16.14:43:56
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for dxc_ss_top_ca_interp_DUT_0 on 2025.10.16.14:43:56
+files:
+filepath,kind,attributes,module,is_top
+sim/dxc_ss_top_ca_interp_DUT_0.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,dxc_ss_top_ca_interp_DUT_0,true
+ca_interp_DUT_10/sim/dspba_library_ver.sv,SYSTEM_VERILOG,,ca_interp_DUT,false
+ca_interp_DUT_10/sim/ca_interp_DUT_safe_path_flat_ver.sv,SYSTEM_VERILOG,,ca_interp_DUT,false
+ca_interp_DUT_10/sim/ca_interp_DUT_safe_path_flat.vhd,VHDL,,ca_interp_DUT,false
+ca_interp_DUT_10/sim/ca_interp_DUT.sv,SYSTEM_VERILOG,,ca_interp_DUT,false
+ca_interp_DUT_10/sim/busFabric_ca_interp_DUT_2ouiflr06j62696x6u0qu5xajz.sv,SYSTEM_VERILOG,,ca_interp_DUT,false
+ca_interp_DUT_10/sim/ca_interp_DUT_Summer_DUC.sv,SYSTEM_VERILOG,,ca_interp_DUT,false
+ca_interp_DUT_10/sim/ca_interp_DUT_Summer_DUC_Poly_phase_Interp.sv,SYSTEM_VERILOG,,ca_interp_DUT,false
+ca_interp_DUT_10/sim/ca_interp_DUT_Summer_DUC_Poly_phase_Interp_hb3_im.sv,SYSTEM_VERILOG,,ca_interp_DUT,false
+ca_interp_DUT_10/sim/ca_interp_DUT_Summer_DUC_Poly_phase_Interp_hb3_re.sv,SYSTEM_VERILOG,,ca_interp_DUT,false
+ca_interp_DUT_10/sim/ca_interp_DUT_Summer_DUC_Poly_phase_Interp_scale_HB3_im.sv,SYSTEM_VERILOG,,ca_interp_DUT,false
+ca_interp_DUT_10/sim/ca_interp_DUT_Summer_DUC_Poly_phase_Interp_scale_HB3_re.sv,SYSTEM_VERILOG,,ca_interp_DUT,false
+ca_interp_DUT_10/sim/ca_interp_DUT_Summer_DUC_Subsystem.sv,SYSTEM_VERILOG,,ca_interp_DUT,false
+ca_interp_DUT_10/sim/ca_interp_DUT_Summer_DUC_Summer.sv,SYSTEM_VERILOG,,ca_interp_DUT,false
+ca_interp_DUT_10/sim/ca_interp_DUT_Summer_DUC_Summer_scale_Antenna_Summer2.sv,SYSTEM_VERILOG,,ca_interp_DUT,false
+ca_interp_DUT_10/sim/ca_interp_DUT_Summer_DUC_Summer_scale_Antenna_Summer3.sv,SYSTEM_VERILOG,,ca_interp_DUT,false
+ca_interp_DUT_10/sim/ca_interp_DUT_Summer_DUC_Summer_Carrier_Aggregation_and_Gain.sv,SYSTEM_VERILOG,,ca_interp_DUT,false
+ca_interp_DUT_10/sim/ca_interp_DUT_Summer_DUC_Summer_Delay_Compensation.sv,SYSTEM_VERILOG,,ca_interp_DUT,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+dxc_ss_top_ca_interp_DUT_0.ca_interp_DUT_0,ca_interp_DUT

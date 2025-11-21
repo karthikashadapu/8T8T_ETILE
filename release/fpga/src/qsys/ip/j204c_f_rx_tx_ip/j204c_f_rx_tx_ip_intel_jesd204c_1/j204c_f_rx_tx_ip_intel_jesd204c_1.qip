@@ -1,0 +1,562 @@
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1" -library "j204c_f_rx_tx_ip_intel_jesd204c_1" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1" -library "j204c_f_rx_tx_ip_intel_jesd204c_1" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1" -library "j204c_f_rx_tx_ip_intel_jesd204c_1" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1" -library "j204c_f_rx_tx_ip_intel_jesd204c_1" -name IP_TOOL_VENDOR_NAME "Intel Corporation"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1" -library "j204c_f_rx_tx_ip_intel_jesd204c_1" -name IP_TOP_LEVEL_COMPONENT_NAME "intel_jesd204c"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1" -library "j204c_f_rx_tx_ip_intel_jesd204c_1" -name PRE_COMPILED_MODULE "ON"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1" -library "j204c_f_rx_tx_ip_intel_jesd204c_1" -name OCS_IP_FILE "/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/j204c_f_rx_tx_ip/j204c_f_rx_tx_ip_intel_jesd204c_1.ip"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1" -library "j204c_f_rx_tx_ip_intel_jesd204c_1" -name OCS_IP_TYPE "intel_jesd204c"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1" -library "j204c_f_rx_tx_ip_intel_jesd204c_1" -name OCS_IP_VERSION "3.1.2"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1" -library "j204c_f_rx_tx_ip_intel_jesd204c_1" -name OCS_IP_HASH "zgxpb4a"
+set_global_assignment -library "j204c_f_rx_tx_ip_intel_jesd204c_1" -name SOPCINFO_FILE [file join $::quartus(qip_path) "j204c_f_rx_tx_ip_intel_jesd204c_1.sopcinfo"]
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1" -library "j204c_f_rx_tx_ip_intel_jesd204c_1" -name SLD_INFO "QSYS_NAME j204c_f_rx_tx_ip_intel_jesd204c_1 HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "j204c_f_rx_tx_ip_intel_jesd204c_1" -name MISC_FILE [file join $::quartus(qip_path) "j204c_f_rx_tx_ip_intel_jesd204c_1.cmp"]
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1" -library "j204c_f_rx_tx_ip_intel_jesd204c_1" -name IP_TARGETED_DEVICE_FAMILY "Agilex 7"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1" -library "j204c_f_rx_tx_ip_intel_jesd204c_1" -name IP_TARGETED_PART_TRAIT "DEVICE::AGFB014R24B2I2V"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1" -library "j204c_f_rx_tx_ip_intel_jesd204c_1" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 7}"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1" -library "j204c_f_rx_tx_ip_intel_jesd204c_1" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "j204c_f_rx_tx_ip_intel_jesd204c_1" -name MISC_FILE [file join $::quartus(qip_path) "../j204c_f_rx_tx_ip_intel_jesd204c_1.ip"]
+
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_xcvrnphy_fme_411_vhmkdxi" -library "xcvrnphy_fme_411" -name IP_COMPONENT_NAME "ajIwNGNfZl9yeF90eF9pcF9pbnRlbF9qZXNkMjA0Y18xX3hjdnJucGh5X2ZtZV80MTFfdmhta2R4aQ=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_xcvrnphy_fme_411_vhmkdxi" -library "xcvrnphy_fme_411" -name IP_COMPONENT_DISPLAY_NAME "RS1UaWxlIFRyYW5zY2VpdmVyIE5hdGl2ZSBQSFkgSW50ZWwgQWdpbGV4IDcgRlBHQSBJUA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_xcvrnphy_fme_411_vhmkdxi" -library "xcvrnphy_fme_411" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_xcvrnphy_fme_411_vhmkdxi" -library "xcvrnphy_fme_411" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_xcvrnphy_fme_411_vhmkdxi" -library "xcvrnphy_fme_411" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_xcvrnphy_fme_411_vhmkdxi" -library "xcvrnphy_fme_411" -name IP_COMPONENT_VERSION "NC4xLjE="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_xcvrnphy_fme_411_vhmkdxi" -library "xcvrnphy_fme_411" -name IP_COMPONENT_GROUP "SW50ZXJmYWNlIFByb3RvY29scy9UcmFuc2NlaXZlciBQSFk="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_xcvrnphy_fme_411_vhmkdxi" -library "xcvrnphy_fme_411" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzcyMy8="
+set_global_assignment -entity "intel_jesd204c_phy_adapter_c3" -library "intel_jesd204c_phy_adapter_c3_191" -name IP_COMPONENT_NAME "aW50ZWxfamVzZDIwNGNfcGh5X2FkYXB0ZXJfYzM="
+set_global_assignment -entity "intel_jesd204c_phy_adapter_c3" -library "intel_jesd204c_phy_adapter_c3_191" -name IP_COMPONENT_DISPLAY_NAME "SkVTRDIwNEMgUEhZIEFkYXB0ZXIgQzM="
+set_global_assignment -entity "intel_jesd204c_phy_adapter_c3" -library "intel_jesd204c_phy_adapter_c3_191" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "intel_jesd204c_phy_adapter_c3" -library "intel_jesd204c_phy_adapter_c3_191" -name IP_COMPONENT_INTERNAL "On"
+set_global_assignment -entity "intel_jesd204c_phy_adapter_c3" -library "intel_jesd204c_phy_adapter_c3_191" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "intel_jesd204c_phy_adapter_c3" -library "intel_jesd204c_phy_adapter_c3_191" -name IP_COMPONENT_VERSION "MTkuMQ=="
+set_global_assignment -entity "intel_jesd204c_phy_adapter_c3" -library "intel_jesd204c_phy_adapter_c3_191" -name IP_COMPONENT_DESCRIPTION "SkVTRDIwNEMgUEhZIEFkYXB0ZXIgZm9yIENyZXRlMyBUcmFuc2NlaXZlcg=="
+set_global_assignment -entity "intel_jesd204c_phy_adapter_c3" -library "intel_jesd204c_phy_adapter_c3_191" -name IP_COMPONENT_GROUP "SW50ZXJmYWNlIFByb3RvY29scy9KRVNE"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_intel_jesd204c_phy_wrapper_191_avd4uby" -library "intel_jesd204c_phy_wrapper_191" -name IP_COMPONENT_NAME "ajIwNGNfZl9yeF90eF9pcF9pbnRlbF9qZXNkMjA0Y18xX2ludGVsX2plc2QyMDRjX3BoeV93cmFwcGVyXzE5MV9hdmQ0dWJ5"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_intel_jesd204c_phy_wrapper_191_avd4uby" -library "intel_jesd204c_phy_wrapper_191" -name IP_COMPONENT_DISPLAY_NAME "SkVTRDIwNEMgUEhZIHdyYXBwZXI="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_intel_jesd204c_phy_wrapper_191_avd4uby" -library "intel_jesd204c_phy_wrapper_191" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_intel_jesd204c_phy_wrapper_191_avd4uby" -library "intel_jesd204c_phy_wrapper_191" -name IP_COMPONENT_INTERNAL "On"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_intel_jesd204c_phy_wrapper_191_avd4uby" -library "intel_jesd204c_phy_wrapper_191" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_intel_jesd204c_phy_wrapper_191_avd4uby" -library "intel_jesd204c_phy_wrapper_191" -name IP_COMPONENT_VERSION "MTkuMQ=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_intel_jesd204c_phy_wrapper_191_avd4uby" -library "intel_jesd204c_phy_wrapper_191" -name IP_COMPONENT_DESCRIPTION "SW50ZWwgRlBHQSBKRVNEMjA0QyBJUA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_intel_jesd204c_phy_wrapper_191_avd4uby" -library "intel_jesd204c_phy_wrapper_191" -name IP_COMPONENT_GROUP "SW50ZXJmYWNlIFByb3RvY29scy9KRVNE"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_gaqrowq" -library "fifo_1927" -name IP_COMPONENT_NAME "ajIwNGNfZl9yeF90eF9pcF9pbnRlbF9qZXNkMjA0Y18xX2ZpZm9fMTkyN19nYXFyb3dx"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_gaqrowq" -library "fifo_1927" -name IP_COMPONENT_DISPLAY_NAME "RklGTyBJbnRlbCBGUEdBIElQ"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_gaqrowq" -library "fifo_1927" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_gaqrowq" -library "fifo_1927" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_gaqrowq" -library "fifo_1927" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_gaqrowq" -library "fifo_1927" -name IP_COMPONENT_VERSION "MTkuMi43"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_gaqrowq" -library "fifo_1927" -name IP_COMPONENT_GROUP "QmFzaWMgRnVuY3Rpb25zL09uIENoaXAgTWVtb3J5"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_gaqrowq" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2ZqbjE1NDg5MDM4MzI4ODkuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_gaqrowq" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2ZubzE1NTA2MjYwMjcyNzQuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_gaqrowq" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3ZnbzE0Mzk0NTEwMDAzMDQuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_gaqrowq" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL21jbjE0NDEwOTI5NTgxOTguaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_gaqrowq" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2VpczE0MTQ0NjI3Njc4NzIuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_gaqrowq" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL21jbjE0MTMxODIyOTI1NjguaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_gaqrowq" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2VpczE0MTQ0NjI3Njc4NzIuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_gaqrowq" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL211ZjE0ODg1MTE0Nzg4MjUuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_gaqrowq" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3FrbzE1MTczNjM0MTA1MTIuaHRtbA=="
+set_global_assignment -entity "j204c_tx_dcfifo132b_m20k" -library "intel_jesd204c_tx_191" -name IP_COMPONENT_NAME "ajIwNGNfdHhfZGNmaWZvMTMyYl9tMjBr"
+set_global_assignment -entity "j204c_tx_dcfifo132b_m20k" -library "intel_jesd204c_tx_191" -name IP_COMPONENT_DISPLAY_NAME "ajIwNGNfdHhfZGNmaWZvMTMyYl9tMjBr"
+set_global_assignment -entity "j204c_tx_dcfifo132b_m20k" -library "intel_jesd204c_tx_191" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_tx_dcfifo132b_m20k" -library "intel_jesd204c_tx_191" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_tx_dcfifo132b_m20k" -library "intel_jesd204c_tx_191" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "j204c_tx_dcfifo132b_m20k" -library "intel_jesd204c_tx_191" -name IP_COMPONENT_VERSION "MTkuMQ=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rcs4qiq" -library "fifo_1927" -name IP_COMPONENT_NAME "ajIwNGNfZl9yeF90eF9pcF9pbnRlbF9qZXNkMjA0Y18xX2ZpZm9fMTkyN19yY3M0cWlx"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rcs4qiq" -library "fifo_1927" -name IP_COMPONENT_DISPLAY_NAME "RklGTyBJbnRlbCBGUEdBIElQ"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rcs4qiq" -library "fifo_1927" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rcs4qiq" -library "fifo_1927" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rcs4qiq" -library "fifo_1927" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rcs4qiq" -library "fifo_1927" -name IP_COMPONENT_VERSION "MTkuMi43"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rcs4qiq" -library "fifo_1927" -name IP_COMPONENT_GROUP "QmFzaWMgRnVuY3Rpb25zL09uIENoaXAgTWVtb3J5"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rcs4qiq" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2ZqbjE1NDg5MDM4MzI4ODkuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rcs4qiq" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2ZubzE1NTA2MjYwMjcyNzQuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rcs4qiq" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3ZnbzE0Mzk0NTEwMDAzMDQuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rcs4qiq" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL21jbjE0NDEwOTI5NTgxOTguaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rcs4qiq" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2VpczE0MTQ0NjI3Njc4NzIuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rcs4qiq" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL21jbjE0MTMxODIyOTI1NjguaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rcs4qiq" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2VpczE0MTQ0NjI3Njc4NzIuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rcs4qiq" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL211ZjE0ODg1MTE0Nzg4MjUuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rcs4qiq" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3FrbzE1MTczNjM0MTA1MTIuaHRtbA=="
+set_global_assignment -entity "j204c_tx_dcfifo132b_mlab" -library "intel_jesd204c_tx_191" -name IP_COMPONENT_NAME "ajIwNGNfdHhfZGNmaWZvMTMyYl9tbGFi"
+set_global_assignment -entity "j204c_tx_dcfifo132b_mlab" -library "intel_jesd204c_tx_191" -name IP_COMPONENT_DISPLAY_NAME "ajIwNGNfdHhfZGNmaWZvMTMyYl9tbGFi"
+set_global_assignment -entity "j204c_tx_dcfifo132b_mlab" -library "intel_jesd204c_tx_191" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_tx_dcfifo132b_mlab" -library "intel_jesd204c_tx_191" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_tx_dcfifo132b_mlab" -library "intel_jesd204c_tx_191" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "j204c_tx_dcfifo132b_mlab" -library "intel_jesd204c_tx_191" -name IP_COMPONENT_VERSION "MTkuMQ=="
+set_global_assignment -entity "j204c_tx_base" -library "intel_jesd204c_tx_191" -name IP_COMPONENT_NAME "ajIwNGNfdHhfYmFzZQ=="
+set_global_assignment -entity "j204c_tx_base" -library "intel_jesd204c_tx_191" -name IP_COMPONENT_DISPLAY_NAME "aW50ZWxfamVzZDIwNGNfdHg="
+set_global_assignment -entity "j204c_tx_base" -library "intel_jesd204c_tx_191" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_tx_base" -library "intel_jesd204c_tx_191" -name IP_COMPONENT_INTERNAL "On"
+set_global_assignment -entity "j204c_tx_base" -library "intel_jesd204c_tx_191" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "j204c_tx_base" -library "intel_jesd204c_tx_191" -name IP_COMPONENT_VERSION "MTkuMQ=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_24rkbxi" -library "fifo_1927" -name IP_COMPONENT_NAME "ajIwNGNfZl9yeF90eF9pcF9pbnRlbF9qZXNkMjA0Y18xX2ZpZm9fMTkyN18yNHJrYnhp"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_24rkbxi" -library "fifo_1927" -name IP_COMPONENT_DISPLAY_NAME "RklGTyBJbnRlbCBGUEdBIElQ"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_24rkbxi" -library "fifo_1927" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_24rkbxi" -library "fifo_1927" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_24rkbxi" -library "fifo_1927" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_24rkbxi" -library "fifo_1927" -name IP_COMPONENT_VERSION "MTkuMi43"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_24rkbxi" -library "fifo_1927" -name IP_COMPONENT_GROUP "QmFzaWMgRnVuY3Rpb25zL09uIENoaXAgTWVtb3J5"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_24rkbxi" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2ZqbjE1NDg5MDM4MzI4ODkuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_24rkbxi" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2ZubzE1NTA2MjYwMjcyNzQuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_24rkbxi" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3ZnbzE0Mzk0NTEwMDAzMDQuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_24rkbxi" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL21jbjE0NDEwOTI5NTgxOTguaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_24rkbxi" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2VpczE0MTQ0NjI3Njc4NzIuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_24rkbxi" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL21jbjE0MTMxODIyOTI1NjguaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_24rkbxi" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2VpczE0MTQ0NjI3Njc4NzIuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_24rkbxi" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL211ZjE0ODg1MTE0Nzg4MjUuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_24rkbxi" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3FrbzE1MTczNjM0MTA1MTIuaHRtbA=="
+set_global_assignment -entity "j204c_rx_dcfifo132b_m20k" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_NAME "ajIwNGNfcnhfZGNmaWZvMTMyYl9tMjBr"
+set_global_assignment -entity "j204c_rx_dcfifo132b_m20k" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_DISPLAY_NAME "ajIwNGNfcnhfZGNmaWZvMTMyYl9tMjBr"
+set_global_assignment -entity "j204c_rx_dcfifo132b_m20k" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_rx_dcfifo132b_m20k" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_rx_dcfifo132b_m20k" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "j204c_rx_dcfifo132b_m20k" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_VERSION "MTkuMQ=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ka2rm5y" -library "fifo_1927" -name IP_COMPONENT_NAME "ajIwNGNfZl9yeF90eF9pcF9pbnRlbF9qZXNkMjA0Y18xX2ZpZm9fMTkyN19rYTJybTV5"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ka2rm5y" -library "fifo_1927" -name IP_COMPONENT_DISPLAY_NAME "RklGTyBJbnRlbCBGUEdBIElQ"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ka2rm5y" -library "fifo_1927" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ka2rm5y" -library "fifo_1927" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ka2rm5y" -library "fifo_1927" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ka2rm5y" -library "fifo_1927" -name IP_COMPONENT_VERSION "MTkuMi43"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ka2rm5y" -library "fifo_1927" -name IP_COMPONENT_GROUP "QmFzaWMgRnVuY3Rpb25zL09uIENoaXAgTWVtb3J5"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ka2rm5y" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2ZqbjE1NDg5MDM4MzI4ODkuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ka2rm5y" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2ZubzE1NTA2MjYwMjcyNzQuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ka2rm5y" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3ZnbzE0Mzk0NTEwMDAzMDQuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ka2rm5y" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL21jbjE0NDEwOTI5NTgxOTguaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ka2rm5y" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2VpczE0MTQ0NjI3Njc4NzIuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ka2rm5y" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL21jbjE0MTMxODIyOTI1NjguaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ka2rm5y" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2VpczE0MTQ0NjI3Njc4NzIuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ka2rm5y" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL211ZjE0ODg1MTE0Nzg4MjUuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ka2rm5y" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3FrbzE1MTczNjM0MTA1MTIuaHRtbA=="
+set_global_assignment -entity "j204c_rx_dcfifo132b_mlab" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_NAME "ajIwNGNfcnhfZGNmaWZvMTMyYl9tbGFi"
+set_global_assignment -entity "j204c_rx_dcfifo132b_mlab" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_DISPLAY_NAME "ajIwNGNfcnhfZGNmaWZvMTMyYl9tbGFi"
+set_global_assignment -entity "j204c_rx_dcfifo132b_mlab" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_rx_dcfifo132b_mlab" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_rx_dcfifo132b_mlab" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "j204c_rx_dcfifo132b_mlab" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_VERSION "MTkuMQ=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ev3vpby" -library "fifo_1927" -name IP_COMPONENT_NAME "ajIwNGNfZl9yeF90eF9pcF9pbnRlbF9qZXNkMjA0Y18xX2ZpZm9fMTkyN19ldjN2cGJ5"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ev3vpby" -library "fifo_1927" -name IP_COMPONENT_DISPLAY_NAME "RklGTyBJbnRlbCBGUEdBIElQ"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ev3vpby" -library "fifo_1927" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ev3vpby" -library "fifo_1927" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ev3vpby" -library "fifo_1927" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ev3vpby" -library "fifo_1927" -name IP_COMPONENT_VERSION "MTkuMi43"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ev3vpby" -library "fifo_1927" -name IP_COMPONENT_GROUP "QmFzaWMgRnVuY3Rpb25zL09uIENoaXAgTWVtb3J5"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ev3vpby" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2ZqbjE1NDg5MDM4MzI4ODkuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ev3vpby" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2ZubzE1NTA2MjYwMjcyNzQuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ev3vpby" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3ZnbzE0Mzk0NTEwMDAzMDQuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ev3vpby" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL21jbjE0NDEwOTI5NTgxOTguaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ev3vpby" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2VpczE0MTQ0NjI3Njc4NzIuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ev3vpby" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL21jbjE0MTMxODIyOTI1NjguaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ev3vpby" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2VpczE0MTQ0NjI3Njc4NzIuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ev3vpby" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL211ZjE0ODg1MTE0Nzg4MjUuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ev3vpby" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3FrbzE1MTczNjM0MTA1MTIuaHRtbA=="
+set_global_assignment -entity "j204c_rx_dcfifo132b_ecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_NAME "ajIwNGNfcnhfZGNmaWZvMTMyYl9lY2M="
+set_global_assignment -entity "j204c_rx_dcfifo132b_ecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_DISPLAY_NAME "ajIwNGNfcnhfZGNmaWZvMTMyYl9lY2M="
+set_global_assignment -entity "j204c_rx_dcfifo132b_ecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_rx_dcfifo132b_ecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_rx_dcfifo132b_ecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "j204c_rx_dcfifo132b_ecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_VERSION "MTkuMQ=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_x3spiwi" -library "fifo_1927" -name IP_COMPONENT_NAME "ajIwNGNfZl9yeF90eF9pcF9pbnRlbF9qZXNkMjA0Y18xX2ZpZm9fMTkyN194M3NwaXdp"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_x3spiwi" -library "fifo_1927" -name IP_COMPONENT_DISPLAY_NAME "RklGTyBJbnRlbCBGUEdBIElQ"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_x3spiwi" -library "fifo_1927" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_x3spiwi" -library "fifo_1927" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_x3spiwi" -library "fifo_1927" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_x3spiwi" -library "fifo_1927" -name IP_COMPONENT_VERSION "MTkuMi43"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_x3spiwi" -library "fifo_1927" -name IP_COMPONENT_GROUP "QmFzaWMgRnVuY3Rpb25zL09uIENoaXAgTWVtb3J5"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_x3spiwi" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2ZqbjE1NDg5MDM4MzI4ODkuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_x3spiwi" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2ZubzE1NTA2MjYwMjcyNzQuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_x3spiwi" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3ZnbzE0Mzk0NTEwMDAzMDQuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_x3spiwi" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL21jbjE0NDEwOTI5NTgxOTguaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_x3spiwi" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2VpczE0MTQ0NjI3Njc4NzIuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_x3spiwi" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL21jbjE0MTMxODIyOTI1NjguaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_x3spiwi" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2VpczE0MTQ0NjI3Njc4NzIuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_x3spiwi" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL211ZjE0ODg1MTE0Nzg4MjUuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_x3spiwi" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3FrbzE1MTczNjM0MTA1MTIuaHRtbA=="
+set_global_assignment -entity "j204c_rx_dcfifo132b_16d_m20k" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_NAME "ajIwNGNfcnhfZGNmaWZvMTMyYl8xNmRfbTIwaw=="
+set_global_assignment -entity "j204c_rx_dcfifo132b_16d_m20k" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_DISPLAY_NAME "ajIwNGNfcnhfZGNmaWZvMTMyYl8xNmRfbTIwaw=="
+set_global_assignment -entity "j204c_rx_dcfifo132b_16d_m20k" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_rx_dcfifo132b_16d_m20k" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_rx_dcfifo132b_16d_m20k" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "j204c_rx_dcfifo132b_16d_m20k" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_VERSION "MTkuMQ=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rmkn7fq" -library "fifo_1927" -name IP_COMPONENT_NAME "ajIwNGNfZl9yeF90eF9pcF9pbnRlbF9qZXNkMjA0Y18xX2ZpZm9fMTkyN19ybWtuN2Zx"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rmkn7fq" -library "fifo_1927" -name IP_COMPONENT_DISPLAY_NAME "RklGTyBJbnRlbCBGUEdBIElQ"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rmkn7fq" -library "fifo_1927" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rmkn7fq" -library "fifo_1927" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rmkn7fq" -library "fifo_1927" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rmkn7fq" -library "fifo_1927" -name IP_COMPONENT_VERSION "MTkuMi43"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rmkn7fq" -library "fifo_1927" -name IP_COMPONENT_GROUP "QmFzaWMgRnVuY3Rpb25zL09uIENoaXAgTWVtb3J5"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rmkn7fq" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2ZqbjE1NDg5MDM4MzI4ODkuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rmkn7fq" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2ZubzE1NTA2MjYwMjcyNzQuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rmkn7fq" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3ZnbzE0Mzk0NTEwMDAzMDQuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rmkn7fq" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL21jbjE0NDEwOTI5NTgxOTguaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rmkn7fq" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2VpczE0MTQ0NjI3Njc4NzIuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rmkn7fq" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL21jbjE0MTMxODIyOTI1NjguaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rmkn7fq" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2VpczE0MTQ0NjI3Njc4NzIuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rmkn7fq" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL211ZjE0ODg1MTE0Nzg4MjUuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rmkn7fq" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3FrbzE1MTczNjM0MTA1MTIuaHRtbA=="
+set_global_assignment -entity "j204c_rx_dcfifo132b_16d_mlab" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_NAME "ajIwNGNfcnhfZGNmaWZvMTMyYl8xNmRfbWxhYg=="
+set_global_assignment -entity "j204c_rx_dcfifo132b_16d_mlab" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_DISPLAY_NAME "ajIwNGNfcnhfZGNmaWZvMTMyYl8xNmRfbWxhYg=="
+set_global_assignment -entity "j204c_rx_dcfifo132b_16d_mlab" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_rx_dcfifo132b_16d_mlab" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_rx_dcfifo132b_16d_mlab" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "j204c_rx_dcfifo132b_16d_mlab" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_VERSION "MTkuMQ=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_nd4fp3y" -library "fifo_1927" -name IP_COMPONENT_NAME "ajIwNGNfZl9yeF90eF9pcF9pbnRlbF9qZXNkMjA0Y18xX2ZpZm9fMTkyN19uZDRmcDN5"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_nd4fp3y" -library "fifo_1927" -name IP_COMPONENT_DISPLAY_NAME "RklGTyBJbnRlbCBGUEdBIElQ"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_nd4fp3y" -library "fifo_1927" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_nd4fp3y" -library "fifo_1927" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_nd4fp3y" -library "fifo_1927" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_nd4fp3y" -library "fifo_1927" -name IP_COMPONENT_VERSION "MTkuMi43"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_nd4fp3y" -library "fifo_1927" -name IP_COMPONENT_GROUP "QmFzaWMgRnVuY3Rpb25zL09uIENoaXAgTWVtb3J5"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_nd4fp3y" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2ZqbjE1NDg5MDM4MzI4ODkuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_nd4fp3y" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2ZubzE1NTA2MjYwMjcyNzQuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_nd4fp3y" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3ZnbzE0Mzk0NTEwMDAzMDQuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_nd4fp3y" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL21jbjE0NDEwOTI5NTgxOTguaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_nd4fp3y" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2VpczE0MTQ0NjI3Njc4NzIuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_nd4fp3y" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL21jbjE0MTMxODIyOTI1NjguaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_nd4fp3y" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2VpczE0MTQ0NjI3Njc4NzIuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_nd4fp3y" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL211ZjE0ODg1MTE0Nzg4MjUuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_nd4fp3y" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3FrbzE1MTczNjM0MTA1MTIuaHRtbA=="
+set_global_assignment -entity "j204c_rx_dcfifo132b_16d_ecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_NAME "ajIwNGNfcnhfZGNmaWZvMTMyYl8xNmRfZWNj"
+set_global_assignment -entity "j204c_rx_dcfifo132b_16d_ecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_DISPLAY_NAME "ajIwNGNfcnhfZGNmaWZvMTMyYl8xNmRfZWNj"
+set_global_assignment -entity "j204c_rx_dcfifo132b_16d_ecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_rx_dcfifo132b_16d_ecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_rx_dcfifo132b_16d_ecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "j204c_rx_dcfifo132b_16d_ecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_VERSION "MTkuMQ=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_me7d47y" -library "fifo_1927" -name IP_COMPONENT_NAME "ajIwNGNfZl9yeF90eF9pcF9pbnRlbF9qZXNkMjA0Y18xX2ZpZm9fMTkyN19tZTdkNDd5"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_me7d47y" -library "fifo_1927" -name IP_COMPONENT_DISPLAY_NAME "RklGTyBJbnRlbCBGUEdBIElQ"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_me7d47y" -library "fifo_1927" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_me7d47y" -library "fifo_1927" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_me7d47y" -library "fifo_1927" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_me7d47y" -library "fifo_1927" -name IP_COMPONENT_VERSION "MTkuMi43"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_me7d47y" -library "fifo_1927" -name IP_COMPONENT_GROUP "QmFzaWMgRnVuY3Rpb25zL09uIENoaXAgTWVtb3J5"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_me7d47y" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2ZqbjE1NDg5MDM4MzI4ODkuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_me7d47y" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2ZubzE1NTA2MjYwMjcyNzQuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_me7d47y" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3ZnbzE0Mzk0NTEwMDAzMDQuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_me7d47y" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL21jbjE0NDEwOTI5NTgxOTguaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_me7d47y" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2VpczE0MTQ0NjI3Njc4NzIuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_me7d47y" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL21jbjE0MTMxODIyOTI1NjguaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_me7d47y" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2VpczE0MTQ0NjI3Njc4NzIuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_me7d47y" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL211ZjE0ODg1MTE0Nzg4MjUuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_me7d47y" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3FrbzE1MTczNjM0MTA1MTIuaHRtbA=="
+set_global_assignment -entity "j204c_rx_eb_fifo_ecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_NAME "ajIwNGNfcnhfZWJfZmlmb19lY2M="
+set_global_assignment -entity "j204c_rx_eb_fifo_ecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_DISPLAY_NAME "ajIwNGNfcnhfZWJfZmlmb19lY2M="
+set_global_assignment -entity "j204c_rx_eb_fifo_ecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_rx_eb_fifo_ecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_rx_eb_fifo_ecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "j204c_rx_eb_fifo_ecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_VERSION "MTkuMQ=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_sp6fdfi" -library "fifo_1927" -name IP_COMPONENT_NAME "ajIwNGNfZl9yeF90eF9pcF9pbnRlbF9qZXNkMjA0Y18xX2ZpZm9fMTkyN19zcDZmZGZp"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_sp6fdfi" -library "fifo_1927" -name IP_COMPONENT_DISPLAY_NAME "RklGTyBJbnRlbCBGUEdBIElQ"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_sp6fdfi" -library "fifo_1927" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_sp6fdfi" -library "fifo_1927" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_sp6fdfi" -library "fifo_1927" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_sp6fdfi" -library "fifo_1927" -name IP_COMPONENT_VERSION "MTkuMi43"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_sp6fdfi" -library "fifo_1927" -name IP_COMPONENT_GROUP "QmFzaWMgRnVuY3Rpb25zL09uIENoaXAgTWVtb3J5"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_sp6fdfi" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2ZqbjE1NDg5MDM4MzI4ODkuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_sp6fdfi" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2ZubzE1NTA2MjYwMjcyNzQuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_sp6fdfi" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3ZnbzE0Mzk0NTEwMDAzMDQuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_sp6fdfi" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL21jbjE0NDEwOTI5NTgxOTguaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_sp6fdfi" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2VpczE0MTQ0NjI3Njc4NzIuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_sp6fdfi" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL21jbjE0MTMxODIyOTI1NjguaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_sp6fdfi" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2VpczE0MTQ0NjI3Njc4NzIuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_sp6fdfi" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL211ZjE0ODg1MTE0Nzg4MjUuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_sp6fdfi" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3FrbzE1MTczNjM0MTA1MTIuaHRtbA=="
+set_global_assignment -entity "j204c_rx_eb_fifo_noecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_NAME "ajIwNGNfcnhfZWJfZmlmb19ub2VjYw=="
+set_global_assignment -entity "j204c_rx_eb_fifo_noecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_DISPLAY_NAME "ajIwNGNfcnhfZWJfZmlmb19ub2VjYw=="
+set_global_assignment -entity "j204c_rx_eb_fifo_noecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_rx_eb_fifo_noecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_rx_eb_fifo_noecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "j204c_rx_eb_fifo_noecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_VERSION "MTkuMQ=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_7yqq34a" -library "fifo_1927" -name IP_COMPONENT_NAME "ajIwNGNfZl9yeF90eF9pcF9pbnRlbF9qZXNkMjA0Y18xX2ZpZm9fMTkyN183eXFxMzRh"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_7yqq34a" -library "fifo_1927" -name IP_COMPONENT_DISPLAY_NAME "RklGTyBJbnRlbCBGUEdBIElQ"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_7yqq34a" -library "fifo_1927" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_7yqq34a" -library "fifo_1927" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_7yqq34a" -library "fifo_1927" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_7yqq34a" -library "fifo_1927" -name IP_COMPONENT_VERSION "MTkuMi43"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_7yqq34a" -library "fifo_1927" -name IP_COMPONENT_GROUP "QmFzaWMgRnVuY3Rpb25zL09uIENoaXAgTWVtb3J5"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_7yqq34a" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2ZqbjE1NDg5MDM4MzI4ODkuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_7yqq34a" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2ZubzE1NTA2MjYwMjcyNzQuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_7yqq34a" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3ZnbzE0Mzk0NTEwMDAzMDQuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_7yqq34a" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL21jbjE0NDEwOTI5NTgxOTguaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_7yqq34a" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2VpczE0MTQ0NjI3Njc4NzIuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_7yqq34a" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL21jbjE0MTMxODIyOTI1NjguaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_7yqq34a" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2VpczE0MTQ0NjI3Njc4NzIuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_7yqq34a" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL211ZjE0ODg1MTE0Nzg4MjUuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_7yqq34a" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3FrbzE1MTczNjM0MTA1MTIuaHRtbA=="
+set_global_assignment -entity "j204c_rx_gb_8deep" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_NAME "ajIwNGNfcnhfZ2JfOGRlZXA="
+set_global_assignment -entity "j204c_rx_gb_8deep" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_DISPLAY_NAME "ajIwNGNfcnhfZ2JfOGRlZXA="
+set_global_assignment -entity "j204c_rx_gb_8deep" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_rx_gb_8deep" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_rx_gb_8deep" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "j204c_rx_gb_8deep" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_VERSION "MTkuMQ=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_3d76xga" -library "fifo_1927" -name IP_COMPONENT_NAME "ajIwNGNfZl9yeF90eF9pcF9pbnRlbF9qZXNkMjA0Y18xX2ZpZm9fMTkyN18zZDc2eGdh"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_3d76xga" -library "fifo_1927" -name IP_COMPONENT_DISPLAY_NAME "RklGTyBJbnRlbCBGUEdBIElQ"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_3d76xga" -library "fifo_1927" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_3d76xga" -library "fifo_1927" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_3d76xga" -library "fifo_1927" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_3d76xga" -library "fifo_1927" -name IP_COMPONENT_VERSION "MTkuMi43"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_3d76xga" -library "fifo_1927" -name IP_COMPONENT_GROUP "QmFzaWMgRnVuY3Rpb25zL09uIENoaXAgTWVtb3J5"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_3d76xga" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2ZqbjE1NDg5MDM4MzI4ODkuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_3d76xga" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2ZubzE1NTA2MjYwMjcyNzQuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_3d76xga" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3ZnbzE0Mzk0NTEwMDAzMDQuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_3d76xga" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL21jbjE0NDEwOTI5NTgxOTguaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_3d76xga" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2VpczE0MTQ0NjI3Njc4NzIuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_3d76xga" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL21jbjE0MTMxODIyOTI1NjguaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_3d76xga" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2VpczE0MTQ0NjI3Njc4NzIuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_3d76xga" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL211ZjE0ODg1MTE0Nzg4MjUuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_3d76xga" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3FrbzE1MTczNjM0MTA1MTIuaHRtbA=="
+set_global_assignment -entity "j204c_rx_gb_8deep_mlab" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_NAME "ajIwNGNfcnhfZ2JfOGRlZXBfbWxhYg=="
+set_global_assignment -entity "j204c_rx_gb_8deep_mlab" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_DISPLAY_NAME "ajIwNGNfcnhfZ2JfOGRlZXBfbWxhYg=="
+set_global_assignment -entity "j204c_rx_gb_8deep_mlab" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_rx_gb_8deep_mlab" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_rx_gb_8deep_mlab" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "j204c_rx_gb_8deep_mlab" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_VERSION "MTkuMQ=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_zgxpb4a" -library "fifo_1927" -name IP_COMPONENT_NAME "ajIwNGNfZl9yeF90eF9pcF9pbnRlbF9qZXNkMjA0Y18xX2ZpZm9fMTkyN196Z3hwYjRh"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_zgxpb4a" -library "fifo_1927" -name IP_COMPONENT_DISPLAY_NAME "RklGTyBJbnRlbCBGUEdBIElQ"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_zgxpb4a" -library "fifo_1927" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_zgxpb4a" -library "fifo_1927" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_zgxpb4a" -library "fifo_1927" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_zgxpb4a" -library "fifo_1927" -name IP_COMPONENT_VERSION "MTkuMi43"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_zgxpb4a" -library "fifo_1927" -name IP_COMPONENT_GROUP "QmFzaWMgRnVuY3Rpb25zL09uIENoaXAgTWVtb3J5"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_zgxpb4a" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2ZqbjE1NDg5MDM4MzI4ODkuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_zgxpb4a" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2ZubzE1NTA2MjYwMjcyNzQuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_zgxpb4a" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3ZnbzE0Mzk0NTEwMDAzMDQuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_zgxpb4a" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL21jbjE0NDEwOTI5NTgxOTguaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_zgxpb4a" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2VpczE0MTQ0NjI3Njc4NzIuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_zgxpb4a" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL21jbjE0MTMxODIyOTI1NjguaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_zgxpb4a" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2VpczE0MTQ0NjI3Njc4NzIuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_zgxpb4a" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL211ZjE0ODg1MTE0Nzg4MjUuaHRtbA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_zgxpb4a" -library "fifo_1927" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3FrbzE1MTczNjM0MTA1MTIuaHRtbA=="
+set_global_assignment -entity "j204c_rx_gb_8deep_ecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_NAME "ajIwNGNfcnhfZ2JfOGRlZXBfZWNj"
+set_global_assignment -entity "j204c_rx_gb_8deep_ecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_DISPLAY_NAME "ajIwNGNfcnhfZ2JfOGRlZXBfZWNj"
+set_global_assignment -entity "j204c_rx_gb_8deep_ecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_rx_gb_8deep_ecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_rx_gb_8deep_ecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "j204c_rx_gb_8deep_ecc" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_VERSION "MTkuMQ=="
+set_global_assignment -entity "j204c_rx_base" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_NAME "ajIwNGNfcnhfYmFzZQ=="
+set_global_assignment -entity "j204c_rx_base" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_DISPLAY_NAME "aW50ZWxfamVzZDIwNGNfcng="
+set_global_assignment -entity "j204c_rx_base" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_rx_base" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_INTERNAL "On"
+set_global_assignment -entity "j204c_rx_base" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "j204c_rx_base" -library "intel_jesd204c_rx_191" -name IP_COMPONENT_VERSION "MTkuMQ=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_intel_jesd204c_312_mgqnsiy" -library "intel_jesd204c_312" -name IP_COMPONENT_NAME "ajIwNGNfZl9yeF90eF9pcF9pbnRlbF9qZXNkMjA0Y18xX2ludGVsX2plc2QyMDRjXzMxMl9tZ3Fuc2l5"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_intel_jesd204c_312_mgqnsiy" -library "intel_jesd204c_312" -name IP_COMPONENT_DISPLAY_NAME "SkVTRDIwNEMgSW50ZWwgRlBHQSBJUA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_intel_jesd204c_312_mgqnsiy" -library "intel_jesd204c_312" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_intel_jesd204c_312_mgqnsiy" -library "intel_jesd204c_312" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_intel_jesd204c_312_mgqnsiy" -library "intel_jesd204c_312" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_intel_jesd204c_312_mgqnsiy" -library "intel_jesd204c_312" -name IP_COMPONENT_VERSION "My4xLjI="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_intel_jesd204c_312_mgqnsiy" -library "intel_jesd204c_312" -name IP_COMPONENT_DESCRIPTION "SW50ZWwgRlBHQSBKRVNEMjA0QyBJUA=="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_intel_jesd204c_312_mgqnsiy" -library "intel_jesd204c_312" -name IP_COMPONENT_GROUP "SW50ZXJmYWNlIFByb3RvY29scy9KRVNE"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_intel_jesd204c_312_mgqnsiy" -library "intel_jesd204c_312" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzEwOC8="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_intel_jesd204c_312_mgqnsiy" -library "intel_jesd204c_312" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzI2Ni8="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_intel_jesd204c_312_mgqnsiy" -library "intel_jesd204c_312" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzM1Ny8="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_intel_jesd204c_312_mgqnsiy" -library "intel_jesd204c_312" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzcwMi8="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1" -library "j204c_f_rx_tx_ip_intel_jesd204c_1" -name IP_COMPONENT_NAME "ajIwNGNfZl9yeF90eF9pcF9pbnRlbF9qZXNkMjA0Y18x"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1" -library "j204c_f_rx_tx_ip_intel_jesd204c_1" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1" -library "j204c_f_rx_tx_ip_intel_jesd204c_1" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1" -library "j204c_f_rx_tx_ip_intel_jesd204c_1" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1" -library "j204c_f_rx_tx_ip_intel_jesd204c_1" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1" -library "j204c_f_rx_tx_ip_intel_jesd204c_1" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "xcvrnphy_fme_411" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "xcvrnphy_fme_411/synth/alt_xcvr_arbiter.sv"]
+set_global_assignment -library "xcvrnphy_fme_411" -name VERILOG_FILE [file join $::quartus(qip_path) "xcvrnphy_fme_411/synth/altera_std_synchronizer_nocut.v"]
+set_global_assignment -library "xcvrnphy_fme_411" -name SOURCE_FILE [file join $::quartus(qip_path) "xcvrnphy_fme_411/synth/serdes.firmware.rom"]
+set_global_assignment -library "xcvrnphy_fme_411" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "xcvrnphy_fme_411/synth/alt_xcvr_resync_std.sv"]
+set_global_assignment -library "xcvrnphy_fme_411" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "xcvrnphy_fme_411/synth/altera_xcvr_native_s10_functions_h.sv"]
+set_global_assignment -library "xcvrnphy_fme_411" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "xcvrnphy_fme_411/synth/s10_avmm_h_etile.sv"]
+set_global_assignment -library "xcvrnphy_fme_411" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "xcvrnphy_fme_411/synth/alt_xcvr_native_avmm_csr_etile.sv"]
+set_global_assignment -library "xcvrnphy_fme_411" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "xcvrnphy_fme_411/synth/alt_xcvr_native_rcfg_arb.sv"]
+set_global_assignment -library "xcvrnphy_fme_411" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "xcvrnphy_fme_411/synth/alt_xcvr_native_rx_reset_seq_etile.sv"]
+set_global_assignment -library "xcvrnphy_fme_411" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "xcvrnphy_fme_411/synth/alt_xcvr_native_tx_reset_seq_etile.sv"]
+set_global_assignment -library "xcvrnphy_fme_411" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "xcvrnphy_fme_411/synth/alt_xcvr_reset_counter_s10_etile.sv"]
+set_global_assignment -library "xcvrnphy_fme_411" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "xcvrnphy_fme_411/synth/altera_xcvr_reset_control_etile.sv"]
+set_global_assignment -library "xcvrnphy_fme_411" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "xcvrnphy_fme_411/synth/altera_xcvr_reset_top_etile.sv"]
+set_global_assignment -library "xcvrnphy_fme_411" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "xcvrnphy_fme_411/synth/altera_xcvr_ical_int_table.sv"]
+set_global_assignment -library "xcvrnphy_fme_411" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "xcvrnphy_fme_411/synth/altera_xcvr_ical_top_etile.sv"]
+set_global_assignment -library "xcvrnphy_fme_411" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "xcvrnphy_fme_411/synth/altera_xcvr_ical_etile.sv"]
+set_global_assignment -library "xcvrnphy_fme_411" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "xcvrnphy_fme_411/synth/altera_xcvr_pma_spico_reset_etile.sv"]
+set_global_assignment -library "xcvrnphy_fme_411" -name SOURCE_FILE [file join $::quartus(qip_path) "xcvrnphy_fme_411/synth/ical_recipe_map.txt"]
+set_global_assignment -library "xcvrnphy_fme_411" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "xcvrnphy_fme_411/synth/altera_xcvr_native_dskw_pam4.sv"]
+set_global_assignment -library "xcvrnphy_fme_411" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "xcvrnphy_fme_411/synth/alt_xcvr_resync_etile.sv"]
+set_global_assignment -library "xcvrnphy_fme_411" -name VERILOG_FILE [file join $::quartus(qip_path) "xcvrnphy_fme_411/synth/altera_std_synchronizer_nocut_etile.v"]
+set_global_assignment -library "xcvrnphy_fme_411" -name SOURCE_FILE [file join $::quartus(qip_path) "xcvrnphy_fme_411/synth/plain_files.txt"]
+set_global_assignment -library "xcvrnphy_fme_411" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "xcvrnphy_fme_411/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_xcvrnphy_fme_411_vhmkdxi.sv"]
+set_instance_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_xcvrnphy_fme_411_vhmkdxi" -library "xcvrnphy_fme_411" -name SDC_ENTITY_FILE [file join $::quartus(qip_path) "xcvrnphy_fme_411/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_xcvrnphy_fme_411_vhmkdxi.sdc"]
+set_instance_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_xcvrnphy_fme_411_vhmkdxi" -library "xcvrnphy_fme_411" -name TCL_ENTITY_FILE [file join $::quartus(qip_path) "xcvrnphy_fme_411/synth/alt_xcvr_native_helper_functions_vhmkdxi.tcl"]
+set_global_assignment -library "xcvrnphy_fme_411" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "xcvrnphy_fme_411/synth/alt_xcvr_native_rcfg_opt_logic_vhmkdxi.sv"]
+set_instance_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_xcvrnphy_fme_411_vhmkdxi" -library "xcvrnphy_fme_411" -name TCL_ENTITY_FILE [file join $::quartus(qip_path) "xcvrnphy_fme_411/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_xcvrnphy_fme_411_vhmkdxi_ip_parameters_vhmkdxi.tcl"]
+set_global_assignment -library "intel_jesd204c_phy_adapter_c3_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_phy_adapter_c3_191/synth/intel_jesd204c_phy_adapter_c3.v"]
+set_global_assignment -library "intel_jesd204c_phy_wrapper_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_phy_wrapper_191/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_intel_jesd204c_phy_wrapper_191_avd4uby.v"]
+set_global_assignment -library "fifo_1927" -name VERILOG_FILE [file join $::quartus(qip_path) "fifo_1927/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_gaqrowq.v"]
+set_instance_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_gaqrowq" -library "fifo_1927" -name SDC_ENTITY_FILE [file join $::quartus(qip_path) "fifo_1927/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_gaqrowq.sdc"] -no_sdc_promotion  -no_auto_inst_discovery 
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_tx_dcfifo132b_m20k.v"]
+set_global_assignment -library "fifo_1927" -name VERILOG_FILE [file join $::quartus(qip_path) "fifo_1927/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rcs4qiq.v"]
+set_instance_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rcs4qiq" -library "fifo_1927" -name SDC_ENTITY_FILE [file join $::quartus(qip_path) "fifo_1927/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rcs4qiq.sdc"] -no_sdc_promotion  -no_auto_inst_discovery 
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_tx_dcfifo132b_mlab.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_tx_base.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_tx_ctrl.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_tx_gearbox.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_tx_gearbox_fifo_top.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_tx_gb_dformat_132b128b.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_bit_synchronizer.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_tx_ll_top.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_binary_shifter.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_data_stage.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_streaming_queue.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_rstctrl.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_crc12.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_pulse_cdc.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_clkctrl.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_clkratio_gen.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_clkratio.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_lemc_gen.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_common_set_cdc.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/altera_std_synchronizer_nocut.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_fifo_sync.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_tx_link_reinit.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_tx_link_layer_perlane.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_tx_scrm.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_tx_sh_selector.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_tx_gearbox_perlane.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_tx_tl_frame.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_tx_tl_sample.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_tx_tl_top.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_tx_sh_encoder.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_tx_avs_sync.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_tx_link_sync.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_tx_set_cdc.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_tx_csr.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_tx_phy_hip_status.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_tx_regmap.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_bmon_bit_reversal.v"]
+set_global_assignment -library "intel_jesd204c_tx_191" -name SOURCE_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/j204c_tx_base.ocp"]
+set_instance_assignment -entity "j204c_tx_base" -library "intel_jesd204c_tx_191" -name SDC_ENTITY_FILE [file join $::quartus(qip_path) "intel_jesd204c_tx_191/synth/intel_jesd204c.sdc"] -no_sdc_promotion  -no_auto_inst_discovery 
+set_global_assignment -library "fifo_1927" -name VERILOG_FILE [file join $::quartus(qip_path) "fifo_1927/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_24rkbxi.v"]
+set_instance_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_24rkbxi" -library "fifo_1927" -name SDC_ENTITY_FILE [file join $::quartus(qip_path) "fifo_1927/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_24rkbxi.sdc"] -no_sdc_promotion  -no_auto_inst_discovery 
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_dcfifo132b_m20k.v"]
+set_global_assignment -library "fifo_1927" -name VERILOG_FILE [file join $::quartus(qip_path) "fifo_1927/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ka2rm5y.v"]
+set_instance_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ka2rm5y" -library "fifo_1927" -name SDC_ENTITY_FILE [file join $::quartus(qip_path) "fifo_1927/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ka2rm5y.sdc"] -no_sdc_promotion  -no_auto_inst_discovery 
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_dcfifo132b_mlab.v"]
+set_global_assignment -library "fifo_1927" -name VERILOG_FILE [file join $::quartus(qip_path) "fifo_1927/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ev3vpby.v"]
+set_instance_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ev3vpby" -library "fifo_1927" -name SDC_ENTITY_FILE [file join $::quartus(qip_path) "fifo_1927/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ev3vpby.sdc"] -no_sdc_promotion  -no_auto_inst_discovery 
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_dcfifo132b_ecc.v"]
+set_global_assignment -library "fifo_1927" -name VERILOG_FILE [file join $::quartus(qip_path) "fifo_1927/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_x3spiwi.v"]
+set_instance_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_x3spiwi" -library "fifo_1927" -name SDC_ENTITY_FILE [file join $::quartus(qip_path) "fifo_1927/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_x3spiwi.sdc"] -no_sdc_promotion  -no_auto_inst_discovery 
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_dcfifo132b_16d_m20k.v"]
+set_global_assignment -library "fifo_1927" -name VERILOG_FILE [file join $::quartus(qip_path) "fifo_1927/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rmkn7fq.v"]
+set_instance_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rmkn7fq" -library "fifo_1927" -name SDC_ENTITY_FILE [file join $::quartus(qip_path) "fifo_1927/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rmkn7fq.sdc"] -no_sdc_promotion  -no_auto_inst_discovery 
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_dcfifo132b_16d_mlab.v"]
+set_global_assignment -library "fifo_1927" -name VERILOG_FILE [file join $::quartus(qip_path) "fifo_1927/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_nd4fp3y.v"]
+set_instance_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_nd4fp3y" -library "fifo_1927" -name SDC_ENTITY_FILE [file join $::quartus(qip_path) "fifo_1927/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_nd4fp3y.sdc"] -no_sdc_promotion  -no_auto_inst_discovery 
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_dcfifo132b_16d_ecc.v"]
+set_global_assignment -library "fifo_1927" -name VERILOG_FILE [file join $::quartus(qip_path) "fifo_1927/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_me7d47y.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_eb_fifo_ecc.v"]
+set_global_assignment -library "fifo_1927" -name VERILOG_FILE [file join $::quartus(qip_path) "fifo_1927/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_sp6fdfi.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_eb_fifo_noecc.v"]
+set_global_assignment -library "fifo_1927" -name VERILOG_FILE [file join $::quartus(qip_path) "fifo_1927/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_7yqq34a.v"]
+set_instance_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_7yqq34a" -library "fifo_1927" -name SDC_ENTITY_FILE [file join $::quartus(qip_path) "fifo_1927/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_7yqq34a.sdc"] -no_sdc_promotion  -no_auto_inst_discovery 
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_gb_8deep.v"]
+set_global_assignment -library "fifo_1927" -name VERILOG_FILE [file join $::quartus(qip_path) "fifo_1927/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_3d76xga.v"]
+set_instance_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_3d76xga" -library "fifo_1927" -name SDC_ENTITY_FILE [file join $::quartus(qip_path) "fifo_1927/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_3d76xga.sdc"] -no_sdc_promotion  -no_auto_inst_discovery 
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_gb_8deep_mlab.v"]
+set_global_assignment -library "fifo_1927" -name VERILOG_FILE [file join $::quartus(qip_path) "fifo_1927/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_zgxpb4a.v"]
+set_instance_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_zgxpb4a" -library "fifo_1927" -name SDC_ENTITY_FILE [file join $::quartus(qip_path) "fifo_1927/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_zgxpb4a.sdc"] -no_sdc_promotion  -no_auto_inst_discovery 
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_gb_8deep_ecc.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_link_reinit.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_gb_fifo.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_gearbox.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_emb_align.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_ctrl.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_sh_align.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_dec.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_eb.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_descrm.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_ll_top.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_set_cdc.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_csr.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_tl_sample.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_tl_frame.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_tl_top.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_phy_hip.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_base.sv"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_regmap.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name SOURCE_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rx_base.ocp"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_bit_synchronizer.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_binary_shifter.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_data_stage.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_streaming_queue.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_rstctrl.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_crc12.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_pulse_cdc.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_clkctrl.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_clkratio_gen.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_clkratio.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_lemc_gen.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_common_set_cdc.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/altera_std_synchronizer_nocut.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_bmon_bit_reversal.v"]
+set_global_assignment -library "intel_jesd204c_rx_191" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_rx_191/synth/j204c_eb_fifo.v"]
+set_global_assignment -library "intel_jesd204c_312" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_jesd204c_312/synth/j204c_f_rx_tx_ip_intel_jesd204c_1_intel_jesd204c_312_mgqnsiy.v"]
+set_global_assignment -library "j204c_f_rx_tx_ip_intel_jesd204c_1" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/j204c_f_rx_tx_ip_intel_jesd204c_1.v"]
+
+
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_intel_jesd204c_312_mgqnsiy" -library "intel_jesd204c_312" -name IP_TOOL_NAME "intel_jesd204c"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_intel_jesd204c_312_mgqnsiy" -library "intel_jesd204c_312" -name IP_TOOL_VERSION "3.1.2"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_intel_jesd204c_312_mgqnsiy" -library "intel_jesd204c_312" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "j204c_rx_base" -library "intel_jesd204c_rx_191" -name IP_TOOL_NAME "intel_jesd204c_rx"
+set_global_assignment -entity "j204c_rx_base" -library "intel_jesd204c_rx_191" -name IP_TOOL_VERSION "19.1"
+set_global_assignment -entity "j204c_rx_base" -library "intel_jesd204c_rx_191" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_zgxpb4a" -library "fifo_1927" -name IP_TOOL_NAME "fifo"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_zgxpb4a" -library "fifo_1927" -name IP_TOOL_VERSION "19.2.7"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_zgxpb4a" -library "fifo_1927" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_3d76xga" -library "fifo_1927" -name IP_TOOL_NAME "fifo"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_3d76xga" -library "fifo_1927" -name IP_TOOL_VERSION "19.2.7"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_3d76xga" -library "fifo_1927" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_7yqq34a" -library "fifo_1927" -name IP_TOOL_NAME "fifo"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_7yqq34a" -library "fifo_1927" -name IP_TOOL_VERSION "19.2.7"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_7yqq34a" -library "fifo_1927" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_sp6fdfi" -library "fifo_1927" -name IP_TOOL_NAME "fifo"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_sp6fdfi" -library "fifo_1927" -name IP_TOOL_VERSION "19.2.7"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_sp6fdfi" -library "fifo_1927" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_me7d47y" -library "fifo_1927" -name IP_TOOL_NAME "fifo"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_me7d47y" -library "fifo_1927" -name IP_TOOL_VERSION "19.2.7"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_me7d47y" -library "fifo_1927" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_nd4fp3y" -library "fifo_1927" -name IP_TOOL_NAME "fifo"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_nd4fp3y" -library "fifo_1927" -name IP_TOOL_VERSION "19.2.7"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_nd4fp3y" -library "fifo_1927" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rmkn7fq" -library "fifo_1927" -name IP_TOOL_NAME "fifo"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rmkn7fq" -library "fifo_1927" -name IP_TOOL_VERSION "19.2.7"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rmkn7fq" -library "fifo_1927" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_x3spiwi" -library "fifo_1927" -name IP_TOOL_NAME "fifo"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_x3spiwi" -library "fifo_1927" -name IP_TOOL_VERSION "19.2.7"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_x3spiwi" -library "fifo_1927" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ev3vpby" -library "fifo_1927" -name IP_TOOL_NAME "fifo"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ev3vpby" -library "fifo_1927" -name IP_TOOL_VERSION "19.2.7"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ev3vpby" -library "fifo_1927" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ka2rm5y" -library "fifo_1927" -name IP_TOOL_NAME "fifo"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ka2rm5y" -library "fifo_1927" -name IP_TOOL_VERSION "19.2.7"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_ka2rm5y" -library "fifo_1927" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_24rkbxi" -library "fifo_1927" -name IP_TOOL_NAME "fifo"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_24rkbxi" -library "fifo_1927" -name IP_TOOL_VERSION "19.2.7"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_24rkbxi" -library "fifo_1927" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "j204c_tx_base" -library "intel_jesd204c_tx_191" -name IP_TOOL_NAME "intel_jesd204c_tx"
+set_global_assignment -entity "j204c_tx_base" -library "intel_jesd204c_tx_191" -name IP_TOOL_VERSION "19.1"
+set_global_assignment -entity "j204c_tx_base" -library "intel_jesd204c_tx_191" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rcs4qiq" -library "fifo_1927" -name IP_TOOL_NAME "fifo"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rcs4qiq" -library "fifo_1927" -name IP_TOOL_VERSION "19.2.7"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_rcs4qiq" -library "fifo_1927" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_gaqrowq" -library "fifo_1927" -name IP_TOOL_NAME "fifo"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_gaqrowq" -library "fifo_1927" -name IP_TOOL_VERSION "19.2.7"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_fifo_1927_gaqrowq" -library "fifo_1927" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_intel_jesd204c_phy_wrapper_191_avd4uby" -library "intel_jesd204c_phy_wrapper_191" -name IP_TOOL_NAME "intel_jesd204c_phy_wrapper"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_intel_jesd204c_phy_wrapper_191_avd4uby" -library "intel_jesd204c_phy_wrapper_191" -name IP_TOOL_VERSION "19.1"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_intel_jesd204c_phy_wrapper_191_avd4uby" -library "intel_jesd204c_phy_wrapper_191" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "intel_jesd204c_phy_adapter_c3" -library "intel_jesd204c_phy_adapter_c3_191" -name IP_TOOL_NAME "intel_jesd204c_phy_adapter_c3"
+set_global_assignment -entity "intel_jesd204c_phy_adapter_c3" -library "intel_jesd204c_phy_adapter_c3_191" -name IP_TOOL_VERSION "19.1"
+set_global_assignment -entity "intel_jesd204c_phy_adapter_c3" -library "intel_jesd204c_phy_adapter_c3_191" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_xcvrnphy_fme_411_vhmkdxi" -library "xcvrnphy_fme_411" -name IP_TOOL_NAME "xcvrnphy_fme"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_xcvrnphy_fme_411_vhmkdxi" -library "xcvrnphy_fme_411" -name IP_TOOL_VERSION "4.1.1"
+set_global_assignment -entity "j204c_f_rx_tx_ip_intel_jesd204c_1_xcvrnphy_fme_411_vhmkdxi" -library "xcvrnphy_fme_411" -name IP_TOOL_ENV "QsysPrimePro"
+

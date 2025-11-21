@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.11.21.13:10:08"
+ outputDirectory="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/subsys_ftile_25gbe_rx_dma/rx_dma_write_master/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGFB014R24B2I2V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="3"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DATA_WRITE_MASTER_ADDRESS_MAP"
+     type="AddressMap"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DATA_WRITE_MASTER_ADDRESS_WIDTH"
+     type="AddressWidthType"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="Clock" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="Clock_reset" kind="reset" start="0">
+   <property name="associatedClock" value="Clock" />
+   <property name="synchronousEdges" value="BOTH" />
+   <port name="reset" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="Data_Write_Master" kind="avalon" start="1">
+   <property name="adaptsTo" value="" />
+   <property name="addressGroup" value="0" />
+   <property name="addressUnits" value="SYMBOLS" />
+   <property name="alwaysBurstMaxBurst" value="false" />
+   <property name="associatedClock" value="Clock" />
+   <property name="associatedReset" value="Clock_reset" />
+   <property name="bitsPerSymbol" value="8" />
+   <property name="burstOnBurstBoundariesOnly" value="true" />
+   <property name="burstcountUnits" value="WORDS" />
+   <property name="constantBurstBehavior" value="false" />
+   <property name="dBSBigEndian" value="false" />
+   <property name="doStreamReads" value="false" />
+   <property name="doStreamWrites" value="false" />
+   <property name="holdTime" value="0" />
+   <property name="interleaveBursts" value="false" />
+   <property name="isAsynchronous" value="false" />
+   <property name="isBigEndian" value="false" />
+   <property name="isReadable" value="false" />
+   <property name="isWriteable" value="false" />
+   <property name="linewrapBursts" value="false" />
+   <property name="maxAddressWidth" value="32" />
+   <property name="maximumPendingReadTransactions" value="0" />
+   <property name="maximumPendingWriteTransactions" value="0" />
+   <property name="minimumReadLatency" value="1" />
+   <property name="minimumResponseLatency" value="1" />
+   <property name="prSafe" value="false" />
+   <property name="readLatency" value="0" />
+   <property name="readWaitTime" value="1" />
+   <property name="registerIncomingSignals" value="false" />
+   <property name="registerOutgoingSignals" value="false" />
+   <property name="setupTime" value="0" />
+   <property name="timingUnits" value="Cycles" />
+   <property name="waitrequestAllowance" value="0" />
+   <property name="writeWaitTime" value="0" />
+   <port name="master_address" direction="output" role="address" width="37" />
+   <port name="master_write" direction="output" role="write" width="1" />
+   <port
+       name="master_byteenable"
+       direction="output"
+       role="byteenable"
+       width="16" />
+   <port
+       name="master_writedata"
+       direction="output"
+       role="writedata"
+       width="128" />
+   <port
+       name="master_waitrequest"
+       direction="input"
+       role="waitrequest"
+       width="1" />
+   <port
+       name="master_burstcount"
+       direction="output"
+       role="burstcount"
+       width="5" />
+   <port name="master_response" direction="input" role="response" width="2" />
+   <port
+       name="master_writeresponsevalid"
+       direction="input"
+       role="writeresponsevalid"
+       width="1" />
+  </interface>
+  <interface name="Data_Sink" kind="avalon_streaming" start="0">
+   <property name="associatedClock" value="Clock" />
+   <property name="associatedReset" value="Clock_reset" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="16" />
+   <port name="snk_data" direction="input" role="data" width="128" />
+   <port name="snk_valid" direction="input" role="valid" width="1" />
+   <port name="snk_ready" direction="output" role="ready" width="1" />
+   <port name="snk_sop" direction="input" role="startofpacket" width="1" />
+   <port name="snk_eop" direction="input" role="endofpacket" width="1" />
+   <port name="snk_empty" direction="input" role="empty" width="4" />
+   <port name="snk_error" direction="input" role="error" width="6" />
+  </interface>
+  <interface name="Command_Sink" kind="avalon_streaming" start="0">
+   <property name="associatedClock" value="Clock" />
+   <property name="associatedReset" value="Clock_reset" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="256" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port name="snk_command_data" direction="input" role="data" width="256" />
+   <port name="snk_command_valid" direction="input" role="valid" width="1" />
+   <port name="snk_command_ready" direction="output" role="ready" width="1" />
+  </interface>
+  <interface name="Response_Source" kind="avalon_streaming" start="1">
+   <property name="associatedClock" value="Clock" />
+   <property name="associatedReset" value="Clock_reset" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="256" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port name="src_response_data" direction="output" role="data" width="256" />
+   <port name="src_response_valid" direction="output" role="valid" width="1" />
+   <port name="src_response_ready" direction="input" role="ready" width="1" />
+  </interface>
+ </perimeter>
+ <entity kind="rx_dma_write_master" version="1.0" name="rx_dma_write_master">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CLOCK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLOCK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="AGFB014R24B2I2V" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_DATA_WRITE_MASTER_ADDRESS_MAP" value="" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <parameter name="AUTO_DATA_WRITE_MASTER_ADDRESS_WIDTH" value="-1" />
+  <generatedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/subsys_ftile_25gbe_rx_dma/rx_dma_write_master/synth/rx_dma_write_master.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/subsys_ftile_25gbe_rx_dma/rx_dma_write_master/synth/rx_dma_write_master.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/subsys_ftile_25gbe_rx_dma/rx_dma_write_master.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/sibgath/intelFPGA_pro/24.1/ip/altera/altera_msgdma/write_master/write_master_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="rx_dma_write_master">"Generating: rx_dma_write_master"</message>
+   <message level="Info" culprit="rx_dma_write_master">"Generating: write_master"</message>
+  </messages>
+ </entity>
+ <entity kind="dma_write_master" version="19.2.0" name="write_master">
+  <parameter name="FIX_ADDRESS_WIDTH" value="37" />
+  <parameter name="DEVICE_FAMILY" value="Agilex 7" />
+  <generatedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/subsys_ftile_25gbe_rx_dma/rx_dma_write_master/dma_write_master_1920/synth/write_master.v"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/subsys_ftile_25gbe_rx_dma/rx_dma_write_master/dma_write_master_1920/synth/byte_enable_generator.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/subsys_ftile_25gbe_rx_dma/rx_dma_write_master/dma_write_master_1920/synth/ST_to_MM_Adapter.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/subsys_ftile_25gbe_rx_dma/rx_dma_write_master/dma_write_master_1920/synth/write_burst_control.v"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/subsys_ftile_25gbe_rx_dma/rx_dma_write_master/dma_write_master_1920/synth/write_master.v"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/subsys_ftile_25gbe_rx_dma/rx_dma_write_master/dma_write_master_1920/synth/byte_enable_generator.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/subsys_ftile_25gbe_rx_dma/rx_dma_write_master/dma_write_master_1920/synth/ST_to_MM_Adapter.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/subsys_ftile_25gbe_rx_dma/rx_dma_write_master/dma_write_master_1920/synth/write_burst_control.v"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/sibgath/intelFPGA_pro/24.1/ip/altera/altera_msgdma/write_master/write_master_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="rx_dma_write_master" as="dma_write_master_inst" />
+  <messages>
+   <message level="Info" culprit="rx_dma_write_master">"Generating: write_master"</message>
+  </messages>
+ </entity>
+</deploy>

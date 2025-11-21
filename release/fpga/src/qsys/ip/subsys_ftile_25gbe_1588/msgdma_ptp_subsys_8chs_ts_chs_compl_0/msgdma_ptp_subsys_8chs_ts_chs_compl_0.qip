@@ -1,0 +1,32 @@
+set_global_assignment -entity "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -library "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -library "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -library "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -library "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -name IP_TOOL_VENDOR_NAME "Altera Corporation"
+set_global_assignment -entity "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -library "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -name IP_TOP_LEVEL_COMPONENT_NAME "ts_chs_compl"
+set_global_assignment -library "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -name SOPCINFO_FILE [file join $::quartus(qip_path) "msgdma_ptp_subsys_8chs_ts_chs_compl_0.sopcinfo"]
+set_global_assignment -entity "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -library "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -name SLD_INFO "QSYS_NAME msgdma_ptp_subsys_8chs_ts_chs_compl_0 HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -name MISC_FILE [file join $::quartus(qip_path) "msgdma_ptp_subsys_8chs_ts_chs_compl_0.cmp"]
+set_global_assignment -entity "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -library "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -name IP_TARGETED_DEVICE_FAMILY "Agilex 7"
+set_global_assignment -entity "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -library "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 7}"
+set_global_assignment -entity "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -library "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -name MISC_FILE [file join $::quartus(qip_path) "../msgdma_ptp_subsys_8chs_ts_chs_compl_0.ip"]
+
+set_global_assignment -entity "ts_chs_compl" -library "ts_chs_compl_10" -name IP_COMPONENT_NAME "dHNfY2hzX2NvbXBs"
+set_global_assignment -entity "ts_chs_compl" -library "ts_chs_compl_10" -name IP_COMPONENT_DISPLAY_NAME "dHNfY2hzX2NvbXBs"
+set_global_assignment -entity "ts_chs_compl" -library "ts_chs_compl_10" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "ts_chs_compl" -library "ts_chs_compl_10" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "ts_chs_compl" -library "ts_chs_compl_10" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -library "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -name IP_COMPONENT_NAME "bXNnZG1hX3B0cF9zdWJzeXNfOGNoc190c19jaHNfY29tcGxfMA=="
+set_global_assignment -entity "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -library "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -library "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -library "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -library "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -library "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "ts_chs_compl_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ts_chs_compl_10/synth/ts_chs_compl.sv"]
+set_global_assignment -library "ts_chs_compl_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ts_chs_compl_10/synth/dc_fifo_param.sv"]
+set_global_assignment -library "ts_chs_compl_10" -name SDC_FILE [file join $::quartus(qip_path) "ts_chs_compl_10/synth/dc_fifo_param_ts_compl.sdc"]
+set_global_assignment -library "msgdma_ptp_subsys_8chs_ts_chs_compl_0" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/msgdma_ptp_subsys_8chs_ts_chs_compl_0.v"]
+

@@ -1,0 +1,114 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the Intel FPGA Software License Subscription Agreements 
+on the Quartus Prime software download page.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 304 368)
+	(text "ILC" (rect 142 0 157 12)(font "SansSerif" (font_size 11)))
+	(text "inst" (rect 8 352 20 364)(font "Arial" ))
+	(port
+		(pt 0 76)
+		(input)
+		(text "reset_n" (rect 0 0 30 12)(font "SansSerif" (font_size 8)))
+		(text "reset_n" (rect 4 65 46 76)(font "SansSerif" (font_size 8)))
+		(line (pt 0 76)(pt 119 76)(line_width 1))
+	)
+	(port
+		(pt 0 126)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "SansSerif" (font_size 8)))
+		(text "clk" (rect 4 115 22 126)(font "SansSerif" (font_size 8)))
+		(line (pt 0 126)(pt 119 126)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "irq[1..0]" (rect 0 0 28 12)(font "SansSerif" (font_size 8)))
+		(text "irq[1..0]" (rect 4 165 58 176)(font "SansSerif" (font_size 8)))
+		(line (pt 0 176)(pt 119 176)(line_width 3))
+	)
+	(port
+		(pt 0 226)
+		(input)
+		(text "avmm_addr[5..0]" (rect 0 0 70 12)(font "SansSerif" (font_size 8)))
+		(text "avmm_addr[5..0]" (rect 4 215 94 226)(font "SansSerif" (font_size 8)))
+		(line (pt 0 226)(pt 119 226)(line_width 3))
+	)
+	(port
+		(pt 0 251)
+		(input)
+		(text "avmm_wrdata[31..0]" (rect 0 0 82 12)(font "SansSerif" (font_size 8)))
+		(text "avmm_wrdata[31..0]" (rect 4 240 112 251)(font "SansSerif" (font_size 8)))
+		(line (pt 0 251)(pt 119 251)(line_width 3))
+	)
+	(port
+		(pt 0 276)
+		(input)
+		(text "avmm_write" (rect 0 0 50 12)(font "SansSerif" (font_size 8)))
+		(text "avmm_write" (rect 4 265 64 276)(font "SansSerif" (font_size 8)))
+		(line (pt 0 276)(pt 119 276)(line_width 1))
+	)
+	(port
+		(pt 0 301)
+		(input)
+		(text "avmm_read" (rect 0 0 50 12)(font "SansSerif" (font_size 8)))
+		(text "avmm_read" (rect 4 290 58 301)(font "SansSerif" (font_size 8)))
+		(line (pt 0 301)(pt 119 301)(line_width 1))
+	)
+	(port
+		(pt 0 326)
+		(output)
+		(text "avmm_rddata[31..0]" (rect 0 0 81 12)(font "SansSerif" (font_size 8)))
+		(text "avmm_rddata[31..0]" (rect 4 315 112 326)(font "SansSerif" (font_size 8)))
+	)
+	(drawing
+		(text "reset_n" (rect 75 46 192 105)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 124 71 290 152)(font "SansSerif" (color 0 0 0)))
+		(text "clk" (rect 104 96 226 205)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 124 121 266 252)(font "SansSerif" (color 0 0 0)))
+		(text "irq" (rect 105 146 228 305)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "irq" (rect 124 171 266 352)(font "SansSerif" (color 0 0 0)))
+		(text "avalon_slave" (rect 45 196 162 405)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "address" (rect 124 221 290 452)(font "SansSerif" (color 0 0 0)))
+		(text "writedata" (rect 124 246 302 502)(font "SansSerif" (color 0 0 0)))
+		(text "write" (rect 124 271 278 552)(font "SansSerif" (color 0 0 0)))
+		(text "read" (rect 124 296 272 602)(font "SansSerif" (color 0 0 0)))
+		(text "readdata" (rect 124 321 296 652)(font "SansSerif" (color 0 0 0)))
+		(text " ILC " (rect 287 351 604 712)(font "SansSerif" ))
+		(line (pt 119 34)(pt 187 34)(line_width 1))
+		(line (pt 187 34)(pt 187 351)(line_width 1))
+		(line (pt 119 351)(pt 187 351)(line_width 1))
+		(line (pt 119 34)(pt 119 351)(line_width 1))
+		(line (pt 120 55)(pt 120 80)(line_width 1))
+		(line (pt 121 55)(pt 121 80)(line_width 1))
+		(line (pt 120 105)(pt 120 130)(line_width 1))
+		(line (pt 121 105)(pt 121 130)(line_width 1))
+		(line (pt 120 155)(pt 120 180)(line_width 1))
+		(line (pt 121 155)(pt 121 180)(line_width 1))
+		(line (pt 304 326)(pt 119 326)(line_width 3))
+		(line (pt 120 205)(pt 120 330)(line_width 1))
+		(line (pt 121 205)(pt 121 330)(line_width 1))
+		(line (pt 0 0)(pt 304 0)(line_width 1))
+		(line (pt 304 0)(pt 304 368)(line_width 1))
+		(line (pt 0 368)(pt 304 368)(line_width 1))
+		(line (pt 0 0)(pt 0 368)(line_width 1))
+	)
+)

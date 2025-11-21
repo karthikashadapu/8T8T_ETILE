@@ -1,0 +1,302 @@
+	component lphy_ss_lphy_ss_top is
+		generic (
+			NUM_OF_ANT              : integer := 8;
+			NUM_OF_FFT              : integer := 2;
+			CPRI_ETH_DATAWIDTH      : integer := 128;
+			XRAN_ETH_DATAWIDTH      : integer := 128;
+			CH_DW                   : integer := 8;
+			NUM_OF_PRACH            : integer := 2;
+			CAPTURE_DMA_WIDTH       : integer := 512;
+			IQ_DATAWIDTH            : integer := 32;
+			CPRI_FRAME_DATAWIDTH    : integer := 64;
+			ECPRI_CAPTURE_INSTANCES : integer := 2;
+			DSP_CAPTURE_INSTANCES   : integer := 30;
+			LPHY_DSP_CAPTURE_INST   : integer := 8
+		);
+		port (
+			ifft1_busIn_writedata                    : in  std_logic_vector(31 downto 0)                               := (others => 'X'); -- writedata
+			ifft1_busIn_address                      : in  std_logic_vector(13 downto 0)                               := (others => 'X'); -- address
+			ifft1_busIn_write                        : in  std_logic                                                   := 'X';             -- write
+			ifft1_busIn_read                         : in  std_logic                                                   := 'X';             -- read
+			ifft1_busOut_readdatavalid               : out std_logic;                                                                      -- readdatavalid
+			ifft1_busOut_readdata                    : out std_logic_vector(31 downto 0);                                                  -- readdata
+			ifft1_busOut_waitrequest                 : out std_logic;                                                                      -- waitrequest
+			ifft2_busIn_writedata                    : in  std_logic_vector(31 downto 0)                               := (others => 'X'); -- writedata
+			ifft2_busIn_address                      : in  std_logic_vector(13 downto 0)                               := (others => 'X'); -- address
+			ifft2_busIn_write                        : in  std_logic                                                   := 'X';             -- write
+			ifft2_busIn_read                         : in  std_logic                                                   := 'X';             -- read
+			ifft2_busOut_readdatavalid               : out std_logic;                                                                      -- readdatavalid
+			ifft2_busOut_readdata                    : out std_logic_vector(31 downto 0);                                                  -- readdata
+			ifft2_busOut_waitrequest                 : out std_logic;                                                                      -- waitrequest
+			fft1_busIn_writedata                     : in  std_logic_vector(31 downto 0)                               := (others => 'X'); -- writedata
+			fft1_busIn_address                       : in  std_logic_vector(13 downto 0)                               := (others => 'X'); -- address
+			fft1_busIn_write                         : in  std_logic                                                   := 'X';             -- write
+			fft1_busIn_read                          : in  std_logic                                                   := 'X';             -- read
+			fft1_busOut_readdatavalid                : out std_logic;                                                                      -- readdatavalid
+			fft1_busOut_readdata                     : out std_logic_vector(31 downto 0);                                                  -- readdata
+			fft1_busOut_waitrequest                  : out std_logic;                                                                      -- waitrequest
+			fft2_busIn_writedata                     : in  std_logic_vector(31 downto 0)                               := (others => 'X'); -- writedata
+			fft2_busIn_address                       : in  std_logic_vector(13 downto 0)                               := (others => 'X'); -- address
+			fft2_busIn_write                         : in  std_logic                                                   := 'X';             -- write
+			fft2_busIn_read                          : in  std_logic                                                   := 'X';             -- read
+			fft2_busOut_readdatavalid                : out std_logic;                                                                      -- readdatavalid
+			fft2_busOut_readdata                     : out std_logic_vector(31 downto 0);                                                  -- readdata
+			fft2_busOut_waitrequest                  : out std_logic;                                                                      -- waitrequest
+			pb_ddr_csr_address                       : in  std_logic_vector(3 downto 0)                                := (others => 'X'); -- address
+			pb_ddr_csr_write                         : in  std_logic                                                   := 'X';             -- write
+			pb_ddr_csr_writedata                     : in  std_logic_vector(31 downto 0)                               := (others => 'X'); -- writedata
+			pb_ddr_csr_readdata                      : out std_logic_vector(31 downto 0);                                                  -- readdata
+			pb_mm_bridge_address                     : in  std_logic_vector(16 downto 0)                               := (others => 'X'); -- address
+			pb_mm_bridge_chipselect                  : in  std_logic                                                   := 'X';             -- chipselect
+			pb_mm_bridge_read                        : in  std_logic                                                   := 'X';             -- read
+			pb_mm_bridge_readdata                    : out std_logic_vector(31 downto 0);                                                  -- readdata
+			pb_mm_bridge_write                       : in  std_logic                                                   := 'X';             -- write
+			pb_mm_bridge_writedata                   : in  std_logic_vector(31 downto 0)                               := (others => 'X'); -- writedata
+			pb_mm_bridge_byteenable                  : in  std_logic_vector(3 downto 0)                                := (others => 'X'); -- byteenable
+			pb_mm_bridge_waitrequest                 : out std_logic;                                                                      -- waitrequest
+			lphy_ss_config_csr_address               : in  std_logic_vector(7 downto 0)                                := (others => 'X'); -- address
+			lphy_ss_config_csr_write                 : in  std_logic                                                   := 'X';             -- write
+			lphy_ss_config_csr_writedata             : in  std_logic_vector(31 downto 0)                               := (others => 'X'); -- writedata
+			lphy_ss_config_csr_readdata              : out std_logic_vector(31 downto 0);                                                  -- readdata
+			lphy_ss_config_csr_read                  : in  std_logic                                                   := 'X';             -- read
+			lphy_ss_config_csr_waitrequest           : out std_logic;                                                                      -- waitrequest
+			lphy_ss_config_csr_readdatavalid         : out std_logic;                                                                      -- readdatavalid
+			long_prach_lw_bridge_address_l2          : in  std_logic_vector(3 downto 0)                                := (others => 'X'); -- address
+			long_prach_lw_bridge_write_l2            : in  std_logic                                                   := 'X';             -- write
+			long_prach_lw_bridge_readdata_l2         : out std_logic_vector(31 downto 0);                                                  -- readdata
+			long_prach_lw_bridge_writedata_l2        : in  std_logic_vector(31 downto 0)                               := (others => 'X'); -- writedata
+			long_prach_lw_bridge_waitrequest_l2      : out std_logic;                                                                      -- waitrequest
+			long_prach_lw_bridge_readdatavalid_l2    : out std_logic;                                                                      -- readdatavalid
+			long_prach_lw_bridge_read_l2             : in  std_logic                                                   := 'X';             -- read
+			long_prach_lw_bridge_address_l1          : in  std_logic_vector(3 downto 0)                                := (others => 'X'); -- address
+			long_prach_lw_bridge_write_l1            : in  std_logic                                                   := 'X';             -- write
+			long_prach_lw_bridge_readdata_l1         : out std_logic_vector(31 downto 0);                                                  -- readdata
+			long_prach_lw_bridge_writedata_l1        : in  std_logic_vector(31 downto 0)                               := (others => 'X'); -- writedata
+			long_prach_lw_bridge_waitrequest_l1      : out std_logic;                                                                      -- waitrequest
+			long_prach_lw_bridge_readdatavalid_l1    : out std_logic;                                                                      -- readdatavalid
+			long_prach_lw_bridge_read_l1             : in  std_logic                                                   := 'X';             -- read
+			short_prach2_busIn_writedata             : in  std_logic_vector(31 downto 0)                               := (others => 'X'); -- writedata
+			short_prach2_busIn_address               : in  std_logic_vector(9 downto 0)                                := (others => 'X'); -- address
+			short_prach2_busIn_write                 : in  std_logic                                                   := 'X';             -- write
+			short_prach2_busIn_read                  : in  std_logic                                                   := 'X';             -- read
+			short_prach2_busOut_readdatavalid        : out std_logic;                                                                      -- readdatavalid
+			short_prach2_busOut_readdata             : out std_logic_vector(31 downto 0);                                                  -- readdata
+			short_prach2_busOut_waitrequest          : out std_logic;                                                                      -- waitrequest
+			short_prach1_busIn_writedata             : in  std_logic_vector(31 downto 0)                               := (others => 'X'); -- writedata
+			short_prach1_busIn_address               : in  std_logic_vector(9 downto 0)                                := (others => 'X'); -- address
+			short_prach1_busIn_write                 : in  std_logic                                                   := 'X';             -- write
+			short_prach1_busIn_read                  : in  std_logic                                                   := 'X';             -- read
+			short_prach1_busOut_readdatavalid        : out std_logic;                                                                      -- readdatavalid
+			short_prach1_busOut_readdata             : out std_logic_vector(31 downto 0);                                                  -- readdata
+			short_prach1_busOut_waitrequest          : out std_logic;                                                                      -- waitrequest
+			clk_dsp                                  : in  std_logic                                                   := 'X';             -- clk
+			clk_csr                                  : in  std_logic                                                   := 'X';             -- clk
+			clk_eth_xran_dl                          : in  std_logic                                                   := 'X';             -- clk
+			clk_eth_xran_ul                          : in  std_logic                                                   := 'X';             -- clk
+			rst_dsp_n                                : in  std_logic                                                   := 'X';             -- reset_n
+			rst_csr_n                                : in  std_logic                                                   := 'X';             -- reset_n
+			rst_eth_xran_n_dl                        : in  std_logic                                                   := 'X';             -- reset_n
+			rst_eth_xran_n_ul                        : in  std_logic                                                   := 'X';             -- reset_n
+			xran_demapper_source_valid               : in  std_logic                                                   := 'X';             -- valid
+			xran_demapper_source_data                : in  std_logic_vector((((XRAN_ETH_DATAWIDTH-1)-0)+1)-1 downto 0) := (others => 'X'); -- data
+			xran_demapper_source_endofpacket         : in  std_logic                                                   := 'X';             -- endofpacket
+			xran_demapper_source_startofpacket       : in  std_logic                                                   := 'X';             -- startofpacket
+			xran_demapper_source_ready               : out std_logic;                                                                      -- ready
+			xran_demapper_source_channel             : in  std_logic_vector(15 downto 0)                               := (others => 'X'); -- channel
+			ifft_source_valid1                       : out std_logic;                                                                      -- valid
+			ifft_source_data1                        : out std_logic_vector((((IQ_DATAWIDTH-1)-0)+1)-1 downto 0);                          -- data
+			ifft_source_channel1                     : out std_logic_vector(7 downto 0);                                                   -- channel
+			ifft_source_valid2                       : out std_logic;                                                                      -- valid
+			ifft_source_data2                        : out std_logic_vector((((IQ_DATAWIDTH-1)-0)+1)-1 downto 0);                          -- data
+			ifft_source_channel2                     : out std_logic_vector(7 downto 0);                                                   -- channel
+			coupling_pusch_avst_sink_valid_l1        : out std_logic;                                                                      -- valid
+			coupling_pusch_avst_sink_data_l1         : out std_logic_vector(31 downto 0);                                                  -- data
+			coupling_pusch_avst_sink_channel_l1      : out std_logic_vector(15 downto 0);                                                  -- channel
+			coupling_pusch_avst_sink_sop_l1          : out std_logic;                                                                      -- startofpacket
+			coupling_pusch_avst_sink_eop_l1          : out std_logic;                                                                      -- endofpacket
+			coupling_pusch_avst_sink_valid_l2        : out std_logic;                                                                      -- valid
+			coupling_pusch_avst_sink_data_l2         : out std_logic_vector(31 downto 0);                                                  -- data
+			coupling_pusch_avst_sink_channel_l2      : out std_logic_vector(15 downto 0);                                                  -- channel
+			coupling_pusch_avst_sink_sop_l2          : out std_logic;                                                                      -- startofpacket
+			coupling_pusch_avst_sink_eop_l2          : out std_logic;                                                                      -- endofpacket
+			coupling_prach_avst_sink_valid_l1        : out std_logic;                                                                      -- valid
+			coupling_prach_avst_sink_data_l1         : out std_logic_vector(31 downto 0);                                                  -- data
+			coupling_prach_avst_sink_channel_l1      : out std_logic_vector(15 downto 0);                                                  -- channel
+			coupling_prach_avst_sink_sop_l1          : out std_logic;                                                                      -- startofpacket
+			coupling_prach_avst_sink_eop_l1          : out std_logic;                                                                      -- endofpacket
+			coupling_prach_avst_sink_valid_l2        : out std_logic;                                                                      -- valid
+			coupling_prach_avst_sink_data_l2         : out std_logic_vector(31 downto 0);                                                  -- data
+			coupling_prach_avst_sink_channel_l2      : out std_logic_vector(15 downto 0);                                                  -- channel
+			coupling_prach_avst_sink_sop_l2          : out std_logic;                                                                      -- startofpacket
+			coupling_prach_avst_sink_eop_l2          : out std_logic;                                                                      -- endofpacket
+			xran_demapper_cplane_valid               : in  std_logic                                                   := 'X';             -- valid
+			xran_demapper_cplane_startofpacket       : in  std_logic                                                   := 'X';             -- startofpacket
+			xran_demapper_cplane_endofpacket         : in  std_logic                                                   := 'X';             -- endofpacket
+			pb_avst_sink_valid                       : in  std_logic                                                   := 'X';             -- valid
+			pb_avst_sink_data                        : in  std_logic_vector(63 downto 0)                               := (others => 'X'); -- data
+			pb_avst_sink_ready                       : out std_logic;                                                                      -- ready
+			bw_config_cc1                            : out std_logic_vector(7 downto 0);                                                   -- bw_config_cc1
+			bw_config_cc2                            : out std_logic_vector(7 downto 0);                                                   -- bw_config_cc2
+			radio_config_status                      : out std_logic_vector(55 downto 0);                                                  -- radio_config_status
+			short_long_prach_select                  : out std_logic;                                                                      -- data
+			rx_rtc_id                                : in  std_logic_vector(15 downto 0)                               := (others => 'X'); -- rx_rtc_id
+			rx_u_axc_id                              : in  std_logic_vector(15 downto 0)                               := (others => 'X'); -- rx_u_axc_id
+			rx_rtc_id_dl                             : in  std_logic_vector(15 downto 0)                               := (others => 'X'); -- rx_rtc_id_dl
+			lphy_ss_ul_sink_valid1                   : in  std_logic                                                   := 'X';             -- valid
+			lphy_ss_ul_sink_data1                    : in  std_logic_vector((((IQ_DATAWIDTH-1)-0)+1)-1 downto 0)       := (others => 'X'); -- data
+			lphy_ss_ul_sink_channel1                 : in  std_logic_vector(7 downto 0)                                := (others => 'X'); -- channel
+			lphy_ss_ul_sink_valid2                   : in  std_logic                                                   := 'X';             -- valid
+			lphy_ss_ul_sink_data2                    : in  std_logic_vector((((IQ_DATAWIDTH-1)-0)+1)-1 downto 0)       := (others => 'X'); -- data
+			lphy_ss_ul_sink_channel2                 : in  std_logic_vector(7 downto 0)                                := (others => 'X'); -- channel
+			rst_soft_n                               : out std_logic;                                                                      -- rst_soft_n
+			coupling_pusch_timing_ref                : out std_logic_vector(31 downto 0);                                                  -- data
+			coupling_prach_timing_ref                : out std_logic_vector(31 downto 0);                                                  -- data
+			oran_rx_cplane_concat                    : in  std_logic_vector(189 downto 0)                              := (others => 'X'); -- data
+			oran_rx_uplane_concat                    : in  std_logic_vector(67 downto 0)                               := (others => 'X'); -- data
+			lphy_avst_selctd_cap_intf_valid          : out std_logic;                                                                      -- valid
+			lphy_avst_selctd_cap_intf_data           : out std_logic_vector((((IQ_DATAWIDTH-1)-0)+1)-1 downto 0);                          -- data
+			lphy_avst_selctd_cap_intf_chan           : out std_logic_vector(2 downto 0);                                                   -- channel
+			ul_start_pulse_latch                     : out std_logic;                                                                      -- data
+			frame_status_counter_reset               : in  std_logic                                                   := 'X';             -- data
+			interface_sel                            : in  std_logic_vector(31 downto 0)                               := (others => 'X'); -- data
+			dl_input_hfn_pulse                       : out std_logic;                                                                      -- data
+			pm_ifft_threash_mm_bridge_address_l1     : in  std_logic_vector(5 downto 0)                                := (others => 'X'); -- address
+			pm_ifft_threash_mm_bridge_chipselect_l1  : in  std_logic                                                   := 'X';             -- chipselect
+			pm_ifft_threash_mm_bridge_read_l1        : in  std_logic                                                   := 'X';             -- read
+			pm_ifft_threash_mm_bridge_write_l1       : in  std_logic                                                   := 'X';             -- write
+			pm_ifft_threash_mm_bridge_writedata_l1   : in  std_logic_vector(31 downto 0)                               := (others => 'X'); -- writedata
+			pm_ifft_threash_mm_bridge_byteenable_l1  : in  std_logic_vector(3 downto 0)                                := (others => 'X'); -- byteenable
+			pm_ifft_threash_mm_bridge_readdata_l1    : out std_logic_vector(31 downto 0);                                                  -- readdata
+			pm_ifft_threash_mm_bridge_waitrequest_l1 : out std_logic;                                                                      -- waitrequest
+			pwr_mtr_ifft_hist_done_intr_l1           : out std_logic;                                                                      -- irq
+			pwr_mtr_ifft_hist_done_intr_l2           : out std_logic;                                                                      -- irq
+			pm_ifft_threash_mm_bridge_address_l2     : in  std_logic_vector(5 downto 0)                                := (others => 'X'); -- address
+			pm_ifft_threash_mm_bridge_chipselect_l2  : in  std_logic                                                   := 'X';             -- chipselect
+			pm_ifft_threash_mm_bridge_read_l2        : in  std_logic                                                   := 'X';             -- read
+			pm_ifft_threash_mm_bridge_write_l2       : in  std_logic                                                   := 'X';             -- write
+			pm_ifft_threash_mm_bridge_writedata_l2   : in  std_logic_vector(31 downto 0)                               := (others => 'X'); -- writedata
+			pm_ifft_threash_mm_bridge_byteenable_l2  : in  std_logic_vector(3 downto 0)                                := (others => 'X'); -- byteenable
+			pm_ifft_threash_mm_bridge_readdata_l2    : out std_logic_vector(31 downto 0);                                                  -- readdata
+			pm_ifft_threash_mm_bridge_waitrequest_l2 : out std_logic;                                                                      -- waitrequest
+			pwr_mtr_ifft_config_csr_writedata_l1     : in  std_logic_vector(31 downto 0)                               := (others => 'X'); -- writedata
+			pwr_mtr_ifft_config_csr_read_l1          : in  std_logic                                                   := 'X';             -- read
+			pwr_mtr_ifft_config_csr_write_l1         : in  std_logic                                                   := 'X';             -- write
+			pwr_mtr_ifft_config_csr_readdata_l1      : out std_logic_vector(31 downto 0);                                                  -- readdata
+			pwr_mtr_ifft_config_csr_readdatavalid_l1 : out std_logic;                                                                      -- readdatavalid
+			pwr_mtr_ifft_config_csr_address_l1       : in  std_logic_vector(3 downto 0)                                := (others => 'X'); -- address
+			pwr_mtr_ifft_config_csr_waitrequest_l1   : out std_logic;                                                                      -- waitrequest
+			pwr_mtr_ifft_config_csr_writedata_l2     : in  std_logic_vector(31 downto 0)                               := (others => 'X'); -- writedata
+			pwr_mtr_ifft_config_csr_read_l2          : in  std_logic                                                   := 'X';             -- read
+			pwr_mtr_ifft_config_csr_write_l2         : in  std_logic                                                   := 'X';             -- write
+			pwr_mtr_ifft_config_csr_readdata_l2      : out std_logic_vector(31 downto 0);                                                  -- readdata
+			pwr_mtr_ifft_config_csr_readdatavalid_l2 : out std_logic;                                                                      -- readdatavalid
+			pwr_mtr_ifft_config_csr_address_l2       : in  std_logic_vector(3 downto 0)                                := (others => 'X'); -- address
+			pwr_mtr_ifft_config_csr_waitrequest_l2   : out std_logic;                                                                      -- waitrequest
+			pm_ifft_hist_mm_bridge_address_l1        : in  std_logic_vector(11 downto 0)                               := (others => 'X'); -- address
+			pm_ifft_hist_mm_bridge_chipselect_l1     : in  std_logic                                                   := 'X';             -- chipselect
+			pm_ifft_hist_mm_bridge_read_l1           : in  std_logic                                                   := 'X';             -- read
+			pm_ifft_hist_mm_bridge_write_l1          : in  std_logic                                                   := 'X';             -- write
+			pm_ifft_hist_mm_bridge_writedata_l1      : in  std_logic_vector(31 downto 0)                               := (others => 'X'); -- writedata
+			pm_ifft_hist_mm_bridge_byteenable_l1     : in  std_logic_vector(3 downto 0)                                := (others => 'X'); -- byteenable
+			pm_ifft_hist_mm_bridge_readdata_l1       : out std_logic_vector(31 downto 0);                                                  -- readdata
+			pm_ifft_hist_mm_bridge_readdatavalid_l1  : out std_logic;                                                                      -- readdatavalid
+			pm_ifft_hist_mm_bridge_waitrequest_l1    : out std_logic;                                                                      -- waitrequest
+			pm_ifft_hist_mm_bridge_address_l2        : in  std_logic_vector(11 downto 0)                               := (others => 'X'); -- address
+			pm_ifft_hist_mm_bridge_chipselect_l2     : in  std_logic                                                   := 'X';             -- chipselect
+			pm_ifft_hist_mm_bridge_read_l2           : in  std_logic                                                   := 'X';             -- read
+			pm_ifft_hist_mm_bridge_write_l2          : in  std_logic                                                   := 'X';             -- write
+			pm_ifft_hist_mm_bridge_writedata_l2      : in  std_logic_vector(31 downto 0)                               := (others => 'X'); -- writedata
+			pm_ifft_hist_mm_bridge_byteenable_l2     : in  std_logic_vector(3 downto 0)                                := (others => 'X'); -- byteenable
+			pm_ifft_hist_mm_bridge_readdata_l2       : out std_logic_vector(31 downto 0);                                                  -- readdata
+			pm_ifft_hist_mm_bridge_readdatavalid_l2  : out std_logic;                                                                      -- readdatavalid
+			pm_ifft_hist_mm_bridge_waitrequest_l2    : out std_logic;                                                                      -- waitrequest
+			pwr_mtr_fft_hist_done_intr_l1            : out std_logic;                                                                      -- irq
+			pwr_mtr_fft_hist_done_intr_l2            : out std_logic;                                                                      -- irq
+			duc_ddc_lpbk_en                          : out std_logic;                                                                      -- data
+			pm_fft_threash_mm_bridge_address_l1      : in  std_logic_vector(5 downto 0)                                := (others => 'X'); -- address
+			pm_fft_threash_mm_bridge_chipselect_l1   : in  std_logic                                                   := 'X';             -- chipselect
+			pm_fft_threash_mm_bridge_read_l1         : in  std_logic                                                   := 'X';             -- read
+			pm_fft_threash_mm_bridge_write_l1        : in  std_logic                                                   := 'X';             -- write
+			pm_fft_threash_mm_bridge_writedata_l1    : in  std_logic_vector(31 downto 0)                               := (others => 'X'); -- writedata
+			pm_fft_threash_mm_bridge_byteenable_l1   : in  std_logic_vector(3 downto 0)                                := (others => 'X'); -- byteenable
+			pm_fft_threash_mm_bridge_readdata_l1     : out std_logic_vector(31 downto 0);                                                  -- readdata
+			pm_fft_threash_mm_bridge_waitrequest_l1  : out std_logic;                                                                      -- waitrequest
+			pm_fft_threash_mm_bridge_address_l2      : in  std_logic_vector(5 downto 0)                                := (others => 'X'); -- address
+			pm_fft_threash_mm_bridge_chipselect_l2   : in  std_logic                                                   := 'X';             -- chipselect
+			pm_fft_threash_mm_bridge_read_l2         : in  std_logic                                                   := 'X';             -- read
+			pm_fft_threash_mm_bridge_write_l2        : in  std_logic                                                   := 'X';             -- write
+			pm_fft_threash_mm_bridge_writedata_l2    : in  std_logic_vector(31 downto 0)                               := (others => 'X'); -- writedata
+			pm_fft_threash_mm_bridge_byteenable_l2   : in  std_logic_vector(3 downto 0)                                := (others => 'X'); -- byteenable
+			pm_fft_threash_mm_bridge_readdata_l2     : out std_logic_vector(31 downto 0);                                                  -- readdata
+			pm_fft_threash_mm_bridge_waitrequest_l2  : out std_logic;                                                                      -- waitrequest
+			pwr_mtr_fft_config_csr_writedata_l1      : in  std_logic_vector(31 downto 0)                               := (others => 'X'); -- writedata
+			pwr_mtr_fft_config_csr_read_l1           : in  std_logic                                                   := 'X';             -- read
+			pwr_mtr_fft_config_csr_write_l1          : in  std_logic                                                   := 'X';             -- write
+			pwr_mtr_fft_config_csr_readdata_l1       : out std_logic_vector(31 downto 0);                                                  -- readdata
+			pwr_mtr_fft_config_csr_readdatavalid_l1  : out std_logic;                                                                      -- readdatavalid
+			pwr_mtr_fft_config_csr_address_l1        : in  std_logic_vector(3 downto 0)                                := (others => 'X'); -- address
+			pwr_mtr_fft_config_csr_waitrequest_l1    : out std_logic;                                                                      -- waitrequest
+			pwr_mtr_fft_config_csr_writedata_l2      : in  std_logic_vector(31 downto 0)                               := (others => 'X'); -- writedata
+			pwr_mtr_fft_config_csr_read_l2           : in  std_logic                                                   := 'X';             -- read
+			pwr_mtr_fft_config_csr_write_l2          : in  std_logic                                                   := 'X';             -- write
+			pwr_mtr_fft_config_csr_readdata_l2       : out std_logic_vector(31 downto 0);                                                  -- readdata
+			pwr_mtr_fft_config_csr_readdatavalid_l2  : out std_logic;                                                                      -- readdatavalid
+			pwr_mtr_fft_config_csr_address_l2        : in  std_logic_vector(3 downto 0)                                := (others => 'X'); -- address
+			pwr_mtr_fft_config_csr_waitrequest_l2    : out std_logic;                                                                      -- waitrequest
+			pm_fft_hist_mm_bridge_address_l1         : in  std_logic_vector(11 downto 0)                               := (others => 'X'); -- address
+			pm_fft_hist_mm_bridge_chipselect_l1      : in  std_logic                                                   := 'X';             -- chipselect
+			pm_fft_hist_mm_bridge_read_l1            : in  std_logic                                                   := 'X';             -- read
+			pm_fft_hist_mm_bridge_write_l1           : in  std_logic                                                   := 'X';             -- write
+			pm_fft_hist_mm_bridge_writedata_l1       : in  std_logic_vector(31 downto 0)                               := (others => 'X'); -- writedata
+			pm_fft_hist_mm_bridge_byteenable_l1      : in  std_logic_vector(3 downto 0)                                := (others => 'X'); -- byteenable
+			pm_fft_hist_mm_bridge_readdata_l1        : out std_logic_vector(31 downto 0);                                                  -- readdata
+			pm_fft_hist_mm_bridge_readdatavalid_l1   : out std_logic;                                                                      -- readdatavalid
+			pm_fft_hist_mm_bridge_waitrequest_l1     : out std_logic;                                                                      -- waitrequest
+			pm_fft_hist_mm_bridge_address_l2         : in  std_logic_vector(11 downto 0)                               := (others => 'X'); -- address
+			pm_fft_hist_mm_bridge_chipselect_l2      : in  std_logic                                                   := 'X';             -- chipselect
+			pm_fft_hist_mm_bridge_read_l2            : in  std_logic                                                   := 'X';             -- read
+			pm_fft_hist_mm_bridge_write_l2           : in  std_logic                                                   := 'X';             -- write
+			pm_fft_hist_mm_bridge_writedata_l2       : in  std_logic_vector(31 downto 0)                               := (others => 'X'); -- writedata
+			pm_fft_hist_mm_bridge_byteenable_l2      : in  std_logic_vector(3 downto 0)                                := (others => 'X'); -- byteenable
+			pm_fft_hist_mm_bridge_readdata_l2        : out std_logic_vector(31 downto 0);                                                  -- readdata
+			pm_fft_hist_mm_bridge_readdatavalid_l2   : out std_logic;                                                                      -- readdatavalid
+			pm_fft_hist_mm_bridge_waitrequest_l2     : out std_logic;                                                                      -- waitrequest
+			pm_stat_ifft_mm_bridge_address_l1        : in  std_logic_vector(9 downto 0)                                := (others => 'X'); -- address
+			pm_stat_ifft_mm_bridge_chipselect_l1     : in  std_logic                                                   := 'X';             -- chipselect
+			pm_stat_ifft_mm_bridge_read_l1           : in  std_logic                                                   := 'X';             -- read
+			pm_stat_ifft_mm_bridge_write_l1          : in  std_logic                                                   := 'X';             -- write
+			pm_stat_ifft_mm_bridge_writedata_l1      : in  std_logic_vector(31 downto 0)                               := (others => 'X'); -- writedata
+			pm_stat_ifft_mm_bridge_byteenable_l1     : in  std_logic_vector(3 downto 0)                                := (others => 'X'); -- byteenable
+			pm_stat_ifft_mm_bridge_readdata_l1       : out std_logic_vector(31 downto 0);                                                  -- readdata
+			pm_stat_ifft_mm_bridge_readdatavalid_l1  : out std_logic;                                                                      -- readdatavalid
+			pm_stat_ifft_mm_bridge_waitrequest_l1    : out std_logic;                                                                      -- waitrequest
+			pm_stat_ifft_mm_bridge_address_l2        : in  std_logic_vector(9 downto 0)                                := (others => 'X'); -- address
+			pm_stat_ifft_mm_bridge_chipselect_l2     : in  std_logic                                                   := 'X';             -- chipselect
+			pm_stat_ifft_mm_bridge_read_l2           : in  std_logic                                                   := 'X';             -- read
+			pm_stat_ifft_mm_bridge_write_l2          : in  std_logic                                                   := 'X';             -- write
+			pm_stat_ifft_mm_bridge_writedata_l2      : in  std_logic_vector(31 downto 0)                               := (others => 'X'); -- writedata
+			pm_stat_ifft_mm_bridge_byteenable_l2     : in  std_logic_vector(3 downto 0)                                := (others => 'X'); -- byteenable
+			pm_stat_ifft_mm_bridge_readdata_l2       : out std_logic_vector(31 downto 0);                                                  -- readdata
+			pm_stat_ifft_mm_bridge_readdatavalid_l2  : out std_logic;                                                                      -- readdatavalid
+			pm_stat_ifft_mm_bridge_waitrequest_l2    : out std_logic;                                                                      -- waitrequest
+			pm_stat_fft_mm_bridge_address_l1         : in  std_logic_vector(9 downto 0)                                := (others => 'X'); -- address
+			pm_stat_fft_mm_bridge_chipselect_l1      : in  std_logic                                                   := 'X';             -- chipselect
+			pm_stat_fft_mm_bridge_read_l1            : in  std_logic                                                   := 'X';             -- read
+			pm_stat_fft_mm_bridge_write_l1           : in  std_logic                                                   := 'X';             -- write
+			pm_stat_fft_mm_bridge_writedata_l1       : in  std_logic_vector(31 downto 0)                               := (others => 'X'); -- writedata
+			pm_stat_fft_mm_bridge_byteenable_l1      : in  std_logic_vector(3 downto 0)                                := (others => 'X'); -- byteenable
+			pm_stat_fft_mm_bridge_readdata_l1        : out std_logic_vector(31 downto 0);                                                  -- readdata
+			pm_stat_fft_mm_bridge_readdatavalid_l1   : out std_logic;                                                                      -- readdatavalid
+			pm_stat_fft_mm_bridge_waitrequest_l1     : out std_logic;                                                                      -- waitrequest
+			pm_stat_fft_mm_bridge_address_l2         : in  std_logic_vector(9 downto 0)                                := (others => 'X'); -- address
+			pm_stat_fft_mm_bridge_chipselect_l2      : in  std_logic                                                   := 'X';             -- chipselect
+			pm_stat_fft_mm_bridge_read_l2            : in  std_logic                                                   := 'X';             -- read
+			pm_stat_fft_mm_bridge_write_l2           : in  std_logic                                                   := 'X';             -- write
+			pm_stat_fft_mm_bridge_writedata_l2       : in  std_logic_vector(31 downto 0)                               := (others => 'X'); -- writedata
+			pm_stat_fft_mm_bridge_byteenable_l2      : in  std_logic_vector(3 downto 0)                                := (others => 'X'); -- byteenable
+			pm_stat_fft_mm_bridge_readdata_l2        : out std_logic_vector(31 downto 0);                                                  -- readdata
+			pm_stat_fft_mm_bridge_readdatavalid_l2   : out std_logic;                                                                      -- readdatavalid
+			pm_stat_fft_mm_bridge_waitrequest_l2     : out std_logic                                                                       -- waitrequest
+		);
+	end component lphy_ss_lphy_ss_top;
+

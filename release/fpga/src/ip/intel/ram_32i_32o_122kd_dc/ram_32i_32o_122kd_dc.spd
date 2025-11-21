@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="ram_2port_2041/sim/ram_32i_32o_122kd_dc_ram_2port_2041_cxxcbva.v"
+   type="VERILOG"
+   library="ram_2port_2041" />
+ <file
+   path="sim/ram_32i_32o_122kd_dc.v"
+   type="VERILOG"
+   library="ram_32i_32o_122kd_dc"
+   hasInlineConfiguration="true" />
+ <topLevel name="ram_32i_32o_122kd_dc.ram_32i_32o_122kd_dc" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

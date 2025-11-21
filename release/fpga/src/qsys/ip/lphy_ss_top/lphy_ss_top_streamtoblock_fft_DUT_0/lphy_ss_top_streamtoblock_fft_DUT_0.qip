@@ -1,0 +1,85 @@
+set_global_assignment -entity "lphy_ss_top_streamtoblock_fft_DUT_0" -library "lphy_ss_top_streamtoblock_fft_DUT_0" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "lphy_ss_top_streamtoblock_fft_DUT_0" -library "lphy_ss_top_streamtoblock_fft_DUT_0" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "lphy_ss_top_streamtoblock_fft_DUT_0" -library "lphy_ss_top_streamtoblock_fft_DUT_0" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "lphy_ss_top_streamtoblock_fft_DUT_0" -library "lphy_ss_top_streamtoblock_fft_DUT_0" -name IP_TOOL_VENDOR_NAME "Altera Corporation"
+set_global_assignment -entity "lphy_ss_top_streamtoblock_fft_DUT_0" -library "lphy_ss_top_streamtoblock_fft_DUT_0" -name IP_TOP_LEVEL_COMPONENT_NAME "streamtoblock_fft_DUT"
+set_global_assignment -entity "lphy_ss_top_streamtoblock_fft_DUT_0" -library "lphy_ss_top_streamtoblock_fft_DUT_0" -name PRE_COMPILED_MODULE "ON"
+set_global_assignment -entity "lphy_ss_top_streamtoblock_fft_DUT_0" -library "lphy_ss_top_streamtoblock_fft_DUT_0" -name OCS_IP_TYPE "streamtoblock_fft_DUT"
+set_global_assignment -entity "lphy_ss_top_streamtoblock_fft_DUT_0" -library "lphy_ss_top_streamtoblock_fft_DUT_0" -name OCS_IP_VERSION "1.0"
+set_global_assignment -entity "lphy_ss_top_streamtoblock_fft_DUT_0" -library "lphy_ss_top_streamtoblock_fft_DUT_0" -name OCS_IP_HASH "basxczq"
+set_global_assignment -library "lphy_ss_top_streamtoblock_fft_DUT_0" -name SOPCINFO_FILE [file join $::quartus(qip_path) "lphy_ss_top_streamtoblock_fft_DUT_0.sopcinfo"]
+set_global_assignment -entity "lphy_ss_top_streamtoblock_fft_DUT_0" -library "lphy_ss_top_streamtoblock_fft_DUT_0" -name SLD_INFO "QSYS_NAME lphy_ss_top_streamtoblock_fft_DUT_0 HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "lphy_ss_top_streamtoblock_fft_DUT_0" -name MISC_FILE [file join $::quartus(qip_path) "lphy_ss_top_streamtoblock_fft_DUT_0.cmp"]
+set_global_assignment -entity "lphy_ss_top_streamtoblock_fft_DUT_0" -library "lphy_ss_top_streamtoblock_fft_DUT_0" -name IP_TARGETED_DEVICE_FAMILY "Agilex 7"
+set_global_assignment -entity "lphy_ss_top_streamtoblock_fft_DUT_0" -library "lphy_ss_top_streamtoblock_fft_DUT_0" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 7}"
+set_global_assignment -entity "lphy_ss_top_streamtoblock_fft_DUT_0" -library "lphy_ss_top_streamtoblock_fft_DUT_0" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "lphy_ss_top_streamtoblock_fft_DUT_0" -name MISC_FILE [file join $::quartus(qip_path) "../lphy_ss_top_streamtoblock_fft_DUT_0.ip"]
+
+set_global_assignment -entity "streamtoblock_fft_DUT" -library "streamtoblock_fft_DUT_10" -name IP_COMPONENT_NAME "c3RyZWFtdG9ibG9ja19mZnRfRFVU"
+set_global_assignment -entity "streamtoblock_fft_DUT" -library "streamtoblock_fft_DUT_10" -name IP_COMPONENT_DISPLAY_NAME "c3RyZWFtdG9ibG9ja19mZnRfRFVU"
+set_global_assignment -entity "streamtoblock_fft_DUT" -library "streamtoblock_fft_DUT_10" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "streamtoblock_fft_DUT" -library "streamtoblock_fft_DUT_10" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "streamtoblock_fft_DUT" -library "streamtoblock_fft_DUT_10" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "streamtoblock_fft_DUT" -library "streamtoblock_fft_DUT_10" -name IP_COMPONENT_GROUP "RFNQIEJ1aWxkZXIgQWR2YW5jZWQ="
+set_global_assignment -entity "lphy_ss_top_streamtoblock_fft_DUT_0" -library "lphy_ss_top_streamtoblock_fft_DUT_0" -name IP_COMPONENT_NAME "bHBoeV9zc190b3Bfc3RyZWFtdG9ibG9ja19mZnRfRFVUXzA="
+set_global_assignment -entity "lphy_ss_top_streamtoblock_fft_DUT_0" -library "lphy_ss_top_streamtoblock_fft_DUT_0" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "lphy_ss_top_streamtoblock_fft_DUT_0" -library "lphy_ss_top_streamtoblock_fft_DUT_0" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "lphy_ss_top_streamtoblock_fft_DUT_0" -library "lphy_ss_top_streamtoblock_fft_DUT_0" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "lphy_ss_top_streamtoblock_fft_DUT_0" -library "lphy_ss_top_streamtoblock_fft_DUT_0" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "lphy_ss_top_streamtoblock_fft_DUT_0" -library "lphy_ss_top_streamtoblock_fft_DUT_0" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/dspba_library_ver.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_safe_path_flat_ver.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name VHDL_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_safe_path_flat.vhd"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SOURCE_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000e_100MHz_mem_x_part0.hex"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SOURCE_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000e_100MHz_mem_x_part1.hex"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SOURCE_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000le_60MHz_mem_x_part0.hex"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SOURCE_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000le_60MHz_mem_x_part1.hex"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SOURCE_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000100MHz_mem_x_a_part0.hex"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SOURCE_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000100MHz_mem_x_a_part1.hex"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SOURCE_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000_60MHz_mem_x_a_part0.hex"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SOURCE_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000_60MHz_mem_x_a_part1.hex"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_CPRemoval.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_CPRemoval_Mem_rd_sub1_Finite_State_Machine.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_CPRemoval_Mem_wr_subsystem_Finite_State_Machine.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Rising_0000Finite_State_Machine.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Rising_0001Finite_State_Machine.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Transpo0000Finite_State_Machine.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Transpo0001Finite_State_Machine.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Transpo0002Finite_State_Machine.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Transpo0003Finite_State_Machine.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Transpo0004Finite_State_Machine.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Transpo0005Finite_State_Machine.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_ComplexMixer.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_NCO.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SOURCE_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_NCO_u0_sinTable.hex"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SOURCE_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_NCO_u0_cosTable.hex"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_Scale.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_Subsystem.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_pipe.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_pipe1.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_RXGainComp.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_RXScaling.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_VFFT_btb.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SOURCE_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_VFFT_btb_streamtoblock0000OptimizedDualMem_x_a.hex"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SOURCE_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_VFFT_btb_streamtoblock0000OptimizedDualMem_x_b.hex"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_ComplexMixer.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_ComplexMixer_ComplexMixer.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_ComplexMixer_Scalei.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_ComplexMixer_Scaleq.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_PhasorGenerate.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_SOP_EOP_gen.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_SOP_EOP_gen_Rising_edge_Finite_State_Machine.sv"]
+set_global_assignment -library "streamtoblock_fft_DUT_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_SOP_EOP_gen_falling_edge_Finite_State_Machine.sv"]
+set_global_assignment -library "lphy_ss_top_streamtoblock_fft_DUT_0" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/lphy_ss_top_streamtoblock_fft_DUT_0.v"]
+

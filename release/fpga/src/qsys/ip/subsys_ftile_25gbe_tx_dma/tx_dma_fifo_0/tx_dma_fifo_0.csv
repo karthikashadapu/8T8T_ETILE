@@ -1,0 +1,27 @@
+# system info tx_dma_fifo_0 on 2025.10.16.14:20:10
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for tx_dma_fifo_0 on 2025.10.16.14:20:10
+files:
+filepath,kind,attributes,module,is_top
+sim/tx_dma_fifo_0.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,tx_dma_fifo_0,true
+tx_dma_fifo_10/sim/tx_dma_fifo.sv,SYSTEM_VERILOG,,tx_dma_fifo,false
+tx_dma_fifo_10/sim/components_pkg.sv,SYSTEM_VERILOG,,tx_dma_fifo,false
+tx_dma_fifo_10/sim/cdc_packet_fifo.sv,SYSTEM_VERILOG,,tx_dma_fifo,false
+tx_dma_fifo_10/sim/dc_fifo_param.sv,SYSTEM_VERILOG,,tx_dma_fifo,false
+tx_dma_fifo_10/sim/cdc_avmm_sync_v2.sv,SYSTEM_VERILOG,,tx_dma_fifo,false
+tx_dma_fifo_10/sim/cdc_synchronizer.sv,SYSTEM_VERILOG,,tx_dma_fifo,false
+tx_dma_fifo_10/sim/s10_memory.sv,SYSTEM_VERILOG,,tx_dma_fifo,false
+tx_dma_fifo_10/sim/cdc_toggle_synchronizer.sv,SYSTEM_VERILOG,,tx_dma_fifo,false
+tx_dma_fifo_10/sim/period_bus_sync.sv,SYSTEM_VERILOG,,tx_dma_fifo,false
+tx_dma_fifo_10/sim/dc_fifo_param.sdc,SDC,,tx_dma_fifo,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+tx_dma_fifo_0.tx_dma_fifo_0,tx_dma_fifo

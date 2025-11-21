@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_eth_1588_tod_synchronizer_2005/sim/intelfpga/altera_eth_1588_tod_synchronizer_0to15.v"
+   type="VERILOG"
+   library="altera_eth_1588_tod_synchronizer_2005" />
+ <file
+   path="altera_eth_1588_tod_synchronizer_2005/sim/intelfpga/altera_eth_1588_tod_synchronizer.v"
+   type="VERILOG"
+   library="altera_eth_1588_tod_synchronizer_2005" />
+ <file
+   path="altera_eth_1588_tod_synchronizer_2005/sim/intelfpga/altera_eth_1588_tod_synchronizer_clock_crosser.v"
+   type="VERILOG"
+   library="altera_eth_1588_tod_synchronizer_2005" />
+ <file
+   path="altera_eth_1588_tod_synchronizer_2005/sim/intelfpga/altera_eth_1588_tod_synchronizer_clock_div.v"
+   type="VERILOG"
+   library="altera_eth_1588_tod_synchronizer_2005" />
+ <file
+   path="altera_eth_1588_tod_synchronizer_2005/sim/intelfpga/altera_eth_1588_tod_synchronizer_fifo.v"
+   type="VERILOG"
+   library="altera_eth_1588_tod_synchronizer_2005" />
+ <file
+   path="altera_eth_1588_tod_synchronizer_2005/sim/intelfpga/altera_eth_1588_tod_synchronizer_gray_cnt.v"
+   type="VERILOG"
+   library="altera_eth_1588_tod_synchronizer_2005" />
+ <file
+   path="altera_eth_1588_tod_synchronizer_2005/sim/intelfpga/altera_eth_1588_tod_synchronizer_sdpm_altsyncram.v"
+   type="VERILOG"
+   library="altera_eth_1588_tod_synchronizer_2005" />
+ <file
+   path="altera_eth_1588_tod_synchronizer_2005/sim/intelfpga/altera_eth_1588_tod_synchronizer_std_sync.v"
+   type="VERILOG"
+   library="altera_eth_1588_tod_synchronizer_2005" />
+ <file
+   path="altera_eth_1588_tod_synchronizer_2005/sim/intelfpga/tod_sync_clk_align.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_eth_1588_tod_synchronizer_2005" />
+ <file
+   path="altera_eth_1588_tod_synchronizer_2005/sim/intelfpga/tod_sync_ppm_counter.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_eth_1588_tod_synchronizer_2005" />
+ <file
+   path="altera_eth_1588_tod_synchronizer_2005/sim/intelfpga/tod_sync_clk_align_clock_div.v"
+   type="VERILOG"
+   library="altera_eth_1588_tod_synchronizer_2005" />
+ <file
+   path="altera_eth_1588_tod_synchronizer_2005/sim/intelfpga/tod_sync_clk_align_std_sync.v"
+   type="VERILOG"
+   library="altera_eth_1588_tod_synchronizer_2005" />
+ <file
+   path="altera_eth_1588_tod_synchronizer_2005/sim/intelfpga/tod_sync_clock_crosser.v"
+   type="VERILOG"
+   library="altera_eth_1588_tod_synchronizer_2005" />
+ <file
+   path="altera_eth_1588_tod_synchronizer_2005/sim/altera_eth_1588_tod_synchronizer_std_synchr_nocut.v"
+   type="VERILOG"
+   library="altera_eth_1588_tod_synchronizer_2005" />
+ <file
+   path="sim/eth_f_tod_sync.v"
+   type="VERILOG"
+   library="eth_f_tod_sync"
+   hasInlineConfiguration="true" />
+ <topLevel name="eth_f_tod_sync.eth_f_tod_sync" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

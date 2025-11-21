@@ -1,0 +1,19 @@
+# system info ecpri_oran_top_timing_adapter_0 on 2025.10.16.14:41:55
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for ecpri_oran_top_timing_adapter_0 on 2025.10.16.14:41:55
+files:
+filepath,kind,attributes,module,is_top
+sim/ecpri_oran_top_timing_adapter_0.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,ecpri_oran_top_timing_adapter_0,true
+timing_adapter_1940/sim/ecpri_oran_top_timing_adapter_0_timing_adapter_1940_o3asvza.sv,SYSTEM_VERILOG,,ecpri_oran_top_timing_adapter_0_timing_adapter_1940_o3asvza,false
+timing_adapter_1940/sim/ecpri_oran_top_timing_adapter_0_timing_adapter_1940_o3asvza_fifo.sv,SYSTEM_VERILOG,,ecpri_oran_top_timing_adapter_0_timing_adapter_1940_o3asvza,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+ecpri_oran_top_timing_adapter_0.timing_adapter_0,ecpri_oran_top_timing_adapter_0_timing_adapter_1940_o3asvza

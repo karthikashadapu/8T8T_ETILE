@@ -1,0 +1,14 @@
+	component ram_48i_48o_36d_dc is
+		port (
+			data      : in  std_logic_vector(47 downto 0) := (others => 'X'); -- datain
+			q         : out std_logic_vector(47 downto 0);                    -- dataout
+			wraddress : in  std_logic_vector(5 downto 0)  := (others => 'X'); -- wraddress
+			rdaddress : in  std_logic_vector(5 downto 0)  := (others => 'X'); -- rdaddress
+			wren      : in  std_logic                     := 'X';             -- wren
+			wrclock   : in  std_logic                     := 'X';             -- clk
+			rdclock   : in  std_logic                     := 'X';             -- clk
+			rden      : in  std_logic                     := 'X';             -- rden
+			byteena_a : in  std_logic_vector(5 downto 0)  := (others => 'X')  -- byte_enable_a
+		);
+	end component ram_48i_48o_36d_dc;
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="timing_adapter_1940/sim/ecpri_oran_top_timing_adapter_0_timing_adapter_1940_o3asvza.sv"
+   type="SYSTEM_VERILOG"
+   library="timing_adapter_1940" />
+ <file
+   path="timing_adapter_1940/sim/ecpri_oran_top_timing_adapter_0_timing_adapter_1940_o3asvza_fifo.sv"
+   type="SYSTEM_VERILOG"
+   library="timing_adapter_1940" />
+ <file
+   path="sim/ecpri_oran_top_timing_adapter_0.v"
+   type="VERILOG"
+   library="ecpri_oran_top_timing_adapter_0"
+   hasInlineConfiguration="true" />
+ <topLevel
+   name="ecpri_oran_top_timing_adapter_0.ecpri_oran_top_timing_adapter_0" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

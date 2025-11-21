@@ -1,0 +1,136 @@
+set_global_assignment -entity "ecpri_hwtcl_top" -library "ecpri_hwtcl_top" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "ecpri_hwtcl_top" -library "ecpri_hwtcl_top" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "ecpri_hwtcl_top" -library "ecpri_hwtcl_top" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "ecpri_hwtcl_top" -library "ecpri_hwtcl_top" -name IP_TOOL_VENDOR_NAME "Intel Corporation"
+set_global_assignment -entity "ecpri_hwtcl_top" -library "ecpri_hwtcl_top" -name IP_TOP_LEVEL_COMPONENT_NAME "ecpri"
+set_global_assignment -entity "ecpri_hwtcl_top" -library "ecpri_hwtcl_top" -name PRE_COMPILED_MODULE "ON"
+set_global_assignment -entity "ecpri_hwtcl_top" -library "ecpri_hwtcl_top" -name OCS_IP_FILE "/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/intel/ecpri_hwtcl_top.ip"
+set_global_assignment -entity "ecpri_hwtcl_top" -library "ecpri_hwtcl_top" -name OCS_IP_TYPE "ecpri"
+set_global_assignment -entity "ecpri_hwtcl_top" -library "ecpri_hwtcl_top" -name OCS_IP_VERSION "3.0.2"
+set_global_assignment -entity "ecpri_hwtcl_top" -library "ecpri_hwtcl_top" -name OCS_IP_HASH "gj5eweq"
+set_global_assignment -library "ecpri_hwtcl_top" -name SOPCINFO_FILE [file join $::quartus(qip_path) "ecpri_hwtcl_top.sopcinfo"]
+set_global_assignment -entity "ecpri_hwtcl_top" -library "ecpri_hwtcl_top" -name SLD_INFO "QSYS_NAME ecpri_hwtcl_top HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "ecpri_hwtcl_top" -name MISC_FILE [file join $::quartus(qip_path) "ecpri_hwtcl_top.cmp"]
+set_global_assignment -entity "ecpri_hwtcl_top" -library "ecpri_hwtcl_top" -name IP_TARGETED_DEVICE_FAMILY "Agilex 7"
+set_global_assignment -entity "ecpri_hwtcl_top" -library "ecpri_hwtcl_top" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 7}"
+set_global_assignment -entity "ecpri_hwtcl_top" -library "ecpri_hwtcl_top" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "ecpri_hwtcl_top" -name MISC_FILE [file join $::quartus(qip_path) "../ecpri_hwtcl_top.ip"]
+
+set_global_assignment -entity "ecpri_iwf_top" -library "ecpri_302" -name IP_COMPONENT_NAME "ZWNwcmlfaXdmX3RvcA=="
+set_global_assignment -entity "ecpri_iwf_top" -library "ecpri_302" -name IP_COMPONENT_DISPLAY_NAME "ZUNQUkkgSW50ZWwgRlBHQSBJUA=="
+set_global_assignment -entity "ecpri_iwf_top" -library "ecpri_302" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "ecpri_iwf_top" -library "ecpri_302" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "ecpri_iwf_top" -library "ecpri_302" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "ecpri_iwf_top" -library "ecpri_302" -name IP_COMPONENT_VERSION "My4wLjI="
+set_global_assignment -entity "ecpri_iwf_top" -library "ecpri_302" -name IP_COMPONENT_DESCRIPTION "VGhlIGVDUFJJIEludGVsIEZQR0EgSVAgY29yZSBpbXBsZW1lbnRzIHRoZSBlQ1BSSSBzcGVjaWZpY2F0aW9uIHZlcnNpb24gMi4wLg=="
+set_global_assignment -entity "ecpri_iwf_top" -library "ecpri_302" -name IP_COMPONENT_GROUP "SW50ZXJmYWNlIFByb3RvY29scy9lQ1BSSQ=="
+set_global_assignment -entity "ecpri_iwf_top" -library "ecpri_302" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzY4NS8="
+set_global_assignment -entity "ecpri_iwf_top" -library "ecpri_302" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzgzNy8="
+set_global_assignment -entity "ecpri_iwf_top" -library "ecpri_302" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzU3MC8="
+set_global_assignment -entity "ecpri_hwtcl_top" -library "ecpri_hwtcl_top" -name IP_COMPONENT_NAME "ZWNwcmlfaHd0Y2xfdG9w"
+set_global_assignment -entity "ecpri_hwtcl_top" -library "ecpri_hwtcl_top" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "ecpri_hwtcl_top" -library "ecpri_hwtcl_top" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "ecpri_hwtcl_top" -library "ecpri_hwtcl_top" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "ecpri_hwtcl_top" -library "ecpri_hwtcl_top" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "ecpri_hwtcl_top" -library "ecpri_hwtcl_top" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ecpri_pkg.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/IWF/src/iwf_pkg.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/IWF/src/ecpri_iwf_top.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ecpri_top.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/alt_ecpri_offset_compute.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/csrunit.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ecpri.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ecpri_avst_guard.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ecpri_csr.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ecpri_cunit_8w.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ecpri_cunit_8w_st.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ecpri_hdrinsert.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ecpri_mac.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ecpri_msg4_buffer.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ecpri_msg4_timebank8.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ecpri_msg5_rx.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ecpri_msg5_tx.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ecpri_msg5_unit.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ecpri_msg6_timebank8.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ecpri_pkt_cnt.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ecpri_pkt_cnt_st.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ecpri_rx.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ecpri_rx_adapter.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/alt_ecpri_dw8_decon.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ecpri_tx.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ecpri_tx_adapter.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/sync_reset_logic.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_avalon_fifo.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_avalon_fifo_wrapper.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_barrel_layer.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_barrel_shift.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_clkcrosser.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_dcfifo_m20k_ecc.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_dcfifo_noecc.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_delay_mlab.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_delay_regs.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_fifo.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_fifo_ratematch.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_fifo_8.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_fmmlab.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_iw16_sync_fifo_mlab.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_iwX_addr_gen.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_leftmost_one_8.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_m20k_ecc_1r1w.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_m20k_group.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_maddr_sel.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_mx4r.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_mx8r.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_pulse_stretch_sync.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_s10mlab.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_scfifo_m20k.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_scfifo_mlab.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_seg_shift.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_seg_shift_layer.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_seg_shift_split.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_std_synchronizer_nocut.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_wram_m20k.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/alt_ecpri_wram_mult_inst.sv"]
+set_global_assignment -library "ecpri_302" -name VERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/altera_std_synchronizer_nocut.v"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/chksum_ver.sv"]
+set_global_assignment -library "ecpri_302" -name VERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/ecpri_eq_18.v"]
+set_global_assignment -library "ecpri_302" -name VERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/ecpri_eq_3.v"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/components/ecpri_wys_lut.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ethframe/ethframe_ins.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ethframe/ethframe_rem.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ethframe/ethframe_top.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ethframe/packet_parser.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ethframe/ecpri_l2cos_arbiter.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ethframe/ecpri_l2cos_packet_queue_fifo.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ethframe/ecpri_l2cos_packet_queue_fifo_top.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ethframe/ecpri_pcp_checker.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ethframe/ecpri_l2cos_top.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ethframe/packet_queue.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ethframe/packet_queue_fixed_arb.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/ethframe/packet_queue_fifo.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/IWF/src/iwf_ctl_demapper.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/IWF/src/iwf_inband_ctl.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/IWF/src/iwf_iq_demapper.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/IWF/src/iwf_rx.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/IWF/src/iwf_rx_top.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/IWF/src/iwf_shifter.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/IWF/src/iwf_top.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/IWF/src/iwf_tx_aggregator.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/IWF/src/iwf_tx_scheduler.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/IWF/src/iwf_tx.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/IWF/src/iwf_tx_top.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/IWF/src/iwf_wrapper.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/IWF/src/component/alt_iwf_fifo.sv"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/IWF/src/component/alt_iwf_std_synchronizer_nocut.sv"]
+set_global_assignment -library "ecpri_302" -name VERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/IWF/src/component/altera_std_synchronizer_nocut.v"]
+set_global_assignment -library "ecpri_302" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ecpri_302/synth/IWF/src/component/alt_iwf_clkcrosser.sv"]
+set_global_assignment -library "ecpri_hwtcl_top" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/ecpri_hwtcl_top.v"]
+
+
+set_global_assignment -entity "ecpri_iwf_top" -library "ecpri_302" -name IP_TOOL_NAME "ecpri"
+set_global_assignment -entity "ecpri_iwf_top" -library "ecpri_302" -name IP_TOOL_VERSION "3.0.2"
+set_global_assignment -entity "ecpri_iwf_top" -library "ecpri_302" -name IP_TOOL_ENV "QsysPrimePro"
+

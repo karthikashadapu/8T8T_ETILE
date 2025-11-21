@@ -1,0 +1,46 @@
+	lphy_ss_top_ifft_blocktostream_DUT_0 u0 (
+		.clk                  (_connected_to_clk_),                  //   input,   width = 1,           clock.clk
+		.areset               (_connected_to_areset_),               //   input,   width = 1,     clock_reset.reset
+		.bus_clk              (_connected_to_bus_clk_),              //   input,   width = 1,       bus_clock.clk
+		.bus_areset           (_connected_to_bus_areset_),           //   input,   width = 1, bus_clock_reset.reset
+		.busIn_address        (_connected_to_busIn_address_),        //   input,  width = 14,             bus.address
+		.busIn_read           (_connected_to_busIn_read_),           //   input,   width = 1,                .read
+		.busIn_write          (_connected_to_busIn_write_),          //   input,   width = 1,                .write
+		.busIn_writedata      (_connected_to_busIn_writedata_),      //   input,  width = 32,                .writedata
+		.busOut_readdata      (_connected_to_busOut_readdata_),      //  output,  width = 32,                .readdata
+		.busOut_readdatavalid (_connected_to_busOut_readdatavalid_), //  output,   width = 1,                .readdatavalid
+		.busOut_waitrequest   (_connected_to_busOut_waitrequest_),   //  output,   width = 1,                .waitrequest
+		.data1_im             (_connected_to_data1_im_),             //   input,  width = 16,             exp.data_data1_im
+		.data1_re             (_connected_to_data1_re_),             //   input,  width = 16,                .data_data1_re
+		.valid1_s             (_connected_to_valid1_s_),             //   input,   width = 1,                .valid_valid1_s
+		.channel1_s           (_connected_to_channel1_s_),           //   input,   width = 8,                .channel_channel1_s
+		.size1_s              (_connected_to_size1_s_),              //   input,   width = 4,                .data_size1_s
+		.cplen1_s             (_connected_to_cplen1_s_),             //   input,  width = 11,                .data_cplen1_s
+		.nsc1_s               (_connected_to_nsc1_s_),               //   input,  width = 12,                .data_nsc1_s
+		.ifft_gain_re_l1_s    (_connected_to_ifft_gain_re_l1_s_),    //   input,  width = 16,                .data_ifft_gain_re_l1_s
+		.ifft_gain_im_l1_s    (_connected_to_ifft_gain_im_l1_s_),    //   input,  width = 16,                .data_ifft_gain_im_l1_s
+		.ifft_shift_l1_s      (_connected_to_ifft_shift_l1_s_),      //   input,   width = 4,                .data_ifft_shift_l1_s
+		.ifft_mux_const_l1_s  (_connected_to_ifft_mux_const_l1_s_),  //   input,  width = 16,                .data_ifft_mux_const_l1_s
+		.muxsel_l1_s          (_connected_to_muxsel_l1_s_),          //   input,   width = 1,                .data_muxsel_l1_s
+		.DC_SC_EN_s           (_connected_to_DC_SC_EN_s_),           //   input,   width = 1,                .data_DC_SC_EN_s
+		.CP_EN1_s             (_connected_to_CP_EN1_s_),             //   input,   width = 1,                .data_CP_EN1_s
+		.ripple_comp_en_s     (_connected_to_ripple_comp_en_s_),     //   input,   width = 1,                .data_ripple_comp_en_s
+		.rc_bw_sel_s          (_connected_to_rc_bw_sel_s_),          //   input,   width = 1,                .data_rc_bw_sel_s
+		.timeref_in_s         (_connected_to_timeref_in_s_),         //   input,  width = 64,                .data_timeref_in_s
+		.vout2_s              (_connected_to_vout2_s_),              //  output,   width = 1,                .data_vout2_s
+		.cout2_s              (_connected_to_cout2_s_),              //  output,   width = 2,                .data_cout2_s
+		.dout2_im             (_connected_to_dout2_im_),             //  output,  width = 16,                .data_dout2_im
+		.dout2_re             (_connected_to_dout2_re_),             //  output,  width = 16,                .data_dout2_re
+		.td_ifft_out_data_im  (_connected_to_td_ifft_out_data_im_),  //  output,  width = 16,                .data_td_ifft_out_data_im
+		.td_ifft_out_data_re  (_connected_to_td_ifft_out_data_re_),  //  output,  width = 16,                .data_td_ifft_out_data_re
+		.td_ifft_out_ch_s     (_connected_to_td_ifft_out_ch_s_),     //  output,   width = 8,                .channel_td_ifft_out_ch_s
+		.td_ifft_out_valid_s  (_connected_to_td_ifft_out_valid_s_),  //  output,   width = 1,                .valid_td_ifft_out_valid_s
+		.ifft_size_out_s      (_connected_to_ifft_size_out_s_),      //  output,   width = 4,                .data_ifft_size_out_s
+		.ifft_cp_out_s        (_connected_to_ifft_cp_out_s_),        //  output,  width = 11,                .data_ifft_cp_out_s
+		.fd_data_v_s          (_connected_to_fd_data_v_s_),          //  output,   width = 1,                .valid_fd_data_v_s
+		.fd_data_c_s          (_connected_to_fd_data_c_s_),          //  output,   width = 8,                .channel_fd_data_c_s
+		.fd_data_q_im         (_connected_to_fd_data_q_im_),         //  output,  width = 16,                .data_fd_data_q_im
+		.fd_data_q_re         (_connected_to_fd_data_q_re_),         //  output,  width = 16,                .data_fd_data_q_re
+		.fd_timeref_out_s     (_connected_to_fd_timeref_out_s_)      //  output,  width = 64,                .data_fd_timeref_out_s
+	);
+

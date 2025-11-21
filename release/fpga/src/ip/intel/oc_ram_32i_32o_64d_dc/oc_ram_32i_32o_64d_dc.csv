@@ -1,0 +1,18 @@
+# system info oc_ram_32i_32o_64d_dc on 2025.10.16.13:19:58
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for oc_ram_32i_32o_64d_dc on 2025.10.16.13:19:58
+files:
+filepath,kind,attributes,module,is_top
+sim/oc_ram_32i_32o_64d_dc.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,oc_ram_32i_32o_64d_dc,true
+ram_2port_2041/sim/oc_ram_32i_32o_64d_dc_ram_2port_2041_usel3zi.v,VERILOG,,oc_ram_32i_32o_64d_dc_ram_2port_2041_usel3zi,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+oc_ram_32i_32o_64d_dc.ram_2port_0,oc_ram_32i_32o_64d_dc_ram_2port_2041_usel3zi

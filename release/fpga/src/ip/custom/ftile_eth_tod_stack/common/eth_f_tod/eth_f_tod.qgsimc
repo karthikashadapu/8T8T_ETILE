@@ -1,0 +1,85 @@
+<?xml version="1.0" ?>
+<node xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:altera="http://www.altera.com/XMLSchema/Qsys/SystemTree">
+  <instanceKey xsi:type="xs:string">eth_f_tod</instanceKey>
+  <instanceData xsi:type="data">
+    <parameters></parameters>
+    <interconnectAssignments></interconnectAssignments>
+    <className>eth_f_tod</className>
+    <version>1.0</version>
+    <name>eth_f_tod</name>
+    <uniqueName>eth_f_tod</uniqueName>
+    <nonce>0</nonce>
+    <incidentConnections></incidentConnections>
+  </instanceData>
+  <children>
+    <node>
+      <instanceKey xsi:type="xs:string">altera_eth_1588_tod_0</instanceKey>
+      <instanceData xsi:type="data">
+        <parameters>
+          <parameter>
+            <name>DEFAULT_FNSEC_ADJPERIOD</name>
+            <value>36700</value>
+          </parameter>
+          <parameter>
+            <name>DEFAULT_FNSEC_PERIOD</name>
+            <value>36700</value>
+          </parameter>
+          <parameter>
+            <name>DEFAULT_NSEC_ADJPERIOD</name>
+            <value>2</value>
+          </parameter>
+          <parameter>
+            <name>DEFAULT_NSEC_PERIOD</name>
+            <value>2</value>
+          </parameter>
+          <parameter>
+            <name>DEVICE_FAMILY</name>
+            <value>Agilex 7</value>
+          </parameter>
+          <parameter>
+            <name>DEVICE_FAMILY_ID</name>
+            <value>Agilex</value>
+          </parameter>
+          <parameter>
+            <name>ENABLE_PPS</name>
+            <value>0</value>
+          </parameter>
+          <parameter>
+            <name>OFFSET_JITTER_WANDER_EN</name>
+            <value>0</value>
+          </parameter>
+          <parameter>
+            <name>PERIOD_CLOCK_FREQUENCY</name>
+            <value>1</value>
+          </parameter>
+          <parameter>
+            <name>PLL_SCAN_CLK_FREQ</name>
+            <value>100</value>
+          </parameter>
+          <parameter>
+            <name>PPS_ADVANCE</name>
+            <value>0</value>
+          </parameter>
+          <parameter>
+            <name>PPS_PULSE_ASSERT_CYCLE_MASTER</name>
+            <value>2</value>
+          </parameter>
+          <parameter>
+            <name>UNIT_PHASE_SHIFT</name>
+            <value>100</value>
+          </parameter>
+        </parameters>
+        <interconnectAssignments></interconnectAssignments>
+        <className>altera_eth_1588_tod</className>
+        <version>20.1.1</version>
+        <name>altera_eth_1588_tod_0</name>
+        <uniqueName>altera_eth_1588_tod</uniqueName>
+        <fixedName>altera_eth_1588_tod</fixedName>
+        <nonce>0</nonce>
+        <incidentConnections></incidentConnections>
+        <path>eth_f_tod.altera_eth_1588_tod_0</path>
+      </instanceData>
+      <children></children>
+    </node>
+  </children>
+</node>

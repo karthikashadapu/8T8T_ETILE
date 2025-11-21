@@ -1,0 +1,41 @@
+	lphy_ss_top_LongPRACH_prach_wrap_0 u0 (
+		.clk                  (_connected_to_clk_),                  //   input,   width = 1,           clock.clk
+		.areset               (_connected_to_areset_),               //   input,   width = 1,     clock_reset.reset
+		.bus_clk              (_connected_to_bus_clk_),              //   input,   width = 1,       bus_clock.clk
+		.bus_areset           (_connected_to_bus_areset_),           //   input,   width = 1, bus_clock_reset.reset
+		.busIn_address        (_connected_to_busIn_address_),        //   input,   width = 2,             bus.address
+		.busIn_read           (_connected_to_busIn_read_),           //   input,   width = 1,                .read
+		.busIn_write          (_connected_to_busIn_write_),          //   input,   width = 1,                .write
+		.busIn_writedata      (_connected_to_busIn_writedata_),      //   input,  width = 32,                .writedata
+		.busOut_readdata      (_connected_to_busOut_readdata_),      //  output,  width = 32,                .readdata
+		.busOut_readdatavalid (_connected_to_busOut_readdatavalid_), //  output,   width = 1,                .readdatavalid
+		.busOut_waitrequest   (_connected_to_busOut_waitrequest_),   //  output,   width = 1,                .waitrequest
+		.vin0_s               (_connected_to_vin0_s_),               //   input,   width = 1,             exp.valid_vin0_s
+		.chin0_s              (_connected_to_chin0_s_),              //   input,   width = 8,                .channel_chin0_s
+		.din0_im              (_connected_to_din0_im_),              //   input,  width = 16,                .data_din0_im
+		.din0_re              (_connected_to_din0_re_),              //   input,  width = 16,                .data_din0_re
+		.RFN_s                (_connected_to_RFN_s_),                //   input,  width = 12,                .data_RFN_s
+		.subframe_s           (_connected_to_subframe_s_),           //   input,   width = 8,                .data_subframe_s
+		.prach_cfg_idx_s      (_connected_to_prach_cfg_idx_s_),      //   input,  width = 16,                .data_prach_cfg_idx_s
+		.cp_len_s             (_connected_to_cp_len_s_),             //   input,  width = 21,                .data_cp_len_s
+		.offset_s             (_connected_to_offset_s_),             //   input,  width = 21,                .data_offset_s
+		.c_m_plane_sel_s      (_connected_to_c_m_plane_sel_s_),      //   input,   width = 1,                .data_c_m_plane_sel_s
+		.prach_tech_s         (_connected_to_prach_tech_s_),         //   input,   width = 1,                .data_prach_tech_s
+		.filt_flush_en_s      (_connected_to_filt_flush_en_s_),      //   input,   width = 1,                .data_filt_flush_en_s
+		.start_sym_s          (_connected_to_start_sym_s_),          //   input,   width = 4,                .data_start_sym_s
+		.SubFrame_cplane_s    (_connected_to_SubFrame_cplane_s_),    //   input,   width = 8,                .data_SubFrame_cplane_s
+		.gain_re_s            (_connected_to_gain_re_s_),            //   input,  width = 16,                .data_gain_re_s
+		.gain_im_s            (_connected_to_gain_im_s_),            //   input,  width = 16,                .data_gain_im_s
+		.ch0_info_s           (_connected_to_ch0_info_s_),           //   input,  width = 16,                .data_ch0_info_s
+		.ch1_info_s           (_connected_to_ch1_info_s_),           //   input,  width = 16,                .data_ch1_info_s
+		.ch2_info_s           (_connected_to_ch2_info_s_),           //   input,  width = 16,                .data_ch2_info_s
+		.ch3_info_s           (_connected_to_ch3_info_s_),           //   input,  width = 16,                .data_ch3_info_s
+		.RFN_cplane_s         (_connected_to_RFN_cplane_s_),         //   input,  width = 12,                .data_RFN_cplane_s
+		.dout_im              (_connected_to_dout_im_),              //  output,  width = 16,                .data_dout_im
+		.dout_re              (_connected_to_dout_re_),              //  output,  width = 16,                .data_dout_re
+		.vout_s               (_connected_to_vout_s_),               //  output,   width = 1,                .valid_vout_s
+		.cout_s               (_connected_to_cout_s_),               //  output,   width = 8,                .channel_cout_s
+		.TimeReference_s      (_connected_to_TimeReference_s_),      //  output,  width = 32,                .data_TimeReference_s
+		.ch_info_s            (_connected_to_ch_info_s_)             //  output,  width = 16,                .data_ch_info_s
+	);
+

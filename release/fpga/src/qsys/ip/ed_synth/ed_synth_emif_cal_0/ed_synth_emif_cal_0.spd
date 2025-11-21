@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_emif_cal_iossm_274/sim/altera_emif_cal_iossm.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_emif_cal_iossm_274" />
+ <file
+   path="altera_emif_cal_iossm_274/sim/altera_emif_f2c_gearbox.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_emif_cal_iossm_274" />
+ <file
+   path="altera_emif_cal_iossm_274/sim/ed_synth_emif_cal_0_altera_emif_cal_iossm_274_yagv7fq_code.hex"
+   type="HEX"
+   library="altera_emif_cal_iossm_274" />
+ <file
+   path="altera_emif_cal_iossm_274/sim/ed_synth_emif_cal_0_altera_emif_cal_iossm_274_yagv7fq_sim_global_param_tbl.hex"
+   type="HEX"
+   library="altera_emif_cal_iossm_274" />
+ <file
+   path="altera_emif_cal_iossm_274/sim/ed_synth_emif_cal_0_altera_emif_cal_iossm_274_yagv7fq_sim_global_param_tbl.txt"
+   type="OTHER"
+   library="altera_emif_cal_iossm_274" />
+ <file
+   path="altera_emif_cal_iossm_274/sim/ed_synth_emif_cal_0_altera_emif_cal_iossm_274_yagv7fq_synth_global_param_tbl.hex"
+   type="HEX"
+   library="altera_emif_cal_iossm_274" />
+ <file
+   path="altera_emif_cal_iossm_274/sim/ed_synth_emif_cal_0_altera_emif_cal_iossm_274_yagv7fq_synth_global_param_tbl.txt"
+   type="OTHER"
+   library="altera_emif_cal_iossm_274" />
+ <file
+   path="altera_emif_cal_iossm_274/sim/ed_synth_emif_cal_0_altera_emif_cal_iossm_274_yagv7fq_arch.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_emif_cal_iossm_274" />
+ <file
+   path="altera_emif_cal_iossm_274/sim/ed_synth_emif_cal_0_altera_emif_cal_iossm_274_yagv7fq.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_emif_cal_iossm_274" />
+ <file
+   path="altera_emif_cal_274/sim/ed_synth_emif_cal_0_altera_emif_cal_274_kaypsya.v"
+   type="VERILOG"
+   library="altera_emif_cal_274"
+   hasInlineConfiguration="true" />
+ <file
+   path="sim/ed_synth_emif_cal_0.v"
+   type="VERILOG"
+   library="ed_synth_emif_cal_0"
+   hasInlineConfiguration="true" />
+ <topLevel name="ed_synth_emif_cal_0.ed_synth_emif_cal_0" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

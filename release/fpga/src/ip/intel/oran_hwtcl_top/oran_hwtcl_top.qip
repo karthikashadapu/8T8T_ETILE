@@ -1,0 +1,107 @@
+set_global_assignment -entity "oran_hwtcl_top" -library "oran_hwtcl_top" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "oran_hwtcl_top" -library "oran_hwtcl_top" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "oran_hwtcl_top" -library "oran_hwtcl_top" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "oran_hwtcl_top" -library "oran_hwtcl_top" -name IP_TOOL_VENDOR_NAME "Intel Corporation"
+set_global_assignment -entity "oran_hwtcl_top" -library "oran_hwtcl_top" -name IP_TOP_LEVEL_COMPONENT_NAME "oran"
+set_global_assignment -entity "oran_hwtcl_top" -library "oran_hwtcl_top" -name PRE_COMPILED_MODULE "ON"
+set_global_assignment -entity "oran_hwtcl_top" -library "oran_hwtcl_top" -name OCS_IP_TYPE "oran"
+set_global_assignment -entity "oran_hwtcl_top" -library "oran_hwtcl_top" -name OCS_IP_VERSION "3.1.0"
+set_global_assignment -entity "oran_hwtcl_top" -library "oran_hwtcl_top" -name OCS_IP_HASH "veq2fuq"
+set_global_assignment -library "oran_hwtcl_top" -name SOPCINFO_FILE [file join $::quartus(qip_path) "oran_hwtcl_top.sopcinfo"]
+set_global_assignment -entity "oran_hwtcl_top" -library "oran_hwtcl_top" -name SLD_INFO "QSYS_NAME oran_hwtcl_top HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "oran_hwtcl_top" -name MISC_FILE [file join $::quartus(qip_path) "oran_hwtcl_top.cmp"]
+set_global_assignment -entity "oran_hwtcl_top" -library "oran_hwtcl_top" -name IP_TARGETED_DEVICE_FAMILY "Agilex 7"
+set_global_assignment -entity "oran_hwtcl_top" -library "oran_hwtcl_top" -name IP_TARGETED_PART_TRAIT "part.DEVICE_IOBANK_REVISION::IO96A_REVB2"
+set_global_assignment -entity "oran_hwtcl_top" -library "oran_hwtcl_top" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 7}"
+set_global_assignment -entity "oran_hwtcl_top" -library "oran_hwtcl_top" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "oran_hwtcl_top" -name MISC_FILE [file join $::quartus(qip_path) "../oran_hwtcl_top.ip"]
+
+set_global_assignment -entity "oran" -library "oran_310" -name IP_COMPONENT_NAME "b3Jhbg=="
+set_global_assignment -entity "oran" -library "oran_310" -name IP_COMPONENT_DISPLAY_NAME "Ty1SQU4gSW50ZWwgRlBHQSBJUA=="
+set_global_assignment -entity "oran" -library "oran_310" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "oran" -library "oran_310" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "oran" -library "oran_310" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "oran" -library "oran_310" -name IP_COMPONENT_VERSION "My4xLjA="
+set_global_assignment -entity "oran" -library "oran_310" -name IP_COMPONENT_DESCRIPTION "Ty1SQU4gSW50ZWwgRlBHQSBJUCBkZXNjcmlwdGlvbg=="
+set_global_assignment -entity "oran" -library "oran_310" -name IP_COMPONENT_GROUP "SW50ZXJmYWNlIFByb3RvY29scy9PLVJBTg=="
+set_global_assignment -entity "oran" -library "oran_310" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzIzOC8="
+set_global_assignment -entity "oran" -library "oran_310" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzIxOC8="
+set_global_assignment -entity "oran_hwtcl_top" -library "oran_hwtcl_top" -name IP_COMPONENT_NAME "b3Jhbl9od3RjbF90b3A="
+set_global_assignment -entity "oran_hwtcl_top" -library "oran_hwtcl_top" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "oran_hwtcl_top" -library "oran_hwtcl_top" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "oran_hwtcl_top" -library "oran_hwtcl_top" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "oran_hwtcl_top" -library "oran_hwtcl_top" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "oran_hwtcl_top" -library "oran_hwtcl_top" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/sync_reset_logic.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/alt_oran_fifo.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/alt_oran_scfifo.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/bitshift_preproc_engine.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/bitshift_preproc.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/ccam_bfp.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/ccam_mulaw.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/ccam_unbiased.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/ceam_bfp.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/ceam_mulaw.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/ceam.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/compansion_top.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/compression_top.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/decompression_top.sv"]
+set_global_assignment -library "oran_310" -name VERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_cmnhdr_demapper.v"]
+set_global_assignment -library "oran_310" -name VERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_cmnhdr_mapper.v"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_comp_data_adapter.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_compression.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_ctrl_demapper.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_ctrl_mapper.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_ctrl_mapper_frag.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_ctrl_sec0_demapper.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_ctrl_sec1_demapper.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_ctrl_sec3_demapper.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_ctrl_sect0_mapper.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_ctrl_sect1_mapper.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_ctrl_sect3_mapper.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_decompression.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_demapper.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_mapper.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_prb_barrel_shifter.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_scheduler.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_seqid_cntr.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_seqid_ram.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_uplane_byte_shift.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_uplane_frag_size.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_uplane_mapper.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_uplane_mapper_frag.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_uplane_prb_fifo.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_uplane_prb_size.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_uplane_sect_detector.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_usr_barrel_shifter.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/cascaded_counter.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_usr_demapper.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_window_monitor.sv"]
+set_global_assignment -library "oran_310" -name VERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/pipeline_oran.v"]
+set_global_assignment -library "oran_310" -name SOURCE_FILE [file join $::quartus(qip_path) "oran_310/synth/lut_memory.mif"]
+set_global_assignment -library "oran_310" -name SOURCE_FILE [file join $::quartus(qip_path) "oran_310/synth/lut_memory_30KHz.mif"]
+set_global_assignment -library "oran_310" -name VERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/altera_std_synchronizer_nocut.v"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_csr.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_csrunit.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_std_synchronizer_nocut.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_pulse_stretch_sync.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_clkcrosser.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_clkcrosser_new.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_cntr_tx.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_cntr_rx.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_cntr_ram_update.sv"]
+set_global_assignment -library "oran_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/oran_csr_ram.sv"]
+set_global_assignment -library "oran_310" -name VERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/ram4ports_ram_4port_2010_rljrsyi.v"]
+set_global_assignment -library "oran_310" -name VERILOG_FILE [file join $::quartus(qip_path) "oran_310/synth/ram4ports.v"]
+set_instance_assignment -entity "oran" -library "oran_310" -name SDC_ENTITY_FILE [file join $::quartus(qip_path) "oran_310/synth/oran.sdc"] -no_sdc_promotion  -no_auto_inst_discovery 
+set_global_assignment -library "oran_hwtcl_top" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/oran_hwtcl_top.v"]
+
+
+set_global_assignment -entity "oran" -library "oran_310" -name IP_TOOL_NAME "oran"
+set_global_assignment -entity "oran" -library "oran_310" -name IP_TOOL_VERSION "3.1.0"
+set_global_assignment -entity "oran" -library "oran_310" -name IP_TOOL_ENV "QsysPrimePro"
+

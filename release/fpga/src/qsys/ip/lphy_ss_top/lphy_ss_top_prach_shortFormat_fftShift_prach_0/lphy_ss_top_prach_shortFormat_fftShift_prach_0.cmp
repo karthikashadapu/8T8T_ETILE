@@ -1,0 +1,42 @@
+	component lphy_ss_top_prach_shortFormat_fftShift_prach_0 is
+		port (
+			clk                      : in  std_logic                     := 'X';             -- clk
+			areset                   : in  std_logic                     := 'X';             -- reset
+			bus_clk                  : in  std_logic                     := 'X';             -- clk
+			bus_areset               : in  std_logic                     := 'X';             -- reset
+			busIn_address            : in  std_logic_vector(9 downto 0)  := (others => 'X'); -- address
+			busIn_read               : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- read
+			busIn_write              : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- write
+			busIn_writedata          : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			busOut_readdata          : out std_logic_vector(31 downto 0);                    -- readdata
+			busOut_readdatavalid     : out std_logic_vector(0 downto 0);                     -- readdatavalid
+			busOut_waitrequest       : out std_logic_vector(0 downto 0);                     -- waitrequest
+			vin1_s                   : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- valid_vin1_s
+			chin1_s                  : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- channel_chin1_s
+			din1_im                  : in  std_logic_vector(15 downto 0) := (others => 'X'); -- data_din1_im
+			din1_re                  : in  std_logic_vector(15 downto 0) := (others => 'X'); -- data_din1_re
+			SFN_s                    : in  std_logic_vector(11 downto 0) := (others => 'X'); -- data_SFN_s
+			SubFN_s                  : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- data_SubFN_s
+			SCSby15_s                : in  std_logic_vector(1 downto 0)  := (others => 'X'); -- data_SCSby15_s
+			BWby10_s                 : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- data_BWby10_s
+			CPLen_cplane_s           : in  std_logic_vector(22 downto 0) := (others => 'X'); -- data_CPLen_cplane_s
+			timeoffset_cplane_s      : in  std_logic_vector(22 downto 0) := (others => 'X'); -- data_timeoffset_cplane_s
+			numsym_cplane_s          : in  std_logic_vector(3 downto 0)  := (others => 'X'); -- data_numsym_cplane_s
+			slotID_cplane_s          : in  std_logic_vector(1 downto 0)  := (others => 'X'); -- data_slotID_cplane_s
+			startsym_cplane_s        : in  std_logic_vector(3 downto 0)  := (others => 'X'); -- data_startsym_cplane_s
+			timerefin_cplane_s       : in  std_logic_vector(28 downto 0) := (others => 'X'); -- data_timerefin_cplane_s
+			cur_slot_s               : in  std_logic_vector(1 downto 0)  := (others => 'X'); -- data_cur_slot_s
+			SubFN_cplane_s           : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- data_SubFN_cplane_s
+			cbar_mplane_s            : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- data_cbar_mplane_s
+			timeoffset_bias_cplane_s : in  std_logic_vector(22 downto 0) := (others => 'X'); -- data_timeoffset_bias_cplane_s
+			startsym_bias_cplane_s   : in  std_logic_vector(22 downto 0) := (others => 'X'); -- data_startsym_bias_cplane_s
+			gain_in_re_s             : in  std_logic_vector(15 downto 0) := (others => 'X'); -- data_gain_in_re_s
+			gain_in_imag_s           : in  std_logic_vector(15 downto 0) := (others => 'X'); -- data_gain_in_imag_s
+			fftShift_v_s             : out std_logic_vector(0 downto 0);                     -- valid_fftShift_v_s
+			fftShift_c_s             : out std_logic_vector(7 downto 0);                     -- channel_fftShift_c_s
+			fftShift_d_im            : out std_logic_vector(15 downto 0);                    -- data_fftShift_d_im
+			fftShift_d_re            : out std_logic_vector(15 downto 0);                    -- data_fftShift_d_re
+			TimeReference_s          : out std_logic_vector(28 downto 0)                     -- data_TimeReference_s
+		);
+	end component lphy_ss_top_prach_shortFormat_fftShift_prach_0;
+

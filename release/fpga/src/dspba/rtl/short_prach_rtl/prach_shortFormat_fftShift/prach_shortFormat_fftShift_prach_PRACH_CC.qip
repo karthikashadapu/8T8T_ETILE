@@ -1,0 +1,13 @@
+# This is the QIP file for DSP Builder for Intel FPGAs system 'prach_shortFormat_fftShift_prach_PRACH_CC'
+
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/short_prach_rtl/prach_shortFormat_fftShift/prach_shortFormat_fftShift_prach_safe_path_ver.sv
+set_global_assignment -name VHDL_FILE ../../rtl/short_prach_rtl/prach_shortFormat_fftShift/prach_shortFormat_fftShift_prach_safe_path.vhd
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/short_prach_rtl/prach_shortFormat_fftShift/prach_shortFormat_fftShift_prach_PRACH_CC.sv
+set_global_assignment -name QIP_FILE ../../rtl/short_prach_rtl/prach_shortFormat_fftShift/prach_shortFormat_fftShift_prach_PRACH_CC_Cbar_mplane_selection.qip
+set_global_assignment -name QIP_FILE ../../rtl/short_prach_rtl/prach_shortFormat_fftShift/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode.qip
+set_global_assignment -name QIP_FILE ../../rtl/short_prach_rtl/prach_shortFormat_fftShift/prach_shortFormat_fftShift_prach_PRACH_CC_RemoveCP.qip
+set_global_assignment -name QIP_FILE ../../rtl/short_prach_rtl/prach_shortFormat_fftShift/prach_shortFormat_fftShift_prach_PRACH_CC_ScaleAndSelect.qip
+set_global_assignment -name QIP_FILE ../../rtl/short_prach_rtl/prach_shortFormat_fftShift/prach_shortFormat_fftShift_prach_PRACH_CC_Stream2BlockConv.qip
+set_global_assignment -name QIP_FILE ../../rtl/short_prach_rtl/prach_shortFormat_fftShift/prach_shortFormat_fftShift_prach_PRACH_CC_VFFT.qip
+set_global_assignment -name QIP_FILE ../../rtl/short_prach_rtl/prach_shortFormat_fftShift/prach_shortFormat_fftShift_prach_PRACH_CC_control_decode_cplane.qip
+set_global_assignment -name QIP_FILE ../../rtl/short_prach_rtl/prach_shortFormat_fftShift/prach_shortFormat_fftShift_prach_PRACH_CC_gain.qip

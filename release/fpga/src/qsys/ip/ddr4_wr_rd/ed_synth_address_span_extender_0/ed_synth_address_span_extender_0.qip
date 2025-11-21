@@ -1,0 +1,39 @@
+set_global_assignment -entity "ed_synth_address_span_extender_0" -library "ed_synth_address_span_extender_0" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "ed_synth_address_span_extender_0" -library "ed_synth_address_span_extender_0" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "ed_synth_address_span_extender_0" -library "ed_synth_address_span_extender_0" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "ed_synth_address_span_extender_0" -library "ed_synth_address_span_extender_0" -name IP_TOOL_VENDOR_NAME "Intel Corporation"
+set_global_assignment -entity "ed_synth_address_span_extender_0" -library "ed_synth_address_span_extender_0" -name IP_TOP_LEVEL_COMPONENT_NAME "altera_address_span_extender"
+set_global_assignment -library "ed_synth_address_span_extender_0" -name SOPCINFO_FILE [file join $::quartus(qip_path) "ed_synth_address_span_extender_0.sopcinfo"]
+set_global_assignment -entity "ed_synth_address_span_extender_0" -library "ed_synth_address_span_extender_0" -name SLD_INFO "QSYS_NAME ed_synth_address_span_extender_0 HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "ed_synth_address_span_extender_0" -name MISC_FILE [file join $::quartus(qip_path) "ed_synth_address_span_extender_0.cmp"]
+set_global_assignment -entity "ed_synth_address_span_extender_0" -library "ed_synth_address_span_extender_0" -name IP_TARGETED_DEVICE_FAMILY "Agilex 7"
+set_global_assignment -entity "ed_synth_address_span_extender_0" -library "ed_synth_address_span_extender_0" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 7}"
+set_global_assignment -entity "ed_synth_address_span_extender_0" -library "ed_synth_address_span_extender_0" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "ed_synth_address_span_extender_0" -name MISC_FILE [file join $::quartus(qip_path) "../ed_synth_address_span_extender_0.ip"]
+
+set_global_assignment -entity "ed_synth_address_span_extender_0_altera_address_span_extender_1920_eieo4qq" -library "altera_address_span_extender_1920" -name IP_COMPONENT_NAME "ZWRfc3ludGhfYWRkcmVzc19zcGFuX2V4dGVuZGVyXzBfYWx0ZXJhX2FkZHJlc3Nfc3Bhbl9leHRlbmRlcl8xOTIwX2VpZW80cXE="
+set_global_assignment -entity "ed_synth_address_span_extender_0_altera_address_span_extender_1920_eieo4qq" -library "altera_address_span_extender_1920" -name IP_COMPONENT_DISPLAY_NAME "QWRkcmVzcyBTcGFuIEV4dGVuZGVyIEludGVsIEZQR0EgSVA="
+set_global_assignment -entity "ed_synth_address_span_extender_0_altera_address_span_extender_1920_eieo4qq" -library "altera_address_span_extender_1920" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "ed_synth_address_span_extender_0_altera_address_span_extender_1920_eieo4qq" -library "altera_address_span_extender_1920" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "ed_synth_address_span_extender_0_altera_address_span_extender_1920_eieo4qq" -library "altera_address_span_extender_1920" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "ed_synth_address_span_extender_0_altera_address_span_extender_1920_eieo4qq" -library "altera_address_span_extender_1920" -name IP_COMPONENT_VERSION "MTkuMi4w"
+set_global_assignment -entity "ed_synth_address_span_extender_0_altera_address_span_extender_1920_eieo4qq" -library "altera_address_span_extender_1920" -name IP_COMPONENT_DESCRIPTION "Q3JlYXRlcyBhIHdpbmRvd2VkIGJyaWRnZSB0byBhbGxvdyBtYXN0ZXJzIHRvIGFjY2VzcyBhIGxhcmdlciBhZGRyZXNzIG1hcC4="
+set_global_assignment -entity "ed_synth_address_span_extender_0_altera_address_span_extender_1920_eieo4qq" -library "altera_address_span_extender_1920" -name IP_COMPONENT_GROUP "QmFzaWMgRnVuY3Rpb25zL0JyaWRnZXMgYW5kIEFkYXB0b3JzL01lbW9yeSBNYXBwZWQ="
+set_global_assignment -entity "ed_synth_address_span_extender_0_altera_address_span_extender_1920_eieo4qq" -library "altera_address_span_extender_1920" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvZGFtL3d3dy9wcm9ncmFtbWFibGUvdXMvZW4vcGRmcy9saXRlcmF0dXJlL3VnL3VnLXFwcC1wbGF0Zm9ybS1kZXNpZ25lci5wZGYjcGFnZT0yOTQ="
+set_global_assignment -entity "ed_synth_address_span_extender_0" -library "ed_synth_address_span_extender_0" -name IP_COMPONENT_NAME "ZWRfc3ludGhfYWRkcmVzc19zcGFuX2V4dGVuZGVyXzA="
+set_global_assignment -entity "ed_synth_address_span_extender_0" -library "ed_synth_address_span_extender_0" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "ed_synth_address_span_extender_0" -library "ed_synth_address_span_extender_0" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "ed_synth_address_span_extender_0" -library "ed_synth_address_span_extender_0" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "ed_synth_address_span_extender_0" -library "ed_synth_address_span_extender_0" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "ed_synth_address_span_extender_0" -library "ed_synth_address_span_extender_0" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "altera_address_span_extender_1920" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "altera_address_span_extender_1920/synth/ed_synth_address_span_extender_0_altera_address_span_extender_1920_eieo4qq.sv"]
+set_global_assignment -library "ed_synth_address_span_extender_0" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/ed_synth_address_span_extender_0.v"]
+
+
+set_global_assignment -entity "ed_synth_address_span_extender_0_altera_address_span_extender_1920_eieo4qq" -library "altera_address_span_extender_1920" -name IP_TOOL_NAME "altera_address_span_extender"
+set_global_assignment -entity "ed_synth_address_span_extender_0_altera_address_span_extender_1920_eieo4qq" -library "altera_address_span_extender_1920" -name IP_TOOL_VERSION "19.2.0"
+set_global_assignment -entity "ed_synth_address_span_extender_0_altera_address_span_extender_1920_eieo4qq" -library "altera_address_span_extender_1920" -name IP_TOOL_ENV "QsysPrimePro"
+

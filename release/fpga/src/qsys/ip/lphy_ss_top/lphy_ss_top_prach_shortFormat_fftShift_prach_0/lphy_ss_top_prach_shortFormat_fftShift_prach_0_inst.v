@@ -1,0 +1,40 @@
+	lphy_ss_top_prach_shortFormat_fftShift_prach_0 u0 (
+		.clk                      (_connected_to_clk_),                      //   input,   width = 1,           clock.clk
+		.areset                   (_connected_to_areset_),                   //   input,   width = 1,     clock_reset.reset
+		.bus_clk                  (_connected_to_bus_clk_),                  //   input,   width = 1,       bus_clock.clk
+		.bus_areset               (_connected_to_bus_areset_),               //   input,   width = 1, bus_clock_reset.reset
+		.busIn_address            (_connected_to_busIn_address_),            //   input,  width = 10,             bus.address
+		.busIn_read               (_connected_to_busIn_read_),               //   input,   width = 1,                .read
+		.busIn_write              (_connected_to_busIn_write_),              //   input,   width = 1,                .write
+		.busIn_writedata          (_connected_to_busIn_writedata_),          //   input,  width = 32,                .writedata
+		.busOut_readdata          (_connected_to_busOut_readdata_),          //  output,  width = 32,                .readdata
+		.busOut_readdatavalid     (_connected_to_busOut_readdatavalid_),     //  output,   width = 1,                .readdatavalid
+		.busOut_waitrequest       (_connected_to_busOut_waitrequest_),       //  output,   width = 1,                .waitrequest
+		.vin1_s                   (_connected_to_vin1_s_),                   //   input,   width = 1,             exp.valid_vin1_s
+		.chin1_s                  (_connected_to_chin1_s_),                  //   input,   width = 8,                .channel_chin1_s
+		.din1_im                  (_connected_to_din1_im_),                  //   input,  width = 16,                .data_din1_im
+		.din1_re                  (_connected_to_din1_re_),                  //   input,  width = 16,                .data_din1_re
+		.SFN_s                    (_connected_to_SFN_s_),                    //   input,  width = 12,                .data_SFN_s
+		.SubFN_s                  (_connected_to_SubFN_s_),                  //   input,   width = 8,                .data_SubFN_s
+		.SCSby15_s                (_connected_to_SCSby15_s_),                //   input,   width = 2,                .data_SCSby15_s
+		.BWby10_s                 (_connected_to_BWby10_s_),                 //   input,   width = 8,                .data_BWby10_s
+		.CPLen_cplane_s           (_connected_to_CPLen_cplane_s_),           //   input,  width = 23,                .data_CPLen_cplane_s
+		.timeoffset_cplane_s      (_connected_to_timeoffset_cplane_s_),      //   input,  width = 23,                .data_timeoffset_cplane_s
+		.numsym_cplane_s          (_connected_to_numsym_cplane_s_),          //   input,   width = 4,                .data_numsym_cplane_s
+		.slotID_cplane_s          (_connected_to_slotID_cplane_s_),          //   input,   width = 2,                .data_slotID_cplane_s
+		.startsym_cplane_s        (_connected_to_startsym_cplane_s_),        //   input,   width = 4,                .data_startsym_cplane_s
+		.timerefin_cplane_s       (_connected_to_timerefin_cplane_s_),       //   input,  width = 29,                .data_timerefin_cplane_s
+		.cur_slot_s               (_connected_to_cur_slot_s_),               //   input,   width = 2,                .data_cur_slot_s
+		.SubFN_cplane_s           (_connected_to_SubFN_cplane_s_),           //   input,   width = 8,                .data_SubFN_cplane_s
+		.cbar_mplane_s            (_connected_to_cbar_mplane_s_),            //   input,   width = 1,                .data_cbar_mplane_s
+		.timeoffset_bias_cplane_s (_connected_to_timeoffset_bias_cplane_s_), //   input,  width = 23,                .data_timeoffset_bias_cplane_s
+		.startsym_bias_cplane_s   (_connected_to_startsym_bias_cplane_s_),   //   input,  width = 23,                .data_startsym_bias_cplane_s
+		.gain_in_re_s             (_connected_to_gain_in_re_s_),             //   input,  width = 16,                .data_gain_in_re_s
+		.gain_in_imag_s           (_connected_to_gain_in_imag_s_),           //   input,  width = 16,                .data_gain_in_imag_s
+		.fftShift_v_s             (_connected_to_fftShift_v_s_),             //  output,   width = 1,                .valid_fftShift_v_s
+		.fftShift_c_s             (_connected_to_fftShift_c_s_),             //  output,   width = 8,                .channel_fftShift_c_s
+		.fftShift_d_im            (_connected_to_fftShift_d_im_),            //  output,  width = 16,                .data_fftShift_d_im
+		.fftShift_d_re            (_connected_to_fftShift_d_re_),            //  output,  width = 16,                .data_fftShift_d_re
+		.TimeReference_s          (_connected_to_TimeReference_s_)           //  output,  width = 29,                .data_TimeReference_s
+	);
+

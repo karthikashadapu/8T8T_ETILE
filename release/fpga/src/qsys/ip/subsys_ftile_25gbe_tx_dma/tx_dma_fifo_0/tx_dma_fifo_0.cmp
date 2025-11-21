@@ -1,0 +1,51 @@
+	component tx_dma_fifo_0 is
+		generic (
+			DEVICE                : string  := "s10";
+			USE_RX_READY          : integer := 1;
+			MEMORY_CAPACITY_WORDS : integer := 4096;
+			AVST_DATA_WIDTH       : integer := 64;
+			AVST_ERROR_WIDTH      : integer := 1;
+			TS_FIFOS_ADDR_WIDTH   : integer := 9;
+			TS_WIDTH              : integer := 96;
+			TS_RESP_WIDTH         : integer := 256;
+			TS_FP_WIDTH           : integer := 32;
+			AVST_EMPTY_WIDTH      : integer := 3;
+			DEBUG_EN              : integer := 1
+		);
+		port (
+			in_st_clk              : in  std_logic                                                 := 'X';             -- clk
+			in_st_rst              : in  std_logic                                                 := 'X';             -- reset
+			out_st_clk             : in  std_logic                                                 := 'X';             -- clk
+			out_st_rst             : in  std_logic                                                 := 'X';             -- reset
+			ts_resp_clk            : in  std_logic                                                 := 'X';             -- clk
+			ts_resp_rst            : in  std_logic                                                 := 'X';             -- reset
+			csr_clk                : in  std_logic                                                 := 'X';             -- clk
+			csr_rst                : in  std_logic                                                 := 'X';             -- reset
+			in_st_ready            : out std_logic;                                                                    -- ready
+			in_st_sop              : in  std_logic                                                 := 'X';             -- startofpacket
+			in_st_valid            : in  std_logic                                                 := 'X';             -- valid
+			in_st_eop              : in  std_logic                                                 := 'X';             -- endofpacket
+			in_st_data             : in  std_logic_vector((((AVST_DATA_WIDTH-1)-0)+1)-1 downto 0)  := (others => 'X'); -- data
+			in_st_empty            : in  std_logic_vector((((AVST_EMPTY_WIDTH-1)-0)+1)-1 downto 0) := (others => 'X'); -- empty
+			in_st_error            : in  std_logic_vector((((AVST_ERROR_WIDTH-1)-0)+1)-1 downto 0) := (others => 'X'); -- error
+			out_st_ready           : in  std_logic                                                 := 'X';             -- ready
+			out_st_sop             : out std_logic;                                                                    -- startofpacket
+			out_st_valid           : out std_logic;                                                                    -- valid
+			out_st_eop             : out std_logic;                                                                    -- endofpacket
+			out_st_data            : out std_logic_vector((((AVST_DATA_WIDTH-1)-0)+1)-1 downto 0);                     -- data
+			out_st_empty           : out std_logic_vector((((AVST_EMPTY_WIDTH-1)-0)+1)-1 downto 0);                    -- empty
+			out_st_error           : out std_logic_vector((((AVST_ERROR_WIDTH-1)-0)+1)-1 downto 0);                    -- error
+			in_ts_resp_ready       : out std_logic;                                                                    -- ready
+			in_ts_resp_valid       : in  std_logic                                                 := 'X';             -- valid
+			in_ts_resp_data        : in  std_logic_vector((((TS_RESP_WIDTH-1)-0)+1)-1 downto 0)    := (others => 'X'); -- data
+			out_ts_resp_ready      : in  std_logic                                                 := 'X';             -- ready
+			out_ts_resp_valid      : out std_logic;                                                                    -- valid
+			out_ts_resp_data       : out std_logic_vector((((TS_RESP_WIDTH-1)-0)+1)-1 downto 0);                       -- data
+			out_ts_req_valid       : out std_logic;                                                                    -- valid
+			out_ts_req_fingerprint : out std_logic_vector((((TS_FP_WIDTH-1)-0)+1)-1 downto 0);                         -- fingerprint
+			in_ts_valid            : in  std_logic                                                 := 'X';             -- valid
+			in_ts_fp               : in  std_logic_vector((((TS_FP_WIDTH-1)-0)+1)-1 downto 0)      := (others => 'X'); -- fingerprint
+			in_ts_data             : in  std_logic_vector((((TS_WIDTH-1)-0)+1)-1 downto 0)         := (others => 'X')  -- data
+		);
+	end component tx_dma_fifo_0;
+

@@ -1,0 +1,24 @@
+	component master_tod_top_0 is
+		generic (
+			MASTER_PPS_CYCLE : integer := 2
+		);
+		port (
+			i_csr_write          : in  std_logic                     := 'X';             -- write
+			i_csr_writedata      : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			i_csr_read           : in  std_logic                     := 'X';             -- read
+			o_csr_readdata       : out std_logic_vector(31 downto 0);                    -- readdata
+			o_csr_waitrequest    : out std_logic;                                        -- waitrequest
+			i_csr_addr           : in  std_logic_vector(3 downto 0)  := (others => 'X'); -- address
+			i_clk_reconfig       : in  std_logic                     := 'X';             -- clk
+			i_clk_tod            : in  std_logic                     := 'X';             -- clk
+			i_reconfig_rst_n     : in  std_logic                     := 'X';             -- reset_n
+			i_tod_rst_n          : in  std_logic                     := 'X';             -- reset_n
+			i_tod_96b_load_valid : in  std_logic                     := 'X';             -- valid
+			i_tod_96b_load_data  : in  std_logic_vector(95 downto 0) := (others => 'X'); -- data
+			o_pps                : out std_logic;                                        -- writeresponsevalid_n
+			o_tod_96b_valid      : out std_logic;                                        -- valid
+			o_tod_96b_data       : out std_logic_vector(95 downto 0);                    -- data
+			i_upstr_pll_lock     : in  std_logic                     := 'X'              -- lock
+		);
+	end component master_tod_top_0;
+

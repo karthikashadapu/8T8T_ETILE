@@ -1,0 +1,65 @@
+set_global_assignment -entity "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -library "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -library "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -library "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -library "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -name IP_TOOL_VENDOR_NAME "Altera Corporation"
+set_global_assignment -entity "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -library "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -name IP_TOP_LEVEL_COMPONENT_NAME "prach_shortFormat_fftShift_prach"
+set_global_assignment -entity "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -library "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -name PRE_COMPILED_MODULE "ON"
+set_global_assignment -entity "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -library "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -name OCS_IP_TYPE "prach_shortFormat_fftShift_prach"
+set_global_assignment -entity "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -library "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -name OCS_IP_VERSION "1.0"
+set_global_assignment -entity "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -library "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -name OCS_IP_HASH "wlrg72a"
+set_global_assignment -library "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -name SOPCINFO_FILE [file join $::quartus(qip_path) "lphy_ss_top_prach_shortFormat_fftShift_prach_0.sopcinfo"]
+set_global_assignment -entity "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -library "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -name SLD_INFO "QSYS_NAME lphy_ss_top_prach_shortFormat_fftShift_prach_0 HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -name MISC_FILE [file join $::quartus(qip_path) "lphy_ss_top_prach_shortFormat_fftShift_prach_0.cmp"]
+set_global_assignment -entity "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -library "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -name IP_TARGETED_DEVICE_FAMILY "Agilex 7"
+set_global_assignment -entity "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -library "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 7}"
+set_global_assignment -entity "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -library "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -name MISC_FILE [file join $::quartus(qip_path) "../lphy_ss_top_prach_shortFormat_fftShift_prach_0.ip"]
+
+set_global_assignment -entity "prach_shortFormat_fftShift_prach" -library "prach_shortFormat_fftShift_prach_10" -name IP_COMPONENT_NAME "cHJhY2hfc2hvcnRGb3JtYXRfZmZ0U2hpZnRfcHJhY2g="
+set_global_assignment -entity "prach_shortFormat_fftShift_prach" -library "prach_shortFormat_fftShift_prach_10" -name IP_COMPONENT_DISPLAY_NAME "cHJhY2hfc2hvcnRGb3JtYXRfZmZ0U2hpZnRfcHJhY2g="
+set_global_assignment -entity "prach_shortFormat_fftShift_prach" -library "prach_shortFormat_fftShift_prach_10" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "prach_shortFormat_fftShift_prach" -library "prach_shortFormat_fftShift_prach_10" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "prach_shortFormat_fftShift_prach" -library "prach_shortFormat_fftShift_prach_10" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "prach_shortFormat_fftShift_prach" -library "prach_shortFormat_fftShift_prach_10" -name IP_COMPONENT_GROUP "RFNQIEJ1aWxkZXIgQWR2YW5jZWQ="
+set_global_assignment -entity "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -library "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -name IP_COMPONENT_NAME "bHBoeV9zc190b3BfcHJhY2hfc2hvcnRGb3JtYXRfZmZ0U2hpZnRfcHJhY2hfMA=="
+set_global_assignment -entity "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -library "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -library "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -library "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -library "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -library "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/dspba_library_ver.sv"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_safe_path_flat_ver.sv"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name VHDL_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_safe_path_flat.vhd"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach.sv"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/busFabric_prach_shortFormat_fftShift_prach_3i06i3ib0063663c63o60160760uq5ux5gubo0u.sv"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC.sv"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_Cbar_mplane_selection.sv"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode.sv"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SOURCE_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_LutX_lutmem.hex"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SOURCE_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_LutY_lutmem.hex"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SOURCE_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_PRACHSymDuration_LUT_lutmem.hex"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SOURCE_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_PrachOccPerSlotMinus1_lutmem.hex"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SOURCE_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_StartOfSymbol_LUT_lutmem.hex"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SOURCE_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_0_x_lutmem.hex"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SOURCE_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_1_x_lutmem.hex"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SOURCE_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_2_x_lutmem.hex"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SOURCE_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_3_x_lutmem.hex"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SOURCE_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_4_x_lutmem.hex"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SOURCE_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_5_x_lutmem.hex"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SOURCE_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_6_x_lutmem.hex"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SOURCE_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_7_x_lutmem.hex"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SOURCE_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_8_x_lutmem.hex"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SOURCE_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ControlDecode_ActiveSubF_LUT_9_x_lutmem.hex"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_RemoveCP.sv"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_ScaleAndSelect.sv"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_Stream2BlockConv.sv"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_VFFT.sv"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SOURCE_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_VFFT_prach_shortFormat_fftShift_prach_0000OptimizedDualMem_x_a.hex"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SOURCE_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_VFFT_prach_shortFormat_fftShift_prach_0000OptimizedDualMem_x_b.hex"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_control_decode_cplane.sv"]
+set_global_assignment -library "prach_shortFormat_fftShift_prach_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "prach_shortFormat_fftShift_prach_10/synth/prach_shortFormat_fftShift_prach_PRACH_CC_gain.sv"]
+set_global_assignment -library "lphy_ss_top_prach_shortFormat_fftShift_prach_0" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/lphy_ss_top_prach_shortFormat_fftShift_prach_0.v"]
+

@@ -1,0 +1,43 @@
+set_global_assignment -entity "dsp_rst_cntrl" -library "dsp_rst_cntrl" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "dsp_rst_cntrl" -library "dsp_rst_cntrl" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "dsp_rst_cntrl" -library "dsp_rst_cntrl" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "dsp_rst_cntrl" -library "dsp_rst_cntrl" -name IP_TOOL_VENDOR_NAME "Intel Corporation"
+set_global_assignment -entity "dsp_rst_cntrl" -library "dsp_rst_cntrl" -name IP_TOP_LEVEL_COMPONENT_NAME "altera_reset_controller"
+set_global_assignment -library "dsp_rst_cntrl" -name SOPCINFO_FILE [file join $::quartus(qip_path) "dsp_rst_cntrl.sopcinfo"]
+set_global_assignment -entity "dsp_rst_cntrl" -library "dsp_rst_cntrl" -name SLD_INFO "QSYS_NAME dsp_rst_cntrl HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "dsp_rst_cntrl" -name MISC_FILE [file join $::quartus(qip_path) "dsp_rst_cntrl.cmp"]
+set_global_assignment -entity "dsp_rst_cntrl" -library "dsp_rst_cntrl" -name IP_TARGETED_DEVICE_FAMILY "Agilex 7"
+set_global_assignment -entity "dsp_rst_cntrl" -library "dsp_rst_cntrl" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 7}"
+set_global_assignment -entity "dsp_rst_cntrl" -library "dsp_rst_cntrl" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "dsp_rst_cntrl" -name MISC_FILE [file join $::quartus(qip_path) "../dsp_rst_cntrl.ip"]
+
+set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name IP_COMPONENT_NAME "YWx0ZXJhX3Jlc2V0X2NvbnRyb2xsZXI="
+set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name IP_COMPONENT_DISPLAY_NAME "TWVybGluIFJlc2V0IENvbnRyb2xsZXIgSW50ZWwgRlBHQSBJUA=="
+set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name IP_COMPONENT_VERSION "MTkuMi4y"
+set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name IP_COMPONENT_DESCRIPTION "Rm9yIHN5c3RlbXMgd2l0aCBtdWx0aXBsZSByZXNldCBpbnB1dHMsIHRoZSBNZXJsaW4gUmVzZXQgQ29udHJvbGxlciBPUnMgYWxsIHJlc2V0IGlucHV0cyBhbmQgZ2VuZXJhdGVzIGEgc2luZ2xlIHJlc2V0IG91dHB1dC4="
+set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name IP_COMPONENT_GROUP "QmFzaWMgRnVuY3Rpb25zL0Nsb2NrczsgUExMcyBhbmQgUmVzZXRz"
+set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3pjbjE1MTM5ODcyODI5MzUuaHRtbCNtd2gxNDA5OTU4ODI4NzMy"
+set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvZGFtL3d3dy9wcm9ncmFtbWFibGUvdXMvZW4vcGRmcy9saXRlcmF0dXJlL3VnL3VnLXFwcC1wbGF0Zm9ybS1kZXNpZ25lci5wZGY="
+set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2hjbzE0MTY4MzYxNDU1NTUuaHRtbCNoY28xNDE2ODM2NjUzMjIx"
+set_global_assignment -entity "dsp_rst_cntrl" -library "dsp_rst_cntrl" -name IP_COMPONENT_NAME "ZHNwX3JzdF9jbnRybA=="
+set_global_assignment -entity "dsp_rst_cntrl" -library "dsp_rst_cntrl" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "dsp_rst_cntrl" -library "dsp_rst_cntrl" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "dsp_rst_cntrl" -library "dsp_rst_cntrl" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "dsp_rst_cntrl" -library "dsp_rst_cntrl" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "dsp_rst_cntrl" -library "dsp_rst_cntrl" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "altera_reset_controller_1922" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_reset_controller_1922/synth/altera_reset_controller.v"]
+set_global_assignment -library "altera_reset_controller_1922" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_reset_controller_1922/synth/altera_reset_synchronizer.v"]
+set_instance_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name SDC_ENTITY_FILE [file join $::quartus(qip_path) "altera_reset_controller_1922/synth/altera_reset_controller.sdc"] -no_sdc_promotion 
+set_global_assignment -library "dsp_rst_cntrl" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/dsp_rst_cntrl.v"]
+
+
+set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name IP_TOOL_NAME "altera_reset_controller"
+set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name IP_TOOL_VERSION "19.2.2"
+set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name IP_TOOL_ENV "QsysPrimePro"
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="sim/rst_bridge_ecpri.v"
+   type="VERILOG"
+   library="rst_bridge_ecpri"
+   hasInlineConfiguration="true" />
+ <topLevel name="rst_bridge_ecpri.rst_bridge_ecpri" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB014R24B2I2V" />
+</simPackage>

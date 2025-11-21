@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.10.16.14:20:26"
+ outputDirectory="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/subsys_ftile_25gbe_1588/msgdma_ptp_subsys_8chs_ts_chs_compl_0/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGFB027R24C2E3V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="3"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_TS_REQ_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_TS_REQ_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_TS_REQ_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_BUS_IN_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_BUS_IN_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_BUS_IN_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="ts_req_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="i_ts_req_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="ts_req_reset" kind="reset" start="0">
+   <property name="associatedClock" value="ts_req_clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="i_ts_req_rst" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="clk_bus_in" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="i_clk_bus" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="rst_bus_in" kind="reset" start="0">
+   <property name="associatedClock" value="clk_bus_in" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="i_rst_bus" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="in_st" kind="avalon_streaming" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port name="in_st_ready" direction="output" role="ready" width="1" />
+   <port name="in_st_sop" direction="input" role="startofpacket" width="1" />
+   <port name="in_st_valid" direction="input" role="valid" width="1" />
+   <port name="in_st_eop" direction="input" role="endofpacket" width="1" />
+   <port name="in_st_data" direction="input" role="data" width="128" />
+   <port name="in_st_empty" direction="input" role="empty" width="4" />
+   <port name="in_st_error" direction="input" role="error" width="6" />
+  </interface>
+  <interface name="out_st" kind="avalon_streaming" start="1">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port name="out_st_ready" direction="input" role="ready" width="1" />
+   <port name="out_st_sop" direction="output" role="startofpacket" width="1" />
+   <port name="out_st_valid" direction="output" role="valid" width="1" />
+   <port name="out_st_eop" direction="output" role="endofpacket" width="1" />
+   <port name="out_st_data" direction="output" role="data" width="128" />
+   <port name="out_st_empty" direction="output" role="empty" width="4" />
+   <port name="out_st_error" direction="output" role="error" width="6" />
+  </interface>
+  <interface name="i_ts" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="i_ts_valid" direction="input" role="valid" width="1" />
+   <port name="i_ts_fp" direction="input" role="fingerprint" width="20" />
+   <port name="i_ts_data" direction="input" role="data" width="96" />
+  </interface>
+  <interface name="o_ts" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="o_ts_valid" direction="output" role="valid" width="1" />
+   <port name="o_ts_fp" direction="output" role="fingerprint" width="20" />
+   <port name="o_ts_data" direction="output" role="data" width="96" />
+  </interface>
+ </perimeter>
+ <entity
+   kind="msgdma_ptp_subsys_8chs_ts_chs_compl_0"
+   version="1.0"
+   name="msgdma_ptp_subsys_8chs_ts_chs_compl_0">
+  <parameter name="AUTO_TS_REQ_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_TS_REQ_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_BUS_IN_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_BUS_IN_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="AGFB027R24C2E2VR2" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_CLK_BUS_IN_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_TS_REQ_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <generatedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/subsys_ftile_25gbe_1588/msgdma_ptp_subsys_8chs_ts_chs_compl_0/synth/msgdma_ptp_subsys_8chs_ts_chs_compl_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/subsys_ftile_25gbe_1588/msgdma_ptp_subsys_8chs_ts_chs_compl_0/synth/msgdma_ptp_subsys_8chs_ts_chs_compl_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/subsys_ftile_25gbe_1588/msgdma_ptp_subsys_8chs_ts_chs_compl_0.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/components_8chs/ts_chs_compl_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="msgdma_ptp_subsys_8chs_ts_chs_compl_0">"Generating: msgdma_ptp_subsys_8chs_ts_chs_compl_0"</message>
+   <message level="Info" culprit="msgdma_ptp_subsys_8chs_ts_chs_compl_0">"Generating: ts_chs_compl"</message>
+  </messages>
+ </entity>
+ <entity kind="ts_chs_compl" version="1.0" name="ts_chs_compl">
+  <generatedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/subsys_ftile_25gbe_1588/msgdma_ptp_subsys_8chs_ts_chs_compl_0/ts_chs_compl_10/synth/ts_chs_compl.sv"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/subsys_ftile_25gbe_1588/msgdma_ptp_subsys_8chs_ts_chs_compl_0/ts_chs_compl_10/synth/dc_fifo_param.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/subsys_ftile_25gbe_1588/msgdma_ptp_subsys_8chs_ts_chs_compl_0/ts_chs_compl_10/synth/dc_fifo_param_ts_compl.sdc"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/subsys_ftile_25gbe_1588/msgdma_ptp_subsys_8chs_ts_chs_compl_0/ts_chs_compl_10/synth/ts_chs_compl.sv"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/subsys_ftile_25gbe_1588/msgdma_ptp_subsys_8chs_ts_chs_compl_0/ts_chs_compl_10/synth/dc_fifo_param.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/subsys_ftile_25gbe_1588/msgdma_ptp_subsys_8chs_ts_chs_compl_0/ts_chs_compl_10/synth/dc_fifo_param_ts_compl.sdc"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/components_8chs/ts_chs_compl_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="msgdma_ptp_subsys_8chs_ts_chs_compl_0"
+     as="ts_chs_compl_0" />
+  <messages>
+   <message level="Info" culprit="msgdma_ptp_subsys_8chs_ts_chs_compl_0">"Generating: ts_chs_compl"</message>
+  </messages>
+ </entity>
+</deploy>

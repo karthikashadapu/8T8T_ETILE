@@ -1,0 +1,102 @@
+	component j204c_f_rx_tx_ip_intel_jesd204c_1 is
+		port (
+			j204c_tx_phy_rst_n         : in  std_logic                      := 'X';             -- reset_n
+			j204c_rx_phy_rst_n         : in  std_logic                      := 'X';             -- reset_n
+			rx_serial_data             : in  std_logic_vector(3 downto 0)   := (others => 'X'); -- export
+			rx_serial_data_n           : in  std_logic_vector(3 downto 0)   := (others => 'X'); -- export
+			j204c_pll_refclk           : in  std_logic                      := 'X';             -- clk
+			tx_pma_ready               : out std_logic_vector(3 downto 0);                      -- export
+			rx_pma_ready               : out std_logic_vector(3 downto 0);                      -- export
+			tx_serial_data             : out std_logic_vector(3 downto 0);                      -- export
+			tx_serial_data_n           : out std_logic_vector(3 downto 0);                      -- export
+			j204c_reconfig_clk         : in  std_logic                      := 'X';             -- clk
+			j204c_reconfig_reset       : in  std_logic                      := 'X';             -- reset
+			j204c_reconfig_address     : in  std_logic_vector(20 downto 0)  := (others => 'X'); -- address
+			j204c_reconfig_read        : in  std_logic                      := 'X';             -- read
+			j204c_reconfig_readdata    : out std_logic_vector(7 downto 0);                      -- readdata
+			j204c_reconfig_waitrequest : out std_logic;                                         -- waitrequest
+			j204c_reconfig_write       : in  std_logic                      := 'X';             -- write
+			j204c_reconfig_writedata   : in  std_logic_vector(7 downto 0)   := (others => 'X'); -- writedata
+			j204c_txlink_clk           : in  std_logic                      := 'X';             -- clk
+			j204c_txframe_clk          : in  std_logic                      := 'X';             -- clk
+			j204c_tx_rst_n             : in  std_logic                      := 'X';             -- reset_n
+			j204c_txlclk_ctrl          : in  std_logic                      := 'X';             -- export
+			j204c_txfclk_ctrl          : in  std_logic                      := 'X';             -- export
+			j204c_tx_avs_clk           : in  std_logic                      := 'X';             -- clk
+			j204c_tx_avs_rst_n         : in  std_logic                      := 'X';             -- reset_n
+			j204c_tx_avs_chipselect    : in  std_logic                      := 'X';             -- chipselect
+			j204c_tx_avs_address       : in  std_logic_vector(9 downto 0)   := (others => 'X'); -- address
+			j204c_tx_avs_read          : in  std_logic                      := 'X';             -- read
+			j204c_tx_avs_readdata      : out std_logic_vector(31 downto 0);                     -- readdata
+			j204c_tx_avs_waitrequest   : out std_logic;                                         -- waitrequest
+			j204c_tx_avs_write         : in  std_logic                      := 'X';             -- write
+			j204c_tx_avs_writedata     : in  std_logic_vector(31 downto 0)  := (others => 'X'); -- writedata
+			j204c_tx_avst_data         : in  std_logic_vector(255 downto 0) := (others => 'X'); -- data
+			j204c_tx_avst_valid        : in  std_logic                      := 'X';             -- valid
+			j204c_tx_avst_ready        : out std_logic;                                         -- ready
+			j204c_tx_avst_control      : in  std_logic                      := 'X';             -- export
+			j204c_tx_cmd_data          : in  std_logic_vector(23 downto 0)  := (others => 'X'); -- data
+			j204c_tx_cmd_valid         : in  std_logic                      := 'X';             -- valid
+			j204c_tx_cmd_ready         : out std_logic;                                         -- ready
+			j204c_tx_sysref            : in  std_logic                      := 'X';             -- export
+			j204c_tx_somb              : out std_logic;                                         -- export
+			j204c_tx_soemb             : out std_logic;                                         -- export
+			j204c_tx_csr_l             : out std_logic_vector(3 downto 0);                      -- export
+			j204c_tx_csr_f             : out std_logic_vector(7 downto 0);                      -- export
+			j204c_tx_csr_m             : out std_logic_vector(7 downto 0);                      -- export
+			j204c_tx_csr_cs            : out std_logic_vector(1 downto 0);                      -- export
+			j204c_tx_csr_n             : out std_logic_vector(4 downto 0);                      -- export
+			j204c_tx_csr_np            : out std_logic_vector(4 downto 0);                      -- export
+			j204c_tx_csr_s             : out std_logic_vector(4 downto 0);                      -- export
+			j204c_tx_csr_hd            : out std_logic;                                         -- export
+			j204c_tx_csr_cf            : out std_logic_vector(4 downto 0);                      -- export
+			j204c_tx_csr_e             : out std_logic_vector(7 downto 0);                      -- export
+			j204c_tx_csr_testmode      : out std_logic_vector(3 downto 0);                      -- export
+			j204c_tx_int               : out std_logic;                                         -- irq
+			j204c_rx_avs_clk           : in  std_logic                      := 'X';             -- clk
+			j204c_rx_avs_rst_n         : in  std_logic                      := 'X';             -- reset_n
+			j204c_rx_avs_chipselect    : in  std_logic                      := 'X';             -- chipselect
+			j204c_rx_avs_address       : in  std_logic_vector(9 downto 0)   := (others => 'X'); -- address
+			j204c_rx_avs_read          : in  std_logic                      := 'X';             -- read
+			j204c_rx_avs_readdata      : out std_logic_vector(31 downto 0);                     -- readdata
+			j204c_rx_avs_waitrequest   : out std_logic;                                         -- waitrequest
+			j204c_rx_avs_write         : in  std_logic                      := 'X';             -- write
+			j204c_rx_avs_writedata     : in  std_logic_vector(31 downto 0)  := (others => 'X'); -- writedata
+			j204c_rx_int               : out std_logic;                                         -- irq
+			j204c_rx_csr_l             : out std_logic_vector(3 downto 0);                      -- export
+			j204c_rx_csr_f             : out std_logic_vector(7 downto 0);                      -- export
+			j204c_rx_csr_m             : out std_logic_vector(7 downto 0);                      -- export
+			j204c_rx_csr_cs            : out std_logic_vector(1 downto 0);                      -- export
+			j204c_rx_csr_n             : out std_logic_vector(4 downto 0);                      -- export
+			j204c_rx_csr_np            : out std_logic_vector(4 downto 0);                      -- export
+			j204c_rx_csr_s             : out std_logic_vector(4 downto 0);                      -- export
+			j204c_rx_csr_hd            : out std_logic;                                         -- export
+			j204c_rx_csr_cf            : out std_logic_vector(4 downto 0);                      -- export
+			j204c_rx_csr_e             : out std_logic_vector(7 downto 0);                      -- export
+			j204c_rx_csr_testmode      : out std_logic_vector(3 downto 0);                      -- export
+			j204c_rx_sysref            : in  std_logic                      := 'X';             -- export
+			j204c_rxlink_clk           : in  std_logic                      := 'X';             -- clk
+			j204c_rxframe_clk          : in  std_logic                      := 'X';             -- clk
+			j204c_rxlclk_ctrl          : in  std_logic                      := 'X';             -- export
+			j204c_rxfclk_ctrl          : in  std_logic                      := 'X';             -- export
+			j204c_rx_rst_n             : in  std_logic                      := 'X';             -- reset_n
+			j204c_rx_dev_lane_align    : out std_logic;                                         -- export
+			j204c_rx_alldev_lane_align : in  std_logic                      := 'X';             -- export
+			j204c_rx_cmd_data          : out std_logic_vector(23 downto 0);                     -- data
+			j204c_rx_cmd_valid         : out std_logic;                                         -- valid
+			j204c_rx_cmd_ready         : in  std_logic                      := 'X';             -- ready
+			j204c_rx_cmd_par_err       : out std_logic_vector(3 downto 0);                      -- export
+			j204c_rx_somb              : out std_logic;                                         -- export
+			j204c_rx_soemb             : out std_logic;                                         -- export
+			j204c_rx_sh_lock           : out std_logic;                                         -- export
+			j204c_rx_emb_lock          : out std_logic;                                         -- export
+			j204c_rx_avst_data         : out std_logic_vector(255 downto 0);                    -- data
+			j204c_rx_avst_valid        : out std_logic;                                         -- valid
+			j204c_rx_avst_ready        : in  std_logic                      := 'X';             -- ready
+			j204c_rx_avst_control      : out std_logic;                                         -- export
+			j204c_rx_crc_err           : out std_logic_vector(3 downto 0);                      -- export
+			rx_ready                   : out std_logic_vector(3 downto 0);                      -- export
+			tx_ready                   : out std_logic_vector(3 downto 0)                       -- export
+		);
+	end component j204c_f_rx_tx_ip_intel_jesd204c_1;
+

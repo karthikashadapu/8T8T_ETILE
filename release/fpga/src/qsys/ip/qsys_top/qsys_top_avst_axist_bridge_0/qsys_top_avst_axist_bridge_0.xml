@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.10.16.14:23:35"
+ outputDirectory="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/qsys_top/qsys_top_avst_axist_bridge_0/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGFB027R24C2E3V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="3"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_I_TX_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_I_TX_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_I_TX_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_I_RX_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_I_RX_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_I_RX_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="i_tx_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="i_tx_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="i_rx_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="i_rx_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="i_tx_rst_n" kind="reset" start="0">
+   <property name="associatedClock" value="i_tx_clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="i_tx_rst_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="i_rx_rst_n" kind="reset" start="0">
+   <property name="associatedClock" value="i_rx_clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="i_rx_rst_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="avst_tx_if" kind="avalon_streaming" start="0">
+   <property name="associatedClock" value="i_tx_clk" />
+   <property name="associatedReset" value="i_tx_rst_n" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port name="o_av_st_tx_ready" direction="output" role="ready" width="1" />
+   <port name="i_av_st_tx_valid" direction="input" role="valid" width="1" />
+   <port name="i_av_st_tx_data" direction="input" role="data" width="64" />
+   <port
+       name="i_av_st_tx_startofpacket"
+       direction="input"
+       role="startofpacket"
+       width="1" />
+   <port
+       name="i_av_st_tx_endofpacket"
+       direction="input"
+       role="endofpacket"
+       width="1" />
+   <port name="i_av_st_tx_empty" direction="input" role="empty" width="3" />
+   <port name="i_av_st_tx_error" direction="input" role="error" width="1" />
+  </interface>
+  <interface name="avst_tx_ptp" kind="conduit" start="0">
+   <property name="associatedClock" value="i_tx_clk" />
+   <property name="associatedReset" value="i_tx_rst_n" />
+   <property name="prSafe" value="false" />
+   <port
+       name="i_av_st_tx_skip_crc"
+       direction="input"
+       role="i_av_st_tx_skip_crc"
+       width="1" />
+   <port
+       name="i_av_st_tx_ptp_ts_valid"
+       direction="input"
+       role="i_av_st_tx_ptp_ts_valid"
+       width="2" />
+   <port
+       name="i_av_st_tx_ptp_ts_req"
+       direction="input"
+       role="i_av_st_tx_ptp_ts_req"
+       width="1" />
+   <port
+       name="i_av_st_tx_ptp_ins_ets"
+       direction="input"
+       role="i_av_st_tx_ptp_ins_ets"
+       width="1" />
+   <port
+       name="i_av_st_tx_ptp_fp"
+       direction="input"
+       role="i_av_st_tx_ptp_fp"
+       width="32" />
+   <port
+       name="i_av_st_tx_ptp_ins_cf"
+       direction="input"
+       role="i_av_st_tx_ptp_ins_cf"
+       width="1" />
+   <port
+       name="i_av_st_tx_ptp_tx_its"
+       direction="input"
+       role="i_av_st_tx_ptp_tx_its"
+       width="96" />
+   <port
+       name="i_av_st_tx_ptp_asym_p2p_idx"
+       direction="input"
+       role="i_av_st_tx_ptp_asym_p2p_idx"
+       width="7" />
+   <port
+       name="i_av_st_tx_ptp_asym_sign"
+       direction="input"
+       role="i_av_st_tx_ptp_asym_sign"
+       width="1" />
+   <port
+       name="i_av_st_tx_ptp_asym"
+       direction="input"
+       role="i_av_st_tx_ptp_asym"
+       width="1" />
+   <port
+       name="i_av_st_tx_ptp_p2p"
+       direction="input"
+       role="i_av_st_tx_ptp_p2p"
+       width="1" />
+   <port
+       name="i_av_st_tx_ptp_ts_format"
+       direction="input"
+       role="i_av_st_tx_ptp_ts_format"
+       width="1" />
+   <port
+       name="i_av_st_tx_ptp_update_eb"
+       direction="input"
+       role="i_av_st_tx_ptp_update_eb"
+       width="1" />
+   <port
+       name="i_av_st_tx_ptp_zero_csum"
+       direction="input"
+       role="i_av_st_tx_ptp_zero_csum"
+       width="1" />
+   <port
+       name="i_av_st_tx_ptp_eb_offset"
+       direction="input"
+       role="i_av_st_tx_ptp_eb_offset"
+       width="16" />
+   <port
+       name="i_av_st_tx_ptp_csum_offset"
+       direction="input"
+       role="i_av_st_tx_ptp_csum_offset"
+       width="16" />
+   <port
+       name="i_av_st_tx_ptp_cf_offset"
+       direction="input"
+       role="i_av_st_tx_ptp_cf_offset"
+       width="16" />
+   <port
+       name="i_av_st_tx_ptp_ts_offset"
+       direction="input"
+       role="i_av_st_tx_ptp_ts_offset"
+       width="16" />
+  </interface>
+  <interface name="axit_tx_if" kind="axi4stream" start="1">
+   <property name="associatedClock" value="i_tx_clk" />
+   <property name="associatedReset" value="i_tx_rst_n" />
+   <port name="i_axi_st_tx_tready" direction="input" role="tready" width="1" />
+   <port name="o_axi_st_tx_tvalid" direction="output" role="tvalid" width="1" />
+   <port name="o_axi_st_tx_tdata" direction="output" role="tdata" width="64" />
+   <port name="o_axi_st_tx_tlast" direction="output" role="tlast" width="1" />
+   <port name="o_axi_st_tx_tkeep" direction="output" role="tkeep" width="8" />
+   <port
+       name="o_axi_st_tx_tuser_client"
+       direction="output"
+       role="tuser"
+       width="2" />
+  </interface>
+  <interface name="axist_tx_user" kind="conduit" start="0">
+   <property name="associatedClock" value="i_tx_clk" />
+   <property name="associatedReset" value="i_tx_rst_n" />
+   <property name="prSafe" value="false" />
+   <port
+       name="o_axi_st_tx_tuser_ptp"
+       direction="output"
+       role="o_axi_st_tx_tuser_ptp"
+       width="94" />
+   <port
+       name="o_axi_st_tx_tuser_ptp_extended"
+       direction="output"
+       role="o_axi_st_tx_tuser_ptp_extended"
+       width="328" />
+  </interface>
+  <interface name="avst_rx_if" kind="avalon_streaming" start="1">
+   <property name="associatedClock" value="i_rx_clk" />
+   <property name="associatedReset" value="i_rx_rst_n" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="8" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="prSafe" value="false" />
+   <property name="readyAllowance" value="0" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port name="o_av_st_rx_valid" direction="output" role="valid" width="1" />
+   <port name="o_av_st_rx_data" direction="output" role="data" width="64" />
+   <port
+       name="o_av_st_rx_startofpacket"
+       direction="output"
+       role="startofpacket"
+       width="1" />
+   <port
+       name="o_av_st_rx_endofpacket"
+       direction="output"
+       role="endofpacket"
+       width="1" />
+   <port name="o_av_st_rx_empty" direction="output" role="empty" width="3" />
+   <port name="o_av_st_rx_error" direction="output" role="error" width="6" />
+  </interface>
+  <interface name="avst_rx_ptp" kind="conduit" start="0">
+   <property name="associatedClock" value="i_rx_clk" />
+   <property name="associatedReset" value="i_rx_rst_n" />
+   <property name="prSafe" value="false" />
+   <port
+       name="o_av_st_rxstatus_data"
+       direction="output"
+       role="o_av_st_rxstatus_data"
+       width="40" />
+   <port
+       name="o_av_st_rxstatus_valid"
+       direction="output"
+       role="o_av_st_rxstatus_valid"
+       width="1" />
+   <port
+       name="o_av_st_ptp_rx_its"
+       direction="output"
+       role="o_av_st_ptp_rx_its"
+       width="96" />
+  </interface>
+  <interface name="axist_rx_if" kind="axi4stream" start="0">
+   <property name="associatedClock" value="i_rx_clk" />
+   <property name="associatedReset" value="i_rx_rst_n" />
+   <port name="i_axi_st_rx_tvalid" direction="input" role="tvalid" width="1" />
+   <port name="i_axi_st_rx_tdata" direction="input" role="tdata" width="64" />
+   <port name="i_axi_st_rx_tlast" direction="input" role="tlast" width="1" />
+   <port name="i_axi_st_rx_tkeep" direction="input" role="tkeep" width="8" />
+   <port
+       name="i_axi_st_rx_tuser_client"
+       direction="input"
+       role="tuser"
+       width="7" />
+  </interface>
+  <interface name="axist_rx_user" kind="conduit" start="0">
+   <property name="associatedClock" value="i_rx_clk" />
+   <property name="associatedReset" value="i_rx_rst_n" />
+   <property name="prSafe" value="false" />
+   <port
+       name="i_axi_st_rx_tuser_sts"
+       direction="input"
+       role="i_axi_st_rx_tuser_sts"
+       width="5" />
+   <port
+       name="i_axi_st_rx_tuser_sts_extended"
+       direction="input"
+       role="i_axi_st_rx_tuser_sts_extended"
+       width="32" />
+   <port
+       name="i_axi_st_rx_ingrts0_tdata"
+       direction="input"
+       role="i_axi_st_rx_ingrts0_tdata"
+       width="96" />
+   <port
+       name="i_axi_st_rx_ingrts0_tvalid"
+       direction="input"
+       role="i_axi_st_rx_ingrts0_tvalid"
+       width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   kind="qsys_top_avst_axist_bridge_0"
+   version="1.0"
+   name="qsys_top_avst_axist_bridge_0">
+  <parameter name="AUTO_I_RX_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_I_RX_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="AGFB027R24C2E2VR2" />
+  <parameter name="AUTO_I_TX_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_I_TX_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_I_TX_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_I_RX_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <generatedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/qsys_top/qsys_top_avst_axist_bridge_0/synth/qsys_top_avst_axist_bridge_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/qsys_top/qsys_top_avst_axist_bridge_0/synth/qsys_top_avst_axist_bridge_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/qsys_top/qsys_top_avst_axist_bridge_0.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/axist_to_avst_bridge/avst_axist_bridge_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="qsys_top_avst_axist_bridge_0">"Generating: qsys_top_avst_axist_bridge_0"</message>
+   <message level="Info" culprit="qsys_top_avst_axist_bridge_0">"Generating: ftile_ghrd_avst_axist_bridge"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="avst_axist_bridge"
+   version="1.4"
+   name="ftile_ghrd_avst_axist_bridge">
+  <generatedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/qsys_top/qsys_top_avst_axist_bridge_0/avst_axist_bridge_14/synth/ftile_ghrd_avst_axist_bridge.sv"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/qsys_top/qsys_top_avst_axist_bridge_0/avst_axist_bridge_14/synth/avst_to_axist_rx_mac_seg_if_v2.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/qsys_top/qsys_top_avst_axist_bridge_0/avst_axist_bridge_14/synth/axist_to_avst_bridge_v2.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/qsys_top/qsys_top_avst_axist_bridge_0/avst_axist_bridge_14/synth/axist_to_avst_tx_mac_seg_if_v2.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/qsys_top/qsys_top_avst_axist_bridge_0/avst_axist_bridge_14/synth/keep2empty_v2.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/qsys_top/qsys_top_avst_axist_bridge_0/avst_axist_bridge_14/synth/hssi_ss_delay_reg_v2.v"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/qsys_top/qsys_top_avst_axist_bridge_0/avst_axist_bridge_14/synth/ftile_ghrd_avst_axist_bridge.sv"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/qsys_top/qsys_top_avst_axist_bridge_0/avst_axist_bridge_14/synth/avst_to_axist_rx_mac_seg_if_v2.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/qsys_top/qsys_top_avst_axist_bridge_0/avst_axist_bridge_14/synth/axist_to_avst_bridge_v2.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/qsys_top/qsys_top_avst_axist_bridge_0/avst_axist_bridge_14/synth/axist_to_avst_tx_mac_seg_if_v2.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/qsys_top/qsys_top_avst_axist_bridge_0/avst_axist_bridge_14/synth/keep2empty_v2.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/qsys_top/qsys_top_avst_axist_bridge_0/avst_axist_bridge_14/synth/hssi_ss_delay_reg_v2.v"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/axist_to_avst_bridge/avst_axist_bridge_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="qsys_top_avst_axist_bridge_0"
+     as="subsys_ftile_25gbe_1588_avst_axist_bridge_0" />
+  <messages>
+   <message level="Info" culprit="qsys_top_avst_axist_bridge_0">"Generating: ftile_ghrd_avst_axist_bridge"</message>
+  </messages>
+ </entity>
+</deploy>

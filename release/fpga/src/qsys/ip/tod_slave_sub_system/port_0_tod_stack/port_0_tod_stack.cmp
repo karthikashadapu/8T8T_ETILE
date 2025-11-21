@@ -1,0 +1,23 @@
+	component port_0_tod_stack is
+		generic (
+			NUMPORTS : integer := 1
+		);
+		port (
+			i_reconfig_clk              : in  std_logic                     := 'X';             -- clk
+			i_reconfig_reset            : in  std_logic                     := 'X';             -- reset_n
+			i_clk_tx_tod                : in  std_logic                     := 'X';             -- clk
+			i_clk_rx_tod                : in  std_logic                     := 'X';             -- clk
+			i_clk_master_tod            : in  std_logic                     := 'X';             -- clk
+			i_clk_todsync_sample        : in  std_logic                     := 'X';             -- clk
+			i_clk_todsync_sample_locked : in  std_logic                     := 'X';             -- lock
+			i_ptp_master_tod            : in  std_logic_vector(95 downto 0) := (others => 'X'); -- data
+			i_ptp_master_tod_valid      : in  std_logic                     := 'X';             -- valid
+			ptp_tx_tod                  : out std_logic_vector(95 downto 0);                    -- tdata
+			ptp_tx_tod_valid            : out std_logic;                                        -- tvalid
+			ptp_rx_tod                  : out std_logic_vector(95 downto 0);                    -- tdata
+			ptp_rx_tod_valid            : out std_logic;                                        -- tvalid
+			i_tx_pll_locked             : in  std_logic                     := 'X';             -- lock
+			i_ptp_master_tod_rst_n      : in  std_logic                     := 'X'              -- reset_n
+		);
+	end component port_0_tod_stack;
+

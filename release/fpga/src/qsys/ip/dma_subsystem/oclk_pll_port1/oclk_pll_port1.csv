@@ -1,0 +1,16 @@
+# system info oclk_pll_port1 on 2025.10.16.14:16:48
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for oclk_pll_port1 on 2025.10.16.14:16:48
+files:
+filepath,kind,attributes,module,is_top
+sim/oclk_pll_port1.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,oclk_pll_port1,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module

@@ -1,0 +1,15 @@
+	component ff_64i_64o_4096kd is
+		port (
+			data    : in  std_logic_vector(63 downto 0) := (others => 'X'); -- datain
+			wrreq   : in  std_logic                     := 'X';             -- wrreq
+			rdreq   : in  std_logic                     := 'X';             -- rdreq
+			wrclk   : in  std_logic                     := 'X';             -- wrclk
+			rdclk   : in  std_logic                     := 'X';             -- rdclk
+			aclr    : in  std_logic                     := 'X';             -- aclr
+			q       : out std_logic_vector(63 downto 0);                    -- dataout
+			rdusedw : out std_logic_vector(12 downto 0);                    -- rdusedw
+			rdempty : out std_logic;                                        -- rdempty
+			wrfull  : out std_logic                                         -- wrfull
+		);
+	end component ff_64i_64o_4096kd;
+

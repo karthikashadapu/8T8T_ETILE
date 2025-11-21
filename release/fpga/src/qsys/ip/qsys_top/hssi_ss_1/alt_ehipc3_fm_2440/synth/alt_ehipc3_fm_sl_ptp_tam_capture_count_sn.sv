@@ -1,0 +1,175 @@
+// (C) 2001-2024 Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions and other 
+// software and tools, and its AMPP partner logic functions, and any output 
+// files from any of the foregoing (including device programming or simulation 
+// files), and any associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License Subscription 
+// Agreement, Intel FPGA IP License Agreement, or other applicable 
+// license agreement, including, without limitation, that your use is for the 
+// sole purpose of programming logic devices manufactured by Intel and sold by 
+// Intel or its authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+
+// (C) 2001-2019 Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions and other 
+// software and tools, and its AMPP partner logic functions, and any output 
+// files from any of the foregoing (including device programming or simulation 
+// files), and any associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License Subscription 
+// Agreement, Intel FPGA IP License Agreement, or other applicable 
+// license agreement, including, without limitation, that your use is for the 
+// sole purpose of programming logic devices manufactured by Intel and sold by 
+// Intel or its authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+
+
+// Kazim
+// This block is capturing the TAM value and corresponding counts to adjust the UI value through AVMM writes
+`timescale 1ns / 1ns
+module alt_ehipc3_fm_sl_ptp_tam_capture_count_sn (    
+    input  logic        i_tx_clk,
+    input  logic        i_tx_rst_n,
+    input  logic [47:0] i_tx_tam,
+    input  logic        i_tx_tam_load,
+    output logic [47:0] o_tx_tam_capture,
+    output logic [15:0] o_tx_tam_count,
+    output logic        o_tx_tam_cap_valid,
+    
+    input  logic        i_rx_clk,
+    input  logic        i_rx_rst_n,
+    input  logic [47:0] i_rx_tam,
+    input  logic        i_rx_tam_load, 
+    output logic [47:0] o_rx_tam_capture,
+    output logic [15:0] o_rx_tam_count,
+    output logic        o_rx_tam_cap_valid
+);
+
+reg [47:0] tx_tam_capture;
+reg [15:0] tx_tam_count;
+reg        tx_tam_cap_valid;
+reg        tx_tam_load_r;
+reg [47:0] rx_tam_capture;
+reg [15:0] rx_tam_count;
+reg        rx_tam_cap_valid;
+reg        rx_tam_load_r;
+
+wire       tx_tam_load_pulse;
+wire       rx_tam_load_pulse;
+assign     tx_tam_load_pulse = i_tx_tam_load & ~tx_tam_load_r;
+assign     rx_tam_load_pulse = i_rx_tam_load & ~rx_tam_load_r;
+
+// TX TAM 
+always @(posedge i_tx_clk) begin
+    if(!i_tx_rst_n) begin
+        tx_tam_load_r <= 1'b0;
+    end
+    else  begin
+        tx_tam_load_r <= i_tx_tam_load;    
+    end
+end
+
+always @(posedge i_tx_clk) begin
+    if(!i_tx_rst_n) begin
+       // tx_tam_capture <= 48'h0;
+        tx_tam_count   <= 16'h0;
+    end
+    else if (tx_tam_load_pulse) begin
+      //  tx_tam_capture <= i_tx_tam;
+        tx_tam_count   <= tx_tam_count + 1'b1;      
+    end
+end
+
+always @(posedge i_tx_clk)
+   if (tx_tam_load_pulse) begin
+        tx_tam_capture <= i_tx_tam;
+    end
+
+always @(posedge i_tx_clk) begin
+    if(!i_tx_rst_n) begin
+        tx_tam_cap_valid <= 1'b0;
+    end
+    else begin
+        tx_tam_cap_valid <= tx_tam_load_pulse;        
+    end
+end
+
+// RX TAM
+
+always @(posedge i_rx_clk) begin
+    if(!i_rx_rst_n) begin
+        rx_tam_load_r <= 1'b0;
+    end
+    else  begin
+        rx_tam_load_r <= i_rx_tam_load;    
+    end
+end
+
+always @(posedge i_rx_clk) begin
+    if(!i_rx_rst_n) begin
+//        rx_tam_capture   <= 48'h0;
+        rx_tam_count     <= 16'h0;
+    end
+    else if (rx_tam_load_pulse) begin
+//        rx_tam_capture   <= i_rx_tam;
+        rx_tam_count     <= rx_tam_count + 1'b1;        
+    end
+end
+
+always @(posedge i_rx_clk)
+  if (rx_tam_load_pulse) begin
+        rx_tam_capture   <= i_rx_tam;
+  end
+
+
+
+always @(posedge i_rx_clk) begin
+    if(!i_rx_rst_n) begin
+        rx_tam_cap_valid <= 1'b0;
+    end
+    else begin 
+        rx_tam_cap_valid <= rx_tam_load_pulse;        
+    end
+end
+
+always @(posedge i_tx_clk) begin
+    if(!i_tx_rst_n) begin
+//        o_tx_tam_capture   <= 48'h0;
+        o_tx_tam_count     <= 16'h0;
+        o_tx_tam_cap_valid <= 1'b0; 
+    end
+    else begin
+//        o_tx_tam_capture   <= tx_tam_capture;
+        o_tx_tam_count     <= tx_tam_count;  
+        o_tx_tam_cap_valid <= tx_tam_cap_valid;         
+    end
+end
+
+always @(posedge i_tx_clk) begin
+        o_tx_tam_capture   <= tx_tam_capture;
+  
+end
+
+
+always @(posedge i_rx_clk) begin
+    if(!i_rx_rst_n) begin
+//        o_rx_tam_capture   <= 48'h0;
+        o_rx_tam_count     <= 16'h0;
+        o_rx_tam_cap_valid <= 1'b0; 
+    end
+    else begin
+//        o_rx_tam_capture   <= rx_tam_capture;
+        o_rx_tam_count     <= rx_tam_count; 
+        o_rx_tam_cap_valid <= rx_tam_cap_valid;         
+    end
+end
+
+always @(posedge i_rx_clk) begin
+        o_rx_tam_capture   <= rx_tam_capture;
+end
+
+endmodule
+`ifdef QUESTA_INTEL_OEM
+`pragma questa_oem_00 "zxbEFFp84WYRbJsb0HIMeuWjbOOv1K7QQFpH53Gb3V5p0ZRDdhsMAxwP11nnT9uCTG31WcRFMGv1Y3sp3Jccq/UYKIiEbrkv+dnQkRqN6m6gKWqiXtHiiORyaZNWlpsJ1uOJVOw5+WI+1xrepR1EmwGCsDi2F6K1UWIUsyOHvXTbPREtmL97zvP7WTaw1mXrLe+4BbR/6Dd7pfQ4tTt2P5iQPOMdgtxNDjbWzf8Mv5PKFmaTC/6/7wirFgbTp67+AnYApZnNp8zb6oezWpET3Ai6ktmkh85Dj0PFOp6+FFe9zxnkofQUdDPuU8Js3Mobxd7+wfVrYZoa40JWkwudiHyRmbh2JR0N+hfprLW1ovKi/ZDLO+k6ferwWWdBj6uAkwwSed6kMppcYenqn7N3uYNzF0zOl7lU387Hh2WsUD4w/OwIBxYaES96NMLJqvFI0XuBPKmmZXbHGE+DpqfXr6R0DVZEf2XULLP9Kf0tesha9fVCLVK7d25tsAas7C8iH/0A8Vo0Z0UiXQZws7Zk08l5Z4GFGcT43sHl1ZcxrbDovS6jDOib89JbusW3OuMFlIvelaE48q4sshZn5wJde0q8NMeXtZMitnz4LgA/bXqSoukVBSo8WQFe653U6RGS43z62+jfTnRI/WkR94nJif948IOilXH0tkvbUe2eAdWCY7vEXmE1gYNbyb34iWzXWAzWrT3cfSnIYVW+ZPqa/kTr1CDBNRE+MIiRgRaPhAyjYUfCC5aU1GiPAgD0rSO4PNHIVJBndEpwjIdtAsQVLWpExTl7zCRkKqe3PApvEsKK429RjiuNUjsKeazfjnAzidz6UVOcDetMUiQLLyBIxhTdPSvQE9Oyko5SZBEQndL7VNfUPhDz9oHu55OPra/05PEo7NZ7MYq/KHVHS53pAP558ZfCRW9/lyK8fble38Pu1fWwz2f2335xeHf1yHDWimbqgMyJs1lKvh/2INGi37T0uZ83NwXiNSnFEsrMlDK9sVnlu1NbxJjHOEM/5nfm"
+`endif

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.11.11.22:54:19"
+ outputDirectory="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/j204c_f_rx_tx_ip/j204c_f_rx_tx_ip_reset_sequencer_0/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGFB014R24B2I2V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="2"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="reset_in0" kind="reset" start="0">
+   <property name="associatedClock" value="" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="reset_in0" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="reset_out0" kind="reset" start="1">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedDirectReset" value="" />
+   <property name="associatedResetSinks" value="reset_in0" />
+   <property name="synchronousEdges" value="BOTH" />
+   <port name="reset_out0" direction="output" role="reset" width="1" />
+  </interface>
+  <interface name="reset_out1" kind="reset" start="1">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedDirectReset" value="" />
+   <property name="associatedResetSinks" value="reset_in0" />
+   <property name="synchronousEdges" value="BOTH" />
+   <port name="reset_out1" direction="output" role="reset" width="1" />
+  </interface>
+  <interface name="reset_out2" kind="reset" start="1">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedDirectReset" value="" />
+   <property name="associatedResetSinks" value="reset_in0" />
+   <property name="synchronousEdges" value="BOTH" />
+   <port name="reset_out2" direction="output" role="reset" width="1" />
+  </interface>
+  <interface name="reset_out3" kind="reset" start="1">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedDirectReset" value="" />
+   <property name="associatedResetSinks" value="reset_in0" />
+   <property name="synchronousEdges" value="BOTH" />
+   <port name="reset_out3" direction="output" role="reset" width="1" />
+  </interface>
+  <interface name="reset_out4" kind="reset" start="1">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedDirectReset" value="" />
+   <property name="associatedResetSinks" value="reset_in0" />
+   <property name="synchronousEdges" value="BOTH" />
+   <port name="reset_out4" direction="output" role="reset" width="1" />
+  </interface>
+  <interface name="reset_out5" kind="reset" start="1">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedDirectReset" value="" />
+   <property name="associatedResetSinks" value="reset_in0" />
+   <property name="synchronousEdges" value="BOTH" />
+   <port name="reset_out5" direction="output" role="reset" width="1" />
+  </interface>
+  <interface name="reset1_dsrt_qual" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="reset1_dsrt_qual"
+       direction="input"
+       role="reset1_dsrt_qual"
+       width="1" />
+  </interface>
+  <interface name="reset2_dsrt_qual" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="reset2_dsrt_qual"
+       direction="input"
+       role="reset2_dsrt_qual"
+       width="1" />
+  </interface>
+  <interface name="reset4_dsrt_qual" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="reset4_dsrt_qual"
+       direction="input"
+       role="reset4_dsrt_qual"
+       width="1" />
+  </interface>
+  <interface name="csr_reset" kind="reset" start="0">
+   <property name="associatedClock" value="" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="csr_reset" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="av_csr" kind="avalon" start="0">
+   <property name="addressAlignment" value="DYNAMIC" />
+   <property name="addressGroup" value="0" />
+   <property name="addressSpan" value="256" />
+   <property name="addressUnits" value="SYMBOLS" />
+   <property name="alwaysBurstMaxBurst" value="false" />
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="csr_reset" />
+   <property name="bitsPerSymbol" value="8" />
+   <property name="bridgedAddressOffset" value="0" />
+   <property name="bridgesToMaster" value="" />
+   <property name="burstOnBurstBoundariesOnly" value="false" />
+   <property name="burstcountUnits" value="SYMBOLS" />
+   <property name="constantBurstBehavior" value="false" />
+   <property name="explicitAddressSpan" value="0" />
+   <property name="holdTime" value="0" />
+   <property name="interleaveBursts" value="false" />
+   <property name="isBigEndian" value="false" />
+   <property name="isFlash" value="false" />
+   <property name="isMemoryDevice" value="false" />
+   <property name="isNonVolatileStorage" value="false" />
+   <property name="linewrapBursts" value="false" />
+   <property name="maximumPendingReadTransactions" value="0" />
+   <property name="maximumPendingWriteTransactions" value="0" />
+   <property name="minimumReadLatency" value="1" />
+   <property name="minimumResponseLatency" value="1" />
+   <property name="minimumUninterruptedRunLength" value="1" />
+   <property name="prSafe" value="false" />
+   <property name="printableDevice" value="false" />
+   <property name="readLatency" value="2" />
+   <property name="readWaitStates" value="0" />
+   <property name="readWaitTime" value="0" />
+   <property name="registerIncomingSignals" value="false" />
+   <property name="registerOutgoingSignals" value="false" />
+   <property name="setupTime" value="0" />
+   <property name="timingUnits" value="Cycles" />
+   <property name="transparentBridge" value="false" />
+   <property name="waitrequestAllowance" value="0" />
+   <property name="wellBehavedWaitrequest" value="false" />
+   <property name="writeLatency" value="0" />
+   <property name="writeWaitStates" value="0" />
+   <property name="writeWaitTime" value="0" />
+   <property name="dfhFeatureGuid" value="0" />
+   <property name="dfhGroupId" value="0" />
+   <property name="dfhParameterId" value="" />
+   <property name="dfhParameterName" value="" />
+   <property name="dfhParameterVersion" value="" />
+   <property name="dfhParameterData" value="" />
+   <property name="dfhParameterDataLength" value="" />
+   <property name="dfhFeatureMajorVersion" value="0" />
+   <property name="dfhFeatureMinorVersion" value="0" />
+   <property name="dfhFeatureId" value="35" />
+   <property name="dfhFeatureType" value="3" />
+   <port name="av_address" direction="input" role="address" width="8" />
+   <port name="av_readdata" direction="output" role="readdata" width="32" />
+   <port name="av_read" direction="input" role="read" width="1" />
+   <port name="av_writedata" direction="input" role="writedata" width="32" />
+   <port name="av_write" direction="input" role="write" width="1" />
+  </interface>
+  <interface name="av_csr_irq" kind="interrupt" start="0">
+   <property
+       name="associatedAddressablePoint"
+       value="j204c_f_rx_tx_ip_reset_sequencer_0.av_csr" />
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="csr_reset" />
+   <property name="bridgedReceiverOffset" value="0" />
+   <property name="bridgesToReceiver" value="" />
+   <property name="irqScheme" value="NONE" />
+   <port name="irq" direction="output" role="irq" width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   kind="j204c_f_rx_tx_ip_reset_sequencer_0"
+   version="1.0"
+   name="j204c_f_rx_tx_ip_reset_sequencer_0">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="AGFB014R24B2I2V" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <generatedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/j204c_f_rx_tx_ip/j204c_f_rx_tx_ip_reset_sequencer_0/synth/j204c_f_rx_tx_ip_reset_sequencer_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/j204c_f_rx_tx_ip/j204c_f_rx_tx_ip_reset_sequencer_0/synth/j204c_f_rx_tx_ip_reset_sequencer_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/j204c_f_rx_tx_ip/j204c_f_rx_tx_ip_reset_sequencer_0.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/sibgath/intelFPGA_pro/24.1/ip/altera/merlin/altera_reset_sequencer/altera_reset_sequencer_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="j204c_f_rx_tx_ip_reset_sequencer_0">"Generating: j204c_f_rx_tx_ip_reset_sequencer_0"</message>
+   <message level="Info" culprit="j204c_f_rx_tx_ip_reset_sequencer_0">"Generating: altera_reset_sequencer"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_reset_sequencer"
+   version="19.3.0"
+   name="altera_reset_sequencer">
+  <parameter name="USE_DSRT_QUAL" value="0,1,1,0,1,0,0,0,0,0" />
+  <parameter name="ENABLE_CSR" value="1" />
+  <parameter name="LIST_DSRT_SEQ" value="0,1,2,3,4,5,6,7,8,9" />
+  <parameter name="ASRT_SEQ_MSG" value="SEQUENCE DISABLED (All Delays are 0)" />
+  <parameter
+     name="DSRT_SEQ_MSG"
+     value="reset_in_deasserted-&gt; #2-&gt; reset_out0 -&gt;wait_dqual1-&gt; reset_out1 -&gt;wait_dqual2-&gt; reset_out2 -&gt; #100-&gt; reset_out3 -&gt;wait_dqual4-&gt; reset_out4 -&gt; #50-&gt; reset_out5" />
+  <parameter
+     name="RESET_OUT_NAME"
+     value="reset_out0,reset_out1,reset_out2,reset_out3,reset_out4,reset_out5" />
+  <parameter name="LIST_ASRT_SEQ" value="0,1,2,3,4,5,6,7,8,9" />
+  <parameter name="LIST_DSRT_DELAY" value="2,2,0,100,0,50,0,0,0,0" />
+  <parameter name="LIST_ASRT_DELAY" value="0,0,0,0,0,0,0,0,0,0" />
+  <generatedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/j204c_f_rx_tx_ip/j204c_f_rx_tx_ip_reset_sequencer_0/altera_reset_sequencer_1930/synth/altera_reset_sequencer.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/j204c_f_rx_tx_ip/j204c_f_rx_tx_ip_reset_sequencer_0/altera_reset_sequencer_1930/synth/altera_reset_sequencer_main.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/j204c_f_rx_tx_ip/j204c_f_rx_tx_ip_reset_sequencer_0/altera_reset_sequencer_1930/synth/altera_reset_sequencer_seq.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/j204c_f_rx_tx_ip/j204c_f_rx_tx_ip_reset_sequencer_0/altera_reset_sequencer_1930/synth/altera_reset_sequencer_deglitch.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/j204c_f_rx_tx_ip/j204c_f_rx_tx_ip_reset_sequencer_0/altera_reset_sequencer_1930/synth/altera_reset_sequencer_deglitch_main.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/j204c_f_rx_tx_ip/j204c_f_rx_tx_ip_reset_sequencer_0/altera_reset_sequencer_1930/synth/altera_reset_sequencer_dlycntr.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/j204c_f_rx_tx_ip/j204c_f_rx_tx_ip_reset_sequencer_0/altera_reset_sequencer_1930/synth/altera_reset_sequencer_av_csr.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/j204c_f_rx_tx_ip/j204c_f_rx_tx_ip_reset_sequencer_0/altera_reset_sequencer_1930/synth/altera_reset_controller.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/j204c_f_rx_tx_ip/j204c_f_rx_tx_ip_reset_sequencer_0/altera_reset_sequencer_1930/synth/altera_reset_synchronizer.v"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/j204c_f_rx_tx_ip/j204c_f_rx_tx_ip_reset_sequencer_0/altera_reset_sequencer_1930/synth/altera_reset_sequencer.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/j204c_f_rx_tx_ip/j204c_f_rx_tx_ip_reset_sequencer_0/altera_reset_sequencer_1930/synth/altera_reset_sequencer_main.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/j204c_f_rx_tx_ip/j204c_f_rx_tx_ip_reset_sequencer_0/altera_reset_sequencer_1930/synth/altera_reset_sequencer_seq.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/j204c_f_rx_tx_ip/j204c_f_rx_tx_ip_reset_sequencer_0/altera_reset_sequencer_1930/synth/altera_reset_sequencer_deglitch.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/j204c_f_rx_tx_ip/j204c_f_rx_tx_ip_reset_sequencer_0/altera_reset_sequencer_1930/synth/altera_reset_sequencer_deglitch_main.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/j204c_f_rx_tx_ip/j204c_f_rx_tx_ip_reset_sequencer_0/altera_reset_sequencer_1930/synth/altera_reset_sequencer_dlycntr.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/j204c_f_rx_tx_ip/j204c_f_rx_tx_ip_reset_sequencer_0/altera_reset_sequencer_1930/synth/altera_reset_sequencer_av_csr.sv"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/j204c_f_rx_tx_ip/j204c_f_rx_tx_ip_reset_sequencer_0/altera_reset_sequencer_1930/synth/altera_reset_controller.v"
+       attributes="" />
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/j204c_f_rx_tx_ip/j204c_f_rx_tx_ip_reset_sequencer_0/altera_reset_sequencer_1930/synth/altera_reset_synchronizer.v"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/sibgath/intelFPGA_pro/24.1/ip/altera/merlin/altera_reset_sequencer/altera_reset_sequencer_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="j204c_f_rx_tx_ip_reset_sequencer_0"
+     as="reset_sequencer_0" />
+  <messages>
+   <message level="Info" culprit="j204c_f_rx_tx_ip_reset_sequencer_0">"Generating: altera_reset_sequencer"</message>
+  </messages>
+ </entity>
+</deploy>

@@ -1,0 +1,219 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the Intel FPGA Software License Subscription Agreements 
+on the Quartus Prime software download page.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 440 536)
+	(text "tx_dma_dispatcher" (rect 157 0 233 12)(font "SansSerif" (font_size 11)))
+	(text "inst" (rect 8 520 20 532)(font "Arial" ))
+	(port
+		(pt 0 76)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "SansSerif" (font_size 8)))
+		(text "clk" (rect 4 65 22 76)(font "SansSerif" (font_size 8)))
+		(line (pt 0 76)(pt 170 76)(line_width 1))
+	)
+	(port
+		(pt 0 126)
+		(input)
+		(text "reset" (rect 0 0 20 12)(font "SansSerif" (font_size 8)))
+		(text "reset" (rect 4 115 34 126)(font "SansSerif" (font_size 8)))
+		(line (pt 0 126)(pt 170 126)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "csr_writedata[31..0]" (rect 0 0 76 12)(font "SansSerif" (font_size 8)))
+		(text "csr_writedata[31..0]" (rect 4 165 124 176)(font "SansSerif" (font_size 8)))
+		(line (pt 0 176)(pt 170 176)(line_width 3))
+	)
+	(port
+		(pt 0 201)
+		(input)
+		(text "csr_write" (rect 0 0 36 12)(font "SansSerif" (font_size 8)))
+		(text "csr_write" (rect 4 190 58 201)(font "SansSerif" (font_size 8)))
+		(line (pt 0 201)(pt 170 201)(line_width 1))
+	)
+	(port
+		(pt 0 226)
+		(input)
+		(text "csr_byteenable[3..0]" (rect 0 0 81 12)(font "SansSerif" (font_size 8)))
+		(text "csr_byteenable[3..0]" (rect 4 215 124 226)(font "SansSerif" (font_size 8)))
+		(line (pt 0 226)(pt 170 226)(line_width 3))
+	)
+	(port
+		(pt 0 276)
+		(input)
+		(text "csr_read" (rect 0 0 36 12)(font "SansSerif" (font_size 8)))
+		(text "csr_read" (rect 4 265 52 276)(font "SansSerif" (font_size 8)))
+		(line (pt 0 276)(pt 170 276)(line_width 1))
+	)
+	(port
+		(pt 0 301)
+		(input)
+		(text "csr_address[2..0]" (rect 0 0 70 12)(font "SansSerif" (font_size 8)))
+		(text "csr_address[2..0]" (rect 4 290 106 301)(font "SansSerif" (font_size 8)))
+		(line (pt 0 301)(pt 170 301)(line_width 3))
+	)
+	(port
+		(pt 440 126)
+		(input)
+		(text "src_response_ready" (rect 0 0 84 12)(font "SansSerif" (font_size 8)))
+		(text "src_response_ready" (rect 336 115 444 126)(font "SansSerif" (font_size 8)))
+	)
+	(port
+		(pt 0 351)
+		(input)
+		(text "snk_descriptor_data[255..0]" (rect 0 0 110 12)(font "SansSerif" (font_size 8)))
+		(text "snk_descriptor_data[255..0]" (rect 4 340 166 351)(font "SansSerif" (font_size 8)))
+		(line (pt 0 351)(pt 170 351)(line_width 3))
+	)
+	(port
+		(pt 0 376)
+		(input)
+		(text "snk_descriptor_valid" (rect 0 0 82 12)(font "SansSerif" (font_size 8)))
+		(text "snk_descriptor_valid" (rect 4 365 124 376)(font "SansSerif" (font_size 8)))
+		(line (pt 0 376)(pt 170 376)(line_width 1))
+	)
+	(port
+		(pt 440 226)
+		(input)
+		(text "src_read_master_ready" (rect 0 0 100 12)(font "SansSerif" (font_size 8)))
+		(text "src_read_master_ready" (rect 320 215 446 226)(font "SansSerif" (font_size 8)))
+	)
+	(port
+		(pt 0 451)
+		(input)
+		(text "snk_read_master_data[255..0]" (rect 0 0 123 12)(font "SansSerif" (font_size 8)))
+		(text "snk_read_master_data[255..0]" (rect 4 440 172 451)(font "SansSerif" (font_size 8)))
+		(line (pt 0 451)(pt 170 451)(line_width 3))
+	)
+	(port
+		(pt 0 476)
+		(input)
+		(text "snk_read_master_valid" (rect 0 0 95 12)(font "SansSerif" (font_size 8)))
+		(text "snk_read_master_valid" (rect 4 465 130 476)(font "SansSerif" (font_size 8)))
+		(line (pt 0 476)(pt 170 476)(line_width 1))
+	)
+	(port
+		(pt 0 251)
+		(output)
+		(text "csr_readdata[31..0]" (rect 0 0 76 12)(font "SansSerif" (font_size 8)))
+		(text "csr_readdata[31..0]" (rect 4 240 118 251)(font "SansSerif" (font_size 8)))
+	)
+	(port
+		(pt 440 76)
+		(output)
+		(text "src_response_data[255..0]" (rect 0 0 107 12)(font "SansSerif" (font_size 8)))
+		(text "src_response_data[255..0]" (rect 307 65 457 76)(font "SansSerif" (font_size 8)))
+		(line (pt 440 76)(pt 272 76)(line_width 3))
+	)
+	(port
+		(pt 440 101)
+		(output)
+		(text "src_response_valid" (rect 0 0 79 12)(font "SansSerif" (font_size 8)))
+		(text "src_response_valid" (rect 342 90 450 101)(font "SansSerif" (font_size 8)))
+		(line (pt 440 101)(pt 272 101)(line_width 1))
+	)
+	(port
+		(pt 0 401)
+		(output)
+		(text "snk_descriptor_ready" (rect 0 0 88 12)(font "SansSerif" (font_size 8)))
+		(text "snk_descriptor_ready" (rect 4 390 124 401)(font "SansSerif" (font_size 8)))
+	)
+	(port
+		(pt 440 176)
+		(output)
+		(text "src_read_master_data[255..0]" (rect 0 0 122 12)(font "SansSerif" (font_size 8)))
+		(text "src_read_master_data[255..0]" (rect 291 165 459 176)(font "SansSerif" (font_size 8)))
+		(line (pt 440 176)(pt 272 176)(line_width 3))
+	)
+	(port
+		(pt 440 201)
+		(output)
+		(text "src_read_master_valid" (rect 0 0 94 12)(font "SansSerif" (font_size 8)))
+		(text "src_read_master_valid" (rect 326 190 452 201)(font "SansSerif" (font_size 8)))
+		(line (pt 440 201)(pt 272 201)(line_width 1))
+	)
+	(port
+		(pt 0 501)
+		(output)
+		(text "snk_read_master_ready" (rect 0 0 101 12)(font "SansSerif" (font_size 8)))
+		(text "snk_read_master_ready" (rect 4 490 130 501)(font "SansSerif" (font_size 8)))
+	)
+	(drawing
+		(text "clock" (rect 142 46 314 105)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 175 71 368 152)(font "SansSerif" (color 0 0 0)))
+		(text "clock_reset" (rect 104 96 274 205)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "reset" (rect 175 121 380 252)(font "SansSerif" (color 0 0 0)))
+		(text "CSR" (rect 145 146 308 305)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "writedata" (rect 175 171 404 352)(font "SansSerif" (color 0 0 0)))
+		(text "write" (rect 175 196 380 402)(font "SansSerif" (color 0 0 0)))
+		(text "byteenable" (rect 175 221 410 452)(font "SansSerif" (color 0 0 0)))
+		(text "readdata" (rect 175 246 398 502)(font "SansSerif" (color 0 0 0)))
+		(text "read" (rect 175 271 374 552)(font "SansSerif" (color 0 0 0)))
+		(text "address" (rect 175 296 392 602)(font "SansSerif" (color 0 0 0)))
+		(text "Response_Source" (rect 273 46 636 105)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 251 71 526 152)(font "SansSerif" (color 0 0 0)))
+		(text "valid" (rect 249 96 528 202)(font "SansSerif" (color 0 0 0)))
+		(text "ready" (rect 244 121 518 252)(font "SansSerif" (color 0 0 0)))
+		(text "Descriptor_Sink" (rect 78 321 246 655)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 175 346 374 702)(font "SansSerif" (color 0 0 0)))
+		(text "valid" (rect 175 371 380 752)(font "SansSerif" (color 0 0 0)))
+		(text "ready" (rect 175 396 380 802)(font "SansSerif" (color 0 0 0)))
+		(text "Read_Command_Source" (rect 273 146 660 305)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 251 171 526 352)(font "SansSerif" (color 0 0 0)))
+		(text "valid" (rect 249 196 528 402)(font "SansSerif" (color 0 0 0)))
+		(text "ready" (rect 244 221 518 452)(font "SansSerif" (color 0 0 0)))
+		(text "Read_Response_Sink" (rect 42 421 192 855)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 175 446 374 902)(font "SansSerif" (color 0 0 0)))
+		(text "valid" (rect 175 471 380 952)(font "SansSerif" (color 0 0 0)))
+		(text "ready" (rect 175 496 380 1002)(font "SansSerif" (color 0 0 0)))
+		(text " tx_dma_dispatcher " (rect 357 526 828 1062)(font "SansSerif" ))
+		(line (pt 170 34)(pt 272 34)(line_width 1))
+		(line (pt 272 34)(pt 272 526)(line_width 1))
+		(line (pt 170 526)(pt 272 526)(line_width 1))
+		(line (pt 170 34)(pt 170 526)(line_width 1))
+		(line (pt 171 55)(pt 171 80)(line_width 1))
+		(line (pt 172 55)(pt 172 80)(line_width 1))
+		(line (pt 171 105)(pt 171 130)(line_width 1))
+		(line (pt 172 105)(pt 172 130)(line_width 1))
+		(line (pt 440 251)(pt 170 251)(line_width 3))
+		(line (pt 171 155)(pt 171 305)(line_width 1))
+		(line (pt 172 155)(pt 172 305)(line_width 1))
+		(line (pt 442 126)(pt 272 126)(line_width 1))
+		(line (pt 271 55)(pt 271 130)(line_width 1))
+		(line (pt 270 55)(pt 270 130)(line_width 1))
+		(line (pt 440 401)(pt 170 401)(line_width 1))
+		(line (pt 171 330)(pt 171 405)(line_width 1))
+		(line (pt 172 330)(pt 172 405)(line_width 1))
+		(line (pt 442 226)(pt 272 226)(line_width 1))
+		(line (pt 271 155)(pt 271 230)(line_width 1))
+		(line (pt 270 155)(pt 270 230)(line_width 1))
+		(line (pt 440 501)(pt 170 501)(line_width 1))
+		(line (pt 171 430)(pt 171 505)(line_width 1))
+		(line (pt 172 430)(pt 172 505)(line_width 1))
+		(line (pt 0 0)(pt 440 0)(line_width 1))
+		(line (pt 440 0)(pt 440 543)(line_width 1))
+		(line (pt 0 543)(pt 440 543)(line_width 1))
+		(line (pt 0 0)(pt 0 543)(line_width 1))
+	)
+)

@@ -1,0 +1,39 @@
+set_global_assignment -entity "tx_dma_fifo_0" -library "tx_dma_fifo_0" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "tx_dma_fifo_0" -library "tx_dma_fifo_0" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "tx_dma_fifo_0" -library "tx_dma_fifo_0" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "tx_dma_fifo_0" -library "tx_dma_fifo_0" -name IP_TOOL_VENDOR_NAME "Altera Corporation"
+set_global_assignment -entity "tx_dma_fifo_0" -library "tx_dma_fifo_0" -name IP_TOP_LEVEL_COMPONENT_NAME "tx_dma_fifo"
+set_global_assignment -library "tx_dma_fifo_0" -name SOPCINFO_FILE [file join $::quartus(qip_path) "tx_dma_fifo_0.sopcinfo"]
+set_global_assignment -entity "tx_dma_fifo_0" -library "tx_dma_fifo_0" -name SLD_INFO "QSYS_NAME tx_dma_fifo_0 HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "tx_dma_fifo_0" -name MISC_FILE [file join $::quartus(qip_path) "tx_dma_fifo_0.cmp"]
+set_global_assignment -entity "tx_dma_fifo_0" -library "tx_dma_fifo_0" -name IP_TARGETED_DEVICE_FAMILY "Agilex 7"
+set_global_assignment -entity "tx_dma_fifo_0" -library "tx_dma_fifo_0" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 7}"
+set_global_assignment -entity "tx_dma_fifo_0" -library "tx_dma_fifo_0" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "tx_dma_fifo_0" -name MISC_FILE [file join $::quartus(qip_path) "../tx_dma_fifo_0.ip"]
+
+set_global_assignment -entity "tx_dma_fifo" -library "tx_dma_fifo_10" -name IP_COMPONENT_NAME "dHhfZG1hX2ZpZm8="
+set_global_assignment -entity "tx_dma_fifo" -library "tx_dma_fifo_10" -name IP_COMPONENT_DISPLAY_NAME "dHhfZG1hX2ZpZm8="
+set_global_assignment -entity "tx_dma_fifo" -library "tx_dma_fifo_10" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "tx_dma_fifo" -library "tx_dma_fifo_10" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "tx_dma_fifo" -library "tx_dma_fifo_10" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "tx_dma_fifo_0" -library "tx_dma_fifo_0" -name IP_COMPONENT_NAME "dHhfZG1hX2ZpZm9fMA=="
+set_global_assignment -entity "tx_dma_fifo_0" -library "tx_dma_fifo_0" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "tx_dma_fifo_0" -library "tx_dma_fifo_0" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "tx_dma_fifo_0" -library "tx_dma_fifo_0" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "tx_dma_fifo_0" -library "tx_dma_fifo_0" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "tx_dma_fifo_0" -library "tx_dma_fifo_0" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "tx_dma_fifo_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "tx_dma_fifo_10/synth/tx_dma_fifo.sv"]
+set_global_assignment -library "tx_dma_fifo_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "tx_dma_fifo_10/synth/components_pkg.sv"]
+set_global_assignment -library "tx_dma_fifo_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "tx_dma_fifo_10/synth/cdc_packet_fifo.sv"]
+set_global_assignment -library "tx_dma_fifo_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "tx_dma_fifo_10/synth/dc_fifo_param.sv"]
+set_global_assignment -library "tx_dma_fifo_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "tx_dma_fifo_10/synth/cdc_avmm_sync_v2.sv"]
+set_global_assignment -library "tx_dma_fifo_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "tx_dma_fifo_10/synth/cdc_synchronizer.sv"]
+set_global_assignment -library "tx_dma_fifo_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "tx_dma_fifo_10/synth/s10_memory.sv"]
+set_global_assignment -library "tx_dma_fifo_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "tx_dma_fifo_10/synth/cdc_toggle_synchronizer.sv"]
+set_global_assignment -library "tx_dma_fifo_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "tx_dma_fifo_10/synth/period_bus_sync.sv"]
+set_global_assignment -library "tx_dma_fifo_10" -name SDC_FILE [file join $::quartus(qip_path) "tx_dma_fifo_10/synth/dc_fifo_param.sdc"]
+set_global_assignment -library "tx_dma_fifo_0" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/tx_dma_fifo_0.v"]
+

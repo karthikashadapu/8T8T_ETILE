@@ -1,0 +1,13 @@
+# This is the QIP file for DSP Builder for Intel FPGAs system 'busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz'
+
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/low_phy_ul_rtl/streamtoblock_fft/streamtoblock_fft_DUT_safe_path_ver.sv
+set_global_assignment -name VHDL_FILE ../../rtl/low_phy_ul_rtl/streamtoblock_fft/streamtoblock_fft_DUT_safe_path.vhd
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/low_phy_ul_rtl/streamtoblock_fft/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz.sv
+set_global_assignment -name HEX_FILE ../../rtl/low_phy_ul_rtl/streamtoblock_fft/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000e_100MHz_mem_x_part0.hex
+set_global_assignment -name HEX_FILE ../../rtl/low_phy_ul_rtl/streamtoblock_fft/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000e_100MHz_mem_x_part1.hex
+set_global_assignment -name HEX_FILE ../../rtl/low_phy_ul_rtl/streamtoblock_fft/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000le_60MHz_mem_x_part0.hex
+set_global_assignment -name HEX_FILE ../../rtl/low_phy_ul_rtl/streamtoblock_fft/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000le_60MHz_mem_x_part1.hex
+set_global_assignment -name HEX_FILE ../../rtl/low_phy_ul_rtl/streamtoblock_fft/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000100MHz_mem_x_a_part0.hex
+set_global_assignment -name HEX_FILE ../../rtl/low_phy_ul_rtl/streamtoblock_fft/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000100MHz_mem_x_a_part1.hex
+set_global_assignment -name HEX_FILE ../../rtl/low_phy_ul_rtl/streamtoblock_fft/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000_60MHz_mem_x_a_part0.hex
+set_global_assignment -name HEX_FILE ../../rtl/low_phy_ul_rtl/streamtoblock_fft/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000_60MHz_mem_x_a_part1.hex

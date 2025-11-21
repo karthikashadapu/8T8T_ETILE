@@ -1,0 +1,115 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the Intel FPGA Software License Subscription Agreements 
+on the Quartus Prime software download page.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 424 264)
+	(text "ghrd_f_mtod_pps_pll" (rect 141 0 227 12)(font "SansSerif" (font_size 11)))
+	(text "inst" (rect 8 248 20 260)(font "Arial" ))
+	(port
+		(pt 0 76)
+		(input)
+		(text "refclk" (rect 0 0 22 12)(font "SansSerif" (font_size 8)))
+		(text "refclk" (rect 4 65 40 76)(font "SansSerif" (font_size 8)))
+		(line (pt 0 76)(pt 119 76)(line_width 1))
+	)
+	(port
+		(pt 0 126)
+		(input)
+		(text "rst" (rect 0 0 10 12)(font "SansSerif" (font_size 8)))
+		(text "rst" (rect 4 115 22 126)(font "SansSerif" (font_size 8)))
+		(line (pt 0 126)(pt 119 126)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "reconfig_to_pll[29..0]" (rect 0 0 82 12)(font "SansSerif" (font_size 8)))
+		(text "reconfig_to_pll[29..0]" (rect 4 165 136 176)(font "SansSerif" (font_size 8)))
+		(line (pt 0 176)(pt 119 176)(line_width 3))
+	)
+	(port
+		(pt 424 76)
+		(output)
+		(text "locked" (rect 0 0 24 12)(font "SansSerif" (font_size 8)))
+		(text "locked" (rect 392 65 428 76)(font "SansSerif" (font_size 8)))
+		(line (pt 424 76)(pt 289 76)(line_width 1))
+	)
+	(port
+		(pt 424 126)
+		(output)
+		(text "reconfig_from_pll[10..0]" (rect 0 0 94 12)(font "SansSerif" (font_size 8)))
+		(text "reconfig_from_pll[10..0]" (rect 307 115 451 126)(font "SansSerif" (font_size 8)))
+		(line (pt 424 126)(pt 289 126)(line_width 3))
+	)
+	(port
+		(pt 424 176)
+		(output)
+		(text "outclk_0" (rect 0 0 33 12)(font "SansSerif" (font_size 8)))
+		(text "outclk_0" (rect 382 165 430 176)(font "SansSerif" (font_size 8)))
+		(line (pt 424 176)(pt 289 176)(line_width 1))
+	)
+	(port
+		(pt 424 226)
+		(output)
+		(text "outclk_1" (rect 0 0 31 12)(font "SansSerif" (font_size 8)))
+		(text "outclk_1" (rect 384 215 432 226)(font "SansSerif" (font_size 8)))
+		(line (pt 424 226)(pt 289 226)(line_width 1))
+	)
+	(drawing
+		(text "refclk" (rect 87 46 210 105)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 124 71 266 152)(font "SansSerif" (color 0 0 0)))
+		(text "locked" (rect 290 46 616 105)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 259 71 554 152)(font "SansSerif" (color 0 0 0)))
+		(text "reset" (rect 90 96 210 205)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "reset" (rect 124 121 278 252)(font "SansSerif" (color 0 0 0)))
+		(text "reconfig_to_pll" (rect 33 146 156 305)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "reconfig_to_pll" (rect 124 171 338 352)(font "SansSerif" (color 0 0 0)))
+		(text "reconfig_from_pll" (rect 290 96 682 205)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "reconfig_from_pll" (rect 209 121 520 252)(font "SansSerif" (color 0 0 0)))
+		(text "outclk0" (rect 290 146 622 305)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 274 171 566 352)(font "SansSerif" (color 0 0 0)))
+		(text "outclk1" (rect 290 196 622 405)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 274 221 566 452)(font "SansSerif" (color 0 0 0)))
+		(text " ghrd_f_mtod_pps_pll " (rect 330 251 786 512)(font "SansSerif" ))
+		(line (pt 119 34)(pt 289 34)(line_width 1))
+		(line (pt 289 34)(pt 289 251)(line_width 1))
+		(line (pt 119 251)(pt 289 251)(line_width 1))
+		(line (pt 119 34)(pt 119 251)(line_width 1))
+		(line (pt 120 55)(pt 120 80)(line_width 1))
+		(line (pt 121 55)(pt 121 80)(line_width 1))
+		(line (pt 288 55)(pt 288 80)(line_width 1))
+		(line (pt 287 55)(pt 287 80)(line_width 1))
+		(line (pt 120 105)(pt 120 130)(line_width 1))
+		(line (pt 121 105)(pt 121 130)(line_width 1))
+		(line (pt 120 155)(pt 120 180)(line_width 1))
+		(line (pt 121 155)(pt 121 180)(line_width 1))
+		(line (pt 288 105)(pt 288 130)(line_width 1))
+		(line (pt 287 105)(pt 287 130)(line_width 1))
+		(line (pt 288 155)(pt 288 180)(line_width 1))
+		(line (pt 287 155)(pt 287 180)(line_width 1))
+		(line (pt 288 205)(pt 288 230)(line_width 1))
+		(line (pt 287 205)(pt 287 230)(line_width 1))
+		(line (pt 0 0)(pt 424 0)(line_width 1))
+		(line (pt 424 0)(pt 424 268)(line_width 1))
+		(line (pt 0 268)(pt 424 268)(line_width 1))
+		(line (pt 0 0)(pt 0 268)(line_width 1))
+	)
+)

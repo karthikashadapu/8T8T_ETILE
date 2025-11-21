@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.10.16.14:12:36"
+ outputDirectory="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/ftile_eth_tod_stack/common/ghrd_f_mtod_pps_pll_rcfg/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGIB027R31B1E2V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="2"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_MGMT_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_MGMT_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_MGMT_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="mgmt_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="mgmt_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="mgmt_reset" kind="reset" start="0">
+   <property name="associatedClock" value="mgmt_clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="mgmt_reset" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="mgmt_avalon_slave" kind="avalon" start="0">
+   <property name="addressAlignment" value="DYNAMIC" />
+   <property name="addressGroup" value="0" />
+   <property name="addressSpan" value="1024" />
+   <property name="addressUnits" value="WORDS" />
+   <property name="alwaysBurstMaxBurst" value="false" />
+   <property name="associatedClock" value="mgmt_clk" />
+   <property name="associatedReset" value="mgmt_reset" />
+   <property name="bitsPerSymbol" value="8" />
+   <property name="bridgedAddressOffset" value="0" />
+   <property name="bridgesToMaster" value="" />
+   <property name="burstOnBurstBoundariesOnly" value="false" />
+   <property name="burstcountUnits" value="WORDS" />
+   <property name="constantBurstBehavior" value="false" />
+   <property name="explicitAddressSpan" value="0" />
+   <property name="holdTime" value="0" />
+   <property name="interleaveBursts" value="false" />
+   <property name="isBigEndian" value="false" />
+   <property name="isFlash" value="false" />
+   <property name="isMemoryDevice" value="false" />
+   <property name="isNonVolatileStorage" value="false" />
+   <property name="linewrapBursts" value="false" />
+   <property name="maximumPendingReadTransactions" value="0" />
+   <property name="maximumPendingWriteTransactions" value="0" />
+   <property name="minimumReadLatency" value="1" />
+   <property name="minimumResponseLatency" value="1" />
+   <property name="minimumUninterruptedRunLength" value="1" />
+   <property name="prSafe" value="false" />
+   <property name="printableDevice" value="false" />
+   <property name="readLatency" value="0" />
+   <property name="readWaitStates" value="1" />
+   <property name="readWaitTime" value="1" />
+   <property name="registerIncomingSignals" value="false" />
+   <property name="registerOutgoingSignals" value="false" />
+   <property name="setupTime" value="0" />
+   <property name="timingUnits" value="Cycles" />
+   <property name="transparentBridge" value="false" />
+   <property name="waitrequestAllowance" value="0" />
+   <property name="wellBehavedWaitrequest" value="false" />
+   <property name="writeLatency" value="0" />
+   <property name="writeWaitStates" value="0" />
+   <property name="writeWaitTime" value="0" />
+   <property name="dfhFeatureGuid" value="0" />
+   <property name="dfhGroupId" value="0" />
+   <property name="dfhParameterId" value="" />
+   <property name="dfhParameterName" value="" />
+   <property name="dfhParameterVersion" value="" />
+   <property name="dfhParameterData" value="" />
+   <property name="dfhParameterDataLength" value="" />
+   <property name="dfhFeatureMajorVersion" value="0" />
+   <property name="dfhFeatureMinorVersion" value="0" />
+   <property name="dfhFeatureId" value="35" />
+   <property name="dfhFeatureType" value="3" />
+   <port
+       name="mgmt_waitrequest"
+       direction="output"
+       role="waitrequest"
+       width="1" />
+   <port name="mgmt_write" direction="input" role="write" width="1" />
+   <port name="mgmt_read" direction="input" role="read" width="1" />
+   <port name="mgmt_writedata" direction="input" role="writedata" width="8" />
+   <port name="mgmt_readdata" direction="output" role="readdata" width="8" />
+   <port name="mgmt_address" direction="input" role="address" width="10" />
+  </interface>
+  <interface name="reconfig_to_pll" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="reconfig_to_pll"
+       direction="output"
+       role="reconfig_to_pll"
+       width="30" />
+  </interface>
+  <interface name="reconfig_from_pll" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="reconfig_from_pll"
+       direction="input"
+       role="reconfig_from_pll"
+       width="11" />
+  </interface>
+ </perimeter>
+ <entity
+   kind="ghrd_f_mtod_pps_pll_rcfg"
+   version="1.0"
+   name="ghrd_f_mtod_pps_pll_rcfg">
+  <parameter name="AUTO_MGMT_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="AGFB027R24C2E2VR2" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_MGMT_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_MGMT_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <generatedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/ftile_eth_tod_stack/common/ghrd_f_mtod_pps_pll_rcfg/synth/ghrd_f_mtod_pps_pll_rcfg.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/ftile_eth_tod_stack/common/ghrd_f_mtod_pps_pll_rcfg/synth/ghrd_f_mtod_pps_pll_rcfg.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/ftile_eth_tod_stack/common/ghrd_f_mtod_pps_pll_rcfg.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/ip/altera/altera_iopll_reconfig/iopll_reconfig_hw.tcl" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.sopcmodel.components.hwtclvalidator.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.sopcmodel.components.tclelement.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.hdlcomponent.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.sopcmodel.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.qsys.model.common.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.privateinterfaces.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.intel.shared.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/jacl1.3.2a.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/commons-text-1.10.0.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/commons-lang3-3.12.0.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/guava-32.0.1-jre.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/jfreechart-1.5.0.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/miglayout-swing-5.2.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/docking-frames-common-1.1.2_20c.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/bare-bones-browser-launch-3.2.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/jaxb-api.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/jaxb-jxc.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/jaxb-runtime.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/jaxb-xjc.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/codemodel.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/dtd-parser.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/FastInfoset.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/istack-commons-runtime.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/istack-commons-tools.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/javax.activation-api.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/relaxng-datatype.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/rngom.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/stax-ex.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/txw2.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/xsom.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/failureaccess-1.0.1.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/jsr305-3.0.2.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/checker-qual-3.33.0.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/j2objc-annotations-2.8.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/miglayout-core-5.2.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/docking-frames-core-1.1.2_20c.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.qsys.ipxact.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/antlr4-runtime-4.7.2.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.sopc.generator.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.sopcreport.build.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.sopcdocument.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.hdlwriter.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.qsys.ipxact.module.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.sopclibrary.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.sopcmodel.atlantic.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.sopcreport.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.ddmwriter.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.intel.quartus.dni.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.sopc.qsymbol.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.sopcmodel.transforms.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.qsys.hypericonnect.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.qsys.cmsis.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.tcl.interpreter.jar" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="ghrd_f_mtod_pps_pll_rcfg">"Generating: ghrd_f_mtod_pps_pll_rcfg"</message>
+   <message level="Info" culprit="ghrd_f_mtod_pps_pll_rcfg">"Generating: altera_iopll_reconfig_top"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_iopll_reconfig"
+   version="19.4.0"
+   name="altera_iopll_reconfig_top">
+  <parameter name="MIF_ADDRESS_30" value="0" />
+  <parameter name="MIF_ADDRESS_31" value="0" />
+  <parameter name="gui_avalon_addr_width" value="10" />
+  <parameter name="TO_PLL_WIDTH" value="30" />
+  <parameter name="MIF_ADDRESS_27" value="0" />
+  <parameter name="MIF_ADDRESS_26" value="0" />
+  <parameter name="gui_device_family" value="Agilex 7" />
+  <parameter name="MIF_ADDRESS_29" value="0" />
+  <parameter name="gui_advanced_reconfig" value="false" />
+  <parameter name="MIF_ADDRESS_28" value="0" />
+  <parameter name="ROM_NUM_WORDS" value="4" />
+  <parameter name="MIF_ADDRESS_23" value="0" />
+  <parameter name="MIF_ADDRESS_22" value="0" />
+  <parameter name="MIF_ADDRESS_25" value="0" />
+  <parameter name="MIF_EOF" value="65535" />
+  <parameter name="MIF_ADDRESS_24" value="0" />
+  <parameter name="MIF_ADDRESS_3" value="0" />
+  <parameter name="MIF_ADDRESS_2" value="0" />
+  <parameter name="AVALON_ADDR_TIEOFF_WIDTH" value="0" />
+  <parameter name="MIF_ADDRESS_1" value="0" />
+  <parameter name="MIF_ADDRESS_0" value="0" />
+  <parameter name="MIF_ADDRESS_7" value="0" />
+  <parameter name="MIF_ADDRESS_6" value="0" />
+  <parameter name="MIF_ADDRESS_5" value="0" />
+  <parameter name="MIF_ADDRESS_4" value="0" />
+  <parameter name="MIF_ADDRESS_9" value="0" />
+  <parameter name="DPRIO_MODE_SEL_WIDTH" value="2" />
+  <parameter name="MIF_ADDRESS_8" value="0" />
+  <parameter name="DPRIO_DATA_WIDTH" value="8" />
+  <parameter name="FROM_PLL_WIDTH" value="11" />
+  <parameter name="SHIFT_REGISTER_DEPTH" value="0" />
+  <parameter
+     name="validated_mif_filename"
+     value="/home/lena/intelFPGA_pro/24.1/ip/altera/altera_iopll_reconfig/recalibration.mif" />
+  <parameter name="MIF_ADDRESS_10" value="0" />
+  <parameter name="debug_mode" value="false" />
+  <parameter
+     name="table_names"
+     value="&lt;html&gt;&lt;b&gt;General Information&lt;/b&gt;&lt;br&gt;,Number of IOPLL Configurations,Depth of MIF File,Width of MIF File,,&lt;html&gt;&lt;b&gt;Configuration 0 parameters&lt;/b&gt;&lt;br&gt;,Configuration 0 size,Configuration 0 name,Configuration 1 size" />
+  <parameter name="device_family" value="Agilex 7" />
+  <parameter name="ROM_DATA_WIDTH" value="16" />
+  <parameter name="WAIT_FOR_LOCK" value="false" />
+  <parameter name="DPRIO_GATING_ADDR" value="22" />
+  <parameter name="device_opn" value="AGFB027R24C2E2VR2" />
+  <parameter name="DPRIO_ADDR_WIDTH" value="8" />
+  <parameter name="gui_reconfig_mif_filename" value="recalibration.mif" />
+  <parameter name="MIF_ADDRESS_21" value="0" />
+  <parameter name="MIF_ADDRESS_20" value="0" />
+  <parameter name="gui_copy_mif" value="false" />
+  <parameter name="gui_wait_for_lock" value="false" />
+  <parameter name="ADVANCED_RECONFIG" value="false" />
+  <parameter name="gui_cal_mode" value="false" />
+  <parameter name="MIF_ADDRESS_19" value="0" />
+  <parameter name="ROM_ADDR_WIDTH" value="2" />
+  <parameter
+     name="reconfig_mif_filename"
+     value="/home/lena/intelFPGA_pro/24.1/ip/altera/altera_iopll_reconfig/recalibration.mif" />
+  <parameter name="MIF_ADDRESS_16" value="0" />
+  <parameter name="MIF_ADDRESS_15" value="0" />
+  <parameter name="MIF_ADDRESS_18" value="0" />
+  <parameter name="MIF_ADDRESS_17" value="0" />
+  <parameter name="MIF_ADDRESS_12" value="0" />
+  <parameter name="table_values" value=",1,4,15,,,2,recalibration,0" />
+  <parameter name="MIF_ADDRESS_11" value="0" />
+  <parameter name="MIF_ADDRESS_14" value="0" />
+  <parameter name="MIF_ADDRESS_13" value="0" />
+  <generatedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/ftile_eth_tod_stack/common/ghrd_f_mtod_pps_pll_rcfg/altera_iopll_reconfig_1940/synth/altera_iopll_reconfig_top.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/ftile_eth_tod_stack/common/ghrd_f_mtod_pps_pll_rcfg/altera_iopll_reconfig_1940/synth/altera_iopll_reconfig_fsm.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/ftile_eth_tod_stack/common/ghrd_f_mtod_pps_pll_rcfg/altera_iopll_reconfig_1940/synth/pulse_gen.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/ftile_eth_tod_stack/common/ghrd_f_mtod_pps_pll_rcfg/altera_iopll_reconfig_1940/synth/shift.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/ftile_eth_tod_stack/common/ghrd_f_mtod_pps_pll_rcfg/altera_iopll_reconfig_1940/synth/recalibration.mif"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/ftile_eth_tod_stack/common/ghrd_f_mtod_pps_pll_rcfg/altera_iopll_reconfig_1940/synth/altera_iopll_reconfig_top.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/ftile_eth_tod_stack/common/ghrd_f_mtod_pps_pll_rcfg/altera_iopll_reconfig_1940/synth/altera_iopll_reconfig_fsm.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/ftile_eth_tod_stack/common/ghrd_f_mtod_pps_pll_rcfg/altera_iopll_reconfig_1940/synth/pulse_gen.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/ftile_eth_tod_stack/common/ghrd_f_mtod_pps_pll_rcfg/altera_iopll_reconfig_1940/synth/shift.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/ftile_eth_tod_stack/common/ghrd_f_mtod_pps_pll_rcfg/altera_iopll_reconfig_1940/synth/recalibration.mif"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/ip/altera/altera_iopll_reconfig/iopll_reconfig_hw.tcl" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.sopcmodel.components.hwtclvalidator.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.sopcmodel.components.tclelement.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.hdlcomponent.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.sopcmodel.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.qsys.model.common.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.privateinterfaces.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.intel.shared.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/jacl1.3.2a.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/commons-text-1.10.0.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/commons-lang3-3.12.0.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/guava-32.0.1-jre.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/jfreechart-1.5.0.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/miglayout-swing-5.2.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/docking-frames-common-1.1.2_20c.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/bare-bones-browser-launch-3.2.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/jaxb-api.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/jaxb-jxc.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/jaxb-runtime.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/jaxb-xjc.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/codemodel.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/dtd-parser.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/FastInfoset.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/istack-commons-runtime.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/istack-commons-tools.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/javax.activation-api.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/relaxng-datatype.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/rngom.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/stax-ex.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/txw2.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/xsom.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/failureaccess-1.0.1.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/jsr305-3.0.2.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/checker-qual-3.33.0.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/j2objc-annotations-2.8.jar" />
+   <file path="/home/lena/intelFPGA_pro/24.1/qsys/lib/miglayout-core-5.2.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/docking-frames-core-1.1.2_20c.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.qsys.ipxact.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/antlr4-runtime-4.7.2.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.sopc.generator.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.sopcreport.build.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.sopcdocument.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.hdlwriter.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.qsys.ipxact.module.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.sopclibrary.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.sopcmodel.atlantic.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.sopcreport.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.ddmwriter.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.intel.quartus.dni.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.sopc.qsymbol.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.sopcmodel.transforms.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.qsys.hypericonnect.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.qsys.cmsis.jar" />
+   <file
+       path="/home/lena/intelFPGA_pro/24.1/qsys/lib/com.altera.tcl.interpreter.jar" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="ghrd_f_mtod_pps_pll_rcfg" as="altera_iopll_reconfig_0" />
+  <messages>
+   <message level="Info" culprit="ghrd_f_mtod_pps_pll_rcfg">"Generating: altera_iopll_reconfig_top"</message>
+  </messages>
+ </entity>
+</deploy>

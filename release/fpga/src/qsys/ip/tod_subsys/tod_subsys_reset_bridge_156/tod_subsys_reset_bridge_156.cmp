@@ -1,0 +1,8 @@
+	component tod_subsys_reset_bridge_156 is
+		port (
+			clk       : in  std_logic := 'X'; -- clk
+			in_reset  : in  std_logic := 'X'; -- reset
+			out_reset : out std_logic         -- reset
+		);
+	end component tod_subsys_reset_bridge_156;
+

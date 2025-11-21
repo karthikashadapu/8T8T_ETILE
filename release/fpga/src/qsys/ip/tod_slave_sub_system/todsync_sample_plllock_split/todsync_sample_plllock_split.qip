@@ -1,0 +1,30 @@
+set_global_assignment -entity "todsync_sample_plllock_split" -library "todsync_sample_plllock_split" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "todsync_sample_plllock_split" -library "todsync_sample_plllock_split" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "todsync_sample_plllock_split" -library "todsync_sample_plllock_split" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "todsync_sample_plllock_split" -library "todsync_sample_plllock_split" -name IP_TOOL_VENDOR_NAME "Altera Corporation"
+set_global_assignment -entity "todsync_sample_plllock_split" -library "todsync_sample_plllock_split" -name IP_TOP_LEVEL_COMPONENT_NAME "conduit_split"
+set_global_assignment -library "todsync_sample_plllock_split" -name SOPCINFO_FILE [file join $::quartus(qip_path) "todsync_sample_plllock_split.sopcinfo"]
+set_global_assignment -entity "todsync_sample_plllock_split" -library "todsync_sample_plllock_split" -name SLD_INFO "QSYS_NAME todsync_sample_plllock_split HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "todsync_sample_plllock_split" -name MISC_FILE [file join $::quartus(qip_path) "todsync_sample_plllock_split.cmp"]
+set_global_assignment -entity "todsync_sample_plllock_split" -library "todsync_sample_plllock_split" -name IP_TARGETED_DEVICE_FAMILY "Agilex 7"
+set_global_assignment -entity "todsync_sample_plllock_split" -library "todsync_sample_plllock_split" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 7}"
+set_global_assignment -entity "todsync_sample_plllock_split" -library "todsync_sample_plllock_split" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "todsync_sample_plllock_split" -name MISC_FILE [file join $::quartus(qip_path) "../todsync_sample_plllock_split.ip"]
+
+set_global_assignment -entity "conduit_split" -library "conduit_split_10" -name IP_COMPONENT_NAME "Y29uZHVpdF9zcGxpdA=="
+set_global_assignment -entity "conduit_split" -library "conduit_split_10" -name IP_COMPONENT_DISPLAY_NAME "Y29uZHVpdF9zcGxpdA=="
+set_global_assignment -entity "conduit_split" -library "conduit_split_10" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "conduit_split" -library "conduit_split_10" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "conduit_split" -library "conduit_split_10" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "todsync_sample_plllock_split" -library "todsync_sample_plllock_split" -name IP_COMPONENT_NAME "dG9kc3luY19zYW1wbGVfcGxsbG9ja19zcGxpdA=="
+set_global_assignment -entity "todsync_sample_plllock_split" -library "todsync_sample_plllock_split" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "todsync_sample_plllock_split" -library "todsync_sample_plllock_split" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "todsync_sample_plllock_split" -library "todsync_sample_plllock_split" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "todsync_sample_plllock_split" -library "todsync_sample_plllock_split" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "todsync_sample_plllock_split" -library "todsync_sample_plllock_split" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "conduit_split_10" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "conduit_split_10/synth/conduit_split.sv"]
+set_global_assignment -library "todsync_sample_plllock_split" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/todsync_sample_plllock_split.v"]
+

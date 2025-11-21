@@ -1,0 +1,7 @@
+# This is the QIP file for DSP Builder for Intel FPGAs system 'streamtoblock_fft_DUT'
+
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/low_phy_ul_rtl/streamtoblock_fft/streamtoblock_fft_DUT_safe_path_ver.sv
+set_global_assignment -name VHDL_FILE ../../rtl/low_phy_ul_rtl/streamtoblock_fft/streamtoblock_fft_DUT_safe_path.vhd
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/low_phy_ul_rtl/streamtoblock_fft/streamtoblock_fft_DUT.sv
+set_global_assignment -name QIP_FILE ../../rtl/low_phy_ul_rtl/streamtoblock_fft/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz.qip
+set_global_assignment -name QIP_FILE ../../rtl/low_phy_ul_rtl/streamtoblock_fft/streamtoblock_fft_DUT_S2B_FFT_PC.qip

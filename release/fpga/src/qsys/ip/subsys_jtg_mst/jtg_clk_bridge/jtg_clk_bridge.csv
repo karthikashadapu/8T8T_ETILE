@@ -1,0 +1,16 @@
+# system info jtg_clk_bridge on 2025.10.16.14:13:53
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for jtg_clk_bridge on 2025.10.16.14:13:53
+files:
+filepath,kind,attributes,module,is_top
+sim/jtg_clk_bridge.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,jtg_clk_bridge,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module

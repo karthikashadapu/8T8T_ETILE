@@ -1,0 +1,8 @@
+# This is the QIP file for DSP Builder for Intel FPGAs system 'ifft_blocktostream_DUT_low_phy_dl_PhaseCompensation_lite'
+
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/low_phy_dl_rtl/ifft_blocktostream/ifft_blocktostream_DUT_safe_path_ver.sv
+set_global_assignment -name VHDL_FILE ../../rtl/low_phy_dl_rtl/ifft_blocktostream/ifft_blocktostream_DUT_safe_path.vhd
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/low_phy_dl_rtl/ifft_blocktostream/ifft_blocktostream_DUT_low_phy_dl_PhaseCompensation_lite.sv
+set_global_assignment -name QIP_FILE ../../rtl/low_phy_dl_rtl/ifft_blocktostream/ifft_blocktostream_DUT_low_phy_dl_PhaseCompensation_lite_ComplexMixer.qip
+set_global_assignment -name QIP_FILE ../../rtl/low_phy_dl_rtl/ifft_blocktostream/ifft_blocktostream_DUT_low_phy_dl_PhaseCompensation_lite_PhasorGenerate.qip
+set_global_assignment -name QIP_FILE ../../rtl/low_phy_dl_rtl/ifft_blocktostream/ifft_blocktostream_DUT_low_phy_dl_PhaseCompensation_lite_SOP_EOP_gen.qip

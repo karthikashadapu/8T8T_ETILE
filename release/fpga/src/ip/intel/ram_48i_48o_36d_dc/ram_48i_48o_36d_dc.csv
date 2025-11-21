@@ -1,0 +1,18 @@
+# system info ram_48i_48o_36d_dc on 2025.10.16.13:47:02
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for ram_48i_48o_36d_dc on 2025.10.16.13:47:02
+files:
+filepath,kind,attributes,module,is_top
+sim/ram_48i_48o_36d_dc.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,ram_48i_48o_36d_dc,true
+ram_2port_2041/sim/ram_48i_48o_36d_dc_ram_2port_2041_442hegq.v,VERILOG,,ram_48i_48o_36d_dc_ram_2port_2041_442hegq,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+ram_48i_48o_36d_dc.ram_2port_0,ram_48i_48o_36d_dc_ram_2port_2041_442hegq

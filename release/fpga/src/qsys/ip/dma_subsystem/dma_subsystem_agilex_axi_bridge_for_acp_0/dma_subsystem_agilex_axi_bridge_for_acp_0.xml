@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.10.16.14:10:48"
+ outputDirectory="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dma_subsystem/dma_subsystem_agilex_axi_bridge_for_acp_0/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGFB027R24C2E3V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="2"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CSR_CLOCK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CSR_CLOCK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CSR_CLOCK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_M0_ADDRESS_MAP"
+     type="AddressMap"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_M0_ADDRESS_WIDTH"
+     type="AddressWidthType"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clock" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="reset" kind="reset" start="0">
+   <property name="associatedClock" value="clock" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="reset" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="csr_clock" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="csr_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="csr_reset" kind="reset" start="0">
+   <property name="associatedClock" value="csr_clock" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="csr_reset" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="csr" kind="avalon" start="0">
+   <property name="addressAlignment" value="DYNAMIC" />
+   <property name="addressGroup" value="0" />
+   <property name="addressSpan" value="8" />
+   <property name="addressUnits" value="WORDS" />
+   <property name="alwaysBurstMaxBurst" value="false" />
+   <property name="associatedClock" value="csr_clock" />
+   <property name="associatedReset" value="csr_reset" />
+   <property name="bitsPerSymbol" value="8" />
+   <property name="bridgedAddressOffset" value="0" />
+   <property name="bridgesToMaster" value="" />
+   <property name="burstOnBurstBoundariesOnly" value="false" />
+   <property name="burstcountUnits" value="WORDS" />
+   <property name="constantBurstBehavior" value="false" />
+   <property name="explicitAddressSpan" value="0" />
+   <property name="holdTime" value="0" />
+   <property name="interleaveBursts" value="false" />
+   <property name="isBigEndian" value="false" />
+   <property name="isFlash" value="false" />
+   <property name="isMemoryDevice" value="false" />
+   <property name="isNonVolatileStorage" value="false" />
+   <property name="linewrapBursts" value="false" />
+   <property name="maximumPendingReadTransactions" value="0" />
+   <property name="maximumPendingWriteTransactions" value="0" />
+   <property name="minimumReadLatency" value="1" />
+   <property name="minimumResponseLatency" value="1" />
+   <property name="minimumUninterruptedRunLength" value="1" />
+   <property name="prSafe" value="false" />
+   <property name="printableDevice" value="false" />
+   <property name="readLatency" value="2" />
+   <property name="readWaitStates" value="0" />
+   <property name="readWaitTime" value="0" />
+   <property name="registerIncomingSignals" value="false" />
+   <property name="registerOutgoingSignals" value="false" />
+   <property name="setupTime" value="0" />
+   <property name="timingUnits" value="Cycles" />
+   <property name="transparentBridge" value="false" />
+   <property name="waitrequestAllowance" value="0" />
+   <property name="wellBehavedWaitrequest" value="false" />
+   <property name="writeLatency" value="0" />
+   <property name="writeWaitStates" value="0" />
+   <property name="writeWaitTime" value="0" />
+   <property name="dfhFeatureGuid" value="0" />
+   <property name="dfhGroupId" value="0" />
+   <property name="dfhParameterId" value="" />
+   <property name="dfhParameterName" value="" />
+   <property name="dfhParameterVersion" value="" />
+   <property name="dfhParameterData" value="" />
+   <property name="dfhParameterDataLength" value="" />
+   <property name="dfhFeatureMajorVersion" value="0" />
+   <property name="dfhFeatureMinorVersion" value="0" />
+   <property name="dfhFeatureId" value="35" />
+   <property name="dfhFeatureType" value="3" />
+   <port name="addr" direction="input" role="address" width="1" />
+   <port name="read" direction="input" role="read" width="1" />
+   <port name="write" direction="input" role="write" width="1" />
+   <port name="writedata" direction="input" role="writedata" width="32" />
+   <port name="readdata" direction="output" role="readdata" width="32" />
+  </interface>
+  <interface name="m0" kind="acelite" start="1">
+   <property name="associatedClock" value="clock" />
+   <property name="associatedReset" value="reset" />
+   <property name="trustzoneAware" value="true" />
+   <property name="wakeupSignals" value="false" />
+   <property name="uniqueIdSupport" value="false" />
+   <property name="poison" value="false" />
+   <property name="traceSignals" value="false" />
+   <property name="maximumOutstandingReads" value="1" />
+   <property name="maximumOutstandingWrites" value="1" />
+   <property name="maximumOutstandingTransactions" value="1" />
+   <property name="readIssuingCapability" value="8" />
+   <property name="writeIssuingCapability" value="8" />
+   <property name="combinedIssuingCapability" value="16" />
+   <property name="issuesINCRBursts" value="true" />
+   <property name="issuesWRAPBursts" value="true" />
+   <property name="issuesFIXEDBursts" value="true" />
+   <port name="axm_m0_araddr" direction="output" role="araddr" width="34" />
+   <port name="axm_m0_arburst" direction="output" role="arburst" width="2" />
+   <port name="axm_m0_arcache" direction="output" role="arcache" width="4" />
+   <port name="axm_m0_arid" direction="output" role="arid" width="5" />
+   <port name="axm_m0_arlen" direction="output" role="arlen" width="8" />
+   <port name="axm_m0_arlock" direction="output" role="arlock" width="1" />
+   <port name="axm_m0_arprot" direction="output" role="arprot" width="3" />
+   <port name="axm_m0_arqos" direction="output" role="arqos" width="4" />
+   <port name="axm_m0_arready" direction="input" role="arready" width="1" />
+   <port name="axm_m0_arsize" direction="output" role="arsize" width="3" />
+   <port name="axm_m0_arvalid" direction="output" role="arvalid" width="1" />
+   <port name="axm_m0_arsnoop" direction="output" role="arsnoop" width="4" />
+   <port name="axm_m0_ardomain" direction="output" role="ardomain" width="2" />
+   <port name="axm_m0_arbar" direction="output" role="arbar" width="2" />
+   <port name="axm_m0_aruser" direction="output" role="aruser" width="23" />
+   <port name="axm_m0_awaddr" direction="output" role="awaddr" width="34" />
+   <port name="axm_m0_awburst" direction="output" role="awburst" width="2" />
+   <port name="axm_m0_awcache" direction="output" role="awcache" width="4" />
+   <port name="axm_m0_awid" direction="output" role="awid" width="5" />
+   <port name="axm_m0_awlen" direction="output" role="awlen" width="8" />
+   <port name="axm_m0_awlock" direction="output" role="awlock" width="1" />
+   <port name="axm_m0_awprot" direction="output" role="awprot" width="3" />
+   <port name="axm_m0_awready" direction="input" role="awready" width="1" />
+   <port name="axm_m0_awsize" direction="output" role="awsize" width="3" />
+   <port name="axm_m0_awvalid" direction="output" role="awvalid" width="1" />
+   <port name="axm_m0_awqos" direction="output" role="awqos" width="4" />
+   <port name="axm_m0_bid" direction="input" role="bid" width="5" />
+   <port name="axm_m0_bready" direction="output" role="bready" width="1" />
+   <port name="axm_m0_bresp" direction="input" role="bresp" width="2" />
+   <port name="axm_m0_bvalid" direction="input" role="bvalid" width="1" />
+   <port name="axm_m0_rdata" direction="input" role="rdata" width="512" />
+   <port name="axm_m0_rid" direction="input" role="rid" width="5" />
+   <port name="axm_m0_rlast" direction="input" role="rlast" width="1" />
+   <port name="axm_m0_rready" direction="output" role="rready" width="1" />
+   <port name="axm_m0_rresp" direction="input" role="rresp" width="2" />
+   <port name="axm_m0_rvalid" direction="input" role="rvalid" width="1" />
+   <port name="axm_m0_wdata" direction="output" role="wdata" width="512" />
+   <port name="axm_m0_wlast" direction="output" role="wlast" width="1" />
+   <port name="axm_m0_wready" direction="input" role="wready" width="1" />
+   <port name="axm_m0_wstrb" direction="output" role="wstrb" width="64" />
+   <port name="axm_m0_wvalid" direction="output" role="wvalid" width="1" />
+   <port name="axm_m0_awsnoop" direction="output" role="awsnoop" width="3" />
+   <port name="axm_m0_awdomain" direction="output" role="awdomain" width="2" />
+   <port name="axm_m0_awbar" direction="output" role="awbar" width="2" />
+   <port name="axm_m0_awuser" direction="output" role="awuser" width="23" />
+  </interface>
+  <interface name="s0" kind="axi4" start="0">
+   <property name="associatedClock" value="clock" />
+   <property name="associatedReset" value="reset" />
+   <property name="trustzoneAware" value="true" />
+   <property name="wakeupSignals" value="false" />
+   <property name="uniqueIdSupport" value="false" />
+   <property name="poison" value="false" />
+   <property name="traceSignals" value="false" />
+   <property name="maximumOutstandingReads" value="1" />
+   <property name="maximumOutstandingWrites" value="1" />
+   <property name="maximumOutstandingTransactions" value="1" />
+   <property name="readAcceptanceCapability" value="8" />
+   <property name="writeAcceptanceCapability" value="8" />
+   <property name="combinedAcceptanceCapability" value="16" />
+   <property name="readDataReorderingDepth" value="8" />
+   <property
+       name="bridgesToMaster"
+       value="dma_subsystem_agilex_axi_bridge_for_acp_0.m0" />
+   <property name="dfhFeatureGuid" value="0" />
+   <property name="dfhGroupId" value="0" />
+   <property name="dfhParameterId" value="" />
+   <property name="dfhParameterName" value="" />
+   <property name="dfhParameterVersion" value="" />
+   <property name="dfhParameterData" value="" />
+   <property name="dfhParameterDataLength" value="" />
+   <property name="dfhFeatureMajorVersion" value="0" />
+   <property name="dfhFeatureMinorVersion" value="0" />
+   <property name="dfhFeatureId" value="35" />
+   <property name="dfhFeatureType" value="3" />
+   <port name="axs_s0_araddr" direction="input" role="araddr" width="34" />
+   <port name="axs_s0_arburst" direction="input" role="arburst" width="2" />
+   <port name="axs_s0_arcache" direction="input" role="arcache" width="4" />
+   <port name="axs_s0_arid" direction="input" role="arid" width="4" />
+   <port name="axs_s0_arlen" direction="input" role="arlen" width="8" />
+   <port name="axs_s0_arlock" direction="input" role="arlock" width="1" />
+   <port name="axs_s0_arprot" direction="input" role="arprot" width="3" />
+   <port name="axs_s0_arready" direction="output" role="arready" width="1" />
+   <port name="axs_s0_arsize" direction="input" role="arsize" width="3" />
+   <port name="axs_s0_arvalid" direction="input" role="arvalid" width="1" />
+   <port name="axs_s0_awaddr" direction="input" role="awaddr" width="34" />
+   <port name="axs_s0_awburst" direction="input" role="awburst" width="2" />
+   <port name="axs_s0_awcache" direction="input" role="awcache" width="4" />
+   <port name="axs_s0_awid" direction="input" role="awid" width="4" />
+   <port name="axs_s0_awlen" direction="input" role="awlen" width="8" />
+   <port name="axs_s0_awlock" direction="input" role="awlock" width="1" />
+   <port name="axs_s0_awprot" direction="input" role="awprot" width="3" />
+   <port name="axs_s0_awready" direction="output" role="awready" width="1" />
+   <port name="axs_s0_awsize" direction="input" role="awsize" width="3" />
+   <port name="axs_s0_awvalid" direction="input" role="awvalid" width="1" />
+   <port name="axs_s0_bid" direction="output" role="bid" width="4" />
+   <port name="axs_s0_bready" direction="input" role="bready" width="1" />
+   <port name="axs_s0_bresp" direction="output" role="bresp" width="2" />
+   <port name="axs_s0_bvalid" direction="output" role="bvalid" width="1" />
+   <port name="axs_s0_rdata" direction="output" role="rdata" width="512" />
+   <port name="axs_s0_rid" direction="output" role="rid" width="4" />
+   <port name="axs_s0_rlast" direction="output" role="rlast" width="1" />
+   <port name="axs_s0_rready" direction="input" role="rready" width="1" />
+   <port name="axs_s0_rresp" direction="output" role="rresp" width="2" />
+   <port name="axs_s0_rvalid" direction="output" role="rvalid" width="1" />
+   <port name="axs_s0_wdata" direction="input" role="wdata" width="512" />
+   <port name="axs_s0_wlast" direction="input" role="wlast" width="1" />
+   <port name="axs_s0_wready" direction="output" role="wready" width="1" />
+   <port name="axs_s0_wstrb" direction="input" role="wstrb" width="64" />
+   <port name="axs_s0_wvalid" direction="input" role="wvalid" width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   kind="dma_subsystem_agilex_axi_bridge_for_acp_0"
+   version="1.0"
+   name="dma_subsystem_agilex_axi_bridge_for_acp_0">
+  <parameter name="AUTO_CSR_CLOCK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_M0_ADDRESS_MAP" value="" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CLOCK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLOCK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_DEVICE" value="AGFB027R24C2E2VR2" />
+  <parameter name="AUTO_M0_ADDRESS_WIDTH" value="-1" />
+  <parameter name="AUTO_CSR_CLOCK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CSR_CLOCK_CLOCK_DOMAIN" value="-1" />
+  <generatedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dma_subsystem/dma_subsystem_agilex_axi_bridge_for_acp_0/synth/dma_subsystem_agilex_axi_bridge_for_acp_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dma_subsystem/dma_subsystem_agilex_axi_bridge_for_acp_0/synth/dma_subsystem_agilex_axi_bridge_for_acp_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dma_subsystem/dma_subsystem_agilex_axi_bridge_for_acp_0.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/agilex_acp_adapter/agilex_axi_bridge_for_acp_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="dma_subsystem_agilex_axi_bridge_for_acp_0">"Generating: dma_subsystem_agilex_axi_bridge_for_acp_0"</message>
+   <message level="Info" culprit="dma_subsystem_agilex_axi_bridge_for_acp_0">"Generating: agilex_axi_bridge_for_acp"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="agilex_axi_bridge_for_acp"
+   version="19.2.0"
+   name="agilex_axi_bridge_for_acp">
+  <parameter name="WSB_SID_OVERRIDE" value="0" />
+  <parameter name="AWSNOOP_OVERRIDE" value="0" />
+  <parameter name="WSB_SSD_OVERRIDE" value="0" />
+  <parameter name="RSB_SID_OVERRIDE" value="0" />
+  <parameter name="ARDOMAIN_OVERRIDE" value="0" />
+  <parameter name="ARBAR_OVERRIDE" value="0" />
+  <parameter name="ARSNOOP_OVERRIDE" value="0" />
+  <parameter name="RSB_SSD_OVERRIDE" value="0" />
+  <parameter name="CSR_EN" value="1" />
+  <parameter name="GPIO_EN" value="0" />
+  <parameter name="ADDR_WIDTH" value="34" />
+  <parameter name="AWBAR_OVERRIDE" value="0" />
+  <parameter name="DATA_WIDTH" value="512" />
+  <parameter name="AWCACHE_OVERRIDE" value="2" />
+  <parameter name="AxPROT_OVERRIDE" value="1" />
+  <parameter name="ARCACHE_OVERRIDE" value="2" />
+  <parameter name="AWDOMAIN_OVERRIDE" value="0" />
+  <parameter name="AxUSER_OVERRIDE" value="224" />
+  <generatedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dma_subsystem/dma_subsystem_agilex_axi_bridge_for_acp_0/agilex_axi_bridge_for_acp_1920/synth/agilex_axi_bridge_for_acp.v"
+       attributes="TOP_LEVEL_FILE" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/dma_subsystem/dma_subsystem_agilex_axi_bridge_for_acp_0/agilex_axi_bridge_for_acp_1920/synth/agilex_axi_bridge_for_acp.v"
+       attributes="TOP_LEVEL_FILE" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/agilex_acp_adapter/agilex_axi_bridge_for_acp_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="dma_subsystem_agilex_axi_bridge_for_acp_0"
+     as="agilex_axi_bridge_for_acp_0" />
+  <messages>
+   <message level="Info" culprit="dma_subsystem_agilex_axi_bridge_for_acp_0">"Generating: agilex_axi_bridge_for_acp"</message>
+  </messages>
+ </entity>
+</deploy>

@@ -1,0 +1,1259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="oran_310/sim/mentor/oran.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/sync_reset_logic.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/alt_oran_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/alt_oran_scfifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/bitshift_preproc_engine.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/bitshift_preproc.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/ccam_bfp.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/ccam_mulaw.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/ccam_unbiased.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/ceam_bfp.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/ceam_mulaw.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/ceam.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/compansion_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/compression_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/decompression_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_cmnhdr_demapper.v"
+   type="VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_cmnhdr_mapper.v"
+   type="VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_comp_data_adapter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_compression.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_ctrl_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_ctrl_mapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_ctrl_mapper_frag.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_ctrl_sec0_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_ctrl_sec1_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_ctrl_sec3_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_ctrl_sect0_mapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_ctrl_sect1_mapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_ctrl_sect3_mapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_decompression.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_mapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_prb_barrel_shifter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_scheduler.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_seqid_cntr.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_seqid_ram.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_uplane_byte_shift.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_uplane_frag_size.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_uplane_mapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_uplane_mapper_frag.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_uplane_prb_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_uplane_prb_size.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_uplane_sect_detector.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_usr_barrel_shifter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/cascaded_counter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_usr_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_window_monitor.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/pipeline_oran.v"
+   type="VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/lut_memory.mif"
+   type="MIF"
+   library="oran_310" />
+ <file
+   path="oran_310/sim/mentor/lut_memory_30KHz.mif"
+   type="MIF"
+   library="oran_310" />
+ <file
+   path="oran_310/sim/mentor/altera_std_synchronizer_nocut.v"
+   type="VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_csr.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_csrunit.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_std_synchronizer_nocut.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_pulse_stretch_sync.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_clkcrosser.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_clkcrosser_new.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_cntr_tx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_cntr_rx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_cntr_ram_update.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/oran_csr_ram.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/ram4ports_ram_4port_2010_rljrsyi.v"
+   type="VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/mentor/ram4ports.v"
+   type="VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="modelsim" />
+ <file
+   path="oran_310/sim/synopsys/oran.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/sync_reset_logic.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/alt_oran_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/alt_oran_scfifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/bitshift_preproc_engine.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/bitshift_preproc.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/ccam_bfp.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/ccam_mulaw.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/ccam_unbiased.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/ceam_bfp.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/ceam_mulaw.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/ceam.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/compansion_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/compression_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/decompression_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_cmnhdr_demapper.v"
+   type="VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_cmnhdr_mapper.v"
+   type="VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_comp_data_adapter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_compression.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_ctrl_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_ctrl_mapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_ctrl_mapper_frag.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_ctrl_sec0_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_ctrl_sec1_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_ctrl_sec3_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_ctrl_sect0_mapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_ctrl_sect1_mapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_ctrl_sect3_mapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_decompression.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_mapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_prb_barrel_shifter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_scheduler.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_seqid_cntr.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_seqid_ram.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_uplane_byte_shift.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_uplane_frag_size.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_uplane_mapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_uplane_mapper_frag.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_uplane_prb_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_uplane_prb_size.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_uplane_sect_detector.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_usr_barrel_shifter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/cascaded_counter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_usr_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_window_monitor.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/pipeline_oran.v"
+   type="VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/lut_memory.mif"
+   type="MIF"
+   library="oran_310" />
+ <file
+   path="oran_310/sim/synopsys/lut_memory_30KHz.mif"
+   type="MIF"
+   library="oran_310" />
+ <file
+   path="oran_310/sim/synopsys/altera_std_synchronizer_nocut.v"
+   type="VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_csr.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_csrunit.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_std_synchronizer_nocut.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_pulse_stretch_sync.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_clkcrosser.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_clkcrosser_new.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_cntr_tx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_cntr_rx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_cntr_ram_update.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/oran_csr_ram.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/ram4ports_ram_4port_2010_rljrsyi.v"
+   type="VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/synopsys/ram4ports.v"
+   type="VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="vcs, vcsmx" />
+ <file
+   path="oran_310/sim/cadence/oran.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/sync_reset_logic.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/alt_oran_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/alt_oran_scfifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/bitshift_preproc_engine.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/bitshift_preproc.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/ccam_bfp.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/ccam_mulaw.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/ccam_unbiased.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/ceam_bfp.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/ceam_mulaw.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/ceam.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/compansion_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/compression_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/decompression_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_cmnhdr_demapper.v"
+   type="VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_cmnhdr_mapper.v"
+   type="VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_comp_data_adapter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_compression.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_ctrl_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_ctrl_mapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_ctrl_mapper_frag.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_ctrl_sec0_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_ctrl_sec1_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_ctrl_sec3_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_ctrl_sect0_mapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_ctrl_sect1_mapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_ctrl_sect3_mapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_decompression.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_mapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_prb_barrel_shifter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_scheduler.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_seqid_cntr.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_seqid_ram.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_uplane_byte_shift.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_uplane_frag_size.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_uplane_mapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_uplane_mapper_frag.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_uplane_prb_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_uplane_prb_size.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_uplane_sect_detector.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_usr_barrel_shifter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/cascaded_counter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_usr_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_window_monitor.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/pipeline_oran.v"
+   type="VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/lut_memory.mif"
+   type="MIF"
+   library="oran_310" />
+ <file
+   path="oran_310/sim/cadence/lut_memory_30KHz.mif"
+   type="MIF"
+   library="oran_310" />
+ <file
+   path="oran_310/sim/cadence/altera_std_synchronizer_nocut.v"
+   type="VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_csr.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_csrunit.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_std_synchronizer_nocut.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_pulse_stretch_sync.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_clkcrosser.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_clkcrosser_new.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_cntr_tx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_cntr_rx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_cntr_ram_update.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/oran_csr_ram.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/ram4ports_ram_4port_2010_rljrsyi.v"
+   type="VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/cadence/ram4ports.v"
+   type="VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="ncsim" />
+ <file
+   path="oran_310/sim/aldec/oran.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/sync_reset_logic.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/alt_oran_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/alt_oran_scfifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/bitshift_preproc_engine.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/bitshift_preproc.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/ccam_bfp.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/ccam_mulaw.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/ccam_unbiased.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/ceam_bfp.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/ceam_mulaw.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/ceam.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/compansion_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/compression_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/decompression_top.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_cmnhdr_demapper.v"
+   type="VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_cmnhdr_mapper.v"
+   type="VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_comp_data_adapter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_compression.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_ctrl_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_ctrl_mapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_ctrl_mapper_frag.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_ctrl_sec0_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_ctrl_sec1_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_ctrl_sec3_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_ctrl_sect0_mapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_ctrl_sect1_mapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_ctrl_sect3_mapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_decompression.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_mapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_prb_barrel_shifter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_scheduler.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_seqid_cntr.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_seqid_ram.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_uplane_byte_shift.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_uplane_frag_size.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_uplane_mapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_uplane_mapper_frag.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_uplane_prb_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_uplane_prb_size.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_uplane_sect_detector.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_usr_barrel_shifter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/cascaded_counter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_usr_demapper.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_window_monitor.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/pipeline_oran.v"
+   type="VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/lut_memory.mif"
+   type="MIF"
+   library="oran_310" />
+ <file
+   path="oran_310/sim/aldec/lut_memory_30KHz.mif"
+   type="MIF"
+   library="oran_310" />
+ <file
+   path="oran_310/sim/aldec/altera_std_synchronizer_nocut.v"
+   type="VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_csr.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_csrunit.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_std_synchronizer_nocut.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_pulse_stretch_sync.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_clkcrosser.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_clkcrosser_new.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_cntr_tx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_cntr_rx.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_cntr_ram_update.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/oran_csr_ram.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/ram4ports_ram_4port_2010_rljrsyi.v"
+   type="VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="oran_310/sim/aldec/ram4ports.v"
+   type="VERILOG_ENCRYPT"
+   library="oran_310"
+   simulator="riviera" />
+ <file
+   path="sim/oran_hwtcl_top.v"
+   type="VERILOG"
+   library="oran_hwtcl_top"
+   hasInlineConfiguration="true" />
+ <elaborationOptions
+   platform="LINUX64"
+   simulator="modelsim"
+   value="  -voptargs=+acc -voptargs=-noprotectopt -suppress 7063\,7061\,3009\,3053\,12003\,8630\,12023\,8604\,3839\,7033 -nocvg" />
+ <elaborationOptions
+   platform="LINUX64"
+   simulator="vcs"
+   value=" $QUARTUS_INSTALL_DIR/eda/sim_lib/quartus_dpi.c -debug_access+f +define+QUARTUS_ENABLE_DPI_FORCE" />
+ <elaborationOptions
+   platform="LINUX64"
+   simulator="vcsmx"
+   value=" $QUARTUS_INSTALL_DIR/eda/sim_lib/quartus_dpi.c -debug_access+f" />
+ <elaborationOptions
+   platform="WINDOWS64"
+   simulator="modelsim"
+   value="  -voptargs=+acc -voptargs=-noprotectopt -suppress 7063\,7061\,3009\,3053\,12003\,8630\,12023\,8604\,3839\,7033 -nocvg" />
+ <topLevel name="oran_hwtcl_top.oran_hwtcl_top" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB027R24C2E2VR2" />
+</simPackage>

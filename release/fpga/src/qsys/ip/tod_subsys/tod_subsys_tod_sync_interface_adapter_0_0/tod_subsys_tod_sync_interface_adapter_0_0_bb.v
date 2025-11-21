@@ -1,0 +1,14 @@
+module tod_subsys_tod_sync_interface_adapter_0_0 (
+		input  wire [95:0] time_of_day_96b,     //     time_of_day_96b.data
+		input  wire        valid,               //                    .valid
+		output wire [95:0] tx0_tod_master_data, // tx0_tod_master_data.data
+		output wire        valid_0,             //                    .valid
+		output wire [95:0] tx1_tod_master_data, // tx1_tod_master_data.data
+		output wire [95:0] tx2_tod_master_data, // tx2_tod_master_data.data
+		output wire [95:0] tx3_tod_master_data, // tx3_tod_master_data.data
+		output wire [95:0] rx0_tod_master_data, // rx0_tod_master_data.data
+		input  wire        clk,                 //               clock.clk
+		input  wire        rst_n                //          reset_sink.reset_n
+	);
+endmodule
+

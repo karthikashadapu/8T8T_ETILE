@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.11.21.13:09:51"
+ outputDirectory="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_slave_sub_system/oran_ptp2gps_conv_0/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGFB014R24B2I2V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="2"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_TOD_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_TOD_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_TOD_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="rst_tod_n" kind="reset" start="0">
+   <property name="associatedClock" value="clk_tod" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="rst_tod_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="ptp_seconds" kind="conduit" start="0">
+   <property name="associatedClock" value="clk_tod" />
+   <property name="associatedReset" value="rst_tod_n" />
+   <property name="prSafe" value="false" />
+   <port name="ptp_seconds" direction="input" role="data" width="96" />
+   <port name="in_valid" direction="input" role="valid" width="1" />
+  </interface>
+  <interface name="gps_seconds" kind="conduit" start="0">
+   <property name="associatedClock" value="clk_tod" />
+   <property name="associatedReset" value="rst_tod_n" />
+   <property name="prSafe" value="false" />
+   <port name="gps_seconds" direction="output" role="data" width="96" />
+   <port name="out_valid" direction="output" role="valid" width="1" />
+  </interface>
+  <interface name="clk_tod" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk_tod" direction="input" role="clk" width="1" />
+  </interface>
+ </perimeter>
+ <entity kind="oran_ptp2gps_conv_0" version="1.0" name="oran_ptp2gps_conv_0">
+  <parameter name="AUTO_CLK_TOD_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="AGFB014R24B2I2V" />
+  <parameter name="AUTO_CLK_TOD_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_CLK_TOD_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <generatedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_slave_sub_system/oran_ptp2gps_conv_0/synth/oran_ptp2gps_conv_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_slave_sub_system/oran_ptp2gps_conv_0/synth/oran_ptp2gps_conv_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_slave_sub_system/oran_ptp2gps_conv_0.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/ptp_gps_conv/oran_ptp2gps_conv_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="oran_ptp2gps_conv_0">"Generating: oran_ptp2gps_conv_0"</message>
+   <message level="Info" culprit="oran_ptp2gps_conv_0">"Generating: oran_ptp2gps_conv"</message>
+  </messages>
+ </entity>
+ <entity kind="oran_ptp2gps_conv" version="1.0" name="oran_ptp2gps_conv">
+  <generatedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_slave_sub_system/oran_ptp2gps_conv_0/oran_ptp2gps_conv_10/synth/oran_ptp2gps_conv.sv"
+       attributes="TOP_LEVEL_FILE" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_slave_sub_system/oran_ptp2gps_conv_0/oran_ptp2gps_conv_10/synth/oran_ptp2gps_conv.sv"
+       attributes="TOP_LEVEL_FILE" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/ptp_gps_conv/oran_ptp2gps_conv_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="oran_ptp2gps_conv_0" as="oran_ptp2gps_conv_0" />
+  <messages>
+   <message level="Info" culprit="oran_ptp2gps_conv_0">"Generating: oran_ptp2gps_conv"</message>
+  </messages>
+ </entity>
+</deploy>

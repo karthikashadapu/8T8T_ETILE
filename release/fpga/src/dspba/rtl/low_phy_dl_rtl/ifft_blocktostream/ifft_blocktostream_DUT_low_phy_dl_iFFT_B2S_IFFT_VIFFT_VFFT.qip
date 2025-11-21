@@ -1,0 +1,7 @@
+# This is the QIP file for DSP Builder for Intel FPGAs system 'ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_IFFT_VIFFT_VFFT'
+
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/low_phy_dl_rtl/ifft_blocktostream/ifft_blocktostream_DUT_safe_path_ver.sv
+set_global_assignment -name VHDL_FILE ../../rtl/low_phy_dl_rtl/ifft_blocktostream/ifft_blocktostream_DUT_safe_path.vhd
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/low_phy_dl_rtl/ifft_blocktostream/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_IFFT_VIFFT_VFFT.sv
+set_global_assignment -name HEX_FILE ../../rtl/low_phy_dl_rtl/ifft_blocktostream/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_IFFT_VIFFT_VFFT_ifft_blocktostream_DU0000OptimizedDualMem_x_a.hex
+set_global_assignment -name HEX_FILE ../../rtl/low_phy_dl_rtl/ifft_blocktostream/ifft_blocktostream_DUT_low_phy_dl_iFFT_B2S_IFFT_VIFFT_VFFT_ifft_blocktostream_DU0000OptimizedDualMem_x_b.hex

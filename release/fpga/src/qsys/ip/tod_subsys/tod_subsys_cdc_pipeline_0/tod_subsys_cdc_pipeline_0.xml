@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.11.21.13:10:03"
+ outputDirectory="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_subsys/tod_subsys_cdc_pipeline_0/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGFB014R24B2I2V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="3"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_SRC_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_SRC_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_SRC_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DST_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DST_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DST_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="src_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="src_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="rst_src_clk_n" kind="reset" start="0">
+   <property name="associatedClock" value="src_clk" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="rst_src_clk_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="dst_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="dst_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="rst_dst_clk_n" kind="reset" start="0">
+   <property name="associatedClock" value="dst_clk" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="rst_dst_clk_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="datain" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="datain" direction="input" role="data" width="96" />
+  </interface>
+  <interface name="dataout" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="dataout" direction="output" role="data" width="96" />
+  </interface>
+ </perimeter>
+ <entity
+   kind="tod_subsys_cdc_pipeline_0"
+   version="1.0"
+   name="tod_subsys_cdc_pipeline_0">
+  <parameter name="AUTO_SRC_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_DST_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="AGFB014R24B2I2V" />
+  <parameter name="AUTO_SRC_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_SRC_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DST_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <parameter name="AUTO_DST_CLK_CLOCK_RATE" value="-1" />
+  <generatedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_subsys/tod_subsys_cdc_pipeline_0/synth/tod_subsys_cdc_pipeline_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_subsys/tod_subsys_cdc_pipeline_0/synth/tod_subsys_cdc_pipeline_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_subsys/tod_subsys_cdc_pipeline_0.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/cdc_pipeline/cdc_pipeline_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="tod_subsys_cdc_pipeline_0">"Generating: tod_subsys_cdc_pipeline_0"</message>
+   <message level="Info" culprit="tod_subsys_cdc_pipeline_0">"Generating: cdc_pipeline"</message>
+  </messages>
+ </entity>
+ <entity kind="cdc_pipeline" version="1.0" name="cdc_pipeline">
+  <generatedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_subsys/tod_subsys_cdc_pipeline_0/cdc_pipeline_10/synth/cdc_pipeline.v"
+       attributes="TOP_LEVEL_FILE" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/tod_subsys/tod_subsys_cdc_pipeline_0/cdc_pipeline_10/synth/cdc_pipeline.v"
+       attributes="TOP_LEVEL_FILE" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/sibgath/Desktop/Karthik_8TR_RU/SR3_ETILE/srg3_ep_p_0_2_0/release/fpga/src/ip/custom/cdc_pipeline/cdc_pipeline_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="tod_subsys_cdc_pipeline_0" as="cdc_pipeline_0" />
+  <messages>
+   <message level="Info" culprit="tod_subsys_cdc_pipeline_0">"Generating: cdc_pipeline"</message>
+  </messages>
+ </entity>
+</deploy>

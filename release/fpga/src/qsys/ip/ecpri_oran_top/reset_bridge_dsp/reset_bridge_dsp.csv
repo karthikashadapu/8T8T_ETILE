@@ -1,0 +1,16 @@
+# system info reset_bridge_dsp on 2025.11.21.14:06:09
+system_info:
+name,value
+DEVICE,AGFB014R24B2I2V
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for reset_bridge_dsp on 2025.11.21.14:06:09
+files:
+filepath,kind,attributes,module,is_top
+sim/reset_bridge_dsp.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,reset_bridge_dsp,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module

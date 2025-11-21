@@ -1,0 +1,7 @@
+# This is the QIP file for DSP Builder for Intel FPGAs system 'prach_shortFormat_fftShift_prach_PRACH_CC_VFFT'
+
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/short_prach_rtl/prach_shortFormat_fftShift/prach_shortFormat_fftShift_prach_safe_path_ver.sv
+set_global_assignment -name VHDL_FILE ../../rtl/short_prach_rtl/prach_shortFormat_fftShift/prach_shortFormat_fftShift_prach_safe_path.vhd
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/short_prach_rtl/prach_shortFormat_fftShift/prach_shortFormat_fftShift_prach_PRACH_CC_VFFT.sv
+set_global_assignment -name HEX_FILE ../../rtl/short_prach_rtl/prach_shortFormat_fftShift/prach_shortFormat_fftShift_prach_PRACH_CC_VFFT_prach_shortFormat_fftShift_prach_0000OptimizedDualMem_x_a.hex
+set_global_assignment -name HEX_FILE ../../rtl/short_prach_rtl/prach_shortFormat_fftShift/prach_shortFormat_fftShift_prach_PRACH_CC_VFFT_prach_shortFormat_fftShift_prach_0000OptimizedDualMem_x_b.hex

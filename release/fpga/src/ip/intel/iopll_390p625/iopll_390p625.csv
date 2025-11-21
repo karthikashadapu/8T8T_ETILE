@@ -1,0 +1,18 @@
+# system info iopll_390p625 on 2025.10.16.13:40:47
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for iopll_390p625 on 2025.10.16.13:40:47
+files:
+filepath,kind,attributes,module,is_top
+sim/iopll_390p625.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,iopll_390p625,true
+altera_iopll_1931/sim/iopll_390p625_altera_iopll_1931_wfxyati.vo,VERILOG,,iopll_390p625_altera_iopll_1931_wfxyati,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+iopll_390p625.iopll_0,iopll_390p625_altera_iopll_1931_wfxyati

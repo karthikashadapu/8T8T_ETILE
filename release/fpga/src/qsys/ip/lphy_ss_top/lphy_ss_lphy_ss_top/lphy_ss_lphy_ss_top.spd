@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="lphy_ss_10/sim/struct_typedef.sv"
+   type="SYSTEM_VERILOG"
+   library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/lphy_ss.sv"
+   type="SYSTEM_VERILOG"
+   library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/clock_crossing.v"
+   type="VERILOG"
+   library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/ValidLowCounter.v"
+   type="VERILOG"
+   library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/dl_fdv_buffer.sv"
+   type="SYSTEM_VERILOG"
+   library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/dl_ant_scheduler.v"
+   type="VERILOG"
+   library="lphy_ss_10" />
+ <file path="lphy_ss_10/sim/ifft_if.v" type="VERILOG" library="lphy_ss_10" />
+ <file path="lphy_ss_10/sim/fft_if.v" type="VERILOG" library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/ul_ant_scheduler.v"
+   type="VERILOG"
+   library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/prach_data_in_short.mif"
+   type="MIF"
+   library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/prach_data_in_long.mif"
+   type="MIF"
+   library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/cplane_pusch_fdv.mif"
+   type="MIF"
+   library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/cplane_prach_fdv.mif"
+   type="MIF"
+   library="lphy_ss_10" />
+ <file path="lphy_ss_10/sim/dl_blanking.mif" type="MIF" library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/prach_ant_mux.v"
+   type="VERILOG"
+   library="lphy_ss_10" />
+ <file path="lphy_ss_10/sim/prach_if.v" type="VERILOG" library="lphy_ss_10" />
+ <file path="lphy_ss_10/sim/pb_st.v" type="VERILOG" library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/short_prach_c_m_config.v"
+   type="VERILOG"
+   library="lphy_ss_10" />
+ <file path="lphy_ss_10/sim/prach_top.v" type="VERILOG" library="lphy_ss_10" />
+ <file path="lphy_ss_10/sim/pipeline.v" type="VERILOG" library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/prach_cplane_decode.v"
+   type="VERILOG"
+   library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/long_prach_nco_config.v"
+   type="VERILOG"
+   library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/short_long_prach_config_wrapper.v"
+   type="VERILOG"
+   library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/prach_config_ip_top.v"
+   type="VERILOG"
+   library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/channel_calc.v"
+   type="VERILOG"
+   library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/dl_lphy_ss.v"
+   type="VERILOG"
+   library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/ul_lphy_ss.v"
+   type="VERILOG"
+   library="lphy_ss_10" />
+ <file path="lphy_ss_10/sim/def_param.vh" type="OTHER" library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/lphy_ss_config.v"
+   type="VERILOG"
+   library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/LPHY_SS_Registers.v"
+   type="VERILOG"
+   library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/Short_PRACH_Registers_L1.v"
+   type="VERILOG"
+   library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/Short_PRACH_Registers_L2.v"
+   type="VERILOG"
+   library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/Long_PRACH_Registers_L1.v"
+   type="VERILOG"
+   library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/Long_PRACH_Registers_L2.v"
+   type="VERILOG"
+   library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/power_meter_top_ss.v"
+   type="VERILOG"
+   library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/power_meter_ss.v"
+   type="VERILOG"
+   library="lphy_ss_10" />
+ <file path="lphy_ss_10/sim/mean_ss.v" type="VERILOG" library="lphy_ss_10" />
+ <file path="lphy_ss_10/sim/square_ss.v" type="VERILOG" library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/accumulator_ss.v"
+   type="VERILOG"
+   library="lphy_ss_10" />
+ <file path="lphy_ss_10/sim/enable_ss.v" type="VERILOG" library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/histogram_state_machine.v"
+   type="VERILOG"
+   library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/pulsegen_ss.v"
+   type="VERILOG"
+   library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/PWR_MTR_SS_Registers.v"
+   type="VERILOG"
+   library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/dl_blanking.sv"
+   type="SYSTEM_VERILOG"
+   library="lphy_ss_10" />
+ <file
+   path="lphy_ss_10/sim/incremental_counter.sv"
+   type="SYSTEM_VERILOG"
+   library="lphy_ss_10" />
+ <file
+   path="sim/lphy_ss_lphy_ss_top.v"
+   type="VERILOG"
+   library="lphy_ss_lphy_ss_top"
+   hasInlineConfiguration="true" />
+ <topLevel name="lphy_ss_lphy_ss_top.lphy_ss_lphy_ss_top" />
+ <deviceFamily name="agilex7" />
+ <device name="AGFB014R24B2I2V" />
+</simPackage>

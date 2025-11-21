@@ -1,0 +1,7 @@
+	component subsys_ftile_25gbe_1588_ninitdone_reset is
+		port (
+			in_reset  : in  std_logic := 'X'; -- reset
+			out_reset : out std_logic         -- reset
+		);
+	end component subsys_ftile_25gbe_1588_ninitdone_reset;
+

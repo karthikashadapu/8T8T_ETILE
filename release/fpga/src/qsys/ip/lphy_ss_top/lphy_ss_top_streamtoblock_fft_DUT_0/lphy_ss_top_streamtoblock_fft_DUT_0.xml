@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.10.16.14:43:10"
+ outputDirectory="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGFB027R24C2E2VR2"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="2"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BUS_CLOCK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BUS_CLOCK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BUS_CLOCK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clock" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="clock_reset" kind="reset" start="0">
+   <property name="associatedClock" value="clock" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="areset" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="bus_clock" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="bus_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="bus_clock_reset" kind="reset" start="0">
+   <property name="associatedClock" value="bus_clock" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="bus_areset" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="bus" kind="avalon" start="0">
+   <property name="addressAlignment" value="DYNAMIC" />
+   <property name="addressGroup" value="0" />
+   <property name="addressSpan" value="65536" />
+   <property name="addressUnits" value="WORDS" />
+   <property name="alwaysBurstMaxBurst" value="false" />
+   <property name="associatedClock" value="bus_clock" />
+   <property name="associatedReset" value="bus_clock_reset" />
+   <property name="bitsPerSymbol" value="8" />
+   <property name="bridgedAddressOffset" value="0" />
+   <property name="bridgesToMaster" value="" />
+   <property name="burstOnBurstBoundariesOnly" value="false" />
+   <property name="burstcountUnits" value="WORDS" />
+   <property name="constantBurstBehavior" value="false" />
+   <property name="explicitAddressSpan" value="0" />
+   <property name="holdTime" value="0" />
+   <property name="interleaveBursts" value="false" />
+   <property name="isBigEndian" value="false" />
+   <property name="isFlash" value="false" />
+   <property name="isMemoryDevice" value="false" />
+   <property name="isNonVolatileStorage" value="false" />
+   <property name="linewrapBursts" value="false" />
+   <property name="maximumPendingReadTransactions" value="4" />
+   <property name="maximumPendingWriteTransactions" value="0" />
+   <property name="minimumReadLatency" value="1" />
+   <property name="minimumResponseLatency" value="1" />
+   <property name="minimumUninterruptedRunLength" value="1" />
+   <property name="prSafe" value="false" />
+   <property name="printableDevice" value="false" />
+   <property name="readLatency" value="0" />
+   <property name="readWaitStates" value="1" />
+   <property name="readWaitTime" value="1" />
+   <property name="registerIncomingSignals" value="false" />
+   <property name="registerOutgoingSignals" value="false" />
+   <property name="setupTime" value="0" />
+   <property name="timingUnits" value="Cycles" />
+   <property name="transparentBridge" value="false" />
+   <property name="waitrequestAllowance" value="0" />
+   <property name="wellBehavedWaitrequest" value="false" />
+   <property name="writeLatency" value="0" />
+   <property name="writeWaitStates" value="0" />
+   <property name="writeWaitTime" value="0" />
+   <property name="dfhFeatureGuid" value="0" />
+   <property name="dfhGroupId" value="0" />
+   <property name="dfhParameterId" value="" />
+   <property name="dfhParameterName" value="" />
+   <property name="dfhParameterVersion" value="" />
+   <property name="dfhParameterData" value="" />
+   <property name="dfhParameterDataLength" value="" />
+   <property name="dfhFeatureMajorVersion" value="0" />
+   <property name="dfhFeatureMinorVersion" value="0" />
+   <property name="dfhFeatureId" value="35" />
+   <property name="dfhFeatureType" value="3" />
+   <port name="busIn_address" direction="input" role="address" width="14" />
+   <port name="busIn_read" direction="input" role="read" width="1" />
+   <port name="busIn_write" direction="input" role="write" width="1" />
+   <port name="busIn_writedata" direction="input" role="writedata" width="32" />
+   <port name="busOut_readdata" direction="output" role="readdata" width="32" />
+   <port
+       name="busOut_readdatavalid"
+       direction="output"
+       role="readdatavalid"
+       width="1" />
+   <port
+       name="busOut_waitrequest"
+       direction="output"
+       role="waitrequest"
+       width="1" />
+  </interface>
+  <interface name="exp" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="rx_vin_s" direction="input" role="valid_rx_vin_s" width="1" />
+   <port name="rx_chin_s" direction="input" role="channel_rx_chin_s" width="8" />
+   <port name="rx_din_im" direction="input" role="data_rx_din_im" width="16" />
+   <port name="rx_din_re" direction="input" role="data_rx_din_re" width="16" />
+   <port name="fft_in_s" direction="input" role="data_fft_in_s" width="4" />
+   <port name="cp_in_s" direction="input" role="data_cp_in_s" width="16" />
+   <port name="nprb_s" direction="input" role="data_nprb_s" width="16" />
+   <port
+       name="hcs_bypass_s"
+       direction="input"
+       role="data_hcs_bypass_s"
+       width="1" />
+   <port name="fft_gain_s" direction="input" role="data_fft_gain_s" width="16" />
+   <port
+       name="fft_gain_im_s"
+       direction="input"
+       role="data_fft_gain_im_s"
+       width="16" />
+   <port
+       name="fft_shift_s"
+       direction="input"
+       role="data_fft_shift_s"
+       width="4" />
+   <port
+       name="time_ref_in_s"
+       direction="input"
+       role="data_time_ref_in_s"
+       width="64" />
+   <port name="DC_SC_EN_s" direction="input" role="data_DC_SC_EN_s" width="1" />
+   <port name="CP_EN_s" direction="input" role="data_CP_EN_s" width="1" />
+   <port
+       name="ripple_comp_en_s"
+       direction="input"
+       role="data_ripple_comp_en_s"
+       width="1" />
+   <port
+       name="rc_bw_sel_s"
+       direction="input"
+       role="data_rc_bw_sel_s"
+       width="1" />
+   <port
+       name="sym_metadata_in_s"
+       direction="input"
+       role="data_sym_metadata_in_s"
+       width="64" />
+   <port
+       name="sym_metadata_in_valid_s"
+       direction="input"
+       role="data_sym_metadata_in_valid_s"
+       width="1" />
+   <port
+       name="rx_valid_s"
+       direction="output"
+       role="valid_rx_valid_s"
+       width="1" />
+   <port
+       name="rx_chout_s"
+       direction="output"
+       role="channel_rx_chout_s"
+       width="8" />
+   <port
+       name="rx_dout_im"
+       direction="output"
+       role="data_rx_dout_im"
+       width="16" />
+   <port
+       name="rx_dout_re"
+       direction="output"
+       role="data_rx_dout_re"
+       width="16" />
+   <port
+       name="fft_vout_s"
+       direction="output"
+       role="valid_fft_vout_s"
+       width="1" />
+   <port
+       name="fft_chout_s"
+       direction="output"
+       role="channel_fft_chout_s"
+       width="8" />
+   <port
+       name="fft_dout_im"
+       direction="output"
+       role="data_fft_dout_im"
+       width="16" />
+   <port
+       name="fft_dout_re"
+       direction="output"
+       role="data_fft_dout_re"
+       width="16" />
+   <port name="nsc_out_s" direction="output" role="data_nsc_out_s" width="16" />
+   <port name="size_out_s" direction="output" role="data_size_out_s" width="4" />
+   <port
+       name="td_time_out_s"
+       direction="output"
+       role="data_td_time_out_s"
+       width="64" />
+   <port
+       name="fd_data_v_s"
+       direction="output"
+       role="valid_fd_data_v_s"
+       width="1" />
+   <port
+       name="fd_data_c_s"
+       direction="output"
+       role="channel_fd_data_c_s"
+       width="8" />
+   <port
+       name="fd_data_q_im"
+       direction="output"
+       role="data_fd_data_q_im"
+       width="16" />
+   <port
+       name="fd_data_q_re"
+       direction="output"
+       role="data_fd_data_q_re"
+       width="16" />
+   <port name="eAxCout_s" direction="output" role="data_eAxCout_s" width="2" />
+   <port name="eop_eAxC_s" direction="output" role="data_eop_eAxC_s" width="1" />
+   <port name="eop_sym_s" direction="output" role="data_eop_sym_s" width="1" />
+   <port name="sop_eAxC_s" direction="output" role="data_sop_eAxC_s" width="1" />
+   <port name="sop_sym_s" direction="output" role="data_sop_sym_s" width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   kind="lphy_ss_top_streamtoblock_fft_DUT_0"
+   version="1.0"
+   name="lphy_ss_top_streamtoblock_fft_DUT_0">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CLOCK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLOCK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_BUS_CLOCK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="AGFB027R24C2E2VR2" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_BUS_CLOCK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <parameter name="AUTO_BUS_CLOCK_CLOCK_DOMAIN" value="-1" />
+  <generatedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/synth/lphy_ss_top_streamtoblock_fft_DUT_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/synth/lphy_ss_top_streamtoblock_fft_DUT_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/dspba/rtl/low_phy_ul_rtl/streamtoblock_fft/streamtoblock_fft_DUT_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="lphy_ss_top_streamtoblock_fft_DUT_0">"Generating: lphy_ss_top_streamtoblock_fft_DUT_0"</message>
+   <message level="Info" culprit="lphy_ss_top_streamtoblock_fft_DUT_0">"Generating: streamtoblock_fft_DUT"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="streamtoblock_fft_DUT"
+   version="1.0"
+   name="streamtoblock_fft_DUT">
+  <generatedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/dspba_library_ver.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_safe_path_flat_ver.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_safe_path_flat.vhd"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000e_100MHz_mem_x_part0.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000e_100MHz_mem_x_part1.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000le_60MHz_mem_x_part0.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000le_60MHz_mem_x_part1.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000100MHz_mem_x_a_part0.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000100MHz_mem_x_a_part1.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000_60MHz_mem_x_a_part0.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000_60MHz_mem_x_a_part1.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_CPRemoval.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_CPRemoval_Mem_rd_sub1_Finite_State_Machine.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_CPRemoval_Mem_wr_subsystem_Finite_State_Machine.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Rising_0000Finite_State_Machine.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Rising_0001Finite_State_Machine.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Transpo0000Finite_State_Machine.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Transpo0001Finite_State_Machine.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Transpo0002Finite_State_Machine.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Transpo0003Finite_State_Machine.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Transpo0004Finite_State_Machine.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Transpo0005Finite_State_Machine.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_ComplexMixer.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_NCO.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_NCO_u0_sinTable.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_NCO_u0_cosTable.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_Scale.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_Subsystem.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_pipe.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_pipe1.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_RXGainComp.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_RXScaling.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_VFFT_btb.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_VFFT_btb_streamtoblock0000OptimizedDualMem_x_a.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_VFFT_btb_streamtoblock0000OptimizedDualMem_x_b.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_ComplexMixer.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_ComplexMixer_ComplexMixer.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_ComplexMixer_Scalei.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_ComplexMixer_Scaleq.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_PhasorGenerate.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_SOP_EOP_gen.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_SOP_EOP_gen_Rising_edge_Finite_State_Machine.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_SOP_EOP_gen_falling_edge_Finite_State_Machine.sv"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/dspba_library_ver.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_safe_path_flat_ver.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_safe_path_flat.vhd"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000e_100MHz_mem_x_part0.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000e_100MHz_mem_x_part1.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000le_60MHz_mem_x_part0.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000le_60MHz_mem_x_part1.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000100MHz_mem_x_a_part0.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000100MHz_mem_x_a_part1.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000_60MHz_mem_x_a_part0.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/busFabric_streamtoblock_fft_DUT_2ouisy506j6x6m6b6u0qu5xajz_streamtoblock_fft_DUT0000_60MHz_mem_x_a_part1.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_CPRemoval.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_CPRemoval_Mem_rd_sub1_Finite_State_Machine.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_CPRemoval_Mem_wr_subsystem_Finite_State_Machine.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Rising_0000Finite_State_Machine.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Rising_0001Finite_State_Machine.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Transpo0000Finite_State_Machine.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Transpo0001Finite_State_Machine.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Transpo0002Finite_State_Machine.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Transpo0003Finite_State_Machine.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Transpo0004Finite_State_Machine.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_BRandSCSelect1_Transpo0005Finite_State_Machine.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_ComplexMixer.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_NCO.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_NCO_u0_sinTable.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_NCO_u0_cosTable.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_Scale.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_Subsystem.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_pipe.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_HCShift_pipe1.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_RXGainComp.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_RXScaling.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_VFFT_btb.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_VFFT_btb_streamtoblock0000OptimizedDualMem_x_a.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_FFT_S2B_SignalProcessing_VFFT_btb_streamtoblock0000OptimizedDualMem_x_b.hex"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_ComplexMixer.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_ComplexMixer_ComplexMixer.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_ComplexMixer_Scalei.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_ComplexMixer_Scaleq.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_PhasorGenerate.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_SOP_EOP_gen.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_SOP_EOP_gen_Rising_edge_Finite_State_Machine.sv"
+       attributes="" />
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/qsys/ip/lphy_ss_top/lphy_ss_top_streamtoblock_fft_DUT_0/streamtoblock_fft_DUT_10/synth/streamtoblock_fft_DUT_S2B_FFT_PC_PhaseCompensation_lite_SOP_EOP_gen_falling_edge_Finite_State_Machine.sv"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/lena/Desktop/Karthik_8TR_RU/new/srg3_ep_p_0_2_0/release/fpga/src/dspba/rtl/low_phy_ul_rtl/streamtoblock_fft/streamtoblock_fft_DUT_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="lphy_ss_top_streamtoblock_fft_DUT_0"
+     as="streamtoblock_fft_DUT_0" />
+  <messages>
+   <message level="Info" culprit="lphy_ss_top_streamtoblock_fft_DUT_0">"Generating: streamtoblock_fft_DUT"</message>
+  </messages>
+ </entity>
+</deploy>

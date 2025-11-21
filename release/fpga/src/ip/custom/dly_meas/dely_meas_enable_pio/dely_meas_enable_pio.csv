@@ -1,0 +1,18 @@
+# system info dely_meas_enable_pio on 2025.10.16.13:19:14
+system_info:
+name,value
+DEVICE,AGFB027R24C2E2VR2
+DEVICE_FAMILY,Agilex 7
+GENERATION_ID,0
+#
+#
+# Files generated for dely_meas_enable_pio on 2025.10.16.13:19:14
+files:
+filepath,kind,attributes,module,is_top
+sim/dely_meas_enable_pio.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,dely_meas_enable_pio,true
+altera_in_system_sources_probes_1921/sim/altsource_probe.v,VERILOG,,altsource_probe,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+dely_meas_enable_pio.in_system_sources_probes_0,altsource_probe

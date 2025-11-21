@@ -1,0 +1,28 @@
+set_global_assignment -entity "qsys_top_ninit_done" -library "qsys_top_ninit_done" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "qsys_top_ninit_done" -library "qsys_top_ninit_done" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "qsys_top_ninit_done" -library "qsys_top_ninit_done" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "qsys_top_ninit_done" -library "qsys_top_ninit_done" -name IP_TOOL_VENDOR_NAME "Intel Corporation"
+set_global_assignment -entity "qsys_top_ninit_done" -library "qsys_top_ninit_done" -name IP_TOP_LEVEL_COMPONENT_NAME "altera_reset_bridge"
+set_global_assignment -entity "qsys_top_ninit_done" -library "qsys_top_ninit_done" -name PRE_COMPILED_MODULE "ON"
+set_global_assignment -entity "qsys_top_ninit_done" -library "qsys_top_ninit_done" -name OCS_IP_TYPE "altera_reset_bridge"
+set_global_assignment -entity "qsys_top_ninit_done" -library "qsys_top_ninit_done" -name OCS_IP_VERSION "19.2.0"
+set_global_assignment -entity "qsys_top_ninit_done" -library "qsys_top_ninit_done" -name OCS_IP_HASH "t4e2nri"
+set_global_assignment -library "qsys_top_ninit_done" -name SOPCINFO_FILE [file join $::quartus(qip_path) "qsys_top_ninit_done.sopcinfo"]
+set_global_assignment -entity "qsys_top_ninit_done" -library "qsys_top_ninit_done" -name SLD_INFO "QSYS_NAME qsys_top_ninit_done HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "qsys_top_ninit_done" -name MISC_FILE [file join $::quartus(qip_path) "qsys_top_ninit_done.cmp"]
+set_global_assignment -entity "qsys_top_ninit_done" -library "qsys_top_ninit_done" -name IP_TARGETED_DEVICE_FAMILY "Agilex 7"
+set_global_assignment -entity "qsys_top_ninit_done" -library "qsys_top_ninit_done" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 7}"
+set_global_assignment -entity "qsys_top_ninit_done" -library "qsys_top_ninit_done" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "qsys_top_ninit_done" -name MISC_FILE [file join $::quartus(qip_path) "../qsys_top_ninit_done.ip"]
+
+set_global_assignment -entity "qsys_top_ninit_done" -library "qsys_top_ninit_done" -name IP_COMPONENT_NAME "cXN5c190b3BfbmluaXRfZG9uZQ=="
+set_global_assignment -entity "qsys_top_ninit_done" -library "qsys_top_ninit_done" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "qsys_top_ninit_done" -library "qsys_top_ninit_done" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "qsys_top_ninit_done" -library "qsys_top_ninit_done" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "qsys_top_ninit_done" -library "qsys_top_ninit_done" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "qsys_top_ninit_done" -library "qsys_top_ninit_done" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "qsys_top_ninit_done" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/qsys_top_ninit_done.v"]
+
