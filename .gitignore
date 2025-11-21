@@ -24,9 +24,7 @@
 # C/C++ build artifacts
 #############################################
 
-*.out
-*.exe
-*.so
+
 
 #############################################
 # Quartus / FPGA tool generated files
@@ -46,7 +44,7 @@ output_files/
 *.rpt
 *.summary
 *.sld
-*.pin
+
 *.html
 qdb/
 
